@@ -80,7 +80,7 @@ api[0].list[2].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/phone/initiate.do',
     methodId: '4fa19983afa5383b8859b165752d6d87',
-    desc: 'Initiate OTP A One Time Password is sent to user whatsapp number to verify their identity',
+    desc: 'Initiate OTP',
 });
 api[0].list[2].list.push({
     order: '2',
@@ -106,8 +106,8 @@ api[0].list[3].list.push({
 api[0].list.push({
     alias: 'PromoAdController',
     order: '5',
-    link: 'promo_ad_api promo_ads_enable_store_owners_or_admins_to_seamlessly_add_advertisements_to_their_homepage_or_any_other_page_on_their_website. whether_it&amp;apos;s_in_the_hero_section_or_any_other_part_of_the_webpage, this_feature_provides_the_flexibility_to_display_promotions_exactly_where_they’ll_be_most_effective, helping_you_grab_attention_and_increase_engagement.',
-    desc: 'Promo Ad API Promo ads enable store owners or admins to seamlessly add advertisements to their homepage or any other page on their website. Whether it&amp;apos;s in the hero section or any other part of the webpage, this feature provides the flexibility to display promotions exactly where they’ll be most effective, helping you grab attention and increase engagement.',
+    link: 'promo_ad_api',
+    desc: 'Promo Ad API',
     list: []
 })
 api[0].list[4].list.push({
@@ -115,49 +115,49 @@ api[0].list[4].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promo-ads.do',
     methodId: '23eed6e3541e4cbc09bdf0129d92443f',
-    desc: 'Create Promo Ad This API creates a new promotional ad.',
+    desc: 'Create Promo Ad',
 });
 api[0].list[4].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promo-ads/{id}.do',
     methodId: '69b2d7ea2d37424761aa9e7c8d72864d',
-    desc: 'Update Promo Ad This API updates a specific promotional ad by its ID.',
+    desc: 'Update Promo Ad',
 });
 api[0].list[4].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promo-ads/{id}.do',
     methodId: '298a4eb3c41986e6821fab71931a4c68',
-    desc: 'Get Promo Ad by ID This API retrieves a specific promotional ad by its ID.',
+    desc: 'Get Promo Ad by ID',
 });
 api[0].list[4].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promo-ads.do',
     methodId: 'f13c7e1d13cc5b393d3702b48a075410',
-    desc: 'Fetch Promo Ads. This API retrieves a list of promotional ads filtered by status and paginated using a cursor. The response includes promotional ads in either DRAFT or PUBLISHED status.',
+    desc: 'Fetch Promo Ads.',
 });
 api[0].list[4].list.push({
     order: '5',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promo-ads/published.do',
     methodId: 'cd217d4055c74776194690e9f3872f96',
-    desc: 'Fetch Published Promo Ads. This API retrieves a list of published promotional ads. The response includes promotional ads in PUBLISHED status.',
+    desc: 'Fetch Published Promo Ads.',
 });
 api[0].list[4].list.push({
     order: '6',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promo-ads/update/{id}/status/{status}.do',
     methodId: '13b7e0487de6e60a3fe85e3dc4786f92',
-    desc: 'Update Promo Ad Status. This API updates the status of a specific promotional ad. The response includes promotional ads in PUBLISHED status.',
+    desc: 'Update Promo Ad Status.',
 });
 api[0].list[4].list.push({
     order: '7',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promo-ads/{id}.do',
     methodId: 'ed7c384e95e33647a103b367b3a75626',
-    desc: 'Delete Promo Ad. This API deletes a specific promotional ad.',
+    desc: 'Delete Promo Ad.',
 });
 api[0].list.push({
     alias: 'CustomerOrderController',
@@ -190,8 +190,8 @@ api[0].list[5].list.push({
 api[0].list.push({
     alias: 'CartController',
     order: '7',
-    link: 'cart_management this_api_provides_endpoints_for_managing_customer_carts.',
-    desc: 'Cart Management This API provides endpoints for managing customer carts.',
+    link: 'cart_management',
+    desc: 'Cart Management',
     list: []
 })
 api[0].list[6].list.push({
@@ -199,56 +199,56 @@ api[0].list[6].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/carts/items.do',
     methodId: '9ae9ec28b44b18de5cee10d716ab2840',
-    desc: 'List Items In Cart. This API retrieves a list of items in the cart.',
+    desc: 'List Items In Cart.',
 });
 api[0].list[6].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/carts/add.do',
     methodId: '7eef633926c0c939dc677a337abc56b9',
-    desc: 'Add Item To Cart. This API adds an item to the cart.',
+    desc: 'Add Item To Cart.',
 });
 api[0].list[6].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/carts/remove/{carItemId}.do',
     methodId: 'eeb2a371071485fa427d8467c5dc0d44',
-    desc: 'Remove Item From Cart. This API removes an item from the cart.',
+    desc: 'Remove Item From Cart.',
 });
 api[0].list[6].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/carts/item/increment/quantity/{cartId}.do',
     methodId: '38371979b0f11857aa41843a413ae468',
-    desc: 'Increment Item Quantity. This API increments the quantity of an item in the cart.',
+    desc: 'Increment Item Quantity.',
 });
 api[0].list[6].list.push({
     order: '5',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/carts/item/decrement/quantity/{cartId}.do',
     methodId: '52ee31353e7b87f668cfacb6780f3324',
-    desc: 'Decrement Item Quantity. This API decrements the quantity of an item in the cart.',
+    desc: 'Decrement Item Quantity.',
 });
 api[0].list[6].list.push({
     order: '6',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/carts/clear.do',
     methodId: '1082d8e90f239d66e4285d93d7b8224f',
-    desc: 'Clear Cart. This API clears the cart for the authenticated customer or via sessionId.',
+    desc: 'Clear Cart.',
 });
 api[0].list[6].list.push({
     order: '7',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/carts/checkout.do',
     methodId: '512864f9afbe838ddb4c3e41fbc1393d',
-    desc: 'Checkout Cart. This API checks out the cart for the authenticated customer.',
+    desc: 'Checkout Cart.',
 });
 api[0].list[6].list.push({
     order: '8',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/carts/guest/checkout.do',
     methodId: 'a144f0800c383e972d4a58052cc0538b',
-    desc: 'Guest Checkout Cart. This API checks out the cart for a guest user.',
+    desc: 'Guest Checkout Cart.',
 });
 api[0].list.push({
     alias: 'CategoryController',
@@ -276,28 +276,28 @@ api[0].list[8].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/delivery-zones.do',
     methodId: '1a83a9dee588c7424203b2e67d44d2ae',
-    desc: 'Create Delivery Zone. This API creates a new delivery zone.',
+    desc: 'Create Delivery Zone.',
 });
 api[0].list[8].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/delivery-zones.do',
     methodId: '80ce2161699b3fe57690f9f59f0292ad',
-    desc: 'Get All Delivery Zones. This API returns all delivery zones.',
+    desc: 'Get All Delivery Zones.',
 });
 api[0].list[8].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/delivery-zones/{id}.do',
     methodId: 'f17698c1f116a16283eab014c4bc2565',
-    desc: 'Update Delivery Zone. This API updates an existing delivery zone.',
+    desc: 'Update Delivery Zone.',
 });
 api[0].list[8].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/delivery-zones/{id}.do',
     methodId: '6f4484dc94cea460ac67de61cf31009b',
-    desc: 'Delete Delivery Zone. This API deletes an existing delivery zone.',
+    desc: 'Delete Delivery Zone.',
 });
 api[0].list.push({
     alias: 'PromotionController',
@@ -311,42 +311,42 @@ api[0].list[9].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promotions/apply/promo-code.do',
     methodId: 'a2d5739d4472bb583e47748d82896acd',
-    desc: 'Apply Promo Code Applies a promo code to calculate discounted price&quot;',
+    desc: 'Apply Promo Code',
 });
 api[0].list[9].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promotions.do',
     methodId: 'b57c71d78cdc01959d4d458dc8e7fb1b',
-    desc: 'Create Promotion Only accessible by merchant',
+    desc: 'Create Promotion',
 });
 api[0].list[9].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promotions.do',
     methodId: 'b9c21bdfd17324306ec0d10f816e6d8e',
-    desc: 'Fetch All Promotions Only accessible by merchant',
+    desc: 'Fetch All Promotions',
 });
 api[0].list[9].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promotions/{promotionId}.do',
     methodId: 'c9b52db21f462ea9831779f011389aa6',
-    desc: 'Show Promotion Only accessible to merchant',
+    desc: 'Show Promotion',
 });
 api[0].list[9].list.push({
     order: '5',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promotions/{promotionId}.do',
     methodId: '98d861e9e3d65e5407ed810786739bd6',
-    desc: 'Update Promotion Only accessible to merchant',
+    desc: 'Update Promotion',
 });
 api[0].list[9].list.push({
     order: '6',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promotions/{promotionId}.do',
     methodId: '29bfe16c867583b219d236894d08c475',
-    desc: 'Delete Promotion Only accessible to merchant',
+    desc: 'Delete Promotion',
 });
 api[0].list.push({
     alias: 'MerchantController',
@@ -360,14 +360,14 @@ api[0].list[10].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/merchants/profile.do',
     methodId: 'd9a31bc791df9688c9f339f4489e1c96',
-    desc: 'Get Merchant Profile. This API returns the merchant profile.',
+    desc: 'Get Merchant Profile.',
 });
 api[0].list[10].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/merchants/profile/business.do',
     methodId: 'dc42264d7e9318fa680f63c39d25535a',
-    desc: 'Get Merchant Business Profile. This API returns the merchant business profile.',
+    desc: 'Get Merchant Business Profile.',
 });
 api[0].list.push({
     alias: 'RoleController',
@@ -423,35 +423,35 @@ api[0].list[14].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/reviews.do',
     methodId: '0b9965cf3cce5830354d4463be7b296f',
-    desc: 'Get All Reviews  Retrieves all product reviews in the merchant&apos;s store with optional filtering. Shop owners use this to monitor customer feedback, identify problematic reviews, and manage reputation.',
+    desc: 'Get All Reviews',
 });
 api[0].list[14].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/reviews/product/{productId}.do',
     methodId: '0b5112181d406b277bd044cd3781d98e',
-    desc: 'Get Product Reviews  Retrieves all reviews for a specific product. Reviews are filtered by status (active, hidden, or pending) to display only appropriate reviews on product detail pages.',
+    desc: 'Get Product Reviews',
 });
 api[0].list[14].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/reviews/add.do',
     methodId: '562f22d968bf15eda9978b126994a902',
-    desc: 'Create/Submit Product Review  Submits a new product review from a customer. Reviews include rating, comment, and reviewer name. System validates one review per customer per product and performs moderation checks.',
+    desc: 'Create/Submit Product Review',
 });
 api[0].list[14].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/reviews/{reviewId}.do',
     methodId: '0595ea2ae24a3a218bc889f89b1b00c6',
-    desc: 'Delete Review  Permanently deletes a product review. Removed review no longer appears on product pages or in review listings. Deletion is irreversible (deleted review cannot be recovered).',
+    desc: 'Delete Review',
 });
 api[0].list[14].list.push({
     order: '5',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/reviews/hide/{reviewId}.do',
     methodId: '2fd9b7fcf0ea359a151d8ddf0ddd0198',
-    desc: 'Hide Review  Hides a review from public display temporarily. Hidden reviews no longer appear on product pages but remain in system for audit purposes. Reviews can be unhidden if needed (soft deletion).',
+    desc: 'Hide Review',
 });
 api[0].list.push({
     alias: 'TenantController',
@@ -549,49 +549,49 @@ api[0].list[19].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/customers.do',
     methodId: 'fae2c9b5de1cfb53d7996eeafeccee27',
-    desc: 'Get All Customers  Retrieves a paginated list of customers for a shop owner with advanced pagination support using cursor-based navigation. Supports filtering by search term, registration date range, account status, and account type.',
+    desc: 'Get All Customers',
 });
 api[0].list[19].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/customers/profile.do',
     methodId: '11b7ce0b35465a5a7b1c6380ae02e8e3',
-    desc: 'Get Authenticated Customer Profile  Retrieves the complete profile information of the authenticated customer, including personal details, account status, preferences, and account type.',
+    desc: 'Get Authenticated Customer Profile',
 });
 api[0].list[19].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/customers/{customerId}.do',
     methodId: '456c7ae2d880abc457b287956376348c',
-    desc: 'Get Specific Customer (Shop Owner View)  Retrieves detailed information for a specific customer by ID. Only shop owners can access other customers&apos; data. Returns all customer details for merchant relationship and account management purposes.',
+    desc: 'Get Specific Customer (Shop Owner View)',
 });
 api[0].list[19].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/customers/{customerId}/deactivate.do',
     methodId: '0abd05f73267bf8fa84c42b161f47f45',
-    desc: 'Deactivate Customer Account  Deactivates a customer account, preventing further login and transactions. The account remains in the system for historical and audit purposes but becomes inactive. Account can be reactivated if needed.',
+    desc: 'Deactivate Customer Account',
 });
 api[0].list[19].list.push({
     order: '5',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/customers/{customerId}/activate.do',
     methodId: '23167bd3010adc9f4f13d6179e97eede',
-    desc: 'Activate Customer Account  Reactivates a previously deactivated customer account. Once reactivated, customer can log in and place orders again. Account retains all historical data and order history.',
+    desc: 'Activate Customer Account',
 });
 api[0].list[19].list.push({
     order: '6',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/customers/signup.do',
     methodId: 'a07a4635daa35aafa41b7cbe6e6f6ceb',
-    desc: 'Register New Customer  Registers a new customer account in the current store/tenant. Validates email uniqueness, creates customer record, and returns customer profile with confirmation of successful registration.',
+    desc: 'Register New Customer',
 });
 api[0].list[19].list.push({
     order: '7',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/customers/profile/update.do',
     methodId: '869066a7136dfcb2e62f7cc777f43fdf',
-    desc: 'Update Customer Profile  Updates the authenticated customer&apos;s profile information. Customer can modify personal details, contact information, preferences, and other account settings.',
+    desc: 'Update Customer Profile',
 });
 api[0].list.push({
     alias: 'EmailVerificationController',
@@ -626,14 +626,14 @@ api[0].list[21].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/customer/signup.do',
     methodId: '26525736959fc67d40c2ec6baba01c8e',
-    desc: 'Register Customer. This API registers a new customer.',
+    desc: 'Register Customer.',
 });
 api[0].list[21].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/customer/signup/google.do',
     methodId: '6d60511c8162d06510dfbfa7bac28657',
-    desc: 'Register Customer Via Google. This API registers a new customer via google.',
+    desc: 'Register Customer Via Google.',
 });
 api[0].list[21].list.push({
     order: '3',
@@ -710,7 +710,7 @@ api[0].list[23].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/orders/{orderId}/status.do',
     methodId: '5cd3387860122d0ccdf8c9b4d72f2b5b',
-    desc: 'Update Order Status  Updates the current status of an order to reflect fulfillment progress. Valid status transitions are enforced to prevent invalid workflow progressions. Records an audit trail entry capturing who changed the status and why.',
+    desc: 'Update Order Status',
 });
 api[0].list[23].list.push({
     order: '6',
@@ -724,7 +724,7 @@ api[0].list[23].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/orders/merchant/stats.do',
     methodId: 'a4b57f9ea9d653fe52e58a76bf9dd106',
-    desc: 'Get Order Statistics  Retrieves comprehensive order statistics for a merchant including order count, total revenue, average order value, orders by status breakdown, and other aggregated metrics useful for business insights and dashboards.',
+    desc: 'Get Order Statistics',
 });
 api[0].list.push({
     alias: 'WhatsAppWebhookController',
@@ -967,8 +967,8 @@ api[0].list[33].list.push({
 api[0].list.push({
     alias: 'FileController',
     order: '35',
-    link: 'filecontroller',
-    desc: 'FileController',
+    link: 'file_management_(file_upload)',
+    desc: 'File Management (File Upload)',
     list: []
 })
 api[0].list[34].list.push({
@@ -976,14 +976,14 @@ api[0].list[34].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/files/upload/single/image.do',
     methodId: '15ae4b213f6a3636dec8b7fd22b36ea3',
-    desc: 'uploadSingleImage',
+    desc: 'Upload Single Image.',
 });
 api[0].list[34].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/files/upload/multiple/images.do',
     methodId: '3cf3e42903fc6c236c6fe3d8aba909ea',
-    desc: 'uploadMultipleImages',
+    desc: 'Upload Multiple Images.',
 });
 api[0].list.push({
     alias: 'PaymentMethodController',
@@ -1144,20 +1144,20 @@ api[0].list[42].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/password/reset/customer.do',
     methodId: '8bc5757cbe0a3235b2afebf56f283778',
-    desc: 'resetCustomerPassword',
+    desc: 'Reset Customer Password.',
 });
 api[0].list[42].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/password/reset/merchant.do',
     methodId: 'd61dc027e05bfb390012eb9234755b89',
-    desc: 'resetMerchantPassword',
+    desc: 'Reset Merchant Password.',
 });
 api[0].list.push({
     alias: 'ProductController',
     order: '44',
-    link: 'productcontroller',
-    desc: 'ProductController',
+    link: 'product_management',
+    desc: 'Product Management',
     list: []
 })
 api[0].list[43].list.push({
@@ -1165,42 +1165,42 @@ api[0].list[43].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products.do',
     methodId: '602c60e0c6c449b301cfcb1b3c58b0ac',
-    desc: 'Get All Products  Retrieves a paginated list of products with optional filtering and sorting. Supports filtering by search term, category, brand, color, price range, stock status, and customer rating. Results are returned in pages for efficient data loading and display.',
+    desc: 'Get All Products',
 });
 api[0].list[43].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products.do',
     methodId: 'f7b551eea448d2c97ee531aae755ec5e',
-    desc: 'Create Product  Creates a new product in the merchant&apos;s store (tenant). Validates product details including brand, color, and category associations. Specifications are validated against tenant-specific configuration. Product is immediately published upon creation unless status is set to INACTIVE.',
+    desc: 'Create Product',
 });
 api[0].list[43].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/{productId}.do',
     methodId: '75a1f711dba574c2e2c560e4d2fe0ff1',
-    desc: 'Update Product  Updates an existing product&apos;s details. Allows modification of product information including name, description, pricing, status, and specifications. Only merchant who owns the product can update it.',
+    desc: 'Update Product',
 });
 api[0].list[43].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/{productId}.do',
     methodId: '131ab3904dc5fc1911696814c4b10bf1',
-    desc: 'Get Product Details  Retrieves complete details of a single product including all attributes, specifications, pricing, availability, and related information.',
+    desc: 'Get Product Details',
 });
 api[0].list[43].list.push({
     order: '5',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/similar/by/category/{productId}.do',
     methodId: '1241fe80ab493f3253f690674a08dc3d',
-    desc: 'Get Similar Products  Retrieves a list of products similar to a specified product, typically from the same category or with related attributes. Useful for &quot;You might also like&quot; or &quot;Related products&quot; sections in product detail pages.',
+    desc: 'Get Similar Products',
 });
 api[0].list[43].list.push({
     order: '6',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/{productId}.do',
     methodId: '182d6afa6b55185cfebf4072ad7a6e63',
-    desc: 'Delete Product  Permanently deletes a product from the merchant&apos;s store. Product details are removed from system but historical order records remain intact for audit purposes.',
+    desc: 'Delete Product',
 });
 api[0].list[43].list.push({
     order: '7',
@@ -1226,8 +1226,8 @@ api[0].list[44].list.push({
 api[0].list.push({
     alias: 'PaymentController',
     order: '46',
-    link: 'paymentcontroller',
-    desc: 'PaymentController',
+    link: 'payment_management',
+    desc: 'Payment Management',
     list: []
 })
 api[0].list[45].list.push({
@@ -1235,21 +1235,21 @@ api[0].list[45].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/payments.do',
     methodId: '7c5361a34da8b80f053a0046d79b2ad6',
-    desc: 'Get All Payments &lt;p&gt; Retrieves a paginated list of payments for a tenant with cursor-based navigation.',
+    desc: 'Get All Payments',
 });
 api[0].list[45].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/payments/order/{orderId}.do',
     methodId: '3b5ec24d972e71038197f4163e8beb9f',
-    desc: 'Get Payment by Order ID &lt;p&gt; Retrieves the payment details associated with a specific order.',
+    desc: 'Get Payment by Order ID',
 });
 api[0].list[45].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/payments/initialize.do',
     methodId: '8ef0a005bbca6a4954cf34681e8b3ecf',
-    desc: 'Initialize Customer Payment &lt;p&gt; Initializes a payment transaction for an authenticated customer&apos;s order. Validates the requested payment gateway and method, ensures the merchant has configured the payment gateway, creates a payment record, and initiates the payment processing with the external payment gateway.',
+    desc: 'Initialize Customer Payment',
 });
 api[0].list[45].list.push({
     order: '4',
@@ -1263,14 +1263,14 @@ api[0].list[45].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/payments/confirm.do',
     methodId: '3105326759ca7a7334354b7811fb014e',
-    desc: 'Verify and Confirm Payment &lt;p&gt; Verifies payment completion with the external payment gateway using the payment reference. Confirms the payment amount, currency, and status, updates the payment record with gateway verification details, and triggers order status progression to PROCESSING. Also sends notification emails to merchant.',
+    desc: 'Verify and Confirm Payment',
 });
 api[0].list[45].list.push({
     order: '6',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/payments/{paymentId}/status.do',
     methodId: '79388ab405d77b003315b80d69f0cb9c',
-    desc: 'Update Payment Status &lt;p&gt; Updates the payment status for a specific payment record. Used by shop owners to manually confirm or adjust payment status, particularly for offline or manual payment methods. Records status transition history and updates associated order status accordingly.',
+    desc: 'Update Payment Status',
 });
 api[0].list.push({
     alias: 'AddressController',

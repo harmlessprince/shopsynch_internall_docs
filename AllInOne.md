@@ -194,8 +194,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:46"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:46"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:36"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:36"|
 |token|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
 
@@ -209,8 +209,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-16 19:36:46",
-    "updatedAt": "2026-03-16 19:36:46"
+    "createdAt": "2026-03-16 20:06:36",
+    "updatedAt": "2026-03-16 20:06:36"
   },
   "token": "",
   "expiresIn": 0
@@ -246,8 +246,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |user|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |└─id|string|false|No comments found.|-||
 |└─email|string|false|No comments found.|-||
 |└─tenantId|string|false|No comments found.|-||
@@ -265,22 +265,22 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |└─version|int32|false|No comments found.|-|0|
 |└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -326,8 +326,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -345,22 +345,22 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -406,8 +406,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -427,8 +427,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |└─id|string|false|No comments found.|-||
 |└─businessTradingName|string|false|e.g. Business name|-||
 |└─legalBusinessName|string|false|No comments found.|-||
@@ -474,8 +474,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |└─status|boolean|false|No comments found.|-|true|
 |└─createdBy|string|false|No comments found.|-||
 |└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -493,22 +493,22 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -554,8 +554,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -573,16 +573,16 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -645,8 +645,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
   "createdAt": "yyyy-MM-dd HH:mm:ss",
   "updatedAt": "yyyy-MM-dd HH:mm:ss",
   "user": {
-    "createdAt": "2026-03-16 19:36:47",
-    "updatedAt": "2026-03-16 19:36:47",
+    "createdAt": "2026-03-16 20:06:36",
+    "updatedAt": "2026-03-16 20:06:36",
     "id": "",
     "email": "",
     "tenantId": "",
@@ -664,16 +664,16 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
     "version": 0,
     "emailVerifiedAt": "yyyy-MM-dd HH:mm:ss",
     "role": {
-      "createdAt": "2026-03-16 19:36:47",
-      "updatedAt": "2026-03-16 19:36:47",
+      "createdAt": "2026-03-16 20:06:36",
+      "updatedAt": "2026-03-16 20:06:36",
       "id": "",
       "name": "",
       "status": true,
       "slug": "",
       "permissions": [
         {
-          "createdAt": "2026-03-16 19:36:47",
-          "updatedAt": "2026-03-16 19:36:47",
+          "createdAt": "2026-03-16 20:06:36",
+          "updatedAt": "2026-03-16 20:06:36",
           "id": "",
           "name": "",
           "status": true,
@@ -682,8 +682,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
       ]
     },
     "tenant": {
-      "createdAt": "2026-03-16 19:36:47",
-      "updatedAt": "2026-03-16 19:36:47",
+      "createdAt": "2026-03-16 20:06:36",
+      "updatedAt": "2026-03-16 20:06:36",
       "id": "",
       "businessTradingName": "",
       "legalBusinessName": "",
@@ -735,8 +735,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
       "status": true,
       "createdBy": "",
       "user": {
-        "createdAt": "2026-03-16 19:36:47",
-        "updatedAt": "2026-03-16 19:36:47",
+        "createdAt": "2026-03-16 20:06:36",
+        "updatedAt": "2026-03-16 20:06:36",
         "id": "",
         "email": "",
         "tenantId": "",
@@ -754,16 +754,16 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
         "version": 0,
         "emailVerifiedAt": "yyyy-MM-dd HH:mm:ss",
         "role": {
-          "createdAt": "2026-03-16 19:36:47",
-          "updatedAt": "2026-03-16 19:36:47",
+          "createdAt": "2026-03-16 20:06:36",
+          "updatedAt": "2026-03-16 20:06:36",
           "id": "",
           "name": "",
           "status": true,
           "slug": "",
           "permissions": [
             {
-              "createdAt": "2026-03-16 19:36:47",
-              "updatedAt": "2026-03-16 19:36:47",
+              "createdAt": "2026-03-16 20:06:36",
+              "updatedAt": "2026-03-16 20:06:36",
               "id": "",
               "name": "",
               "status": true,
@@ -772,8 +772,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
           ]
         },
         "tenant": {
-          "createdAt": "2026-03-16 19:36:47",
-          "updatedAt": "2026-03-16 19:36:47",
+          "createdAt": "2026-03-16 20:06:36",
+          "updatedAt": "2026-03-16 20:06:36",
           "id": "",
           "businessTradingName": "",
           "legalBusinessName": "",
@@ -825,8 +825,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
           "status": true,
           "createdBy": "",
           "user": {
-            "createdAt": "2026-03-16 19:36:47",
-            "updatedAt": "2026-03-16 19:36:47",
+            "createdAt": "2026-03-16 20:06:36",
+            "updatedAt": "2026-03-16 20:06:36",
             "id": "",
             "email": "",
             "tenantId": "",
@@ -855,8 +855,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
     }
   },
   "tenant": {
-    "createdAt": "2026-03-16 19:36:47",
-    "updatedAt": "2026-03-16 19:36:47",
+    "createdAt": "2026-03-16 20:06:36",
+    "updatedAt": "2026-03-16 20:06:36",
     "id": "",
     "businessTradingName": "",
     "legalBusinessName": "",
@@ -908,8 +908,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
     "status": true,
     "createdBy": "",
     "user": {
-      "createdAt": "2026-03-16 19:36:47",
-      "updatedAt": "2026-03-16 19:36:47",
+      "createdAt": "2026-03-16 20:06:36",
+      "updatedAt": "2026-03-16 20:06:36",
       "id": "",
       "email": "",
       "tenantId": "",
@@ -927,16 +927,16 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
       "version": 0,
       "emailVerifiedAt": "yyyy-MM-dd HH:mm:ss",
       "role": {
-        "createdAt": "2026-03-16 19:36:47",
-        "updatedAt": "2026-03-16 19:36:47",
+        "createdAt": "2026-03-16 20:06:36",
+        "updatedAt": "2026-03-16 20:06:36",
         "id": "",
         "name": "",
         "status": true,
         "slug": "",
         "permissions": [
           {
-            "createdAt": "2026-03-16 19:36:47",
-            "updatedAt": "2026-03-16 19:36:47",
+            "createdAt": "2026-03-16 20:06:36",
+            "updatedAt": "2026-03-16 20:06:36",
             "id": "",
             "name": "",
             "status": true,
@@ -945,8 +945,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
         ]
       },
       "tenant": {
-        "createdAt": "2026-03-16 19:36:47",
-        "updatedAt": "2026-03-16 19:36:47",
+        "createdAt": "2026-03-16 20:06:36",
+        "updatedAt": "2026-03-16 20:06:36",
         "id": "",
         "businessTradingName": "",
         "legalBusinessName": "",
@@ -998,8 +998,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
         "status": true,
         "createdBy": "",
         "user": {
-          "createdAt": "2026-03-16 19:36:47",
-          "updatedAt": "2026-03-16 19:36:47",
+          "createdAt": "2026-03-16 20:06:36",
+          "updatedAt": "2026-03-16 20:06:36",
           "id": "",
           "email": "",
           "tenantId": "",
@@ -1017,8 +1017,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
           "version": 0,
           "emailVerifiedAt": "yyyy-MM-dd HH:mm:ss",
           "role": {
-            "createdAt": "2026-03-16 19:36:47",
-            "updatedAt": "2026-03-16 19:36:47",
+            "createdAt": "2026-03-16 20:06:36",
+            "updatedAt": "2026-03-16 20:06:36",
             "id": "",
             "name": "",
             "status": true,
@@ -1030,8 +1030,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
             ]
           },
           "tenant": {
-            "createdAt": "2026-03-16 19:36:47",
-            "updatedAt": "2026-03-16 19:36:47",
+            "createdAt": "2026-03-16 20:06:36",
+            "updatedAt": "2026-03-16 20:06:36",
             "id": "",
             "businessTradingName": "",
             "legalBusinessName": "",
@@ -1126,8 +1126,8 @@ Return void.
 |createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |user|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |└─id|string|false|No comments found.|-||
 |└─email|string|false|No comments found.|-||
 |└─tenantId|string|false|No comments found.|-||
@@ -1145,22 +1145,22 @@ Return void.
 |└─version|int32|false|No comments found.|-|0|
 |└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -1206,8 +1206,8 @@ Return void.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -1225,22 +1225,22 @@ Return void.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -1286,8 +1286,8 @@ Return void.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -1307,8 +1307,8 @@ Return void.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |└─id|string|false|No comments found.|-||
 |└─businessTradingName|string|false|e.g. Business name|-||
 |└─legalBusinessName|string|false|No comments found.|-||
@@ -1354,8 +1354,8 @@ Return void.
 |└─status|boolean|false|No comments found.|-|true|
 |└─createdBy|string|false|No comments found.|-||
 |└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -1373,22 +1373,22 @@ Return void.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -1434,8 +1434,8 @@ Return void.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -1453,16 +1453,16 @@ Return void.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -1525,8 +1525,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
   "createdAt": "yyyy-MM-dd HH:mm:ss",
   "updatedAt": "yyyy-MM-dd HH:mm:ss",
   "user": {
-    "createdAt": "2026-03-16 19:36:47",
-    "updatedAt": "2026-03-16 19:36:47",
+    "createdAt": "2026-03-16 20:06:36",
+    "updatedAt": "2026-03-16 20:06:36",
     "id": "",
     "email": "",
     "tenantId": "",
@@ -1544,16 +1544,16 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
     "version": 0,
     "emailVerifiedAt": "yyyy-MM-dd HH:mm:ss",
     "role": {
-      "createdAt": "2026-03-16 19:36:47",
-      "updatedAt": "2026-03-16 19:36:47",
+      "createdAt": "2026-03-16 20:06:36",
+      "updatedAt": "2026-03-16 20:06:36",
       "id": "",
       "name": "",
       "status": true,
       "slug": "",
       "permissions": [
         {
-          "createdAt": "2026-03-16 19:36:47",
-          "updatedAt": "2026-03-16 19:36:47",
+          "createdAt": "2026-03-16 20:06:36",
+          "updatedAt": "2026-03-16 20:06:36",
           "id": "",
           "name": "",
           "status": true,
@@ -1562,8 +1562,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
       ]
     },
     "tenant": {
-      "createdAt": "2026-03-16 19:36:47",
-      "updatedAt": "2026-03-16 19:36:47",
+      "createdAt": "2026-03-16 20:06:36",
+      "updatedAt": "2026-03-16 20:06:36",
       "id": "",
       "businessTradingName": "",
       "legalBusinessName": "",
@@ -1615,8 +1615,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
       "status": true,
       "createdBy": "",
       "user": {
-        "createdAt": "2026-03-16 19:36:47",
-        "updatedAt": "2026-03-16 19:36:47",
+        "createdAt": "2026-03-16 20:06:36",
+        "updatedAt": "2026-03-16 20:06:36",
         "id": "",
         "email": "",
         "tenantId": "",
@@ -1634,16 +1634,16 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
         "version": 0,
         "emailVerifiedAt": "yyyy-MM-dd HH:mm:ss",
         "role": {
-          "createdAt": "2026-03-16 19:36:47",
-          "updatedAt": "2026-03-16 19:36:47",
+          "createdAt": "2026-03-16 20:06:36",
+          "updatedAt": "2026-03-16 20:06:36",
           "id": "",
           "name": "",
           "status": true,
           "slug": "",
           "permissions": [
             {
-              "createdAt": "2026-03-16 19:36:47",
-              "updatedAt": "2026-03-16 19:36:47",
+              "createdAt": "2026-03-16 20:06:36",
+              "updatedAt": "2026-03-16 20:06:36",
               "id": "",
               "name": "",
               "status": true,
@@ -1652,8 +1652,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
           ]
         },
         "tenant": {
-          "createdAt": "2026-03-16 19:36:47",
-          "updatedAt": "2026-03-16 19:36:47",
+          "createdAt": "2026-03-16 20:06:36",
+          "updatedAt": "2026-03-16 20:06:36",
           "id": "",
           "businessTradingName": "",
           "legalBusinessName": "",
@@ -1705,8 +1705,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
           "status": true,
           "createdBy": "",
           "user": {
-            "createdAt": "2026-03-16 19:36:47",
-            "updatedAt": "2026-03-16 19:36:47",
+            "createdAt": "2026-03-16 20:06:36",
+            "updatedAt": "2026-03-16 20:06:36",
             "id": "",
             "email": "",
             "tenantId": "",
@@ -1735,8 +1735,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
     }
   },
   "tenant": {
-    "createdAt": "2026-03-16 19:36:47",
-    "updatedAt": "2026-03-16 19:36:47",
+    "createdAt": "2026-03-16 20:06:36",
+    "updatedAt": "2026-03-16 20:06:36",
     "id": "",
     "businessTradingName": "",
     "legalBusinessName": "",
@@ -1788,8 +1788,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
     "status": true,
     "createdBy": "",
     "user": {
-      "createdAt": "2026-03-16 19:36:47",
-      "updatedAt": "2026-03-16 19:36:47",
+      "createdAt": "2026-03-16 20:06:36",
+      "updatedAt": "2026-03-16 20:06:36",
       "id": "",
       "email": "",
       "tenantId": "",
@@ -1807,16 +1807,16 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
       "version": 0,
       "emailVerifiedAt": "yyyy-MM-dd HH:mm:ss",
       "role": {
-        "createdAt": "2026-03-16 19:36:47",
-        "updatedAt": "2026-03-16 19:36:47",
+        "createdAt": "2026-03-16 20:06:36",
+        "updatedAt": "2026-03-16 20:06:36",
         "id": "",
         "name": "",
         "status": true,
         "slug": "",
         "permissions": [
           {
-            "createdAt": "2026-03-16 19:36:47",
-            "updatedAt": "2026-03-16 19:36:47",
+            "createdAt": "2026-03-16 20:06:36",
+            "updatedAt": "2026-03-16 20:06:36",
             "id": "",
             "name": "",
             "status": true,
@@ -1825,8 +1825,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
         ]
       },
       "tenant": {
-        "createdAt": "2026-03-16 19:36:47",
-        "updatedAt": "2026-03-16 19:36:47",
+        "createdAt": "2026-03-16 20:06:36",
+        "updatedAt": "2026-03-16 20:06:36",
         "id": "",
         "businessTradingName": "",
         "legalBusinessName": "",
@@ -1878,8 +1878,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
         "status": true,
         "createdBy": "",
         "user": {
-          "createdAt": "2026-03-16 19:36:47",
-          "updatedAt": "2026-03-16 19:36:47",
+          "createdAt": "2026-03-16 20:06:36",
+          "updatedAt": "2026-03-16 20:06:36",
           "id": "",
           "email": "",
           "tenantId": "",
@@ -1897,8 +1897,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
           "version": 0,
           "emailVerifiedAt": "yyyy-MM-dd HH:mm:ss",
           "role": {
-            "createdAt": "2026-03-16 19:36:47",
-            "updatedAt": "2026-03-16 19:36:47",
+            "createdAt": "2026-03-16 20:06:36",
+            "updatedAt": "2026-03-16 20:06:36",
             "id": "",
             "name": "",
             "status": true,
@@ -1910,8 +1910,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
             ]
           },
           "tenant": {
-            "createdAt": "2026-03-16 19:36:47",
-            "updatedAt": "2026-03-16 19:36:47",
+            "createdAt": "2026-03-16 20:06:36",
+            "updatedAt": "2026-03-16 20:06:36",
             "id": "",
             "businessTradingName": "",
             "legalBusinessName": "",
@@ -2006,8 +2006,8 @@ Return void.
 |createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |user|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |└─id|string|false|No comments found.|-||
 |└─email|string|false|No comments found.|-||
 |└─tenantId|string|false|No comments found.|-||
@@ -2025,22 +2025,22 @@ Return void.
 |└─version|int32|false|No comments found.|-|0|
 |└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -2086,8 +2086,8 @@ Return void.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -2105,22 +2105,22 @@ Return void.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -2166,8 +2166,8 @@ Return void.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -2187,8 +2187,8 @@ Return void.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |└─id|string|false|No comments found.|-||
 |└─businessTradingName|string|false|e.g. Business name|-||
 |└─legalBusinessName|string|false|No comments found.|-||
@@ -2234,8 +2234,8 @@ Return void.
 |└─status|boolean|false|No comments found.|-|true|
 |└─createdBy|string|false|No comments found.|-||
 |└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -2253,22 +2253,22 @@ Return void.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -2314,8 +2314,8 @@ Return void.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -2333,16 +2333,16 @@ Return void.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -2405,8 +2405,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
   "createdAt": "yyyy-MM-dd HH:mm:ss",
   "updatedAt": "yyyy-MM-dd HH:mm:ss",
   "user": {
-    "createdAt": "2026-03-16 19:36:47",
-    "updatedAt": "2026-03-16 19:36:47",
+    "createdAt": "2026-03-16 20:06:36",
+    "updatedAt": "2026-03-16 20:06:36",
     "id": "",
     "email": "",
     "tenantId": "",
@@ -2424,16 +2424,16 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
     "version": 0,
     "emailVerifiedAt": "yyyy-MM-dd HH:mm:ss",
     "role": {
-      "createdAt": "2026-03-16 19:36:47",
-      "updatedAt": "2026-03-16 19:36:47",
+      "createdAt": "2026-03-16 20:06:36",
+      "updatedAt": "2026-03-16 20:06:36",
       "id": "",
       "name": "",
       "status": true,
       "slug": "",
       "permissions": [
         {
-          "createdAt": "2026-03-16 19:36:47",
-          "updatedAt": "2026-03-16 19:36:47",
+          "createdAt": "2026-03-16 20:06:36",
+          "updatedAt": "2026-03-16 20:06:36",
           "id": "",
           "name": "",
           "status": true,
@@ -2442,8 +2442,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
       ]
     },
     "tenant": {
-      "createdAt": "2026-03-16 19:36:47",
-      "updatedAt": "2026-03-16 19:36:47",
+      "createdAt": "2026-03-16 20:06:36",
+      "updatedAt": "2026-03-16 20:06:36",
       "id": "",
       "businessTradingName": "",
       "legalBusinessName": "",
@@ -2495,8 +2495,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
       "status": true,
       "createdBy": "",
       "user": {
-        "createdAt": "2026-03-16 19:36:47",
-        "updatedAt": "2026-03-16 19:36:47",
+        "createdAt": "2026-03-16 20:06:36",
+        "updatedAt": "2026-03-16 20:06:36",
         "id": "",
         "email": "",
         "tenantId": "",
@@ -2514,16 +2514,16 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
         "version": 0,
         "emailVerifiedAt": "yyyy-MM-dd HH:mm:ss",
         "role": {
-          "createdAt": "2026-03-16 19:36:47",
-          "updatedAt": "2026-03-16 19:36:47",
+          "createdAt": "2026-03-16 20:06:36",
+          "updatedAt": "2026-03-16 20:06:36",
           "id": "",
           "name": "",
           "status": true,
           "slug": "",
           "permissions": [
             {
-              "createdAt": "2026-03-16 19:36:47",
-              "updatedAt": "2026-03-16 19:36:47",
+              "createdAt": "2026-03-16 20:06:36",
+              "updatedAt": "2026-03-16 20:06:36",
               "id": "",
               "name": "",
               "status": true,
@@ -2532,8 +2532,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
           ]
         },
         "tenant": {
-          "createdAt": "2026-03-16 19:36:47",
-          "updatedAt": "2026-03-16 19:36:47",
+          "createdAt": "2026-03-16 20:06:36",
+          "updatedAt": "2026-03-16 20:06:36",
           "id": "",
           "businessTradingName": "",
           "legalBusinessName": "",
@@ -2585,8 +2585,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
           "status": true,
           "createdBy": "",
           "user": {
-            "createdAt": "2026-03-16 19:36:47",
-            "updatedAt": "2026-03-16 19:36:47",
+            "createdAt": "2026-03-16 20:06:36",
+            "updatedAt": "2026-03-16 20:06:36",
             "id": "",
             "email": "",
             "tenantId": "",
@@ -2615,8 +2615,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
     }
   },
   "tenant": {
-    "createdAt": "2026-03-16 19:36:47",
-    "updatedAt": "2026-03-16 19:36:47",
+    "createdAt": "2026-03-16 20:06:36",
+    "updatedAt": "2026-03-16 20:06:36",
     "id": "",
     "businessTradingName": "",
     "legalBusinessName": "",
@@ -2668,8 +2668,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
     "status": true,
     "createdBy": "",
     "user": {
-      "createdAt": "2026-03-16 19:36:47",
-      "updatedAt": "2026-03-16 19:36:47",
+      "createdAt": "2026-03-16 20:06:36",
+      "updatedAt": "2026-03-16 20:06:36",
       "id": "",
       "email": "",
       "tenantId": "",
@@ -2687,16 +2687,16 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
       "version": 0,
       "emailVerifiedAt": "yyyy-MM-dd HH:mm:ss",
       "role": {
-        "createdAt": "2026-03-16 19:36:47",
-        "updatedAt": "2026-03-16 19:36:47",
+        "createdAt": "2026-03-16 20:06:36",
+        "updatedAt": "2026-03-16 20:06:36",
         "id": "",
         "name": "",
         "status": true,
         "slug": "",
         "permissions": [
           {
-            "createdAt": "2026-03-16 19:36:47",
-            "updatedAt": "2026-03-16 19:36:47",
+            "createdAt": "2026-03-16 20:06:36",
+            "updatedAt": "2026-03-16 20:06:36",
             "id": "",
             "name": "",
             "status": true,
@@ -2705,8 +2705,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
         ]
       },
       "tenant": {
-        "createdAt": "2026-03-16 19:36:47",
-        "updatedAt": "2026-03-16 19:36:47",
+        "createdAt": "2026-03-16 20:06:36",
+        "updatedAt": "2026-03-16 20:06:36",
         "id": "",
         "businessTradingName": "",
         "legalBusinessName": "",
@@ -2758,8 +2758,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
         "status": true,
         "createdBy": "",
         "user": {
-          "createdAt": "2026-03-16 19:36:47",
-          "updatedAt": "2026-03-16 19:36:47",
+          "createdAt": "2026-03-16 20:06:36",
+          "updatedAt": "2026-03-16 20:06:36",
           "id": "",
           "email": "",
           "tenantId": "",
@@ -2777,8 +2777,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
           "version": 0,
           "emailVerifiedAt": "yyyy-MM-dd HH:mm:ss",
           "role": {
-            "createdAt": "2026-03-16 19:36:47",
-            "updatedAt": "2026-03-16 19:36:47",
+            "createdAt": "2026-03-16 20:06:36",
+            "updatedAt": "2026-03-16 20:06:36",
             "id": "",
             "name": "",
             "status": true,
@@ -2790,8 +2790,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
             ]
           },
           "tenant": {
-            "createdAt": "2026-03-16 19:36:47",
-            "updatedAt": "2026-03-16 19:36:47",
+            "createdAt": "2026-03-16 20:06:36",
+            "updatedAt": "2026-03-16 20:06:36",
             "id": "",
             "businessTradingName": "",
             "legalBusinessName": "",
@@ -2874,8 +2874,8 @@ Return void.
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
 |paymentSecret|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:47"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:36"|
 |└─id|string|false|No comments found.|-||
 |└─tenantId|string|false|No comments found.|-||
 |└─paymentGateway|enum|false|No comments found.<br/>[Enum: PAYSTACK, FLUTTERWAVE, STRIPE, OFFLINE, MONNIFY]|-|PAYSTACK|
@@ -2886,8 +2886,8 @@ Return void.
 ```bash
 curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.com/v1/internal/test/update/payment-secret.do' --data '{
   "paymentSecret": {
-    "createdAt": "2026-03-16 19:36:47",
-    "updatedAt": "2026-03-16 19:36:47",
+    "createdAt": "2026-03-16 20:06:36",
+    "updatedAt": "2026-03-16 20:06:36",
     "id": "",
     "tenantId": "",
     "paymentGateway": "PAYSTACK",
@@ -2903,7 +2903,7 @@ Return void.
 ```
 
 ## Whatsapp Authentication
-### Initiate OTP<br>A One Time Password is sent to user whatsapp number to verify their identity
+### Initiate OTP
 **URL:** https://api.shopsynch.com/v1/auth/phone/initiate.do
 
 **Type:** POST
@@ -2911,8 +2911,7 @@ Return void.
 
 **Content-Type:** application/json
 
-**Description:** Initiate OTP
-A One Time Password is sent to user whatsapp number to verify their identity
+**Description:** A One Time Password is sent to user whatsapp number to verify their identity
 
 
 **Body-parameters:**
@@ -3008,7 +3007,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 ```
 
 ## Payment Gateway
-### Resolve Account Number<br>In test mode use: &lt;br/&gt;<br>{<br>    &quot;accountNumber&quot;: &quot;8131974410&quot;,<br>    &quot;bankCode&quot;: &quot;001&quot;,<br>    &quot;gateway&quot;: &quot;PAYSTACK&quot;<br>}
+### Resolve Account Number:
 **URL:** https://api.shopsynch.com/v1/payment-gateway/verify-account-number.do
 
 **Type:** POST
@@ -3016,13 +3015,12 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 **Content-Type:** application/json
 
-**Description:** Resolve Account Number
-In test mode use: <br/>
-{
-    "accountNumber": "8131974410",
-    "bankCode": "001",
-    "gateway": "PAYSTACK"
-}
+**Description:** In test mode use
+     {
+     *     "accountNumber": "8131974410",
+     *     "bankCode": "001",
+     *     "gateway": "PAYSTACK"
+     * }
 
 
 **Body-parameters:**
@@ -3059,11 +3057,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 ```
 
 ## Promo Ad API
-Promo ads enable store owners or admins to seamlessly add advertisements to their homepage or any other page on their website.
-Whether it&apos;s in the hero section or any other part of the webpage,
-this feature provides the flexibility to display promotions exactly where they’ll be most effective,
-helping you grab attention and increase engagement.
-### Create Promo Ad<br>This API creates a new promotional ad.
+### Create Promo Ad
 **URL:** https://api.shopsynch.com/v1/promo-ads.do
 
 **Type:** POST
@@ -3071,8 +3065,7 @@ helping you grab attention and increase engagement.
 
 **Content-Type:** application/json
 
-**Description:** Create Promo Ad
-This API creates a new promotional ad.
+**Description:** This API creates a new promotional ad.
 
 
 **Body-parameters:**
@@ -3136,8 +3129,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:40"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:40"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:33"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:33"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -3165,15 +3158,15 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-03-16 19:36:40",
-    "updatedAt": "2026-03-16 19:36:40"
+    "createdAt": "2026-03-16 20:06:33",
+    "updatedAt": "2026-03-16 20:06:33"
   },
   "message": "",
   "status": true
 }
 ```
 
-### Update Promo Ad<br>This API updates a specific promotional ad by its ID.
+### Update Promo Ad
 **URL:** https://api.shopsynch.com/v1/promo-ads/{id}.do
 
 **Type:** PATCH
@@ -3181,8 +3174,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 **Content-Type:** application/json
 
-**Description:** Update Promo Ad
-This API updates a specific promotional ad by its ID.
+**Description:** This API updates a specific promotional ad by its ID.
 
 
 **Path-parameters:**
@@ -3233,8 +3225,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:40"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:40"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:33"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:33"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -3262,15 +3254,15 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-03-16 19:36:40",
-    "updatedAt": "2026-03-16 19:36:40"
+    "createdAt": "2026-03-16 20:06:33",
+    "updatedAt": "2026-03-16 20:06:33"
   },
   "message": "",
   "status": true
 }
 ```
 
-### Get Promo Ad by ID<br>This API retrieves a specific promotional ad by its ID.
+### Get Promo Ad by ID
 **URL:** https://api.shopsynch.com/v1/promo-ads/{id}.do
 
 **Type:** GET
@@ -3278,8 +3270,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Get Promo Ad by ID
-This API retrieves a specific promotional ad by its ID.
+**Description:** This API retrieves a specific promotional ad by its ID.
 
 
 **Path-parameters:**
@@ -3312,8 +3303,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promo-ads/{id}.do'
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:40"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:40"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:33"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:33"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -3341,15 +3332,15 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promo-ads/{id}.do'
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-03-16 19:36:40",
-    "updatedAt": "2026-03-16 19:36:40"
+    "createdAt": "2026-03-16 20:06:33",
+    "updatedAt": "2026-03-16 20:06:33"
   },
   "message": "",
   "status": true
 }
 ```
 
-### Fetch Promo Ads.<br>This API retrieves a list of promotional ads filtered by status and paginated using a cursor.<br>The response includes promotional ads in either DRAFT or PUBLISHED status.
+### Fetch Promo Ads.
 **URL:** https://api.shopsynch.com/v1/promo-ads.do
 
 **Type:** GET
@@ -3357,8 +3348,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promo-ads/{id}.do'
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Fetch Promo Ads.
-This API retrieves a list of promotional ads filtered by status and paginated using a cursor.
+**Description:** This API retrieves a list of promotional ads filtered by status and paginated using a cursor.
 The response includes promotional ads in either DRAFT or PUBLISHED status.
 
 
@@ -3395,8 +3385,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promo-ads.do?status=&cursor=&lim
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 19:36:40"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:40"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 20:06:34"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:34"|
 |└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
@@ -3427,8 +3417,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promo-ads.do?status=&cursor=&lim
         ],
         "status": "",
         "metadata": {},
-        "createdAt": "2026-03-16 19:36:40",
-        "updatedAt": "2026-03-16 19:36:40"
+        "createdAt": "2026-03-16 20:06:34",
+        "updatedAt": "2026-03-16 20:06:34"
       }
     ],
     "nextCursor": "yyyy-MM-dd HH:mm:ss"
@@ -3438,7 +3428,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promo-ads.do?status=&cursor=&lim
 }
 ```
 
-### Fetch Published Promo Ads.<br>This API retrieves a list of published promotional ads.<br>The response includes promotional ads in PUBLISHED status.
+### Fetch Published Promo Ads.
 **URL:** https://api.shopsynch.com/v1/promo-ads/published.do
 
 **Type:** GET
@@ -3446,8 +3436,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promo-ads.do?status=&cursor=&lim
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Fetch Published Promo Ads.
-This API retrieves a list of published promotional ads.
+**Description:** This API retrieves a list of published promotional ads.
 The response includes promotional ads in PUBLISHED status.
 
 
@@ -3481,8 +3470,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promo-ads/published.do?limit=3'
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:40"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:40"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:34"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:34"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -3511,8 +3500,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promo-ads/published.do?limit=3'
       ],
       "status": "",
       "metadata": {},
-      "createdAt": "2026-03-16 19:36:40",
-      "updatedAt": "2026-03-16 19:36:40"
+      "createdAt": "2026-03-16 20:06:34",
+      "updatedAt": "2026-03-16 20:06:34"
     }
   ],
   "message": "",
@@ -3520,7 +3509,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promo-ads/published.do?limit=3'
 }
 ```
 
-### Update Promo Ad Status.<br>This API updates the status of a specific promotional ad.<br>The response includes promotional ads in PUBLISHED status.
+### Update Promo Ad Status.
 **URL:** https://api.shopsynch.com/v1/promo-ads/update/{id}/status/{status}.do
 
 **Type:** PATCH
@@ -3528,8 +3517,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promo-ads/published.do?limit=3'
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Update Promo Ad Status.
-This API updates the status of a specific promotional ad.
+**Description:** This API updates the status of a specific promotional ad.
 The response includes promotional ads in PUBLISHED status.
 
 
@@ -3561,7 +3549,7 @@ curl -X PATCH -k -i 'https://api.shopsynch.com/v1/promo-ads/update/{id}/status/{
 }
 ```
 
-### Delete Promo Ad.<br>This API deletes a specific promotional ad.
+### Delete Promo Ad.
 **URL:** https://api.shopsynch.com/v1/promo-ads/{id}.do
 
 **Type:** DELETE
@@ -3569,8 +3557,7 @@ curl -X PATCH -k -i 'https://api.shopsynch.com/v1/promo-ads/update/{id}/status/{
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Delete Promo Ad.
-This API deletes a specific promotional ad.
+**Description:** This API deletes a specific promotional ad.
 
 
 **Path-parameters:**
@@ -3633,8 +3620,8 @@ The response includes orders in PUBLISHED status.
 |customerId|string|false|Filter by customer ID|-||
 |productId|string|false|Filter by product ID (orders that contain a specific product)|-||
 |authCustomer|string|false|Authenticated customer ID (internal use)|-||
-|createdAt|string|false|No comments found.|-|"2026-03-16 19:36:43"|
-|updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:43"|
+|createdAt|string|false|No comments found.|-|"2026-03-16 20:06:34"|
+|updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:34"|
 |accountNonExpired|boolean|false|No comments found.|-|true|
 |accountNonLocked|boolean|false|No comments found.|-|true|
 |credentialsNonExpired|boolean|false|No comments found.|-|true|
@@ -3652,8 +3639,8 @@ The response includes orders in PUBLISHED status.
 |address|string|false|No comments found.|-||
 |version|int32|false|No comments found.|-|0|
 |addresses|array|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:43"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:43"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:34"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:34"|
 |└─id|string|false|No comments found.|-||
 |└─fullAddress|string|false|No comments found.|-||
 |└─street|string|false|No comments found.|-||
@@ -3666,8 +3653,8 @@ The response includes orders in PUBLISHED status.
 |└─localGovernment|string|false|No comments found.|-||
 |└─country|string|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:43"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:43"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |└─id|string|false|No comments found.|-||
 |└─businessTradingName|string|false|e.g. Business name|-||
 |└─legalBusinessName|string|false|No comments found.|-||
@@ -3713,8 +3700,8 @@ The response includes orders in PUBLISHED status.
 |└─status|boolean|false|No comments found.|-|true|
 |└─createdBy|string|false|No comments found.|-||
 |└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:43"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:43"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -3732,22 +3719,22 @@ The response includes orders in PUBLISHED status.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:43"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:43"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -3793,8 +3780,8 @@ The response includes orders in PUBLISHED status.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -3812,22 +3799,22 @@ The response includes orders in PUBLISHED status.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -3873,8 +3860,8 @@ The response includes orders in PUBLISHED status.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -3897,15 +3884,15 @@ The response includes orders in PUBLISHED status.
 |└─name|string|false|No comments found.|-||
 |└─slug|string|false|No comments found.|-||
 |role|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |└─id|string|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
 |└─slug|string|false|No comments found.|-||
 |└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
@@ -3913,7 +3900,7 @@ The response includes orders in PUBLISHED status.
 
 **Request-example:**
 ```bash
-curl -X GET -k -i 'https://api.shopsynch.com/v1/customer-orders.do?page=0&limit=100&sortField=CREATED_AT&sortDir=DESC&orderNumber=&search=&status=true&paymentStatus=&dateFrom=&dateTo=&minAmount=0.0&maxAmount=0.0&customerId=&productId=&authCustomer=&createdAt="2026-03-16 19:36:44"&updatedAt="2026-03-16 19:36:44"&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&businessType=&businessRegistrationNumber=&businessCountry=&businessCity=&businessAddress=&paystackSubaccountCode=&accountName=&accountNumber=&bankName=&businessStorefrontUrl=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&bankAccountVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug='
+curl -X GET -k -i 'https://api.shopsynch.com/v1/customer-orders.do?page=0&limit=100&sortField=CREATED_AT&sortDir=DESC&orderNumber=&search=&status=true&paymentStatus=&dateFrom=&dateTo=&minAmount=0.0&maxAmount=0.0&customerId=&productId=&authCustomer=&createdAt="2026-03-16 20:06:35"&updatedAt="2026-03-16 20:06:35"&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&businessType=&businessRegistrationNumber=&businessCountry=&businessCity=&businessAddress=&paystackSubaccountCode=&accountName=&accountNumber=&bankName=&businessStorefrontUrl=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&bankAccountVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug='
 ```
 **Response-fields:**
 
@@ -4025,8 +4012,8 @@ This API retrieves a list of items in a specific order.
 
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
-|createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |accountNonExpired|boolean|false|No comments found.|-|true|
 |accountNonLocked|boolean|false|No comments found.|-|true|
 |credentialsNonExpired|boolean|false|No comments found.|-|true|
@@ -4044,8 +4031,8 @@ This API retrieves a list of items in a specific order.
 |address|string|false|No comments found.|-||
 |version|int32|false|No comments found.|-|0|
 |addresses|array|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |└─id|string|false|No comments found.|-||
 |└─fullAddress|string|false|No comments found.|-||
 |└─street|string|false|No comments found.|-||
@@ -4058,8 +4045,8 @@ This API retrieves a list of items in a specific order.
 |└─localGovernment|string|false|No comments found.|-||
 |└─country|string|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |└─id|string|false|No comments found.|-||
 |└─businessTradingName|string|false|e.g. Business name|-||
 |└─legalBusinessName|string|false|No comments found.|-||
@@ -4105,8 +4092,8 @@ This API retrieves a list of items in a specific order.
 |└─status|boolean|false|No comments found.|-|true|
 |└─createdBy|string|false|No comments found.|-||
 |└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -4124,22 +4111,22 @@ This API retrieves a list of items in a specific order.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -4185,8 +4172,8 @@ This API retrieves a list of items in a specific order.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -4204,22 +4191,22 @@ This API retrieves a list of items in a specific order.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -4265,8 +4252,8 @@ This API retrieves a list of items in a specific order.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -4289,15 +4276,15 @@ This API retrieves a list of items in a specific order.
 |└─name|string|false|No comments found.|-||
 |└─slug|string|false|No comments found.|-||
 |role|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |└─id|string|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
 |└─slug|string|false|No comments found.|-||
 |└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
@@ -4305,7 +4292,7 @@ This API retrieves a list of items in a specific order.
 
 **Request-example:**
 ```bash
-curl -X GET -k -i 'https://api.shopsynch.com/v1/customer-orders/{orderId}/items.do?createdAt="2026-03-16 19:36:44"&updatedAt="2026-03-16 19:36:44"&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&status=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&businessType=&businessRegistrationNumber=&businessCountry=&businessCity=&businessAddress=&paystackSubaccountCode=&accountName=&accountNumber=&bankName=&businessStorefrontUrl=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&bankAccountVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug='
+curl -X GET -k -i 'https://api.shopsynch.com/v1/customer-orders/{orderId}/items.do?createdAt="2026-03-16 20:06:35"&updatedAt="2026-03-16 20:06:35"&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&status=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&businessType=&businessRegistrationNumber=&businessCountry=&businessCity=&businessAddress=&paystackSubaccountCode=&accountName=&accountNumber=&bankName=&businessStorefrontUrl=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&bankAccountVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug='
 ```
 **Response-fields:**
 
@@ -4358,8 +4345,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/customer-orders/{orderId}/items.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:35"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -4422,8 +4409,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/customer-orders/{orderId}/items.
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-03-16 19:36:44",
-        "updatedAt": "2026-03-16 19:36:44"
+        "createdAt": "2026-03-16 20:06:35",
+        "updatedAt": "2026-03-16 20:06:35"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -4432,8 +4419,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/customer-orders/{orderId}/items.
 ```
 
 ## Cart Management
-This API provides endpoints for managing customer carts.
-### List Items In Cart.<br>This API retrieves a list of items in the cart.
+### List Items In Cart.
 **URL:** https://api.shopsynch.com/v1/carts/items.do
 
 **Type:** GET
@@ -4441,8 +4427,7 @@ This API provides endpoints for managing customer carts.
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** List Items In Cart.
-This API retrieves a list of items in the cart.
+**Description:** This API retrieves a list of items in the cart.
 
 **Request-headers:**
 
@@ -4455,8 +4440,8 @@ This API retrieves a list of items in the cart.
 
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
-|createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |accountNonExpired|boolean|false|No comments found.|-|true|
 |accountNonLocked|boolean|false|No comments found.|-|true|
 |credentialsNonExpired|boolean|false|No comments found.|-|true|
@@ -4474,8 +4459,8 @@ This API retrieves a list of items in the cart.
 |address|string|false|No comments found.|-||
 |version|int32|false|No comments found.|-|0|
 |addresses|array|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |└─id|string|false|No comments found.|-||
 |└─fullAddress|string|false|No comments found.|-||
 |└─street|string|false|No comments found.|-||
@@ -4488,8 +4473,8 @@ This API retrieves a list of items in the cart.
 |└─localGovernment|string|false|No comments found.|-||
 |└─country|string|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |└─id|string|false|No comments found.|-||
 |└─businessTradingName|string|false|e.g. Business name|-||
 |└─legalBusinessName|string|false|No comments found.|-||
@@ -4535,8 +4520,8 @@ This API retrieves a list of items in the cart.
 |└─status|boolean|false|No comments found.|-|true|
 |└─createdBy|string|false|No comments found.|-||
 |└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -4554,22 +4539,22 @@ This API retrieves a list of items in the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -4615,8 +4600,8 @@ This API retrieves a list of items in the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -4634,22 +4619,22 @@ This API retrieves a list of items in the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -4695,8 +4680,8 @@ This API retrieves a list of items in the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -4719,15 +4704,15 @@ This API retrieves a list of items in the cart.
 |└─name|string|false|No comments found.|-||
 |└─slug|string|false|No comments found.|-||
 |role|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |└─id|string|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
 |└─slug|string|false|No comments found.|-||
 |└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
@@ -4735,7 +4720,7 @@ This API retrieves a list of items in the cart.
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-Session-Id" -i 'https://api.shopsynch.com/v1/carts/items.do?createdAt="2026-03-16 19:36:51"&updatedAt="2026-03-16 19:36:51"&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&status=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&businessType=&businessRegistrationNumber=&businessCountry=&businessCity=&businessAddress=&paystackSubaccountCode=&accountName=&accountNumber=&bankName=&businessStorefrontUrl=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&bankAccountVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug='
+curl -X GET -k -H "X-Session-Id" -i 'https://api.shopsynch.com/v1/carts/items.do?createdAt="2026-03-16 20:06:37"&updatedAt="2026-03-16 20:06:37"&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&status=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&businessType=&businessRegistrationNumber=&businessCountry=&businessCity=&businessAddress=&paystackSubaccountCode=&accountName=&accountNumber=&bankName=&businessStorefrontUrl=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&bankAccountVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug='
 ```
 **Response-fields:**
 
@@ -4795,7 +4780,7 @@ curl -X GET -k -H "X-Session-Id" -i 'https://api.shopsynch.com/v1/carts/items.do
 }
 ```
 
-### Add Item To Cart.<br>This API adds an item to the cart.
+### Add Item To Cart.
 **URL:** https://api.shopsynch.com/v1/carts/add.do
 
 **Type:** POST
@@ -4803,8 +4788,7 @@ curl -X GET -k -H "X-Session-Id" -i 'https://api.shopsynch.com/v1/carts/items.do
 
 **Content-Type:** application/json
 
-**Description:** Add Item To Cart.
-This API adds an item to the cart.
+**Description:** This API adds an item to the cart.
 
 **Request-headers:**
 
@@ -4817,8 +4801,8 @@ This API adds an item to the cart.
 
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
-|createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |accountNonExpired|boolean|false|No comments found.|-|true|
 |accountNonLocked|boolean|false|No comments found.|-|true|
 |credentialsNonExpired|boolean|false|No comments found.|-|true|
@@ -4836,8 +4820,8 @@ This API adds an item to the cart.
 |address|string|false|No comments found.|-||
 |version|int32|false|No comments found.|-|0|
 |addresses|array|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |└─id|string|false|No comments found.|-||
 |└─fullAddress|string|false|No comments found.|-||
 |└─street|string|false|No comments found.|-||
@@ -4850,8 +4834,8 @@ This API adds an item to the cart.
 |└─localGovernment|string|false|No comments found.|-||
 |└─country|string|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |└─id|string|false|No comments found.|-||
 |└─businessTradingName|string|false|e.g. Business name|-||
 |└─legalBusinessName|string|false|No comments found.|-||
@@ -4897,8 +4881,8 @@ This API adds an item to the cart.
 |└─status|boolean|false|No comments found.|-|true|
 |└─createdBy|string|false|No comments found.|-||
 |└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -4916,22 +4900,22 @@ This API adds an item to the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -4977,8 +4961,8 @@ This API adds an item to the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -4996,22 +4980,22 @@ This API adds an item to the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -5057,8 +5041,8 @@ This API adds an item to the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -5081,15 +5065,15 @@ This API adds an item to the cart.
 |└─name|string|false|No comments found.|-||
 |└─slug|string|false|No comments found.|-||
 |role|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |└─id|string|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
 |└─slug|string|false|No comments found.|-||
 |└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
@@ -5108,7 +5092,7 @@ This API adds an item to the cart.
 
 **Request-example:**
 ```bash
-curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https://api.shopsynch.com/v1/carts/add.do?createdAt="2026-03-16 19:36:51"&updatedAt="2026-03-16 19:36:51"&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&status=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&businessType=&businessRegistrationNumber=&businessCountry=&businessCity=&businessAddress=&paystackSubaccountCode=&accountName=&accountNumber=&bankName=&businessStorefrontUrl=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&bankAccountVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug=' --data '{
+curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https://api.shopsynch.com/v1/carts/add.do?createdAt="2026-03-16 20:06:37"&updatedAt="2026-03-16 20:06:37"&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&status=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&businessType=&businessRegistrationNumber=&businessCountry=&businessCity=&businessAddress=&paystackSubaccountCode=&accountName=&accountNumber=&bankName=&businessStorefrontUrl=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&bankAccountVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug=' --data '{
   "productId": "",
   "variationId": "",
   "tenantId": "",
@@ -5173,7 +5157,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 }
 ```
 
-### Remove Item From Cart.<br>This API removes an item from the cart.
+### Remove Item From Cart.
 **URL:** https://api.shopsynch.com/v1/carts/remove/{carItemId}.do
 
 **Type:** PATCH
@@ -5181,8 +5165,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Remove Item From Cart.
-This API removes an item from the cart.
+**Description:** This API removes an item from the cart.
 
 **Request-headers:**
 
@@ -5201,8 +5184,8 @@ This API removes an item from the cart.
 
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
-|createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |accountNonExpired|boolean|false|No comments found.|-|true|
 |accountNonLocked|boolean|false|No comments found.|-|true|
 |credentialsNonExpired|boolean|false|No comments found.|-|true|
@@ -5220,8 +5203,8 @@ This API removes an item from the cart.
 |address|string|false|No comments found.|-||
 |version|int32|false|No comments found.|-|0|
 |addresses|array|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |└─id|string|false|No comments found.|-||
 |└─fullAddress|string|false|No comments found.|-||
 |└─street|string|false|No comments found.|-||
@@ -5234,8 +5217,8 @@ This API removes an item from the cart.
 |└─localGovernment|string|false|No comments found.|-||
 |└─country|string|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |└─id|string|false|No comments found.|-||
 |└─businessTradingName|string|false|e.g. Business name|-||
 |└─legalBusinessName|string|false|No comments found.|-||
@@ -5281,8 +5264,8 @@ This API removes an item from the cart.
 |└─status|boolean|false|No comments found.|-|true|
 |└─createdBy|string|false|No comments found.|-||
 |└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -5300,22 +5283,22 @@ This API removes an item from the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -5361,8 +5344,8 @@ This API removes an item from the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -5380,22 +5363,22 @@ This API removes an item from the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -5441,8 +5424,8 @@ This API removes an item from the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -5465,15 +5448,15 @@ This API removes an item from the cart.
 |└─name|string|false|No comments found.|-||
 |└─slug|string|false|No comments found.|-||
 |role|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |└─id|string|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
 |└─slug|string|false|No comments found.|-||
 |└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
@@ -5501,7 +5484,7 @@ curl -X PATCH -k -H "X-Session-Id" -i 'https://api.shopsynch.com/v1/carts/remove
 }
 ```
 
-### Increment Item Quantity.<br>This API increments the quantity of an item in the cart.
+### Increment Item Quantity.
 **URL:** https://api.shopsynch.com/v1/carts/item/increment/quantity/{cartId}.do
 
 **Type:** PATCH
@@ -5509,8 +5492,7 @@ curl -X PATCH -k -H "X-Session-Id" -i 'https://api.shopsynch.com/v1/carts/remove
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Increment Item Quantity.
-This API increments the quantity of an item in the cart.
+**Description:** This API increments the quantity of an item in the cart.
 
 **Request-headers:**
 
@@ -5529,8 +5511,8 @@ This API increments the quantity of an item in the cart.
 
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
-|createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |accountNonExpired|boolean|false|No comments found.|-|true|
 |accountNonLocked|boolean|false|No comments found.|-|true|
 |credentialsNonExpired|boolean|false|No comments found.|-|true|
@@ -5548,8 +5530,8 @@ This API increments the quantity of an item in the cart.
 |address|string|false|No comments found.|-||
 |version|int32|false|No comments found.|-|0|
 |addresses|array|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |└─id|string|false|No comments found.|-||
 |└─fullAddress|string|false|No comments found.|-||
 |└─street|string|false|No comments found.|-||
@@ -5562,8 +5544,8 @@ This API increments the quantity of an item in the cart.
 |└─localGovernment|string|false|No comments found.|-||
 |└─country|string|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |└─id|string|false|No comments found.|-||
 |└─businessTradingName|string|false|e.g. Business name|-||
 |└─legalBusinessName|string|false|No comments found.|-||
@@ -5609,8 +5591,8 @@ This API increments the quantity of an item in the cart.
 |└─status|boolean|false|No comments found.|-|true|
 |└─createdBy|string|false|No comments found.|-||
 |└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -5628,22 +5610,22 @@ This API increments the quantity of an item in the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -5689,8 +5671,8 @@ This API increments the quantity of an item in the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -5708,22 +5690,22 @@ This API increments the quantity of an item in the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -5769,8 +5751,8 @@ This API increments the quantity of an item in the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -5793,15 +5775,15 @@ This API increments the quantity of an item in the cart.
 |└─name|string|false|No comments found.|-||
 |└─slug|string|false|No comments found.|-||
 |role|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |└─id|string|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
 |└─slug|string|false|No comments found.|-||
 |└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
@@ -5829,7 +5811,7 @@ curl -X PATCH -k -H "X-Session-Id" -i 'https://api.shopsynch.com/v1/carts/item/i
 }
 ```
 
-### Decrement Item Quantity.<br>This API decrements the quantity of an item in the cart.
+### Decrement Item Quantity.
 **URL:** https://api.shopsynch.com/v1/carts/item/decrement/quantity/{cartId}.do
 
 **Type:** PATCH
@@ -5837,8 +5819,7 @@ curl -X PATCH -k -H "X-Session-Id" -i 'https://api.shopsynch.com/v1/carts/item/i
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Decrement Item Quantity.
-This API decrements the quantity of an item in the cart.
+**Description:** This API decrements the quantity of an item in the cart.
 
 **Request-headers:**
 
@@ -5857,8 +5838,8 @@ This API decrements the quantity of an item in the cart.
 
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
-|createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |accountNonExpired|boolean|false|No comments found.|-|true|
 |accountNonLocked|boolean|false|No comments found.|-|true|
 |credentialsNonExpired|boolean|false|No comments found.|-|true|
@@ -5876,8 +5857,8 @@ This API decrements the quantity of an item in the cart.
 |address|string|false|No comments found.|-||
 |version|int32|false|No comments found.|-|0|
 |addresses|array|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |└─id|string|false|No comments found.|-||
 |└─fullAddress|string|false|No comments found.|-||
 |└─street|string|false|No comments found.|-||
@@ -5890,8 +5871,8 @@ This API decrements the quantity of an item in the cart.
 |└─localGovernment|string|false|No comments found.|-||
 |└─country|string|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |└─id|string|false|No comments found.|-||
 |└─businessTradingName|string|false|e.g. Business name|-||
 |└─legalBusinessName|string|false|No comments found.|-||
@@ -5937,8 +5918,8 @@ This API decrements the quantity of an item in the cart.
 |└─status|boolean|false|No comments found.|-|true|
 |└─createdBy|string|false|No comments found.|-||
 |└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -5956,22 +5937,22 @@ This API decrements the quantity of an item in the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -6017,8 +5998,8 @@ This API decrements the quantity of an item in the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -6036,22 +6017,22 @@ This API decrements the quantity of an item in the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -6097,8 +6078,8 @@ This API decrements the quantity of an item in the cart.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -6121,15 +6102,15 @@ This API decrements the quantity of an item in the cart.
 |└─name|string|false|No comments found.|-||
 |└─slug|string|false|No comments found.|-||
 |role|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |└─id|string|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
 |└─slug|string|false|No comments found.|-||
 |└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
@@ -6157,7 +6138,7 @@ curl -X PATCH -k -H "X-Session-Id" -i 'https://api.shopsynch.com/v1/carts/item/d
 }
 ```
 
-### Clear Cart.<br>This API clears the cart for the authenticated customer or via sessionId.
+### Clear Cart.
 **URL:** https://api.shopsynch.com/v1/carts/clear.do
 
 **Type:** DELETE
@@ -6165,8 +6146,7 @@ curl -X PATCH -k -H "X-Session-Id" -i 'https://api.shopsynch.com/v1/carts/item/d
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Clear Cart.
-This API clears the cart for the authenticated customer or via sessionId.
+**Description:** This API clears the cart for the authenticated customer or via sessionId.
 
 **Request-headers:**
 
@@ -6179,8 +6159,8 @@ This API clears the cart for the authenticated customer or via sessionId.
 
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
-|createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |accountNonExpired|boolean|false|No comments found.|-|true|
 |accountNonLocked|boolean|false|No comments found.|-|true|
 |credentialsNonExpired|boolean|false|No comments found.|-|true|
@@ -6198,8 +6178,8 @@ This API clears the cart for the authenticated customer or via sessionId.
 |address|string|false|No comments found.|-||
 |version|int32|false|No comments found.|-|0|
 |addresses|array|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |└─id|string|false|No comments found.|-||
 |└─fullAddress|string|false|No comments found.|-||
 |└─street|string|false|No comments found.|-||
@@ -6212,8 +6192,8 @@ This API clears the cart for the authenticated customer or via sessionId.
 |└─localGovernment|string|false|No comments found.|-||
 |└─country|string|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |└─id|string|false|No comments found.|-||
 |└─businessTradingName|string|false|e.g. Business name|-||
 |└─legalBusinessName|string|false|No comments found.|-||
@@ -6259,8 +6239,8 @@ This API clears the cart for the authenticated customer or via sessionId.
 |└─status|boolean|false|No comments found.|-|true|
 |└─createdBy|string|false|No comments found.|-||
 |└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -6278,22 +6258,22 @@ This API clears the cart for the authenticated customer or via sessionId.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -6339,8 +6319,8 @@ This API clears the cart for the authenticated customer or via sessionId.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -6358,22 +6338,22 @@ This API clears the cart for the authenticated customer or via sessionId.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -6419,8 +6399,8 @@ This API clears the cart for the authenticated customer or via sessionId.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -6443,15 +6423,15 @@ This API clears the cart for the authenticated customer or via sessionId.
 |└─name|string|false|No comments found.|-||
 |└─slug|string|false|No comments found.|-||
 |role|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |└─id|string|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
 |└─slug|string|false|No comments found.|-||
 |└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
@@ -6459,7 +6439,7 @@ This API clears the cart for the authenticated customer or via sessionId.
 
 **Request-example:**
 ```bash
-curl -X DELETE -k -H "X-Session-Id" -i 'https://api.shopsynch.com/v1/carts/clear.do?createdAt="2026-03-16 19:36:52"&updatedAt="2026-03-16 19:36:52"&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&status=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&businessType=&businessRegistrationNumber=&businessCountry=&businessCity=&businessAddress=&paystackSubaccountCode=&accountName=&accountNumber=&bankName=&businessStorefrontUrl=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&bankAccountVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug='
+curl -X DELETE -k -H "X-Session-Id" -i 'https://api.shopsynch.com/v1/carts/clear.do?createdAt="2026-03-16 20:06:38"&updatedAt="2026-03-16 20:06:38"&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&status=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&businessType=&businessRegistrationNumber=&businessCountry=&businessCity=&businessAddress=&paystackSubaccountCode=&accountName=&accountNumber=&bankName=&businessStorefrontUrl=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&bankAccountVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug='
 ```
 **Response-fields:**
 
@@ -6479,7 +6459,7 @@ curl -X DELETE -k -H "X-Session-Id" -i 'https://api.shopsynch.com/v1/carts/clear
 }
 ```
 
-### Checkout Cart.<br>This API checks out the cart for the authenticated customer.
+### Checkout Cart.
 **URL:** https://api.shopsynch.com/v1/carts/checkout.do
 
 **Type:** POST
@@ -6487,8 +6467,7 @@ curl -X DELETE -k -H "X-Session-Id" -i 'https://api.shopsynch.com/v1/carts/clear
 
 **Content-Type:** application/json
 
-**Description:** Checkout Cart.
-This API checks out the cart for the authenticated customer.
+**Description:** This API checks out the cart for the authenticated customer.
 
 **Request-headers:**
 
@@ -6501,8 +6480,8 @@ This API checks out the cart for the authenticated customer.
 
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
-|createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |accountNonExpired|boolean|false|No comments found.|-|true|
 |accountNonLocked|boolean|false|No comments found.|-|true|
 |credentialsNonExpired|boolean|false|No comments found.|-|true|
@@ -6520,8 +6499,8 @@ This API checks out the cart for the authenticated customer.
 |address|string|false|No comments found.|-||
 |version|int32|false|No comments found.|-|0|
 |addresses|array|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |└─id|string|false|No comments found.|-||
 |└─fullAddress|string|false|No comments found.|-||
 |└─street|string|false|No comments found.|-||
@@ -6534,8 +6513,8 @@ This API checks out the cart for the authenticated customer.
 |└─localGovernment|string|false|No comments found.|-||
 |└─country|string|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |└─id|string|false|No comments found.|-||
 |└─businessTradingName|string|false|e.g. Business name|-||
 |└─legalBusinessName|string|false|No comments found.|-||
@@ -6581,8 +6560,8 @@ This API checks out the cart for the authenticated customer.
 |└─status|boolean|false|No comments found.|-|true|
 |└─createdBy|string|false|No comments found.|-||
 |└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -6600,22 +6579,22 @@ This API checks out the cart for the authenticated customer.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -6661,8 +6640,8 @@ This API checks out the cart for the authenticated customer.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -6680,22 +6659,22 @@ This API checks out the cart for the authenticated customer.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -6741,8 +6720,8 @@ This API checks out the cart for the authenticated customer.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -6765,15 +6744,15 @@ This API checks out the cart for the authenticated customer.
 |└─name|string|false|No comments found.|-||
 |└─slug|string|false|No comments found.|-||
 |role|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |└─id|string|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
 |└─slug|string|false|No comments found.|-||
 |└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:52"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
@@ -6805,7 +6784,7 @@ This API checks out the cart for the authenticated customer.
 
 **Request-example:**
 ```bash
-curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https://api.shopsynch.com/v1/carts/checkout.do?createdAt="2026-03-16 19:36:52"&updatedAt="2026-03-16 19:36:52"&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&status=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&businessType=&businessRegistrationNumber=&businessCountry=&businessCity=&businessAddress=&paystackSubaccountCode=&accountName=&accountNumber=&bankName=&businessStorefrontUrl=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&bankAccountVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug=' --data '{
+curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https://api.shopsynch.com/v1/carts/checkout.do?createdAt="2026-03-16 20:06:38"&updatedAt="2026-03-16 20:06:38"&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&status=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&businessType=&businessRegistrationNumber=&businessCountry=&businessCity=&businessAddress=&paystackSubaccountCode=&accountName=&accountNumber=&bankName=&businessStorefrontUrl=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&bankAccountVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug=' --data '{
   "firstName": "",
   "lastName": "",
   "email": "",
@@ -6845,7 +6824,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 }
 ```
 
-### Guest Checkout Cart.<br>This API checks out the cart for a guest user.
+### Guest Checkout Cart.
 **URL:** https://api.shopsynch.com/v1/carts/guest/checkout.do
 
 **Type:** POST
@@ -6853,8 +6832,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 
 **Content-Type:** application/json
 
-**Description:** Guest Checkout Cart.
-This API checks out the cart for a guest user.
+**Description:** This API checks out the cart for a guest user.
 
 **Request-headers:**
 
@@ -6981,7 +6959,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/categories.do?search=&status=&pa
 ```
 
 ## Delivery Zone Management
-### Create Delivery Zone.<br>This API creates a new delivery zone.
+### Create Delivery Zone.
 **URL:** https://api.shopsynch.com/v1/delivery-zones.do
 
 **Type:** POST
@@ -6989,8 +6967,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/categories.do?search=&status=&pa
 
 **Content-Type:** application/json
 
-**Description:** Create Delivery Zone.
-This API creates a new delivery zone.
+**Description:** This API creates a new delivery zone.
 
 
 **Body-parameters:**
@@ -7047,7 +7024,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 }
 ```
 
-### Get All Delivery Zones.<br>This API returns all delivery zones.
+### Get All Delivery Zones.
 **URL:** https://api.shopsynch.com/v1/delivery-zones.do
 
 **Type:** GET
@@ -7055,8 +7032,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Get All Delivery Zones.
-This API returns all delivery zones.
+**Description:** This API returns all delivery zones.
 
 
 **Request-example:**
@@ -7097,7 +7073,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/delivery-zones.do'
 }
 ```
 
-### Update Delivery Zone.<br>This API updates an existing delivery zone.
+### Update Delivery Zone.
 **URL:** https://api.shopsynch.com/v1/delivery-zones/{id}.do
 
 **Type:** PUT
@@ -7105,8 +7081,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/delivery-zones.do'
 
 **Content-Type:** application/json
 
-**Description:** Update Delivery Zone.
-This API updates an existing delivery zone.
+**Description:** This API updates an existing delivery zone.
 
 
 **Path-parameters:**
@@ -7169,7 +7144,7 @@ curl -X PUT -k -H "Content-Type: application/json" -i 'https://api.shopsynch.com
 }
 ```
 
-### Delete Delivery Zone.<br>This API deletes an existing delivery zone.
+### Delete Delivery Zone.
 **URL:** https://api.shopsynch.com/v1/delivery-zones/{id}.do
 
 **Type:** DELETE
@@ -7177,8 +7152,7 @@ curl -X PUT -k -H "Content-Type: application/json" -i 'https://api.shopsynch.com
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Delete Delivery Zone.
-This API deletes an existing delivery zone.
+**Description:** This API deletes an existing delivery zone.
 
 
 **Path-parameters:**
@@ -7208,7 +7182,7 @@ curl -X DELETE -k -i 'https://api.shopsynch.com/v1/delivery-zones/{id}.do'
 ```
 
 ## Promotion management.
-### Apply Promo Code<br>Applies a promo code to calculate discounted price&quot;
+### Apply Promo Code
 **URL:** https://api.shopsynch.com/v1/promotions/apply/promo-code.do
 
 **Type:** POST
@@ -7216,8 +7190,7 @@ curl -X DELETE -k -i 'https://api.shopsynch.com/v1/delivery-zones/{id}.do'
 
 **Content-Type:** application/json
 
-**Description:** Apply Promo Code
-Applies a promo code to calculate discounted price"
+**Description:** Applies a promo code to calculate discounted price"
 
 
 **Body-parameters:**
@@ -7251,7 +7224,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 }
 ```
 
-### Create Promotion<br>Only accessible by merchant
+### Create Promotion
 **URL:** https://api.shopsynch.com/v1/promotions.do
 
 **Type:** POST
@@ -7259,8 +7232,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 **Content-Type:** application/json
 
-**Description:** Create Promotion
-Only accessible by merchant
+**Description:** Creates a new promotion (shop owner access required)
 
 
 **Body-parameters:**
@@ -7294,8 +7266,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:40"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:40"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:34"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:34"|
 |└─id|string|No comments found.|-||
 |└─name|string|Name of promotion|-||
 |└─code|string|The code that customers will use to redeem the promotion|-||
@@ -7312,8 +7284,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
   "status": true,
   "message": "",
   "data": {
-    "createdAt": "2026-03-16 19:36:40",
-    "updatedAt": "2026-03-16 19:36:40",
+    "createdAt": "2026-03-16 20:06:34",
+    "updatedAt": "2026-03-16 20:06:34",
     "id": "",
     "name": "",
     "code": "",
@@ -7327,7 +7299,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 }
 ```
 
-### Fetch All Promotions<br>Only accessible by merchant
+### Fetch All Promotions
 **URL:** https://api.shopsynch.com/v1/promotions.do
 
 **Type:** GET
@@ -7335,8 +7307,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Fetch All Promotions
-Only accessible by merchant
+**Description:** Retrieves all promotions for the current tenant (shop owner access required)
 
 
 **Query-parameters:**
@@ -7363,8 +7334,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promotions.do?code=&name=&descri
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|array|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:41"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:41"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:34"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:34"|
 |└─id|string|No comments found.|-||
 |└─name|string|Name of promotion|-||
 |└─code|string|The code that customers will use to redeem the promotion|-||
@@ -7382,8 +7353,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promotions.do?code=&name=&descri
   "message": "",
   "data": [
     {
-      "createdAt": "2026-03-16 19:36:41",
-      "updatedAt": "2026-03-16 19:36:41",
+      "createdAt": "2026-03-16 20:06:34",
+      "updatedAt": "2026-03-16 20:06:34",
       "id": "",
       "name": "",
       "code": "",
@@ -7398,7 +7369,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promotions.do?code=&name=&descri
 }
 ```
 
-### Show Promotion<br>Only accessible to merchant
+### Show Promotion
 **URL:** https://api.shopsynch.com/v1/promotions/{promotionId}.do
 
 **Type:** GET
@@ -7406,8 +7377,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promotions.do?code=&name=&descri
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Show Promotion
-Only accessible to merchant
+**Description:** Retrieves a specific promotion by ID (shop owner access required)
 
 
 **Path-parameters:**
@@ -7427,8 +7397,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promotions/{promotionId}.do'
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:41"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:41"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:34"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:34"|
 |└─id|string|No comments found.|-||
 |└─name|string|Name of promotion|-||
 |└─code|string|The code that customers will use to redeem the promotion|-||
@@ -7445,8 +7415,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promotions/{promotionId}.do'
   "status": true,
   "message": "",
   "data": {
-    "createdAt": "2026-03-16 19:36:41",
-    "updatedAt": "2026-03-16 19:36:41",
+    "createdAt": "2026-03-16 20:06:34",
+    "updatedAt": "2026-03-16 20:06:34",
     "id": "",
     "name": "",
     "code": "",
@@ -7460,7 +7430,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promotions/{promotionId}.do'
 }
 ```
 
-### Update Promotion<br>Only accessible to merchant
+### Update Promotion
 **URL:** https://api.shopsynch.com/v1/promotions/{promotionId}.do
 
 **Type:** PATCH
@@ -7468,8 +7438,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/promotions/{promotionId}.do'
 
 **Content-Type:** application/json
 
-**Description:** Update Promotion
-Only accessible to merchant
+**Description:** Updates an existing promotion (shop owner access required)
 
 
 **Path-parameters:**
@@ -7501,8 +7470,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:41"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:41"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:34"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:34"|
 |└─id|string|No comments found.|-||
 |└─name|string|Name of promotion|-||
 |└─code|string|The code that customers will use to redeem the promotion|-||
@@ -7519,8 +7488,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
   "status": true,
   "message": "",
   "data": {
-    "createdAt": "2026-03-16 19:36:41",
-    "updatedAt": "2026-03-16 19:36:41",
+    "createdAt": "2026-03-16 20:06:34",
+    "updatedAt": "2026-03-16 20:06:34",
     "id": "",
     "name": "",
     "code": "",
@@ -7534,7 +7503,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
 }
 ```
 
-### Delete Promotion<br>Only accessible to merchant
+### Delete Promotion
 **URL:** https://api.shopsynch.com/v1/promotions/{promotionId}.do
 
 **Type:** DELETE
@@ -7542,8 +7511,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Delete Promotion
-Only accessible to merchant
+**Description:** Deletes a promotion (shop owner access required)
 
 
 **Path-parameters:**
@@ -7575,7 +7543,7 @@ curl -X DELETE -k -i 'https://api.shopsynch.com/v1/promotions/{promotionId}.do'
 ```
 
 ## Merchant Management
-### Get Merchant Profile.<br>This API returns the merchant profile.
+### Get Merchant Profile.
 **URL:** https://api.shopsynch.com/v1/merchants/profile.do
 
 **Type:** GET
@@ -7583,8 +7551,7 @@ curl -X DELETE -k -i 'https://api.shopsynch.com/v1/promotions/{promotionId}.do'
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Get Merchant Profile.
-This API returns the merchant profile.
+**Description:** This API returns the merchant profile.
 
 
 **Request-example:**
@@ -7632,7 +7599,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/merchants/profile.do'
 }
 ```
 
-### Get Merchant Business Profile.<br>This API returns the merchant business profile.
+### Get Merchant Business Profile.
 **URL:** https://api.shopsynch.com/v1/merchants/profile/business.do
 
 **Type:** GET
@@ -7640,8 +7607,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/merchants/profile.do'
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Get Merchant Business Profile.
-This API returns the merchant business profile.
+**Description:** This API returns the merchant business profile.
 
 
 **Request-example:**
@@ -7688,15 +7654,15 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/roles.do'
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|array|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:44"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:44"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:35"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:35"|
 |└─id|string|No comments found.|-||
 |└─name|string|No comments found.|-||
 |└─status|boolean|No comments found.|-|true|
 |└─slug|string|No comments found.|-||
 |└─permissions|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 19:36:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
@@ -7709,16 +7675,16 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/roles.do'
   "message": "",
   "data": [
     {
-      "createdAt": "2026-03-16 19:36:44",
-      "updatedAt": "2026-03-16 19:36:44",
+      "createdAt": "2026-03-16 20:06:35",
+      "updatedAt": "2026-03-16 20:06:35",
       "id": "",
       "name": "",
       "status": true,
       "slug": "",
       "permissions": [
         {
-          "createdAt": "2026-03-16 19:36:44",
-          "updatedAt": "2026-03-16 19:36:44",
+          "createdAt": "2026-03-16 20:06:35",
+          "updatedAt": "2026-03-16 20:06:35",
           "id": "",
           "name": "",
           "status": true,
@@ -7830,7 +7796,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/variation/options/{variationId}.
 ```
 
 ## ReviewController
-### Get All Reviews<br><br>Retrieves all product reviews in the merchant&apos;s store with optional filtering. Shop owners use this to monitor<br>customer feedback, identify problematic reviews, and manage reputation.
+### Get All Reviews
 **URL:** https://api.shopsynch.com/v1/reviews.do
 
 **Type:** GET
@@ -7838,13 +7804,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/variation/options/{variationId}.
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** This endpoint:
-         - Restricted to shop owner access only (@ShopOwnerAccess)
-         - Requires Authorization header (@RequireAuthorizationHeader)
-         - Converts strongly-typed ReviewQueryRequest to Map for service layer compatibility
-         - Returns all reviews across all products in merchant's store
-         - Useful for review moderation dashboard and reputation management
-         - ReviewMapper transforms entity objects to DTOs with customer names and product info
+**Description:** Retrieves all product reviews in the merchant's store with optional filtering. Shop owners use this to monitor
+customer feedback, identify problematic reviews, and manage reputation.
 
 
 **Query-parameters:**
@@ -7878,8 +7839,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/reviews.do?search=&status=&minRa
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 19:36:50"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:50"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:37"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -7903,8 +7864,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/reviews.do?search=&status=&minRa
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-03-16 19:36:50",
-        "updatedAt": "2026-03-16 19:36:50"
+        "createdAt": "2026-03-16 20:06:37",
+        "updatedAt": "2026-03-16 20:06:37"
       },
       "product": {
         "id": "",
@@ -7918,7 +7879,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/reviews.do?search=&status=&minRa
 }
 ```
 
-### Get Product Reviews<br><br>Retrieves all reviews for a specific product. Reviews are filtered by status (active, hidden, or pending)<br>to display only appropriate reviews on product detail pages.
+### Get Product Reviews
 **URL:** https://api.shopsynch.com/v1/reviews/product/{productId}.do
 
 **Type:** GET
@@ -7926,13 +7887,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/reviews.do?search=&status=&minRa
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** This endpoint:
-         - Public endpoint (no authentication required)
-         - Default status is "active" to show customer-visible reviews
-         - Can filter by status: active=published, hidden=removed from display, pending=moderation queue
-         - Displays only reviews customer should see on product pages
-         - Review count and average ratings typically calculated from active reviews
-         - Useful for product detail pages showing customer feedback
+**Description:** Retrieves all reviews for a specific product. Reviews are filtered by status (active, hidden, or pending)
+to display only appropriate reviews on product detail pages.
 
 
 **Path-parameters:**
@@ -7967,8 +7923,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/reviews/product/{productId}.do?s
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 19:36:50"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:50"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:37"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -7992,8 +7948,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/reviews/product/{productId}.do?s
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-03-16 19:36:50",
-        "updatedAt": "2026-03-16 19:36:50"
+        "createdAt": "2026-03-16 20:06:37",
+        "updatedAt": "2026-03-16 20:06:37"
       },
       "product": {
         "id": "",
@@ -8007,7 +7963,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/reviews/product/{productId}.do?s
 }
 ```
 
-### Create/Submit Product Review<br><br>Submits a new product review from a customer. Reviews include rating, comment, and reviewer name.<br>System validates one review per customer per product and performs moderation checks.
+### Create/Submit Product Review
 **URL:** https://api.shopsynch.com/v1/reviews/add.do
 
 **Type:** POST
@@ -8015,15 +7971,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/reviews/product/{productId}.do?s
 
 **Content-Type:** application/json
 
-**Description:** This endpoint:
-         - Public endpoint (allows both authenticated customers and guests)
-         - Validates one review per customer per product (prevents duplicate reviews)
-         - Rating range is typically 1-5 stars
-         - Reviews may require moderation before becoming active
-         - Customer ID is extracted from authenticated user or provided in request
-         - Submitted review status defaults to "pending" or "active" based on configuration
-         - ReviewMapper includes customer name and rating in response
-         - Useful for gathering customer feedback and building social proof
+**Description:** Submits a new product review from a customer. Reviews include rating, comment, and reviewer name.
+System validates one review per customer per product and performs moderation checks.
 
 
 **Body-parameters:**
@@ -8062,8 +8011,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 19:36:51"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:51"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 20:06:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:37"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -8086,8 +8035,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-03-16 19:36:51",
-      "updatedAt": "2026-03-16 19:36:51"
+      "createdAt": "2026-03-16 20:06:37",
+      "updatedAt": "2026-03-16 20:06:37"
     },
     "product": {
       "id": "",
@@ -8100,7 +8049,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 }
 ```
 
-### Delete Review<br><br>Permanently deletes a product review. Removed review no longer appears on product pages or in<br>review listings. Deletion is irreversible (deleted review cannot be recovered).
+### Delete Review
 **URL:** https://api.shopsynch.com/v1/reviews/{reviewId}.do
 
 **Type:** DELETE
@@ -8144,7 +8093,7 @@ curl -X DELETE -k -i 'https://api.shopsynch.com/v1/reviews/{reviewId}.do'
 }
 ```
 
-### Hide Review<br><br>Hides a review from public display temporarily. Hidden reviews no longer appear on product pages<br>but remain in system for audit purposes. Reviews can be unhidden if needed (soft deletion).
+### Hide Review
 **URL:** https://api.shopsynch.com/v1/reviews/hide/{reviewId}.do
 
 **Type:** PATCH
@@ -8152,14 +8101,8 @@ curl -X DELETE -k -i 'https://api.shopsynch.com/v1/reviews/{reviewId}.do'
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** This endpoint:
-         - Restricted to shop owner access only (@ShopOwnerAccess)
-         - Requires Authorization header (@RequireAuthorizationHeader)
-         - Sets review.status to "hidden" or "inactive"
-         - Review remains in system for audit trail and history
-         - Hidden reviews can potentially be unhidden if merchant changes mind
-         - Does not permanently delete the review (use deleteReview for permanent removal)
-         - Useful for temporarily removing reviews while investigating authenticity or disputes
+**Description:** Hides a review from public display temporarily. Hidden reviews no longer appear on product pages
+but remain in system for audit purposes. Reviews can be unhidden if needed (soft deletion).
 
 
 **Path-parameters:**
@@ -8296,8 +8239,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/colors.do'
 |name|string|false|No comments found.|-||
 |CategoryId|string|false|No comments found.|-||
 |productCategory|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:44"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |└─id|string|false|No comments found.|-||
 |└─parentId|string|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
@@ -8311,8 +8254,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
   "name": "",
   "CategoryId": "",
   "productCategory": {
-    "createdAt": "2026-03-16 19:36:44",
-    "updatedAt": "2026-03-16 19:36:44",
+    "createdAt": "2026-03-16 20:06:35",
+    "updatedAt": "2026-03-16 20:06:35",
     "id": "",
     "parentId": "",
     "name": "",
@@ -8495,7 +8438,7 @@ string
 ```
 
 ## CustomerController
-### Get All Customers<br><br>Retrieves a paginated list of customers for a shop owner with advanced pagination support using cursor-based<br>navigation. Supports filtering by search term, registration date range, account status, and account type.
+### Get All Customers
 **URL:** https://api.shopsynch.com/v1/customers.do
 
 **Type:** GET
@@ -8503,15 +8446,8 @@ string
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** This endpoint:
-         - Restricted to shop owner access only (@ShopOwnerAccess)
-         - Converts strongly-typed CustomerQueryRequest to Map for service layer compatibility
-         - Uses cursor-based pagination for better performance on large datasets
-         - Limit is capped at 20 records per page for efficient database queries
-         - Supports filtering by registration date range, status, account type
-         - Returns cursor token in response for fetching next page
-         - Useful for customer management dashboards and customer lists
-         - CustomerMapper converts entity objects to display DTOs with minimal fields
+**Description:** Retrieves a paginated list of customers for a shop owner with advanced pagination support using cursor-based
+navigation. Supports filtering by search term, registration date range, account status, and account type.
 
 
 **Query-parameters:**
@@ -8546,8 +8482,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/customers.do?cursor=&limit=10&pa
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 19:36:53"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:53"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:38"|
 |└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
@@ -8564,8 +8500,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/customers.do?cursor=&limit=10&pa
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-03-16 19:36:53",
-        "updatedAt": "2026-03-16 19:36:53"
+        "createdAt": "2026-03-16 20:06:38",
+        "updatedAt": "2026-03-16 20:06:38"
       }
     ],
     "nextCursor": "yyyy-MM-dd HH:mm:ss"
@@ -8575,7 +8511,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/customers.do?cursor=&limit=10&pa
 }
 ```
 
-### Get Authenticated Customer Profile<br><br>Retrieves the complete profile information of the authenticated customer, including personal details,<br>account status, preferences, and account type.
+### Get Authenticated Customer Profile
 **URL:** https://api.shopsynch.com/v1/customers/profile.do
 
 **Type:** GET
@@ -8608,8 +8544,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/customers/profile.do'
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:53"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:53"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:38"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:38"|
 
 **Response-example:**
 ```json
@@ -8623,13 +8559,13 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/customers/profile.do'
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-16 19:36:53",
-    "updatedAt": "2026-03-16 19:36:53"
+    "createdAt": "2026-03-16 20:06:38",
+    "updatedAt": "2026-03-16 20:06:38"
   }
 }
 ```
 
-### Get Specific Customer (Shop Owner View)<br><br>Retrieves detailed information for a specific customer by ID. Only shop owners can access other customers&apos; data.<br>Returns all customer details for merchant relationship and account management purposes.
+### Get Specific Customer (Shop Owner View)
 **URL:** https://api.shopsynch.com/v1/customers/{customerId}.do
 
 **Type:** GET
@@ -8665,8 +8601,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/customers/{customerId}.do'
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:54"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:54"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:38"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:38"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -8680,15 +8616,15 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/customers/{customerId}.do'
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-16 19:36:53",
-    "updatedAt": "2026-03-16 19:36:53"
+    "createdAt": "2026-03-16 20:06:38",
+    "updatedAt": "2026-03-16 20:06:38"
   },
   "message": "",
   "status": true
 }
 ```
 
-### Deactivate Customer Account<br><br>Deactivates a customer account, preventing further login and transactions. The account remains in the system<br>for historical and audit purposes but becomes inactive. Account can be reactivated if needed.
+### Deactivate Customer Account
 **URL:** https://api.shopsynch.com/v1/customers/{customerId}/deactivate.do
 
 **Type:** PATCH
@@ -8696,13 +8632,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/customers/{customerId}.do'
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** This endpoint:
-         - Restricted to shop owner access only (@ShopOwnerAccess)
-         - Sets customer.status to INACTIVE or similar inactive state
-         - Does not delete customer data (soft deactivation)
-         - Prevents deactivated customer from placing new orders
-         - Customer can be reactivated later if needed
-         - Useful for fraud prevention or customer-requested deactivations
+**Description:** Deactivates a customer account, preventing further login and transactions. The account remains in the system
+for historical and audit purposes but becomes inactive. Account can be reactivated if needed.
 
 
 **Path-parameters:**
@@ -8726,8 +8657,8 @@ curl -X PATCH -k -i 'https://api.shopsynch.com/v1/customers/{customerId}/deactiv
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:54"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:54"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:38"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:38"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -8741,15 +8672,15 @@ curl -X PATCH -k -i 'https://api.shopsynch.com/v1/customers/{customerId}/deactiv
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-16 19:36:54",
-    "updatedAt": "2026-03-16 19:36:54"
+    "createdAt": "2026-03-16 20:06:38",
+    "updatedAt": "2026-03-16 20:06:38"
   },
   "message": "",
   "status": true
 }
 ```
 
-### Activate Customer Account<br><br>Reactivates a previously deactivated customer account. Once reactivated, customer can log in and place orders again.<br>Account retains all historical data and order history.
+### Activate Customer Account
 **URL:** https://api.shopsynch.com/v1/customers/{customerId}/activate.do
 
 **Type:** PATCH
@@ -8757,12 +8688,8 @@ curl -X PATCH -k -i 'https://api.shopsynch.com/v1/customers/{customerId}/deactiv
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** This endpoint:
-         - Restricted to shop owner access only (@ShopOwnerAccess)
-         - Sets customer.status back to ACTIVE or enabled state
-         - Restores customer ability to place orders and log in
-         - Preserves all historical order and profile data
-         - Typically used to reverse a deactivation action
+**Description:** Reactivates a previously deactivated customer account. Once reactivated, customer can log in and place orders again.
+Account retains all historical data and order history.
 
 
 **Path-parameters:**
@@ -8786,8 +8713,8 @@ curl -X PATCH -k -i 'https://api.shopsynch.com/v1/customers/{customerId}/activat
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:54"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:54"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:38"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:38"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -8801,15 +8728,15 @@ curl -X PATCH -k -i 'https://api.shopsynch.com/v1/customers/{customerId}/activat
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-16 19:36:54",
-    "updatedAt": "2026-03-16 19:36:54"
+    "createdAt": "2026-03-16 20:06:38",
+    "updatedAt": "2026-03-16 20:06:38"
   },
   "message": "",
   "status": true
 }
 ```
 
-### Register New Customer<br><br>Registers a new customer account in the current store/tenant. Validates email uniqueness, creates customer record,<br>and returns customer profile with confirmation of successful registration.
+### Register New Customer
 **URL:** https://api.shopsynch.com/v1/customers/signup.do
 
 **Type:** POST
@@ -8817,14 +8744,8 @@ curl -X PATCH -k -i 'https://api.shopsynch.com/v1/customers/{customerId}/activat
 
 **Content-Type:** application/json
 
-**Description:** This endpoint:
-         - Public endpoint (no authentication required)
-         - Email must be unique per tenant (same email can exist in different stores)
-         - Creates customer in current tenant context
-         - Password is hashed during creation
-         - Default account type is PERSONAL or determined by request
-         - Customer can immediately log in after registration
-         - Returns created customer details in response
+**Description:** Registers a new customer account in the current store/tenant. Validates email uniqueness, creates customer record,
+and returns customer profile with confirmation of successful registration.
 
 
 **Body-parameters:**
@@ -8860,8 +8781,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:54"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:54"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:38"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:38"|
 
 **Response-example:**
 ```json
@@ -8875,13 +8796,13 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-16 19:36:54",
-    "updatedAt": "2026-03-16 19:36:54"
+    "createdAt": "2026-03-16 20:06:38",
+    "updatedAt": "2026-03-16 20:06:38"
   }
 }
 ```
 
-### Update Customer Profile<br><br>Updates the authenticated customer&apos;s profile information. Customer can modify personal details,<br>contact information, preferences, and other account settings.
+### Update Customer Profile
 **URL:** https://api.shopsynch.com/v1/customers/profile/update.do
 
 **Type:** PATCH
@@ -8889,13 +8810,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 **Content-Type:** application/json
 
-**Description:** This endpoint:
-         - Requires customer authentication (@CustomerAccess)
-         - Uses authenticated user from SecurityContext
-         - Supports partial updates (null fields are ignored)
-         - Updates modifiedAt timestamp automatically
-         - Returns complete updated profile in response
-         - Useful for account settings pages where customer manages their information
+**Description:** Updates the authenticated customer's profile information. Customer can modify personal details,
+contact information, preferences, and other account settings.
 
 
 **Body-parameters:**
@@ -8929,8 +8845,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:54"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:54"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:38"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:38"|
 
 **Response-example:**
 ```json
@@ -8944,8 +8860,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-16 19:36:54",
-    "updatedAt": "2026-03-16 19:36:54"
+    "createdAt": "2026-03-16 20:06:38",
+    "updatedAt": "2026-03-16 20:06:38"
   }
 }
 ```
@@ -9034,7 +8950,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 ```
 
 ## Customer Authentication
-### Register Customer.<br>This API registers a new customer.
+### Register Customer.
 **URL:** https://api.shopsynch.com/v1/auth/customer/signup.do
 
 **Type:** POST
@@ -9042,8 +8958,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 **Content-Type:** application/json
 
-**Description:** Register Customer.
-This API registers a new customer.
+**Description:** This API registers a new customer.
 
 
 **Body-parameters:**
@@ -9079,8 +8994,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:45"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:45"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:35"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:35"|
 
 **Response-example:**
 ```json
@@ -9094,13 +9009,13 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-16 19:36:45",
-    "updatedAt": "2026-03-16 19:36:45"
+    "createdAt": "2026-03-16 20:06:35",
+    "updatedAt": "2026-03-16 20:06:35"
   }
 }
 ```
 
-### Register Customer Via Google.<br>This API registers a new customer via google.
+### Register Customer Via Google.
 **URL:** https://api.shopsynch.com/v1/auth/customer/signup/google.do
 
 **Type:** POST
@@ -9108,8 +9023,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 **Content-Type:** application/json
 
-**Description:** Register Customer Via Google.
-This API registers a new customer via google.
+**Description:** This API registers a new customer via google.
 
 **Request-headers:**
 
@@ -9141,8 +9055,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:45"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:45"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:35"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:35"|
 |token|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
 
@@ -9156,8 +9070,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-16 19:36:45",
-    "updatedAt": "2026-03-16 19:36:45"
+    "createdAt": "2026-03-16 20:06:35",
+    "updatedAt": "2026-03-16 20:06:35"
   },
   "token": "",
   "expiresIn": 0
@@ -9205,8 +9119,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:45"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:45"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:35"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:35"|
 |token|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
 
@@ -9220,8 +9134,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-16 19:36:45",
-    "updatedAt": "2026-03-16 19:36:45"
+    "createdAt": "2026-03-16 20:06:35",
+    "updatedAt": "2026-03-16 20:06:35"
   },
   "token": "",
   "expiresIn": 0
@@ -9642,8 +9556,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/orders/{orderId}/items.do'
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 19:36:42"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:42"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 20:06:34"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:34"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -9706,8 +9620,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/orders/{orderId}/items.do'
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-03-16 19:36:42",
-        "updatedAt": "2026-03-16 19:36:42"
+        "createdAt": "2026-03-16 20:06:34",
+        "updatedAt": "2026-03-16 20:06:34"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -9715,7 +9629,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/orders/{orderId}/items.do'
 }
 ```
 
-### Update Order Status<br><br>Updates the current status of an order to reflect fulfillment progress. Valid status transitions are enforced<br>to prevent invalid workflow progressions. Records an audit trail entry capturing who changed the status and why.
+### Update Order Status
 **URL:** https://api.shopsynch.com/v1/orders/{orderId}/status.do
 
 **Type:** PATCH
@@ -9723,15 +9637,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/orders/{orderId}/items.do'
 
 **Content-Type:** application/json
 
-**Description:** This endpoint:
-         - Restricted to shop owner access only (@ShopOwnerAccess)
-         - Validates new status is valid PaymentStatusEnum value
-         - Enforces status transition rules (prevents invalid progressions like SHIPPED -> PENDING)
-         - Records status change with reason in OrderStatusHistory table
-         - Captures actor (merchant) ID and timestamp of status change
-         - Updates Order.status field with validation
-         - Essential for order fulfillment workflow tracking
-         - Enables customer notifications based on status changes
+**Description:** Updates the current status of an order to reflect fulfillment progress. Valid status transitions are enforced
+to prevent invalid workflow progressions. Records an audit trail entry capturing who changed the status and why.
 
 
 **Path-parameters:**
@@ -9802,8 +9709,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 19:36:42"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:42"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 20:06:34"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:34"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -9866,8 +9773,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-03-16 19:36:42",
-        "updatedAt": "2026-03-16 19:36:42"
+        "createdAt": "2026-03-16 20:06:34",
+        "updatedAt": "2026-03-16 20:06:34"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -9883,13 +9790,11 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
 
 **Content-Type:** application/json
 
-**Description:** This endpoint:
-         - Restricted to shop owner access only (@ShopOwnerAccess)
-         - Does NOT enforce standard transition rules (PENDING → PROCESSING etc.)
-         - Requires a non-blank reason — mandatory for audit trail integrity
-         - Prefixes audit reason with [MANUAL_OVERRIDE] for easy filtering in history
-         - Syncs fulfillment status when forcing SHIPPED or DELIVERED
-         - Logs a WARN-level entry with old/new status for server-side traceability
+**Description:** Force Update Order Status (Admin Override)
+
+Bypasses all standard transition rules and forcibly sets the order to the given status.
+Use with caution — this is intended for administrative corrections only (e.g., stuck orders,
+data recovery, third-party sync discrepancies).
 
 
 **Path-parameters:**
@@ -9926,7 +9831,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
 }
 ```
 
-### Get Order Statistics<br><br>Retrieves comprehensive order statistics for a merchant including order count, total revenue, average order value,<br>orders by status breakdown, and other aggregated metrics useful for business insights and dashboards.
+### Get Order Statistics
 **URL:** https://api.shopsynch.com/v1/orders/merchant/stats.do
 
 **Type:** GET
@@ -9934,14 +9839,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** This endpoint:
-         - Restricted to shop owner access only (@ShopOwnerAccess)
-         - Skips tenant context check as it handles context internally
-         - Aggregates data using database queries for performance
-         - Includes metrics like total orders, revenue, average order value
-         - Includes breakdown by status (pending, processing, shipped, delivered, etc.)
-         - Useful for dashboard displays and business intelligence
-         - Uses aggregation pipelines for efficient counting and summing
+**Description:** Retrieves comprehensive order statistics for a merchant including order count, total revenue, average order value,
+orders by status breakdown, and other aggregated metrics useful for business insights and dashboards.
 
 
 **Request-example:**
@@ -10104,8 +10003,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:46"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:46"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:36"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:36"|
 |token|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
 
@@ -10119,8 +10018,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-16 19:36:46",
-    "updatedAt": "2026-03-16 19:36:46"
+    "createdAt": "2026-03-16 20:06:36",
+    "updatedAt": "2026-03-16 20:06:36"
   },
   "token": "",
   "expiresIn": 0
@@ -10497,8 +10396,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/states/{countryId}.do'
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|array|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:50"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:50"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:37"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:37"|
 |└─id|string|No comments found.|-||
 |└─name|string|No comments found.|-||
 |└─status|boolean|No comments found.|-|true|
@@ -10510,8 +10409,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/states/{countryId}.do'
   "message": "",
   "data": [
     {
-      "createdAt": "2026-03-16 19:36:50",
-      "updatedAt": "2026-03-16 19:36:50",
+      "createdAt": "2026-03-16 20:06:37",
+      "updatedAt": "2026-03-16 20:06:37",
       "id": "",
       "name": "",
       "status": true
@@ -10729,14 +10628,14 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/countries.do?name='
 | Field | Type | Description | Since | Example |
 |-------|------|-------------|-------|---------|
 |data|array|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:53"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:53"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:38"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:38"|
 |└─id|string|No comments found.|-||
 |└─name|string|No comments found.|-||
 |└─status|boolean|No comments found.|-|true|
 |└─states|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 19:36:53"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:53"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 20:06:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:38"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
@@ -10748,15 +10647,15 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/countries.do?name='
 {
   "data": [
     {
-      "createdAt": "2026-03-16 19:36:53",
-      "updatedAt": "2026-03-16 19:36:53",
+      "createdAt": "2026-03-16 20:06:38",
+      "updatedAt": "2026-03-16 20:06:38",
       "id": "",
       "name": "",
       "status": true,
       "states": [
         {
-          "createdAt": "2026-03-16 19:36:53",
-          "updatedAt": "2026-03-16 19:36:53",
+          "createdAt": "2026-03-16 20:06:38",
+          "updatedAt": "2026-03-16 20:06:38",
           "id": "",
           "name": "",
           "status": true
@@ -11423,8 +11322,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 }
 ```
 
-## FileController
-### uploadSingleImage
+## File Management (File Upload)
+### Upload Single Image.
 **URL:** https://api.shopsynch.com/v1/files/upload/single/image.do
 
 **Type:** POST
@@ -11432,7 +11331,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 **Content-Type:** multipart/form-data
 
-**Description:** 
+**Description:** This API uploads a single image.
 
 
 **Body-parameters:**
@@ -11469,7 +11368,7 @@ curl -X POST -k -H "Content-Type: multipart/form-data" -F 'file=' -i 'https://ap
 }
 ```
 
-### uploadMultipleImages
+### Upload Multiple Images.
 **URL:** https://api.shopsynch.com/v1/files/upload/multiple/images.do
 
 **Type:** POST
@@ -11477,7 +11376,7 @@ curl -X POST -k -H "Content-Type: multipart/form-data" -F 'file=' -i 'https://ap
 
 **Content-Type:** multipart/form-data
 
-**Description:** 
+**Description:** This API uploads multiple images.
 
 
 **Body-parameters:**
@@ -11845,14 +11744,14 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/local-governments/{stateId}.do'
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|array|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:46"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:46"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:36"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:36"|
 |└─id|string|No comments found.|-||
 |└─name|string|No comments found.|-||
 |└─status|boolean|No comments found.|-|true|
 |└─state|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 19:36:46"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:46"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-16 20:06:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:36"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
@@ -11864,14 +11763,14 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/local-governments/{stateId}.do'
   "message": "",
   "data": [
     {
-      "createdAt": "2026-03-16 19:36:46",
-      "updatedAt": "2026-03-16 19:36:46",
+      "createdAt": "2026-03-16 20:06:36",
+      "updatedAt": "2026-03-16 20:06:36",
       "id": "",
       "name": "",
       "status": true,
       "state": {
-        "createdAt": "2026-03-16 19:36:46",
-        "updatedAt": "2026-03-16 19:36:46",
+        "createdAt": "2026-03-16 20:06:36",
+        "updatedAt": "2026-03-16 20:06:36",
         "id": "",
         "name": "",
         "status": true
@@ -11940,8 +11839,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
-|createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |accountNonExpired|boolean|false|No comments found.|-|true|
 |accountNonLocked|boolean|false|No comments found.|-|true|
 |credentialsNonExpired|boolean|false|No comments found.|-|true|
@@ -11959,8 +11858,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 |address|string|false|No comments found.|-||
 |version|int32|false|No comments found.|-|0|
 |addresses|array|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |└─id|string|false|No comments found.|-||
 |└─fullAddress|string|false|No comments found.|-||
 |└─street|string|false|No comments found.|-||
@@ -11973,8 +11872,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 |└─localGovernment|string|false|No comments found.|-||
 |└─country|string|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |└─id|string|false|No comments found.|-||
 |└─businessTradingName|string|false|e.g. Business name|-||
 |└─legalBusinessName|string|false|No comments found.|-||
@@ -12020,8 +11919,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 |└─status|boolean|false|No comments found.|-|true|
 |└─createdBy|string|false|No comments found.|-||
 |└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -12039,22 +11938,22 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -12100,8 +11999,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -12119,22 +12018,22 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -12180,8 +12079,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -12204,15 +12103,15 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 |└─name|string|false|No comments found.|-||
 |└─slug|string|false|No comments found.|-||
 |role|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |└─id|string|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
 |└─slug|string|false|No comments found.|-||
 |└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
@@ -12228,7 +12127,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 **Request-example:**
 ```bash
-curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.com/v1/change/password/customer.do?createdAt="2026-03-16 19:36:45"&updatedAt="2026-03-16 19:36:45"&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&status=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&businessType=&businessRegistrationNumber=&businessCountry=&businessCity=&businessAddress=&paystackSubaccountCode=&accountName=&accountNumber=&bankName=&businessStorefrontUrl=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&bankAccountVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug='
+curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.com/v1/change/password/customer.do?createdAt="2026-03-16 20:06:35"&updatedAt="2026-03-16 20:06:35"&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&status=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&businessType=&businessRegistrationNumber=&businessCountry=&businessCity=&businessAddress=&paystackSubaccountCode=&accountName=&accountNumber=&bankName=&businessStorefrontUrl=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&bankAccountVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug='
 ```
 **Response-fields:**
 
@@ -12263,8 +12162,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
 
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
-|createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |id|string|false|No comments found.|-||
 |email|string|false|No comments found.|-||
 |tenantId|string|false|No comments found.|-||
@@ -12282,22 +12181,22 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
 |version|int32|false|No comments found.|-|0|
 |emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |role|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |└─id|string|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
 |└─slug|string|false|No comments found.|-||
 |└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |└─id|string|false|No comments found.|-||
 |└─businessTradingName|string|false|e.g. Business name|-||
 |└─legalBusinessName|string|false|No comments found.|-||
@@ -12343,8 +12242,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
 |└─status|boolean|false|No comments found.|-|true|
 |└─createdBy|string|false|No comments found.|-||
 |└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -12362,22 +12261,22 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -12423,8 +12322,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 19:36:45"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-16 20:06:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -12454,7 +12353,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
 
 **Request-example:**
 ```bash
-curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.com/v1/change/password/merchant.do?createdAt="2026-03-16 19:36:45"&updatedAt="2026-03-16 19:36:45"&id=&email=&tenantId=&password=&fullName=&dateOfBirth=&phoneNumber=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&status=&address=&version=0&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&name=&slug=&businessTradingName=&legalBusinessName=&businessType=&businessRegistrationNumber=&businessCountry=&businessCity=&businessAddress=&paystackSubaccountCode=&accountName=&accountNumber=&bankName=&businessStorefrontUrl=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&bankAccountVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy='
+curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.com/v1/change/password/merchant.do?createdAt="2026-03-16 20:06:35"&updatedAt="2026-03-16 20:06:35"&id=&email=&tenantId=&password=&fullName=&dateOfBirth=&phoneNumber=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&status=&address=&version=0&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&name=&slug=&businessTradingName=&legalBusinessName=&businessType=&businessRegistrationNumber=&businessCountry=&businessCity=&businessAddress=&paystackSubaccountCode=&accountName=&accountNumber=&bankName=&businessStorefrontUrl=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&bankAccountVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy='
 ```
 **Response-fields:**
 
@@ -12527,7 +12426,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/brands.do'
 
 **Content-Type:** application/json
 
-**Description:** Forgot Password - Generates Reset Token and Sends Email
+**Description:** This API generates a reset token and sends an email to the customer.
 
 
 **Body-parameters:**
@@ -12572,7 +12471,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 **Content-Type:** application/json
 
-**Description:** Forgot Password - Generates Reset Token and Sends Email
+**Description:** This API generates a reset token and sends an email to the merchant.
 
 
 **Body-parameters:**
@@ -12605,7 +12504,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 }
 ```
 
-### resetCustomerPassword
+### Reset Customer Password.
 **URL:** https://api.shopsynch.com/v1/password/reset/customer.do
 
 **Type:** POST
@@ -12613,7 +12512,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 **Content-Type:** application/json
 
-**Description:** 
+**Description:** This API resets the customer password.
 
 
 **Body-parameters:**
@@ -12650,7 +12549,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 }
 ```
 
-### resetMerchantPassword
+### Reset Merchant Password.
 **URL:** https://api.shopsynch.com/v1/password/reset/merchant.do
 
 **Type:** POST
@@ -12658,7 +12557,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 **Content-Type:** application/json
 
-**Description:** 
+**Description:** This API resets the merchant password.
 
 
 **Body-parameters:**
@@ -12695,8 +12594,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 }
 ```
 
-## ProductController
-### Get All Products<br><br>Retrieves a paginated list of products with optional filtering and sorting. Supports filtering by search term,<br>category, brand, color, price range, stock status, and customer rating. Results are returned in pages for efficient<br>data loading and display.
+## Product Management
+### Get All Products
 **URL:** https://api.shopsynch.com/v1/products.do
 
 **Type:** GET
@@ -12704,15 +12603,9 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** This endpoint:
-         - Public endpoint (no authentication required, but respects tenant context)
-         - Converts strongly-typed ProductQueryRequest to Map for service layer compatibility
-         - Supports dynamic filtering: search, category, brand, color, price range, availability, rating
-         - Default sorting by CREATED_AT in descending order (newest products first)
-         - Enforces default page=0 if page number is negative or 0
-         - ProductMapper converts entity objects to DTOs optimized for API response
-         - Useful for product catalog pages with search and filter functionality
-         - Returns product count and pages info for client-side pagination controls
+**Description:** Retrieves a paginated list of products with optional filtering and sorting. Supports filtering by search term,
+category, brand, color, price range, stock status, and customer rating. Results are returned in pages for efficient
+data loading and display.
 
 
 **Query-parameters:**
@@ -12760,7 +12653,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/products.do?page=0&limit=100&sor
 }
 ```
 
-### Create Product<br><br>Creates a new product in the merchant&apos;s store (tenant). Validates product details including brand, color,<br>and category associations. Specifications are validated against tenant-specific configuration. Product is<br>immediately published upon creation unless status is set to INACTIVE.
+### Create Product
 **URL:** https://api.shopsynch.com/v1/products.do
 
 **Type:** POST
@@ -12768,15 +12661,9 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/products.do?page=0&limit=100&sor
 
 **Content-Type:** application/json
 
-**Description:** This endpoint:
-         - Restricted to shop owner access only (@ShopOwnerAccess)
-         - Category is mandatory; brand and color are optional
-         - Product records immediately belong to authenticated merchant's tenant
-         - Validates all referenced entities (brand, color, category) exist and belong to tenant
-         - Validates product specifications against tenant's specification configuration
-         - Automatically sets product status based on request (ACTIVE/INACTIVE/DRAFT)
-         - Assigns unique SKU and product ID upon creation
-         - Returns complete product details including tenant association
+**Description:** Creates a new product in the merchant's store (tenant). Validates product details including brand, color,
+and category associations. Specifications are validated against tenant-specific configuration. Product is
+immediately published upon creation unless status is set to INACTIVE.
 
 
 **Body-parameters:**
@@ -12900,7 +12787,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 }
 ```
 
-### Update Product<br><br>Updates an existing product&apos;s details. Allows modification of product information including name, description,<br>pricing, status, and specifications. Only merchant who owns the product can update it.
+### Update Product
 **URL:** https://api.shopsynch.com/v1/products/{productId}.do
 
 **Type:** PATCH
@@ -12908,13 +12795,8 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 **Content-Type:** application/json
 
-**Description:** This endpoint:
-         - Restricted to shop owner access only (@ShopOwnerAccess)
-         - Uses PATCH method for partial updates (only provided fields are updated)
-         - Updates only fields present in UpdateProductRequest (null fields are ignored)
-         - Updates modifiedAt timestamp automatically
-         - Returns complete updated product object
-         - Useful for single field updates or bulk product information corrections
+**Description:** Updates an existing product's details. Allows modification of product information including name, description,
+pricing, status, and specifications. Only merchant who owns the product can update it.
 
 
 **Path-parameters:**
@@ -13095,7 +12977,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
 }
 ```
 
-### Get Product Details<br><br>Retrieves complete details of a single product including all attributes, specifications, pricing,<br>availability, and related information.
+### Get Product Details
 **URL:** https://api.shopsynch.com/v1/products/{productId}.do
 
 **Type:** GET
@@ -13103,11 +12985,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -i 'https://api.shopsynch.c
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** This endpoint:
-         - Public endpoint (no authentication required)
-         - Returns complete product information including specifications and pricing
-         - ProductMapper transforms entity to DTO with all relevant fields
-         - Useful for product detail pages after clicking on product in catalog
+**Description:** Retrieves complete details of a single product including all attributes, specifications, pricing,
+availability, and related information.
 
 
 **Path-parameters:**
@@ -13246,7 +13125,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/products/{productId}.do'
 }
 ```
 
-### Get Similar Products<br><br>Retrieves a list of products similar to a specified product, typically from the same category or with<br>related attributes. Useful for &quot;You might also like&quot; or &quot;Related products&quot; sections in product detail pages.
+### Get Similar Products
 **URL:** https://api.shopsynch.com/v1/products/similar/by/category/{productId}.do
 
 **Type:** GET
@@ -13254,13 +13133,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/products/{productId}.do'
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** This endpoint:
-         - Public endpoint (no authentication required)
-         - Finds products in same category as reference product
-         - Excludes the reference product from results
-         - Returns limited result set (default 4) for UI display optimization
-         - Useful for cross-selling and product discovery features
-         - Default limit of 4 products is typical for "Related products" widgets
+**Description:** Retrieves a list of products similar to a specified product, typically from the same category or with
+related attributes. Useful for "You might also like" or "Related products" sections in product detail pages.
 
 
 **Path-parameters:**
@@ -13407,7 +13281,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/products/similar/by/category/{pr
 }
 ```
 
-### Delete Product<br><br>Permanently deletes a product from the merchant&apos;s store. Product details are removed from system but<br>historical order records remain intact for audit purposes.
+### Delete Product
 **URL:** https://api.shopsynch.com/v1/products/{productId}.do
 
 **Type:** DELETE
@@ -13415,12 +13289,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/products/similar/by/category/{pr
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** This endpoint:
-         - Restricted to shop owner access only (@ShopOwnerAccess)
-         - Permanently removes product from catalog
-         - Does not affect historical orders containing this product (referential integrity maintained)
-         - Cannot be undone (no soft delete/restoration available)
-         - Useful for removing inactive or obsolete products from inventory
+**Description:** Permanently deletes a product from the merchant's store. Product details are removed from system but
+historical order records remain intact for audit purposes.
 
 
 **Path-parameters:**
@@ -13534,8 +13404,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/generate/session/id.do'
 }
 ```
 
-## PaymentController
-### Get All Payments<br><br>Retrieves a paginated list of payments for a tenant with cursor-based navigation.
+## Payment Management
+### Get All Payments
 **URL:** https://api.shopsynch.com/v1/payments.do
 
 **Type:** GET
@@ -13543,9 +13413,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/generate/session/id.do'
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Get All Payments
-<p>
-Retrieves a paginated list of payments for a tenant with cursor-based navigation.
+**Description:** Retrieves a paginated list of payments for a tenant with cursor-based navigation.
 
 
 **Query-parameters:**
@@ -13588,7 +13456,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/payments.do?cursor=&limit=10&sor
 }
 ```
 
-### Get Payment by Order ID<br><br>Retrieves the payment details associated with a specific order.
+### Get Payment by Order ID
 **URL:** https://api.shopsynch.com/v1/payments/order/{orderId}.do
 
 **Type:** GET
@@ -13596,9 +13464,7 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/payments.do?cursor=&limit=10&sor
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Get Payment by Order ID
-<p>
-Retrieves the payment details associated with a specific order.
+**Description:** Retrieves the payment details associated with a specific order.
 
 
 **Path-parameters:**
@@ -13628,8 +13494,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/payments/order/{orderId}.do'
 |└─status|string|No comments found.|-||
 |└─paymentGatewayTransactionId|string|No comments found.|-||
 |└─manualPayment|boolean|No comments found.|-|true|
-|└─createdAt|string|No comments found.|-|"2026-03-16 19:36:46"|
-|└─updatedAt|string|No comments found.|-|"2026-03-16 19:36:46"|
+|└─createdAt|string|No comments found.|-|"2026-03-16 20:06:36"|
+|└─updatedAt|string|No comments found.|-|"2026-03-16 20:06:36"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -13649,15 +13515,15 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/payments/order/{orderId}.do'
     "status": "",
     "paymentGatewayTransactionId": "",
     "manualPayment": true,
-    "createdAt": "2026-03-16 19:36:46",
-    "updatedAt": "2026-03-16 19:36:46"
+    "createdAt": "2026-03-16 20:06:36",
+    "updatedAt": "2026-03-16 20:06:36"
   },
   "message": "",
   "status": true
 }
 ```
 
-### Initialize Customer Payment<br><br>Initializes a payment transaction for an authenticated customer&apos;s order.<br>Validates the requested payment gateway<br>and method, ensures the merchant has configured the payment gateway, creates<br>a payment record, and initiates<br>the payment processing with the external payment gateway.
+### Initialize Customer Payment
 **URL:** https://api.shopsynch.com/v1/payments/initialize.do
 
 **Type:** POST
@@ -13665,20 +13531,11 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/payments/order/{orderId}.do'
 
 **Content-Type:** application/json
 
-**Description:** This endpoint:
-- Validates both payment gateway and method against supported
-options
-- Generates a unique payment reference for tracking
-- Creates a Payment entity with PENDING status
-- Updates associated Order with payment gateway and method details
-- Handles OFFLINE gateway specially (returns success without
-external processing)
-- Generates metadata (orderNumber) for payment gateway callback
-tracking
-- Returns redirect URL or initialization data for hosted payment
-pages
-- Requires customer authentication and tenant context
-- Callback URL must be provided for payment verification redirection
+**Description:** Initializes a payment transaction for an authenticated customer's order.
+Validates the requested payment gateway
+and method, ensures the merchant has configured the payment gateway, creates
+a payment record, and initiates
+the payment processing with the external payment gateway.
 
 
 **Body-parameters:**
@@ -13777,7 +13634,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 }
 ```
 
-### Verify and Confirm Payment<br><br>Verifies payment completion with the external payment gateway using the<br>payment reference. Confirms the payment<br>amount, currency, and status, updates the payment record with gateway<br>verification details, and triggers order<br>status progression to PROCESSING. Also sends notification emails to merchant.
+### Verify and Confirm Payment
 **URL:** https://api.shopsynch.com/v1/payments/confirm.do
 
 **Type:** POST
@@ -13785,22 +13642,11 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 **Content-Type:** application/json
 
-**Description:** This endpoint:
-- Queries external payment gateway to verify transaction
-- Validates amount paid matches order total (prevents underpayment)
-- Validates currency matches payment request
-- Updates Payment entity with gateway response and verification
-details
-- Records payment status changes in PaymentStatusHistory for audit
-trail
-- Updates Order payment status to match verified payment status
-- Automatically progresses Order to PROCESSING status on successful
-payment
-- Clears customer's cart session upon successful payment
-- Sends merchant notification email with order and customer details
-- Is transactional to ensure consistency across multiple entity
-updates
-- Prevents double-payment situations before confirmation
+**Description:** Verifies payment completion with the external payment gateway using the
+payment reference. Confirms the payment
+amount, currency, and status, updates the payment record with gateway
+verification details, and triggers order
+status progression to PROCESSING. Also sends notification emails to merchant.
 
 **Request-headers:**
 
@@ -13832,7 +13678,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 {}
 ```
 
-### Update Payment Status<br><br>Updates the payment status for a specific payment record. Used by shop owners<br>to manually confirm or adjust<br>payment status, particularly for offline or manual payment methods. Records<br>status transition history and<br>updates associated order status accordingly.
+### Update Payment Status
 **URL:** https://api.shopsynch.com/v1/payments/{paymentId}/status.do
 
 **Type:** PATCH
@@ -13840,22 +13686,11 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 
 **Content-Type:** application/json
 
-**Description:** This endpoint:
-- Restricted to shop owner accounts only (@ShopOwnerAccess)
-- Validates new status is a valid PaymentStatusEnum value
-- Validates status transition logic (e.g., cannot go from SUCCESS to
-PENDING)
-- Prevents multiple successful payments for same order
-- Marks payment as manual_payment=true when updated this way
-- Records actor (shop owner) and timestamp of verification
-- Stores proofOfPayment (receipt URL, reference) in metadata
-- Stores manual notes in metadata for audit and reconciliation
-- Automatically progresses Order to PROCESSING status if payment
-marked SUCCESS
-- Records detailed history in PaymentStatusHistory with actor type
-(MERCHANT)
-- Used for offline payments, bank transfers, or manual
-reconciliation scenarios
+**Description:** Updates the payment status for a specific payment record. Used by shop owners
+to manually confirm or adjust
+payment status, particularly for offline or manual payment methods. Records
+status transition history and
+updates associated order status accordingly.
 
 
 **Path-parameters:**
