@@ -71,8 +71,8 @@ api[0].list[1].list.push({
 api[0].list.push({
     alias: 'WhatsAppAuthController',
     order: '3',
-    link: 'whatsappauthcontroller',
-    desc: 'WhatsAppAuthController',
+    link: 'whatsapp_authentication',
+    desc: 'Whatsapp Authentication',
     list: []
 })
 api[0].list[2].list.push({
@@ -80,20 +80,20 @@ api[0].list[2].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/phone/initiate.do',
     methodId: '4fa19983afa5383b8859b165752d6d87',
-    desc: 'initiateOTP',
+    desc: 'Initiate OTP A One Time Password is sent to user whatsapp number to verify their identity',
 });
 api[0].list[2].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/phone/verify.do',
     methodId: '94a2af74f5679ee9350885184d0b70d5',
-    desc: 'verifyOTP',
+    desc: 'Verify OTP',
 });
 api[0].list.push({
     alias: 'PaymentGatewayController',
     order: '4',
-    link: 'paymentgatewaycontroller',
-    desc: 'PaymentGatewayController',
+    link: 'payment_gateway',
+    desc: 'Payment Gateway',
     list: []
 })
 api[0].list[3].list.push({
@@ -101,7 +101,7 @@ api[0].list[3].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/payment-gateway/verify-account-number.do',
     methodId: 'd4d1c632ee43f79d7df127df11d76db8',
-    desc: 'resolveAccountDetail',
+    desc: 'Resolve Account Number In test mode use: &lt;br/&gt; {     &quot;accountNumber&quot;: &quot;8131974410&quot;,     &quot;bankCode&quot;: &quot;001&quot;,     &quot;gateway&quot;: &quot;PAYSTACK&quot; }',
 });
 api[0].list.push({
     alias: 'PromoAdController',
@@ -115,21 +115,21 @@ api[0].list[4].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promo-ads.do',
     methodId: '23eed6e3541e4cbc09bdf0129d92443f',
-    desc: 'createAd',
+    desc: 'Create Promo Ad This API creates a new promotional ad.',
 });
 api[0].list[4].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promo-ads/{id}.do',
     methodId: '69b2d7ea2d37424761aa9e7c8d72864d',
-    desc: 'updateAd',
+    desc: 'Update Promo Ad This API updates a specific promotional ad by its ID.',
 });
 api[0].list[4].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promo-ads/{id}.do',
     methodId: '298a4eb3c41986e6821fab71931a4c68',
-    desc: 'getAdById',
+    desc: 'Get Promo Ad by ID This API retrieves a specific promotional ad by its ID.',
 });
 api[0].list[4].list.push({
     order: '4',
@@ -143,27 +143,27 @@ api[0].list[4].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promo-ads/published.do',
     methodId: 'cd217d4055c74776194690e9f3872f96',
-    desc: 'getAllPublishedAds',
+    desc: 'Fetch Published Promo Ads. This API retrieves a list of published promotional ads. The response includes promotional ads in PUBLISHED status.',
 });
 api[0].list[4].list.push({
     order: '6',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promo-ads/update/{id}/status/{status}.do',
     methodId: '13b7e0487de6e60a3fe85e3dc4786f92',
-    desc: 'changeAdsStatus',
+    desc: 'Update Promo Ad Status. This API updates the status of a specific promotional ad. The response includes promotional ads in PUBLISHED status.',
 });
 api[0].list[4].list.push({
     order: '7',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/promo-ads/{id}.do',
     methodId: 'ed7c384e95e33647a103b367b3a75626',
-    desc: 'deleteAd',
+    desc: 'Delete Promo Ad. This API deletes a specific promotional ad.',
 });
 api[0].list.push({
     alias: 'CustomerOrderController',
     order: '6',
-    link: 'customerordercontroller',
-    desc: 'CustomerOrderController',
+    link: 'customer_order_management',
+    desc: 'Customer Order Management',
     list: []
 })
 api[0].list[5].list.push({
@@ -171,27 +171,27 @@ api[0].list[5].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/customer-orders.do',
     methodId: 'b66b31c3d59d0d391208de9a62871916',
-    desc: 'getCustomerOrders',
+    desc: 'Fetch Customer Orders. This API retrieves a list of orders for the authenticated customer. The response includes orders in PUBLISHED status.',
 });
 api[0].list[5].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/customer-orders/{customerId}.do',
     methodId: '6397e5deffc3327c96c4929f45088396',
-    desc: 'fetchCustomerOrders',
+    desc: 'Fetch Customer Orders. This API retrieves a list of orders for a specific customer.',
 });
 api[0].list[5].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/customer-orders/{orderId}/items.do',
     methodId: '7960689c6019705dc812e3c49bf9b5fe',
-    desc: 'getOrderItems',
+    desc: 'Fetch Order Items. This API retrieves a list of items in a specific order.',
 });
 api[0].list.push({
     alias: 'CartController',
     order: '7',
-    link: 'cartcontroller',
-    desc: 'CartController',
+    link: 'cart_management this_api_provides_endpoints_for_managing_customer_carts.',
+    desc: 'Cart Management This API provides endpoints for managing customer carts.',
     list: []
 })
 api[0].list[6].list.push({
@@ -199,56 +199,56 @@ api[0].list[6].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/carts/items.do',
     methodId: '9ae9ec28b44b18de5cee10d716ab2840',
-    desc: 'listItemsInCart',
+    desc: 'List Items In Cart. This API retrieves a list of items in the cart.',
 });
 api[0].list[6].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/carts/add.do',
     methodId: '7eef633926c0c939dc677a337abc56b9',
-    desc: 'addItemToCart',
+    desc: 'Add Item To Cart. This API adds an item to the cart.',
 });
 api[0].list[6].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/carts/remove/{carItemId}.do',
     methodId: 'eeb2a371071485fa427d8467c5dc0d44',
-    desc: 'removeItemFromCart',
+    desc: 'Remove Item From Cart. This API removes an item from the cart.',
 });
 api[0].list[6].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/carts/item/increment/quantity/{cartId}.do',
     methodId: '38371979b0f11857aa41843a413ae468',
-    desc: 'incrementItemQuantity',
+    desc: 'Increment Item Quantity. This API increments the quantity of an item in the cart.',
 });
 api[0].list[6].list.push({
     order: '5',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/carts/item/decrement/quantity/{cartId}.do',
     methodId: '52ee31353e7b87f668cfacb6780f3324',
-    desc: 'decrementItemQuantity',
+    desc: 'Decrement Item Quantity. This API decrements the quantity of an item in the cart.',
 });
 api[0].list[6].list.push({
     order: '6',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/carts/clear.do',
     methodId: '1082d8e90f239d66e4285d93d7b8224f',
-    desc: 'clearCart',
+    desc: 'Clear Cart. This API clears the cart for the authenticated customer or via sessionId.',
 });
 api[0].list[6].list.push({
     order: '7',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/carts/checkout.do',
     methodId: '512864f9afbe838ddb4c3e41fbc1393d',
-    desc: 'checkoutCart',
+    desc: 'Checkout Cart. This API checks out the cart for the authenticated customer.',
 });
 api[0].list[6].list.push({
     order: '8',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/carts/guest/checkout.do',
     methodId: 'a144f0800c383e972d4a58052cc0538b',
-    desc: 'guestCheckout',
+    desc: 'Guest Checkout Cart. This API checks out the cart for a guest user.',
 });
 api[0].list.push({
     alias: 'CategoryController',
