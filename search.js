@@ -101,7 +101,7 @@ api[0].list[3].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/payment-gateway/verify-account-number.do',
     methodId: 'd4d1c632ee43f79d7df127df11d76db8',
-    desc: 'Resolve Account Number In test mode use: &lt;br/&gt; {     &quot;accountNumber&quot;: &quot;8131974410&quot;,     &quot;bankCode&quot;: &quot;001&quot;,     &quot;gateway&quot;: &quot;PAYSTACK&quot; }',
+    desc: 'Resolve Account Number:',
 });
 api[0].list.push({
     alias: 'PromoAdController',
