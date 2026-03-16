@@ -267,8 +267,8 @@ api[0].list[7].list.push({
 api[0].list.push({
     alias: 'DeliveryZoneController',
     order: '9',
-    link: 'deliveryzonecontroller',
-    desc: 'DeliveryZoneController',
+    link: 'delivery_zone_management',
+    desc: 'Delivery Zone Management',
     list: []
 })
 api[0].list[8].list.push({
@@ -276,28 +276,28 @@ api[0].list[8].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/delivery-zones.do',
     methodId: '1a83a9dee588c7424203b2e67d44d2ae',
-    desc: 'createZone',
+    desc: 'Create Delivery Zone. This API creates a new delivery zone.',
 });
 api[0].list[8].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/delivery-zones.do',
     methodId: '80ce2161699b3fe57690f9f59f0292ad',
-    desc: 'getZones',
+    desc: 'Get All Delivery Zones. This API returns all delivery zones.',
 });
 api[0].list[8].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/delivery-zones/{id}.do',
     methodId: 'f17698c1f116a16283eab014c4bc2565',
-    desc: 'updateZone',
+    desc: 'Update Delivery Zone. This API updates an existing delivery zone.',
 });
 api[0].list[8].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/delivery-zones/{id}.do',
     methodId: '6f4484dc94cea460ac67de61cf31009b',
-    desc: 'deleteZone',
+    desc: 'Delete Delivery Zone. This API deletes an existing delivery zone.',
 });
 api[0].list.push({
     alias: 'PromotionController',
@@ -351,8 +351,8 @@ api[0].list[9].list.push({
 api[0].list.push({
     alias: 'MerchantController',
     order: '11',
-    link: 'merchantcontroller',
-    desc: 'MerchantController',
+    link: 'merchant_management',
+    desc: 'Merchant Management',
     list: []
 })
 api[0].list[10].list.push({
@@ -360,14 +360,14 @@ api[0].list[10].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/merchants/profile.do',
     methodId: 'd9a31bc791df9688c9f339f4489e1c96',
-    desc: 'getUserProfile',
+    desc: 'Get Merchant Profile. This API returns the merchant profile.',
 });
 api[0].list[10].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/merchants/profile/business.do',
     methodId: 'dc42264d7e9318fa680f63c39d25535a',
-    desc: 'getUserProfileBusiness',
+    desc: 'Get Merchant Business Profile. This API returns the merchant business profile.',
 });
 api[0].list.push({
     alias: 'RoleController',
@@ -617,8 +617,8 @@ api[0].list[20].list.push({
 api[0].list.push({
     alias: 'CustomerAuthController',
     order: '22',
-    link: 'customerauthcontroller',
-    desc: 'CustomerAuthController',
+    link: 'customer_authentication',
+    desc: 'Customer Authentication',
     list: []
 })
 api[0].list[21].list.push({
@@ -626,21 +626,21 @@ api[0].list[21].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/customer/signup.do',
     methodId: '26525736959fc67d40c2ec6baba01c8e',
-    desc: 'registerCustomer',
+    desc: 'Register Customer. This API registers a new customer.',
 });
 api[0].list[21].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/customer/signup/google.do',
     methodId: '6d60511c8162d06510dfbfa7bac28657',
-    desc: 'registerCustomerViaGoogle',
+    desc: 'Register Customer Via Google. This API registers a new customer via google.',
 });
 api[0].list[21].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/customer/login/google.do',
     methodId: '232bf517af8365ac1854f4d687c97339',
-    desc: 'loginCustomerViaGoogle',
+    desc: 'Login Customer Via Google. This API logs in a customer via google.',
 });
 api[0].list.push({
     alias: 'UserController',
