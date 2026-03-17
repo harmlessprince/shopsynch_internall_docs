@@ -1,0 +1,44 @@
+/* ShopSync Branding for Smart-Doc */
+:root {
+    --shopsync-navy: #003366;
+    --shopsync-light: #f4f7f9;
+}
+
+/* Sidebar Header/Background */
+.sidebar {
+    background-color: var(--shopsync-navy) !important;
+}
+
+/* Sidebar Menu Items */
+.sidebar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.sidebar-nav .nav-link:hover,
+.sidebar-nav .active {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+    border-left: 4px solid #00d2ff; /* Optional accent color */
+}
+
+/* Main Header */
+.header {
+    border-top: 5px solid var(--shopsync-navy);
+}
+
+/* Table Headers for your Data Dictionaries */
+table thead tr {
+    background-color: var(--shopsync-navy) !important;
+    color: #ffffff !important;
+}
+
+/* Buttons and Links */
+a {
+    color: var(--shopsync-navy);
+}
+
+.btn-primary {
+    background-color: var(--shopsync-navy) !important;
+    border-color: var(--shopsync-navy) !important;
+}
+/*"style": "xt256",*/
