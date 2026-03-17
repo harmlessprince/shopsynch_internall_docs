@@ -1262,7 +1262,7 @@ api[0].list.push({
     alias: 'dict',
     order: '46',
     link: 'dict_list',
-    desc: '数据字典',
+    desc: 'Data Dictionaries',
     list: []
 })
 api[0].list[45].list.push({
