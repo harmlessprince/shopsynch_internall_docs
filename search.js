@@ -691,6 +691,13 @@ api[0].list[22].list.push({
     methodId: 'a4b57f9ea9d653fe52e58a76bf9dd106',
     desc: 'Get Order Statistics',
 });
+api[0].list[22].list.push({
+    order: '8',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/orders/statuses',
+    methodId: '52a10d7e1c8863b3ea519094f25af790',
+    desc: 'Get All Order Statuses',
+});
 api[0].list.push({
     alias: 'WhatsAppWebhookController',
     order: '24',
@@ -946,8 +953,8 @@ api[0].list[33].list.push({
 api[0].list.push({
     alias: 'PaymentMethodController',
     order: '35',
-    link: 'paymentmethodcontroller',
-    desc: 'PaymentMethodController',
+    link: 'payment_method_management',
+    desc: 'Payment Method Management',
     list: []
 })
 api[0].list[34].list.push({
@@ -955,13 +962,13 @@ api[0].list[34].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/payment-methods',
     methodId: 'a2afc573024e174a57b4339d8f974bee',
-    desc: 'getAllPaymentMethods',
+    desc: 'List Payment Methods.',
 });
 api[0].list.push({
     alias: 'TenantCategoryController',
     order: '36',
-    link: 'tenantcategorycontroller',
-    desc: 'TenantCategoryController',
+    link: 'tenant_category_management',
+    desc: 'Tenant Category Management',
     list: []
 })
 api[0].list[35].list.push({
@@ -969,21 +976,21 @@ api[0].list[35].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/tenant-categories',
     methodId: '5c839cdbe8e243af0732e3083b66d902',
-    desc: 'getAllCategories',
+    desc: 'List Tenant Categories.',
 });
 api[0].list[35].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/tenant-categories',
     methodId: 'c1dc2db691667f40a855be6d79f38964',
-    desc: 'createCategory',
+    desc: 'Create Tenant Category.',
 });
 api[0].list[35].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/tenant-categories/{categoryId}',
     methodId: '7017b48abe30e62ec8a73bb351b7016e',
-    desc: 'deleteCategory',
+    desc: 'Delete Tenant Category.',
 });
 api[0].list.push({
     alias: 'LocalGovernmentController',
@@ -1202,6 +1209,13 @@ api[0].list[43].list.push({
     methodId: '79388ab405d77b003315b80d69f0cb9c',
     desc: 'Update Payment Status',
 });
+api[0].list[43].list.push({
+    order: '7',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/payments/statuses',
+    methodId: '32d30a3768f3c7897f32a58e2b4a4015',
+    desc: 'Get All Payment Statuses',
+});
 api[0].list.push({
     alias: 'AddressController',
     order: '45',
@@ -1243,6 +1257,34 @@ api[0].list[44].list.push({
     url: 'https://api.shopsynch.com/v1/addresses/{addressId}/default',
     methodId: 'ebb2e659d486235130b53f1c159a8875',
     desc: 'makeAddressDefault',
+});
+api[0].list.push({
+    alias: 'dict',
+    order: '46',
+    link: 'dict_list',
+    desc: '数据字典',
+    list: []
+})
+api[0].list[45].list.push({
+    order: '1',
+    deprecated: 'false',
+    url: '',
+    methodId: '',
+    desc: 'Order Status Codes',
+});
+api[0].list[45].list.push({
+    order: '2',
+    deprecated: 'false',
+    url: '',
+    methodId: '',
+    desc: 'Payment Statuses',
+});
+api[0].list[45].list.push({
+    order: '3',
+    deprecated: 'false',
+    url: '',
+    methodId: '',
+    desc: 'Payment Gateways',
 });
 document.onkeydown = keyDownSearch;
 function keyDownSearch(e) {
