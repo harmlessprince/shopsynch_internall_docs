@@ -503,55 +503,97 @@ api[0].list[17].list.push({
     desc: 'previewForgotPassword',
 });
 api[0].list.push({
-    alias: 'CustomerController',
+    alias: 'PasswordlessAuthController',
     order: '19',
+    link: 'passwordless_authentication.',
+    desc: 'Passwordless Authentication.',
+    list: []
+})
+api[0].list[18].list.push({
+    order: '1',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/auth/passwordless/initiate',
+    methodId: '0d5a462750d73eec3651df2c3486b367',
+    desc: 'Initiate Passwordless Authentication.',
+});
+api[0].list[18].list.push({
+    order: '2',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/auth/passwordless/merchant/verify-email',
+    methodId: '66610e8474d633233122c8ee6e1c7f47',
+    desc: 'Verify Merchant Email.',
+});
+api[0].list[18].list.push({
+    order: '3',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/auth/passwordless/merchant/verify-phone',
+    methodId: '222d223d8e9803347939d96b0e326855',
+    desc: 'Verify Merchant Phone.',
+});
+api[0].list[18].list.push({
+    order: '4',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/auth/passwordless/customer/verify-email',
+    methodId: '6415d975006446161f643bbed4ec27e6',
+    desc: 'Verify Customer Email.',
+});
+api[0].list[18].list.push({
+    order: '5',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/auth/passwordless/customer/verify-phone',
+    methodId: '6cad4f849d8c45bfa0d7a2e610cfc08c',
+    desc: 'Verify Customer Phone.',
+});
+api[0].list.push({
+    alias: 'CustomerController',
+    order: '20',
     link: 'customercontroller',
     desc: 'CustomerController',
     list: []
 })
-api[0].list[18].list.push({
+api[0].list[19].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/customers',
     methodId: 'fae2c9b5de1cfb53d7996eeafeccee27',
     desc: 'Get All Customers',
 });
-api[0].list[18].list.push({
+api[0].list[19].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/customers/profile',
     methodId: '11b7ce0b35465a5a7b1c6380ae02e8e3',
     desc: 'Get Authenticated Customer Profile',
 });
-api[0].list[18].list.push({
+api[0].list[19].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/customers/{customerId}',
     methodId: '456c7ae2d880abc457b287956376348c',
     desc: 'Get Specific Customer (Shop Owner View)',
 });
-api[0].list[18].list.push({
+api[0].list[19].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/customers/{customerId}/deactivate',
     methodId: '0abd05f73267bf8fa84c42b161f47f45',
     desc: 'Deactivate Customer Account',
 });
-api[0].list[18].list.push({
+api[0].list[19].list.push({
     order: '5',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/customers/{customerId}/activate',
     methodId: '23167bd3010adc9f4f13d6179e97eede',
     desc: 'Activate Customer Account',
 });
-api[0].list[18].list.push({
+api[0].list[19].list.push({
     order: '6',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/customers/signup',
     methodId: 'a07a4635daa35aafa41b7cbe6e6f6ceb',
     desc: 'Register New Customer',
 });
-api[0].list[18].list.push({
+api[0].list[19].list.push({
     order: '7',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/customers/profile/update',
@@ -560,19 +602,19 @@ api[0].list[18].list.push({
 });
 api[0].list.push({
     alias: 'EmailVerificationController',
-    order: '20',
+    order: '21',
     link: 'email_verification',
     desc: 'Email Verification',
     list: []
 })
-api[0].list[19].list.push({
+api[0].list[20].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/email/merchant/verify',
     methodId: '090d110b891d967f6bdefae8a25c2587',
     desc: 'Verify Merchant Email',
 });
-api[0].list[19].list.push({
+api[0].list[20].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/email/merchant/initiate/verification',
@@ -581,26 +623,26 @@ api[0].list[19].list.push({
 });
 api[0].list.push({
     alias: 'CustomerAuthController',
-    order: '21',
+    order: '22',
     link: 'customer_authentication',
     desc: 'Customer Authentication',
     list: []
 })
-api[0].list[20].list.push({
+api[0].list[21].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/customer/signup',
     methodId: '26525736959fc67d40c2ec6baba01c8e',
     desc: 'Register Customer.',
 });
-api[0].list[20].list.push({
+api[0].list[21].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/customer/signup/google',
     methodId: '6d60511c8162d06510dfbfa7bac28657',
     desc: 'Register Customer Via Google.',
 });
-api[0].list[20].list.push({
+api[0].list[21].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/customer/login/google',
@@ -609,26 +651,26 @@ api[0].list[20].list.push({
 });
 api[0].list.push({
     alias: 'UserController',
-    order: '22',
+    order: '23',
     link: 'usercontroller',
     desc: 'UserController',
     list: []
 })
-api[0].list[21].list.push({
+api[0].list[22].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/users/profile',
     methodId: 'a661e39277999c9f6d51859946734b85',
     desc: 'getUserProfile',
 });
-api[0].list[21].list.push({
+api[0].list[22].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/users/profile/with/role',
     methodId: '0c21283d6285bd659e4423a704be3c4e',
     desc: 'getUserProfileWithRole',
 });
-api[0].list[21].list.push({
+api[0].list[22].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/users/profile/update',
@@ -637,61 +679,61 @@ api[0].list[21].list.push({
 });
 api[0].list.push({
     alias: 'OrderController',
-    order: '23',
+    order: '24',
     link: 'ordercontroller',
     desc: 'OrderController',
     list: []
 })
-api[0].list[22].list.push({
+api[0].list[23].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/orders',
     methodId: '8bca6265e4aba517ce0aeb6f72d333b1',
     desc: 'Get All Orders  Retrieves a paginated and filtered list of orders for an authenticated shop owner. Supports sorting by various fields, pagination, and multiple filtering criteria including search terms, order status, payment status, amount ranges, and date ranges.',
 });
-api[0].list[22].list.push({
+api[0].list[23].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/orders/{orderNumber}/show',
     methodId: '00015578a7f79090d8ec97abf7118a32',
     desc: 'Get Order by Order Number  Retrieves a single order by its order number. Order number is visible to both customers and merchants, providing a human-readable alternative to internal order IDs.',
 });
-api[0].list[22].list.push({
+api[0].list[23].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/orders/{orderId}/detail',
     methodId: '150f612186ab664c6ab4caa72ab1d5d6',
     desc: 'Get Order Detail for Merchant  Retrieves complete order details including all associated order line items for a shop owner. Provides comprehensive view necessary for order fulfillment, including item quantities, prices, and variants.',
 });
-api[0].list[22].list.push({
+api[0].list[23].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/orders/{orderId}/items',
     methodId: '5beeb8c23f5ead8f7c8be4e3430595f2',
     desc: 'Get Order Line Items  Retrieves all line items (products) associated with a specific order. Each line item includes product details, variant information, quantity ordered, and pricing.',
 });
-api[0].list[22].list.push({
+api[0].list[23].list.push({
     order: '5',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/orders/{orderId}/status',
     methodId: '5cd3387860122d0ccdf8c9b4d72f2b5b',
     desc: 'Update Order Status',
 });
-api[0].list[22].list.push({
+api[0].list[23].list.push({
     order: '6',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/orders/{orderId}/force-status',
     methodId: '6f02f14a425f4ce53cc0541f93724acd',
     desc: 'Force Update Order Status (Admin Override)  Bypasses all standard transition rules and forcibly sets the order to the given status. Use with caution — this is intended for administrative corrections only (e.g., stuck orders, data recovery, third-party sync discrepancies).',
 });
-api[0].list[22].list.push({
+api[0].list[23].list.push({
     order: '7',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/orders/merchant/stats',
     methodId: 'a4b57f9ea9d653fe52e58a76bf9dd106',
     desc: 'Get Order Statistics',
 });
-api[0].list[22].list.push({
+api[0].list[23].list.push({
     order: '8',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/orders/statuses',
@@ -700,26 +742,26 @@ api[0].list[22].list.push({
 });
 api[0].list.push({
     alias: 'WhatsAppWebhookController',
-    order: '24',
+    order: '25',
     link: 'whatsappwebhookcontroller',
     desc: 'WhatsAppWebhookController',
     list: []
 })
-api[0].list[23].list.push({
+api[0].list[24].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/webhooks/whatsapp/send-template',
     methodId: '53f5e9c1bf694beb4d521caee07aa266',
     desc: 'Send a template message to initiate or re-establish a connection.',
 });
-api[0].list[23].list.push({
+api[0].list[24].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/webhooks/whatsapp',
     methodId: '6d0c5cdc794b217d2102b8f5fb6aea24',
     desc: 'verifyWebhook',
 });
-api[0].list[23].list.push({
+api[0].list[24].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/webhooks/whatsapp',
@@ -728,12 +770,12 @@ api[0].list[23].list.push({
 });
 api[0].list.push({
     alias: 'SocialAuthController',
-    order: '25',
+    order: '26',
     link: 'socialauthcontroller',
     desc: 'SocialAuthController',
     list: []
 })
-api[0].list[24].list.push({
+api[0].list[25].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/social/google/signup/merchant',
@@ -742,19 +784,19 @@ api[0].list[24].list.push({
 });
 api[0].list.push({
     alias: 'ProductVariationController',
-    order: '26',
+    order: '27',
     link: 'product_variation_management_(authenticated)',
     desc: 'Product Variation Management (Authenticated)',
     list: []
 })
-api[0].list[25].list.push({
+api[0].list[26].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/variation/{variationId}',
     methodId: '862c14c3082787c05908efdb63961536',
     desc: 'Update Product Variation',
 });
-api[0].list[25].list.push({
+api[0].list[26].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/variation/add',
@@ -763,12 +805,12 @@ api[0].list[25].list.push({
 });
 api[0].list.push({
     alias: 'StateController',
-    order: '27',
+    order: '28',
     link: 'statecontroller',
     desc: 'StateController',
     list: []
 })
-api[0].list[26].list.push({
+api[0].list[27].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/states/{countryId}',
@@ -777,40 +819,40 @@ api[0].list[26].list.push({
 });
 api[0].list.push({
     alias: 'ComplianceController',
-    order: '28',
+    order: '29',
     link: 'tenant_compliance_management',
     desc: 'Tenant Compliance Management',
     list: []
 })
-api[0].list[27].list.push({
+api[0].list[28].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/compliance/business/profile',
     methodId: '7e83ce029de141a722b2854098408b5b',
     desc: 'Get Business Profile',
 });
-api[0].list[27].list.push({
+api[0].list[28].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/compliance/business/status',
     methodId: '8de9039399d35ed4948edd79dc04d096',
     desc: 'Get Business Compliance Status',
 });
-api[0].list[27].list.push({
+api[0].list[28].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/compliance/business/profile',
     methodId: '22c803391d364cc84b6897cd5cc6efe7',
     desc: 'Update Business Profile',
 });
-api[0].list[27].list.push({
+api[0].list[28].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/compliance/business/contact/detail',
     methodId: '333c7f4d381f3c513706c09f19d4d383',
     desc: 'Get Business Contact',
 });
-api[0].list[27].list.push({
+api[0].list[28].list.push({
     order: '5',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/compliance/business/contact/detail',
@@ -819,12 +861,12 @@ api[0].list[27].list.push({
 });
 api[0].list.push({
     alias: 'CountryController',
-    order: '29',
+    order: '30',
     link: 'countrycontroller',
     desc: 'CountryController',
     list: []
 })
-api[0].list[28].list.push({
+api[0].list[29].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/countries',
@@ -833,12 +875,12 @@ api[0].list[28].list.push({
 });
 api[0].list.push({
     alias: 'SpecificationController',
-    order: '30',
+    order: '31',
     link: 'specificationcontroller',
     desc: 'SpecificationController',
     list: []
 })
-api[0].list[29].list.push({
+api[0].list[30].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/specifications',
@@ -847,40 +889,40 @@ api[0].list[29].list.push({
 });
 api[0].list.push({
     alias: 'ConfigController',
-    order: '31',
+    order: '32',
     link: 'tenant_configuration_management',
     desc: 'Tenant Configuration Management',
     list: []
 })
-api[0].list[30].list.push({
+api[0].list[31].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/config/currentMode/{mode}',
     methodId: '04e57a6e750a85f91d71f7495b5ec135',
     desc: 'Update Current Mode',
 });
-api[0].list[30].list.push({
+api[0].list[31].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/config/domain',
     methodId: '68423828012c3af9c2e6a00662366531',
     desc: 'Update Domain',
 });
-api[0].list[30].list.push({
+api[0].list[31].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/config/domain',
     methodId: 'd377e1a2c0a098faa9c9523b638ccece',
     desc: 'Get Domains',
 });
-api[0].list[30].list.push({
+api[0].list[31].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/config/keys',
     methodId: '9afe865c81823e190deac0ddf7ced2e0',
     desc: 'Get Keys',
 });
-api[0].list[30].list.push({
+api[0].list[31].list.push({
     order: '5',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/config/regenerate/keys/{mode}',
@@ -889,19 +931,19 @@ api[0].list[30].list.push({
 });
 api[0].list.push({
     alias: 'HomeController',
-    order: '32',
+    order: '33',
     link: 'homecontroller',
     desc: 'HomeController',
     list: []
 })
-api[0].list[31].list.push({
+api[0].list[32].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/health',
     methodId: '57285e31c4400dc59fb47f6c288b3536',
     desc: 'getHealth',
 });
-api[0].list[31].list.push({
+api[0].list[32].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/healths',
@@ -910,19 +952,19 @@ api[0].list[31].list.push({
 });
 api[0].list.push({
     alias: 'ProductVariationPriceDetailController',
-    order: '33',
+    order: '34',
     link: 'productvariationpricedetailcontroller',
     desc: 'ProductVariationPriceDetailController',
     list: []
 })
-api[0].list[32].list.push({
+api[0].list[33].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/variation/priceDetail/{variationPriceDetailId}',
     methodId: '0e207a059010360d544e57b8a4beb596',
     desc: 'updateProductVariationPriceDetail',
 });
-api[0].list[32].list.push({
+api[0].list[33].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/variation/priceDetail',
@@ -931,19 +973,19 @@ api[0].list[32].list.push({
 });
 api[0].list.push({
     alias: 'FileController',
-    order: '34',
+    order: '35',
     link: 'file_management_(file_upload)',
     desc: 'File Management (File Upload)',
     list: []
 })
-api[0].list[33].list.push({
+api[0].list[34].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/files/upload/single/image',
     methodId: '15ae4b213f6a3636dec8b7fd22b36ea3',
     desc: 'Upload Single Image.',
 });
-api[0].list[33].list.push({
+api[0].list[34].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/files/upload/multiple/images',
@@ -952,12 +994,12 @@ api[0].list[33].list.push({
 });
 api[0].list.push({
     alias: 'PaymentMethodController',
-    order: '35',
+    order: '36',
     link: 'payment_method_management',
     desc: 'Payment Method Management',
     list: []
 })
-api[0].list[34].list.push({
+api[0].list[35].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/payment-methods',
@@ -966,26 +1008,26 @@ api[0].list[34].list.push({
 });
 api[0].list.push({
     alias: 'TenantCategoryController',
-    order: '36',
+    order: '37',
     link: 'tenant_category_management',
     desc: 'Tenant Category Management',
     list: []
 })
-api[0].list[35].list.push({
+api[0].list[36].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/tenant-categories',
     methodId: '5c839cdbe8e243af0732e3083b66d902',
     desc: 'List Tenant Categories.',
 });
-api[0].list[35].list.push({
+api[0].list[36].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/tenant-categories',
     methodId: 'c1dc2db691667f40a855be6d79f38964',
     desc: 'Create Tenant Category.',
 });
-api[0].list[35].list.push({
+api[0].list[36].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/tenant-categories/{categoryId}',
@@ -994,12 +1036,12 @@ api[0].list[35].list.push({
 });
 api[0].list.push({
     alias: 'LocalGovernmentController',
-    order: '37',
+    order: '38',
     link: 'localgovernmentcontroller',
     desc: 'LocalGovernmentController',
     list: []
 })
-api[0].list[36].list.push({
+api[0].list[37].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/local-governments/{stateId}',
@@ -1008,12 +1050,12 @@ api[0].list[36].list.push({
 });
 api[0].list.push({
     alias: 'AppTokenController',
-    order: '38',
+    order: '39',
     link: 'app_token_management',
     desc: 'App Token Management',
     list: []
 })
-api[0].list[37].list.push({
+api[0].list[38].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/verify/merchant/reset-password-token',
@@ -1022,19 +1064,19 @@ api[0].list[37].list.push({
 });
 api[0].list.push({
     alias: 'ChangePasswordController',
-    order: '39',
+    order: '40',
     link: 'change_password_management_(authenticated)',
     desc: 'Change Password Management (authenticated)',
     list: []
 })
-api[0].list[38].list.push({
+api[0].list[39].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/change/password/customer',
     methodId: '12915658062bdc6a85b2c4bb124a7965',
     desc: 'Change Customer Password',
 });
-api[0].list[38].list.push({
+api[0].list[39].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/change/password/merchant',
@@ -1043,12 +1085,12 @@ api[0].list[38].list.push({
 });
 api[0].list.push({
     alias: 'BrandController',
-    order: '40',
+    order: '41',
     link: 'brandcontroller',
     desc: 'BrandController',
     list: []
 })
-api[0].list[39].list.push({
+api[0].list[40].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/brands',
@@ -1057,33 +1099,33 @@ api[0].list[39].list.push({
 });
 api[0].list.push({
     alias: 'ForgotPasswordController',
-    order: '41',
+    order: '42',
     link: 'forgot_password_management_(unauthenticated)',
     desc: 'Forgot Password Management (Unauthenticated)',
     list: []
 })
-api[0].list[40].list.push({
+api[0].list[41].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/password/forgot/request/customer',
     methodId: 'aa6359793293d4a66414ce920bbc269f',
     desc: 'Initiate Forgot Password for Customer',
 });
-api[0].list[40].list.push({
+api[0].list[41].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/password/forgot/request/merchant',
     methodId: 'c3aa16cb33fa000d6661c0b6e8b631d4',
     desc: 'Initiate Forgot Password for Merchant',
 });
-api[0].list[40].list.push({
+api[0].list[41].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/password/reset/customer',
     methodId: '8bc5757cbe0a3235b2afebf56f283778',
     desc: 'Reset Customer Password.',
 });
-api[0].list[40].list.push({
+api[0].list[41].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/password/reset/merchant',
@@ -1092,54 +1134,54 @@ api[0].list[40].list.push({
 });
 api[0].list.push({
     alias: 'ProductController',
-    order: '42',
+    order: '43',
     link: 'product_management',
     desc: 'Product Management',
     list: []
 })
-api[0].list[41].list.push({
+api[0].list[42].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products',
     methodId: '602c60e0c6c449b301cfcb1b3c58b0ac',
     desc: 'Get All Products',
 });
-api[0].list[41].list.push({
+api[0].list[42].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products',
     methodId: 'f7b551eea448d2c97ee531aae755ec5e',
     desc: 'Create Product',
 });
-api[0].list[41].list.push({
+api[0].list[42].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/{productId}',
     methodId: '75a1f711dba574c2e2c560e4d2fe0ff1',
     desc: 'Update Product',
 });
-api[0].list[41].list.push({
+api[0].list[42].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/{productId}',
     methodId: '131ab3904dc5fc1911696814c4b10bf1',
     desc: 'Get Product Details',
 });
-api[0].list[41].list.push({
+api[0].list[42].list.push({
     order: '5',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/similar/by/category/{productId}',
     methodId: '1241fe80ab493f3253f690674a08dc3d',
     desc: 'Get Similar Products',
 });
-api[0].list[41].list.push({
+api[0].list[42].list.push({
     order: '6',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/{productId}',
     methodId: '182d6afa6b55185cfebf4072ad7a6e63',
     desc: 'Delete Product',
 });
-api[0].list[41].list.push({
+api[0].list[42].list.push({
     order: '7',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/{productId}/rating',
@@ -1148,12 +1190,12 @@ api[0].list[41].list.push({
 });
 api[0].list.push({
     alias: 'CartSessionController',
-    order: '43',
+    order: '44',
     link: 'cartsessioncontroller',
     desc: 'CartSessionController',
     list: []
 })
-api[0].list[42].list.push({
+api[0].list[43].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/generate/session/id',
@@ -1162,54 +1204,54 @@ api[0].list[42].list.push({
 });
 api[0].list.push({
     alias: 'PaymentController',
-    order: '44',
+    order: '45',
     link: 'payment_management',
     desc: 'Payment Management',
     list: []
 })
-api[0].list[43].list.push({
+api[0].list[44].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/payments',
     methodId: '7c5361a34da8b80f053a0046d79b2ad6',
     desc: 'Get All Payments',
 });
-api[0].list[43].list.push({
+api[0].list[44].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/payments/order/{orderId}',
     methodId: '3b5ec24d972e71038197f4163e8beb9f',
     desc: 'Get Payment by Order ID',
 });
-api[0].list[43].list.push({
+api[0].list[44].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/payments/initialize',
     methodId: '8ef0a005bbca6a4954cf34681e8b3ecf',
     desc: 'Initialize Customer Payment',
 });
-api[0].list[43].list.push({
+api[0].list[44].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/payments/guest/initialize',
     methodId: 'e3a4f43efac78feffbefa60b250b1236',
     desc: 'Initialize Guest Payment',
 });
-api[0].list[43].list.push({
+api[0].list[44].list.push({
     order: '5',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/payments/confirm',
     methodId: '3105326759ca7a7334354b7811fb014e',
     desc: 'Verify and Confirm Payment',
 });
-api[0].list[43].list.push({
+api[0].list[44].list.push({
     order: '6',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/payments/{paymentId}/status',
     methodId: '79388ab405d77b003315b80d69f0cb9c',
     desc: 'Update Payment Status',
 });
-api[0].list[43].list.push({
+api[0].list[44].list.push({
     order: '7',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/payments/statuses',
@@ -1218,40 +1260,40 @@ api[0].list[43].list.push({
 });
 api[0].list.push({
     alias: 'AddressController',
-    order: '45',
+    order: '46',
     link: 'addresscontroller',
     desc: 'AddressController',
     list: []
 })
-api[0].list[44].list.push({
+api[0].list[45].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/addresses',
     methodId: '35402a4e699148ebbd8931d0fd1d95e4',
     desc: 'getUserAddresses',
 });
-api[0].list[44].list.push({
+api[0].list[45].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/addresses',
     methodId: '7b7a36375a116d8022e7ec5d1851c951',
     desc: 'store',
 });
-api[0].list[44].list.push({
+api[0].list[45].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/addresses/{addressId}',
     methodId: '1eb3ebd96d3d60f2985445c0317ec8f7',
     desc: 'updateAddress',
 });
-api[0].list[44].list.push({
+api[0].list[45].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/addresses/{addressId}',
     methodId: '9bebaa479b9b23eb4ff5a8e2e88d9130',
     desc: 'deleteAddress',
 });
-api[0].list[44].list.push({
+api[0].list[45].list.push({
     order: '5',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/addresses/{addressId}/default',
@@ -1260,26 +1302,26 @@ api[0].list[44].list.push({
 });
 api[0].list.push({
     alias: 'dict',
-    order: '46',
+    order: '47',
     link: 'dict_list',
     desc: 'Data Dictionaries',
     list: []
 })
-api[0].list[45].list.push({
+api[0].list[46].list.push({
     order: '1',
     deprecated: 'false',
     url: '',
     methodId: '',
     desc: 'Order Status Codes',
 });
-api[0].list[45].list.push({
+api[0].list[46].list.push({
     order: '2',
     deprecated: 'false',
     url: '',
     methodId: '',
     desc: 'Payment Statuses',
 });
-api[0].list[45].list.push({
+api[0].list[46].list.push({
     order: '3',
     deprecated: 'false',
     url: '',
