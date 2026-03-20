@@ -505,8 +505,8 @@ api[0].list[17].list.push({
 api[0].list.push({
     alias: 'PasswordlessAuthController',
     order: '19',
-    link: 'passwordless_authentication.',
-    desc: 'Passwordless Authentication.',
+    link: 'password-less_authentication.',
+    desc: 'Password-less Authentication.',
     list: []
 })
 api[0].list[18].list.push({
@@ -514,7 +514,7 @@ api[0].list[18].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/passwordless/initiate',
     methodId: '0d5a462750d73eec3651df2c3486b367',
-    desc: 'Initiate Passwordless Authentication.',
+    desc: 'Initiate Password-less Authentication.',
 });
 api[0].list[18].list.push({
     order: '2',
