@@ -519,29 +519,43 @@ api[0].list[18].list.push({
 api[0].list[18].list.push({
     order: '2',
     deprecated: 'false',
-    url: 'https://api.shopsynch.com/v1/auth/passwordless/merchant/verify-email',
-    methodId: '66610e8474d633233122c8ee6e1c7f47',
-    desc: 'Verify Merchant Email.',
+    url: 'https://api.shopsynch.com/v1/auth/passwordless/initiate/email',
+    methodId: '473e261a50f6f954804f26cf7707326d',
+    desc: 'Initiate Password-less email Authentication.',
 });
 api[0].list[18].list.push({
     order: '3',
     deprecated: 'false',
-    url: 'https://api.shopsynch.com/v1/auth/passwordless/merchant/verify-phone',
-    methodId: '222d223d8e9803347939d96b0e326855',
-    desc: 'Verify Merchant Phone.',
+    url: 'https://api.shopsynch.com/v1/auth/passwordless/initiate/phone',
+    methodId: '824368cbac6468eeaa36faf531bf42ba',
+    desc: 'Initiate Password-less Phone number Authentication .',
 });
 api[0].list[18].list.push({
     order: '4',
     deprecated: 'false',
-    url: 'https://api.shopsynch.com/v1/auth/passwordless/customer/verify-email',
-    methodId: '6415d975006446161f643bbed4ec27e6',
-    desc: 'Verify Customer Email.',
+    url: 'https://api.shopsynch.com/v1/auth/passwordless/merchant/verify-email',
+    methodId: 'bfd34cccaba8fdb773d59ebded1856bc',
+    desc: 'Verify Merchant Email.',
 });
 api[0].list[18].list.push({
     order: '5',
     deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/auth/passwordless/merchant/verify-phone',
+    methodId: 'da0cac51e1636d36fe07710dc691e1b9',
+    desc: 'Verify Merchant Phone.',
+});
+api[0].list[18].list.push({
+    order: '6',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/auth/passwordless/customer/verify-email',
+    methodId: 'd98bef387ac812b14f55b0a44f1b2e23',
+    desc: 'Verify Customer Email.',
+});
+api[0].list[18].list.push({
+    order: '7',
+    deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/passwordless/customer/verify-phone',
-    methodId: '6cad4f849d8c45bfa0d7a2e610cfc08c',
+    methodId: '5281e197ed23cfbefafe74d053d1067a',
     desc: 'Verify Customer Phone.',
 });
 api[0].list.push({
