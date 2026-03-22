@@ -8471,8 +8471,8 @@
   "name": "",
   "CategoryId": "",
   "productCategory": {
-    "createdAt": "2026-03-20 15:31:44",
-    "updatedAt": "2026-03-20 15:31:44",
+    "createdAt": "2026-03-22 05:54:31",
+    "updatedAt": "2026-03-22 05:54:31",
     "id": "",
     "parentId": "",
     "name": "",
@@ -9015,10 +9015,6 @@
                 <stringProp name="Header.name">Content-Type</stringProp>
                 <stringProp name="Header.value">application/json</stringProp>
               </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">X-MerchantApiKey</stringProp>
-                <stringProp name="Header.value">pk_test</stringProp>
-              </elementProp>
             </collectionProp>
           </HeaderManager>
           <hashTree/>
@@ -9098,10 +9094,6 @@
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Content-Type</stringProp>
                 <stringProp name="Header.value">application/json</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">X-MerchantApiKey</stringProp>
-                <stringProp name="Header.value">pk_test</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">X-Session-Id</stringProp>
@@ -9188,10 +9180,6 @@
                 <stringProp name="Header.value">application/json</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">X-MerchantApiKey</stringProp>
-                <stringProp name="Header.value">pk_test</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">X-Session-Id</stringProp>
                 <stringProp name="Header.value"></stringProp>
               </elementProp>
@@ -9276,10 +9264,6 @@
                 <stringProp name="Header.value">application/json</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">X-MerchantApiKey</stringProp>
-                <stringProp name="Header.value">pk_test</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">X-Session-Id</stringProp>
                 <stringProp name="Header.value"></stringProp>
               </elementProp>
@@ -9362,10 +9346,6 @@
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Content-Type</stringProp>
                 <stringProp name="Header.value">application/json</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">X-MerchantApiKey</stringProp>
-                <stringProp name="Header.value">pk_test</stringProp>
               </elementProp>
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">X-Session-Id</stringProp>
