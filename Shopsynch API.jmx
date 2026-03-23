@@ -5612,8 +5612,8 @@
   "name": "",
   "CategoryId": "",
   "productCategory": {
-    "createdAt": "2026-03-23 07:49:30",
-    "updatedAt": "2026-03-23 07:49:30",
+    "createdAt": "2026-03-23 08:04:23",
+    "updatedAt": "2026-03-23 08:04:23",
     "id": "",
     "parentId": "",
     "name": "",
@@ -8755,10 +8755,10 @@
                 <stringProp name="Argument.value">
 {
   "array": true,
+  "object": true,
   "valueNode": true,
-  "containerNode": true,
   "missingNode": true,
-  "object": true
+  "containerNode": true
 }
                 </stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -9379,9 +9379,7 @@
                 <stringProp name="Argument.value">
 {
   "businessTradingName": "",
-  "legalBusinessName": "",
   "businessType": "",
-  "staffSize": 0,
   "businessRegistrationNumber": "",
   "businessStorefrontUrl": "",
   "businessDescription": "",
