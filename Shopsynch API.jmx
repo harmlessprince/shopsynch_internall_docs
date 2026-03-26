@@ -4538,8 +4538,8 @@
   "name": "",
   "CategoryId": "",
   "productCategory": {
-    "createdAt": "2026-03-26 11:15:15",
-    "updatedAt": "2026-03-26 11:15:15",
+    "createdAt": "2026-03-26 12:39:16",
+    "updatedAt": "2026-03-26 12:39:16",
     "id": "",
     "parentId": "",
     "name": "",
@@ -11491,18 +11491,98 @@
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get All Orders<br><br>Retrieves a paginated and filtered list of orders for an authenticated shop owner. Supports sorting by various<br>fields, pagination, and multiple filtering criteria including search terms, order status, payment status, amount ranges,<br>and date ranges." enabled="true">
-		  <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">
-&0&100&ORDER_DATE&DESC
-                </stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
+			  
+		  <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+		  <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+			<collectionProp name="Arguments.arguments">
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">page</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">limit</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">sortField</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">sortDir</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">withCursor</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">cursor</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">orderNumber</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">search</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">status</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">paymentStatus</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">dateFrom</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">dateTo</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">minAmount</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">maxAmount</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">customerId</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">productId</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">authCustomer</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+			</collectionProp>
+		</elementProp>
+			
           <stringProp name="HTTPSampler.domain">https://api.shopsynch.com</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
