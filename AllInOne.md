@@ -136,8 +136,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:47"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:47"|
+|└─createdAt|string|No comments found.|-|"2026-03-30 09:30:37"|
+|└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:37"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -165,8 +165,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-03-26 12:38:47",
-    "updatedAt": "2026-03-26 12:38:47"
+    "createdAt": "2026-03-30 09:30:37",
+    "updatedAt": "2026-03-30 09:30:37"
   },
   "message": "",
   "status": true
@@ -238,8 +238,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:47"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:47"|
+|└─createdAt|string|No comments found.|-|"2026-03-30 09:30:37"|
+|└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:37"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -267,8 +267,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-03-26 12:38:47",
-    "updatedAt": "2026-03-26 12:38:47"
+    "createdAt": "2026-03-30 09:30:37",
+    "updatedAt": "2026-03-30 09:30:37"
   },
   "message": "",
   "status": true
@@ -322,8 +322,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:47"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:47"|
+|└─createdAt|string|No comments found.|-|"2026-03-30 09:30:37"|
+|└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:37"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -351,8 +351,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-03-26 12:38:47",
-    "updatedAt": "2026-03-26 12:38:47"
+    "createdAt": "2026-03-30 09:30:37",
+    "updatedAt": "2026-03-30 09:30:37"
   },
   "message": "",
   "status": true
@@ -410,8 +410,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-30 09:30:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:37"|
 |└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
@@ -442,8 +442,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
         ],
         "status": "",
         "metadata": {},
-        "createdAt": "2026-03-26 12:38:47",
-        "updatedAt": "2026-03-26 12:38:47"
+        "createdAt": "2026-03-30 09:30:37",
+        "updatedAt": "2026-03-30 09:30:37"
       }
     ],
     "nextCursor": "yyyy-MM-dd HH:mm:ss"
@@ -501,8 +501,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:47"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:47"|
+|└─createdAt|string|No comments found.|-|"2026-03-30 09:30:37"|
+|└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:37"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -531,8 +531,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
       ],
       "status": "",
       "metadata": {},
-      "createdAt": "2026-03-26 12:38:47",
-      "updatedAt": "2026-03-26 12:38:47"
+      "createdAt": "2026-03-30 09:30:37",
+      "updatedAt": "2026-03-30 09:30:37"
     }
   ],
   "message": "",
@@ -669,8 +669,8 @@ The response includes orders in PUBLISHED status.
 |customerId|string|false|Filter by customer ID|-||
 |productId|string|false|Filter by product ID (orders that contain a specific product)|-||
 |authCustomer|string|false|Authenticated customer ID (internal use)|-||
-|createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |accountNonExpired|boolean|false|No comments found.|-|true|
 |accountNonLocked|boolean|false|No comments found.|-|true|
 |credentialsNonExpired|boolean|false|No comments found.|-|true|
@@ -687,11 +687,12 @@ The response includes orders in PUBLISHED status.
 |googleAccount|boolean|false|No comments found.|-|true|
 |password|string|false|No comments found.|-||
 |status|string|false|No comments found.|-||
+|notificationsEnabled|boolean|false|No comments found.|-|true|
 |address|string|false|No comments found.|-||
 |version|int32|false|No comments found.|-|0|
 |addresses|array|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|false|No comments found.|-||
 |└─fullAddress|string|false|No comments found.|-||
 |└─street|string|false|No comments found.|-||
@@ -704,8 +705,8 @@ The response includes orders in PUBLISHED status.
 |└─localGovernment|string|false|No comments found.|-||
 |└─country|string|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|false|No comments found.|-||
 |└─businessTradingName|string|false|e.g. Business name|-||
 |└─legalBusinessName|string|false|No comments found.|-||
@@ -748,8 +749,8 @@ The response includes orders in PUBLISHED status.
 |└─status|boolean|false|No comments found.|-|true|
 |└─createdBy|string|false|No comments found.|-||
 |└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -769,22 +770,22 @@ The response includes orders in PUBLISHED status.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -827,8 +828,8 @@ The response includes orders in PUBLISHED status.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -848,22 +849,22 @@ The response includes orders in PUBLISHED status.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -906,8 +907,8 @@ The response includes orders in PUBLISHED status.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -928,19 +929,22 @@ The response includes orders in PUBLISHED status.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
 |roleResource|object|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─slug|string|false|No comments found.|-||
 |role|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
 |└─slug|string|false|No comments found.|-||
 |└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
@@ -948,7 +952,7 @@ The response includes orders in PUBLISHED status.
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/customer-orders?page=0&limit=100&sortField=CREATED_AT&sortDir=DESC&orderNumber=&search=&status=true&paymentStatus=&dateFrom=&dateTo=&minAmount=0.0&maxAmount=0.0&customerId=&productId=&authCustomer=&createdAt="2026-03-26 12:38:47"&updatedAt="2026-03-26 12:38:47"&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug='
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/customer-orders?page=0&limit=100&sortField=CREATED_AT&sortDir=DESC&orderNumber=&search=&status=true&paymentStatus=&dateFrom=&dateTo=&minAmount=0.0&maxAmount=0.0&customerId=&productId=&authCustomer=&createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&notificationsEnabled=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug='
 ```
 **Response-fields:**
 
@@ -1072,8 +1076,8 @@ This API retrieves a list of items in a specific order.
 
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
-|createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |accountNonExpired|boolean|false|No comments found.|-|true|
 |accountNonLocked|boolean|false|No comments found.|-|true|
 |credentialsNonExpired|boolean|false|No comments found.|-|true|
@@ -1090,11 +1094,12 @@ This API retrieves a list of items in a specific order.
 |googleAccount|boolean|false|No comments found.|-|true|
 |password|string|false|No comments found.|-||
 |status|string|false|No comments found.|-||
+|notificationsEnabled|boolean|false|No comments found.|-|true|
 |address|string|false|No comments found.|-||
 |version|int32|false|No comments found.|-|0|
 |addresses|array|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|false|No comments found.|-||
 |└─fullAddress|string|false|No comments found.|-||
 |└─street|string|false|No comments found.|-||
@@ -1107,8 +1112,8 @@ This API retrieves a list of items in a specific order.
 |└─localGovernment|string|false|No comments found.|-||
 |└─country|string|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|false|No comments found.|-||
 |└─businessTradingName|string|false|e.g. Business name|-||
 |└─legalBusinessName|string|false|No comments found.|-||
@@ -1151,8 +1156,8 @@ This API retrieves a list of items in a specific order.
 |└─status|boolean|false|No comments found.|-|true|
 |└─createdBy|string|false|No comments found.|-||
 |└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -1172,22 +1177,22 @@ This API retrieves a list of items in a specific order.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -1230,8 +1235,8 @@ This API retrieves a list of items in a specific order.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -1251,22 +1256,22 @@ This API retrieves a list of items in a specific order.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -1309,8 +1314,8 @@ This API retrieves a list of items in a specific order.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -1331,19 +1336,22 @@ This API retrieves a list of items in a specific order.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
 |roleResource|object|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─slug|string|false|No comments found.|-||
 |role|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
 |└─slug|string|false|No comments found.|-||
 |└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
@@ -1351,7 +1359,7 @@ This API retrieves a list of items in a specific order.
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/customer-orders/{orderId}/items?createdAt="2026-03-26 12:38:47"&updatedAt="2026-03-26 12:38:47"&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&status=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug='
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/customer-orders/{orderId}/items?createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&status=true&notificationsEnabled=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug='
 ```
 **Response-fields:**
 
@@ -1404,8 +1412,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-30 09:30:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:38"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -1468,8 +1476,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-03-26 12:38:47",
-        "updatedAt": "2026-03-26 12:38:47"
+        "createdAt": "2026-03-30 09:30:38",
+        "updatedAt": "2026-03-30 09:30:38"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -2162,8 +2170,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:47"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:47"|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|No comments found.|-||
 |└─name|string|Name of promotion|-||
 |└─code|string|The code that customers will use to redeem the promotion|-||
@@ -2180,8 +2188,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
   "status": true,
   "message": "",
   "data": {
-    "createdAt": "2026-03-26 12:38:47",
-    "updatedAt": "2026-03-26 12:38:47",
+    "createdAt": "yyyy-MM-dd HH:mm:ss",
+    "updatedAt": "yyyy-MM-dd HH:mm:ss",
     "id": "",
     "name": "",
     "code": "",
@@ -2236,8 +2244,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|array|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:47"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:47"|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|No comments found.|-||
 |└─name|string|Name of promotion|-||
 |└─code|string|The code that customers will use to redeem the promotion|-||
@@ -2255,8 +2263,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
   "message": "",
   "data": [
     {
-      "createdAt": "2026-03-26 12:38:47",
-      "updatedAt": "2026-03-26 12:38:47",
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "updatedAt": "yyyy-MM-dd HH:mm:ss",
       "id": "",
       "name": "",
       "code": "",
@@ -2305,8 +2313,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:47"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:47"|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|No comments found.|-||
 |└─name|string|Name of promotion|-||
 |└─code|string|The code that customers will use to redeem the promotion|-||
@@ -2323,8 +2331,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
   "status": true,
   "message": "",
   "data": {
-    "createdAt": "2026-03-26 12:38:47",
-    "updatedAt": "2026-03-26 12:38:47",
+    "createdAt": "yyyy-MM-dd HH:mm:ss",
+    "updatedAt": "yyyy-MM-dd HH:mm:ss",
     "id": "",
     "name": "",
     "code": "",
@@ -2384,8 +2392,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:47"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:47"|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|No comments found.|-||
 |└─name|string|Name of promotion|-||
 |└─code|string|The code that customers will use to redeem the promotion|-||
@@ -2402,8 +2410,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
   "status": true,
   "message": "",
   "data": {
-    "createdAt": "2026-03-26 12:38:47",
-    "updatedAt": "2026-03-26 12:38:47",
+    "createdAt": "yyyy-MM-dd HH:mm:ss",
+    "updatedAt": "yyyy-MM-dd HH:mm:ss",
     "id": "",
     "name": "",
     "code": "",
@@ -2463,7 +2471,7 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1
 ```
 
 ## ProductStatsController
-### index
+### Get Top Selling Products (Public)<br><br>Retrieves a list of the most popular products based on total quantity sold.<br>This endpoint is public-facing and omits sensitive business metrics.
 **URL:** https://api.shopsynch.com/v1/product-stats
 
 **Type:** GET
@@ -2471,7 +2479,10 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** 
+**Description:** Get Top Selling Products (Public)
+
+Retrieves a list of the most popular products based on total quantity sold.
+This endpoint is public-facing and omits sensitive business metrics.
 
 **Request-headers:**
 
@@ -2480,9 +2491,116 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1
 |X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
 
 
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|false|Optional tenant ID (defaults to current context)|-||
+|startDate|string|false|No comments found.|-||
+|endDate|string|false|No comments found.|-||
+
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/product-stats'
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/product-stats?tenantId=&startDate=&endDate='
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|data|object|No comments found.|-||
+|message|string|No comments found.|-||
+|status|boolean|No comments found.|-|true|
+
+**Response-example:**
+```json
+{
+  "data": {},
+  "message": "",
+  "status": true
+}
+```
+
+### Get Top Selling Products (Public)<br><br>Retrieves a list of the most popular products based on total quantity sold.<br>This endpoint is public-facing and omits sensitive business metrics.
+**URL:** https://api.shopsynch.com/v1/product-stats/top-by-quantity
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Get Top Selling Products (Public)
+
+Retrieves a list of the most popular products based on total quantity sold.
+This endpoint is public-facing and omits sensitive business metrics.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|false|Optional tenant ID (defaults to current context)|-||
+|startDate|string|false|No comments found.|-||
+|endDate|string|false|No comments found.|-||
+|limit|int32|true|Maximum number of products to return (default 10)|-|10|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/product-stats/top-by-quantity?tenantId=&startDate=&endDate=&limit=10'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|data|object|No comments found.|-||
+|message|string|No comments found.|-||
+|status|boolean|No comments found.|-|true|
+
+**Response-example:**
+```json
+{
+  "data": {},
+  "message": "",
+  "status": true
+}
+```
+
+### Get Top Selling Products base on revenue<br><br>Retrieves a list of the most popular products based on total revenue.
+**URL:** https://api.shopsynch.com/v1/product-stats/top-by-revenue
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Get Top Selling Products base on revenue
+
+Retrieves a list of the most popular products based on total revenue.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|false|Optional tenant ID (defaults to current context)|-||
+|startDate|string|false|No comments found.|-||
+|endDate|string|false|No comments found.|-||
+|limit|int32|true|Maximum number of products to return (default 10)|-|10|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/product-stats/top-by-revenue?tenantId=&startDate=&endDate=&limit=10'
 ```
 **Response-fields:**
 
@@ -2536,15 +2654,15 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/lo
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|array|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:48"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:48"|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|No comments found.|-||
 |└─name|string|No comments found.|-||
 |└─isoCode|string|No comments found.|-||
 |└─status|boolean|No comments found.|-|true|
 |└─states|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
@@ -2557,16 +2675,16 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/lo
   "message": "",
   "data": [
     {
-      "createdAt": "2026-03-26 12:38:48",
-      "updatedAt": "2026-03-26 12:38:48",
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "updatedAt": "yyyy-MM-dd HH:mm:ss",
       "id": "",
       "name": "",
       "isoCode": "",
       "status": true,
       "states": [
         {
-          "createdAt": "2026-03-26 12:38:48",
-          "updatedAt": "2026-03-26 12:38:48",
+          "createdAt": "yyyy-MM-dd HH:mm:ss",
+          "updatedAt": "yyyy-MM-dd HH:mm:ss",
           "id": "",
           "name": "",
           "code": "",
@@ -2618,8 +2736,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/lo
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|array|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:48"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:48"|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|No comments found.|-||
 |└─name|string|No comments found.|-||
 |└─code|string|No comments found.|-||
@@ -2632,8 +2750,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/lo
   "message": "",
   "data": [
     {
-      "createdAt": "2026-03-26 12:38:48",
-      "updatedAt": "2026-03-26 12:38:48",
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "updatedAt": "yyyy-MM-dd HH:mm:ss",
       "id": "",
       "name": "",
       "code": "",
@@ -2693,8 +2811,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-30 09:30:40"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:40"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -2718,8 +2836,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-03-26 12:38:49",
-        "updatedAt": "2026-03-26 12:38:49"
+        "createdAt": "2026-03-30 09:30:40",
+        "updatedAt": "2026-03-30 09:30:40"
       },
       "product": {
         "id": "",
@@ -2783,8 +2901,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-30 09:30:40"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:40"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -2808,8 +2926,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-03-26 12:38:49",
-        "updatedAt": "2026-03-26 12:38:49"
+        "createdAt": "2026-03-30 09:30:40",
+        "updatedAt": "2026-03-30 09:30:40"
       },
       "product": {
         "id": "",
@@ -2877,8 +2995,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-30 09:30:40"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:40"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -2901,8 +3019,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-03-26 12:38:49",
-      "updatedAt": "2026-03-26 12:38:49"
+      "createdAt": "2026-03-30 09:30:40",
+      "updatedAt": "2026-03-30 09:30:40"
     },
     "product": {
       "id": "",
@@ -3084,8 +3202,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/co
 |name|string|false|No comments found.|-||
 |CategoryId|string|false|No comments found.|-||
 |productCategory|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|false|No comments found.|-||
 |└─parentId|string|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
@@ -3099,8 +3217,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
   "name": "",
   "CategoryId": "",
   "productCategory": {
-    "createdAt": "2026-03-26 12:38:48",
-    "updatedAt": "2026-03-26 12:38:48",
+    "createdAt": "yyyy-MM-dd HH:mm:ss",
+    "updatedAt": "yyyy-MM-dd HH:mm:ss",
     "id": "",
     "parentId": "",
     "name": "",
@@ -3139,6 +3257,106 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
   },
   "message": "",
   "status": true
+}
+```
+
+## StatSnapshotController
+### Retrieves the most recently created snapshots for the current tenant.<br>Useful for the &quot;Recent Reports&quot; section of the dashboard.
+**URL:** https://api.shopsynch.com/v1/dashboard/stats/snapshots
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Retrieves the most recently created snapshots for the current tenant.
+Useful for the "Recent Reports" section of the dashboard.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|page|int32|true|No comments found.|-|0|
+|size|int32|true|No comments found.|-|10|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/stats/snapshots?page=0&size=10'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─domain|enum|No comments found.<br/>[Enum: ORDERS, REVENUE, PRODUCTS, CUSTOMERS]|-|ORDERS|
+|└─snapshotType|enum|No comments found.<br/>[Enum: DAILY, WEEKLY, MONTHLY, YEARLY, CUSTOM]|-|DAILY|
+|└─periodStart|string|No comments found.|-|yyyy-MM-dd|
+|└─periodEnd|string|No comments found.|-|yyyy-MM-dd|
+|└─status|enum|No comments found.<br/>[Enum: PENDING, COMPUTING, FINALIZED, STALE, FAILED]|-|PENDING|
+|└─data|object|The actual metrics for the domain.<br/>Stored as a raw Map to keep the snapshot system domain-agnostic and avoid over-generalization.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─computedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─finalizedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{"status":true,"message":"","data":[{"id":"","tenantId":"","domain":ORDERS,"snapshotType":DAILY,"periodStart":"yyyy-MM-dd","periodEnd":"yyyy-MM-dd","status":PENDING,"data":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"computedAt":"yyyy-MM-dd HH:mm:ss","finalizedAt":"yyyy-MM-dd HH:mm:ss"}]}
+```
+
+### Invalidates a range of snapshots and triggers a re-computation.<br>Limited to 3 invalidations per day per tenant to prevent abuse.
+**URL:** https://api.shopsynch.com/v1/dashboard/stats/snapshots/{id}/invalidate
+
+**Type:** POST
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Invalidates a range of snapshots and triggers a re-computation.
+Limited to 3 invalidations per day per tenant to prevent abuse.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|id|string|true|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X POST -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/stats/snapshots/{id}/invalidate'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|string|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": ""
 }
 ```
 
@@ -3449,8 +3667,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-30 09:30:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:38"|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
 |└─expiresIn|int64|No comments found.|-|0|
@@ -3468,8 +3686,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-03-26 12:38:48",
-      "updatedAt": "2026-03-26 12:38:48"
+      "createdAt": "2026-03-30 09:30:38",
+      "updatedAt": "2026-03-30 09:30:38"
     },
     "token": "",
     "refreshToken": "",
@@ -3525,8 +3743,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-30 09:30:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:38"|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
 |└─expiresIn|int64|No comments found.|-|0|
@@ -3544,8 +3762,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-03-26 12:38:48",
-      "updatedAt": "2026-03-26 12:38:48"
+      "createdAt": "2026-03-30 09:30:38",
+      "updatedAt": "2026-03-30 09:30:38"
     },
     "token": "",
     "refreshToken": "",
@@ -3605,8 +3823,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:50"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:50"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-30 09:30:40"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:40"|
 |└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
@@ -3623,8 +3841,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-03-26 12:38:50",
-        "updatedAt": "2026-03-26 12:38:50"
+        "createdAt": "2026-03-30 09:30:40",
+        "updatedAt": "2026-03-30 09:30:40"
       }
     ],
     "nextCursor": "yyyy-MM-dd HH:mm:ss"
@@ -3673,8 +3891,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:50"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:50"|
+|└─createdAt|string|No comments found.|-|"2026-03-30 09:30:40"|
+|└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:40"|
 
 **Response-example:**
 ```json
@@ -3688,8 +3906,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-26 12:38:50",
-    "updatedAt": "2026-03-26 12:38:50"
+    "createdAt": "2026-03-30 09:30:40",
+    "updatedAt": "2026-03-30 09:30:40"
   }
 }
 ```
@@ -3736,8 +3954,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:50"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:50"|
+|└─createdAt|string|No comments found.|-|"2026-03-30 09:30:40"|
+|└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:40"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -3751,8 +3969,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-26 12:38:50",
-    "updatedAt": "2026-03-26 12:38:50"
+    "createdAt": "2026-03-30 09:30:40",
+    "updatedAt": "2026-03-30 09:30:40"
   },
   "message": "",
   "status": true
@@ -3798,8 +4016,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:50"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:50"|
+|└─createdAt|string|No comments found.|-|"2026-03-30 09:30:40"|
+|└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:40"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -3813,8 +4031,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-26 12:38:50",
-    "updatedAt": "2026-03-26 12:38:50"
+    "createdAt": "2026-03-30 09:30:40",
+    "updatedAt": "2026-03-30 09:30:40"
   },
   "message": "",
   "status": true
@@ -3860,8 +4078,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:50"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:50"|
+|└─createdAt|string|No comments found.|-|"2026-03-30 09:30:40"|
+|└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:40"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -3875,8 +4093,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-26 12:38:50",
-    "updatedAt": "2026-03-26 12:38:50"
+    "createdAt": "2026-03-30 09:30:40",
+    "updatedAt": "2026-03-30 09:30:40"
   },
   "message": "",
   "status": true
@@ -3934,8 +4152,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:50"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:50"|
+|└─createdAt|string|No comments found.|-|"2026-03-30 09:30:40"|
+|└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:40"|
 
 **Response-example:**
 ```json
@@ -3949,8 +4167,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-26 12:38:50",
-    "updatedAt": "2026-03-26 12:38:50"
+    "createdAt": "2026-03-30 09:30:40",
+    "updatedAt": "2026-03-30 09:30:40"
   }
 }
 ```
@@ -4004,8 +4222,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:50"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:50"|
+|└─createdAt|string|No comments found.|-|"2026-03-30 09:30:40"|
+|└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:40"|
 
 **Response-example:**
 ```json
@@ -4019,8 +4237,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-26 12:38:50",
-    "updatedAt": "2026-03-26 12:38:50"
+    "createdAt": "2026-03-30 09:30:40",
+    "updatedAt": "2026-03-30 09:30:40"
   }
 }
 ```
@@ -4079,8 +4297,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─isActive|boolean|No comments found.|-|true|
 |└─tenantId|string|No comments found.|-||
 |└─tenant|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|No comments found.|-||
@@ -4123,8 +4341,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
@@ -4144,22 +4362,22 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|No comments found.|-||
@@ -4202,8 +4420,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
@@ -4223,16 +4441,16 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|No comments found.|-||
@@ -4275,6 +4493,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
 
 **Response-example:**
 ```json
@@ -4295,8 +4515,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "isActive": true,
     "tenantId": "",
     "tenant": {
-      "createdAt": "2026-03-26 12:38:49",
-      "updatedAt": "2026-03-26 12:38:49",
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "updatedAt": "yyyy-MM-dd HH:mm:ss",
       "id": "",
       "businessTradingName": "",
       "legalBusinessName": "",
@@ -4345,8 +4565,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
       "status": true,
       "createdBy": "",
       "user": {
-        "createdAt": "2026-03-26 12:38:49",
-        "updatedAt": "2026-03-26 12:38:49",
+        "createdAt": "yyyy-MM-dd HH:mm:ss",
+        "updatedAt": "yyyy-MM-dd HH:mm:ss",
         "id": "",
         "email": "",
         "tenantId": "",
@@ -4366,16 +4586,16 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
         "phoneVerifiedAt": "yyyy-MM-dd HH:mm:ss",
         "lastLoggedInAt": "yyyy-MM-dd HH:mm:ss",
         "role": {
-          "createdAt": "2026-03-26 12:38:49",
-          "updatedAt": "2026-03-26 12:38:49",
+          "createdAt": "yyyy-MM-dd HH:mm:ss",
+          "updatedAt": "yyyy-MM-dd HH:mm:ss",
           "id": "",
           "name": "",
           "status": true,
           "slug": "",
           "permissions": [
             {
-              "createdAt": "2026-03-26 12:38:49",
-              "updatedAt": "2026-03-26 12:38:49",
+              "createdAt": "yyyy-MM-dd HH:mm:ss",
+              "updatedAt": "yyyy-MM-dd HH:mm:ss",
               "id": "",
               "name": "",
               "status": true,
@@ -4384,8 +4604,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
           ]
         },
         "tenant": {
-          "createdAt": "2026-03-26 12:38:49",
-          "updatedAt": "2026-03-26 12:38:49",
+          "createdAt": "yyyy-MM-dd HH:mm:ss",
+          "updatedAt": "yyyy-MM-dd HH:mm:ss",
           "id": "",
           "businessTradingName": "",
           "legalBusinessName": "",
@@ -4434,8 +4654,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
           "status": true,
           "createdBy": "",
           "user": {
-            "createdAt": "2026-03-26 12:38:49",
-            "updatedAt": "2026-03-26 12:38:49",
+            "createdAt": "yyyy-MM-dd HH:mm:ss",
+            "updatedAt": "yyyy-MM-dd HH:mm:ss",
             "id": "",
             "email": "",
             "tenantId": "",
@@ -4455,8 +4675,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
             "phoneVerifiedAt": "yyyy-MM-dd HH:mm:ss",
             "lastLoggedInAt": "yyyy-MM-dd HH:mm:ss",
             "role": {
-              "createdAt": "2026-03-26 12:38:49",
-              "updatedAt": "2026-03-26 12:38:49",
+              "createdAt": "yyyy-MM-dd HH:mm:ss",
+              "updatedAt": "yyyy-MM-dd HH:mm:ss",
               "id": "",
               "name": "",
               "status": true,
@@ -4468,8 +4688,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
               ]
             },
             "tenant": {
-              "createdAt": "2026-03-26 12:38:49",
-              "updatedAt": "2026-03-26 12:38:49",
+              "createdAt": "yyyy-MM-dd HH:mm:ss",
+              "updatedAt": "yyyy-MM-dd HH:mm:ss",
               "id": "",
               "businessTradingName": "",
               "legalBusinessName": "",
@@ -4520,9 +4740,11 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
               "user": {
                 "$ref": "..."
               }
-            }
+            },
+            "notificationsEnabled": true
           }
-        }
+        },
+        "notificationsEnabled": true
       }
     }
   }
@@ -4570,8 +4792,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
 |└─isActive|boolean|No comments found.|-|true|
 |└─tenantId|string|No comments found.|-||
 |└─tenant|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|No comments found.|-||
@@ -4614,8 +4836,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
@@ -4635,22 +4857,22 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|No comments found.|-||
@@ -4693,8 +4915,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
@@ -4714,16 +4936,16 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|No comments found.|-||
@@ -4766,6 +4988,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
 
 **Response-example:**
 ```json
@@ -4787,8 +5011,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
       "isActive": true,
       "tenantId": "",
       "tenant": {
-        "createdAt": "2026-03-26 12:38:49",
-        "updatedAt": "2026-03-26 12:38:49",
+        "createdAt": "yyyy-MM-dd HH:mm:ss",
+        "updatedAt": "yyyy-MM-dd HH:mm:ss",
         "id": "",
         "businessTradingName": "",
         "legalBusinessName": "",
@@ -4837,8 +5061,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
         "status": true,
         "createdBy": "",
         "user": {
-          "createdAt": "2026-03-26 12:38:49",
-          "updatedAt": "2026-03-26 12:38:49",
+          "createdAt": "yyyy-MM-dd HH:mm:ss",
+          "updatedAt": "yyyy-MM-dd HH:mm:ss",
           "id": "",
           "email": "",
           "tenantId": "",
@@ -4858,16 +5082,16 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
           "phoneVerifiedAt": "yyyy-MM-dd HH:mm:ss",
           "lastLoggedInAt": "yyyy-MM-dd HH:mm:ss",
           "role": {
-            "createdAt": "2026-03-26 12:38:49",
-            "updatedAt": "2026-03-26 12:38:49",
+            "createdAt": "yyyy-MM-dd HH:mm:ss",
+            "updatedAt": "yyyy-MM-dd HH:mm:ss",
             "id": "",
             "name": "",
             "status": true,
             "slug": "",
             "permissions": [
               {
-                "createdAt": "2026-03-26 12:38:49",
-                "updatedAt": "2026-03-26 12:38:49",
+                "createdAt": "yyyy-MM-dd HH:mm:ss",
+                "updatedAt": "yyyy-MM-dd HH:mm:ss",
                 "id": "",
                 "name": "",
                 "status": true,
@@ -4876,8 +5100,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
             ]
           },
           "tenant": {
-            "createdAt": "2026-03-26 12:38:49",
-            "updatedAt": "2026-03-26 12:38:49",
+            "createdAt": "yyyy-MM-dd HH:mm:ss",
+            "updatedAt": "yyyy-MM-dd HH:mm:ss",
             "id": "",
             "businessTradingName": "",
             "legalBusinessName": "",
@@ -4926,8 +5150,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
             "status": true,
             "createdBy": "",
             "user": {
-              "createdAt": "2026-03-26 12:38:49",
-              "updatedAt": "2026-03-26 12:38:49",
+              "createdAt": "yyyy-MM-dd HH:mm:ss",
+              "updatedAt": "yyyy-MM-dd HH:mm:ss",
               "id": "",
               "email": "",
               "tenantId": "",
@@ -4947,8 +5171,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
               "phoneVerifiedAt": "yyyy-MM-dd HH:mm:ss",
               "lastLoggedInAt": "yyyy-MM-dd HH:mm:ss",
               "role": {
-                "createdAt": "2026-03-26 12:38:49",
-                "updatedAt": "2026-03-26 12:38:49",
+                "createdAt": "yyyy-MM-dd HH:mm:ss",
+                "updatedAt": "yyyy-MM-dd HH:mm:ss",
                 "id": "",
                 "name": "",
                 "status": true,
@@ -4960,8 +5184,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
                 ]
               },
               "tenant": {
-                "createdAt": "2026-03-26 12:38:49",
-                "updatedAt": "2026-03-26 12:38:49",
+                "createdAt": "yyyy-MM-dd HH:mm:ss",
+                "updatedAt": "yyyy-MM-dd HH:mm:ss",
                 "id": "",
                 "businessTradingName": "",
                 "legalBusinessName": "",
@@ -5012,9 +5236,11 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
                 "user": {
                   "$ref": "..."
                 }
-              }
+              },
+              "notificationsEnabled": true
             }
-          }
+          },
+          "notificationsEnabled": true
         }
       }
     }
@@ -5069,8 +5295,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |└─isActive|boolean|No comments found.|-|true|
 |└─tenantId|string|No comments found.|-||
 |└─tenant|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|No comments found.|-||
@@ -5113,8 +5339,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
@@ -5134,22 +5360,22 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|No comments found.|-||
@@ -5192,8 +5418,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
@@ -5213,16 +5439,16 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|No comments found.|-||
@@ -5265,6 +5491,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
 
 **Response-example:**
 ```json
@@ -5285,8 +5513,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
     "isActive": true,
     "tenantId": "",
     "tenant": {
-      "createdAt": "2026-03-26 12:38:49",
-      "updatedAt": "2026-03-26 12:38:49",
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "updatedAt": "yyyy-MM-dd HH:mm:ss",
       "id": "",
       "businessTradingName": "",
       "legalBusinessName": "",
@@ -5335,8 +5563,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
       "status": true,
       "createdBy": "",
       "user": {
-        "createdAt": "2026-03-26 12:38:49",
-        "updatedAt": "2026-03-26 12:38:49",
+        "createdAt": "yyyy-MM-dd HH:mm:ss",
+        "updatedAt": "yyyy-MM-dd HH:mm:ss",
         "id": "",
         "email": "",
         "tenantId": "",
@@ -5356,16 +5584,16 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
         "phoneVerifiedAt": "yyyy-MM-dd HH:mm:ss",
         "lastLoggedInAt": "yyyy-MM-dd HH:mm:ss",
         "role": {
-          "createdAt": "2026-03-26 12:38:49",
-          "updatedAt": "2026-03-26 12:38:49",
+          "createdAt": "yyyy-MM-dd HH:mm:ss",
+          "updatedAt": "yyyy-MM-dd HH:mm:ss",
           "id": "",
           "name": "",
           "status": true,
           "slug": "",
           "permissions": [
             {
-              "createdAt": "2026-03-26 12:38:49",
-              "updatedAt": "2026-03-26 12:38:49",
+              "createdAt": "yyyy-MM-dd HH:mm:ss",
+              "updatedAt": "yyyy-MM-dd HH:mm:ss",
               "id": "",
               "name": "",
               "status": true,
@@ -5374,8 +5602,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
           ]
         },
         "tenant": {
-          "createdAt": "2026-03-26 12:38:49",
-          "updatedAt": "2026-03-26 12:38:49",
+          "createdAt": "yyyy-MM-dd HH:mm:ss",
+          "updatedAt": "yyyy-MM-dd HH:mm:ss",
           "id": "",
           "businessTradingName": "",
           "legalBusinessName": "",
@@ -5424,8 +5652,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
           "status": true,
           "createdBy": "",
           "user": {
-            "createdAt": "2026-03-26 12:38:49",
-            "updatedAt": "2026-03-26 12:38:49",
+            "createdAt": "yyyy-MM-dd HH:mm:ss",
+            "updatedAt": "yyyy-MM-dd HH:mm:ss",
             "id": "",
             "email": "",
             "tenantId": "",
@@ -5445,8 +5673,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
             "phoneVerifiedAt": "yyyy-MM-dd HH:mm:ss",
             "lastLoggedInAt": "yyyy-MM-dd HH:mm:ss",
             "role": {
-              "createdAt": "2026-03-26 12:38:49",
-              "updatedAt": "2026-03-26 12:38:49",
+              "createdAt": "yyyy-MM-dd HH:mm:ss",
+              "updatedAt": "yyyy-MM-dd HH:mm:ss",
               "id": "",
               "name": "",
               "status": true,
@@ -5458,8 +5686,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
               ]
             },
             "tenant": {
-              "createdAt": "2026-03-26 12:38:49",
-              "updatedAt": "2026-03-26 12:38:49",
+              "createdAt": "yyyy-MM-dd HH:mm:ss",
+              "updatedAt": "yyyy-MM-dd HH:mm:ss",
               "id": "",
               "businessTradingName": "",
               "legalBusinessName": "",
@@ -5510,9 +5738,11 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
               "user": {
                 "$ref": "..."
               }
-            }
+            },
+            "notificationsEnabled": true
           }
-        }
+        },
+        "notificationsEnabled": true
       }
     }
   }
@@ -5566,8 +5796,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |└─isActive|boolean|No comments found.|-|true|
 |└─tenantId|string|No comments found.|-||
 |└─tenant|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|No comments found.|-||
@@ -5610,8 +5840,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
@@ -5631,22 +5861,22 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|No comments found.|-||
@@ -5689,8 +5919,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
@@ -5710,16 +5940,16 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|No comments found.|-||
@@ -5762,6 +5992,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
 
 **Response-example:**
 ```json
@@ -5782,8 +6014,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
     "isActive": true,
     "tenantId": "",
     "tenant": {
-      "createdAt": "2026-03-26 12:38:49",
-      "updatedAt": "2026-03-26 12:38:49",
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "updatedAt": "yyyy-MM-dd HH:mm:ss",
       "id": "",
       "businessTradingName": "",
       "legalBusinessName": "",
@@ -5832,8 +6064,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
       "status": true,
       "createdBy": "",
       "user": {
-        "createdAt": "2026-03-26 12:38:49",
-        "updatedAt": "2026-03-26 12:38:49",
+        "createdAt": "yyyy-MM-dd HH:mm:ss",
+        "updatedAt": "yyyy-MM-dd HH:mm:ss",
         "id": "",
         "email": "",
         "tenantId": "",
@@ -5853,16 +6085,16 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
         "phoneVerifiedAt": "yyyy-MM-dd HH:mm:ss",
         "lastLoggedInAt": "yyyy-MM-dd HH:mm:ss",
         "role": {
-          "createdAt": "2026-03-26 12:38:49",
-          "updatedAt": "2026-03-26 12:38:49",
+          "createdAt": "yyyy-MM-dd HH:mm:ss",
+          "updatedAt": "yyyy-MM-dd HH:mm:ss",
           "id": "",
           "name": "",
           "status": true,
           "slug": "",
           "permissions": [
             {
-              "createdAt": "2026-03-26 12:38:49",
-              "updatedAt": "2026-03-26 12:38:49",
+              "createdAt": "yyyy-MM-dd HH:mm:ss",
+              "updatedAt": "yyyy-MM-dd HH:mm:ss",
               "id": "",
               "name": "",
               "status": true,
@@ -5871,8 +6103,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
           ]
         },
         "tenant": {
-          "createdAt": "2026-03-26 12:38:49",
-          "updatedAt": "2026-03-26 12:38:49",
+          "createdAt": "yyyy-MM-dd HH:mm:ss",
+          "updatedAt": "yyyy-MM-dd HH:mm:ss",
           "id": "",
           "businessTradingName": "",
           "legalBusinessName": "",
@@ -5921,8 +6153,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
           "status": true,
           "createdBy": "",
           "user": {
-            "createdAt": "2026-03-26 12:38:49",
-            "updatedAt": "2026-03-26 12:38:49",
+            "createdAt": "yyyy-MM-dd HH:mm:ss",
+            "updatedAt": "yyyy-MM-dd HH:mm:ss",
             "id": "",
             "email": "",
             "tenantId": "",
@@ -5942,8 +6174,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
             "phoneVerifiedAt": "yyyy-MM-dd HH:mm:ss",
             "lastLoggedInAt": "yyyy-MM-dd HH:mm:ss",
             "role": {
-              "createdAt": "2026-03-26 12:38:49",
-              "updatedAt": "2026-03-26 12:38:49",
+              "createdAt": "yyyy-MM-dd HH:mm:ss",
+              "updatedAt": "yyyy-MM-dd HH:mm:ss",
               "id": "",
               "name": "",
               "status": true,
@@ -5955,8 +6187,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
               ]
             },
             "tenant": {
-              "createdAt": "2026-03-26 12:38:49",
-              "updatedAt": "2026-03-26 12:38:49",
+              "createdAt": "yyyy-MM-dd HH:mm:ss",
+              "updatedAt": "yyyy-MM-dd HH:mm:ss",
               "id": "",
               "businessTradingName": "",
               "legalBusinessName": "",
@@ -6007,9 +6239,11 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
               "user": {
                 "$ref": "..."
               }
-            }
+            },
+            "notificationsEnabled": true
           }
-        }
+        },
+        "notificationsEnabled": true
       }
     }
   }
@@ -6099,6 +6333,323 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 }
 ```
 
+## DashboardController
+### Retrieves the high-level order statistics and breakdowns.
+**URL:** https://api.shopsynch.com/v1/dashboard/orders
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Retrieves the high-level order statistics and breakdowns.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|false|The unique identifier of the tenant (merchant) to filter by. Defaults to empty (uses authenticated context).|-||
+|startDate|string|false|The start date for filtering statistics (ISO format). Defaults to empty (no start boundary).|-||
+|endDate|string|false|The end date for filtering statistics (ISO format). Defaults to empty (no end boundary).|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/orders?tenantId=&startDate=&endDate='
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "mapKey": {
+      "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
+    }
+  }
+}
+```
+
+### Retrieves the daily chart data for order volumes.
+**URL:** https://api.shopsynch.com/v1/dashboard/orders/chart
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Retrieves the daily chart data for order volumes.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|false|The unique identifier of the tenant (merchant) to filter by. Defaults to empty (uses authenticated context).|-||
+|startDate|string|false|The start date for filtering statistics (ISO format). Defaults to empty (no start boundary).|-||
+|endDate|string|false|The end date for filtering statistics (ISO format). Defaults to empty (no end boundary).|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/orders/chart?tenantId=&startDate=&endDate='
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "mapKey": {
+        "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
+      }
+    }
+  ]
+}
+```
+
+### Retrieves revenue statistics including totals, averages, and payment method breakdowns.
+**URL:** https://api.shopsynch.com/v1/dashboard/revenue
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Retrieves revenue statistics including totals, averages, and payment method breakdowns.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|false|The unique identifier of the tenant (merchant) to filter by. Defaults to empty (uses authenticated context).|-||
+|startDate|string|false|The start date for filtering statistics (ISO format). Defaults to empty (no start boundary).|-||
+|endDate|string|false|The end date for filtering statistics (ISO format). Defaults to empty (no end boundary).|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/revenue?tenantId=&startDate=&endDate='
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "mapKey": {
+      "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
+    }
+  }
+}
+```
+
+### Retrieves the daily chart data for revenue.
+**URL:** https://api.shopsynch.com/v1/dashboard/revenue/chart
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Retrieves the daily chart data for revenue.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|false|The unique identifier of the tenant (merchant) to filter by. Defaults to empty (uses authenticated context).|-||
+|startDate|string|false|The start date for filtering statistics (ISO format). Defaults to empty (no start boundary).|-||
+|endDate|string|false|The end date for filtering statistics (ISO format). Defaults to empty (no end boundary).|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/revenue/chart?tenantId=&startDate=&endDate='
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "mapKey": {
+        "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
+      }
+    }
+  ]
+}
+```
+
+### Retrieves customer statistics including top spenders and location breakdown.
+**URL:** https://api.shopsynch.com/v1/dashboard/customers
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Retrieves customer statistics including top spenders and location breakdown.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|false|The unique identifier of the tenant (merchant) to filter by. Defaults to empty (uses authenticated context).|-||
+|startDate|string|false|The start date for filtering statistics (ISO format). Defaults to empty (no start boundary).|-||
+|endDate|string|false|The end date for filtering statistics (ISO format). Defaults to empty (no end boundary).|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/customers?tenantId=&startDate=&endDate='
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "mapKey": {
+      "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
+    }
+  }
+}
+```
+
+### Retrieves product insights including overall catalog numbers and top selling items.
+**URL:** https://api.shopsynch.com/v1/dashboard/products
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Retrieves product insights including overall catalog numbers and top selling items.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|false|The unique identifier of the tenant (merchant) to filter by. Defaults to empty (uses authenticated context).|-||
+|startDate|string|false|The start date for filtering statistics (ISO format). Defaults to empty (no start boundary).|-||
+|endDate|string|false|The end date for filtering statistics (ISO format). Defaults to empty (no end boundary).|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/products?tenantId=&startDate=&endDate='
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "mapKey": {
+      "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
+    }
+  }
+}
+```
+
 ## Customer Authentication
 ### Register Customer.
 **URL:** https://api.shopsynch.com/v1/auth/customer/signup
@@ -6150,8 +6701,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:48"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:48"|
+|└─createdAt|string|No comments found.|-|"2026-03-30 09:30:38"|
+|└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:38"|
 
 **Response-example:**
 ```json
@@ -6165,8 +6716,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-26 12:38:48",
-    "updatedAt": "2026-03-26 12:38:48"
+    "createdAt": "2026-03-30 09:30:38",
+    "updatedAt": "2026-03-30 09:30:38"
   }
 }
 ```
@@ -6212,8 +6763,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:48"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:48"|
+|└─createdAt|string|No comments found.|-|"2026-03-30 09:30:38"|
+|└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:38"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -6228,8 +6779,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-26 12:38:48",
-    "updatedAt": "2026-03-26 12:38:48"
+    "createdAt": "2026-03-30 09:30:38",
+    "updatedAt": "2026-03-30 09:30:38"
   },
   "token": "",
   "refreshToken": "",
@@ -6279,8 +6830,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:48"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:48"|
+|└─createdAt|string|No comments found.|-|"2026-03-30 09:30:38"|
+|└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:38"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -6295,8 +6846,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-26 12:38:48",
-    "updatedAt": "2026-03-26 12:38:48"
+    "createdAt": "2026-03-30 09:30:38",
+    "updatedAt": "2026-03-30 09:30:38"
   },
   "token": "",
   "refreshToken": "",
@@ -6344,8 +6895,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:48"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:48"|
+|└─createdAt|string|No comments found.|-|"2026-03-30 09:30:38"|
+|└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:38"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -6360,8 +6911,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-26 12:38:48",
-    "updatedAt": "2026-03-26 12:38:48"
+    "createdAt": "2026-03-30 09:30:38",
+    "updatedAt": "2026-03-30 09:30:38"
   },
   "token": "",
   "refreshToken": "",
@@ -6470,19 +7021,19 @@ string
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
 |array|boolean|false|No comments found.|-|true|
+|object|boolean|false|No comments found.|-|true|
 |valueNode|boolean|false|No comments found.|-|true|
 |containerNode|boolean|false|No comments found.|-|true|
 |missingNode|boolean|false|No comments found.|-|true|
-|object|boolean|false|No comments found.|-|true|
 
 **Request-example:**
 ```bash
 curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/webhooks/whatsapp' --data '{
   "array": true,
+  "object": true,
   "valueNode": true,
   "containerNode": true,
-  "missingNode": true,
-  "object": true
+  "missingNode": true
 }'
 ```
 
@@ -6526,8 +7077,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/st
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|array|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:49"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:49"|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|No comments found.|-||
 |└─name|string|No comments found.|-||
 |└─code|string|No comments found.|-||
@@ -6540,8 +7091,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/st
   "message": "",
   "data": [
     {
-      "createdAt": "2026-03-26 12:38:49",
-      "updatedAt": "2026-03-26 12:38:49",
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "updatedAt": "yyyy-MM-dd HH:mm:ss",
       "id": "",
       "name": "",
       "code": "",
@@ -6771,6 +7322,37 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 }
 ```
 
+## MonnifyWebhookController
+### handleWebhook
+**URL:** https://api.shopsynch.com/v1/webhooks/monnify
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+|monnify-signature|string|true|No comments found.|-||
+
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|payload|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -H "monnify-signature" -i 'https://api.shopsynch.com/v1/webhooks/monnify'
+```
+
+
 ## CheckoutLinkController
 ### generateCheckoutLink
 **URL:** https://api.shopsynch.com/v1/checkout-links
@@ -6884,7 +7466,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─city|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─area|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─landmark|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|enum|No comments found.<br/>[Enum: PENDING-("PENDING","Order has been placed but not paid"),PROCESSING-("PROCESSING","Payment confirmed, preparing items"),SHIPPED-("SHIPPED","Handed over to courier"),DELIVERED-("DELIVERED","Received by customer"),CANCELLED-("CANCELLED","Order revoked by user or system"),IN_TRANSIT-("IN_TRANSIT","Currently on the road"),FAILED-("FAILED","Payment or logistics failure")]|-|PENDING|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|enum|No comments found.<br/>[Enum: PENDING-("PENDING","Order has been placed but not paid"),PROCESSING-("PROCESSING","Payment confirmed, preparing items"),SHIPPED-("SHIPPED","Handed over to courier"),DELIVERED-("DELIVERED","Received by customer"),CANCELLED-("CANCELLED","Order revoked by user or system"),IN_TRANSIT-("IN_TRANSIT","Currently on the road"),FAILED-("FAILED","Payment or logistics failure"),ABANDONED-("ABANDONED","Order abandoned by customer")]|-|PENDING|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─paymentStatus|enum|No comments found.<br/>[Enum: SUCCESS-("SUCCESS","Transaction completed and funds captured"),FAILED-("FAILED","Payment rejected by gateway or insufficient funds"),PENDING-("PENDING","Waiting for customer to initiate or complete payment action"),PROCESSING-("PROCESSING","Payment is undergoing verification or gateway processing"),REFUNDED-("REFUNDED","Transaction has been reversed and funds returned"),ABANDONED-("ABANDONED","Customer exited the payment session without completion")]|-|SUCCESS|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─paymentGateway|enum|No comments found.<br/>[Enum: PAYSTACK-("PAYSTACK","Nigeria-based processor (Card, Transfer, USSD)"),FLUTTERWAVE-("FLUTTERWAVE","Global infrastructure for Africa-wide payments"),STRIPE-("STRIPE","International card processing (USD/EUR/GBP)"),OFFLINE-("OFFLINE","Manual bank transfer or Cash on Delivery"),MONNIFY-("MONNIFY","Automated bank transfer provider for Nigeria")]|-|PAYSTACK|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─paymentGatewayTransactionId|string|No comments found.|-||
@@ -6896,8 +7478,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:50"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:50"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-30 09:30:40"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:40"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactInformation|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
@@ -6971,8 +7553,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:50"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:50"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-30 09:30:40"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:40"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─tenant|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessName|string|No comments found.|-||
@@ -7022,8 +7604,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-03-26 12:38:49",
-        "updatedAt": "2026-03-26 12:38:49"
+        "createdAt": "2026-03-30 09:30:40",
+        "updatedAt": "2026-03-30 09:30:40"
       },
       "contactInformation": {
         "firstName": "",
@@ -7112,8 +7694,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
           "phoneNumber": "",
           "address": "",
           "status": "",
-          "createdAt": "2026-03-26 12:38:50",
-          "updatedAt": "2026-03-26 12:38:50"
+          "createdAt": "2026-03-30 09:30:40",
+          "updatedAt": "2026-03-30 09:30:40"
         },
         "createdAt": "yyyy-MM-dd HH:mm:ss"
       }
@@ -7173,15 +7755,15 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/co
 | Field | Type | Description | Since | Example |
 |-------|------|-------------|-------|---------|
 |data|array|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:50"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:50"|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|No comments found.|-||
 |└─name|string|No comments found.|-||
 |└─isoCode|string|No comments found.|-||
 |└─status|boolean|No comments found.|-|true|
 |└─states|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:50"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:50"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
@@ -7194,16 +7776,16 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/co
 {
   "data": [
     {
-      "createdAt": "2026-03-26 12:38:50",
-      "updatedAt": "2026-03-26 12:38:50",
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "updatedAt": "yyyy-MM-dd HH:mm:ss",
       "id": "",
       "name": "",
       "isoCode": "",
       "status": true,
       "states": [
         {
-          "createdAt": "2026-03-26 12:38:50",
-          "updatedAt": "2026-03-26 12:38:50",
+          "createdAt": "yyyy-MM-dd HH:mm:ss",
+          "updatedAt": "yyyy-MM-dd HH:mm:ss",
           "id": "",
           "name": "",
           "code": "",
@@ -8108,6 +8690,191 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 }
 ```
 
+## Notification Management
+### Fetch All Notification
+**URL:** https://api.shopsynch.com/v1/notifications
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Fetch All Notification
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|withCursor|boolean|true|No comments found.|-|false|
+|cursor|string|false|No comments found.|-||
+|limit|int32|true|No comments found.|-|10|
+|page|int32|true|No comments found.|-|0|
+|size|int32|true|No comments found.|-|20|
+|mapKey|object|false|A map key.|-||
+|└─any object|object|true|any object.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/notifications?withCursor=false&cursor=&limit=10&page=0&size=20&requestParams='
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {}
+}
+```
+
+### Mark Notification as Read
+**URL:** https://api.shopsynch.com/v1/notifications/{id}/read
+
+**Type:** PATCH
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Mark Notification as Read
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|id|string|true|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/notifications/{id}/read'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─type|string|No comments found.|-||
+|└─notifiableType|string|No comments found.|-||
+|└─notifiableId|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─title|string|No comments found.|-||
+|└─body|string|No comments found.|-||
+|└─fullBody|string|No comments found.|-||
+|└─data|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─readAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─read|boolean|No comments found.|-|true|
+
+**Response-example:**
+```json
+{"status":true,"message":"","data":{"id":"","type":"","notifiableType":"","notifiableId":"","tenantId":"","title":"","body":"","fullBody":"","data":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"readAt":"yyyy-MM-dd HH:mm:ss","createdAt":"yyyy-MM-dd HH:mm:ss","read":true}}
+```
+
+### Mark all Notification as Read
+**URL:** https://api.shopsynch.com/v1/notifications/read-all
+
+**Type:** PATCH
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Mark all Notification as Read
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/notifications/read-all'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": ""
+}
+```
+
+### Delete Notification
+**URL:** https://api.shopsynch.com/v1/notifications/{id}
+
+**Type:** DELETE
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Delete Notification
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|id|string|true|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/notifications/{id}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": ""
+}
+```
+
 ## Change Password Management (authenticated)
 ### Change Customer Password
 **URL:** https://api.shopsynch.com/v1/change/password/customer
@@ -8130,8 +8897,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
-|createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |accountNonExpired|boolean|false|No comments found.|-|true|
 |accountNonLocked|boolean|false|No comments found.|-|true|
 |credentialsNonExpired|boolean|false|No comments found.|-|true|
@@ -8148,11 +8915,12 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |googleAccount|boolean|false|No comments found.|-|true|
 |password|string|false|No comments found.|-||
 |status|string|false|No comments found.|-||
+|notificationsEnabled|boolean|false|No comments found.|-|true|
 |address|string|false|No comments found.|-||
 |version|int32|false|No comments found.|-|0|
 |addresses|array|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|false|No comments found.|-||
 |└─fullAddress|string|false|No comments found.|-||
 |└─street|string|false|No comments found.|-||
@@ -8165,8 +8933,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─localGovernment|string|false|No comments found.|-||
 |└─country|string|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|false|No comments found.|-||
 |└─businessTradingName|string|false|e.g. Business name|-||
 |└─legalBusinessName|string|false|No comments found.|-||
@@ -8209,8 +8977,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─status|boolean|false|No comments found.|-|true|
 |└─createdBy|string|false|No comments found.|-||
 |└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -8230,22 +8998,22 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -8288,8 +9056,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -8309,22 +9077,22 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -8367,8 +9135,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -8389,19 +9157,22 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
 |roleResource|object|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─slug|string|false|No comments found.|-||
 |role|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
 |└─slug|string|false|No comments found.|-||
 |└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
@@ -8417,7 +9188,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 
 **Request-example:**
 ```bash
-curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/change/password/customer?createdAt="2026-03-26 12:38:48"&updatedAt="2026-03-26 12:38:48"&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&status=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug='
+curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/change/password/customer?createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&password=&status=true&notificationsEnabled=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&legalBusinessName=&name=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&slug='
 ```
 **Response-fields:**
 
@@ -8458,8 +9229,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
-|createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |id|string|false|No comments found.|-||
 |email|string|false|No comments found.|-||
 |tenantId|string|false|No comments found.|-||
@@ -8479,22 +9250,22 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |role|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
 |└─slug|string|false|No comments found.|-||
 |└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|false|No comments found.|-||
 |└─businessTradingName|string|false|e.g. Business name|-||
 |└─legalBusinessName|string|false|No comments found.|-||
@@ -8537,8 +9308,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─status|boolean|false|No comments found.|-|true|
 |└─createdBy|string|false|No comments found.|-||
 |└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -8558,22 +9329,22 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName|string|false|No comments found.|-||
@@ -8616,8 +9387,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
@@ -8638,6 +9409,9 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
+|notificationsEnabled|boolean|false|No comments found.|-|true|
 
 **Body-parameters:**
 
@@ -8649,7 +9423,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 
 **Request-example:**
 ```bash
-curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/change/password/merchant?createdAt="2026-03-26 12:38:48"&updatedAt="2026-03-26 12:38:48"&id=&email=&tenantId=&password=&fullName=&dateOfBirth=&phoneNumber=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&status=&address=&version=0&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&name=&slug=&businessTradingName=&legalBusinessName=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy='
+curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/change/password/merchant?createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&id=&email=&tenantId=&password=&fullName=&dateOfBirth=&phoneNumber=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&status=&address=&version=0&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&name=&slug=&businessTradingName=&legalBusinessName=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&createdBy=&notificationsEnabled=true'
 ```
 **Response-fields:**
 
@@ -8821,8 +9595,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
 |└─status|string|No comments found.|-||
 |└─paymentGatewayTransactionId|string|No comments found.|-||
 |└─manualPayment|boolean|No comments found.|-|true|
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:48"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:48"|
+|└─createdAt|string|No comments found.|-|"2026-03-30 09:30:39"|
+|└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:39"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -8842,8 +9616,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
     "status": "",
     "paymentGatewayTransactionId": "",
     "manualPayment": true,
-    "createdAt": "2026-03-26 12:38:48",
-    "updatedAt": "2026-03-26 12:38:48"
+    "createdAt": "2026-03-30 09:30:39",
+    "updatedAt": "2026-03-30 09:30:39"
   },
   "message": "",
   "status": true
@@ -9304,8 +10078,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:48"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:48"|
+|└─createdAt|string|No comments found.|-|"2026-03-30 09:30:38"|
+|└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:38"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -9320,8 +10094,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-26 12:38:48",
-    "updatedAt": "2026-03-26 12:38:48"
+    "createdAt": "2026-03-30 09:30:38",
+    "updatedAt": "2026-03-30 09:30:38"
   },
   "token": "",
   "refreshToken": "",
@@ -9432,6 +10206,107 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 {
   "status": true,
   "message": ""
+}
+```
+
+## QAController
+### seedMerchantWithOrders
+**URL:** https://api.shopsynch.com/v1/qa/scenarios/merchant-with-orders
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|false|No comments found.|-||
+|startDate|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|endDate|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|orderCount|int32|false|No comments found.|-|0|
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/qa/scenarios/merchant-with-orders' --data '{
+  "tenantId": "",
+  "startDate": "yyyy-MM-dd HH:mm:ss",
+  "endDate": "yyyy-MM-dd HH:mm:ss",
+  "orderCount": 0
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|mapKey|object|A map key.|-||
+|└─any object|object|any object.|-||
+
+**Response-example:**
+```json
+{
+  "mapKey": {
+    "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
+  }
+}
+```
+
+### seedCustomerWithOrders
+**URL:** https://api.shopsynch.com/v1/qa/scenarios/customer-with-orders
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|false|No comments found.|-||
+|orderCount|int32|false|No comments found.|-|0|
+|email|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/qa/scenarios/customer-with-orders' --data '{
+  "tenantId": "",
+  "orderCount": 0,
+  "email": ""
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|mapKey|object|A map key.|-||
+|└─any object|object|any object.|-||
+
+**Response-example:**
+```json
+{
+  "mapKey": {
+    "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
+  }
 }
 ```
 
@@ -9933,15 +10808,15 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ro
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|array|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:48"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:48"|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|No comments found.|-||
 |└─name|string|No comments found.|-||
 |└─status|boolean|No comments found.|-|true|
 |└─slug|string|No comments found.|-||
 |└─permissions|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
@@ -9954,16 +10829,16 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ro
   "message": "",
   "data": [
     {
-      "createdAt": "2026-03-26 12:38:48",
-      "updatedAt": "2026-03-26 12:38:48",
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "updatedAt": "yyyy-MM-dd HH:mm:ss",
       "id": "",
       "name": "",
       "status": true,
       "slug": "",
       "permissions": [
         {
-          "createdAt": "2026-03-26 12:38:48",
-          "updatedAt": "2026-03-26 12:38:48",
+          "createdAt": "yyyy-MM-dd HH:mm:ss",
+          "updatedAt": "yyyy-MM-dd HH:mm:ss",
           "id": "",
           "name": "",
           "status": true,
@@ -10407,7 +11282,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 }
 ```
 
-## OrderController
+## Order Management
 ### Get All Orders<br><br>Retrieves a paginated and filtered list of orders for an authenticated shop owner. Supports sorting by various<br>fields, pagination, and multiple filtering criteria including search terms, order status, payment status, amount ranges,<br>and date ranges.
 **URL:** https://api.shopsynch.com/v1/orders
 
@@ -10669,8 +11544,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-30 09:30:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:38"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -10733,8 +11608,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-03-26 12:38:47",
-        "updatedAt": "2026-03-26 12:38:47"
+        "createdAt": "2026-03-30 09:30:38",
+        "updatedAt": "2026-03-30 09:30:38"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -10828,8 +11703,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:47"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:47"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-30 09:30:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:38"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -10892,8 +11767,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-03-26 12:38:47",
-        "updatedAt": "2026-03-26 12:38:47"
+        "createdAt": "2026-03-30 09:30:38",
+        "updatedAt": "2026-03-30 09:30:38"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -11077,8 +11952,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:48"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:48"|
+|└─createdAt|string|No comments found.|-|"2026-03-30 09:30:38"|
+|└─updatedAt|string|No comments found.|-|"2026-03-30 09:30:38"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -11093,8 +11968,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-03-26 12:38:48",
-    "updatedAt": "2026-03-26 12:38:48"
+    "createdAt": "2026-03-30 09:30:38",
+    "updatedAt": "2026-03-30 09:30:38"
   },
   "token": "",
   "refreshToken": "",
@@ -11490,8 +12365,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ba
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|array|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:48"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:48"|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|No comments found.|-||
 |└─name|string|No comments found.|-||
 |└─code|string|No comments found.|-||
@@ -11511,8 +12386,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ba
   "message": "",
   "data": [
     {
-      "createdAt": "2026-03-26 12:38:48",
-      "updatedAt": "2026-03-26 12:38:48",
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "updatedAt": "yyyy-MM-dd HH:mm:ss",
       "id": "",
       "name": "",
       "code": "",
@@ -11762,14 +12637,14 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/lo
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|array|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-03-26 12:38:48"|
-|└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:48"|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|No comments found.|-||
 |└─name|string|No comments found.|-||
 |└─status|boolean|No comments found.|-|true|
 |└─state|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-03-26 12:38:48"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-03-26 12:38:48"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
@@ -11782,14 +12657,14 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/lo
   "message": "",
   "data": [
     {
-      "createdAt": "2026-03-26 12:38:48",
-      "updatedAt": "2026-03-26 12:38:48",
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "updatedAt": "yyyy-MM-dd HH:mm:ss",
       "id": "",
       "name": "",
       "status": true,
       "state": {
-        "createdAt": "2026-03-26 12:38:48",
-        "updatedAt": "2026-03-26 12:38:48",
+        "createdAt": "yyyy-MM-dd HH:mm:ss",
+        "updatedAt": "yyyy-MM-dd HH:mm:ss",
         "id": "",
         "name": "",
         "code": "",
@@ -11798,6 +12673,108 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/lo
     }
   ]
 }
+```
+
+## Public REST Controller for processing Natural Language Query (NLQ) requests.
+Allows merchants to query dashboard stats using plain English phrases.
+
+Flow:
+1. Receives natural language &quot;query&quot; (e.g. &quot;how are my sales today?&quot;).
+2. Delegates to {@link NaturalLanguageStatParser} to translate the text into structured dates.
+3. Uses {@link StatsQueryService} to fetch actual business metrics for those dates.
+4. Returns both the interpreted range and the resulting statistics data.
+### query
+**URL:** https://api.shopsynch.com/v1/stats/natural-query
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|query|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/stats/natural-query' --data '{
+  "query": ""
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|interpretedAs|string|No comments found.|-||
+|from|string|No comments found.|-|yyyy-MM-dd|
+|to|string|No comments found.|-|yyyy-MM-dd|
+|domains|array|No comments found.<br/>[Enum: ORDERS, REVENUE, PRODUCTS, CUSTOMERS]|-|[ORDERS]|
+|data|object|No comments found.|-||
+|└─orderMetrics|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cancelledOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─completedOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pendingOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─processingOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─shippedOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─inTransitOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─issuesOrders|int64|Count of orders with an issue, e.g., missing shipping address or failed payment|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─unpaidOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pendingWaybills|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─averageOrderValue|number|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─byFulfillmentStatus|array|Breakdown of orders categorized by fulfillment state|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─topShippingMethods|array|Most popular shipping methods within the timeframe|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─revenueMetrics|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─grossRevenue|number|Total revenue before any deductions (Discounts/Refunds)|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─netRevenue|number|Final revenue after all deductions have been subtracted|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─refundsTotal|number|Total amount refunded to customers in this period|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalDiscounts|number|Total monetary value of coupons and discounts applied|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─revenueByPaymentMethod|object|Breakdown of revenue (Net) partitioned by the payment channel used (e.g., "manual_transfer", "card")|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|number|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currency|string|ISO currency code, e.g., "NGN"|-||
+|└─productMetrics|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalProducts|int64|Total unique products registered in the system|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newProductsCreated|int64|Count of products created within the filter period|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalInStockProducts|int64|Count of products currently having a stock level > 0|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalOutOfStockProducts|int64|Count of products currently out of stock|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalProductsValue|number|Estimated cumulative monetary value of all stock items in inventory|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─topSellingProducts|array|Enriched list of top-performing products|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalQuantitySold|int64|No comments found.|-|0|
+|└─customerMetrics|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newCustomers|int64|Number of customers who made their first purchase in this period|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─returningCustomers|int64|Number of unique customers with more than one order in their history|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─topCitiesForOrders|object|Geographic breakdown of order volume by city|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|int64|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─topStatesForOrders|object|Geographic breakdown of order volume by state/province|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|int64|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─topCustomersBySpend|object|Identification of top-tier customers based on their historical monetary contribution (Total Spend)|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|number|A map key.|-||
+|└─status|string|No comments found.|-||
+|summary|string|No comments found.|-||
+|providerUsed|string|No comments found.|-||
+|clarificationNeeded|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+
+**Response-example:**
+```json
+{"interpretedAs":"","from":"yyyy-MM-dd","to":"yyyy-MM-dd","domains":[ORDERS],"data":{"orderMetrics":{"totalOrders":0,"cancelledOrders":0,"completedOrders":0,"pendingOrders":0,"processingOrders":0,"shippedOrders":0,"inTransitOrders":0,"issuesOrders":0,"unpaidOrders":0,"pendingWaybills":0,"averageOrderValue":0,"byFulfillmentStatus":[{"mapKey":{}}],"topShippingMethods":[{"mapKey":{}}]},"revenueMetrics":{"grossRevenue":0,"netRevenue":0,"refundsTotal":0,"totalDiscounts":0,"revenueByPaymentMethod":{"mapKey1":0,"mapKey2":0}"currency":""},"productMetrics":{"totalProducts":0,"newProductsCreated":0,"totalInStockProducts":0,"totalOutOfStockProducts":0,"totalProductsValue":0,"topSellingProducts":[{"productId":"","name":"","totalQuantitySold":0}]},"customerMetrics":{"newCustomers":0,"returningCustomers":0,"topCitiesForOrders":{"mapKey1":0,"mapKey2":0}"topStatesForOrders":{"mapKey1":0,"mapKey2":0}"topCustomersBySpend":{"mapKey1":0,"mapKey2":0}},"status":""},"summary":"","providerUsed":"","clarificationNeeded":true,"message":""}
 ```
 
 ## App Token Management
@@ -12049,6 +13026,37 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
   "status": true
 }
 ```
+
+## PaystackWebhookController
+### handleWebhook
+**URL:** https://api.shopsynch.com/v1/webhooks/paystack
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+|x-paystack-signature|string|true|No comments found.|-||
+
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|payload|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -H "x-paystack-signature" -i 'https://api.shopsynch.com/v1/webhooks/paystack'
+```
+
 
 ## Product Management
 ### Get All Products
@@ -12869,6 +13877,63 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 }
 ```
 
+### Get Top Selling Products (Public)<br><br>Retrieves a list of the most popular products based on total quantity sold.<br>This endpoint is public-facing and omits sensitive business metrics.
+**URL:** https://api.shopsynch.com/v1/products/top-selling
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Get Top Selling Products (Public)
+
+Retrieves a list of the most popular products based on total quantity sold.
+This endpoint is public-facing and omits sensitive business metrics.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|startDate|string|false|No comments found.|-||
+|endDate|string|false|No comments found.|-||
+|limit|int32|true|Maximum number of products to return (default 10)|-|10|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/top-selling?startDate=&endDate=&limit=10'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "mapKey": {
+        "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
+      }
+    }
+  ]
+}
+```
+
 ## CartSessionController
 ### getSessionID
 **URL:** https://api.shopsynch.com/v1/generate/session/id
@@ -13259,6 +14324,7 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |CANCELLED|CANCELLED|string|Order revoked by user or system|
 |IN_TRANSIT|IN_TRANSIT|string|Currently on the road|
 |FAILED|FAILED|string|Payment or logistics failure|
+|ABANDONED|ABANDONED|string|Order abandoned by customer|
 
 ### Payment Statuses
 
