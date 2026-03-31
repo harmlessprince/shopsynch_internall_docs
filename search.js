@@ -360,14 +360,14 @@ api[0].list[11].list.push({
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/dashboard/stats/snapshots',
     methodId: 'ac6cfbff69c709594788e82f8db188cb',
-    desc: 'Retrieves the most recently created snapshots for the current tenant. Useful for the &quot;Recent Reports&quot; section of the dashboard.',
+    desc: 'Get Recent Snapshots by Domain Retrieves the most recently created snapshots for the current tenant. Useful for the &quot;Recent Reports&quot; section of the dashboard.',
 });
 api[0].list[11].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/dashboard/stats/snapshots/{id}/invalidate',
     methodId: '53b61fc7ae7e7848d42713d62d13101a',
-    desc: 'Invalidates a range of snapshots and triggers a re-computation. Limited to 3 invalidations per day per tenant to prevent abuse.',
+    desc: 'Invalidate Snapshot Invalidates a range of snapshots and triggers a re-computation. Limited to 3 invalidations per day per tenant to prevent abuse.',
 });
 api[0].list.push({
     alias: 'PasswordlessAuthController',
@@ -585,6 +585,13 @@ api[0].list[16].list.push({
     url: 'https://api.shopsynch.com/v1/dashboard/products',
     methodId: '9ddabf8d473b46c353c9f3ca0bf9880e',
     desc: 'Retrieves product insights including overall catalog numbers and top selling items.',
+});
+api[0].list[16].list.push({
+    order: '7',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/dashboard/sales/monthly-chart',
+    methodId: '8c777f56dc5342a296f15680c068a9eb',
+    desc: 'Get Monthly Sales Chart  Retrieves the monthly chart data for sales (volume and revenue) for a specific year.',
 });
 api[0].list.push({
     alias: 'CustomerAuthController',
