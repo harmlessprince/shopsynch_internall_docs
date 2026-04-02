@@ -3103,7 +3103,11 @@
   "meta": {},
   "shippingAddress": "",
   "billingAddress": "",
-  "totalAmount": 0.0,
+  "totalAmount": 0,
+  "subtotal": 0,
+  "discountAmount": 0,
+  "shippingFee": 0,
+  "taxAmount": 0,
   "shippingMethod": "",
   "paymentMethod": "",
   "promoCode": "",
@@ -3210,7 +3214,11 @@
   "meta": {},
   "shippingAddress": "",
   "billingAddress": "",
-  "totalAmount": 0.0,
+  "totalAmount": 0,
+  "subtotal": 0,
+  "discountAmount": 0,
+  "shippingFee": 0,
+  "taxAmount": 0,
   "shippingMethod": "",
   "paymentMethod": "",
   "promoCode": "",
@@ -3429,7 +3437,7 @@
                 <stringProp name="Argument.value">
 {
   "promoCode": "",
-  "amount": 0.0
+  "amount": 0
 }
                 </stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -3515,7 +3523,15 @@
   "description": "",
   "startDate": "yyyy-MM-dd HH:mm:ss",
   "endDate": "yyyy-MM-dd HH:mm:ss",
-  "discount": 0.0,
+  "discount": 0,
+  "discountValue": 0,
+  "discountType": "PERCENTAGE",
+  "maximumDiscountCap": 0,
+  "minimumOrderValue": 0,
+  "requiredQuantity": 0,
+  "freeQuantity": 0,
+  "usageLimit": 0,
+  "perCustomerUsageLimit": 0,
   "status": ""
 }
                 </stringProp>
@@ -3795,7 +3811,15 @@
   "description": "",
   "startDate": "yyyy-MM-dd HH:mm:ss",
   "endDate": "yyyy-MM-dd HH:mm:ss",
-  "discount": 0.0,
+  "discount": 0,
+  "discountType": "PERCENTAGE",
+  "discountValue": 0,
+  "maximumDiscountCap": 0,
+  "minimumOrderValue": 0,
+  "requiredQuantity": 0,
+  "freeQuantity": 0,
+  "usageLimit": 0,
+  "perCustomerUsageLimit": 0,
   "status": ""
 }
                 </stringProp>
@@ -8009,10 +8033,10 @@
                 <stringProp name="Argument.value">
 {
   "array": true,
-  "object": true,
-  "valueNode": true,
   "containerNode": true,
-  "missingNode": true
+  "missingNode": true,
+  "valueNode": true,
+  "object": true
 }
                 </stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -8687,7 +8711,7 @@
     {
       "productId": "",
       "name": "",
-      "price": 0.0,
+      "price": 0,
       "quantity": 0
     }
   ]
@@ -9757,14 +9781,14 @@
 {
   "productId": "",
   "variationId": "",
-  "price": 0.0,
-  "newPrice": 0.0,
+  "price": 0,
+  "newPrice": 0,
   "ramSize": "",
   "Storage": "",
   "size": "",
   "sku": "",
   "quantityInStock": 0,
-  "discount": 0.0
+  "discount": 0
 }
                 </stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -9847,14 +9871,14 @@
 {
   "productId": "",
   "variationId": "",
-  "price": 0.0,
-  "newPrice": 0.0,
+  "price": 0,
+  "newPrice": 0,
   "ramSize": "",
   "Storage": "",
   "size": "",
   "sku": "",
   "quantityInStock": 0,
-  "discount": 0.0
+  "discount": 0
 }
                 </stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -14368,14 +14392,14 @@
   "priceDetails": [
     {
       "id": "",
-      "price": 0.0,
-      "newPrice": 0.0,
+      "price": 0,
+      "newPrice": 0,
       "ramSize": "",
       "Storage": "",
       "size": "",
       "sku": "",
       "quantityInStock": 0,
-      "discount": 0.0,
+      "discount": 0,
       "variationAttributes": {
         "mapKey1": "",
         "mapKey2": ""
@@ -15741,14 +15765,14 @@ Flow:
   "features": [
     ""
   ],
-  "price": 0.0,
+  "price": 0,
   "ramSize": "",
   "storage": "",
   "size": "",
   "sku": "",
   "quantityInStock": 0,
   "brandId": "",
-  "discount": 0.0,
+  "discount": 0,
   "categoryId": "",
   "tenantId": "",
   "colorId": "",
@@ -15766,14 +15790,14 @@ Flow:
       "priceDetails": [
         {
           "id": "",
-          "price": 0.0,
-          "newPrice": 0.0,
+          "price": 0,
+          "newPrice": 0,
           "ramSize": "",
           "Storage": "",
           "size": "",
           "sku": "",
           "quantityInStock": 0,
-          "discount": 0.0,
+          "discount": 0,
           "variationAttributes": {
             "mapKey1": "",
             "mapKey2": ""
@@ -15874,14 +15898,14 @@ Flow:
   "features": [
     ""
   ],
-  "price": 0.0,
+  "price": 0,
   "ramSize": "",
   "storage": "",
   "size": "",
   "sku": "",
   "quantityInStock": 0,
   "brandId": "",
-  "discount": 0.0,
+  "discount": 0,
   "categoryId": "",
   "colorId": "",
   "customColor": "",
@@ -15898,14 +15922,14 @@ Flow:
       "priceDetails": [
         {
           "id": "",
-          "price": 0.0,
-          "newPrice": 0.0,
+          "price": 0,
+          "newPrice": 0,
           "ramSize": "",
           "Storage": "",
           "size": "",
           "sku": "",
           "quantityInStock": 0,
-          "discount": 0.0,
+          "discount": 0,
           "variationAttributes": {
             "mapKey1": "",
             "mapKey2": ""
