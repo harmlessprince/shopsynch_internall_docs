@@ -1671,6 +1671,13 @@ api[0].list[58].list.push({
     methodId: '',
     desc: 'Payment Gateways',
 });
+api[0].list[58].list.push({
+    order: '4',
+    deprecated: 'false',
+    url: '',
+    methodId: '',
+    desc: 'Discount Types',
+});
 document.onkeydown = keyDownSearch;
 function keyDownSearch(e) {
     const theEvent = e;

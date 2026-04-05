@@ -136,8 +136,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-02 15:47:14"|
-|└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:14"|
+|└─createdAt|string|No comments found.|-|"2026-04-05 16:31:25"|
+|└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:25"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -165,8 +165,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-02 15:47:14",
-    "updatedAt": "2026-04-02 15:47:14"
+    "createdAt": "2026-04-05 16:31:25",
+    "updatedAt": "2026-04-05 16:31:25"
   },
   "message": "",
   "status": true
@@ -238,8 +238,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-02 15:47:14"|
-|└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:14"|
+|└─createdAt|string|No comments found.|-|"2026-04-05 16:31:25"|
+|└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:25"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -267,8 +267,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-02 15:47:14",
-    "updatedAt": "2026-04-02 15:47:14"
+    "createdAt": "2026-04-05 16:31:25",
+    "updatedAt": "2026-04-05 16:31:25"
   },
   "message": "",
   "status": true
@@ -322,8 +322,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-02 15:47:14"|
-|└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:14"|
+|└─createdAt|string|No comments found.|-|"2026-04-05 16:31:25"|
+|└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:25"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -351,8 +351,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-02 15:47:14",
-    "updatedAt": "2026-04-02 15:47:14"
+    "createdAt": "2026-04-05 16:31:25",
+    "updatedAt": "2026-04-05 16:31:25"
   },
   "message": "",
   "status": true
@@ -410,8 +410,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-02 15:47:14"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:14"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-05 16:31:25"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:25"|
 |└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
@@ -442,8 +442,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
         ],
         "status": "",
         "metadata": {},
-        "createdAt": "2026-04-02 15:47:14",
-        "updatedAt": "2026-04-02 15:47:14"
+        "createdAt": "2026-04-05 16:31:25",
+        "updatedAt": "2026-04-05 16:31:25"
       }
     ],
     "nextCursor": "yyyy-MM-dd HH:mm:ss"
@@ -501,8 +501,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-02 15:47:14"|
-|└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:14"|
+|└─createdAt|string|No comments found.|-|"2026-04-05 16:31:25"|
+|└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:25"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -531,8 +531,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
       ],
       "status": "",
       "metadata": {},
-      "createdAt": "2026-04-02 15:47:14",
-      "updatedAt": "2026-04-02 15:47:14"
+      "createdAt": "2026-04-05 16:31:25",
+      "updatedAt": "2026-04-05 16:31:25"
     }
   ],
   "message": "",
@@ -1490,8 +1490,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-02 15:47:17"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:17"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-05 16:31:27"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:27"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -1554,8 +1554,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-02 15:47:17",
-        "updatedAt": "2026-04-02 15:47:17"
+        "createdAt": "2026-04-05 16:31:27",
+        "updatedAt": "2026-04-05 16:31:27"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -2205,14 +2205,20 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |-------|------|-------------|-------|---------|
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
-|data|number|No comments found.|-||
+|data|object|No comments found.|-||
+|└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 
 **Response-example:**
 ```json
 {
   "status": true,
   "message": "",
-  "data": 0
+  "data": {
+    "mapKey": {
+      "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
+    }
+  }
 }
 ```
 
@@ -2244,7 +2250,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |endDate|string|true|The end date of the promotion<br/>Validation[Future(message=End date must be in the future)]|-|yyyy-MM-dd HH:mm:ss|
 |discount|number|true|The discount percentage for the promotion<br/>Validation[Min(value=0, message=Discount must be at least 0); Max(value=100, message=Discount cannot exceed 100)]|-|0|
 |discountValue|number|false|The discount value — required for PERCENTAGE and FLAT_AMOUNT.<br/>- PERCENTAGE  → 0–100 (e.g. 10 means 10% off)<br/>- FLAT_AMOUNT → positive monetary amount (e.g. 500 means ₦500 off)<br/>- FREE_SHIPPING / BUY_X_GET_Y → omit or send null<br/>Validation[DecimalMin(value=0.0, message=Discount value must be at least 0)]|-|0|
-|discountType|enum|false|The type of discount.<br/>Defaults to PERCENTAGE if not provided, for backward compatibility.<br/>[Enum: PERCENTAGE, FLAT_AMOUNT, FREE_SHIPPING, BUY_X_GET_Y]|-|PERCENTAGE|
+|discountType|enum|false|The type of discount.<br/>Defaults to PERCENTAGE if not provided, for backward compatibility.<br/>[Enum: ]|-||
 |maximumDiscountCap|number|false|For PERCENTAGE only — caps the maximum monetary discount applied.<br/>e.g. "20% off but no more than ₦2,000" → maximumDiscountCap = 2000<br/>Null means no cap.<br/>Validation[DecimalMin(value= 0.0, inclusive=false, message=Maximum discount cap must be greater than 0)]|-|0|
 |minimumOrderValue|number|false|Minimum order subtotal required to qualify.<br/>Null or absent means no minimum.<br/>Validation[DecimalMin(value=0.0, message=Minimum order value must be at least 0)]|-|0|
 |requiredQuantity|int32|false|For BUY_X_GET_Y only — number of items customer must buy.<br/>Validation[Min(value=1, message=Required quantity must be at least 1)]|-|0|
@@ -2263,7 +2269,6 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
   "endDate": "yyyy-MM-dd HH:mm:ss",
   "discount": 0,
   "discountValue": 0,
-  "discountType": "PERCENTAGE",
   "maximumDiscountCap": 0,
   "minimumOrderValue": 0,
   "requiredQuantity": 0,
@@ -2288,7 +2293,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─description|string|A description of the promotion|-||
 |└─startDate|string|The start date and time of the promotion|-|yyyy-MM-dd HH:mm:ss|
 |└─endDate|string|The end date and time of the promotion|-|yyyy-MM-dd HH:mm:ss|
-|└─discountType|enum|The type of discount this promotion applies.<br/>Defaults to PERCENTAGE for backward compatibility with existing promotions<br/>that were created before discount types were introduced.<br/>[Enum: PERCENTAGE, FLAT_AMOUNT, FREE_SHIPPING, BUY_X_GET_Y]|-|PERCENTAGE|
+|└─discountType|enum|The type of discount this promotion applies.<br/>Defaults to PERCENTAGE for backward compatibility with existing promotions<br/>that were created before discount types were introduced.<br/>[Enum: ]|-||
 |└─discountValue|number|The discount value — interpretation depends on discountType:<br/> PERCENTAGE   → value is a percentage.  e.g. 10 means 10% off<br/> FLAT_AMOUNT  → value is a fixed amount in the tenant's currency. e.g. 500 means ₦500 off<br/> FREE_SHIPPING → value is ignored, set to ZERO by convention<br/> BUY_X_GET_Y  → value is ignored, use requiredQuantity + freeQuantity instead|-|0|
 |└─maximumDiscountCap|number|For PERCENTAGE promotions — caps the maximum monetary discount that can be applied.<br/>e.g. "20% off but no more than ₦2,000"<br/>Null means no cap.<br/>Only meaningful when discountType = PERCENTAGE.|-|0|
 |└─minimumOrderValue|number|Minimum order subtotal required to qualify for this promotion.<br/>Null or ZERO means no minimum.|-|0|
@@ -2315,7 +2320,6 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "description": "",
     "startDate": "yyyy-MM-dd HH:mm:ss",
     "endDate": "yyyy-MM-dd HH:mm:ss",
-    "discountType": "PERCENTAGE",
     "discountValue": 0,
     "maximumDiscountCap": 0,
     "minimumOrderValue": 0,
@@ -2380,7 +2384,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |└─description|string|A description of the promotion|-||
 |└─startDate|string|The start date and time of the promotion|-|yyyy-MM-dd HH:mm:ss|
 |└─endDate|string|The end date and time of the promotion|-|yyyy-MM-dd HH:mm:ss|
-|└─discountType|enum|The type of discount this promotion applies.<br/>Defaults to PERCENTAGE for backward compatibility with existing promotions<br/>that were created before discount types were introduced.<br/>[Enum: PERCENTAGE, FLAT_AMOUNT, FREE_SHIPPING, BUY_X_GET_Y]|-|PERCENTAGE|
+|└─discountType|enum|The type of discount this promotion applies.<br/>Defaults to PERCENTAGE for backward compatibility with existing promotions<br/>that were created before discount types were introduced.<br/>[Enum: ]|-||
 |└─discountValue|number|The discount value — interpretation depends on discountType:<br/> PERCENTAGE   → value is a percentage.  e.g. 10 means 10% off<br/> FLAT_AMOUNT  → value is a fixed amount in the tenant's currency. e.g. 500 means ₦500 off<br/> FREE_SHIPPING → value is ignored, set to ZERO by convention<br/> BUY_X_GET_Y  → value is ignored, use requiredQuantity + freeQuantity instead|-|0|
 |└─maximumDiscountCap|number|For PERCENTAGE promotions — caps the maximum monetary discount that can be applied.<br/>e.g. "20% off but no more than ₦2,000"<br/>Null means no cap.<br/>Only meaningful when discountType = PERCENTAGE.|-|0|
 |└─minimumOrderValue|number|Minimum order subtotal required to qualify for this promotion.<br/>Null or ZERO means no minimum.|-|0|
@@ -2408,7 +2412,6 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
       "description": "",
       "startDate": "yyyy-MM-dd HH:mm:ss",
       "endDate": "yyyy-MM-dd HH:mm:ss",
-      "discountType": "PERCENTAGE",
       "discountValue": 0,
       "maximumDiscountCap": 0,
       "minimumOrderValue": 0,
@@ -2467,7 +2470,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |└─description|string|A description of the promotion|-||
 |└─startDate|string|The start date and time of the promotion|-|yyyy-MM-dd HH:mm:ss|
 |└─endDate|string|The end date and time of the promotion|-|yyyy-MM-dd HH:mm:ss|
-|└─discountType|enum|The type of discount this promotion applies.<br/>Defaults to PERCENTAGE for backward compatibility with existing promotions<br/>that were created before discount types were introduced.<br/>[Enum: PERCENTAGE, FLAT_AMOUNT, FREE_SHIPPING, BUY_X_GET_Y]|-|PERCENTAGE|
+|└─discountType|enum|The type of discount this promotion applies.<br/>Defaults to PERCENTAGE for backward compatibility with existing promotions<br/>that were created before discount types were introduced.<br/>[Enum: ]|-||
 |└─discountValue|number|The discount value — interpretation depends on discountType:<br/> PERCENTAGE   → value is a percentage.  e.g. 10 means 10% off<br/> FLAT_AMOUNT  → value is a fixed amount in the tenant's currency. e.g. 500 means ₦500 off<br/> FREE_SHIPPING → value is ignored, set to ZERO by convention<br/> BUY_X_GET_Y  → value is ignored, use requiredQuantity + freeQuantity instead|-|0|
 |└─maximumDiscountCap|number|For PERCENTAGE promotions — caps the maximum monetary discount that can be applied.<br/>e.g. "20% off but no more than ₦2,000"<br/>Null means no cap.<br/>Only meaningful when discountType = PERCENTAGE.|-|0|
 |└─minimumOrderValue|number|Minimum order subtotal required to qualify for this promotion.<br/>Null or ZERO means no minimum.|-|0|
@@ -2494,7 +2497,6 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
     "description": "",
     "startDate": "yyyy-MM-dd HH:mm:ss",
     "endDate": "yyyy-MM-dd HH:mm:ss",
-    "discountType": "PERCENTAGE",
     "discountValue": 0,
     "maximumDiscountCap": 0,
     "minimumOrderValue": 0,
@@ -2543,7 +2545,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |startDate|string|true|The start date of the promotion|-|yyyy-MM-dd HH:mm:ss|
 |endDate|string|true|The end date of the promotion|-|yyyy-MM-dd HH:mm:ss|
 |discount|number|true|The discount percentage for the promotion<br/>Validation[Min(value=0, message=Discount must be at least 0); Max(value=100, message=Discount cannot exceed 100)]|-|0|
-|discountType|enum|false|The type of discount.<br/>Defaults to PERCENTAGE if not provided, for backward compatibility.<br/>[Enum: PERCENTAGE, FLAT_AMOUNT, FREE_SHIPPING, BUY_X_GET_Y]|-|PERCENTAGE|
+|discountType|enum|false|The type of discount.<br/>Defaults to PERCENTAGE if not provided, for backward compatibility.<br/>[Enum: ]|-||
 |discountValue|number|false|The discount value.<br/>- PERCENTAGE  → 0–100<br/>- FLAT_AMOUNT → positive monetary amount<br/>- FREE_SHIPPING / BUY_X_GET_Y → omit or send null<br/>Validation[DecimalMin(value= 0.0, message=Discount value must be at least 0)]|-|0|
 |maximumDiscountCap|number|false|For PERCENTAGE only — caps the maximum monetary discount applied.<br/>Send null to remove an existing cap.<br/>Validation[DecimalMin(value=0.0, inclusive=false, message=Maximum discount cap must be greater than 0)]|-|0|
 |minimumOrderValue|number|false|Minimum order subtotal required to qualify.<br/>Send null to remove an existing minimum.<br/>Validation[DecimalMin(value=0.0, message=Minimum order value must be at least 0)]|-|0|
@@ -2572,7 +2574,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─description|string|A description of the promotion|-||
 |└─startDate|string|The start date and time of the promotion|-|yyyy-MM-dd HH:mm:ss|
 |└─endDate|string|The end date and time of the promotion|-|yyyy-MM-dd HH:mm:ss|
-|└─discountType|enum|The type of discount this promotion applies.<br/>Defaults to PERCENTAGE for backward compatibility with existing promotions<br/>that were created before discount types were introduced.<br/>[Enum: PERCENTAGE, FLAT_AMOUNT, FREE_SHIPPING, BUY_X_GET_Y]|-|PERCENTAGE|
+|└─discountType|enum|The type of discount this promotion applies.<br/>Defaults to PERCENTAGE for backward compatibility with existing promotions<br/>that were created before discount types were introduced.<br/>[Enum: ]|-||
 |└─discountValue|number|The discount value — interpretation depends on discountType:<br/> PERCENTAGE   → value is a percentage.  e.g. 10 means 10% off<br/> FLAT_AMOUNT  → value is a fixed amount in the tenant's currency. e.g. 500 means ₦500 off<br/> FREE_SHIPPING → value is ignored, set to ZERO by convention<br/> BUY_X_GET_Y  → value is ignored, use requiredQuantity + freeQuantity instead|-|0|
 |└─maximumDiscountCap|number|For PERCENTAGE promotions — caps the maximum monetary discount that can be applied.<br/>e.g. "20% off but no more than ₦2,000"<br/>Null means no cap.<br/>Only meaningful when discountType = PERCENTAGE.|-|0|
 |└─minimumOrderValue|number|Minimum order subtotal required to qualify for this promotion.<br/>Null or ZERO means no minimum.|-|0|
@@ -2599,7 +2601,6 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     "description": "",
     "startDate": "yyyy-MM-dd HH:mm:ss",
     "endDate": "yyyy-MM-dd HH:mm:ss",
-    "discountType": "PERCENTAGE",
     "discountValue": 0,
     "maximumDiscountCap": 0,
     "minimumOrderValue": 0,
@@ -3001,8 +3002,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-02 15:47:23"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:23"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-05 16:31:33"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:33"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -3026,8 +3027,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-02 15:47:23",
-        "updatedAt": "2026-04-02 15:47:23"
+        "createdAt": "2026-04-05 16:31:33",
+        "updatedAt": "2026-04-05 16:31:33"
       },
       "product": {
         "id": "",
@@ -3091,8 +3092,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-02 15:47:23"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:23"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-05 16:31:33"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:33"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -3116,8 +3117,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-02 15:47:23",
-        "updatedAt": "2026-04-02 15:47:23"
+        "createdAt": "2026-04-05 16:31:33",
+        "updatedAt": "2026-04-05 16:31:33"
       },
       "product": {
         "id": "",
@@ -3185,8 +3186,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-02 15:47:23"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:23"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-05 16:31:33"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:33"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -3209,8 +3210,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-02 15:47:23",
-      "updatedAt": "2026-04-02 15:47:23"
+      "createdAt": "2026-04-05 16:31:33",
+      "updatedAt": "2026-04-05 16:31:33"
     },
     "product": {
       "id": "",
@@ -3860,8 +3861,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-02 15:47:17"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:17"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-05 16:31:28"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:28"|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
 |└─expiresIn|int64|No comments found.|-|0|
@@ -3879,8 +3880,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-02 15:47:17",
-      "updatedAt": "2026-04-02 15:47:17"
+      "createdAt": "2026-04-05 16:31:28",
+      "updatedAt": "2026-04-05 16:31:28"
     },
     "token": "",
     "refreshToken": "",
@@ -3936,8 +3937,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-02 15:47:17"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:17"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-05 16:31:28"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:28"|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
 |└─expiresIn|int64|No comments found.|-|0|
@@ -3955,8 +3956,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-02 15:47:17",
-      "updatedAt": "2026-04-02 15:47:17"
+      "createdAt": "2026-04-05 16:31:28",
+      "updatedAt": "2026-04-05 16:31:28"
     },
     "token": "",
     "refreshToken": "",
@@ -4016,8 +4017,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-02 15:47:25"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:25"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-05 16:31:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:36"|
 |└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
@@ -4034,8 +4035,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-02 15:47:25",
-        "updatedAt": "2026-04-02 15:47:25"
+        "createdAt": "2026-04-05 16:31:36",
+        "updatedAt": "2026-04-05 16:31:36"
       }
     ],
     "nextCursor": "yyyy-MM-dd HH:mm:ss"
@@ -4084,8 +4085,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-02 15:47:25"|
-|└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:25"|
+|└─createdAt|string|No comments found.|-|"2026-04-05 16:31:36"|
+|└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:36"|
 
 **Response-example:**
 ```json
@@ -4099,8 +4100,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-02 15:47:25",
-    "updatedAt": "2026-04-02 15:47:25"
+    "createdAt": "2026-04-05 16:31:36",
+    "updatedAt": "2026-04-05 16:31:36"
   }
 }
 ```
@@ -4147,8 +4148,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-02 15:47:25"|
-|└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:25"|
+|└─createdAt|string|No comments found.|-|"2026-04-05 16:31:36"|
+|└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:36"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -4162,8 +4163,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-02 15:47:25",
-    "updatedAt": "2026-04-02 15:47:25"
+    "createdAt": "2026-04-05 16:31:36",
+    "updatedAt": "2026-04-05 16:31:36"
   },
   "message": "",
   "status": true
@@ -4209,8 +4210,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-02 15:47:25"|
-|└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:25"|
+|└─createdAt|string|No comments found.|-|"2026-04-05 16:31:36"|
+|└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:36"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -4224,8 +4225,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-02 15:47:25",
-    "updatedAt": "2026-04-02 15:47:25"
+    "createdAt": "2026-04-05 16:31:36",
+    "updatedAt": "2026-04-05 16:31:36"
   },
   "message": "",
   "status": true
@@ -4271,8 +4272,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-02 15:47:25"|
-|└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:25"|
+|└─createdAt|string|No comments found.|-|"2026-04-05 16:31:36"|
+|└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:36"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -4286,8 +4287,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-02 15:47:25",
-    "updatedAt": "2026-04-02 15:47:25"
+    "createdAt": "2026-04-05 16:31:36",
+    "updatedAt": "2026-04-05 16:31:36"
   },
   "message": "",
   "status": true
@@ -4345,8 +4346,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-02 15:47:25"|
-|└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:25"|
+|└─createdAt|string|No comments found.|-|"2026-04-05 16:31:36"|
+|└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:36"|
 
 **Response-example:**
 ```json
@@ -4360,8 +4361,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-02 15:47:25",
-    "updatedAt": "2026-04-02 15:47:25"
+    "createdAt": "2026-04-05 16:31:36",
+    "updatedAt": "2026-04-05 16:31:36"
   }
 }
 ```
@@ -4415,8 +4416,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-02 15:47:25"|
-|└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:25"|
+|└─createdAt|string|No comments found.|-|"2026-04-05 16:31:36"|
+|└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:36"|
 
 **Response-example:**
 ```json
@@ -4430,8 +4431,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-02 15:47:25",
-    "updatedAt": "2026-04-02 15:47:25"
+    "createdAt": "2026-04-05 16:31:36",
+    "updatedAt": "2026-04-05 16:31:36"
   }
 }
 ```
@@ -7273,8 +7274,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-02 15:47:17"|
-|└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:17"|
+|└─createdAt|string|No comments found.|-|"2026-04-05 16:31:28"|
+|└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:28"|
 
 **Response-example:**
 ```json
@@ -7288,8 +7289,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-02 15:47:17",
-    "updatedAt": "2026-04-02 15:47:17"
+    "createdAt": "2026-04-05 16:31:28",
+    "updatedAt": "2026-04-05 16:31:28"
   }
 }
 ```
@@ -7335,8 +7336,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-02 15:47:17"|
-|└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:17"|
+|└─createdAt|string|No comments found.|-|"2026-04-05 16:31:28"|
+|└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:28"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -7351,8 +7352,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-02 15:47:17",
-    "updatedAt": "2026-04-02 15:47:17"
+    "createdAt": "2026-04-05 16:31:28",
+    "updatedAt": "2026-04-05 16:31:28"
   },
   "token": "",
   "refreshToken": "",
@@ -7402,8 +7403,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-02 15:47:17"|
-|└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:17"|
+|└─createdAt|string|No comments found.|-|"2026-04-05 16:31:28"|
+|└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:28"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -7418,8 +7419,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-02 15:47:17",
-    "updatedAt": "2026-04-02 15:47:17"
+    "createdAt": "2026-04-05 16:31:28",
+    "updatedAt": "2026-04-05 16:31:28"
   },
   "token": "",
   "refreshToken": "",
@@ -7467,8 +7468,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-02 15:47:17"|
-|└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:17"|
+|└─createdAt|string|No comments found.|-|"2026-04-05 16:31:28"|
+|└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:28"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -7483,8 +7484,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-02 15:47:17",
-    "updatedAt": "2026-04-02 15:47:17"
+    "createdAt": "2026-04-05 16:31:28",
+    "updatedAt": "2026-04-05 16:31:28"
   },
   "token": "",
   "refreshToken": "",
@@ -7593,19 +7594,19 @@ string
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
 |array|boolean|false|No comments found.|-|true|
-|valueNode|boolean|false|No comments found.|-|true|
-|containerNode|boolean|false|No comments found.|-|true|
-|missingNode|boolean|false|No comments found.|-|true|
 |object|boolean|false|No comments found.|-|true|
+|valueNode|boolean|false|No comments found.|-|true|
+|missingNode|boolean|false|No comments found.|-|true|
+|containerNode|boolean|false|No comments found.|-|true|
 
 **Request-example:**
 ```bash
 curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/webhooks/whatsapp' --data '{
   "array": true,
+  "object": true,
   "valueNode": true,
-  "containerNode": true,
   "missingNode": true,
-  "object": true
+  "containerNode": true
 }'
 ```
 
@@ -8056,8 +8057,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-02 15:47:24"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:24"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-05 16:31:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactInformation|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
@@ -8073,7 +8074,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─endDate|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discountValue|number|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discountType|enum|No comments found.<br/>[Enum: PERCENTAGE, FLAT_AMOUNT, FREE_SHIPPING, BUY_X_GET_Y]|-|PERCENTAGE|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discountType|enum|The discountType of the promotion.<br/>[Enum: ]|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─maximumDiscountCap|number|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─minimumOrderValue|number|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─requiredQuantity|int32|No comments found.|-|0|
@@ -8140,8 +8141,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-02 15:47:24"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:24"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-05 16:31:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:35"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─tenant|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessName|string|No comments found.|-||
@@ -8197,8 +8198,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-02 15:47:24",
-        "updatedAt": "2026-04-02 15:47:24"
+        "createdAt": "2026-04-05 16:31:34",
+        "updatedAt": "2026-04-05 16:31:34"
       },
       "contactInformation": {
         "firstName": "",
@@ -8216,7 +8217,6 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
         "endDate": "yyyy-MM-dd HH:mm:ss",
         "discount": 0,
         "discountValue": 0,
-        "discountType": "PERCENTAGE",
         "maximumDiscountCap": 0,
         "minimumOrderValue": 0,
         "requiredQuantity": 0,
@@ -8296,8 +8296,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
           "phoneNumber": "",
           "address": "",
           "status": "",
-          "createdAt": "2026-04-02 15:47:24",
-          "updatedAt": "2026-04-02 15:47:24"
+          "createdAt": "2026-04-05 16:31:35",
+          "updatedAt": "2026-04-05 16:31:35"
         },
         "createdAt": "yyyy-MM-dd HH:mm:ss"
       }
@@ -10920,8 +10920,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
 |└─status|string|No comments found.|-||
 |└─paymentGatewayTransactionId|string|No comments found.|-||
 |└─manualPayment|boolean|No comments found.|-|true|
-|└─createdAt|string|No comments found.|-|"2026-04-02 15:47:19"|
-|└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:19"|
+|└─createdAt|string|No comments found.|-|"2026-04-05 16:31:31"|
+|└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:31"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -10941,8 +10941,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
     "status": "",
     "paymentGatewayTransactionId": "",
     "manualPayment": true,
-    "createdAt": "2026-04-02 15:47:19",
-    "updatedAt": "2026-04-02 15:47:19"
+    "createdAt": "2026-04-05 16:31:31",
+    "updatedAt": "2026-04-05 16:31:31"
   },
   "message": "",
   "status": true
@@ -11417,8 +11417,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-02 15:47:18"|
-|└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:18"|
+|└─createdAt|string|No comments found.|-|"2026-04-05 16:31:30"|
+|└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:30"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -11433,8 +11433,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-02 15:47:18",
-    "updatedAt": "2026-04-02 15:47:18"
+    "createdAt": "2026-04-05 16:31:30",
+    "updatedAt": "2026-04-05 16:31:30"
   },
   "token": "",
   "refreshToken": "",
@@ -12883,8 +12883,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-02 15:47:16"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:16"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-05 16:31:26"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:26"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -12947,8 +12947,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-02 15:47:16",
-        "updatedAt": "2026-04-02 15:47:16"
+        "createdAt": "2026-04-05 16:31:26",
+        "updatedAt": "2026-04-05 16:31:26"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -13042,8 +13042,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-02 15:47:16"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:16"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-05 16:31:27"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:27"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -13106,8 +13106,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-02 15:47:16",
-        "updatedAt": "2026-04-02 15:47:16"
+        "createdAt": "2026-04-05 16:31:27",
+        "updatedAt": "2026-04-05 16:31:27"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -13291,8 +13291,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-02 15:47:18"|
-|└─updatedAt|string|No comments found.|-|"2026-04-02 15:47:18"|
+|└─createdAt|string|No comments found.|-|"2026-04-05 16:31:30"|
+|└─updatedAt|string|No comments found.|-|"2026-04-05 16:31:30"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -13307,8 +13307,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-02 15:47:18",
-    "updatedAt": "2026-04-02 15:47:18"
+    "createdAt": "2026-04-05 16:31:30",
+    "updatedAt": "2026-04-05 16:31:30"
   },
   "token": "",
   "refreshToken": "",
@@ -15685,3 +15685,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |STRIPE|STRIPE|string|International card processing (USD/EUR/GBP)|
 |OFFLINE|OFFLINE|string|Manual bank transfer or Cash on Delivery|
 |MONNIFY|MONNIFY|string|Automated bank transfer provider for Nigeria|
+
+### Discount Types
+
+| Name | Code | Type | Description |
+|------|------|------|-------------|

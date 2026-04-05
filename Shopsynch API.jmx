@@ -3525,7 +3525,6 @@
   "endDate": "yyyy-MM-dd HH:mm:ss",
   "discount": 0,
   "discountValue": 0,
-  "discountType": "PERCENTAGE",
   "maximumDiscountCap": 0,
   "minimumOrderValue": 0,
   "requiredQuantity": 0,
@@ -3812,7 +3811,6 @@
   "startDate": "yyyy-MM-dd HH:mm:ss",
   "endDate": "yyyy-MM-dd HH:mm:ss",
   "discount": 0,
-  "discountType": "PERCENTAGE",
   "discountValue": 0,
   "maximumDiscountCap": 0,
   "minimumOrderValue": 0,
@@ -8033,10 +8031,10 @@
                 <stringProp name="Argument.value">
 {
   "array": true,
+  "object": true,
   "containerNode": true,
-  "missingNode": true,
   "valueNode": true,
-  "object": true
+  "missingNode": true
 }
                 </stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
