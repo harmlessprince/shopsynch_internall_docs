@@ -8460,10 +8460,10 @@ V1 variation endpoints ({@code /v1/products/variation/*}) are NOT affected." ena
                 <stringProp name="Argument.value">
 {
   "array": true,
-  "valueNode": true,
+  "object": true,
   "containerNode": true,
-  "missingNode": true,
-  "object": true
+  "valueNode": true,
+  "missingNode": true
 }
                 </stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -15330,6 +15330,23 @@ All new product creation should be done via this controller." enabled="true">
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Initiate Merchant Social Auth<br>Generates a Google authorization URL for Merchants and redirects to the consent screen. <br>Account will be linked or a new store provisioned." enabled="true">
+			  
+		  <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+		  <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+			<collectionProp name="Arguments.arguments">
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">redirectUrl</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">errorRedirectUrl</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+			</collectionProp>
+		</elementProp>
+			
           <stringProp name="HTTPSampler.domain">https://api.shopsynch.com</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -15404,6 +15421,26 @@ All new product creation should be done via this controller." enabled="true">
 				<elementProp name="" elementType="HTTPArgument">
 					<boolProp name="HTTPArgument.always_encode">false</boolProp>
 					<stringProp name="Argument.name">tenantId</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">domain</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">X-MerchantApiKey</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">redirectUrl</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">errorRedirectUrl</stringProp>
 					<stringProp name="Argument.metadata">=</stringProp>
 				</elementProp>
 			</collectionProp>
@@ -15488,6 +15525,16 @@ All new product creation should be done via this controller." enabled="true">
 				<elementProp name="" elementType="HTTPArgument">
 					<boolProp name="HTTPArgument.always_encode">false</boolProp>
 					<stringProp name="Argument.name">state</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">error</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">errorDescription</stringProp>
 					<stringProp name="Argument.metadata">=</stringProp>
 				</elementProp>
 			</collectionProp>
