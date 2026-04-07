@@ -136,8 +136,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:44:30"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:30"|
+|└─createdAt|string|No comments found.|-|"2026-04-07 10:57:53"|
+|└─updatedAt|string|No comments found.|-|"2026-04-07 10:57:53"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -165,8 +165,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-07 10:44:30",
-    "updatedAt": "2026-04-07 10:44:30"
+    "createdAt": "2026-04-07 10:57:53",
+    "updatedAt": "2026-04-07 10:57:53"
   },
   "message": "",
   "status": true
@@ -238,8 +238,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:44:30"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:30"|
+|└─createdAt|string|No comments found.|-|"2026-04-07 10:57:53"|
+|└─updatedAt|string|No comments found.|-|"2026-04-07 10:57:53"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -267,8 +267,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-07 10:44:30",
-    "updatedAt": "2026-04-07 10:44:30"
+    "createdAt": "2026-04-07 10:57:53",
+    "updatedAt": "2026-04-07 10:57:53"
   },
   "message": "",
   "status": true
@@ -322,8 +322,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:44:30"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:30"|
+|└─createdAt|string|No comments found.|-|"2026-04-07 10:57:53"|
+|└─updatedAt|string|No comments found.|-|"2026-04-07 10:57:53"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -351,8 +351,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-07 10:44:30",
-    "updatedAt": "2026-04-07 10:44:30"
+    "createdAt": "2026-04-07 10:57:53",
+    "updatedAt": "2026-04-07 10:57:53"
   },
   "message": "",
   "status": true
@@ -410,8 +410,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:44:30"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:30"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:57:53"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:57:53"|
 |└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
@@ -442,8 +442,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
         ],
         "status": "",
         "metadata": {},
-        "createdAt": "2026-04-07 10:44:30",
-        "updatedAt": "2026-04-07 10:44:30"
+        "createdAt": "2026-04-07 10:57:53",
+        "updatedAt": "2026-04-07 10:57:53"
       }
     ],
     "nextCursor": "yyyy-MM-dd HH:mm:ss"
@@ -501,8 +501,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:44:30"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:30"|
+|└─createdAt|string|No comments found.|-|"2026-04-07 10:57:53"|
+|└─updatedAt|string|No comments found.|-|"2026-04-07 10:57:53"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -531,8 +531,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
       ],
       "status": "",
       "metadata": {},
-      "createdAt": "2026-04-07 10:44:30",
-      "updatedAt": "2026-04-07 10:44:30"
+      "createdAt": "2026-04-07 10:57:53",
+      "updatedAt": "2026-04-07 10:57:53"
     }
   ],
   "message": "",
@@ -1534,8 +1534,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:44:35"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:01"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:01"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -1598,8 +1598,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-07 10:44:35",
-        "updatedAt": "2026-04-07 10:44:35"
+        "createdAt": "2026-04-07 10:58:01",
+        "updatedAt": "2026-04-07 10:58:01"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -3051,8 +3051,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:44:42"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:42"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:12"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:12"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -3076,8 +3076,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-07 10:44:42",
-        "updatedAt": "2026-04-07 10:44:42"
+        "createdAt": "2026-04-07 10:58:12",
+        "updatedAt": "2026-04-07 10:58:12"
       },
       "product": {
         "id": "",
@@ -3141,8 +3141,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:44:42"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:42"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:12"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:12"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -3166,8 +3166,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-07 10:44:42",
-        "updatedAt": "2026-04-07 10:44:42"
+        "createdAt": "2026-04-07 10:58:12",
+        "updatedAt": "2026-04-07 10:58:12"
       },
       "product": {
         "id": "",
@@ -3235,8 +3235,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:44:43"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:43"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:13"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:13"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -3259,8 +3259,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-07 10:44:43",
-      "updatedAt": "2026-04-07 10:44:43"
+      "createdAt": "2026-04-07 10:58:13",
+      "updatedAt": "2026-04-07 10:58:13"
     },
     "product": {
       "id": "",
@@ -3910,8 +3910,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:44:36"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:03"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:03"|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
 |└─expiresIn|int64|No comments found.|-|0|
@@ -3929,8 +3929,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-07 10:44:36",
-      "updatedAt": "2026-04-07 10:44:36"
+      "createdAt": "2026-04-07 10:58:03",
+      "updatedAt": "2026-04-07 10:58:03"
     },
     "token": "",
     "refreshToken": "",
@@ -3986,8 +3986,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:44:36"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:03"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:03"|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
 |└─expiresIn|int64|No comments found.|-|0|
@@ -4005,8 +4005,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-07 10:44:36",
-      "updatedAt": "2026-04-07 10:44:36"
+      "createdAt": "2026-04-07 10:58:03",
+      "updatedAt": "2026-04-07 10:58:03"
     },
     "token": "",
     "refreshToken": "",
@@ -4066,8 +4066,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:44:45"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:45"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:16"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:16"|
 |└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
@@ -4084,8 +4084,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-07 10:44:45",
-        "updatedAt": "2026-04-07 10:44:45"
+        "createdAt": "2026-04-07 10:58:16",
+        "updatedAt": "2026-04-07 10:58:16"
       }
     ],
     "nextCursor": "yyyy-MM-dd HH:mm:ss"
@@ -4134,8 +4134,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:44:45"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:45"|
+|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:16"|
+|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:16"|
 
 **Response-example:**
 ```json
@@ -4149,8 +4149,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-07 10:44:45",
-    "updatedAt": "2026-04-07 10:44:45"
+    "createdAt": "2026-04-07 10:58:16",
+    "updatedAt": "2026-04-07 10:58:16"
   }
 }
 ```
@@ -4197,8 +4197,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:44:45"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:45"|
+|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:16"|
+|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:16"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -4212,8 +4212,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-07 10:44:45",
-    "updatedAt": "2026-04-07 10:44:45"
+    "createdAt": "2026-04-07 10:58:16",
+    "updatedAt": "2026-04-07 10:58:16"
   },
   "message": "",
   "status": true
@@ -4259,8 +4259,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:44:45"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:45"|
+|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:16"|
+|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:16"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -4274,8 +4274,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-07 10:44:45",
-    "updatedAt": "2026-04-07 10:44:45"
+    "createdAt": "2026-04-07 10:58:16",
+    "updatedAt": "2026-04-07 10:58:16"
   },
   "message": "",
   "status": true
@@ -4321,8 +4321,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:44:45"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:45"|
+|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:16"|
+|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:16"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -4336,8 +4336,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-07 10:44:45",
-    "updatedAt": "2026-04-07 10:44:45"
+    "createdAt": "2026-04-07 10:58:16",
+    "updatedAt": "2026-04-07 10:58:16"
   },
   "message": "",
   "status": true
@@ -4395,8 +4395,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:44:45"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:45"|
+|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:16"|
+|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:16"|
 
 **Response-example:**
 ```json
@@ -4410,8 +4410,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-07 10:44:45",
-    "updatedAt": "2026-04-07 10:44:45"
+    "createdAt": "2026-04-07 10:58:16",
+    "updatedAt": "2026-04-07 10:58:16"
   }
 }
 ```
@@ -4465,8 +4465,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:44:45"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:45"|
+|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:16"|
+|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:16"|
 
 **Response-example:**
 ```json
@@ -4480,8 +4480,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-07 10:44:45",
-    "updatedAt": "2026-04-07 10:44:45"
+    "createdAt": "2026-04-07 10:58:16",
+    "updatedAt": "2026-04-07 10:58:16"
   }
 }
 ```
@@ -8219,8 +8219,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:44:35"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:35"|
+|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:02"|
+|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:02"|
 
 **Response-example:**
 ```json
@@ -8234,8 +8234,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-07 10:44:35",
-    "updatedAt": "2026-04-07 10:44:35"
+    "createdAt": "2026-04-07 10:58:02",
+    "updatedAt": "2026-04-07 10:58:02"
   }
 }
 ```
@@ -8280,8 +8280,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:44:35"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:35"|
+|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:02"|
+|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:02"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -8296,8 +8296,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-07 10:44:35",
-    "updatedAt": "2026-04-07 10:44:35"
+    "createdAt": "2026-04-07 10:58:02",
+    "updatedAt": "2026-04-07 10:58:02"
   },
   "token": "",
   "refreshToken": "",
@@ -8872,8 +8872,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:44:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:15"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:15"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactInformation|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
@@ -8956,8 +8956,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:44:44"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:44"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:15"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:15"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─tenant|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tradingName|string|No comments found.|-||
@@ -9012,8 +9012,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-07 10:44:44",
-        "updatedAt": "2026-04-07 10:44:44"
+        "createdAt": "2026-04-07 10:58:15",
+        "updatedAt": "2026-04-07 10:58:15"
       },
       "contactInformation": {
         "firstName": "",
@@ -9111,8 +9111,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
           "phoneNumber": "",
           "address": "",
           "status": "",
-          "createdAt": "2026-04-07 10:44:44",
-          "updatedAt": "2026-04-07 10:44:44"
+          "createdAt": "2026-04-07 10:58:15",
+          "updatedAt": "2026-04-07 10:58:15"
         },
         "createdAt": "yyyy-MM-dd HH:mm:ss"
       }
@@ -9266,11 +9266,22 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/st
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─secondaryPhone|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─instagramUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─facebookUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twitterUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─youtubeUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─linkedinUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tiktokUrl|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─socials|array|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─platform|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─url|string|No comments found.|-||
 |└─delivery|array|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─currency|string|No comments found.|-||
+|└─timezone|string|No comments found.|-||
+|└─googleAuthConfig|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─redirectUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─errorUrl|string|No comments found.|-||
 
 **Response-example:**
 ```json
@@ -9296,6 +9307,12 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/st
       "secondaryPhone": "",
       "email": "",
       "address": "",
+      "instagramUrl": "",
+      "facebookUrl": "",
+      "twitterUrl": "",
+      "youtubeUrl": "",
+      "linkedinUrl": "",
+      "tiktokUrl": "",
       "socials": [
         {
           "platform": "",
@@ -9305,7 +9322,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/st
     },
     "delivery": [
       {}
-    ]
+    ],
+    "currency": "",
+    "timezone": "",
+    "googleAuthConfig": {
+      "redirectUrl": "",
+      "errorUrl": ""
+    }
   }
 }
 ```
@@ -9359,262 +9382,38 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|└─id|string|No comments found.|-||
-|└─businessTradingName|string|e.g. Business name|-||
-|└─name|string|No comments found.|-||
-|└─logo|string|No comments found.|-||
-|└─businessType|string|e.g. "LLC", "Sole Proprietor"|-||
-|└─businessRegistrationNumber|string|Government-issued business ID|-||
-|└─businessCountry|string|Country of business incorporation|-||
-|└─businessState|string|Country of business incorporation|-||
-|└─businessCity|string|Business city|-||
-|└─businessStorefrontUrl|string|No comments found.|-||
-|└─businessAddress|string|Business register address|-||
-|└─businessDescription|string|No comments found.|-||
-|└─industry|string|Business Industry<br/>e.g. fashion, electronics|-||
-|└─businessTaxIdNumber|string|Optional - Business Tax ID|-||
-|└─businessExpectedMonthlyIncome|string|Optional – for profiling|-||
-|└─staffSize|int32|No comments found.|-|0|
-|└─businessPrimaryPhoneNumber|string|Optional – for contacting business|-||
-|└─businessSecondaryPhoneNumber|string|Optional – for contacting business|-||
-|└─businessSupportEmailAddress|string|for contacting business and sending notifications|-||
-|└─businessGeneralEmailAddress|string|for contacting business and sending notifications|-||
-|└─kybCompleted|boolean|Know Your Business passed|-|true|
-|└─profileDetailFilled|boolean|Know Your Business passed|-|true|
-|└─contactDetailFilled|boolean|Know Your Business passed|-|true|
-|└─ownerIdDocumentUrl|string|Document URL for Starter business (Owner's valid ID)|-||
-|└─ownerSelfieUrl|string|Document URL for Starter business (Owner's selfie/passport)|-||
-|└─cacDocumentUrl|string|Document URL for Registered business (CAC Certificate or Status Report)|-||
-|└─kycCompleted|boolean|merchant_compliance_status<br/>Owner verification done|-|true|
-|└─documentsVerified|boolean|merchant_compliance_status<br/>All docs approved|-|true|
-|└─termsAccepted|boolean|merchant_compliance_status<br/>Bank payout setup done|-|true|
-|└─movedToLiveModeAt|string|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
-|└─complianceNotes|array|merchant_compliance_status<br/>Admin/internal notes|-|""","""|
-|└─liveModeReady|boolean|merchant_compliance_status<br/>true if all verification is complete|-|true|
-|└─pendingApproval|boolean|Flag indicating that the merchant's application is pending admin review|-|true|
-|└─currency|string|Default currency|-||
-|└─timezone|string|Default timezone|-||
-|└─language|string|Preferred Language|-||
-|└─code|string|No comments found.|-||
-|└─currentMode|string|No comments found.|-||
-|└─liveKey|string|No comments found.|-||
-|└─testKey|string|No comments found.|-||
-|└─liveWhitelistedDomains|array|No comments found.|-|""","""|
-|└─testWhitelistedDomains|array|No comments found.|-|""","""|
 |└─slug|string|No comments found.|-||
-|└─primaryColor|string|No comments found.|-||
-|└─accentColor|string|No comments found.|-||
-|└─fontFamily|string|No comments found.|-||
-|└─heroHeadline|string|No comments found.|-||
-|└─heroCtaText|string|No comments found.|-||
-|└─heroBackgroundImage|string|No comments found.|-||
-|└─instagramUrl|string|No comments found.|-||
-|└─facebookUrl|string|No comments found.|-||
-|└─twitterUrl|string|No comments found.|-||
-|└─youtubeUrl|string|No comments found.|-||
-|└─linkedinUrl|string|No comments found.|-||
-|└─tiktokUrl|string|No comments found.|-||
-|└─status|boolean|No comments found.|-|true|
-|└─googleOauthRedirectUrl|string|No comments found.|-||
-|└─googleOauthErrorUrl|string|No comments found.|-||
-|└─createdBy|string|No comments found.|-||
-|└─user|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|└─branding|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─accentColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fontFamily|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─logoUrl|string|No comments found.|-||
+|└─hero|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─headline|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ctaText|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─backgroundImage|string|No comments found.|-||
+|└─contact|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phone|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─secondaryPhone|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─password|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─dateOfBirth|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─nationality|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idType|string|e.g. "National ID", "Passport"|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idNumber|string|ID number|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idDocumentUrl|string|e.g. "National ID", "Passport"|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileUrl|string|File storage URL|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|e.g. Business name|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─logo|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessType|string|e.g. "LLC", "Sole Proprietor"|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessRegistrationNumber|string|Government-issued business ID|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessCountry|string|Country of business incorporation|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessState|string|Country of business incorporation|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessCity|string|Business city|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessStorefrontUrl|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessAddress|string|Business register address|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessDescription|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─industry|string|Business Industry<br/>e.g. fashion, electronics|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTaxIdNumber|string|Optional - Business Tax ID|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessExpectedMonthlyIncome|string|Optional – for profiling|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─staffSize|int32|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessPrimaryPhoneNumber|string|Optional – for contacting business|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSecondaryPhoneNumber|string|Optional – for contacting business|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|for contacting business and sending notifications|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|for contacting business and sending notifications|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ownerIdDocumentUrl|string|Document URL for Starter business (Owner's valid ID)|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ownerSelfieUrl|string|Document URL for Starter business (Owner's selfie/passport)|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|Document URL for Registered business (CAC Certificate or Status Report)|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|merchant_compliance_status<br/>Owner verification done|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|merchant_compliance_status<br/>All docs approved|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|merchant_compliance_status<br/>Bank payout setup done|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNotes|array|merchant_compliance_status<br/>Admin/internal notes|-|""","""|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveModeReady|boolean|merchant_compliance_status<br/>true if all verification is complete|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pendingApproval|boolean|Flag indicating that the merchant's application is pending admin review|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currency|string|Default currency|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─timezone|string|Default timezone|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─language|string|Preferred Language|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currentMode|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveKey|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─testKey|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveWhitelistedDomains|array|No comments found.|-|""","""|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─testWhitelistedDomains|array|No comments found.|-|""","""|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryColor|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─accentColor|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fontFamily|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroHeadline|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroCtaText|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroBackgroundImage|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─instagramUrl|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─facebookUrl|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twitterUrl|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─youtubeUrl|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─linkedinUrl|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tiktokUrl|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthRedirectUrl|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthErrorUrl|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─password|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─dateOfBirth|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─nationality|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idType|string|e.g. "National ID", "Passport"|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idNumber|string|ID number|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idDocumentUrl|string|e.g. "National ID", "Passport"|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileUrl|string|File storage URL|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|e.g. Business name|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─logo|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessType|string|e.g. "LLC", "Sole Proprietor"|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessRegistrationNumber|string|Government-issued business ID|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessCountry|string|Country of business incorporation|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessState|string|Country of business incorporation|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessCity|string|Business city|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessStorefrontUrl|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessAddress|string|Business register address|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessDescription|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─industry|string|Business Industry<br/>e.g. fashion, electronics|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTaxIdNumber|string|Optional - Business Tax ID|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessExpectedMonthlyIncome|string|Optional – for profiling|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─staffSize|int32|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessPrimaryPhoneNumber|string|Optional – for contacting business|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSecondaryPhoneNumber|string|Optional – for contacting business|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|for contacting business and sending notifications|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|for contacting business and sending notifications|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ownerIdDocumentUrl|string|Document URL for Starter business (Owner's valid ID)|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ownerSelfieUrl|string|Document URL for Starter business (Owner's selfie/passport)|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|Document URL for Registered business (CAC Certificate or Status Report)|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|merchant_compliance_status<br/>Owner verification done|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|merchant_compliance_status<br/>All docs approved|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|merchant_compliance_status<br/>Bank payout setup done|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNotes|array|merchant_compliance_status<br/>Admin/internal notes|-|""","""|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveModeReady|boolean|merchant_compliance_status<br/>true if all verification is complete|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pendingApproval|boolean|Flag indicating that the merchant's application is pending admin review|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currency|string|Default currency|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─timezone|string|Default timezone|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─language|string|Preferred Language|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currentMode|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveKey|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─testKey|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveWhitelistedDomains|array|No comments found.|-|""","""|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─testWhitelistedDomains|array|No comments found.|-|""","""|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryColor|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─accentColor|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fontFamily|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroHeadline|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroCtaText|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroBackgroundImage|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─instagramUrl|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─facebookUrl|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twitterUrl|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─youtubeUrl|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─linkedinUrl|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tiktokUrl|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthRedirectUrl|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthErrorUrl|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─instagramUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─facebookUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twitterUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─youtubeUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─linkedinUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tiktokUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─socials|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─platform|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─url|string|No comments found.|-||
+|└─delivery|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─currency|string|No comments found.|-||
+|└─timezone|string|No comments found.|-||
+|└─googleAuthConfig|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─redirectUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─errorUrl|string|No comments found.|-||
 
 **Response-example:**
 ```json
@@ -9622,294 +9421,156 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
   "status": true,
   "message": "",
   "data": {
-    "createdAt": "yyyy-MM-dd HH:mm:ss",
-    "updatedAt": "yyyy-MM-dd HH:mm:ss",
-    "id": "",
-    "businessTradingName": "",
-    "name": "",
-    "logo": "",
-    "businessType": "",
-    "businessRegistrationNumber": "",
-    "businessCountry": "",
-    "businessState": "",
-    "businessCity": "",
-    "businessStorefrontUrl": "",
-    "businessAddress": "",
-    "businessDescription": "",
-    "industry": "",
-    "businessTaxIdNumber": "",
-    "businessExpectedMonthlyIncome": "",
-    "staffSize": 0,
-    "businessPrimaryPhoneNumber": "",
-    "businessSecondaryPhoneNumber": "",
-    "businessSupportEmailAddress": "",
-    "businessGeneralEmailAddress": "",
-    "kybCompleted": true,
-    "profileDetailFilled": true,
-    "contactDetailFilled": true,
-    "ownerIdDocumentUrl": "",
-    "ownerSelfieUrl": "",
-    "cacDocumentUrl": "",
-    "kycCompleted": true,
-    "documentsVerified": true,
-    "termsAccepted": true,
-    "movedToLiveModeAt": "yyyy-MM-dd HH:mm:ss",
-    "complianceNotes": [
-      ""
+    "slug": "",
+    "branding": {
+      "businessName": "",
+      "primaryColor": "",
+      "accentColor": "",
+      "fontFamily": "",
+      "logoUrl": ""
+    },
+    "hero": {
+      "headline": "",
+      "ctaText": "",
+      "backgroundImage": ""
+    },
+    "contact": {
+      "phone": "",
+      "secondaryPhone": "",
+      "email": "",
+      "address": "",
+      "instagramUrl": "",
+      "facebookUrl": "",
+      "twitterUrl": "",
+      "youtubeUrl": "",
+      "linkedinUrl": "",
+      "tiktokUrl": "",
+      "socials": [
+        {
+          "platform": "",
+          "url": ""
+        }
+      ]
+    },
+    "delivery": [
+      {}
     ],
-    "liveModeReady": true,
-    "pendingApproval": true,
     "currency": "",
     "timezone": "",
-    "language": "",
-    "code": "",
-    "currentMode": "",
-    "liveKey": "",
-    "testKey": "",
-    "liveWhitelistedDomains": [
-      ""
-    ],
-    "testWhitelistedDomains": [
-      ""
-    ],
+    "googleAuthConfig": {
+      "redirectUrl": "",
+      "errorUrl": ""
+    }
+  }
+}
+```
+
+### getStoreSettings
+**URL:** https://api.shopsynch.com/v1/store/settings
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/store/settings'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─slug|string|No comments found.|-||
+|└─branding|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─accentColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fontFamily|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─logoUrl|string|No comments found.|-||
+|└─hero|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─headline|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ctaText|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─backgroundImage|string|No comments found.|-||
+|└─contact|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phone|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─secondaryPhone|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─instagramUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─facebookUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twitterUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─youtubeUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─linkedinUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tiktokUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─socials|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─platform|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─url|string|No comments found.|-||
+|└─delivery|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─currency|string|No comments found.|-||
+|└─timezone|string|No comments found.|-||
+|└─googleAuthConfig|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─redirectUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─errorUrl|string|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
     "slug": "",
-    "primaryColor": "",
-    "accentColor": "",
-    "fontFamily": "",
-    "heroHeadline": "",
-    "heroCtaText": "",
-    "heroBackgroundImage": "",
-    "instagramUrl": "",
-    "facebookUrl": "",
-    "twitterUrl": "",
-    "youtubeUrl": "",
-    "linkedinUrl": "",
-    "tiktokUrl": "",
-    "status": true,
-    "googleOauthRedirectUrl": "",
-    "googleOauthErrorUrl": "",
-    "createdBy": "",
-    "user": {
-      "createdAt": "yyyy-MM-dd HH:mm:ss",
-      "updatedAt": "yyyy-MM-dd HH:mm:ss",
-      "id": "",
+    "branding": {
+      "businessName": "",
+      "primaryColor": "",
+      "accentColor": "",
+      "fontFamily": "",
+      "logoUrl": ""
+    },
+    "hero": {
+      "headline": "",
+      "ctaText": "",
+      "backgroundImage": ""
+    },
+    "contact": {
+      "phone": "",
+      "secondaryPhone": "",
       "email": "",
-      "tenantId": "",
-      "password": "",
-      "fullName": "",
-      "dateOfBirth": "",
-      "phoneNumber": "",
-      "nationality": "",
-      "idType": "",
-      "idNumber": "",
-      "idDocumentUrl": "",
-      "profileUrl": "",
-      "status": "",
       "address": "",
-      "version": 0,
-      "emailVerifiedAt": "yyyy-MM-dd HH:mm:ss",
-      "phoneVerifiedAt": "yyyy-MM-dd HH:mm:ss",
-      "lastLoggedInAt": "yyyy-MM-dd HH:mm:ss",
-      "role": {
-        "createdAt": "yyyy-MM-dd HH:mm:ss",
-        "updatedAt": "yyyy-MM-dd HH:mm:ss",
-        "id": "",
-        "name": "",
-        "status": true,
-        "slug": "",
-        "permissions": [
-          {
-            "createdAt": "yyyy-MM-dd HH:mm:ss",
-            "updatedAt": "yyyy-MM-dd HH:mm:ss",
-            "id": "",
-            "name": "",
-            "status": true,
-            "slug": ""
-          }
-        ]
-      },
-      "tenant": {
-        "createdAt": "yyyy-MM-dd HH:mm:ss",
-        "updatedAt": "yyyy-MM-dd HH:mm:ss",
-        "id": "",
-        "businessTradingName": "",
-        "name": "",
-        "logo": "",
-        "businessType": "",
-        "businessRegistrationNumber": "",
-        "businessCountry": "",
-        "businessState": "",
-        "businessCity": "",
-        "businessStorefrontUrl": "",
-        "businessAddress": "",
-        "businessDescription": "",
-        "industry": "",
-        "businessTaxIdNumber": "",
-        "businessExpectedMonthlyIncome": "",
-        "staffSize": 0,
-        "businessPrimaryPhoneNumber": "",
-        "businessSecondaryPhoneNumber": "",
-        "businessSupportEmailAddress": "",
-        "businessGeneralEmailAddress": "",
-        "kybCompleted": true,
-        "profileDetailFilled": true,
-        "contactDetailFilled": true,
-        "ownerIdDocumentUrl": "",
-        "ownerSelfieUrl": "",
-        "cacDocumentUrl": "",
-        "kycCompleted": true,
-        "documentsVerified": true,
-        "termsAccepted": true,
-        "movedToLiveModeAt": "yyyy-MM-dd HH:mm:ss",
-        "complianceNotes": [
-          ""
-        ],
-        "liveModeReady": true,
-        "pendingApproval": true,
-        "currency": "",
-        "timezone": "",
-        "language": "",
-        "code": "",
-        "currentMode": "",
-        "liveKey": "",
-        "testKey": "",
-        "liveWhitelistedDomains": [
-          ""
-        ],
-        "testWhitelistedDomains": [
-          ""
-        ],
-        "slug": "",
-        "primaryColor": "",
-        "accentColor": "",
-        "fontFamily": "",
-        "heroHeadline": "",
-        "heroCtaText": "",
-        "heroBackgroundImage": "",
-        "instagramUrl": "",
-        "facebookUrl": "",
-        "twitterUrl": "",
-        "youtubeUrl": "",
-        "linkedinUrl": "",
-        "tiktokUrl": "",
-        "status": true,
-        "googleOauthRedirectUrl": "",
-        "googleOauthErrorUrl": "",
-        "createdBy": "",
-        "user": {
-          "createdAt": "yyyy-MM-dd HH:mm:ss",
-          "updatedAt": "yyyy-MM-dd HH:mm:ss",
-          "id": "",
-          "email": "",
-          "tenantId": "",
-          "password": "",
-          "fullName": "",
-          "dateOfBirth": "",
-          "phoneNumber": "",
-          "nationality": "",
-          "idType": "",
-          "idNumber": "",
-          "idDocumentUrl": "",
-          "profileUrl": "",
-          "status": "",
-          "address": "",
-          "version": 0,
-          "emailVerifiedAt": "yyyy-MM-dd HH:mm:ss",
-          "phoneVerifiedAt": "yyyy-MM-dd HH:mm:ss",
-          "lastLoggedInAt": "yyyy-MM-dd HH:mm:ss",
-          "role": {
-            "createdAt": "yyyy-MM-dd HH:mm:ss",
-            "updatedAt": "yyyy-MM-dd HH:mm:ss",
-            "id": "",
-            "name": "",
-            "status": true,
-            "slug": "",
-            "permissions": [
-              {
-                "$ref": "..."
-              }
-            ]
-          },
-          "tenant": {
-            "createdAt": "yyyy-MM-dd HH:mm:ss",
-            "updatedAt": "yyyy-MM-dd HH:mm:ss",
-            "id": "",
-            "businessTradingName": "",
-            "name": "",
-            "logo": "",
-            "businessType": "",
-            "businessRegistrationNumber": "",
-            "businessCountry": "",
-            "businessState": "",
-            "businessCity": "",
-            "businessStorefrontUrl": "",
-            "businessAddress": "",
-            "businessDescription": "",
-            "industry": "",
-            "businessTaxIdNumber": "",
-            "businessExpectedMonthlyIncome": "",
-            "staffSize": 0,
-            "businessPrimaryPhoneNumber": "",
-            "businessSecondaryPhoneNumber": "",
-            "businessSupportEmailAddress": "",
-            "businessGeneralEmailAddress": "",
-            "kybCompleted": true,
-            "profileDetailFilled": true,
-            "contactDetailFilled": true,
-            "ownerIdDocumentUrl": "",
-            "ownerSelfieUrl": "",
-            "cacDocumentUrl": "",
-            "kycCompleted": true,
-            "documentsVerified": true,
-            "termsAccepted": true,
-            "movedToLiveModeAt": "yyyy-MM-dd HH:mm:ss",
-            "complianceNotes": [
-              ""
-            ],
-            "liveModeReady": true,
-            "pendingApproval": true,
-            "currency": "",
-            "timezone": "",
-            "language": "",
-            "code": "",
-            "currentMode": "",
-            "liveKey": "",
-            "testKey": "",
-            "liveWhitelistedDomains": [
-              ""
-            ],
-            "testWhitelistedDomains": [
-              ""
-            ],
-            "slug": "",
-            "primaryColor": "",
-            "accentColor": "",
-            "fontFamily": "",
-            "heroHeadline": "",
-            "heroCtaText": "",
-            "heroBackgroundImage": "",
-            "instagramUrl": "",
-            "facebookUrl": "",
-            "twitterUrl": "",
-            "youtubeUrl": "",
-            "linkedinUrl": "",
-            "tiktokUrl": "",
-            "status": true,
-            "googleOauthRedirectUrl": "",
-            "googleOauthErrorUrl": "",
-            "createdBy": "",
-            "user": {
-              "$ref": "..."
-            }
-          },
-          "notificationsEnabled": true,
-          "googleAccount": true,
-          "googleId": ""
+      "instagramUrl": "",
+      "facebookUrl": "",
+      "twitterUrl": "",
+      "youtubeUrl": "",
+      "linkedinUrl": "",
+      "tiktokUrl": "",
+      "socials": [
+        {
+          "platform": "",
+          "url": ""
         }
-      },
-      "notificationsEnabled": true,
-      "googleAccount": true,
-      "googleId": ""
+      ]
+    },
+    "delivery": [
+      {}
+    ],
+    "currency": "",
+    "timezone": "",
+    "googleAuthConfig": {
+      "redirectUrl": "",
+      "errorUrl": ""
     }
   }
 }
@@ -12405,8 +12066,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
 |└─status|string|No comments found.|-||
 |└─paymentGatewayTransactionId|string|No comments found.|-||
 |└─manualPayment|boolean|No comments found.|-|true|
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:44:38"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:38"|
+|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:06"|
+|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:06"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -12426,8 +12087,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
     "status": "",
     "paymentGatewayTransactionId": "",
     "manualPayment": true,
-    "createdAt": "2026-04-07 10:44:38",
-    "updatedAt": "2026-04-07 10:44:38"
+    "createdAt": "2026-04-07 10:58:06",
+    "updatedAt": "2026-04-07 10:58:06"
   },
   "message": "",
   "status": true
@@ -12902,8 +12563,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:44:37"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:37"|
+|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:04"|
+|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:04"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -12918,8 +12579,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-07 10:44:37",
-    "updatedAt": "2026-04-07 10:44:37"
+    "createdAt": "2026-04-07 10:58:04",
+    "updatedAt": "2026-04-07 10:58:04"
   },
   "token": "",
   "refreshToken": "",
@@ -15099,8 +14760,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:44:33"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:33"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:57:59"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:57:59"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -15163,8 +14824,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-07 10:44:33",
-        "updatedAt": "2026-04-07 10:44:33"
+        "createdAt": "2026-04-07 10:57:59",
+        "updatedAt": "2026-04-07 10:57:59"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -15258,8 +14919,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:44:33"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:44:33"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:00"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:00"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -15322,8 +14983,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-07 10:44:33",
-        "updatedAt": "2026-04-07 10:44:33"
+        "createdAt": "2026-04-07 10:58:00",
+        "updatedAt": "2026-04-07 10:58:00"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
