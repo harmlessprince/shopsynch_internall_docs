@@ -1105,11 +1105,6 @@
 				</elementProp>
 				<elementProp name="" elementType="HTTPArgument">
 					<boolProp name="HTTPArgument.always_encode">false</boolProp>
-					<stringProp name="Argument.name">└─legalBusinessName</stringProp>
-					<stringProp name="Argument.metadata">=</stringProp>
-				</elementProp>
-				<elementProp name="" elementType="HTTPArgument">
-					<boolProp name="HTTPArgument.always_encode">false</boolProp>
 					<stringProp name="Argument.name">└─name</stringProp>
 					<stringProp name="Argument.metadata">=</stringProp>
 				</elementProp>
@@ -1215,6 +1210,21 @@
 				</elementProp>
 				<elementProp name="" elementType="HTTPArgument">
 					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">└─ownerIdDocumentUrl</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">└─ownerSelfieUrl</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">└─cacDocumentUrl</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
 					<stringProp name="Argument.name">└─kycCompleted</stringProp>
 					<stringProp name="Argument.metadata">=</stringProp>
 				</elementProp>
@@ -1241,6 +1251,11 @@
 				<elementProp name="" elementType="HTTPArgument">
 					<boolProp name="HTTPArgument.always_encode">false</boolProp>
 					<stringProp name="Argument.name">└─liveModeReady</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">└─pendingApproval</stringProp>
 					<stringProp name="Argument.metadata">=</stringProp>
 				</elementProp>
 				<elementProp name="" elementType="HTTPArgument">
@@ -1570,11 +1585,6 @@
 				</elementProp>
 				<elementProp name="" elementType="HTTPArgument">
 					<boolProp name="HTTPArgument.always_encode">false</boolProp>
-					<stringProp name="Argument.name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName</stringProp>
-					<stringProp name="Argument.metadata">=</stringProp>
-				</elementProp>
-				<elementProp name="" elementType="HTTPArgument">
-					<boolProp name="HTTPArgument.always_encode">false</boolProp>
 					<stringProp name="Argument.name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name</stringProp>
 					<stringProp name="Argument.metadata">=</stringProp>
 				</elementProp>
@@ -1680,6 +1690,21 @@
 				</elementProp>
 				<elementProp name="" elementType="HTTPArgument">
 					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ownerIdDocumentUrl</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ownerSelfieUrl</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
 					<stringProp name="Argument.name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted</stringProp>
 					<stringProp name="Argument.metadata">=</stringProp>
 				</elementProp>
@@ -1706,6 +1731,11 @@
 				<elementProp name="" elementType="HTTPArgument">
 					<boolProp name="HTTPArgument.always_encode">false</boolProp>
 					<stringProp name="Argument.name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveModeReady</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pendingApproval</stringProp>
 					<stringProp name="Argument.metadata">=</stringProp>
 				</elementProp>
 				<elementProp name="" elementType="HTTPArgument">
@@ -2035,11 +2065,6 @@
 				</elementProp>
 				<elementProp name="" elementType="HTTPArgument">
 					<boolProp name="HTTPArgument.always_encode">false</boolProp>
-					<stringProp name="Argument.name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─legalBusinessName</stringProp>
-					<stringProp name="Argument.metadata">=</stringProp>
-				</elementProp>
-				<elementProp name="" elementType="HTTPArgument">
-					<boolProp name="HTTPArgument.always_encode">false</boolProp>
 					<stringProp name="Argument.name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name</stringProp>
 					<stringProp name="Argument.metadata">=</stringProp>
 				</elementProp>
@@ -2145,6 +2170,21 @@
 				</elementProp>
 				<elementProp name="" elementType="HTTPArgument">
 					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ownerIdDocumentUrl</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ownerSelfieUrl</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
 					<stringProp name="Argument.name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted</stringProp>
 					<stringProp name="Argument.metadata">=</stringProp>
 				</elementProp>
@@ -2171,6 +2211,11 @@
 				<elementProp name="" elementType="HTTPArgument">
 					<boolProp name="HTTPArgument.always_encode">false</boolProp>
 					<stringProp name="Argument.name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveModeReady</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pendingApproval</stringProp>
 					<stringProp name="Argument.metadata">=</stringProp>
 				</elementProp>
 				<elementProp name="" elementType="HTTPArgument">
@@ -8461,8 +8506,8 @@ V1 variation endpoints ({@code /v1/products/variation/*}) are NOT affected." ena
 {
   "array": true,
   "object": true,
-  "containerNode": true,
   "valueNode": true,
+  "containerNode": true,
   "missingNode": true
 }
                 </stringProp>
@@ -8798,7 +8843,10 @@ V1 variation endpoints ({@code /v1/products/variation/*}) are NOT affected." ena
   "businessState": "",
   "businessCountry": "",
   "businessCity": "",
-  "businessAddress": ""
+  "businessAddress": "",
+  "ownerIdDocumentUrl": "",
+  "ownerSelfieUrl": "",
+  "cacDocumentUrl": ""
 }
                 </stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -9488,7 +9536,11 @@ V1 variation endpoints ({@code /v1/products/variation/*}) are NOT affected." ena
   "twitterUrl": "",
   "youtubeUrl": "",
   "linkedinUrl": "",
-  "tiktokUrl": ""
+  "tiktokUrl": "",
+  "currency": "",
+  "subdomain": "",
+  "timezone": "",
+  "logoUrl": ""
 }
                 </stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -12631,6 +12683,100 @@ V1 variation endpoints ({@code /v1/products/variation/*}) are NOT affected." ena
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Content-Type</stringProp>
                 <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="ResultCollector" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AdminComplianceController" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="LoopController" enabled="true">
+		  <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Approve Tenant Verification (KYC / KYB)" enabled="true">
+			  
+		  <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
+		  <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+			<collectionProp name="Arguments.arguments">
+				<elementProp name="" elementType="HTTPArgument">
+					<boolProp name="HTTPArgument.always_encode">false</boolProp>
+					<stringProp name="Argument.name">tenantId</stringProp>
+					<stringProp name="Argument.metadata">=</stringProp>
+				</elementProp>
+			</collectionProp>
+		  </elementProp>
+
+          <stringProp name="HTTPSampler.domain">https://api.shopsynch.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path">https://api.shopsynch.com/v1/admin/compliance/tenants/{tenantId}/approve-verification</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HeaderManager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">X-MerchantApiKey</stringProp>
+                <stringProp name="Header.value">pk_test</stringProp>
               </elementProp>
             </collectionProp>
           </HeaderManager>
