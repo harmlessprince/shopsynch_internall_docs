@@ -342,12 +342,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/e96de9090c4b57024056c540c880313e"
+                  "$ref": "#/components/schemas/196c6bb4550325ecd95c4b996c5c7344"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"data\": {\n    \"id\": \"\",\n    \"adName\": \"\",\n    \"images\": [\n      \"\"\n    ],\n    \"ctaText\": \"\",\n    \"promoCode\": \"\",\n    \"buttons\": [\n      {\n        \"type\": \"\",\n        \"position\": \"\",\n        \"color\": \"\",\n        \"textColor\": \"\",\n        \"text\": \"\",\n        \"link\": \"\",\n        \"metadata\": {}\n      }\n    ],\n    \"status\": \"\",\n    \"metadata\": {},\n    \"createdAt\": \"2026-04-07 10:20:44\",\n    \"updatedAt\": \"2026-04-07 10:20:44\"\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
+                    "value": "{\n  \"data\": {\n    \"id\": \"\",\n    \"adName\": \"\",\n    \"images\": [\n      \"\"\n    ],\n    \"ctaText\": \"\",\n    \"promoCode\": \"\",\n    \"buttons\": [\n      {\n        \"type\": \"\",\n        \"position\": \"\",\n        \"color\": \"\",\n        \"textColor\": \"\",\n        \"text\": \"\",\n        \"link\": \"\",\n        \"metadata\": {}\n      }\n    ],\n    \"status\": \"\",\n    \"metadata\": {},\n    \"createdAt\": \"2026-04-07 10:26:04\",\n    \"updatedAt\": \"2026-04-07 10:26:04\"\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
                   }
                 }
               }
@@ -382,12 +382,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/02c506e3fdfda37860210b5bf0e93349"
+                  "$ref": "#/components/schemas/cef41cdfd4910924eef14f2433420333"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"data\": {\n    \"data\": [\n      {\n        \"id\": \"\",\n        \"adName\": \"\",\n        \"images\": [\n          \"\"\n        ],\n        \"ctaText\": \"\",\n        \"promoCode\": \"\",\n        \"buttons\": [\n          {\n            \"type\": \"\",\n            \"position\": \"\",\n            \"color\": \"\",\n            \"textColor\": \"\",\n            \"text\": \"\",\n            \"link\": \"\",\n            \"metadata\": {}\n          }\n        ],\n        \"status\": \"\",\n        \"metadata\": {},\n        \"createdAt\": \"2026-04-07 10:20:44\",\n        \"updatedAt\": \"2026-04-07 10:20:44\"\n      }\n    ],\n    \"nextCursor\": \"yyyy-MM-dd HH:mm:ss\"\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
+                    "value": "{\n  \"data\": {\n    \"data\": [\n      {\n        \"id\": \"\",\n        \"adName\": \"\",\n        \"images\": [\n          \"\"\n        ],\n        \"ctaText\": \"\",\n        \"promoCode\": \"\",\n        \"buttons\": [\n          {\n            \"type\": \"\",\n            \"position\": \"\",\n            \"color\": \"\",\n            \"textColor\": \"\",\n            \"text\": \"\",\n            \"link\": \"\",\n            \"metadata\": {}\n          }\n        ],\n        \"status\": \"\",\n        \"metadata\": {},\n        \"createdAt\": \"2026-04-07 10:26:04\",\n        \"updatedAt\": \"2026-04-07 10:26:04\"\n      }\n    ],\n    \"nextCursor\": \"yyyy-MM-dd HH:mm:ss\"\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
                   }
                 }
               }
@@ -470,12 +470,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/e96de9090c4b57024056c540c880313e"
+                  "$ref": "#/components/schemas/196c6bb4550325ecd95c4b996c5c7344"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"data\": {\n    \"id\": \"\",\n    \"adName\": \"\",\n    \"images\": [\n      \"\"\n    ],\n    \"ctaText\": \"\",\n    \"promoCode\": \"\",\n    \"buttons\": [\n      {\n        \"type\": \"\",\n        \"position\": \"\",\n        \"color\": \"\",\n        \"textColor\": \"\",\n        \"text\": \"\",\n        \"link\": \"\",\n        \"metadata\": {}\n      }\n    ],\n    \"status\": \"\",\n    \"metadata\": {},\n    \"createdAt\": \"2026-04-07 10:20:44\",\n    \"updatedAt\": \"2026-04-07 10:20:44\"\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
+                    "value": "{\n  \"data\": {\n    \"id\": \"\",\n    \"adName\": \"\",\n    \"images\": [\n      \"\"\n    ],\n    \"ctaText\": \"\",\n    \"promoCode\": \"\",\n    \"buttons\": [\n      {\n        \"type\": \"\",\n        \"position\": \"\",\n        \"color\": \"\",\n        \"textColor\": \"\",\n        \"text\": \"\",\n        \"link\": \"\",\n        \"metadata\": {}\n      }\n    ],\n    \"status\": \"\",\n    \"metadata\": {},\n    \"createdAt\": \"2026-04-07 10:26:04\",\n    \"updatedAt\": \"2026-04-07 10:26:04\"\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
                   }
                 }
               }
@@ -520,12 +520,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/e96de9090c4b57024056c540c880313e"
+                  "$ref": "#/components/schemas/196c6bb4550325ecd95c4b996c5c7344"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"data\": {\n    \"id\": \"\",\n    \"adName\": \"\",\n    \"images\": [\n      \"\"\n    ],\n    \"ctaText\": \"\",\n    \"promoCode\": \"\",\n    \"buttons\": [\n      {\n        \"type\": \"\",\n        \"position\": \"\",\n        \"color\": \"\",\n        \"textColor\": \"\",\n        \"text\": \"\",\n        \"link\": \"\",\n        \"metadata\": {}\n      }\n    ],\n    \"status\": \"\",\n    \"metadata\": {},\n    \"createdAt\": \"2026-04-07 10:20:44\",\n    \"updatedAt\": \"2026-04-07 10:20:44\"\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
+                    "value": "{\n  \"data\": {\n    \"id\": \"\",\n    \"adName\": \"\",\n    \"images\": [\n      \"\"\n    ],\n    \"ctaText\": \"\",\n    \"promoCode\": \"\",\n    \"buttons\": [\n      {\n        \"type\": \"\",\n        \"position\": \"\",\n        \"color\": \"\",\n        \"textColor\": \"\",\n        \"text\": \"\",\n        \"link\": \"\",\n        \"metadata\": {}\n      }\n    ],\n    \"status\": \"\",\n    \"metadata\": {},\n    \"createdAt\": \"2026-04-07 10:26:04\",\n    \"updatedAt\": \"2026-04-07 10:26:04\"\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
                   }
                 }
               }
@@ -622,12 +622,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/c1dbc067efc9584341ab4764a3f39521"
+                  "$ref": "#/components/schemas/637df3850a63cd355576d9fd9df99d26"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"data\": [\n    {\n      \"id\": \"\",\n      \"adName\": \"\",\n      \"images\": [\n        \"\"\n      ],\n      \"ctaText\": \"\",\n      \"promoCode\": \"\",\n      \"buttons\": [\n        {\n          \"type\": \"\",\n          \"position\": \"\",\n          \"color\": \"\",\n          \"textColor\": \"\",\n          \"text\": \"\",\n          \"link\": \"\",\n          \"metadata\": {}\n        }\n      ],\n      \"status\": \"\",\n      \"metadata\": {},\n      \"createdAt\": \"2026-04-07 10:20:44\",\n      \"updatedAt\": \"2026-04-07 10:20:44\"\n    }\n  ],\n  \"message\": \"\",\n  \"status\": true\n}"
+                    "value": "{\n  \"data\": [\n    {\n      \"id\": \"\",\n      \"adName\": \"\",\n      \"images\": [\n        \"\"\n      ],\n      \"ctaText\": \"\",\n      \"promoCode\": \"\",\n      \"buttons\": [\n        {\n          \"type\": \"\",\n          \"position\": \"\",\n          \"color\": \"\",\n          \"textColor\": \"\",\n          \"text\": \"\",\n          \"link\": \"\",\n          \"metadata\": {}\n        }\n      ],\n      \"status\": \"\",\n      \"metadata\": {},\n      \"createdAt\": \"2026-04-07 10:26:04\",\n      \"updatedAt\": \"2026-04-07 10:26:04\"\n    }\n  ],\n  \"message\": \"\",\n  \"status\": true\n}"
                   }
                 }
               }
@@ -1399,12 +1399,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/9820ee464995c5428daa5d2204ffcb60"
+                  "$ref": "#/components/schemas/a1ba6343623d7d332b4013052ee37743"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": [\n    {\n      \"id\": \"\",\n      \"orderId\": \"\",\n      \"quantity\": 0,\n      \"price\": 0,\n      \"totalPrice\": 0,\n      \"productId\": \"\",\n      \"variationId\": \"\",\n      \"variationPriceDetailId\": \"\",\n      \"product\": {\n        \"id\": \"\",\n        \"name\": \"\",\n        \"slug\": \"\",\n        \"description\": \"\",\n        \"image\": \"\",\n        \"thumbnail\": \"\",\n        \"imageList\": [\n          \"\"\n        ],\n        \"price\": 0,\n        \"newPrice\": 0,\n        \"ramSize\": \"\",\n        \"storage\": \"\",\n        \"size\": \"\",\n        \"sku\": \"\",\n        \"quantityInStock\": 0,\n        \"brand\": \"\",\n        \"discount\": 0,\n        \"category\": \"\",\n        \"color\": \"\",\n        \"rating\": 0,\n        \"features\": [\n          \"\"\n        ],\n        \"specification\": [\n          {\n            \"key\": \"\",\n            \"value\": \"\"\n          }\n        ],\n        \"variation\": {\n          \"id\": \"\",\n          \"customColor\": \"\",\n          \"color\": \"\",\n          \"image\": \"\"\n        }\n      },\n      \"customer\": {\n        \"id\": \"\",\n        \"email\": \"\",\n        \"fullName\": \"\",\n        \"phoneNumber\": \"\",\n        \"address\": \"\",\n        \"status\": \"\",\n        \"createdAt\": \"2026-04-07 10:20:45\",\n        \"updatedAt\": \"2026-04-07 10:20:45\"\n      },\n      \"createdAt\": \"yyyy-MM-dd HH:mm:ss\"\n    }\n  ]\n}"
+                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": [\n    {\n      \"id\": \"\",\n      \"orderId\": \"\",\n      \"quantity\": 0,\n      \"price\": 0,\n      \"totalPrice\": 0,\n      \"productId\": \"\",\n      \"variationId\": \"\",\n      \"variationPriceDetailId\": \"\",\n      \"product\": {\n        \"id\": \"\",\n        \"name\": \"\",\n        \"slug\": \"\",\n        \"description\": \"\",\n        \"image\": \"\",\n        \"thumbnail\": \"\",\n        \"imageList\": [\n          \"\"\n        ],\n        \"price\": 0,\n        \"newPrice\": 0,\n        \"ramSize\": \"\",\n        \"storage\": \"\",\n        \"size\": \"\",\n        \"sku\": \"\",\n        \"quantityInStock\": 0,\n        \"brand\": \"\",\n        \"discount\": 0,\n        \"category\": \"\",\n        \"color\": \"\",\n        \"rating\": 0,\n        \"features\": [\n          \"\"\n        ],\n        \"specification\": [\n          {\n            \"key\": \"\",\n            \"value\": \"\"\n          }\n        ],\n        \"variation\": {\n          \"id\": \"\",\n          \"customColor\": \"\",\n          \"color\": \"\",\n          \"image\": \"\"\n        }\n      },\n      \"customer\": {\n        \"id\": \"\",\n        \"email\": \"\",\n        \"fullName\": \"\",\n        \"phoneNumber\": \"\",\n        \"address\": \"\",\n        \"status\": \"\",\n        \"createdAt\": \"2026-04-07 10:26:05\",\n        \"updatedAt\": \"2026-04-07 10:26:05\"\n      },\n      \"createdAt\": \"yyyy-MM-dd HH:mm:ss\"\n    }\n  ]\n}"
                   }
                 }
               }
@@ -3141,12 +3141,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/46cbf3b52b25080cc58614db013446c8"
+                  "$ref": "#/components/schemas/e94109ebacbf8b748a7c42fa81e472b9"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"data\": [\n    {\n      \"id\": \"\",\n      \"createdDate\": \"yyyy-MM-dd HH:mm:ss\",\n      \"rating\": 0,\n      \"comment\": \"\",\n      \"customer\": {\n        \"id\": \"\",\n        \"email\": \"\",\n        \"fullName\": \"\",\n        \"phoneNumber\": \"\",\n        \"address\": \"\",\n        \"status\": \"\",\n        \"createdAt\": \"2026-04-07 10:20:48\",\n        \"updatedAt\": \"2026-04-07 10:20:48\"\n      },\n      \"product\": {\n        \"id\": \"\",\n        \"name\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ],\n  \"message\": \"\",\n  \"status\": true\n}"
+                    "value": "{\n  \"data\": [\n    {\n      \"id\": \"\",\n      \"createdDate\": \"yyyy-MM-dd HH:mm:ss\",\n      \"rating\": 0,\n      \"comment\": \"\",\n      \"customer\": {\n        \"id\": \"\",\n        \"email\": \"\",\n        \"fullName\": \"\",\n        \"phoneNumber\": \"\",\n        \"address\": \"\",\n        \"status\": \"\",\n        \"createdAt\": \"2026-04-07 10:26:07\",\n        \"updatedAt\": \"2026-04-07 10:26:07\"\n      },\n      \"product\": {\n        \"id\": \"\",\n        \"name\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ],\n  \"message\": \"\",\n  \"status\": true\n}"
                   }
                 }
               }
@@ -3245,12 +3245,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/46cbf3b52b25080cc58614db013446c8"
+                  "$ref": "#/components/schemas/e94109ebacbf8b748a7c42fa81e472b9"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"data\": [\n    {\n      \"id\": \"\",\n      \"createdDate\": \"yyyy-MM-dd HH:mm:ss\",\n      \"rating\": 0,\n      \"comment\": \"\",\n      \"customer\": {\n        \"id\": \"\",\n        \"email\": \"\",\n        \"fullName\": \"\",\n        \"phoneNumber\": \"\",\n        \"address\": \"\",\n        \"status\": \"\",\n        \"createdAt\": \"2026-04-07 10:20:48\",\n        \"updatedAt\": \"2026-04-07 10:20:48\"\n      },\n      \"product\": {\n        \"id\": \"\",\n        \"name\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ],\n  \"message\": \"\",\n  \"status\": true\n}"
+                    "value": "{\n  \"data\": [\n    {\n      \"id\": \"\",\n      \"createdDate\": \"yyyy-MM-dd HH:mm:ss\",\n      \"rating\": 0,\n      \"comment\": \"\",\n      \"customer\": {\n        \"id\": \"\",\n        \"email\": \"\",\n        \"fullName\": \"\",\n        \"phoneNumber\": \"\",\n        \"address\": \"\",\n        \"status\": \"\",\n        \"createdAt\": \"2026-04-07 10:26:07\",\n        \"updatedAt\": \"2026-04-07 10:26:07\"\n      },\n      \"product\": {\n        \"id\": \"\",\n        \"name\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ],\n  \"message\": \"\",\n  \"status\": true\n}"
                   }
                 }
               }
@@ -3323,12 +3323,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/ddcababedb50c26d488339d4b71d09ba"
+                  "$ref": "#/components/schemas/faa95c4778ef612a9a5fa14af223e516"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"data\": {\n    \"id\": \"\",\n    \"createdDate\": \"yyyy-MM-dd HH:mm:ss\",\n    \"rating\": 0,\n    \"comment\": \"\",\n    \"customer\": {\n      \"id\": \"\",\n      \"email\": \"\",\n      \"fullName\": \"\",\n      \"phoneNumber\": \"\",\n      \"address\": \"\",\n      \"status\": \"\",\n      \"createdAt\": \"2026-04-07 10:20:48\",\n      \"updatedAt\": \"2026-04-07 10:20:48\"\n    },\n    \"product\": {\n      \"id\": \"\",\n      \"name\": \"\",\n      \"description\": \"\"\n    }\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
+                    "value": "{\n  \"data\": {\n    \"id\": \"\",\n    \"createdDate\": \"yyyy-MM-dd HH:mm:ss\",\n    \"rating\": 0,\n    \"comment\": \"\",\n    \"customer\": {\n      \"id\": \"\",\n      \"email\": \"\",\n      \"fullName\": \"\",\n      \"phoneNumber\": \"\",\n      \"address\": \"\",\n      \"status\": \"\",\n      \"createdAt\": \"2026-04-07 10:26:07\",\n      \"updatedAt\": \"2026-04-07 10:26:07\"\n    },\n    \"product\": {\n      \"id\": \"\",\n      \"name\": \"\",\n      \"description\": \"\"\n    }\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
                   }
                 }
               }
@@ -3961,12 +3961,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/fe054f16092f6dd97a297c901445d1b2"
+                  "$ref": "#/components/schemas/55b8d122f869705c563e7b474ebd2731"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": {\n    \"customer\": {\n      \"id\": \"\",\n      \"email\": \"\",\n      \"fullName\": \"\",\n      \"phoneNumber\": \"\",\n      \"address\": \"\",\n      \"status\": \"\",\n      \"createdAt\": \"2026-04-07 10:20:46\",\n      \"updatedAt\": \"2026-04-07 10:20:46\"\n    },\n    \"token\": \"\",\n    \"refreshToken\": \"\",\n    \"expiresIn\": 0\n  }\n}"
+                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": {\n    \"customer\": {\n      \"id\": \"\",\n      \"email\": \"\",\n      \"fullName\": \"\",\n      \"phoneNumber\": \"\",\n      \"address\": \"\",\n      \"status\": \"\",\n      \"createdAt\": \"2026-04-07 10:26:05\",\n      \"updatedAt\": \"2026-04-07 10:26:05\"\n    },\n    \"token\": \"\",\n    \"refreshToken\": \"\",\n    \"expiresIn\": 0\n  }\n}"
                   }
                 }
               }
@@ -4018,12 +4018,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/fe054f16092f6dd97a297c901445d1b2"
+                  "$ref": "#/components/schemas/55b8d122f869705c563e7b474ebd2731"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": {\n    \"customer\": {\n      \"id\": \"\",\n      \"email\": \"\",\n      \"fullName\": \"\",\n      \"phoneNumber\": \"\",\n      \"address\": \"\",\n      \"status\": \"\",\n      \"createdAt\": \"2026-04-07 10:20:46\",\n      \"updatedAt\": \"2026-04-07 10:20:46\"\n    },\n    \"token\": \"\",\n    \"refreshToken\": \"\",\n    \"expiresIn\": 0\n  }\n}"
+                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": {\n    \"customer\": {\n      \"id\": \"\",\n      \"email\": \"\",\n      \"fullName\": \"\",\n      \"phoneNumber\": \"\",\n      \"address\": \"\",\n      \"status\": \"\",\n      \"createdAt\": \"2026-04-07 10:26:05\",\n      \"updatedAt\": \"2026-04-07 10:26:05\"\n    },\n    \"token\": \"\",\n    \"refreshToken\": \"\",\n    \"expiresIn\": 0\n  }\n}"
                   }
                 }
               }
@@ -4060,12 +4060,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/3bffb30bb28fb8581ea9a77c0b49c5f6"
+                  "$ref": "#/components/schemas/909400ecc315b6a707f2a25fff80e742"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"data\": {\n    \"data\": [\n      {\n        \"id\": \"\",\n        \"email\": \"\",\n        \"fullName\": \"\",\n        \"phoneNumber\": \"\",\n        \"address\": \"\",\n        \"status\": \"\",\n        \"createdAt\": \"2026-04-07 10:20:50\",\n        \"updatedAt\": \"2026-04-07 10:20:50\"\n      }\n    ],\n    \"nextCursor\": \"yyyy-MM-dd HH:mm:ss\"\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
+                    "value": "{\n  \"data\": {\n    \"data\": [\n      {\n        \"id\": \"\",\n        \"email\": \"\",\n        \"fullName\": \"\",\n        \"phoneNumber\": \"\",\n        \"address\": \"\",\n        \"status\": \"\",\n        \"createdAt\": \"2026-04-07 10:26:07\",\n        \"updatedAt\": \"2026-04-07 10:26:07\"\n      }\n    ],\n    \"nextCursor\": \"yyyy-MM-dd HH:mm:ss\"\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
                   }
                 }
               }
@@ -4216,12 +4216,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/e78f560fe50b2214e6281571f7b61345"
+                  "$ref": "#/components/schemas/e482e97c8e73f18afe79fdddd4aa1894"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": {\n    \"id\": \"\",\n    \"email\": \"\",\n    \"fullName\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": \"\",\n    \"status\": \"\",\n    \"createdAt\": \"2026-04-07 10:20:50\",\n    \"updatedAt\": \"2026-04-07 10:20:50\"\n  }\n}"
+                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": {\n    \"id\": \"\",\n    \"email\": \"\",\n    \"fullName\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": \"\",\n    \"status\": \"\",\n    \"createdAt\": \"2026-04-07 10:26:07\",\n    \"updatedAt\": \"2026-04-07 10:26:07\"\n  }\n}"
                   }
                 }
               }
@@ -4258,12 +4258,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/cd626d3f84927a8043f006def9de39a4"
+                  "$ref": "#/components/schemas/ce5d49e0fab9efa0a1e66e60f65c6a1d"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"data\": {\n    \"id\": \"\",\n    \"email\": \"\",\n    \"fullName\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": \"\",\n    \"status\": \"\",\n    \"createdAt\": \"2026-04-07 10:20:50\",\n    \"updatedAt\": \"2026-04-07 10:20:50\"\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
+                    "value": "{\n  \"data\": {\n    \"id\": \"\",\n    \"email\": \"\",\n    \"fullName\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": \"\",\n    \"status\": \"\",\n    \"createdAt\": \"2026-04-07 10:26:07\",\n    \"updatedAt\": \"2026-04-07 10:26:07\"\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
                   }
                 }
               }
@@ -4323,12 +4323,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/cd626d3f84927a8043f006def9de39a4"
+                  "$ref": "#/components/schemas/ce5d49e0fab9efa0a1e66e60f65c6a1d"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"data\": {\n    \"id\": \"\",\n    \"email\": \"\",\n    \"fullName\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": \"\",\n    \"status\": \"\",\n    \"createdAt\": \"2026-04-07 10:20:50\",\n    \"updatedAt\": \"2026-04-07 10:20:50\"\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
+                    "value": "{\n  \"data\": {\n    \"id\": \"\",\n    \"email\": \"\",\n    \"fullName\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": \"\",\n    \"status\": \"\",\n    \"createdAt\": \"2026-04-07 10:26:07\",\n    \"updatedAt\": \"2026-04-07 10:26:07\"\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
                   }
                 }
               }
@@ -4388,12 +4388,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/cd626d3f84927a8043f006def9de39a4"
+                  "$ref": "#/components/schemas/ce5d49e0fab9efa0a1e66e60f65c6a1d"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"data\": {\n    \"id\": \"\",\n    \"email\": \"\",\n    \"fullName\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": \"\",\n    \"status\": \"\",\n    \"createdAt\": \"2026-04-07 10:20:50\",\n    \"updatedAt\": \"2026-04-07 10:20:50\"\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
+                    "value": "{\n  \"data\": {\n    \"id\": \"\",\n    \"email\": \"\",\n    \"fullName\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": \"\",\n    \"status\": \"\",\n    \"createdAt\": \"2026-04-07 10:26:07\",\n    \"updatedAt\": \"2026-04-07 10:26:07\"\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
                   }
                 }
               }
@@ -4455,12 +4455,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/e78f560fe50b2214e6281571f7b61345"
+                  "$ref": "#/components/schemas/e482e97c8e73f18afe79fdddd4aa1894"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": {\n    \"id\": \"\",\n    \"email\": \"\",\n    \"fullName\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": \"\",\n    \"status\": \"\",\n    \"createdAt\": \"2026-04-07 10:20:50\",\n    \"updatedAt\": \"2026-04-07 10:20:50\"\n  }\n}"
+                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": {\n    \"id\": \"\",\n    \"email\": \"\",\n    \"fullName\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": \"\",\n    \"status\": \"\",\n    \"createdAt\": \"2026-04-07 10:26:07\",\n    \"updatedAt\": \"2026-04-07 10:26:07\"\n  }\n}"
                   }
                 }
               }
@@ -4512,12 +4512,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/e78f560fe50b2214e6281571f7b61345"
+                  "$ref": "#/components/schemas/e482e97c8e73f18afe79fdddd4aa1894"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": {\n    \"id\": \"\",\n    \"email\": \"\",\n    \"fullName\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": \"\",\n    \"status\": \"\",\n    \"createdAt\": \"2026-04-07 10:20:50\",\n    \"updatedAt\": \"2026-04-07 10:20:50\"\n  }\n}"
+                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": {\n    \"id\": \"\",\n    \"email\": \"\",\n    \"fullName\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": \"\",\n    \"status\": \"\",\n    \"createdAt\": \"2026-04-07 10:26:07\",\n    \"updatedAt\": \"2026-04-07 10:26:07\"\n  }\n}"
                   }
                 }
               }
@@ -5810,12 +5810,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/dbe77f3ae527f445d25302d47f52bac9"
+                  "$ref": "#/components/schemas/1477a60ed88fca8f8b40e952855e58e3"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": {\n    \"id\": \"\",\n    \"email\": \"\",\n    \"fullName\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": \"\",\n    \"status\": \"\",\n    \"createdAt\": \"2026-04-07 10:20:45\",\n    \"updatedAt\": \"2026-04-07 10:20:45\"\n  }\n}"
+                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": {\n    \"id\": \"\",\n    \"email\": \"\",\n    \"fullName\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": \"\",\n    \"status\": \"\",\n    \"createdAt\": \"2026-04-07 10:26:05\",\n    \"updatedAt\": \"2026-04-07 10:26:05\"\n  }\n}"
                   }
                 }
               }
@@ -5867,12 +5867,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/f835a0dfa8e78f13f3711b2d5052c89c"
+                  "$ref": "#/components/schemas/ea7e8f2b3fc20041d121efd6edeb38fc"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"customer\": {\n    \"id\": \"\",\n    \"email\": \"\",\n    \"fullName\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": \"\",\n    \"status\": \"\",\n    \"createdAt\": \"2026-04-07 10:20:45\",\n    \"updatedAt\": \"2026-04-07 10:20:45\"\n  },\n  \"token\": \"\",\n  \"refreshToken\": \"\",\n  \"expiresIn\": 0\n}"
+                    "value": "{\n  \"customer\": {\n    \"id\": \"\",\n    \"email\": \"\",\n    \"fullName\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": \"\",\n    \"status\": \"\",\n    \"createdAt\": \"2026-04-07 10:26:05\",\n    \"updatedAt\": \"2026-04-07 10:26:05\"\n  },\n  \"token\": \"\",\n  \"refreshToken\": \"\",\n  \"expiresIn\": 0\n}"
                   }
                 }
               }
@@ -5963,12 +5963,12 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/7db22e3f1e13cf187f1625566772fc22"
+                "$ref": "#/components/schemas/8b12bd7b5ed64a5cfc2bd326cca0fcba"
               },
               "examples": {
                 "json": {
                   "summary": "test data",
-                  "value": "{\n  \"array\": true,\n  \"object\": true,\n  \"valueNode\": true,\n  \"containerNode\": true,\n  \"missingNode\": true\n}"
+                  "value": "{\n  \"array\": true,\n  \"valueNode\": true,\n  \"containerNode\": true,\n  \"missingNode\": true,\n  \"object\": true\n}"
                 }
               }
             }
@@ -6505,12 +6505,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/c322a6a6e8dfceab0ef5bc1d5333a399"
+                  "$ref": "#/components/schemas/3d7b1d79b76d411e61c59c28c0a207c8"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": {\n    \"order\": {\n      \"id\": \"\",\n      \"orderNumber\": \"\",\n      \"orderDate\": \"yyyy-MM-dd HH:mm:ss\",\n      \"shippingAddress\": \"\",\n      \"billingAddress\": \"\",\n      \"deliveryAddress\": \"\",\n      \"shippingMethod\": \"\",\n      \"paymentMethod\": \"\",\n      \"subtotal\": 0,\n      \"discountAmount\": 0,\n      \"shippingFee\": 0,\n      \"taxAmount\": 0,\n      \"totalPrice\": 0,\n      \"discountDescription\": \"\",\n      \"country\": \"\",\n      \"state\": \"\",\n      \"city\": \"\",\n      \"area\": \"\",\n      \"landmark\": \"\",\n      \"status\": \"PENDING\",\n      \"paymentStatus\": \"SUCCESS\",\n      \"paymentGateway\": \"PAYSTACK\",\n      \"paymentGatewayTransactionId\": \"\",\n      \"fulfillmentStatus\": \"\",\n      \"customer\": {\n        \"id\": \"\",\n        \"email\": \"\",\n        \"fullName\": \"\",\n        \"phoneNumber\": \"\",\n        \"address\": \"\",\n        \"status\": \"\",\n        \"createdAt\": \"2026-04-07 10:20:49\",\n        \"updatedAt\": \"2026-04-07 10:20:49\"\n      },\n      \"contactInformation\": {\n        \"firstName\": \"\",\n        \"lastName\": \"\",\n        \"email\": \"\",\n        \"phoneNumber\": \"\",\n        \"address\": \"\"\n      },\n      \"promotion\": {\n        \"id\": \"\",\n        \"name\": \"\",\n        \"code\": \"\",\n        \"description\": \"\",\n        \"startDate\": \"yyyy-MM-dd HH:mm:ss\",\n        \"endDate\": \"yyyy-MM-dd HH:mm:ss\",\n        \"discount\": 0,\n        \"discountValue\": 0,\n        \"discountType\": \"PERCENTAGE\",\n        \"maximumDiscountCap\": 0,\n        \"minimumOrderValue\": 0,\n        \"requiredQuantity\": 0,\n        \"freeQuantity\": 0,\n        \"usageLimit\": 0,\n        \"usageCount\": 0,\n        \"perCustomerUsageLimit\": 0\n      },\n      \"address\": {\n        \"id\": \"\",\n        \"fullAddress\": \"\",\n        \"street\": \"\",\n        \"streetNumber\": \"\",\n        \"postalCode\": \"\",\n        \"city\": \"\",\n        \"userId\": \"\",\n        \"isDefault\": true,\n        \"state\": \"\",\n        \"localGovernment\": \"\",\n        \"country\": \"\"\n      },\n      \"tenantId\": \"\",\n      \"createdAt\": \"yyyy-MM-dd HH:mm:ss\"\n    },\n    \"lines\": [\n      {\n        \"id\": \"\",\n        \"orderId\": \"\",\n        \"quantity\": 0,\n        \"price\": 0,\n        \"totalPrice\": 0,\n        \"productId\": \"\",\n        \"variationId\": \"\",\n        \"variationPriceDetailId\": \"\",\n        \"product\": {\n          \"id\": \"\",\n          \"name\": \"\",\n          \"slug\": \"\",\n          \"description\": \"\",\n          \"image\": \"\",\n          \"thumbnail\": \"\",\n          \"imageList\": [\n            \"\"\n          ],\n          \"price\": 0,\n          \"newPrice\": 0,\n          \"ramSize\": \"\",\n          \"storage\": \"\",\n          \"size\": \"\",\n          \"sku\": \"\",\n          \"quantityInStock\": 0,\n          \"brand\": \"\",\n          \"discount\": 0,\n          \"category\": \"\",\n          \"color\": \"\",\n          \"rating\": 0,\n          \"features\": [\n            \"\"\n          ],\n          \"specification\": [\n            {\n              \"key\": \"\",\n              \"value\": \"\"\n            }\n          ],\n          \"variation\": {\n            \"id\": \"\",\n            \"customColor\": \"\",\n            \"color\": \"\",\n            \"image\": \"\"\n          }\n        },\n        \"customer\": {\n          \"id\": \"\",\n          \"email\": \"\",\n          \"fullName\": \"\",\n          \"phoneNumber\": \"\",\n          \"address\": \"\",\n          \"status\": \"\",\n          \"createdAt\": \"2026-04-07 10:20:49\",\n          \"updatedAt\": \"2026-04-07 10:20:49\"\n        },\n        \"createdAt\": \"yyyy-MM-dd HH:mm:ss\"\n      }\n    ],\n    \"tenant\": {\n      \"tradingName\": \"\",\n      \"logo\": \"\",\n      \"email\": \"\",\n      \"phoneNumber\": \"\",\n      \"address\": \"\",\n      \"deliveryZones\": [\n        {\n          \"id\": \"\",\n          \"name\": \"\",\n          \"fee\": 0.0,\n          \"estimatedDeliveryTime\": \"\",\n          \"stateAreas\": [\n            {\n              \"state\": \"\",\n              \"areas\": [\n                \"\"\n              ]\n            }\n          ]\n        }\n      ]\n    }\n  }\n}"
+                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": {\n    \"order\": {\n      \"id\": \"\",\n      \"orderNumber\": \"\",\n      \"orderDate\": \"yyyy-MM-dd HH:mm:ss\",\n      \"shippingAddress\": \"\",\n      \"billingAddress\": \"\",\n      \"deliveryAddress\": \"\",\n      \"shippingMethod\": \"\",\n      \"paymentMethod\": \"\",\n      \"subtotal\": 0,\n      \"discountAmount\": 0,\n      \"shippingFee\": 0,\n      \"taxAmount\": 0,\n      \"totalPrice\": 0,\n      \"discountDescription\": \"\",\n      \"country\": \"\",\n      \"state\": \"\",\n      \"city\": \"\",\n      \"area\": \"\",\n      \"landmark\": \"\",\n      \"status\": \"PENDING\",\n      \"paymentStatus\": \"SUCCESS\",\n      \"paymentGateway\": \"PAYSTACK\",\n      \"paymentGatewayTransactionId\": \"\",\n      \"fulfillmentStatus\": \"\",\n      \"customer\": {\n        \"id\": \"\",\n        \"email\": \"\",\n        \"fullName\": \"\",\n        \"phoneNumber\": \"\",\n        \"address\": \"\",\n        \"status\": \"\",\n        \"createdAt\": \"2026-04-07 10:26:07\",\n        \"updatedAt\": \"2026-04-07 10:26:07\"\n      },\n      \"contactInformation\": {\n        \"firstName\": \"\",\n        \"lastName\": \"\",\n        \"email\": \"\",\n        \"phoneNumber\": \"\",\n        \"address\": \"\"\n      },\n      \"promotion\": {\n        \"id\": \"\",\n        \"name\": \"\",\n        \"code\": \"\",\n        \"description\": \"\",\n        \"startDate\": \"yyyy-MM-dd HH:mm:ss\",\n        \"endDate\": \"yyyy-MM-dd HH:mm:ss\",\n        \"discount\": 0,\n        \"discountValue\": 0,\n        \"discountType\": \"PERCENTAGE\",\n        \"maximumDiscountCap\": 0,\n        \"minimumOrderValue\": 0,\n        \"requiredQuantity\": 0,\n        \"freeQuantity\": 0,\n        \"usageLimit\": 0,\n        \"usageCount\": 0,\n        \"perCustomerUsageLimit\": 0\n      },\n      \"address\": {\n        \"id\": \"\",\n        \"fullAddress\": \"\",\n        \"street\": \"\",\n        \"streetNumber\": \"\",\n        \"postalCode\": \"\",\n        \"city\": \"\",\n        \"userId\": \"\",\n        \"isDefault\": true,\n        \"state\": \"\",\n        \"localGovernment\": \"\",\n        \"country\": \"\"\n      },\n      \"tenantId\": \"\",\n      \"createdAt\": \"yyyy-MM-dd HH:mm:ss\"\n    },\n    \"lines\": [\n      {\n        \"id\": \"\",\n        \"orderId\": \"\",\n        \"quantity\": 0,\n        \"price\": 0,\n        \"totalPrice\": 0,\n        \"productId\": \"\",\n        \"variationId\": \"\",\n        \"variationPriceDetailId\": \"\",\n        \"product\": {\n          \"id\": \"\",\n          \"name\": \"\",\n          \"slug\": \"\",\n          \"description\": \"\",\n          \"image\": \"\",\n          \"thumbnail\": \"\",\n          \"imageList\": [\n            \"\"\n          ],\n          \"price\": 0,\n          \"newPrice\": 0,\n          \"ramSize\": \"\",\n          \"storage\": \"\",\n          \"size\": \"\",\n          \"sku\": \"\",\n          \"quantityInStock\": 0,\n          \"brand\": \"\",\n          \"discount\": 0,\n          \"category\": \"\",\n          \"color\": \"\",\n          \"rating\": 0,\n          \"features\": [\n            \"\"\n          ],\n          \"specification\": [\n            {\n              \"key\": \"\",\n              \"value\": \"\"\n            }\n          ],\n          \"variation\": {\n            \"id\": \"\",\n            \"customColor\": \"\",\n            \"color\": \"\",\n            \"image\": \"\"\n          }\n        },\n        \"customer\": {\n          \"id\": \"\",\n          \"email\": \"\",\n          \"fullName\": \"\",\n          \"phoneNumber\": \"\",\n          \"address\": \"\",\n          \"status\": \"\",\n          \"createdAt\": \"2026-04-07 10:26:07\",\n          \"updatedAt\": \"2026-04-07 10:26:07\"\n        },\n        \"createdAt\": \"yyyy-MM-dd HH:mm:ss\"\n      }\n    ],\n    \"tenant\": {\n      \"tradingName\": \"\",\n      \"logo\": \"\",\n      \"email\": \"\",\n      \"phoneNumber\": \"\",\n      \"address\": \"\",\n      \"deliveryZones\": [\n        {\n          \"id\": \"\",\n          \"name\": \"\",\n          \"fee\": 0.0,\n          \"estimatedDeliveryTime\": \"\",\n          \"stateAreas\": [\n            {\n              \"state\": \"\",\n              \"areas\": [\n                \"\"\n              ]\n            }\n          ]\n        }\n      ]\n    }\n  }\n}"
                   }
                 }
               }
@@ -6649,7 +6649,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ee57e2bf9316ba430574698492b09cb2"
+                "$ref": "#/components/schemas/41700da2c8eae96a602263e8c01e65cf"
               },
               "examples": {
                 "json": {
@@ -8486,12 +8486,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/afa11a062cc3994656927ab292e584da"
+                  "$ref": "#/components/schemas/99f913af219142cc808052067deb350e"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"data\": {\n    \"id\": \"\",\n    \"customerId\": \"\",\n    \"reference\": \"\",\n    \"amount\": 0,\n    \"paidAt\": \"\",\n    \"gateway\": \"\",\n    \"paymentMethod\": \"\",\n    \"currency\": \"\",\n    \"orderId\": \"\",\n    \"status\": \"\",\n    \"paymentGatewayTransactionId\": \"\",\n    \"manualPayment\": true,\n    \"createdAt\": \"2026-04-07 10:20:46\",\n    \"updatedAt\": \"2026-04-07 10:20:46\"\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
+                    "value": "{\n  \"data\": {\n    \"id\": \"\",\n    \"customerId\": \"\",\n    \"reference\": \"\",\n    \"amount\": 0,\n    \"paidAt\": \"\",\n    \"gateway\": \"\",\n    \"paymentMethod\": \"\",\n    \"currency\": \"\",\n    \"orderId\": \"\",\n    \"status\": \"\",\n    \"paymentGatewayTransactionId\": \"\",\n    \"manualPayment\": true,\n    \"createdAt\": \"2026-04-07 10:26:06\",\n    \"updatedAt\": \"2026-04-07 10:26:06\"\n  },\n  \"message\": \"\",\n  \"status\": true\n}"
                   }
                 }
               }
@@ -8969,12 +8969,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/819ffc7d2feb4e4b2d3b8cfd632315db"
+                  "$ref": "#/components/schemas/ea7e8f2b3fc20041d121efd6edeb38fc"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"customer\": {\n    \"id\": \"\",\n    \"email\": \"\",\n    \"fullName\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": \"\",\n    \"status\": \"\",\n    \"createdAt\": \"2026-04-07 10:20:46\",\n    \"updatedAt\": \"2026-04-07 10:20:46\"\n  },\n  \"token\": \"\",\n  \"refreshToken\": \"\",\n  \"expiresIn\": 0\n}"
+                    "value": "{\n  \"customer\": {\n    \"id\": \"\",\n    \"email\": \"\",\n    \"fullName\": \"\",\n    \"phoneNumber\": \"\",\n    \"address\": \"\",\n    \"status\": \"\",\n    \"createdAt\": \"2026-04-07 10:26:05\",\n    \"updatedAt\": \"2026-04-07 10:26:05\"\n  },\n  \"token\": \"\",\n  \"refreshToken\": \"\",\n  \"expiresIn\": 0\n}"
                   }
                 }
               }
@@ -11081,12 +11081,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/9820ee464995c5428daa5d2204ffcb60"
+                  "$ref": "#/components/schemas/a1ba6343623d7d332b4013052ee37743"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": [\n    {\n      \"id\": \"\",\n      \"orderId\": \"\",\n      \"quantity\": 0,\n      \"price\": 0,\n      \"totalPrice\": 0,\n      \"productId\": \"\",\n      \"variationId\": \"\",\n      \"variationPriceDetailId\": \"\",\n      \"product\": {\n        \"id\": \"\",\n        \"name\": \"\",\n        \"slug\": \"\",\n        \"description\": \"\",\n        \"image\": \"\",\n        \"thumbnail\": \"\",\n        \"imageList\": [\n          \"\"\n        ],\n        \"price\": 0,\n        \"newPrice\": 0,\n        \"ramSize\": \"\",\n        \"storage\": \"\",\n        \"size\": \"\",\n        \"sku\": \"\",\n        \"quantityInStock\": 0,\n        \"brand\": \"\",\n        \"discount\": 0,\n        \"category\": \"\",\n        \"color\": \"\",\n        \"rating\": 0,\n        \"features\": [\n          \"\"\n        ],\n        \"specification\": [\n          {\n            \"key\": \"\",\n            \"value\": \"\"\n          }\n        ],\n        \"variation\": {\n          \"id\": \"\",\n          \"customColor\": \"\",\n          \"color\": \"\",\n          \"image\": \"\"\n        }\n      },\n      \"customer\": {\n        \"id\": \"\",\n        \"email\": \"\",\n        \"fullName\": \"\",\n        \"phoneNumber\": \"\",\n        \"address\": \"\",\n        \"status\": \"\",\n        \"createdAt\": \"2026-04-07 10:20:45\",\n        \"updatedAt\": \"2026-04-07 10:20:45\"\n      },\n      \"createdAt\": \"yyyy-MM-dd HH:mm:ss\"\n    }\n  ]\n}"
+                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": [\n    {\n      \"id\": \"\",\n      \"orderId\": \"\",\n      \"quantity\": 0,\n      \"price\": 0,\n      \"totalPrice\": 0,\n      \"productId\": \"\",\n      \"variationId\": \"\",\n      \"variationPriceDetailId\": \"\",\n      \"product\": {\n        \"id\": \"\",\n        \"name\": \"\",\n        \"slug\": \"\",\n        \"description\": \"\",\n        \"image\": \"\",\n        \"thumbnail\": \"\",\n        \"imageList\": [\n          \"\"\n        ],\n        \"price\": 0,\n        \"newPrice\": 0,\n        \"ramSize\": \"\",\n        \"storage\": \"\",\n        \"size\": \"\",\n        \"sku\": \"\",\n        \"quantityInStock\": 0,\n        \"brand\": \"\",\n        \"discount\": 0,\n        \"category\": \"\",\n        \"color\": \"\",\n        \"rating\": 0,\n        \"features\": [\n          \"\"\n        ],\n        \"specification\": [\n          {\n            \"key\": \"\",\n            \"value\": \"\"\n          }\n        ],\n        \"variation\": {\n          \"id\": \"\",\n          \"customColor\": \"\",\n          \"color\": \"\",\n          \"image\": \"\"\n        }\n      },\n      \"customer\": {\n        \"id\": \"\",\n        \"email\": \"\",\n        \"fullName\": \"\",\n        \"phoneNumber\": \"\",\n        \"address\": \"\",\n        \"status\": \"\",\n        \"createdAt\": \"2026-04-07 10:26:05\",\n        \"updatedAt\": \"2026-04-07 10:26:05\"\n      },\n      \"createdAt\": \"yyyy-MM-dd HH:mm:ss\"\n    }\n  ]\n}"
                   }
                 }
               }
@@ -11148,12 +11148,12 @@
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/9820ee464995c5428daa5d2204ffcb60"
+                  "$ref": "#/components/schemas/a1ba6343623d7d332b4013052ee37743"
                 },
                 "examples": {
                   "json": {
                     "summary": "test data",
-                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": [\n    {\n      \"id\": \"\",\n      \"orderId\": \"\",\n      \"quantity\": 0,\n      \"price\": 0,\n      \"totalPrice\": 0,\n      \"productId\": \"\",\n      \"variationId\": \"\",\n      \"variationPriceDetailId\": \"\",\n      \"product\": {\n        \"id\": \"\",\n        \"name\": \"\",\n        \"slug\": \"\",\n        \"description\": \"\",\n        \"image\": \"\",\n        \"thumbnail\": \"\",\n        \"imageList\": [\n          \"\"\n        ],\n        \"price\": 0,\n        \"newPrice\": 0,\n        \"ramSize\": \"\",\n        \"storage\": \"\",\n        \"size\": \"\",\n        \"sku\": \"\",\n        \"quantityInStock\": 0,\n        \"brand\": \"\",\n        \"discount\": 0,\n        \"category\": \"\",\n        \"color\": \"\",\n        \"rating\": 0,\n        \"features\": [\n          \"\"\n        ],\n        \"specification\": [\n          {\n            \"key\": \"\",\n            \"value\": \"\"\n          }\n        ],\n        \"variation\": {\n          \"id\": \"\",\n          \"customColor\": \"\",\n          \"color\": \"\",\n          \"image\": \"\"\n        }\n      },\n      \"customer\": {\n        \"id\": \"\",\n        \"email\": \"\",\n        \"fullName\": \"\",\n        \"phoneNumber\": \"\",\n        \"address\": \"\",\n        \"status\": \"\",\n        \"createdAt\": \"2026-04-07 10:20:45\",\n        \"updatedAt\": \"2026-04-07 10:20:45\"\n      },\n      \"createdAt\": \"yyyy-MM-dd HH:mm:ss\"\n    }\n  ]\n}"
+                    "value": "{\n  \"status\": true,\n  \"message\": \"\",\n  \"data\": [\n    {\n      \"id\": \"\",\n      \"orderId\": \"\",\n      \"quantity\": 0,\n      \"price\": 0,\n      \"totalPrice\": 0,\n      \"productId\": \"\",\n      \"variationId\": \"\",\n      \"variationPriceDetailId\": \"\",\n      \"product\": {\n        \"id\": \"\",\n        \"name\": \"\",\n        \"slug\": \"\",\n        \"description\": \"\",\n        \"image\": \"\",\n        \"thumbnail\": \"\",\n        \"imageList\": [\n          \"\"\n        ],\n        \"price\": 0,\n        \"newPrice\": 0,\n        \"ramSize\": \"\",\n        \"storage\": \"\",\n        \"size\": \"\",\n        \"sku\": \"\",\n        \"quantityInStock\": 0,\n        \"brand\": \"\",\n        \"discount\": 0,\n        \"category\": \"\",\n        \"color\": \"\",\n        \"rating\": 0,\n        \"features\": [\n          \"\"\n        ],\n        \"specification\": [\n          {\n            \"key\": \"\",\n            \"value\": \"\"\n          }\n        ],\n        \"variation\": {\n          \"id\": \"\",\n          \"customColor\": \"\",\n          \"color\": \"\",\n          \"image\": \"\"\n        }\n      },\n      \"customer\": {\n        \"id\": \"\",\n        \"email\": \"\",\n        \"fullName\": \"\",\n        \"phoneNumber\": \"\",\n        \"address\": \"\",\n        \"status\": \"\",\n        \"createdAt\": \"2026-04-07 10:26:05\",\n        \"updatedAt\": \"2026-04-07 10:26:05\"\n      },\n      \"createdAt\": \"yyyy-MM-dd HH:mm:ss\"\n    }\n  ]\n}"
                   }
                 }
               }
@@ -13950,17 +13950,185 @@
           }
         }
       },
-      "bccc6f840f442659e0ebf86825ee9369": {
+      "5b97167a4365e86e4abcfb395c647d8f": {
         "type": "object",
         "properties": {
-          "data": {
+          "id": {
+            "format": "string",
             "description": "No comments found.",
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/71a735a11c7ec94d8b43fe629673c73d"
-            }
+            "type": "string"
           },
-          "nextCursor": {
+          "orderNumber": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "orderDate": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "yyyy-MM-dd HH:mm:ss"
+          },
+          "shippingAddress": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "billingAddress": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "deliveryAddress": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "shippingMethod": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "paymentMethod": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "subtotal": {
+            "format": "number",
+            "description": "No comments found.",
+            "type": "number",
+            "example": "0"
+          },
+          "discountAmount": {
+            "format": "number",
+            "description": "No comments found.",
+            "type": "number",
+            "example": "0"
+          },
+          "shippingFee": {
+            "format": "number",
+            "description": "No comments found.",
+            "type": "number",
+            "example": "0"
+          },
+          "taxAmount": {
+            "format": "number",
+            "description": "No comments found.",
+            "type": "number",
+            "example": "0"
+          },
+          "totalPrice": {
+            "format": "number",
+            "description": "No comments found.",
+            "type": "number",
+            "example": "0"
+          },
+          "discountDescription": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "country": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "state": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "city": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "area": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "landmark": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "status": {
+            "format": "enum",
+            "description": "No comments found.<br/>[Enum: PENDING-(\"PENDING\",\"Order has been placed but not paid\"),PROCESSING-(\"PROCESSING\",\"Payment confirmed, preparing items\"),SHIPPED-(\"SHIPPED\",\"Handed over to courier\"),DELIVERED-(\"DELIVERED\",\"Received by customer\"),CANCELLED-(\"CANCELLED\",\"Order revoked by user or system\"),IN_TRANSIT-(\"IN_TRANSIT\",\"Currently on the road\"),FAILED-(\"FAILED\",\"Payment or logistics failure\"),ABANDONED-(\"ABANDONED\",\"Order abandoned by customer\")]",
+            "type": "string",
+            "enum": [
+              "PENDING",
+              "PROCESSING",
+              "SHIPPED",
+              "DELIVERED",
+              "CANCELLED",
+              "IN_TRANSIT",
+              "FAILED",
+              "ABANDONED"
+            ],
+            "example": "PENDING"
+          },
+          "paymentStatus": {
+            "format": "enum",
+            "description": "No comments found.<br/>[Enum: SUCCESS-(\"SUCCESS\",\"Transaction completed and funds captured\"),FAILED-(\"FAILED\",\"Payment rejected by gateway or insufficient funds\"),PENDING-(\"PENDING\",\"Waiting for customer to initiate or complete payment action\"),PROCESSING-(\"PROCESSING\",\"Payment is undergoing verification or gateway processing\"),REFUNDED-(\"REFUNDED\",\"Transaction has been reversed and funds returned\"),ABANDONED-(\"ABANDONED\",\"Customer exited the payment session without completion\")]",
+            "type": "string",
+            "enum": [
+              "SUCCESS",
+              "FAILED",
+              "PENDING",
+              "PROCESSING",
+              "REFUNDED",
+              "ABANDONED"
+            ],
+            "example": "SUCCESS"
+          },
+          "paymentGateway": {
+            "format": "enum",
+            "description": "No comments found.<br/>[Enum: PAYSTACK-(\"PAYSTACK\",\"Nigeria-based processor (Card, Transfer, USSD)\"),FLUTTERWAVE-(\"FLUTTERWAVE\",\"Global infrastructure for Africa-wide payments\"),STRIPE-(\"STRIPE\",\"International card processing (USD/EUR/GBP)\"),OFFLINE-(\"OFFLINE\",\"Manual bank transfer or Cash on Delivery\"),MONNIFY-(\"MONNIFY\",\"Automated bank transfer provider for Nigeria\")]",
+            "type": "string",
+            "enum": [
+              "PAYSTACK",
+              "FLUTTERWAVE",
+              "STRIPE",
+              "OFFLINE",
+              "MONNIFY"
+            ],
+            "example": "PAYSTACK"
+          },
+          "paymentGatewayTransactionId": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "fulfillmentStatus": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "customer": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/110fe31587760b634d5e0ed9c18fa269"
+          },
+          "contactInformation": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/af4c11079dca09d89f1cf94be497f637"
+          },
+          "promotion": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/9555fb68ad53cde62890ea845bc8b53f"
+          },
+          "address": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/6554069a4b1e9d681d4284a6aa66d809"
+          },
+          "tenantId": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "createdAt": {
             "format": "string",
             "description": "No comments found.",
             "type": "string",
@@ -14233,6 +14401,26 @@
             "format": "string",
             "description": "No comments found.",
             "type": "string"
+          }
+        }
+      },
+      "ce5d49e0fab9efa0a1e66e60f65c6a1d": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/8f3a256a1de7cfce8648a4d98d71b785"
+          },
+          "message": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "status": {
+            "format": "boolean",
+            "description": "No comments found.",
+            "type": "boolean",
+            "example": true
           }
         }
       },
@@ -14547,53 +14735,6 @@
           "email"
         ]
       },
-      "00738f68738c152bb83e7048a4437e78": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "email": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "fullName": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "phoneNumber": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "address": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "status": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "createdAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:50\""
-          },
-          "updatedAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:50\""
-          }
-        }
-      },
       "22a8fd6400259f48b3cd2e412705bad6": {
         "type": "object",
         "properties": {
@@ -14676,6 +14817,26 @@
           }
         }
       },
+      "3d7b1d79b76d411e61c59c28c0a207c8": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "format": "boolean",
+            "description": "No comments found.",
+            "type": "boolean",
+            "example": true
+          },
+          "message": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "data": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/f42a5f60e9bdd7ea748f1d82595e77ec"
+          }
+        }
+      },
       "53220e868a43f1b87cd85d484835ed4c": {
         "type": "object",
         "properties": {
@@ -14693,6 +14854,24 @@
             "format": "string",
             "description": "A map key.",
             "type": "string"
+          }
+        }
+      },
+      "fb9cbfe5503e22729c433f2374859a65": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "description": "No comments found.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/e5fb6b682827e4a6f50c0fb56dbad2a3"
+            }
+          },
+          "nextCursor": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "yyyy-MM-dd HH:mm:ss"
           }
         }
       },
@@ -14838,6 +15017,26 @@
           }
         }
       },
+      "e482e97c8e73f18afe79fdddd4aa1894": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "format": "boolean",
+            "description": "No comments found.",
+            "type": "boolean",
+            "example": true
+          },
+          "message": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "data": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/43a3d1562beeb960659be84670c64ec7"
+          }
+        }
+      },
       "f6429704a9bdfc6452808df4fbd697f5": {
         "type": "object",
         "properties": {
@@ -14885,23 +15084,50 @@
           }
         }
       },
-      "dbe77f3ae527f445d25302d47f52bac9": {
+      "110fe31587760b634d5e0ed9c18fa269": {
         "type": "object",
         "properties": {
-          "status": {
-            "format": "boolean",
-            "description": "No comments found.",
-            "type": "boolean",
-            "example": true
-          },
-          "message": {
+          "id": {
             "format": "string",
             "description": "No comments found.",
             "type": "string"
           },
-          "data": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/45243a6d684108db48238d9cdaa71558"
+          "email": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "fullName": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "phoneNumber": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "address": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "status": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "createdAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:07\""
+          },
+          "updatedAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:07\""
           }
         }
       },
@@ -15022,6 +15248,53 @@
             "items": {
               "$ref": "#/components/schemas/43eb9af25c3e021c689f6fd0d1414744"
             }
+          }
+        }
+      },
+      "fb44d303c97e483d8c44e10c95481e33": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "email": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "fullName": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "phoneNumber": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "address": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "status": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "createdAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:07\""
+          },
+          "updatedAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:07\""
           }
         }
       },
@@ -15579,6 +15852,53 @@
           "areas"
         ]
       },
+      "43a3d1562beeb960659be84670c64ec7": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "email": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "fullName": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "phoneNumber": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "address": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "status": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "createdAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:07\""
+          },
+          "updatedAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:07\""
+          }
+        }
+      },
       "d6e96af16321b5c39df5d3a0cb50a8a7": {
         "type": "object",
         "properties": {
@@ -15717,68 +16037,6 @@
             "items": {
               "$ref": "#/components/schemas/d2eb14e9f63a547f962671419ac5e06d"
             }
-          }
-        }
-      },
-      "f943f0599d84627a7f2267c20e656031": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "orderId": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "quantity": {
-            "format": "int32",
-            "description": "No comments found.",
-            "type": "integer",
-            "example": 0
-          },
-          "price": {
-            "format": "number",
-            "description": "No comments found.",
-            "type": "number",
-            "example": "0"
-          },
-          "totalPrice": {
-            "format": "number",
-            "description": "No comments found.",
-            "type": "number",
-            "example": "0"
-          },
-          "productId": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "variationId": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "variationPriceDetailId": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "product": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/9fd945a8096ff0a588d35da50c35355d"
-          },
-          "customer": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/e8cecdc2b6523e3663d08dbed5fe1970"
-          },
-          "createdAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "yyyy-MM-dd HH:mm:ss"
           }
         }
       },
@@ -16380,6 +16638,68 @@
           }
         }
       },
+      "1d30f8ccfdb9cf8128059eeee3eac0a5": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "orderId": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "quantity": {
+            "format": "int32",
+            "description": "No comments found.",
+            "type": "integer",
+            "example": 0
+          },
+          "price": {
+            "format": "number",
+            "description": "No comments found.",
+            "type": "number",
+            "example": "0"
+          },
+          "totalPrice": {
+            "format": "number",
+            "description": "No comments found.",
+            "type": "number",
+            "example": "0"
+          },
+          "productId": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "variationId": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "variationPriceDetailId": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "product": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/977b9983a69ff1104bf22467b56fbbee"
+          },
+          "customer": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/2b3653bd0062a9480fb59d4c56825c68"
+          },
+          "createdAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "yyyy-MM-dd HH:mm:ss"
+          }
+        }
+      },
       "da26712c62bd3c2994266db42a30a82d": {
         "type": "object",
         "properties": {
@@ -16462,53 +16782,6 @@
         ]
       },
       "d751713988987e9331980363e24189ce": {},
-      "210c3cb4f8cb9ebcf345352967ede124": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "email": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "fullName": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "phoneNumber": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "address": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "status": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "createdAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:46\""
-          },
-          "updatedAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:46\""
-          }
-        }
-      },
       "1710adb3063b547ef8174858bb33b713": {
         "type": "object",
         "properties": {
@@ -16519,50 +16792,23 @@
           }
         }
       },
-      "e8cecdc2b6523e3663d08dbed5fe1970": {
+      "cef41cdfd4910924eef14f2433420333": {
         "type": "object",
         "properties": {
-          "id": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
+          "data": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/19967a98035d935c8ed453d491b6b773"
           },
-          "email": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "fullName": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "phoneNumber": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "address": {
+          "message": {
             "format": "string",
             "description": "No comments found.",
             "type": "string"
           },
           "status": {
-            "format": "string",
+            "format": "boolean",
             "description": "No comments found.",
-            "type": "string"
-          },
-          "createdAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:45\""
-          },
-          "updatedAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:45\""
+            "type": "boolean",
+            "example": true
           }
         }
       },
@@ -16711,84 +16957,6 @@
           "variationId"
         ]
       },
-      "02c506e3fdfda37860210b5bf0e93349": {
-        "type": "object",
-        "properties": {
-          "data": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/efe695e8f0885fdbf3dd2f797f9ffa6e"
-          },
-          "message": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "status": {
-            "format": "boolean",
-            "description": "No comments found.",
-            "type": "boolean",
-            "example": true
-          }
-        }
-      },
-      "906f98777496e90fdee82ca985361f0f": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "createdDate": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "yyyy-MM-dd HH:mm:ss"
-          },
-          "rating": {
-            "format": "int32",
-            "description": "No comments found.",
-            "type": "integer",
-            "example": 0
-          },
-          "comment": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "customer": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/b7de79edfbba76f16704a36a8563a0ee"
-          },
-          "product": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/20a1e8c502b6818155e9b14e0904a891"
-          }
-        }
-      },
-      "9820ee464995c5428daa5d2204ffcb60": {
-        "type": "object",
-        "properties": {
-          "status": {
-            "format": "boolean",
-            "description": "No comments found.",
-            "type": "boolean",
-            "example": true
-          },
-          "message": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "data": {
-            "description": "No comments found.",
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/f943f0599d84627a7f2267c20e656031"
-            }
-          }
-        }
-      },
       "fe61d453db989a40954940eb5684d94e": {
         "type": "object",
         "properties": {
@@ -16809,6 +16977,31 @@
           }
         }
       },
+      "ea7e8f2b3fc20041d121efd6edeb38fc": {
+        "type": "object",
+        "properties": {
+          "customer": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/0dbcf740757b3e0c93e799339da6045b"
+          },
+          "token": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "refreshToken": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "expiresIn": {
+            "format": "int64",
+            "description": "No comments found.",
+            "type": "number",
+            "example": 0
+          }
+        }
+      },
       "0ae67ca91259ae16fa78ef5a8f83b9e6": {
         "type": "object",
         "properties": {
@@ -16826,29 +17019,6 @@
             "format": "string",
             "description": "No comments found.",
             "type": "string"
-          }
-        }
-      },
-      "46cbf3b52b25080cc58614db013446c8": {
-        "type": "object",
-        "properties": {
-          "data": {
-            "description": "No comments found.",
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/906f98777496e90fdee82ca985361f0f"
-            }
-          },
-          "message": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "status": {
-            "format": "boolean",
-            "description": "No comments found.",
-            "type": "boolean",
-            "example": true
           }
         }
       },
@@ -17052,6 +17222,26 @@
           }
         }
       },
+      "55b8d122f869705c563e7b474ebd2731": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "format": "boolean",
+            "description": "No comments found.",
+            "type": "boolean",
+            "example": true
+          },
+          "message": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "data": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/20f11a32cfc439f195333fd97e891460"
+          }
+        }
+      },
       "bd1ce0b27e800d54c62af3e07140f8ec": {
         "type": "object",
         "properties": {
@@ -17102,71 +17292,6 @@
           }
         }
       },
-      "cd626d3f84927a8043f006def9de39a4": {
-        "type": "object",
-        "properties": {
-          "data": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/00738f68738c152bb83e7048a4437e78"
-          },
-          "message": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "status": {
-            "format": "boolean",
-            "description": "No comments found.",
-            "type": "boolean",
-            "example": true
-          }
-        }
-      },
-      "a8073c30e4305b4dc4763e2ff89a5735": {
-        "type": "object",
-        "properties": {
-          "customer": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/3264957112f2eb0a2f63f0dec60800c3"
-          },
-          "token": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "refreshToken": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "expiresIn": {
-            "format": "int64",
-            "description": "No comments found.",
-            "type": "number",
-            "example": 0
-          }
-        }
-      },
-      "fe054f16092f6dd97a297c901445d1b2": {
-        "type": "object",
-        "properties": {
-          "status": {
-            "format": "boolean",
-            "description": "No comments found.",
-            "type": "boolean",
-            "example": true
-          },
-          "message": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "data": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/a8073c30e4305b4dc4763e2ff89a5735"
-          }
-        }
-      },
       "f8e4c7ff00a2f734d76a3dc1ccfa4546": {
         "type": "object",
         "properties": {
@@ -17195,88 +17320,6 @@
           "key",
           "value"
         ]
-      },
-      "b7de79edfbba76f16704a36a8563a0ee": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "email": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "fullName": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "phoneNumber": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "address": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "status": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "createdAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:48\""
-          },
-          "updatedAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:48\""
-          }
-        }
-      },
-      "7db22e3f1e13cf187f1625566772fc22": {
-        "type": "object",
-        "properties": {
-          "array": {
-            "format": "boolean",
-            "description": "No comments found.",
-            "type": "boolean",
-            "example": true
-          },
-          "object": {
-            "format": "boolean",
-            "description": "No comments found.",
-            "type": "boolean",
-            "example": true
-          },
-          "valueNode": {
-            "format": "boolean",
-            "description": "No comments found.",
-            "type": "boolean",
-            "example": true
-          },
-          "containerNode": {
-            "format": "boolean",
-            "description": "No comments found.",
-            "type": "boolean",
-            "example": true
-          },
-          "missingNode": {
-            "format": "boolean",
-            "description": "No comments found.",
-            "type": "boolean",
-            "example": true
-          }
-        }
       },
       "fcfde6154ab9b945987b5b99e911e5e4": {
         "type": "object",
@@ -17414,6 +17457,26 @@
           "discount"
         ]
       },
+      "1477a60ed88fca8f8b40e952855e58e3": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "format": "boolean",
+            "description": "No comments found.",
+            "type": "boolean",
+            "example": true
+          },
+          "message": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "data": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/d67148bea6ada26dd11a8e02af355453"
+          }
+        }
+      },
       "73de0ce9f06f921630f44f570ac40f53": {
         "type": "object",
         "properties": {
@@ -17438,7 +17501,7 @@
           }
         }
       },
-      "159a2ef8bdce127b00ab411d6418c60f": {
+      "833ffe36dba558298fc4d65510ae879a": {
         "type": "object",
         "properties": {
           "id": {
@@ -17446,42 +17509,30 @@
             "description": "No comments found.",
             "type": "string"
           },
-          "email": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "fullName": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "phoneNumber": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "address": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "status": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "createdAt": {
+          "createdDate": {
             "format": "string",
             "description": "No comments found.",
             "type": "string",
-            "example": "\"2026-04-07 10:20:49\""
+            "example": "yyyy-MM-dd HH:mm:ss"
           },
-          "updatedAt": {
+          "rating": {
+            "format": "int32",
+            "description": "No comments found.",
+            "type": "integer",
+            "example": 0
+          },
+          "comment": {
             "format": "string",
             "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:49\""
+            "type": "string"
+          },
+          "customer": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/fb44d303c97e483d8c44e10c95481e33"
+          },
+          "product": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/20a1e8c502b6818155e9b14e0904a891"
           }
         }
       },
@@ -17697,19 +17748,34 @@
           }
         }
       },
-      "3bffb30bb28fb8581ea9a77c0b49c5f6": {
+      "8b12bd7b5ed64a5cfc2bd326cca0fcba": {
         "type": "object",
         "properties": {
-          "data": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/bccc6f840f442659e0ebf86825ee9369"
-          },
-          "message": {
-            "format": "string",
+          "array": {
+            "format": "boolean",
             "description": "No comments found.",
-            "type": "string"
+            "type": "boolean",
+            "example": true
           },
-          "status": {
+          "valueNode": {
+            "format": "boolean",
+            "description": "No comments found.",
+            "type": "boolean",
+            "example": true
+          },
+          "containerNode": {
+            "format": "boolean",
+            "description": "No comments found.",
+            "type": "boolean",
+            "example": true
+          },
+          "missingNode": {
+            "format": "boolean",
+            "description": "No comments found.",
+            "type": "boolean",
+            "example": true
+          },
+          "object": {
             "format": "boolean",
             "description": "No comments found.",
             "type": "boolean",
@@ -17812,53 +17878,6 @@
             "format": "string",
             "description": "A map key.",
             "type": "string"
-          }
-        }
-      },
-      "807d2758a01d1dbe0d52655aedea8546": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "email": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "fullName": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "phoneNumber": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "address": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "status": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "createdAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:45\""
-          },
-          "updatedAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:45\""
           }
         }
       },
@@ -18124,26 +18143,6 @@
           "paymentMethod"
         ]
       },
-      "e78f560fe50b2214e6281571f7b61345": {
-        "type": "object",
-        "properties": {
-          "status": {
-            "format": "boolean",
-            "description": "No comments found.",
-            "type": "boolean",
-            "example": true
-          },
-          "message": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "data": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/6c37feeb19a7394d4e7ca897d5d7d94c"
-          }
-        }
-      },
       "161db17e2db695c8de31a464ac97a318": {
         "type": "object",
         "properties": {
@@ -18405,6 +18404,53 @@
           }
         }
       },
+      "8f3a256a1de7cfce8648a4d98d71b785": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "email": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "fullName": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "phoneNumber": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "address": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "status": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "createdAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:07\""
+          },
+          "updatedAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:07\""
+          }
+        }
+      },
       "6c987b39b4cef18549ee8918628dc66e": {
         "type": "object",
         "properties": {
@@ -18423,56 +18469,6 @@
           "key",
           "value"
         ]
-      },
-      "819ffc7d2feb4e4b2d3b8cfd632315db": {
-        "type": "object",
-        "properties": {
-          "customer": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/210c3cb4f8cb9ebcf345352967ede124"
-          },
-          "token": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "refreshToken": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "expiresIn": {
-            "format": "int64",
-            "description": "No comments found.",
-            "type": "number",
-            "example": 0
-          }
-        }
-      },
-      "f835a0dfa8e78f13f3711b2d5052c89c": {
-        "type": "object",
-        "properties": {
-          "customer": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/807d2758a01d1dbe0d52655aedea8546"
-          },
-          "token": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "refreshToken": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "expiresIn": {
-            "format": "int64",
-            "description": "No comments found.",
-            "type": "number",
-            "example": 0
-          }
-        }
       },
       "969028253123960bc15500f621b0c8b3": {
         "type": "object",
@@ -18539,6 +18535,67 @@
           }
         }
       },
+      "99af0169f5fd6c46e39eb6ed18716ba0": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "adName": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "images": {
+            "description": "No comments found.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": "\"\"\",\"\"\""
+          },
+          "ctaText": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "promoCode": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "buttons": {
+            "description": "No comments found.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/90cee98eb8d57642d65e2adceb156b4b"
+            }
+          },
+          "status": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "metadata": {
+            "description": "No comments found.(object)",
+            "type": "object"
+          },
+          "createdAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:04\""
+          },
+          "updatedAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:04\""
+          }
+        }
+      },
       "685d6858e1ee985269f9c0c2bda00f4a": {
         "type": "object",
         "properties": {
@@ -18559,6 +18616,26 @@
             "items": {
               "$ref": "#/components/schemas/7282fa5ff4e7edabb8c8d30833f97561"
             }
+          }
+        }
+      },
+      "faa95c4778ef612a9a5fa14af223e516": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/833ffe36dba558298fc4d65510ae879a"
+          },
+          "message": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "status": {
+            "format": "boolean",
+            "description": "No comments found.",
+            "type": "boolean",
+            "example": true
           }
         }
       },
@@ -18728,6 +18805,68 @@
           }
         }
       },
+      "40b9ed93cbd4be2ea8a5344b6db0bbd6": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "orderId": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "quantity": {
+            "format": "int32",
+            "description": "No comments found.",
+            "type": "integer",
+            "example": 0
+          },
+          "price": {
+            "format": "number",
+            "description": "No comments found.",
+            "type": "number",
+            "example": "0"
+          },
+          "totalPrice": {
+            "format": "number",
+            "description": "No comments found.",
+            "type": "number",
+            "example": "0"
+          },
+          "productId": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "variationId": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "variationPriceDetailId": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "product": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/9fd945a8096ff0a588d35da50c35355d"
+          },
+          "customer": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/8b99e1f92c1d35bc24bc1a3e6f4a0f71"
+          },
+          "createdAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "yyyy-MM-dd HH:mm:ss"
+          }
+        }
+      },
       "36992e3514e4bafc8bf57cb1dcb30193": {
         "type": "object",
         "properties": {
@@ -18743,6 +18882,85 @@
               "type": "string"
             },
             "example": "\"\"\",\"\"\""
+          }
+        }
+      },
+      "c155bbdbc8aff303f39ee716120fa051": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "customerId": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "reference": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "amount": {
+            "format": "number",
+            "description": "No comments found.",
+            "type": "number",
+            "example": "0"
+          },
+          "paidAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "gateway": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "paymentMethod": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "currency": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "orderId": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "status": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "paymentGatewayTransactionId": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "manualPayment": {
+            "format": "boolean",
+            "description": "No comments found.",
+            "type": "boolean",
+            "example": true
+          },
+          "createdAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:06\""
+          },
+          "updatedAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:06\""
           }
         }
       },
@@ -19343,120 +19561,32 @@
           }
         }
       },
-      "1ef02ccf9b899271a3fbdd5ae1d35493": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "adName": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "images": {
-            "description": "No comments found.",
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "example": "\"\"\",\"\"\""
-          },
-          "ctaText": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "promoCode": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "buttons": {
-            "description": "No comments found.",
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/90cee98eb8d57642d65e2adceb156b4b"
-            }
-          },
-          "status": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "metadata": {
-            "description": "No comments found.(object)",
-            "type": "object"
-          },
-          "createdAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:44\""
-          },
-          "updatedAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:44\""
-          }
-        }
-      },
-      "c9efa0e66fe06a02bbf964d4f77a750d": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "email": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "fullName": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "phoneNumber": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "address": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "status": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "createdAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:49\""
-          },
-          "updatedAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:49\""
-          }
-        }
-      },
       "52195272cd556ba1539688c056c3ba0d": {
         "type": "object",
         "properties": {
           "any object": {
             "description": "any object.(object)",
             "type": "object"
+          }
+        }
+      },
+      "196c6bb4550325ecd95c4b996c5c7344": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/99af0169f5fd6c46e39eb6ed18716ba0"
+          },
+          "message": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "status": {
+            "format": "boolean",
+            "description": "No comments found.",
+            "type": "boolean",
+            "example": true
           }
         }
       },
@@ -20223,26 +20353,6 @@
           "status"
         ]
       },
-      "afa11a062cc3994656927ab292e584da": {
-        "type": "object",
-        "properties": {
-          "data": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/f7f72f0796b100c76b576531b3b1e5b8"
-          },
-          "message": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "status": {
-            "format": "boolean",
-            "description": "No comments found.",
-            "type": "boolean",
-            "example": true
-          }
-        }
-      },
       "7282fa5ff4e7edabb8c8d30833f97561": {
         "type": "object",
         "properties": {
@@ -20478,6 +20588,91 @@
           }
         }
       },
+      "41700da2c8eae96a602263e8c01e65cf": {
+        "type": "object",
+        "properties": {
+          "primaryColor": {
+            "format": "string",
+            "description": "No comments found.\nValidation[Size(max=10, min=4, message=primaryColor must be a valid hex code)]",
+            "type": "string"
+          },
+          "accentColor": {
+            "format": "string",
+            "description": "No comments found.\nValidation[Size(max=10, min=4, message=accentColor must be a valid hex code)]",
+            "type": "string"
+          },
+          "fontFamily": {
+            "format": "string",
+            "description": "No comments found.\nValidation[Size(max=100, min=1, message=fontFamily must not be empty)]",
+            "type": "string"
+          },
+          "heroHeadline": {
+            "format": "string",
+            "description": "No comments found.\nValidation[Size(max=255, min=1, message=heroHeadline must not be empty)]",
+            "type": "string"
+          },
+          "heroCtaText": {
+            "format": "string",
+            "description": "No comments found.\nValidation[Size(max=50, min=1, message=heroCtaText must not be empty)]",
+            "type": "string"
+          },
+          "heroBackgroundImage": {
+            "format": "string",
+            "description": "No comments found.\nValidation[Size(max=500, min=1, message=heroBackgroundImage must be a valid URL)]",
+            "type": "string"
+          },
+          "instagramUrl": {
+            "format": "string",
+            "description": "No comments found.\nValidation[Size(max=500, min=0)]",
+            "type": "string"
+          },
+          "facebookUrl": {
+            "format": "string",
+            "description": "No comments found.\nValidation[Size(max=500, min=0)]",
+            "type": "string"
+          },
+          "twitterUrl": {
+            "format": "string",
+            "description": "No comments found.\nValidation[Size(max=500, min=0)]",
+            "type": "string"
+          },
+          "youtubeUrl": {
+            "format": "string",
+            "description": "No comments found.\nValidation[Size(max=500, min=0)]",
+            "type": "string"
+          },
+          "linkedinUrl": {
+            "format": "string",
+            "description": "No comments found.\nValidation[Size(max=500, min=0)]",
+            "type": "string"
+          },
+          "tiktokUrl": {
+            "format": "string",
+            "description": "No comments found.\nValidation[Size(max=500, min=0)]",
+            "type": "string"
+          },
+          "currency": {
+            "format": "string",
+            "description": "No comments found.\nValidation[Size(max=10, min=3)]",
+            "type": "string"
+          },
+          "subdomain": {
+            "format": "string",
+            "description": "No comments found.\nValidation[Size(max=100, min=2)]",
+            "type": "string"
+          },
+          "timezone": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "logoUrl": {
+            "format": "string",
+            "description": "No comments found.\nValidation[Size(max=500, min=1)]",
+            "type": "string"
+          }
+        }
+      },
       "5289aa20d129071ffa10d0f038f161e6": {
         "type": "object",
         "properties": {
@@ -20510,6 +20705,26 @@
           "bankCode",
           "gateway"
         ]
+      },
+      "f42a5f60e9bdd7ea748f1d82595e77ec": {
+        "type": "object",
+        "properties": {
+          "order": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/5b97167a4365e86e4abcfb395c647d8f"
+          },
+          "lines": {
+            "description": "No comments found.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/1d30f8ccfdb9cf8128059eeee3eac0a5"
+            }
+          },
+          "tenant": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/2a689baa29e2df31275ce13f5db220bf"
+          }
+        }
       },
       "3644c4b03ab134ee0165eb6d6117d2aa": {
         "type": "object",
@@ -20665,6 +20880,123 @@
             "description": "No comments found.",
             "type": "boolean",
             "example": true
+          }
+        }
+      },
+      "637df3850a63cd355576d9fd9df99d26": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "description": "No comments found.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/99af0169f5fd6c46e39eb6ed18716ba0"
+            }
+          },
+          "message": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "status": {
+            "format": "boolean",
+            "description": "No comments found.",
+            "type": "boolean",
+            "example": true
+          }
+        }
+      },
+      "e5fb6b682827e4a6f50c0fb56dbad2a3": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "email": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "fullName": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "phoneNumber": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "address": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "status": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "createdAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:07\""
+          },
+          "updatedAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:07\""
+          }
+        }
+      },
+      "0dbcf740757b3e0c93e799339da6045b": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "email": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "fullName": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "phoneNumber": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "address": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "status": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "createdAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:05\""
+          },
+          "updatedAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:05\""
           }
         }
       },
@@ -20885,6 +21217,24 @@
             "items": {
               "$ref": "#/components/schemas/d33379189d0fadba0a768596acac20a0"
             }
+          }
+        }
+      },
+      "19967a98035d935c8ed453d491b6b773": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "description": "No comments found.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/f6abf6d7525f3a617845ae21f810180a"
+            }
+          },
+          "nextCursor": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "yyyy-MM-dd HH:mm:ss"
           }
         }
       },
@@ -21385,6 +21735,26 @@
           }
         }
       },
+      "909400ecc315b6a707f2a25fff80e742": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/fb9cbfe5503e22729c433f2374859a65"
+          },
+          "message": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "status": {
+            "format": "boolean",
+            "description": "No comments found.",
+            "type": "boolean",
+            "example": true
+          }
+        }
+      },
       "ee9841b12b99205573fbf519cd44dea7": {
         "type": "object",
         "properties": {
@@ -21463,29 +21833,6 @@
             "items": {
               "type": "string"
             }
-          }
-        }
-      },
-      "c1dbc067efc9584341ab4764a3f39521": {
-        "type": "object",
-        "properties": {
-          "data": {
-            "description": "No comments found.",
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/1ef02ccf9b899271a3fbdd5ae1d35493"
-            }
-          },
-          "message": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "status": {
-            "format": "boolean",
-            "description": "No comments found.",
-            "type": "boolean",
-            "example": true
           }
         }
       },
@@ -21571,23 +21918,64 @@
           }
         }
       },
-      "e96de9090c4b57024056c540c880313e": {
+      "f6abf6d7525f3a617845ae21f810180a": {
         "type": "object",
         "properties": {
-          "data": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/1ef02ccf9b899271a3fbdd5ae1d35493"
-          },
-          "message": {
+          "id": {
             "format": "string",
             "description": "No comments found.",
             "type": "string"
           },
-          "status": {
-            "format": "boolean",
+          "adName": {
+            "format": "string",
             "description": "No comments found.",
-            "type": "boolean",
-            "example": true
+            "type": "string"
+          },
+          "images": {
+            "description": "No comments found.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": "\"\"\",\"\"\""
+          },
+          "ctaText": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "promoCode": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "buttons": {
+            "description": "No comments found.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/45fdd8f2c5b0dd83c867ed70be8f4b62"
+            }
+          },
+          "status": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "metadata": {
+            "description": "No comments found.(object)",
+            "type": "object"
+          },
+          "createdAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:04\""
+          },
+          "updatedAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:04\""
           }
         }
       },
@@ -21646,53 +22034,6 @@
           "variationAttributes": {
             "description": "No comments found.(object)",
             "$ref": "#/components/schemas/f8e4c7ff00a2f734d76a3dc1ccfa4546"
-          }
-        }
-      },
-      "3264957112f2eb0a2f63f0dec60800c3": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "email": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "fullName": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "phoneNumber": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "address": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "status": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "createdAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:46\""
-          },
-          "updatedAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:46\""
           }
         }
       },
@@ -22197,6 +22538,53 @@
           "phoneNumber"
         ]
       },
+      "46f0d32ca977f0ed3dba583b86f2a64a": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "email": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "fullName": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "phoneNumber": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "address": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "status": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "createdAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:05\""
+          },
+          "updatedAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:05\""
+          }
+        }
+      },
       "13db40a8f84e7194e1852effe4c330b2": {
         "type": "object",
         "properties": {
@@ -22248,6 +22636,53 @@
           "data": {
             "description": "No comments found.(object)",
             "$ref": "#/components/schemas/52195272cd556ba1539688c056c3ba0d"
+          }
+        }
+      },
+      "d67148bea6ada26dd11a8e02af355453": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "email": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "fullName": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "phoneNumber": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "address": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "status": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "createdAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:05\""
+          },
+          "updatedAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:05\""
           }
         }
       },
@@ -22421,26 +22856,6 @@
           "quantityInStock",
           "categoryId"
         ]
-      },
-      "c322a6a6e8dfceab0ef5bc1d5333a399": {
-        "type": "object",
-        "properties": {
-          "status": {
-            "format": "boolean",
-            "description": "No comments found.",
-            "type": "boolean",
-            "example": true
-          },
-          "message": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "data": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/44e2fa12cbe3bc840bfda43db3421985"
-          }
-        }
       },
       "f1843ac1cc1fd772d728e26c576fce66": {
         "type": "object",
@@ -22822,192 +23237,6 @@
           "phoneNumber"
         ]
       },
-      "ff0c71f7d41a27d11cdc2c7d9361ecec": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "orderNumber": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "orderDate": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "yyyy-MM-dd HH:mm:ss"
-          },
-          "shippingAddress": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "billingAddress": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "deliveryAddress": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "shippingMethod": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "paymentMethod": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "subtotal": {
-            "format": "number",
-            "description": "No comments found.",
-            "type": "number",
-            "example": "0"
-          },
-          "discountAmount": {
-            "format": "number",
-            "description": "No comments found.",
-            "type": "number",
-            "example": "0"
-          },
-          "shippingFee": {
-            "format": "number",
-            "description": "No comments found.",
-            "type": "number",
-            "example": "0"
-          },
-          "taxAmount": {
-            "format": "number",
-            "description": "No comments found.",
-            "type": "number",
-            "example": "0"
-          },
-          "totalPrice": {
-            "format": "number",
-            "description": "No comments found.",
-            "type": "number",
-            "example": "0"
-          },
-          "discountDescription": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "country": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "state": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "city": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "area": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "landmark": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "status": {
-            "format": "enum",
-            "description": "No comments found.<br/>[Enum: PENDING-(\"PENDING\",\"Order has been placed but not paid\"),PROCESSING-(\"PROCESSING\",\"Payment confirmed, preparing items\"),SHIPPED-(\"SHIPPED\",\"Handed over to courier\"),DELIVERED-(\"DELIVERED\",\"Received by customer\"),CANCELLED-(\"CANCELLED\",\"Order revoked by user or system\"),IN_TRANSIT-(\"IN_TRANSIT\",\"Currently on the road\"),FAILED-(\"FAILED\",\"Payment or logistics failure\"),ABANDONED-(\"ABANDONED\",\"Order abandoned by customer\")]",
-            "type": "string",
-            "enum": [
-              "PENDING",
-              "PROCESSING",
-              "SHIPPED",
-              "DELIVERED",
-              "CANCELLED",
-              "IN_TRANSIT",
-              "FAILED",
-              "ABANDONED"
-            ],
-            "example": "PENDING"
-          },
-          "paymentStatus": {
-            "format": "enum",
-            "description": "No comments found.<br/>[Enum: SUCCESS-(\"SUCCESS\",\"Transaction completed and funds captured\"),FAILED-(\"FAILED\",\"Payment rejected by gateway or insufficient funds\"),PENDING-(\"PENDING\",\"Waiting for customer to initiate or complete payment action\"),PROCESSING-(\"PROCESSING\",\"Payment is undergoing verification or gateway processing\"),REFUNDED-(\"REFUNDED\",\"Transaction has been reversed and funds returned\"),ABANDONED-(\"ABANDONED\",\"Customer exited the payment session without completion\")]",
-            "type": "string",
-            "enum": [
-              "SUCCESS",
-              "FAILED",
-              "PENDING",
-              "PROCESSING",
-              "REFUNDED",
-              "ABANDONED"
-            ],
-            "example": "SUCCESS"
-          },
-          "paymentGateway": {
-            "format": "enum",
-            "description": "No comments found.<br/>[Enum: PAYSTACK-(\"PAYSTACK\",\"Nigeria-based processor (Card, Transfer, USSD)\"),FLUTTERWAVE-(\"FLUTTERWAVE\",\"Global infrastructure for Africa-wide payments\"),STRIPE-(\"STRIPE\",\"International card processing (USD/EUR/GBP)\"),OFFLINE-(\"OFFLINE\",\"Manual bank transfer or Cash on Delivery\"),MONNIFY-(\"MONNIFY\",\"Automated bank transfer provider for Nigeria\")]",
-            "type": "string",
-            "enum": [
-              "PAYSTACK",
-              "FLUTTERWAVE",
-              "STRIPE",
-              "OFFLINE",
-              "MONNIFY"
-            ],
-            "example": "PAYSTACK"
-          },
-          "paymentGatewayTransactionId": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "fulfillmentStatus": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "customer": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/c9efa0e66fe06a02bbf964d4f77a750d"
-          },
-          "contactInformation": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/af4c11079dca09d89f1cf94be497f637"
-          },
-          "promotion": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/9555fb68ad53cde62890ea845bc8b53f"
-          },
-          "address": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/6554069a4b1e9d681d4284a6aa66d809"
-          },
-          "tenantId": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "createdAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "yyyy-MM-dd HH:mm:ss"
-          }
-        }
-      },
       "d3ee64b917a373d07487cc531a9a7577": {
         "type": "object",
         "properties": {
@@ -23067,26 +23296,6 @@
             "items": {
               "$ref": "#/components/schemas/fe3cb56eb7ae78019e21340a09384bac"
             }
-          }
-        }
-      },
-      "44e2fa12cbe3bc840bfda43db3421985": {
-        "type": "object",
-        "properties": {
-          "order": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/ff0c71f7d41a27d11cdc2c7d9361ecec"
-          },
-          "lines": {
-            "description": "No comments found.",
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/5ea41dbf2324706e332a0985670857fc"
-            }
-          },
-          "tenant": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/2a689baa29e2df31275ce13f5db220bf"
           }
         }
       },
@@ -23204,100 +23413,23 @@
           }
         }
       },
-      "f7f72f0796b100c76b576531b3b1e5b8": {
+      "99f913af219142cc808052067deb350e": {
         "type": "object",
         "properties": {
-          "id": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
+          "data": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/c155bbdbc8aff303f39ee716120fa051"
           },
-          "customerId": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "reference": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "amount": {
-            "format": "number",
-            "description": "No comments found.",
-            "type": "number",
-            "example": "0"
-          },
-          "paidAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "gateway": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "paymentMethod": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "currency": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "orderId": {
+          "message": {
             "format": "string",
             "description": "No comments found.",
             "type": "string"
           },
           "status": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "paymentGatewayTransactionId": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "manualPayment": {
             "format": "boolean",
             "description": "No comments found.",
             "type": "boolean",
             "example": true
-          },
-          "createdAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:46\""
-          },
-          "updatedAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:46\""
-          }
-        }
-      },
-      "efe695e8f0885fdbf3dd2f797f9ffa6e": {
-        "type": "object",
-        "properties": {
-          "data": {
-            "description": "No comments found.",
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/26bb7f9278c095365af3daa236db4d4e"
-            }
-          },
-          "nextCursor": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "yyyy-MM-dd HH:mm:ss"
           }
         }
       },
@@ -23386,6 +23518,31 @@
           }
         }
       },
+      "20f11a32cfc439f195333fd97e891460": {
+        "type": "object",
+        "properties": {
+          "customer": {
+            "description": "No comments found.(object)",
+            "$ref": "#/components/schemas/46f0d32ca977f0ed3dba583b86f2a64a"
+          },
+          "token": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "refreshToken": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "expiresIn": {
+            "format": "int64",
+            "description": "No comments found.",
+            "type": "number",
+            "example": 0
+          }
+        }
+      },
       "16cc0edad6ec925968ae7df6345a4c92": {
         "type": "object",
         "properties": {
@@ -23426,26 +23583,6 @@
             "format": "number",
             "description": "A map key.",
             "type": "number"
-          }
-        }
-      },
-      "ddcababedb50c26d488339d4b71d09ba": {
-        "type": "object",
-        "properties": {
-          "data": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/906f98777496e90fdee82ca985361f0f"
-          },
-          "message": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "status": {
-            "format": "boolean",
-            "description": "No comments found.",
-            "type": "boolean",
-            "example": true
           }
         }
       },
@@ -23540,6 +23677,29 @@
           }
         }
       },
+      "a1ba6343623d7d332b4013052ee37743": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "format": "boolean",
+            "description": "No comments found.",
+            "type": "boolean",
+            "example": true
+          },
+          "message": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "data": {
+            "description": "No comments found.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/40b9ed93cbd4be2ea8a5344b6db0bbd6"
+            }
+          }
+        }
+      },
       "6a94224bc477e7d150072195eda82f91": {
         "type": "object",
         "properties": {
@@ -23580,135 +23740,26 @@
           }
         }
       },
-      "ee57e2bf9316ba430574698492b09cb2": {
+      "e94109ebacbf8b748a7c42fa81e472b9": {
         "type": "object",
         "properties": {
-          "primaryColor": {
-            "format": "string",
+          "data": {
             "description": "No comments found.",
-            "type": "string"
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/833ffe36dba558298fc4d65510ae879a"
+            }
           },
-          "accentColor": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "fontFamily": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "heroHeadline": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "heroCtaText": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "heroBackgroundImage": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "instagramUrl": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "facebookUrl": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "twitterUrl": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "youtubeUrl": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "linkedinUrl": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "tiktokUrl": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "currency": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "subdomain": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "timezone": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "logoUrl": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          }
-        }
-      },
-      "71a735a11c7ec94d8b43fe629673c73d": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "email": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "fullName": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "phoneNumber": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "address": {
+          "message": {
             "format": "string",
             "description": "No comments found.",
             "type": "string"
           },
           "status": {
-            "format": "string",
+            "format": "boolean",
             "description": "No comments found.",
-            "type": "string"
-          },
-          "createdAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:50\""
-          },
-          "updatedAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:50\""
+            "type": "boolean",
+            "example": true
           }
         }
       },
@@ -23976,53 +24027,6 @@
           }
         }
       },
-      "45243a6d684108db48238d9cdaa71558": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "email": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "fullName": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "phoneNumber": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "address": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "status": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "createdAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:45\""
-          },
-          "updatedAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:45\""
-          }
-        }
-      },
       "5dd36691cf7c4662f5dd3154da343a14": {
         "type": "object",
         "properties": {
@@ -24108,68 +24112,6 @@
             "items": {
               "$ref": "#/components/schemas/f9c9df7ca51f3630edea54c1092342bd"
             }
-          }
-        }
-      },
-      "5ea41dbf2324706e332a0985670857fc": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "orderId": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "quantity": {
-            "format": "int32",
-            "description": "No comments found.",
-            "type": "integer",
-            "example": 0
-          },
-          "price": {
-            "format": "number",
-            "description": "No comments found.",
-            "type": "number",
-            "example": "0"
-          },
-          "totalPrice": {
-            "format": "number",
-            "description": "No comments found.",
-            "type": "number",
-            "example": "0"
-          },
-          "productId": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "variationId": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "variationPriceDetailId": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "product": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/977b9983a69ff1104bf22467b56fbbee"
-          },
-          "customer": {
-            "description": "No comments found.(object)",
-            "$ref": "#/components/schemas/159a2ef8bdce127b00ab411d6418c60f"
-          },
-          "createdAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "yyyy-MM-dd HH:mm:ss"
           }
         }
       },
@@ -24998,67 +24940,6 @@
           "confirmPassword"
         ]
       },
-      "26bb7f9278c095365af3daa236db4d4e": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "adName": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "images": {
-            "description": "No comments found.",
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "example": "\"\"\",\"\"\""
-          },
-          "ctaText": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "promoCode": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "buttons": {
-            "description": "No comments found.",
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/45fdd8f2c5b0dd83c867ed70be8f4b62"
-            }
-          },
-          "status": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string"
-          },
-          "metadata": {
-            "description": "No comments found.(object)",
-            "type": "object"
-          },
-          "createdAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:44\""
-          },
-          "updatedAt": {
-            "format": "string",
-            "description": "No comments found.",
-            "type": "string",
-            "example": "\"2026-04-07 10:20:44\""
-          }
-        }
-      },
       "75ef2bf6303fcb3875f064311919e80b": {
         "type": "object",
         "properties": {
@@ -25157,7 +25038,7 @@
           "mode"
         ]
       },
-      "6c37feeb19a7394d4e7ca897d5d7d94c": {
+      "8b99e1f92c1d35bc24bc1a3e6f4a0f71": {
         "type": "object",
         "properties": {
           "id": {
@@ -25194,13 +25075,60 @@
             "format": "string",
             "description": "No comments found.",
             "type": "string",
-            "example": "\"2026-04-07 10:20:50\""
+            "example": "\"2026-04-07 10:26:05\""
           },
           "updatedAt": {
             "format": "string",
             "description": "No comments found.",
             "type": "string",
-            "example": "\"2026-04-07 10:20:50\""
+            "example": "\"2026-04-07 10:26:05\""
+          }
+        }
+      },
+      "2b3653bd0062a9480fb59d4c56825c68": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "email": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "fullName": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "phoneNumber": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "address": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "status": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string"
+          },
+          "createdAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:07\""
+          },
+          "updatedAt": {
+            "format": "string",
+            "description": "No comments found.",
+            "type": "string",
+            "example": "\"2026-04-07 10:26:07\""
           }
         }
       },

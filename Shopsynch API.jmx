@@ -8505,10 +8505,10 @@ V1 variation endpoints ({@code /v1/products/variation/*}) are NOT affected." ena
                 <stringProp name="Argument.value">
 {
   "array": true,
-  "object": true,
   "valueNode": true,
   "containerNode": true,
-  "missingNode": true
+  "missingNode": true,
+  "object": true
 }
                 </stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
