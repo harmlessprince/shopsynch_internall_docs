@@ -806,9 +806,9 @@ api[0].list.push({
 api[0].list[25].list.push({
     order: '1',
     deprecated: 'false',
-    url: 'https://api.shopsynch.com/v1/store/{slug}',
-    methodId: 'fbc22e7b062fa4279b9f3207666cc4f7',
-    desc: 'Fetch Store Config',
+    url: 'https://api.shopsynch.com/v1/store/settings',
+    methodId: '52b62b1d67a09559db58dc4a53c13645',
+    desc: 'Retrieve Store Settings',
 });
 api[0].list[25].list.push({
     order: '2',
@@ -820,8 +820,22 @@ api[0].list[25].list.push({
 api[0].list[25].list.push({
     order: '3',
     deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/store/{slug}',
+    methodId: '7b53c8d43359fe5ee6021a60783d10be',
+    desc: 'Fetch Store Config',
+});
+api[0].list[25].list.push({
+    order: '4',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/store/check-slug/{slug}',
+    methodId: 'a36e3014477c4db90cbfef59088cbae3',
+    desc: 'Check if slug exists',
+});
+api[0].list[25].list.push({
+    order: '5',
+    deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/store/google-oauth-redirect',
-    methodId: 'e071aac90338b8b84289a171069ea4eb',
+    methodId: '691a7d99e83f6536c19f892e8c0f1f33',
     desc: 'patchGoogleOauthRedirectUrl',
 });
 api[0].list.push({
@@ -1226,15 +1240,29 @@ api[0].list[40].list.push({
 api[0].list[40].list.push({
     order: '6',
     deprecated: 'false',
-    url: 'https://api.shopsynch.com/v2/products/similar/by/category/{productId}',
-    methodId: 'd786a777a2e6a62fae6dc2b9acf73407',
-    desc: 'getSimilarProducts',
+    url: 'https://api.shopsynch.com/v2/products/{productId}/archive',
+    methodId: '1c96ac15e3f9704600a7aab0478bc6e9',
+    desc: 'Archive Product (V2)',
 });
 api[0].list[40].list.push({
     order: '7',
     deprecated: 'false',
+    url: 'https://api.shopsynch.com/v2/products/{productId}/unarchive',
+    methodId: 'f07748e43a3f27d359614e16c7434196',
+    desc: 'Unarchive Product (V2)',
+});
+api[0].list[40].list.push({
+    order: '8',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v2/products/similar/by/category/{productId}',
+    methodId: '04cb1c4506e9ed4ea0c48c7460e73bb9',
+    desc: 'getSimilarProducts',
+});
+api[0].list[40].list.push({
+    order: '9',
+    deprecated: 'false',
     url: 'https://api.shopsynch.com/v2/products/top-selling',
-    methodId: 'd4f70cfbf40f71e6572f46290b8b40ee',
+    methodId: 'dac79060d18539ec0d1113a7f0a90518',
     desc: 'getTopSelling',
 });
 api[0].list.push({
@@ -1308,13 +1336,55 @@ api[0].list[43].list.push({
     desc: 'findAll',
 });
 api[0].list.push({
-    alias: 'VariationOptionController',
+    alias: 'TenantRoleController',
     order: '45',
+    link: 'merchant-accessible_apis_for_roles_and_permissions_within_a_specific_store.  these_endpoints_are_tenant-scoped:_the_caller_must_be_the_store_owner_or a_member_with_the_can_read_role_permission._admin-only_roles_and non-merchant-visible_permissions_are_automatically_excluded_from_responses.',
+    desc: 'Merchant-accessible APIs for roles and permissions within a specific store.  These endpoints are tenant-scoped: the caller must be the store owner or a member with the CAN_READ_ROLE permission. Admin-only roles and non-merchant-visible permissions are automatically excluded from responses.',
+    list: []
+})
+api[0].list[44].list.push({
+    order: '1',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/tenants/{tenantId}/roles',
+    methodId: '58de4be69971b029ecddc19201aa4bcb',
+    desc: 'Get Roles for a Store',
+});
+api[0].list[44].list.push({
+    order: '2',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/tenants/{tenantId}/permissions',
+    methodId: '499fa7f9a871fb62d4100d26c8276b95',
+    desc: 'Get Merchant-Visible Permissions',
+});
+api[0].list[44].list.push({
+    order: '3',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/tenants/{tenantId}/roles',
+    methodId: '901557e33975034acc932a3f9eb9aa3a',
+    desc: 'Create Custom Role',
+});
+api[0].list[44].list.push({
+    order: '4',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/tenants/{tenantId}/roles/{roleId}',
+    methodId: '897e36a50038fd924541c4b881e3c681',
+    desc: 'Update Custom Role',
+});
+api[0].list[44].list.push({
+    order: '5',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/tenants/{tenantId}/roles/{roleId}',
+    methodId: '6ce8e52262ead41240f5d49346768b33',
+    desc: 'Delete Custom Role',
+});
+api[0].list.push({
+    alias: 'VariationOptionController',
+    order: '46',
     link: 'variationoptioncontroller',
     desc: 'VariationOptionController',
     list: []
 })
-api[0].list[44].list.push({
+api[0].list[45].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/variation/options/{variationId}',
@@ -1323,131 +1393,194 @@ api[0].list[44].list.push({
 });
 api[0].list.push({
     alias: 'EmailPreviewController',
-    order: '46',
+    order: '47',
     link: 'emailpreviewcontroller',
     desc: 'EmailPreviewController',
     list: []
 })
-api[0].list[45].list.push({
+api[0].list[46].list.push({
     order: '1',
     deprecated: 'false',
-    url: 'https://api.shopsynch.com/api/v1/test/email-preview/welcome',
+    url: 'https://api.shopsynch.com/api/v1/test/email-preview/merchant-welcome',
     methodId: '91d22fda29bb1628845c5a6535236aad',
     desc: 'previewWelcomeEmail',
 });
-api[0].list[45].list.push({
+api[0].list[46].list.push({
     order: '2',
     deprecated: 'false',
-    url: 'https://api.shopsynch.com/api/v1/test/email-preview/merchant/new-order/{orderId}',
-    methodId: '39a7ebc151c6356afe8e125cf9e592c2',
-    desc: 'previewMerchantNewOrder',
+    url: 'https://api.shopsynch.com/api/v1/test/email-preview/customer-welcome',
+    methodId: '11d333a76ac855af09b8af011f3a446e',
+    desc: 'previewCustomerWelcomeEmail',
 });
-api[0].list[45].list.push({
+api[0].list[46].list.push({
     order: '3',
     deprecated: 'false',
-    url: 'https://api.shopsynch.com/api/v1/test/email-preview/customer/order-confirmation/{orderId}',
-    methodId: 'f4993eb9944736fe20a0c9afc630629b',
-    desc: 'previewCustomerOrderConfirmation',
+    url: 'https://api.shopsynch.com/api/v1/test/email-preview/merchant-new-order/{orderId}',
+    methodId: 'aeb17e7dcd1d83dbdf08eb34e4e350bc',
+    desc: 'previewMerchantNewOrder',
 });
-api[0].list[45].list.push({
+api[0].list[46].list.push({
     order: '4',
     deprecated: 'false',
-    url: 'https://api.shopsynch.com/api/v1/test/email-preview/customer/payment-confirmation/{paymentId}',
-    methodId: '23b2a858266195729ecbda885214f141',
-    desc: 'previewCustomerPaymentConfirmation',
+    url: 'https://api.shopsynch.com/api/v1/test/email-preview/customer-order-confirmation/{orderId}',
+    methodId: '72e375ba0785f51d98507cb4271542a3',
+    desc: 'previewCustomerOrderConfirmation',
 });
-api[0].list[45].list.push({
+api[0].list[46].list.push({
     order: '5',
     deprecated: 'false',
+    url: 'https://api.shopsynch.com/api/v1/test/email-preview/customer-payment-confirmation/{paymentId}',
+    methodId: '7e9f3c6e747a382236c950f4cf5da2df',
+    desc: 'previewCustomerPaymentConfirmation',
+});
+api[0].list[46].list.push({
+    order: '6',
+    deprecated: 'false',
     url: 'https://api.shopsynch.com/api/v1/test/email-preview/forgot-password',
-    methodId: 'ab603489f8e1549cbca9198f50089dfa',
+    methodId: '49f6642a9422fee89b9c82f7a14c030e',
     desc: 'previewForgotPassword',
+});
+api[0].list[46].list.push({
+    order: '7',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/api/v1/test/email-preview/password-reset-successful',
+    methodId: '990f49cc06f43843251175a2dd770ac9',
+    desc: 'previewResetPassword',
+});
+api[0].list[46].list.push({
+    order: '8',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/api/v1/test/email-preview/customer-abandoned-cart',
+    methodId: '19487a4a0615e66d9e46854cb0e1cc77',
+    desc: 'previewCustomerAbandonedCart',
+});
+api[0].list[46].list.push({
+    order: '9',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/api/v1/test/email-preview/order-confirmation',
+    methodId: 'bdbe00ffcb534d5dccc56b25b466df9e',
+    desc: 'previewOrderConfirmation',
+});
+api[0].list[46].list.push({
+    order: '10',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/api/v1/test/email-preview/order-status-update',
+    methodId: '4416ab1d05f197eadc1a47424f9abc81',
+    desc: 'previewOrderStatusUpdate',
+});
+api[0].list[46].list.push({
+    order: '11',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/api/v1/test/email-preview/team-invitation',
+    methodId: '7621d1ba2020b13705c5e107db3460ac',
+    desc: 'previewTeamInvitation',
+});
+api[0].list[46].list.push({
+    order: '12',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/api/v1/test/email-preview/team-member-removed',
+    methodId: 'f77deb4839983c5868ada8bd20c2b869',
+    desc: 'previewTeamMemberRemoved',
 });
 api[0].list.push({
     alias: 'UserController',
-    order: '47',
+    order: '48',
     link: 'usercontroller',
     desc: 'UserController',
     list: []
 })
-api[0].list[46].list.push({
+api[0].list[47].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/users/profile',
     methodId: 'a661e39277999c9f6d51859946734b85',
-    desc: 'getUserProfile',
+    desc: 'Get User Profile',
 });
-api[0].list[46].list.push({
+api[0].list[47].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/users/profile/with/role',
     methodId: '0c21283d6285bd659e4423a704be3c4e',
-    desc: 'getUserProfileWithRole',
+    desc: 'Get User Profile with Role',
 });
-api[0].list[46].list.push({
+api[0].list[47].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/users/profile/update',
     methodId: 'fbbd246c81a1045601c1ec777ada9936',
-    desc: 'updateContact',
+    desc: 'Update User Profile',
+});
+api[0].list[47].list.push({
+    order: '4',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/users/me/stores',
+    methodId: 'a857407d209776312700b906f5ccb11f',
+    desc: 'Get My Stores',
+});
+api[0].list[47].list.push({
+    order: '5',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/users/me/switch-store',
+    methodId: 'a3460f4f247ef3779aedce119a1c9357',
+    desc: 'Switch Active Store',
 });
 api[0].list.push({
     alias: 'OrderController',
-    order: '48',
+    order: '49',
     link: 'order_management',
     desc: 'Order Management',
     list: []
 })
-api[0].list[47].list.push({
+api[0].list[48].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/orders',
     methodId: '8bca6265e4aba517ce0aeb6f72d333b1',
     desc: 'Get All Orders  Retrieves a paginated and filtered list of orders for an authenticated shop owner. Supports sorting by various fields, pagination, and multiple filtering criteria including search terms, order status, payment status, amount ranges, and date ranges.',
 });
-api[0].list[47].list.push({
+api[0].list[48].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/orders/{orderNumber}/show',
     methodId: '00015578a7f79090d8ec97abf7118a32',
     desc: 'Get Order by Order Number  Retrieves a single order by its order number. Order number is visible to both customers and merchants, providing a human-readable alternative to internal order IDs.',
 });
-api[0].list[47].list.push({
+api[0].list[48].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/orders/{orderId}/detail',
     methodId: '150f612186ab664c6ab4caa72ab1d5d6',
     desc: 'Get Order Detail for Merchant  Retrieves complete order details including all associated order line items for a shop owner. Provides comprehensive view necessary for order fulfillment, including item quantities, prices, and variants.',
 });
-api[0].list[47].list.push({
+api[0].list[48].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/orders/{orderId}/items',
     methodId: '5beeb8c23f5ead8f7c8be4e3430595f2',
     desc: 'Get Order Line Items  Retrieves all line items (products) associated with a specific order. Each line item includes product details, variant information, quantity ordered, and pricing.',
 });
-api[0].list[47].list.push({
+api[0].list[48].list.push({
     order: '5',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/orders/{orderId}/status',
     methodId: '5cd3387860122d0ccdf8c9b4d72f2b5b',
     desc: 'Update Order Status',
 });
-api[0].list[47].list.push({
+api[0].list[48].list.push({
     order: '6',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/orders/{orderId}/force-status',
     methodId: '6f02f14a425f4ce53cc0541f93724acd',
     desc: 'Force Update Order Status (Admin Override)  Bypasses all standard transition rules and forcibly sets the order to the given status. Use with caution — this is intended for administrative corrections only (e.g., stuck orders, data recovery, third-party sync discrepancies).',
 });
-api[0].list[47].list.push({
+api[0].list[48].list.push({
     order: '7',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/orders/merchant/stats',
     methodId: 'a4b57f9ea9d653fe52e58a76bf9dd106',
     desc: 'Get Order Statistics',
 });
-api[0].list[47].list.push({
+api[0].list[48].list.push({
     order: '8',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/orders/statuses',
@@ -1456,40 +1589,40 @@ api[0].list[47].list.push({
 });
 api[0].list.push({
     alias: 'SocialAuthController',
-    order: '49',
+    order: '50',
     link: 'socialauthcontroller',
     desc: 'SocialAuthController',
     list: []
 })
-api[0].list[48].list.push({
+api[0].list[49].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/social/google/merchant/initiate',
     methodId: '38f53e500d3aa680cb46aef13102e276',
     desc: 'Initiate Merchant Social Auth Generates a Google authorization URL for Merchants and redirects to the consent screen.  Account will be linked or a new store provisioned.',
 });
-api[0].list[48].list.push({
+api[0].list[49].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/social/google/customer/initiate',
     methodId: 'ba672c12b0f444bdc73e975d6e935c33',
     desc: 'Initiate Customer Social Auth Generates a Google authorization URL for Customers and redirects to the consent screen. Specific to the provided tenantId/store.',
 });
-api[0].list[48].list.push({
+api[0].list[49].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/social/google/callback',
     methodId: '564663d0a03ae776550fc534f56e53f7',
     desc: 'Social Auth Callback Securely processes the Google authorization code, resolving the user&apos;s role  and tenant from the state, then redirects to the storefront callback.',
 });
-api[0].list[48].list.push({
+api[0].list[49].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/social/google/merchant/verify',
     methodId: 'b7624463e7f131eb9ccb1d67f2e40a78',
     desc: 'Verify Merchant Social Token Verifies a Google ID token from a client SDK specifically for Merchant access.  Returns a session JWT upon successful verification.',
 });
-api[0].list[48].list.push({
+api[0].list[49].list.push({
     order: '5',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/auth/social/google/customer/verify',
@@ -1498,19 +1631,19 @@ api[0].list[48].list.push({
 });
 api[0].list.push({
     alias: 'ProductVariationController',
-    order: '50',
+    order: '51',
     link: 'product_variation_management_(authenticated)',
     desc: 'Product Variation Management (Authenticated)',
     list: []
 })
-api[0].list[49].list.push({
+api[0].list[50].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/variation/{variationId}',
     methodId: '862c14c3082787c05908efdb63961536',
     desc: 'Update Product Variation',
 });
-api[0].list[49].list.push({
+api[0].list[50].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/variation/add',
@@ -1519,12 +1652,12 @@ api[0].list[49].list.push({
 });
 api[0].list.push({
     alias: 'BankController',
-    order: '51',
+    order: '52',
     link: 'bankcontroller',
     desc: 'BankController',
     list: []
 })
-api[0].list[50].list.push({
+api[0].list[51].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/banks',
@@ -1533,12 +1666,12 @@ api[0].list[50].list.push({
 });
 api[0].list.push({
     alias: 'PaymentMethodController',
-    order: '52',
+    order: '53',
     link: 'payment_method_management',
     desc: 'Payment Method Management',
     list: []
 })
-api[0].list[51].list.push({
+api[0].list[52].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/payment-methods',
@@ -1546,27 +1679,55 @@ api[0].list[51].list.push({
     desc: 'List Payment Methods.',
 });
 api[0].list.push({
+    alias: 'TenantMemberController',
+    order: '54',
+    link: 'team_management_apis',
+    desc: 'Team Management APIs',
+    list: []
+})
+api[0].list[53].list.push({
+    order: '1',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/tenants/{tenantId}/members',
+    methodId: '68e5a7734fc627709179ea598b6ffded',
+    desc: 'List Tenant Members',
+});
+api[0].list[53].list.push({
+    order: '2',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/tenants/{tenantId}/members/{userId}',
+    methodId: '3b7d112bf4c0c81e42875fcf764d541b',
+    desc: 'Remove Member from Store',
+});
+api[0].list[53].list.push({
+    order: '3',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/tenants/{tenantId}/members/{userId}/roles',
+    methodId: 'de6ab64220b024d8d8cd0e21f89caabc',
+    desc: 'Update Member Roles',
+});
+api[0].list.push({
     alias: 'TenantCategoryController',
-    order: '53',
+    order: '55',
     link: 'tenant_category_management',
     desc: 'Tenant Category Management',
     list: []
 })
-api[0].list[52].list.push({
+api[0].list[54].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/tenant-categories',
     methodId: '5c839cdbe8e243af0732e3083b66d902',
     desc: 'List Tenant Categories.',
 });
-api[0].list[52].list.push({
+api[0].list[54].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/tenant-categories',
     methodId: 'c1dc2db691667f40a855be6d79f38964',
     desc: 'Create Tenant Category.',
 });
-api[0].list[52].list.push({
+api[0].list[54].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/tenant-categories/{categoryId}',
@@ -1575,12 +1736,12 @@ api[0].list[52].list.push({
 });
 api[0].list.push({
     alias: 'LocalGovernmentController',
-    order: '54',
+    order: '56',
     link: 'localgovernmentcontroller',
     desc: 'LocalGovernmentController',
     list: []
 })
-api[0].list[53].list.push({
+api[0].list[55].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/local-governments/{stateId}',
@@ -1589,12 +1750,12 @@ api[0].list[53].list.push({
 });
 api[0].list.push({
     alias: 'NaturalLanguageQueryController',
-    order: '55',
+    order: '57',
     link: 'public_rest_controller_for_processing_natural_language_query_(nlq)_requests. allows_merchants_to_query_dashboard_stats_using_plain_english_phrases.  flow: 1._receives_natural_language_&amp;quot;query&amp;quot;_(e.g._&amp;quot;how_are_my_sales_today?&amp;quot;). 2._delegates_to_{@link_naturallanguagestatparser}_to_translate_the_text_into_structured_dates. 3._uses_{@link_statsqueryservice}_to_fetch_actual_business_metrics_for_those_dates. 4._returns_both_the_interpreted_range_and_the_resulting_statistics_data.',
     desc: 'Public REST Controller for processing Natural Language Query (NLQ) requests. Allows merchants to query dashboard stats using plain English phrases.  Flow: 1. Receives natural language &amp;quot;query&amp;quot; (e.g. &amp;quot;how are my sales today?&amp;quot;). 2. Delegates to {@link NaturalLanguageStatParser} to translate the text into structured dates. 3. Uses {@link StatsQueryService} to fetch actual business metrics for those dates. 4. Returns both the interpreted range and the resulting statistics data.',
     list: []
 })
-api[0].list[54].list.push({
+api[0].list[56].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/stats/natural-query',
@@ -1603,12 +1764,12 @@ api[0].list[54].list.push({
 });
 api[0].list.push({
     alias: 'AppTokenController',
-    order: '56',
+    order: '58',
     link: 'app_token_management',
     desc: 'App Token Management',
     list: []
 })
-api[0].list[55].list.push({
+api[0].list[57].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/verify/merchant/reset-password-token',
@@ -1616,34 +1777,69 @@ api[0].list[55].list.push({
     desc: 'Verify Merchant Reset Password Token',
 });
 api[0].list.push({
+    alias: 'TenantInvitationController',
+    order: '59',
+    link: 'tenant_member_invitation_management_apis',
+    desc: 'Tenant Member Invitation Management APIs',
+    list: []
+})
+api[0].list[58].list.push({
+    order: '1',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/tenants/invitations/{token}/accept',
+    methodId: 'bf9935c88315fbc4ef76e3361a0889cd',
+    desc: 'Accept Invitation',
+});
+api[0].list[58].list.push({
+    order: '2',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/tenants/invitations/{invitationId}',
+    methodId: '540ea4dfd1b3eb5c1ae3a92a0b96edc2',
+    desc: 'Cancel Invitation',
+});
+api[0].list[58].list.push({
+    order: '3',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/tenants/{tenantId}/invitations',
+    methodId: '73aec699fd9e0c0fc82b5f6d0a226527',
+    desc: 'List Store Invitations',
+});
+api[0].list[58].list.push({
+    order: '4',
+    deprecated: 'false',
+    url: 'https://api.shopsynch.com/v1/tenants/{tenantId}/invite',
+    methodId: '3767d30f0bf67bfc65cdde5cd4b22171',
+    desc: 'Invite User to Store',
+});
+api[0].list.push({
     alias: 'ForgotPasswordController',
-    order: '57',
+    order: '60',
     link: 'forgot_password_management_(unauthenticated)',
     desc: 'Forgot Password Management (Unauthenticated)',
     list: []
 })
-api[0].list[56].list.push({
+api[0].list[59].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/password/forgot/request/customer',
     methodId: 'aa6359793293d4a66414ce920bbc269f',
     desc: 'Initiate Forgot Password for Customer',
 });
-api[0].list[56].list.push({
+api[0].list[59].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/password/forgot/request/merchant',
     methodId: 'c3aa16cb33fa000d6661c0b6e8b631d4',
     desc: 'Initiate Forgot Password for Merchant',
 });
-api[0].list[56].list.push({
+api[0].list[59].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/password/reset/customer',
     methodId: '8bc5757cbe0a3235b2afebf56f283778',
     desc: 'Reset Customer Password.',
 });
-api[0].list[56].list.push({
+api[0].list[59].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/password/reset/merchant',
@@ -1652,12 +1848,12 @@ api[0].list[56].list.push({
 });
 api[0].list.push({
     alias: 'PaystackWebhookController',
-    order: '58',
+    order: '61',
     link: 'paystackwebhookcontroller',
     desc: 'PaystackWebhookController',
     list: []
 })
-api[0].list[57].list.push({
+api[0].list[60].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/webhooks/paystack',
@@ -1666,61 +1862,61 @@ api[0].list[57].list.push({
 });
 api[0].list.push({
     alias: 'ProductController',
-    order: '59',
+    order: '62',
     link: 'product_management',
     desc: 'Product Management',
     list: []
 })
-api[0].list[58].list.push({
+api[0].list[61].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products',
     methodId: '602c60e0c6c449b301cfcb1b3c58b0ac',
     desc: 'Get All Products',
 });
-api[0].list[58].list.push({
+api[0].list[61].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products',
     methodId: 'f7b551eea448d2c97ee531aae755ec5e',
     desc: 'Create Product',
 });
-api[0].list[58].list.push({
+api[0].list[61].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/{productId}',
     methodId: '75a1f711dba574c2e2c560e4d2fe0ff1',
     desc: 'Update Product',
 });
-api[0].list[58].list.push({
+api[0].list[61].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/{productId}',
     methodId: '131ab3904dc5fc1911696814c4b10bf1',
     desc: 'Get Product Details',
 });
-api[0].list[58].list.push({
+api[0].list[61].list.push({
     order: '5',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/similar/by/category/{productId}',
     methodId: '1241fe80ab493f3253f690674a08dc3d',
     desc: 'Get Similar Products',
 });
-api[0].list[58].list.push({
+api[0].list[61].list.push({
     order: '6',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/{productId}',
     methodId: '182d6afa6b55185cfebf4072ad7a6e63',
     desc: 'Delete Product',
 });
-api[0].list[58].list.push({
+api[0].list[61].list.push({
     order: '7',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/{productId}/rating',
     methodId: '86bc1c589aae09219c98c3af1c3fe522',
     desc: 'Get Product Rating  Retrieves the average customer rating for a product calculated from all customer reviews. Rating provides social proof and helps customers make purchase decisions.',
 });
-api[0].list[58].list.push({
+api[0].list[61].list.push({
     order: '8',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/products/top-selling',
@@ -1729,12 +1925,12 @@ api[0].list[58].list.push({
 });
 api[0].list.push({
     alias: 'CartSessionController',
-    order: '60',
+    order: '63',
     link: 'cartsessioncontroller',
     desc: 'CartSessionController',
     list: []
 })
-api[0].list[59].list.push({
+api[0].list[62].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/generate/session/id',
@@ -1743,40 +1939,40 @@ api[0].list[59].list.push({
 });
 api[0].list.push({
     alias: 'AddressController',
-    order: '61',
+    order: '64',
     link: 'addresscontroller',
     desc: 'AddressController',
     list: []
 })
-api[0].list[60].list.push({
+api[0].list[63].list.push({
     order: '1',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/addresses',
     methodId: '35402a4e699148ebbd8931d0fd1d95e4',
     desc: 'getUserAddresses',
 });
-api[0].list[60].list.push({
+api[0].list[63].list.push({
     order: '2',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/addresses',
     methodId: '7b7a36375a116d8022e7ec5d1851c951',
     desc: 'store',
 });
-api[0].list[60].list.push({
+api[0].list[63].list.push({
     order: '3',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/addresses/{addressId}',
     methodId: '1eb3ebd96d3d60f2985445c0317ec8f7',
     desc: 'updateAddress',
 });
-api[0].list[60].list.push({
+api[0].list[63].list.push({
     order: '4',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/addresses/{addressId}',
     methodId: '9bebaa479b9b23eb4ff5a8e2e88d9130',
     desc: 'deleteAddress',
 });
-api[0].list[60].list.push({
+api[0].list[63].list.push({
     order: '5',
     deprecated: 'false',
     url: 'https://api.shopsynch.com/v1/addresses/{addressId}/default',
@@ -1785,38 +1981,52 @@ api[0].list[60].list.push({
 });
 api[0].list.push({
     alias: 'dict',
-    order: '62',
+    order: '65',
     link: 'dict_list',
     desc: 'Data Dictionaries',
     list: []
 })
-api[0].list[61].list.push({
+api[0].list[64].list.push({
     order: '1',
     deprecated: 'false',
     url: '',
     methodId: '',
     desc: 'Order Status Codes',
 });
-api[0].list[61].list.push({
+api[0].list[64].list.push({
     order: '2',
     deprecated: 'false',
     url: '',
     methodId: '',
     desc: 'Payment Statuses',
 });
-api[0].list[61].list.push({
+api[0].list[64].list.push({
     order: '3',
     deprecated: 'false',
     url: '',
     methodId: '',
     desc: 'Payment Gateways',
 });
-api[0].list[61].list.push({
+api[0].list[64].list.push({
     order: '4',
     deprecated: 'false',
     url: '',
     methodId: '',
     desc: 'Discount Types',
+});
+api[0].list[64].list.push({
+    order: '5',
+    deprecated: 'false',
+    url: '',
+    methodId: '',
+    desc: 'Notification Types',
+});
+api[0].list[64].list.push({
+    order: '6',
+    deprecated: 'false',
+    url: '',
+    methodId: '',
+    desc: 'Notification Channels',
 });
 document.onkeydown = keyDownSearch;
 function keyDownSearch(e) {

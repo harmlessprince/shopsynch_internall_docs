@@ -136,8 +136,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:57:53"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:57:53"|
+|└─createdAt|string|No comments found.|-|"2026-04-08 12:43:54"|
+|└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:54"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -165,8 +165,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-07 10:57:53",
-    "updatedAt": "2026-04-07 10:57:53"
+    "createdAt": "2026-04-08 12:43:53",
+    "updatedAt": "2026-04-08 12:43:54"
   },
   "message": "",
   "status": true
@@ -238,8 +238,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:57:53"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:57:53"|
+|└─createdAt|string|No comments found.|-|"2026-04-08 12:43:54"|
+|└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:54"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -267,8 +267,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-07 10:57:53",
-    "updatedAt": "2026-04-07 10:57:53"
+    "createdAt": "2026-04-08 12:43:54",
+    "updatedAt": "2026-04-08 12:43:54"
   },
   "message": "",
   "status": true
@@ -322,8 +322,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:57:53"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:57:53"|
+|└─createdAt|string|No comments found.|-|"2026-04-08 12:43:54"|
+|└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:54"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -351,8 +351,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-07 10:57:53",
-    "updatedAt": "2026-04-07 10:57:53"
+    "createdAt": "2026-04-08 12:43:54",
+    "updatedAt": "2026-04-08 12:43:54"
   },
   "message": "",
   "status": true
@@ -410,8 +410,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:57:53"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:57:53"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-08 12:43:54"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:54"|
 |└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
@@ -442,8 +442,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
         ],
         "status": "",
         "metadata": {},
-        "createdAt": "2026-04-07 10:57:53",
-        "updatedAt": "2026-04-07 10:57:53"
+        "createdAt": "2026-04-08 12:43:54",
+        "updatedAt": "2026-04-08 12:43:54"
       }
     ],
     "nextCursor": "yyyy-MM-dd HH:mm:ss"
@@ -501,8 +501,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:57:53"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:57:53"|
+|└─createdAt|string|No comments found.|-|"2026-04-08 12:43:54"|
+|└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:54"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -531,8 +531,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
       ],
       "status": "",
       "metadata": {},
-      "createdAt": "2026-04-07 10:57:53",
-      "updatedAt": "2026-04-07 10:57:53"
+      "createdAt": "2026-04-08 12:43:54",
+      "updatedAt": "2026-04-08 12:43:54"
     }
   ],
   "message": "",
@@ -792,16 +792,27 @@ The response includes orders in PUBLISHED status.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|false|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|false|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|NEW: Longer description for UI tooltips.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|false|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|false|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|false|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|false|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
@@ -889,16 +900,27 @@ The response includes orders in PUBLISHED status.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|false|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|false|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|NEW: Longer description for UI tooltips.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|false|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|false|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|false|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|false|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
@@ -983,16 +1005,30 @@ The response includes orders in PUBLISHED status.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|false|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|false|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|false|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|false|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|false|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|false|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|false|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|false|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|false|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|false|No comments found.|-||
+|└─userId|string|false|No comments found.|-||
 |roleResource|object|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─slug|string|false|No comments found.|-||
@@ -1000,20 +1036,29 @@ The response includes orders in PUBLISHED status.
 |└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|false|No comments found.|-||
-|└─name|string|false|No comments found.|-||
+|└─name|string|false|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|└─description|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
-|└─slug|string|false|No comments found.|-||
-|└─permissions|array|false|No comments found.|-||
+|└─slug|string|false|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|└─permissions|array|false|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|false|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|false|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|NEW: Longer description for UI tooltips.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|false|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
+|└─type|enum|false|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|└─tenantId|string|false|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|└─permissionIds|array|false|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|└─merchantAssignable|boolean|false|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/customer-orders?page=0&limit=100&sortField=CREATED_AT&sortDir=DESC&orderNumber=&search=&status=true&paymentStatus=&dateFrom=&dateTo=&minAmount=0.0&maxAmount=0.0&customerId=&productId=&authCustomer=&createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&googleId=&password=&notificationsEnabled=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&name=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&ownerIdDocumentUrl=&ownerSelfieUrl=&cacDocumentUrl=&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&pendingApproval=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&slug=&primaryColor=&accentColor=&fontFamily=&heroHeadline=&heroCtaText=&heroBackgroundImage=&instagramUrl=&facebookUrl=&twitterUrl=&youtubeUrl=&linkedinUrl=&tiktokUrl=&googleOauthRedirectUrl=&googleOauthErrorUrl=&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl='
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/customer-orders?page=0&limit=100&sortField=CREATED_AT&sortDir=DESC&orderNumber=&search=&status=true&paymentStatus=&dateFrom=&dateTo=&minAmount=0.0&maxAmount=0.0&customerId=&productId=&authCustomer=&createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&googleId=&password=&notificationsEnabled=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&name=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&ownerIdDocumentUrl=&ownerSelfieUrl=&cacDocumentUrl=&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&pendingApproval=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&slug=&primaryColor=&accentColor=&fontFamily=&heroHeadline=&heroCtaText=&heroBackgroundImage=&instagramUrl=&facebookUrl=&twitterUrl=&youtubeUrl=&linkedinUrl=&tiktokUrl=&googleOauthRedirectUrl=&googleOauthErrorUrl=&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&description=&displayName=&category=&merchantVisible=true&type=SYSTEM&permissionIds=""","""&merchantAssignable=true&roleId=&roleName=&tenantIds=""","""&lastActiveTenantId=&twoFactorEnabled=true&userId='
 ```
 **Response-fields:**
 
@@ -1260,16 +1305,27 @@ This API retrieves a list of items in a specific order.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|false|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|false|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|NEW: Longer description for UI tooltips.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|false|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|false|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|false|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|false|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
@@ -1357,16 +1413,27 @@ This API retrieves a list of items in a specific order.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|false|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|false|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|NEW: Longer description for UI tooltips.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|false|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|false|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|false|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|false|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
@@ -1451,16 +1518,30 @@ This API retrieves a list of items in a specific order.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|false|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|false|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|false|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|false|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|false|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|false|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|false|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|false|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|false|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|false|No comments found.|-||
+|└─userId|string|false|No comments found.|-||
 |roleResource|object|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─slug|string|false|No comments found.|-||
@@ -1468,20 +1549,29 @@ This API retrieves a list of items in a specific order.
 |└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|false|No comments found.|-||
-|└─name|string|false|No comments found.|-||
+|└─name|string|false|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|└─description|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
-|└─slug|string|false|No comments found.|-||
-|└─permissions|array|false|No comments found.|-||
+|└─slug|string|false|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|└─permissions|array|false|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|false|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|false|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|NEW: Longer description for UI tooltips.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|false|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
+|└─type|enum|false|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|└─tenantId|string|false|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|└─permissionIds|array|false|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|└─merchantAssignable|boolean|false|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/customer-orders/{orderId}/items?createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&googleId=&password=&status=true&notificationsEnabled=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&name=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&ownerIdDocumentUrl=&ownerSelfieUrl=&cacDocumentUrl=&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&pendingApproval=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&slug=&primaryColor=&accentColor=&fontFamily=&heroHeadline=&heroCtaText=&heroBackgroundImage=&instagramUrl=&facebookUrl=&twitterUrl=&youtubeUrl=&linkedinUrl=&tiktokUrl=&googleOauthRedirectUrl=&googleOauthErrorUrl=&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl='
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/customer-orders/{orderId}/items?createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&googleId=&password=&status=true&notificationsEnabled=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&name=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&ownerIdDocumentUrl=&ownerSelfieUrl=&cacDocumentUrl=&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&pendingApproval=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&slug=&primaryColor=&accentColor=&fontFamily=&heroHeadline=&heroCtaText=&heroBackgroundImage=&instagramUrl=&facebookUrl=&twitterUrl=&youtubeUrl=&linkedinUrl=&tiktokUrl=&googleOauthRedirectUrl=&googleOauthErrorUrl=&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&description=&displayName=&category=&merchantVisible=true&type=SYSTEM&permissionIds=""","""&merchantAssignable=true&roleId=&roleName=&tenantIds=""","""&lastActiveTenantId=&twoFactorEnabled=true&userId='
 ```
 **Response-fields:**
 
@@ -1534,8 +1624,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:01"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:01"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-08 12:43:55"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:55"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -1598,8 +1688,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-07 10:58:01",
-        "updatedAt": "2026-04-07 10:58:01"
+        "createdAt": "2026-04-08 12:43:55",
+        "updatedAt": "2026-04-08 12:43:55"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -3051,8 +3141,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:12"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:12"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-08 12:43:57"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:57"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -3076,8 +3166,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-07 10:58:12",
-        "updatedAt": "2026-04-07 10:58:12"
+        "createdAt": "2026-04-08 12:43:57",
+        "updatedAt": "2026-04-08 12:43:57"
       },
       "product": {
         "id": "",
@@ -3141,8 +3231,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:12"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:12"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-08 12:43:57"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:57"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -3166,8 +3256,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-07 10:58:12",
-        "updatedAt": "2026-04-07 10:58:12"
+        "createdAt": "2026-04-08 12:43:57",
+        "updatedAt": "2026-04-08 12:43:57"
       },
       "product": {
         "id": "",
@@ -3235,8 +3325,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:13"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:13"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-08 12:43:57"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:57"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -3259,8 +3349,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-07 10:58:13",
-      "updatedAt": "2026-04-07 10:58:13"
+      "createdAt": "2026-04-08 12:43:57",
+      "updatedAt": "2026-04-08 12:43:57"
     },
     "product": {
       "id": "",
@@ -3769,6 +3859,13 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currentMode|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
@@ -3786,6 +3883,14 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
       "fullName": "",
       "phoneNumber": "",
       "address": "",
+      "role": {
+        "name": "",
+        "slug": ""
+      },
+      "merchantId": "",
+      "tenantId": "",
+      "lastActiveTenantId": "",
+      "currentMode": "",
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     },
     "token": "",
@@ -3835,6 +3940,13 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currentMode|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
@@ -3852,6 +3964,14 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
       "fullName": "",
       "phoneNumber": "",
       "address": "",
+      "role": {
+        "name": "",
+        "slug": ""
+      },
+      "merchantId": "",
+      "tenantId": "",
+      "lastActiveTenantId": "",
+      "currentMode": "",
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     },
     "token": "",
@@ -3910,8 +4030,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:03"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:03"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-08 12:43:55"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:55"|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
 |└─expiresIn|int64|No comments found.|-|0|
@@ -3929,8 +4049,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-07 10:58:03",
-      "updatedAt": "2026-04-07 10:58:03"
+      "createdAt": "2026-04-08 12:43:55",
+      "updatedAt": "2026-04-08 12:43:55"
     },
     "token": "",
     "refreshToken": "",
@@ -3986,8 +4106,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:03"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:03"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-08 12:43:55"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:55"|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
 |└─expiresIn|int64|No comments found.|-|0|
@@ -4005,8 +4125,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-07 10:58:03",
-      "updatedAt": "2026-04-07 10:58:03"
+      "createdAt": "2026-04-08 12:43:55",
+      "updatedAt": "2026-04-08 12:43:55"
     },
     "token": "",
     "refreshToken": "",
@@ -4066,8 +4186,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:16"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:16"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-08 12:43:58"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:58"|
 |└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
@@ -4084,8 +4204,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-07 10:58:16",
-        "updatedAt": "2026-04-07 10:58:16"
+        "createdAt": "2026-04-08 12:43:58",
+        "updatedAt": "2026-04-08 12:43:58"
       }
     ],
     "nextCursor": "yyyy-MM-dd HH:mm:ss"
@@ -4134,8 +4254,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:16"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:16"|
+|└─createdAt|string|No comments found.|-|"2026-04-08 12:43:58"|
+|└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:58"|
 
 **Response-example:**
 ```json
@@ -4149,8 +4269,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-07 10:58:16",
-    "updatedAt": "2026-04-07 10:58:16"
+    "createdAt": "2026-04-08 12:43:58",
+    "updatedAt": "2026-04-08 12:43:58"
   }
 }
 ```
@@ -4197,8 +4317,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:16"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:16"|
+|└─createdAt|string|No comments found.|-|"2026-04-08 12:43:58"|
+|└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:58"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -4212,8 +4332,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-07 10:58:16",
-    "updatedAt": "2026-04-07 10:58:16"
+    "createdAt": "2026-04-08 12:43:58",
+    "updatedAt": "2026-04-08 12:43:58"
   },
   "message": "",
   "status": true
@@ -4259,8 +4379,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:16"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:16"|
+|└─createdAt|string|No comments found.|-|"2026-04-08 12:43:58"|
+|└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:58"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -4274,8 +4394,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-07 10:58:16",
-    "updatedAt": "2026-04-07 10:58:16"
+    "createdAt": "2026-04-08 12:43:58",
+    "updatedAt": "2026-04-08 12:43:58"
   },
   "message": "",
   "status": true
@@ -4321,8 +4441,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:16"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:16"|
+|└─createdAt|string|No comments found.|-|"2026-04-08 12:43:58"|
+|└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:58"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -4336,8 +4456,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-07 10:58:16",
-    "updatedAt": "2026-04-07 10:58:16"
+    "createdAt": "2026-04-08 12:43:58",
+    "updatedAt": "2026-04-08 12:43:58"
   },
   "message": "",
   "status": true
@@ -4395,8 +4515,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:16"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:16"|
+|└─createdAt|string|No comments found.|-|"2026-04-08 12:43:58"|
+|└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:58"|
 
 **Response-example:**
 ```json
@@ -4410,8 +4530,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-07 10:58:16",
-    "updatedAt": "2026-04-07 10:58:16"
+    "createdAt": "2026-04-08 12:43:58",
+    "updatedAt": "2026-04-08 12:43:58"
   }
 }
 ```
@@ -4465,8 +4585,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:16"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:16"|
+|└─createdAt|string|No comments found.|-|"2026-04-08 12:43:58"|
+|└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:58"|
 
 **Response-example:**
 ```json
@@ -4480,8 +4600,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-07 10:58:16",
-    "updatedAt": "2026-04-07 10:58:16"
+    "createdAt": "2026-04-08 12:43:58",
+    "updatedAt": "2026-04-08 12:43:58"
   }
 }
 ```
@@ -4626,16 +4746,27 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|NEW: Longer description for UI tooltips.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
@@ -4723,10 +4854,17 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
@@ -4790,12 +4928,21 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthErrorUrl|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
 
 **Response-example:**
 ```json
@@ -4909,6 +5056,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
           "updatedAt": "yyyy-MM-dd HH:mm:ss",
           "id": "",
           "name": "",
+          "description": "",
           "status": true,
           "slug": "",
           "permissions": [
@@ -4917,11 +5065,23 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
               "updatedAt": "yyyy-MM-dd HH:mm:ss",
               "id": "",
               "name": "",
+              "displayName": "",
+              "category": "",
+              "description": "",
               "status": true,
+              "merchantVisible": true,
               "slug": ""
             }
-          ]
+          ],
+          "type": "SYSTEM",
+          "tenantId": "",
+          "permissionIds": [
+            ""
+          ],
+          "merchantAssignable": true
         },
+        "roleId": "",
+        "roleName": "",
         "tenant": {
           "createdAt": "yyyy-MM-dd HH:mm:ss",
           "updatedAt": "yyyy-MM-dd HH:mm:ss",
@@ -5016,14 +5176,23 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
               "updatedAt": "yyyy-MM-dd HH:mm:ss",
               "id": "",
               "name": "",
+              "description": "",
               "status": true,
               "slug": "",
               "permissions": [
                 {
                   "$ref": "..."
                 }
-              ]
+              ],
+              "type": "SYSTEM",
+              "tenantId": "",
+              "permissionIds": [
+                ""
+              ],
+              "merchantAssignable": true
             },
+            "roleId": "",
+            "roleName": "",
             "tenant": {
               "createdAt": "yyyy-MM-dd HH:mm:ss",
               "updatedAt": "yyyy-MM-dd HH:mm:ss",
@@ -5094,17 +5263,30 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
               "createdBy": "",
               "user": {
                 "$ref": "..."
-              }
+              },
+              "userId": ""
             },
+            "tenantIds": [
+              ""
+            ],
+            "lastActiveTenantId": "",
+            "twoFactorEnabled": true,
             "notificationsEnabled": true,
             "googleAccount": true,
             "googleId": ""
-          }
+          },
+          "userId": ""
         },
+        "tenantIds": [
+          ""
+        ],
+        "lastActiveTenantId": "",
+        "twoFactorEnabled": true,
         "notificationsEnabled": true,
         "googleAccount": true,
         "googleId": ""
-      }
+      },
+      "userId": ""
     }
   }
 }
@@ -5237,16 +5419,27 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|NEW: Longer description for UI tooltips.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
@@ -5334,10 +5527,17 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
@@ -5401,12 +5601,21 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthErrorUrl|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
 
 **Response-example:**
 ```json
@@ -5521,6 +5730,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
             "updatedAt": "yyyy-MM-dd HH:mm:ss",
             "id": "",
             "name": "",
+            "description": "",
             "status": true,
             "slug": "",
             "permissions": [
@@ -5529,11 +5739,23 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
                 "updatedAt": "yyyy-MM-dd HH:mm:ss",
                 "id": "",
                 "name": "",
+                "displayName": "",
+                "category": "",
+                "description": "",
                 "status": true,
+                "merchantVisible": true,
                 "slug": ""
               }
-            ]
+            ],
+            "type": "SYSTEM",
+            "tenantId": "",
+            "permissionIds": [
+              ""
+            ],
+            "merchantAssignable": true
           },
+          "roleId": "",
+          "roleName": "",
           "tenant": {
             "createdAt": "yyyy-MM-dd HH:mm:ss",
             "updatedAt": "yyyy-MM-dd HH:mm:ss",
@@ -5628,14 +5850,23 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
                 "updatedAt": "yyyy-MM-dd HH:mm:ss",
                 "id": "",
                 "name": "",
+                "description": "",
                 "status": true,
                 "slug": "",
                 "permissions": [
                   {
                     "$ref": "..."
                   }
-                ]
+                ],
+                "type": "SYSTEM",
+                "tenantId": "",
+                "permissionIds": [
+                  ""
+                ],
+                "merchantAssignable": true
               },
+              "roleId": "",
+              "roleName": "",
               "tenant": {
                 "createdAt": "yyyy-MM-dd HH:mm:ss",
                 "updatedAt": "yyyy-MM-dd HH:mm:ss",
@@ -5706,17 +5937,30 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
                 "createdBy": "",
                 "user": {
                   "$ref": "..."
-                }
+                },
+                "userId": ""
               },
+              "tenantIds": [
+                ""
+              ],
+              "lastActiveTenantId": "",
+              "twoFactorEnabled": true,
               "notificationsEnabled": true,
               "googleAccount": true,
               "googleId": ""
-            }
+            },
+            "userId": ""
           },
+          "tenantIds": [
+            ""
+          ],
+          "lastActiveTenantId": "",
+          "twoFactorEnabled": true,
           "notificationsEnabled": true,
           "googleAccount": true,
           "googleId": ""
-        }
+        },
+        "userId": ""
       }
     }
   ]
@@ -5856,16 +6100,27 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|NEW: Longer description for UI tooltips.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
@@ -5953,10 +6208,17 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
@@ -6020,12 +6282,21 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthErrorUrl|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
 
 **Response-example:**
 ```json
@@ -6139,6 +6410,7 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
           "updatedAt": "yyyy-MM-dd HH:mm:ss",
           "id": "",
           "name": "",
+          "description": "",
           "status": true,
           "slug": "",
           "permissions": [
@@ -6147,11 +6419,23 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
               "updatedAt": "yyyy-MM-dd HH:mm:ss",
               "id": "",
               "name": "",
+              "displayName": "",
+              "category": "",
+              "description": "",
               "status": true,
+              "merchantVisible": true,
               "slug": ""
             }
-          ]
+          ],
+          "type": "SYSTEM",
+          "tenantId": "",
+          "permissionIds": [
+            ""
+          ],
+          "merchantAssignable": true
         },
+        "roleId": "",
+        "roleName": "",
         "tenant": {
           "createdAt": "yyyy-MM-dd HH:mm:ss",
           "updatedAt": "yyyy-MM-dd HH:mm:ss",
@@ -6246,14 +6530,23 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
               "updatedAt": "yyyy-MM-dd HH:mm:ss",
               "id": "",
               "name": "",
+              "description": "",
               "status": true,
               "slug": "",
               "permissions": [
                 {
                   "$ref": "..."
                 }
-              ]
+              ],
+              "type": "SYSTEM",
+              "tenantId": "",
+              "permissionIds": [
+                ""
+              ],
+              "merchantAssignable": true
             },
+            "roleId": "",
+            "roleName": "",
             "tenant": {
               "createdAt": "yyyy-MM-dd HH:mm:ss",
               "updatedAt": "yyyy-MM-dd HH:mm:ss",
@@ -6324,17 +6617,30 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
               "createdBy": "",
               "user": {
                 "$ref": "..."
-              }
+              },
+              "userId": ""
             },
+            "tenantIds": [
+              ""
+            ],
+            "lastActiveTenantId": "",
+            "twoFactorEnabled": true,
             "notificationsEnabled": true,
             "googleAccount": true,
             "googleId": ""
-          }
+          },
+          "userId": ""
         },
+        "tenantIds": [
+          ""
+        ],
+        "lastActiveTenantId": "",
+        "twoFactorEnabled": true,
         "notificationsEnabled": true,
         "googleAccount": true,
         "googleId": ""
-      }
+      },
+      "userId": ""
     }
   }
 }
@@ -6473,16 +6779,27 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|NEW: Longer description for UI tooltips.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
@@ -6570,10 +6887,17 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
@@ -6637,12 +6961,21 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthErrorUrl|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
 
 **Response-example:**
 ```json
@@ -6756,6 +7089,7 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
           "updatedAt": "yyyy-MM-dd HH:mm:ss",
           "id": "",
           "name": "",
+          "description": "",
           "status": true,
           "slug": "",
           "permissions": [
@@ -6764,11 +7098,23 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
               "updatedAt": "yyyy-MM-dd HH:mm:ss",
               "id": "",
               "name": "",
+              "displayName": "",
+              "category": "",
+              "description": "",
               "status": true,
+              "merchantVisible": true,
               "slug": ""
             }
-          ]
+          ],
+          "type": "SYSTEM",
+          "tenantId": "",
+          "permissionIds": [
+            ""
+          ],
+          "merchantAssignable": true
         },
+        "roleId": "",
+        "roleName": "",
         "tenant": {
           "createdAt": "yyyy-MM-dd HH:mm:ss",
           "updatedAt": "yyyy-MM-dd HH:mm:ss",
@@ -6863,14 +7209,23 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
               "updatedAt": "yyyy-MM-dd HH:mm:ss",
               "id": "",
               "name": "",
+              "description": "",
               "status": true,
               "slug": "",
               "permissions": [
                 {
                   "$ref": "..."
                 }
-              ]
+              ],
+              "type": "SYSTEM",
+              "tenantId": "",
+              "permissionIds": [
+                ""
+              ],
+              "merchantAssignable": true
             },
+            "roleId": "",
+            "roleName": "",
             "tenant": {
               "createdAt": "yyyy-MM-dd HH:mm:ss",
               "updatedAt": "yyyy-MM-dd HH:mm:ss",
@@ -6941,17 +7296,30 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
               "createdBy": "",
               "user": {
                 "$ref": "..."
-              }
+              },
+              "userId": ""
             },
+            "tenantIds": [
+              ""
+            ],
+            "lastActiveTenantId": "",
+            "twoFactorEnabled": true,
             "notificationsEnabled": true,
             "googleAccount": true,
             "googleId": ""
-          }
+          },
+          "userId": ""
         },
+        "tenantIds": [
+          ""
+        ],
+        "lastActiveTenantId": "",
+        "twoFactorEnabled": true,
         "notificationsEnabled": true,
         "googleAccount": true,
         "googleId": ""
-      }
+      },
+      "userId": ""
     }
   }
 }
@@ -7564,11 +7932,12 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### updateVariantGroup
@@ -7684,11 +8053,12 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### removeVariantGroup
@@ -7795,11 +8165,12 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 |└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### addSku
@@ -7926,11 +8297,12 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### updateSku
@@ -8049,11 +8421,12 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### removeSku
@@ -8161,11 +8534,12 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 |└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ## Customer Authentication
@@ -8219,8 +8593,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:02"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:02"|
+|└─createdAt|string|No comments found.|-|"2026-04-08 12:43:55"|
+|└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:55"|
 
 **Response-example:**
 ```json
@@ -8234,8 +8608,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-07 10:58:02",
-    "updatedAt": "2026-04-07 10:58:02"
+    "createdAt": "2026-04-08 12:43:55",
+    "updatedAt": "2026-04-08 12:43:55"
   }
 }
 ```
@@ -8280,8 +8654,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:02"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:02"|
+|└─createdAt|string|No comments found.|-|"2026-04-08 12:43:55"|
+|└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:55"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -8296,8 +8670,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-07 10:58:02",
-    "updatedAt": "2026-04-07 10:58:02"
+    "createdAt": "2026-04-08 12:43:55",
+    "updatedAt": "2026-04-08 12:43:55"
   },
   "token": "",
   "refreshToken": "",
@@ -8872,8 +9246,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:15"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:15"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-08 12:43:58"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:58"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactInformation|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
@@ -8956,8 +9330,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:15"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:15"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-08 12:43:58"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:58"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─tenant|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tradingName|string|No comments found.|-||
@@ -9012,8 +9386,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-07 10:58:15",
-        "updatedAt": "2026-04-07 10:58:15"
+        "createdAt": "2026-04-08 12:43:58",
+        "updatedAt": "2026-04-08 12:43:58"
       },
       "contactInformation": {
         "firstName": "",
@@ -9111,8 +9485,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
           "phoneNumber": "",
           "address": "",
           "status": "",
-          "createdAt": "2026-04-07 10:58:15",
-          "updatedAt": "2026-04-07 10:58:15"
+          "createdAt": "2026-04-08 12:43:58",
+          "updatedAt": "2026-04-08 12:43:58"
         },
         "createdAt": "yyyy-MM-dd HH:mm:ss"
       }
@@ -9216,15 +9590,15 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/co
 ```
 
 ## TenantStoreController
-### Fetch Store Config
-**URL:** https://api.shopsynch.com/v1/store/{slug}
+### Retrieve Store Settings
+**URL:** https://api.shopsynch.com/v1/store/settings
 
 **Type:** GET
 
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Public endpoint to fetch high-performance store configuration by slug.
+**Description:** Authenticated endpoint for merchants to get their store settings.
 
 **Request-headers:**
 
@@ -9233,15 +9607,9 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/co
 |X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
 
 
-**Path-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|slug|string|true|No comments found.|-||
-
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/store/{slug}'
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/store/settings'
 ```
 **Response-fields:**
 
@@ -9367,7 +9735,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/st
 |linkedinUrl|string|false|No comments found.<br/>Validation[Size(max=500, min=0)]|-||
 |tiktokUrl|string|false|No comments found.<br/>Validation[Size(max=500, min=0)]|-||
 |currency|string|false|No comments found.<br/>Validation[Size(max=10, min=3)]|-||
-|subdomain|string|false|No comments found.<br/>Validation[Size(max=100, min=2)]|-||
+|subdomain|string|false|No comments found.|-||
 |timezone|string|false|No comments found.|-||
 |logoUrl|string|false|No comments found.<br/>Validation[Size(max=500, min=1)]|-||
 
@@ -9465,15 +9833,15 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 }
 ```
 
-### getStoreSettings
-**URL:** https://api.shopsynch.com/v1/store/settings
+### Fetch Store Config
+**URL:** https://api.shopsynch.com/v1/store/{slug}
 
 **Type:** GET
 
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** 
+**Description:** Public endpoint to fetch high-performance store configuration by slug.
 
 **Request-headers:**
 
@@ -9482,9 +9850,15 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
 
 
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|slug|string|true|No comments found.|-||
+
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/store/settings'
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/store/{slug}'
 ```
 **Response-fields:**
 
@@ -9573,6 +9947,50 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/st
       "errorUrl": ""
     }
   }
+}
+```
+
+### Check if slug exists
+**URL:** https://api.shopsynch.com/v1/store/check-slug/{slug}
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Public endpoint to check if a store slug is already taken.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|slug|string|true|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/store/check-slug/{slug}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|boolean|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": true
 }
 ```
 
@@ -9697,16 +10115,27 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|NEW: Longer description for UI tooltips.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
@@ -9794,10 +10223,17 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
@@ -9861,12 +10297,21 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthErrorUrl|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|No comments found.|-||
+|└─userId|string|No comments found.|-||
 
 **Response-example:**
 ```json
@@ -9967,6 +10412,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
         "updatedAt": "yyyy-MM-dd HH:mm:ss",
         "id": "",
         "name": "",
+        "description": "",
         "status": true,
         "slug": "",
         "permissions": [
@@ -9975,11 +10421,23 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
             "updatedAt": "yyyy-MM-dd HH:mm:ss",
             "id": "",
             "name": "",
+            "displayName": "",
+            "category": "",
+            "description": "",
             "status": true,
+            "merchantVisible": true,
             "slug": ""
           }
-        ]
+        ],
+        "type": "SYSTEM",
+        "tenantId": "",
+        "permissionIds": [
+          ""
+        ],
+        "merchantAssignable": true
       },
+      "roleId": "",
+      "roleName": "",
       "tenant": {
         "createdAt": "yyyy-MM-dd HH:mm:ss",
         "updatedAt": "yyyy-MM-dd HH:mm:ss",
@@ -10074,14 +10532,23 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
             "updatedAt": "yyyy-MM-dd HH:mm:ss",
             "id": "",
             "name": "",
+            "description": "",
             "status": true,
             "slug": "",
             "permissions": [
               {
                 "$ref": "..."
               }
-            ]
+            ],
+            "type": "SYSTEM",
+            "tenantId": "",
+            "permissionIds": [
+              ""
+            ],
+            "merchantAssignable": true
           },
+          "roleId": "",
+          "roleName": "",
           "tenant": {
             "createdAt": "yyyy-MM-dd HH:mm:ss",
             "updatedAt": "yyyy-MM-dd HH:mm:ss",
@@ -10152,17 +10619,30 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
             "createdBy": "",
             "user": {
               "$ref": "..."
-            }
+            },
+            "userId": ""
           },
+          "tenantIds": [
+            ""
+          ],
+          "lastActiveTenantId": "",
+          "twoFactorEnabled": true,
           "notificationsEnabled": true,
           "googleAccount": true,
           "googleId": ""
-        }
+        },
+        "userId": ""
       },
+      "tenantIds": [
+        ""
+      ],
+      "lastActiveTenantId": "",
+      "twoFactorEnabled": true,
       "notificationsEnabled": true,
       "googleAccount": true,
       "googleId": ""
-    }
+    },
+    "userId": ""
   }
 }
 ```
@@ -11099,14 +11579,30 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/no
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
+|└─notifications|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|string|No comments found.<br/>[Enum: ABANDONED_CART_MERCHANT-("ABANDONED_CART_MERCHANT","Abandoned cart notification for merchant"),ORDER_CONFIRMATION-("ORDER_CONFIRMATION","Order confirmation notification for customer"),LOW_STOCK_ALERT-("LOW_STOCK_ALERT","Low stock alert notification for merchant"),NEW_ORDER-("NEW_ORDER","New order notification for merchant"),NEW_REVIEW-("NEW_REVIEW","New review notification for merchant"),ORDER_STATUS_PENDING-("ORDER_STATUS_PENDING","Order status pending notification for customer"),ORDER_STATUS_PROCESSING-("ORDER_STATUS_PROCESSING","Order status processing notification for customer"),ORDER_STATUS_SHIPPED-("ORDER_STATUS_SHIPPED","Order status shipped notification for customer"),ORDER_STATUS_DELIVERED-("ORDER_STATUS_DELIVERED","Order status delivered notification for customer"),ORDER_STATUS_CANCELLED-("ORDER_STATUS_CANCELLED","Order status cancelled notification for customer"),ORDER_STATUS_IN_TRANSIT-("ORDER_STATUS_IN_TRANSIT","Order status in transit notification for customer"),ORDER_STATUS_FAILED-("ORDER_STATUS_FAILED","Order status failed notification for customer"),ORDER_STATUS_ABANDONED-("ORDER_STATUS_ABANDONED","Order status abandoned notification for customer"),PAYMENT_ABANDONED_MERCHANT-("PAYMENT_ABANDONED_MERCHANT","Payment abandoned notification for merchant"),PAYMENT_CONFIRMED-("PAYMENT_CONFIRMED","Payment confirmed notification for customer"),SNAPSHOT_FAILED-("SNAPSHOT_FAILED","Snapshot failed notification for merchant"),SNAPSHOT_READY-("SNAPSHOT_READY","Snapshot ready notification for merchant"),WELCOME-("WELCOME","Welcome notification for customer"),TEAM_INVITATION-("TEAM_INVITATION","Invitation to join a store as a team member"),TEAM_MEMBER_JOINED-("TEAM_MEMBER_JOINED","Welcome notification when a user joins a store"),TEAM_MEMBER_REMOVED-("TEAM_MEMBER_REMOVED","Notification when a user is removed from a store")]|-|abandoned_cart_merchant|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notifiableType|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notifiableId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─title|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─body|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullBody|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─data|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─readAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─read|boolean|No comments found.|-|true|
+|└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─totalElements|int64|No comments found.|-|0|
+|└─totalPages|int32|No comments found.|-|0|
+|└─currentPage|int32|No comments found.|-|0|
+|└─hasNext|boolean|No comments found.|-|true|
 
 **Response-example:**
 ```json
-{
-  "status": true,
-  "message": "",
-  "data": {}
-}
+{"status":true,"message":"","data":{"notifications":[{"id":"","type":abandoned_cart_merchant,"notifiableType":"","notifiableId":"","tenantId":"","title":"","body":"","fullBody":"","data":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"readAt":"yyyy-MM-dd HH:mm:ss","createdAt":"yyyy-MM-dd HH:mm:ss","read":true}],"nextCursor":"yyyy-MM-dd HH:mm:ss","totalElements":0,"totalPages":0,"currentPage":0,"hasNext":true}}
 ```
 
 ### Mark Notification as Read
@@ -11144,7 +11640,7 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
 |└─id|string|No comments found.|-||
-|└─type|string|No comments found.|-||
+|└─type|string|No comments found.<br/>[Enum: ABANDONED_CART_MERCHANT-("ABANDONED_CART_MERCHANT","Abandoned cart notification for merchant"),ORDER_CONFIRMATION-("ORDER_CONFIRMATION","Order confirmation notification for customer"),LOW_STOCK_ALERT-("LOW_STOCK_ALERT","Low stock alert notification for merchant"),NEW_ORDER-("NEW_ORDER","New order notification for merchant"),NEW_REVIEW-("NEW_REVIEW","New review notification for merchant"),ORDER_STATUS_PENDING-("ORDER_STATUS_PENDING","Order status pending notification for customer"),ORDER_STATUS_PROCESSING-("ORDER_STATUS_PROCESSING","Order status processing notification for customer"),ORDER_STATUS_SHIPPED-("ORDER_STATUS_SHIPPED","Order status shipped notification for customer"),ORDER_STATUS_DELIVERED-("ORDER_STATUS_DELIVERED","Order status delivered notification for customer"),ORDER_STATUS_CANCELLED-("ORDER_STATUS_CANCELLED","Order status cancelled notification for customer"),ORDER_STATUS_IN_TRANSIT-("ORDER_STATUS_IN_TRANSIT","Order status in transit notification for customer"),ORDER_STATUS_FAILED-("ORDER_STATUS_FAILED","Order status failed notification for customer"),ORDER_STATUS_ABANDONED-("ORDER_STATUS_ABANDONED","Order status abandoned notification for customer"),PAYMENT_ABANDONED_MERCHANT-("PAYMENT_ABANDONED_MERCHANT","Payment abandoned notification for merchant"),PAYMENT_CONFIRMED-("PAYMENT_CONFIRMED","Payment confirmed notification for customer"),SNAPSHOT_FAILED-("SNAPSHOT_FAILED","Snapshot failed notification for merchant"),SNAPSHOT_READY-("SNAPSHOT_READY","Snapshot ready notification for merchant"),WELCOME-("WELCOME","Welcome notification for customer"),TEAM_INVITATION-("TEAM_INVITATION","Invitation to join a store as a team member"),TEAM_MEMBER_JOINED-("TEAM_MEMBER_JOINED","Welcome notification when a user joins a store"),TEAM_MEMBER_REMOVED-("TEAM_MEMBER_REMOVED","Notification when a user is removed from a store")]|-|abandoned_cart_merchant|
 |└─notifiableType|string|No comments found.|-||
 |└─notifiableId|string|No comments found.|-||
 |└─tenantId|string|No comments found.|-||
@@ -11160,7 +11656,7 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","type":"","notifiableType":"","notifiableId":"","tenantId":"","title":"","body":"","fullBody":"","data":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"readAt":"yyyy-MM-dd HH:mm:ss","createdAt":"yyyy-MM-dd HH:mm:ss","read":true}}
+{"status":true,"message":"","data":{"id":"","type":abandoned_cart_merchant,"notifiableType":"","notifiableId":"","tenantId":"","title":"","body":"","fullBody":"","data":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"readAt":"yyyy-MM-dd HH:mm:ss","createdAt":"yyyy-MM-dd HH:mm:ss","read":true}}
 ```
 
 ### Mark all Notification as Read
@@ -11388,16 +11884,27 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|false|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|false|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|NEW: Longer description for UI tooltips.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|false|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|false|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|false|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|false|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
@@ -11485,16 +11992,27 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|false|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|false|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|NEW: Longer description for UI tooltips.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|false|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|false|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|false|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|false|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
@@ -11579,16 +12097,30 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|false|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|false|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|false|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|false|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|false|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|false|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|false|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|false|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|false|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|false|No comments found.|-||
+|└─userId|string|false|No comments found.|-||
 |roleResource|object|false|No comments found.|-||
 |└─name|string|false|No comments found.|-||
 |└─slug|string|false|No comments found.|-||
@@ -11596,16 +12128,25 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1
 |└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|false|No comments found.|-||
-|└─name|string|false|No comments found.|-||
+|└─name|string|false|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|└─description|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
-|└─slug|string|false|No comments found.|-||
-|└─permissions|array|false|No comments found.|-||
+|└─slug|string|false|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|└─permissions|array|false|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|false|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|false|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|NEW: Longer description for UI tooltips.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|false|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
+|└─type|enum|false|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|└─tenantId|string|false|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|└─permissionIds|array|false|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|└─merchantAssignable|boolean|false|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
 
 **Body-parameters:**
 
@@ -11617,7 +12158,7 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1
 
 **Request-example:**
 ```bash
-curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/change/password/customer?createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&googleId=&password=&status=true&notificationsEnabled=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&name=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&ownerIdDocumentUrl=&ownerSelfieUrl=&cacDocumentUrl=&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&pendingApproval=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&slug=&primaryColor=&accentColor=&fontFamily=&heroHeadline=&heroCtaText=&heroBackgroundImage=&instagramUrl=&facebookUrl=&twitterUrl=&youtubeUrl=&linkedinUrl=&tiktokUrl=&googleOauthRedirectUrl=&googleOauthErrorUrl=&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl='
+curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/change/password/customer?createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&googleId=&password=&status=true&notificationsEnabled=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&name=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&ownerIdDocumentUrl=&ownerSelfieUrl=&cacDocumentUrl=&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&pendingApproval=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&slug=&primaryColor=&accentColor=&fontFamily=&heroHeadline=&heroCtaText=&heroBackgroundImage=&instagramUrl=&facebookUrl=&twitterUrl=&youtubeUrl=&linkedinUrl=&tiktokUrl=&googleOauthRedirectUrl=&googleOauthErrorUrl=&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&description=&displayName=&category=&merchantVisible=true&type=SYSTEM&permissionIds=""","""&merchantAssignable=true&roleId=&roleName=&tenantIds=""","""&lastActiveTenantId=&twoFactorEnabled=true&userId='
 ```
 **Response-fields:**
 
@@ -11682,16 +12223,27 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|false|No comments found.|-||
-|└─name|string|false|No comments found.|-||
+|└─name|string|false|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|└─description|string|false|No comments found.|-||
 |└─status|boolean|false|No comments found.|-|true|
-|└─slug|string|false|No comments found.|-||
-|└─permissions|array|false|No comments found.|-||
+|└─slug|string|false|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|└─permissions|array|false|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|false|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|false|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|NEW: Longer description for UI tooltips.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|false|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
+|└─type|enum|false|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|└─tenantId|string|false|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|└─permissionIds|array|false|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|└─merchantAssignable|boolean|false|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+|roleId|string|false|No comments found.|-||
+|roleName|string|false|No comments found.|-||
 |tenant|object|false|No comments found.|-||
 |└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
@@ -11779,16 +12331,27 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|false|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|false|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|NEW: Longer description for UI tooltips.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|false|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|false|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|false|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|false|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
@@ -11873,13 +12436,26 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|false|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|false|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|false|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|false|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|false|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|false|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|false|No comments found.|-||
+|└─userId|string|false|No comments found.|-||
+|tenantIds|array|false|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|lastActiveTenantId|string|false|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|twoFactorEnabled|boolean|false|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
 |notificationsEnabled|boolean|false|No comments found.|-|true|
 |googleAccount|boolean|false|No comments found.|-|true|
 |googleId|string|false|No comments found.|-||
@@ -11894,7 +12470,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 
 **Request-example:**
 ```bash
-curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/change/password/merchant?createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&id=&email=&tenantId=&password=&fullName=&dateOfBirth=&phoneNumber=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&status=&address=&version=0&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&name=&slug=&businessTradingName=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&ownerIdDocumentUrl=&ownerSelfieUrl=&cacDocumentUrl=&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&pendingApproval=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&primaryColor=&accentColor=&fontFamily=&heroHeadline=&heroCtaText=&heroBackgroundImage=&instagramUrl=&facebookUrl=&twitterUrl=&youtubeUrl=&linkedinUrl=&tiktokUrl=&googleOauthRedirectUrl=&googleOauthErrorUrl=&createdBy=&notificationsEnabled=true&googleAccount=true&googleId='
+curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/change/password/merchant?createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&id=&email=&tenantId=&password=&fullName=&dateOfBirth=&phoneNumber=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&status=&address=&version=0&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&name=&description=&slug=&displayName=&category=&merchantVisible=true&type=SYSTEM&permissionIds=""","""&merchantAssignable=true&roleId=&roleName=&businessTradingName=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=0&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&ownerIdDocumentUrl=&ownerSelfieUrl=&cacDocumentUrl=&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&pendingApproval=true&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&primaryColor=&accentColor=&fontFamily=&heroHeadline=&heroCtaText=&heroBackgroundImage=&instagramUrl=&facebookUrl=&twitterUrl=&youtubeUrl=&linkedinUrl=&tiktokUrl=&googleOauthRedirectUrl=&googleOauthErrorUrl=&createdBy=&tenantIds=""","""&lastActiveTenantId=&twoFactorEnabled=true&notificationsEnabled=true&googleAccount=true&googleId=&userId='
 ```
 **Response-fields:**
 
@@ -12066,8 +12642,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
 |└─status|string|No comments found.|-||
 |└─paymentGatewayTransactionId|string|No comments found.|-||
 |└─manualPayment|boolean|No comments found.|-|true|
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:06"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:06"|
+|└─createdAt|string|No comments found.|-|"2026-04-08 12:43:56"|
+|└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:56"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -12087,8 +12663,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
     "status": "",
     "paymentGatewayTransactionId": "",
     "manualPayment": true,
-    "createdAt": "2026-04-07 10:58:06",
-    "updatedAt": "2026-04-07 10:58:06"
+    "createdAt": "2026-04-08 12:43:56",
+    "updatedAt": "2026-04-08 12:43:56"
   },
   "message": "",
   "status": true
@@ -12490,6 +13066,13 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─fullName|string|No comments found.|-||
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
+|└─role|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|└─merchantId|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─lastActiveTenantId|string|No comments found.|-||
+|└─currentMode|string|No comments found.|-||
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
@@ -12504,6 +13087,14 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "fullName": "",
     "phoneNumber": "",
     "address": "",
+    "role": {
+      "name": "",
+      "slug": ""
+    },
+    "merchantId": "",
+    "tenantId": "",
+    "lastActiveTenantId": "",
+    "currentMode": "",
     "createdAt": "yyyy-MM-dd HH:mm:ss"
   },
   "token": "",
@@ -12563,8 +13154,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-07 10:58:04"|
-|└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:04"|
+|└─createdAt|string|No comments found.|-|"2026-04-08 12:43:56"|
+|└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:56"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -12579,8 +13170,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-07 10:58:04",
-    "updatedAt": "2026-04-07 10:58:04"
+    "createdAt": "2026-04-08 12:43:56",
+    "updatedAt": "2026-04-08 12:43:56"
   },
   "token": "",
   "refreshToken": "",
@@ -12627,6 +13218,13 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─fullName|string|No comments found.|-||
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
+|└─role|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|└─merchantId|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─lastActiveTenantId|string|No comments found.|-||
+|└─currentMode|string|No comments found.|-||
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
@@ -12641,6 +13239,14 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "fullName": "",
     "phoneNumber": "",
     "address": "",
+    "role": {
+      "name": "",
+      "slug": ""
+    },
+    "merchantId": "",
+    "tenantId": "",
+    "lastActiveTenantId": "",
+    "currentMode": "",
     "createdAt": "yyyy-MM-dd HH:mm:ss"
   },
   "token": "",
@@ -12877,6 +13483,13 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currentMode|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
@@ -12894,6 +13507,14 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
       "fullName": "",
       "phoneNumber": "",
       "address": "",
+      "role": {
+        "name": "",
+        "slug": ""
+      },
+      "merchantId": "",
+      "tenantId": "",
+      "lastActiveTenantId": "",
+      "currentMode": "",
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     },
     "token": "",
@@ -12986,10 +13607,11 @@ All new product creation should be done via this controller.
 |availability|boolean|false|No comments found.|-|true|
 |status|string|false|No comments found.|-||
 |minRating|double|false|No comments found.|-|0.0|
+|archived|boolean|false|No comments found.|-|true|
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products?page=0&limit=100&sortFieldParam=CREATED_AT&sortDirectionParam=DESC&search=&category=&brand=&color=&minPrice=0.0&maxPrice=0.0&availability=true&status=&minRating=0.0'
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products?page=0&limit=100&sortFieldParam=CREATED_AT&sortDirectionParam=DESC&search=&category=&brand=&color=&minPrice=0.0&maxPrice=0.0&availability=true&status=&minRating=0.0&archived=true'
 ```
 **Response-fields:**
 
@@ -13117,11 +13739,12 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### createProduct
@@ -13179,10 +13802,11 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |categoryId|string|true|No comments found.|-||
 |brandId|string|false|No comments found.|-||
 |tenantId|string|false|No comments found.|-||
+|isArchived|boolean|false|No comments found.|-|true|
 
 **Request-example:**
 ```bash
-curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products' --data '{"name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","imageList":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"variantGroups":[{"attributeName":"","attributeValue":"","image":"","colorId":"","skus":[{"price":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"categoryId":"","brandId":"","tenantId":""}'
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products' --data '{"name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","imageList":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"variantGroups":[{"attributeName":"","attributeValue":"","image":"","colorId":"","skus":[{"price":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"categoryId":"","brandId":"","tenantId":"","isArchived":true}'
 ```
 **Response-fields:**
 
@@ -13260,11 +13884,12 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### updateProduct
@@ -13412,11 +14037,12 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### deleteProduct
@@ -13462,6 +14088,228 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
   "message": "",
   "data": {}
 }
+```
+
+### Archive Product (V2)
+**URL:** https://api.shopsynch.com/v2/products/{productId}/archive
+
+**Type:** PATCH
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Archive Product (V2)
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|productId|string|true|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products/{productId}/archive'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|               Unique product identifier.|-||
+|└─name|string|             Product display name.|-||
+|└─slug|string|             URL-friendly identifier.|-||
+|└─description|string|      Full product description.|-||
+|└─summary|string|          Short product summary.|-||
+|└─image|string|            Primary product image URL.|-||
+|└─thumbnail|string|        Thumbnail image URL.|-||
+|└─images|array|           Additional image URLs.|-|""","""|
+|└─features|array|         List of notable product features.|-|""","""|
+|└─specifications|array|   Technical specification key-value pairs.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
+|└─productType|enum|      Product structure type (SIMPLE, VARIABLE, DIGITAL, BUNDLE).<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|SIMPLE|
+|└─price|number|            Root-level base price (SIMPLE / DIGITAL / BUNDLE).|-|0|
+|└─newPrice|number|         Discounted price at root level.|-|0|
+|└─discount|number|         Discount percentage at root level.|-|0|
+|└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
+|└─sku|string|              Root-level merchant SKU code.|-||
+|└─attributes|object|       Generic key-value product attributes.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─brand|string|            Resolved brand name.|-||
+|└─category|string|         Resolved category name.|-||
+|└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─skus|array|          Purchasable units under this group.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|              Internal SKU identifier.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|           Base selling price.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|        Discounted price (computed from price and discount).|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|        Discount percentage applied to price.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─ramSize|string|          Deprecated: use {@code attributes.get("RAM")} instead.|-||
+|└─storage|string|          Deprecated: use {@code attributes.get("Storage")} instead.|-||
+|└─size|string|             Deprecated: use {@code attributes.get("Size")} instead.|-||
+|└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
+|└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
+|└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
+|└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+```
+
+### Unarchive Product (V2)
+**URL:** https://api.shopsynch.com/v2/products/{productId}/unarchive
+
+**Type:** PATCH
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Unarchive Product (V2)
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|productId|string|true|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products/{productId}/unarchive'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|               Unique product identifier.|-||
+|└─name|string|             Product display name.|-||
+|└─slug|string|             URL-friendly identifier.|-||
+|└─description|string|      Full product description.|-||
+|└─summary|string|          Short product summary.|-||
+|└─image|string|            Primary product image URL.|-||
+|└─thumbnail|string|        Thumbnail image URL.|-||
+|└─images|array|           Additional image URLs.|-|""","""|
+|└─features|array|         List of notable product features.|-|""","""|
+|└─specifications|array|   Technical specification key-value pairs.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
+|└─productType|enum|      Product structure type (SIMPLE, VARIABLE, DIGITAL, BUNDLE).<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|SIMPLE|
+|└─price|number|            Root-level base price (SIMPLE / DIGITAL / BUNDLE).|-|0|
+|└─newPrice|number|         Discounted price at root level.|-|0|
+|└─discount|number|         Discount percentage at root level.|-|0|
+|└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
+|└─sku|string|              Root-level merchant SKU code.|-||
+|└─attributes|object|       Generic key-value product attributes.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─brand|string|            Resolved brand name.|-||
+|└─category|string|         Resolved category name.|-||
+|└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─skus|array|          Purchasable units under this group.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|              Internal SKU identifier.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|           Base selling price.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|        Discounted price (computed from price and discount).|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|        Discount percentage applied to price.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─ramSize|string|          Deprecated: use {@code attributes.get("RAM")} instead.|-||
+|└─storage|string|          Deprecated: use {@code attributes.get("Storage")} instead.|-||
+|└─size|string|             Deprecated: use {@code attributes.get("Size")} instead.|-||
+|└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
+|└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
+|└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
+|└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### getSimilarProducts
@@ -13573,11 +14421,12 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
 |└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":[{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"createdAt":"yyyy-MM-dd HH:mm:ss"}]}
+{"status":true,"message":"","data":[{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}]}
 ```
 
 ### getTopSelling
@@ -13938,6 +14787,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/merchants/profile'
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |└─merchantId|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─lastActiveTenantId|string|No comments found.|-||
 |└─currentMode|string|No comments found.|-||
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
@@ -13957,6 +14808,8 @@ curl -X GET -k -i 'https://api.shopsynch.com/v1/merchants/profile'
       "slug": ""
     },
     "merchantId": "",
+    "tenantId": "",
+    "lastActiveTenantId": "",
     "currentMode": "",
     "createdAt": "yyyy-MM-dd HH:mm:ss"
   }
@@ -14027,16 +14880,25 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ro
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─id|string|No comments found.|-||
-|└─name|string|No comments found.|-||
+|└─name|string|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|└─description|string|No comments found.|-||
 |└─status|boolean|No comments found.|-|true|
-|└─slug|string|No comments found.|-||
-|└─permissions|array|No comments found.|-||
+|└─slug|string|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|└─permissions|array|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|NEW: Longer description for UI tooltips.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|└─type|enum|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|└─tenantId|string|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|└─permissionIds|array|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|└─merchantAssignable|boolean|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
 
 **Response-example:**
 ```json
@@ -14049,6 +14911,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ro
       "updatedAt": "yyyy-MM-dd HH:mm:ss",
       "id": "",
       "name": "",
+      "description": "",
       "status": true,
       "slug": "",
       "permissions": [
@@ -14057,12 +14920,379 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ro
           "updatedAt": "yyyy-MM-dd HH:mm:ss",
           "id": "",
           "name": "",
+          "displayName": "",
+          "category": "",
+          "description": "",
           "status": true,
+          "merchantVisible": true,
           "slug": ""
+        }
+      ],
+      "type": "SYSTEM",
+      "tenantId": "",
+      "permissionIds": [
+        ""
+      ],
+      "merchantAssignable": true
+    }
+  ]
+}
+```
+
+## Merchant-accessible APIs for roles and permissions within a specific store.
+
+These endpoints are tenant-scoped: the caller must be the store owner or
+a member with the CAN_READ_ROLE permission. Admin-only roles and
+non-merchant-visible permissions are automatically excluded from responses.
+### Get Roles for a Store
+**URL:** https://api.shopsynch.com/v1/tenants/{tenantId}/roles
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Returns all roles that can be assigned within the specified store:
+         - SYSTEM roles with merchantAssignable=true (shared platform roles)
+         - CUSTOM roles created by this tenant
+         Each role includes its resolved permission list.
+         Requires CAN_READ_ROLE permission or store ownership.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|the store whose roles to retrieve|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/tenants/{tenantId}/roles'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─slug|string|No comments found.|-||
+|└─description|string|No comments found.|-||
+|└─type|enum|No comments found.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|└─merchantAssignable|boolean|No comments found.|-|true|
+|└─permissions|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "id": "",
+      "name": "",
+      "slug": "",
+      "description": "",
+      "type": "SYSTEM",
+      "merchantAssignable": true,
+      "permissions": [
+        {
+          "id": "",
+          "name": "",
+          "displayName": "",
+          "category": ""
         }
       ]
     }
   ]
+}
+```
+
+### Get Merchant-Visible Permissions
+**URL:** https://api.shopsynch.com/v1/tenants/{tenantId}/permissions
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Returns all permissions that merchants can use when building custom roles.
+         Admin-only permissions are excluded.
+         Requires CAN_READ_ROLE permission or store ownership.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|the store context (used for permission check)|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/tenants/{tenantId}/permissions'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─displayName|string|No comments found.|-||
+|└─category|string|No comments found.|-||
+|└─description|string|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "id": "",
+      "name": "",
+      "displayName": "",
+      "category": "",
+      "description": ""
+    }
+  ]
+}
+```
+
+### Create Custom Role
+**URL:** https://api.shopsynch.com/v1/tenants/{tenantId}/roles
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** Creates a new custom role scoped to the specified store.
+         - Role name must be unique within the tenant.
+         - All supplied permissionIds must exist and be merchant-visible.
+         - Requires CAN_CREATE_ROLE permission.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|the store for which to create the role|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|name|string|true|No comments found.<br/>Validation[Size(max=50, min=2, message=Role name must be between 2 and 50 characters)]|-||
+|description|string|false|No comments found.<br/>Validation[Size(max=255, min=0, message=Description must not exceed 255 characters)]|-||
+|permissionIds|array|true|No comments found.|-|""","""|
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/tenants/{tenantId}/roles' --data '{
+  "name": "",
+  "description": "",
+  "permissionIds": [
+    ""
+  ]
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─slug|string|No comments found.|-||
+|└─description|string|No comments found.|-||
+|└─type|enum|No comments found.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|└─merchantAssignable|boolean|No comments found.|-|true|
+|└─permissions|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "name": "",
+    "slug": "",
+    "description": "",
+    "type": "SYSTEM",
+    "merchantAssignable": true,
+    "permissions": [
+      {
+        "id": "",
+        "name": "",
+        "displayName": "",
+        "category": ""
+      }
+    ]
+  }
+}
+```
+
+### Update Custom Role
+**URL:** https://api.shopsynch.com/v1/tenants/{tenantId}/roles/{roleId}
+
+**Type:** PATCH
+
+
+**Content-Type:** application/json
+
+**Description:** Updates an existing custom role belonging to the specified tenant.
+         - Target role must be CUSTOM type and owned by this tenant.
+         - If name changes, new name must be unique within the tenant.
+         - All supplied permissionIds must exist and be merchant-visible.
+         - Requires CAN_UPDATE_ROLE permission.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|the store that owns the role|-||
+|roleId|string|true|the ID of the role to update|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|name|string|false|No comments found.<br/>Validation[Size(max=50, min=2, message=Role name must be between 2 and 50 characters)]|-||
+|description|string|false|No comments found.<br/>Validation[Size(max=255, min=0, message=Description must not exceed 255 characters)]|-||
+|permissionIds|array|true|No comments found.|-|""","""|
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/tenants/{tenantId}/roles/{roleId}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─slug|string|No comments found.|-||
+|└─description|string|No comments found.|-||
+|└─type|enum|No comments found.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|└─merchantAssignable|boolean|No comments found.|-|true|
+|└─permissions|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "name": "",
+    "slug": "",
+    "description": "",
+    "type": "SYSTEM",
+    "merchantAssignable": true,
+    "permissions": [
+      {
+        "id": "",
+        "name": "",
+        "displayName": "",
+        "category": ""
+      }
+    ]
+  }
+}
+```
+
+### Delete Custom Role
+**URL:** https://api.shopsynch.com/v1/tenants/{tenantId}/roles/{roleId}
+
+**Type:** DELETE
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Deletes a custom role belonging to the specified tenant.
+         - Target role must be CUSTOM type and owned by this tenant.
+         - Role cannot be deleted while team members still hold it.
+         - Requires CAN_DELETE_ROLE permission.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|the store that owns the role|-||
+|roleId|string|true|the ID of the role to delete|-||
+
+**Request-example:**
+```bash
+curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/tenants/{tenantId}/roles/{roleId}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": ""
 }
 ```
 
@@ -14140,7 +15370,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/va
 
 ## EmailPreviewController
 ### previewWelcomeEmail
-**URL:** https://api.shopsynch.com/api/v1/test/email-preview/welcome
+**URL:** https://api.shopsynch.com/api/v1/test/email-preview/merchant-welcome
 
 **Type:** GET
 
@@ -14167,7 +15397,43 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/va
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/api/v1/test/email-preview/welcome?email=test@example.com&shopName=My Awesome Shop&verificationCode=123456&verificationUrl=http:/localhost:3000/verify'
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/api/v1/test/email-preview/merchant-welcome?email=test@example.com&shopName=My Awesome Shop&verificationCode=123456&verificationUrl=http:/localhost:3000/verify'
+```
+
+**Response-example:**
+```json
+string
+```
+
+### previewCustomerWelcomeEmail
+**URL:** https://api.shopsynch.com/api/v1/test/email-preview/customer-welcome
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|email|string|true|No comments found.|-|test@example.com|
+|shopName|string|true|No comments found.|-|My Awesome Shop|
+|verificationCode|string|true|No comments found.|-|123456|
+|verificationUrl|string|true|No comments found.|-|http://localhost:3000/verify|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/api/v1/test/email-preview/customer-welcome?email=test@example.com&shopName=My Awesome Shop&verificationCode=123456&verificationUrl=http:/localhost:3000/verify'
 ```
 
 **Response-example:**
@@ -14176,7 +15442,7 @@ string
 ```
 
 ### previewMerchantNewOrder
-**URL:** https://api.shopsynch.com/api/v1/test/email-preview/merchant/new-order/{orderId}
+**URL:** https://api.shopsynch.com/api/v1/test/email-preview/merchant-new-order/{orderId}
 
 **Type:** GET
 
@@ -14200,7 +15466,7 @@ string
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/api/v1/test/email-preview/merchant/new-order/{orderId}'
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/api/v1/test/email-preview/merchant-new-order/{orderId}'
 ```
 
 **Response-example:**
@@ -14209,7 +15475,7 @@ string
 ```
 
 ### previewCustomerOrderConfirmation
-**URL:** https://api.shopsynch.com/api/v1/test/email-preview/customer/order-confirmation/{orderId}
+**URL:** https://api.shopsynch.com/api/v1/test/email-preview/customer-order-confirmation/{orderId}
 
 **Type:** GET
 
@@ -14233,7 +15499,7 @@ string
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/api/v1/test/email-preview/customer/order-confirmation/{orderId}'
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/api/v1/test/email-preview/customer-order-confirmation/{orderId}'
 ```
 
 **Response-example:**
@@ -14242,7 +15508,7 @@ string
 ```
 
 ### previewCustomerPaymentConfirmation
-**URL:** https://api.shopsynch.com/api/v1/test/email-preview/customer/payment-confirmation/{paymentId}
+**URL:** https://api.shopsynch.com/api/v1/test/email-preview/customer-payment-confirmation/{paymentId}
 
 **Type:** GET
 
@@ -14266,7 +15532,7 @@ string
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/api/v1/test/email-preview/customer/payment-confirmation/{paymentId}'
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/api/v1/test/email-preview/customer-payment-confirmation/{paymentId}'
 ```
 
 **Response-example:**
@@ -14308,9 +15574,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/api/v
 string
 ```
 
-## UserController
-### getUserProfile
-**URL:** https://api.shopsynch.com/v1/users/profile
+### previewResetPassword
+**URL:** https://api.shopsynch.com/api/v1/test/email-preview/password-reset-successful
 
 **Type:** GET
 
@@ -14318,6 +15583,211 @@ string
 **Content-Type:** application/x-www-form-urlencoded
 
 **Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|name|string|true|No comments found.|-|John|
+|pin|string|true|No comments found.|-|1234|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/api/v1/test/email-preview/password-reset-successful?name=John&pin=1234'
+```
+
+**Response-example:**
+```json
+string
+```
+
+### previewCustomerAbandonedCart
+**URL:** https://api.shopsynch.com/api/v1/test/email-preview/customer-abandoned-cart
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|name|string|true|No comments found.|-|John|
+|pin|string|true|No comments found.|-|1234|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/api/v1/test/email-preview/customer-abandoned-cart?name=John&pin=1234'
+```
+
+**Response-example:**
+```json
+string
+```
+
+### previewOrderConfirmation
+**URL:** https://api.shopsynch.com/api/v1/test/email-preview/order-confirmation
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|name|string|true|No comments found.|-|John|
+|pin|string|true|No comments found.|-|1234|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/api/v1/test/email-preview/order-confirmation?name=John&pin=1234'
+```
+
+**Response-example:**
+```json
+string
+```
+
+### previewOrderStatusUpdate
+**URL:** https://api.shopsynch.com/api/v1/test/email-preview/order-status-update
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|name|string|true|No comments found.|-|John|
+|pin|string|true|No comments found.|-|1234|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/api/v1/test/email-preview/order-status-update?name=John&pin=1234'
+```
+
+**Response-example:**
+```json
+string
+```
+
+### previewTeamInvitation
+**URL:** https://api.shopsynch.com/api/v1/test/email-preview/team-invitation
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|storeName|string|true|No comments found.|-|Awesome Store|
+|inviterName|string|true|No comments found.|-|Jane Doe|
+|invitationLink|string|true|No comments found.|-|http://localhost:3000/invitations/token123/accept|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/api/v1/test/email-preview/team-invitation?storeName=Awesome Store&inviterName=Jane Doe&invitationLink=http:/localhost:3000/invitations/token123/accept'
+```
+
+**Response-example:**
+```json
+string
+```
+
+### previewTeamMemberRemoved
+**URL:** https://api.shopsynch.com/api/v1/test/email-preview/team-member-removed
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|storeName|string|true|No comments found.|-|Awesome Store|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/api/v1/test/email-preview/team-member-removed?storeName=Awesome Store'
+```
+
+**Response-example:**
+```json
+string
+```
+
+## UserController
+### Get User Profile
+**URL:** https://api.shopsynch.com/v1/users/profile
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Retrieves the authenticated user's profile information.
 
 **Request-headers:**
 
@@ -14346,6 +15816,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/us
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |└─merchantId|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─lastActiveTenantId|string|No comments found.|-||
 |└─currentMode|string|No comments found.|-||
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
@@ -14365,13 +15837,15 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/us
       "slug": ""
     },
     "merchantId": "",
+    "tenantId": "",
+    "lastActiveTenantId": "",
     "currentMode": "",
     "createdAt": "yyyy-MM-dd HH:mm:ss"
   }
 }
 ```
 
-### getUserProfileWithRole
+### Get User Profile with Role
 **URL:** https://api.shopsynch.com/v1/users/profile/with/role
 
 **Type:** GET
@@ -14379,7 +15853,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/us
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** 
+**Description:** Retrieves the authenticated user's profile including full role details.
 
 **Request-headers:**
 
@@ -14408,6 +15882,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/us
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |└─merchantId|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─lastActiveTenantId|string|No comments found.|-||
 |└─currentMode|string|No comments found.|-||
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
@@ -14427,13 +15903,15 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/us
       "slug": ""
     },
     "merchantId": "",
+    "tenantId": "",
+    "lastActiveTenantId": "",
     "currentMode": "",
     "createdAt": "yyyy-MM-dd HH:mm:ss"
   }
 }
 ```
 
-### updateContact
+### Update User Profile
 **URL:** https://api.shopsynch.com/v1/users/profile/update
 
 **Type:** PATCH
@@ -14441,7 +15919,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/us
 
 **Content-Type:** application/json
 
-**Description:** 
+**Description:** Updates the authenticated user's profile information.
 
 **Request-headers:**
 
@@ -14494,6 +15972,125 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     "phoneNumber": "",
     "address": "",
     "createdAt": "yyyy-MM-dd HH:mm:ss"
+  }
+}
+```
+
+### Get My Stores
+**URL:** https://api.shopsynch.com/v1/users/me/stores
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Returns all stores the authenticated user owns or belongs to as a team member.
+         Includes an active flag indicating the currently selected store context.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/users/me/stores'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─slug|string|No comments found.|-||
+|└─logo|string|No comments found.|-||
+|└─currency|string|No comments found.|-||
+|└─owner|boolean|True if the authenticated user is the store owner.|-|true|
+|└─roleIds|array|Roles the user holds in this store. Empty for owners (they have all permissions).|-|""","""|
+|└─roleNames|array|No comments found.|-|""","""|
+|└─active|boolean|True if this is the user's currently active store (lastActiveTenantId).|-|true|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "tenantId": "",
+      "name": "",
+      "slug": "",
+      "logo": "",
+      "currency": "",
+      "owner": true,
+      "roleIds": [
+        ""
+      ],
+      "roleNames": [
+        ""
+      ],
+      "active": true
+    }
+  ]
+}
+```
+
+### Switch Active Store
+**URL:** https://api.shopsynch.com/v1/users/me/switch-store
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** Switches the authenticated user's active store context.
+         The user must be an owner or active member of the target store.
+         Returns a new JWT scoped to the selected store.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|The ID of the tenant (store) to switch the active context to.<br/>The authenticated user must own or be an active member of this tenant.|-||
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/users/me/switch-store' --data '{
+  "tenantId": ""
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─token|string|New JWT scoped to the switched-to tenant.|-||
+|└─tenantId|string|The tenant ID that is now active.|-||
+|└─storeName|string|Human-readable store name.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "token": "",
+    "tenantId": "",
+    "storeName": ""
   }
 }
 ```
@@ -14760,8 +16357,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:57:59"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:57:59"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-08 12:43:55"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:55"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -14824,8 +16421,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-07 10:57:59",
-        "updatedAt": "2026-04-07 10:57:59"
+        "createdAt": "2026-04-08 12:43:55",
+        "updatedAt": "2026-04-08 12:43:55"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -14919,8 +16516,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-07 10:58:00"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-07 10:58:00"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-08 12:43:55"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-08 12:43:55"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -14983,8 +16580,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-07 10:58:00",
-        "updatedAt": "2026-04-07 10:58:00"
+        "createdAt": "2026-04-08 12:43:55",
+        "updatedAt": "2026-04-08 12:43:55"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -15828,6 +17425,191 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
 }
 ```
 
+## Team Management APIs
+### List Tenant Members
+**URL:** https://api.shopsynch.com/v1/tenants/{tenantId}/members
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Returns all active members of the specified store.
+         Requires can_read_team_member permission.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|the store whose members to list|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/tenants/{tenantId}/members'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─userId|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─fullName|string|No comments found.|-||
+|└─email|string|No comments found.|-||
+|└─profileUrl|string|No comments found.|-||
+|└─roleIds|array|No comments found.|-|""","""|
+|└─roleNames|array|No comments found.|-|""","""|
+|└─status|enum|No comments found.<br/>[Enum: INVITED, ACTIVE, SUSPENDED]|-|INVITED|
+|└─joinedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "id": "",
+      "userId": "",
+      "tenantId": "",
+      "fullName": "",
+      "email": "",
+      "profileUrl": "",
+      "roleIds": [
+        ""
+      ],
+      "roleNames": [
+        ""
+      ],
+      "status": "INVITED",
+      "joinedAt": "yyyy-MM-dd HH:mm:ss",
+      "createdAt": "yyyy-MM-dd HH:mm:ss"
+    }
+  ]
+}
+```
+
+### Remove Member from Store
+**URL:** https://api.shopsynch.com/v1/tenants/{tenantId}/members/{userId}
+
+**Type:** DELETE
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Removes an active member from the specified store.
+         Requires can_remove_team_member permission. The store owner cannot be removed.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|the store to remove the member from|-||
+|userId|string|true|  the ID of the user to remove|-||
+
+**Request-example:**
+```bash
+curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/tenants/{tenantId}/members/{userId}'
+```
+
+
+### Update Member Roles
+**URL:** https://api.shopsynch.com/v1/tenants/{tenantId}/members/{userId}/roles
+
+**Type:** PATCH
+
+
+**Content-Type:** application/json
+
+**Description:** Replaces the role assignment for a specific member within a store.
+         Requires can_assign_role permission.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|the store containing the member|-||
+|userId|string|true|  the ID of the user whose roles to update|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|roleIds|array|true|Full replacement list of role IDs to assign to the member.<br/>The existing role assignment is replaced entirely with this list.|-|""","""|
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/tenants/{tenantId}/members/{userId}/roles'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─userId|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─fullName|string|No comments found.|-||
+|└─email|string|No comments found.|-||
+|└─profileUrl|string|No comments found.|-||
+|└─roleIds|array|No comments found.|-|""","""|
+|└─roleNames|array|No comments found.|-|""","""|
+|└─status|enum|No comments found.<br/>[Enum: INVITED, ACTIVE, SUSPENDED]|-|INVITED|
+|└─joinedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "userId": "",
+    "tenantId": "",
+    "fullName": "",
+    "email": "",
+    "profileUrl": "",
+    "roleIds": [
+      ""
+    ],
+    "roleNames": [
+      ""
+    ],
+    "status": "INVITED",
+    "joinedAt": "yyyy-MM-dd HH:mm:ss",
+    "createdAt": "yyyy-MM-dd HH:mm:ss"
+  }
+}
+```
+
 ## Tenant Category Management
 ### List Tenant Categories.
 **URL:** https://api.shopsynch.com/v1/tenant-categories
@@ -16211,6 +17993,232 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 }
 ```
 
+## Tenant Member Invitation Management APIs
+### Accept Invitation
+**URL:** https://api.shopsynch.com/v1/tenants/invitations/{token}/accept
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Public endpoint — accepts an invitation via the unique token from the invitation link.
+         No API key required. The authenticated user's email must match the invitation email.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|token|string|true|the unique invitation token from the acceptance link|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/tenants/invitations/{token}/accept'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|string|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": ""
+}
+```
+
+### Cancel Invitation
+**URL:** https://api.shopsynch.com/v1/tenants/invitations/{invitationId}
+
+**Type:** DELETE
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Cancels a pending invitation.
+         Requires can_invite_team_member permission or the requester must be the original inviter.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|invitationId|string|true|the ID of the invitation to cancel|-||
+
+**Request-example:**
+```bash
+curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/tenants/invitations/{invitationId}'
+```
+
+
+### List Store Invitations
+**URL:** https://api.shopsynch.com/v1/tenants/{tenantId}/invitations
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Returns all invitations for the specified store (all statuses).
+         Requires can_invite_team_member permission.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|the store whose invitations to list|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/tenants/{tenantId}/invitations'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─email|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─roleIds|array|No comments found.|-|""","""|
+|└─invitedByUserId|string|No comments found.|-||
+|└─status|enum|No comments found.<br/>[Enum: PENDING, ACCEPTED, EXPIRED, CANCELLED]|-|PENDING|
+|└─token|string|No comments found.|-||
+|└─expiresAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─acceptedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "id": "",
+      "email": "",
+      "tenantId": "",
+      "roleIds": [
+        ""
+      ],
+      "invitedByUserId": "",
+      "status": "PENDING",
+      "token": "",
+      "expiresAt": "yyyy-MM-dd HH:mm:ss",
+      "acceptedAt": "yyyy-MM-dd HH:mm:ss",
+      "createdAt": "yyyy-MM-dd HH:mm:ss"
+    }
+  ]
+}
+```
+
+### Invite User to Store
+**URL:** https://api.shopsynch.com/v1/tenants/{tenantId}/invite
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** Sends an invitation to a user (existing or new) to join the specified store.
+         Requires can_invite_team_member permission.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|the store to invite the user to|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|email|string|true|Email address of the user to invite. Must be a valid email.<br/>Validation[Email(message=A valid email address is required)]|-||
+|roleIds|array|true|One or more role IDs to assign to the invitee upon acceptance.<br/>Role IDs must reference existing SYSTEM or CUSTOM roles valid for the tenant.|-|""","""|
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/tenants/{tenantId}/invite' --data '{
+  "email": "",
+  "roleIds": [
+    ""
+  ]
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─email|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─roleIds|array|No comments found.|-|""","""|
+|└─invitedByUserId|string|No comments found.|-||
+|└─status|enum|No comments found.<br/>[Enum: PENDING, ACCEPTED, EXPIRED, CANCELLED]|-|PENDING|
+|└─token|string|No comments found.|-||
+|└─expiresAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─acceptedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "email": "",
+    "tenantId": "",
+    "roleIds": [
+      ""
+    ],
+    "invitedByUserId": "",
+    "status": "PENDING",
+    "token": "",
+    "expiresAt": "yyyy-MM-dd HH:mm:ss",
+    "acceptedAt": "yyyy-MM-dd HH:mm:ss",
+    "createdAt": "yyyy-MM-dd HH:mm:ss"
+  }
+}
+```
+
 ## Forgot Password Management (Unauthenticated)
 ### Initiate Forgot Password for Customer
 **URL:** https://api.shopsynch.com/v1/password/forgot/request/customer
@@ -16480,10 +18488,11 @@ data loading and display.
 |availability|boolean|false|No comments found.|-|true|
 |status|string|false|No comments found.|-||
 |minRating|double|false|No comments found.|-|0.0|
+|archived|boolean|false|No comments found.|-|true|
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products?page=0&limit=100&sortFieldParam=CREATED_AT&sortDirectionParam=DESC&search=&category=&brand=&color=&minPrice=0.0&maxPrice=0.0&availability=true&status=&minRating=0.0'
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products?page=0&limit=100&sortFieldParam=CREATED_AT&sortDirectionParam=DESC&search=&category=&brand=&color=&minPrice=0.0&maxPrice=0.0&availability=true&status=&minRating=0.0&archived=true'
 ```
 **Response-fields:**
 
@@ -17740,3 +19749,36 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |FLAT_AMOUNT|FLAT_AMOUNT|string|Flat amount discount|
 |FREE_SHIPPING|FREE_SHIPPING|string|Free shipping|
 |BUY_X_GET_Y|BUY_X_GET_Y|string|Buy X get Y free|
+
+### Notification Types
+
+| Name | Code | Type | Description |
+|------|------|------|-------------|
+|ABANDONED_CART_MERCHANT|ABANDONED_CART_MERCHANT|string|Abandoned cart notification for merchant|
+|ORDER_CONFIRMATION|ORDER_CONFIRMATION|string|Order confirmation notification for customer|
+|LOW_STOCK_ALERT|LOW_STOCK_ALERT|string|Low stock alert notification for merchant|
+|NEW_ORDER|NEW_ORDER|string|New order notification for merchant|
+|NEW_REVIEW|NEW_REVIEW|string|New review notification for merchant|
+|ORDER_STATUS_PENDING|ORDER_STATUS_PENDING|string|Order status pending notification for customer|
+|ORDER_STATUS_PROCESSING|ORDER_STATUS_PROCESSING|string|Order status processing notification for customer|
+|ORDER_STATUS_SHIPPED|ORDER_STATUS_SHIPPED|string|Order status shipped notification for customer|
+|ORDER_STATUS_DELIVERED|ORDER_STATUS_DELIVERED|string|Order status delivered notification for customer|
+|ORDER_STATUS_CANCELLED|ORDER_STATUS_CANCELLED|string|Order status cancelled notification for customer|
+|ORDER_STATUS_IN_TRANSIT|ORDER_STATUS_IN_TRANSIT|string|Order status in transit notification for customer|
+|ORDER_STATUS_FAILED|ORDER_STATUS_FAILED|string|Order status failed notification for customer|
+|ORDER_STATUS_ABANDONED|ORDER_STATUS_ABANDONED|string|Order status abandoned notification for customer|
+|PAYMENT_ABANDONED_MERCHANT|PAYMENT_ABANDONED_MERCHANT|string|Payment abandoned notification for merchant|
+|PAYMENT_CONFIRMED|PAYMENT_CONFIRMED|string|Payment confirmed notification for customer|
+|SNAPSHOT_FAILED|SNAPSHOT_FAILED|string|Snapshot failed notification for merchant|
+|SNAPSHOT_READY|SNAPSHOT_READY|string|Snapshot ready notification for merchant|
+|WELCOME|WELCOME|string|Welcome notification for customer|
+|TEAM_INVITATION|TEAM_INVITATION|string|Invitation to join a store as a team member|
+|TEAM_MEMBER_JOINED|TEAM_MEMBER_JOINED|string|Welcome notification when a user joins a store|
+|TEAM_MEMBER_REMOVED|TEAM_MEMBER_REMOVED|string|Notification when a user is removed from a store|
+
+### Notification Channels
+
+| Name | Code | Type | Description |
+|------|------|------|-------------|
+|DATABASE|DATABASE|string|Database notification channel|
+|MAIL|MAIL|string|Mail notification channel|
