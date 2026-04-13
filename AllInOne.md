@@ -136,8 +136,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-10 09:10:16"|
-|└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:16"|
+|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:25"|
+|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:25"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -165,8 +165,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-10 09:10:16",
-    "updatedAt": "2026-04-10 09:10:16"
+    "createdAt": "2026-04-13 18:29:25",
+    "updatedAt": "2026-04-13 18:29:25"
   },
   "message": "",
   "status": true
@@ -238,8 +238,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-10 09:10:16"|
-|└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:16"|
+|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:25"|
+|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:25"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -267,8 +267,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-10 09:10:16",
-    "updatedAt": "2026-04-10 09:10:16"
+    "createdAt": "2026-04-13 18:29:25",
+    "updatedAt": "2026-04-13 18:29:25"
   },
   "message": "",
   "status": true
@@ -322,8 +322,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-10 09:10:16"|
-|└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:16"|
+|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:25"|
+|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:25"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -351,8 +351,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-10 09:10:16",
-    "updatedAt": "2026-04-10 09:10:16"
+    "createdAt": "2026-04-13 18:29:25",
+    "updatedAt": "2026-04-13 18:29:25"
   },
   "message": "",
   "status": true
@@ -410,8 +410,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-10 09:10:16"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:16"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:25"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:25"|
 |└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
@@ -442,8 +442,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
         ],
         "status": "",
         "metadata": {},
-        "createdAt": "2026-04-10 09:10:16",
-        "updatedAt": "2026-04-10 09:10:16"
+        "createdAt": "2026-04-13 18:29:25",
+        "updatedAt": "2026-04-13 18:29:25"
       }
     ],
     "nextCursor": "yyyy-MM-dd HH:mm:ss"
@@ -501,8 +501,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-10 09:10:16"|
-|└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:16"|
+|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:25"|
+|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:25"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -531,8 +531,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
       ],
       "status": "",
       "metadata": {},
-      "createdAt": "2026-04-10 09:10:16",
-      "updatedAt": "2026-04-10 09:10:16"
+      "createdAt": "2026-04-13 18:29:25",
+      "updatedAt": "2026-04-13 18:29:25"
     }
   ],
   "message": "",
@@ -1696,8 +1696,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-10 09:10:17"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:17"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:28"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:28"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -1760,8 +1760,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-10 09:10:17",
-        "updatedAt": "2026-04-10 09:10:17"
+        "createdAt": "2026-04-13 18:29:28",
+        "updatedAt": "2026-04-13 18:29:28"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -3213,8 +3213,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-10 09:10:20"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:20"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:35"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -3238,8 +3238,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-10 09:10:20",
-        "updatedAt": "2026-04-10 09:10:20"
+        "createdAt": "2026-04-13 18:29:35",
+        "updatedAt": "2026-04-13 18:29:35"
       },
       "product": {
         "id": "",
@@ -3303,8 +3303,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-10 09:10:20"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:20"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:36"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -3328,8 +3328,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-10 09:10:20",
-        "updatedAt": "2026-04-10 09:10:20"
+        "createdAt": "2026-04-13 18:29:36",
+        "updatedAt": "2026-04-13 18:29:36"
       },
       "product": {
         "id": "",
@@ -3397,8 +3397,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-10 09:10:20"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:20"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:36"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -3421,8 +3421,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-10 09:10:20",
-      "updatedAt": "2026-04-10 09:10:20"
+      "createdAt": "2026-04-13 18:29:36",
+      "updatedAt": "2026-04-13 18:29:36"
     },
     "product": {
       "id": "",
@@ -4102,8 +4102,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-10 09:10:18"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:18"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:30"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:30"|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
 |└─expiresIn|int64|No comments found.|-|0|
@@ -4121,8 +4121,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-10 09:10:18",
-      "updatedAt": "2026-04-10 09:10:18"
+      "createdAt": "2026-04-13 18:29:30",
+      "updatedAt": "2026-04-13 18:29:30"
     },
     "token": "",
     "refreshToken": "",
@@ -4178,8 +4178,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-10 09:10:18"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:18"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:30"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:30"|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
 |└─expiresIn|int64|No comments found.|-|0|
@@ -4197,8 +4197,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-10 09:10:18",
-      "updatedAt": "2026-04-10 09:10:18"
+      "createdAt": "2026-04-13 18:29:30",
+      "updatedAt": "2026-04-13 18:29:30"
     },
     "token": "",
     "refreshToken": "",
@@ -4258,8 +4258,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-10 09:10:22"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:22"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:38"|
 |└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
@@ -4276,8 +4276,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-10 09:10:22",
-        "updatedAt": "2026-04-10 09:10:22"
+        "createdAt": "2026-04-13 18:29:38",
+        "updatedAt": "2026-04-13 18:29:38"
       }
     ],
     "nextCursor": "yyyy-MM-dd HH:mm:ss"
@@ -4326,8 +4326,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-10 09:10:22"|
-|└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:22"|
+|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:38"|
+|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:38"|
 
 **Response-example:**
 ```json
@@ -4341,8 +4341,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-10 09:10:22",
-    "updatedAt": "2026-04-10 09:10:22"
+    "createdAt": "2026-04-13 18:29:38",
+    "updatedAt": "2026-04-13 18:29:38"
   }
 }
 ```
@@ -4389,8 +4389,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-10 09:10:22"|
-|└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:22"|
+|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:38"|
+|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:38"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -4404,8 +4404,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-10 09:10:22",
-    "updatedAt": "2026-04-10 09:10:22"
+    "createdAt": "2026-04-13 18:29:38",
+    "updatedAt": "2026-04-13 18:29:38"
   },
   "message": "",
   "status": true
@@ -4451,8 +4451,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-10 09:10:22"|
-|└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:22"|
+|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:38"|
+|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:38"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -4466,8 +4466,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-10 09:10:22",
-    "updatedAt": "2026-04-10 09:10:22"
+    "createdAt": "2026-04-13 18:29:38",
+    "updatedAt": "2026-04-13 18:29:38"
   },
   "message": "",
   "status": true
@@ -4513,8 +4513,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-10 09:10:22"|
-|└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:22"|
+|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:38"|
+|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:38"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -4528,8 +4528,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-10 09:10:22",
-    "updatedAt": "2026-04-10 09:10:22"
+    "createdAt": "2026-04-13 18:29:38",
+    "updatedAt": "2026-04-13 18:29:38"
   },
   "message": "",
   "status": true
@@ -4587,8 +4587,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-10 09:10:22"|
-|└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:22"|
+|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:38"|
+|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:38"|
 
 **Response-example:**
 ```json
@@ -4602,8 +4602,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-10 09:10:22",
-    "updatedAt": "2026-04-10 09:10:22"
+    "createdAt": "2026-04-13 18:29:38",
+    "updatedAt": "2026-04-13 18:29:38"
   }
 }
 ```
@@ -4658,8 +4658,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-10 09:10:22"|
-|└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:22"|
+|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:38"|
+|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:38"|
 
 **Response-example:**
 ```json
@@ -4673,8 +4673,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-10 09:10:22",
-    "updatedAt": "2026-04-10 09:10:22"
+    "createdAt": "2026-04-13 18:29:38",
+    "updatedAt": "2026-04-13 18:29:38"
   }
 }
 ```
@@ -8232,6 +8232,9 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─image|string|            Primary product image URL.|-||
 |└─thumbnail|string|        Thumbnail image URL.|-||
 |└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
 |└─features|array|         List of notable product features.|-|""","""|
 |└─specifications|array|   Technical specification key-value pairs.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
@@ -8251,6 +8254,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -8298,7 +8302,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### updateVariantGroup
@@ -8353,6 +8357,9 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─image|string|            Primary product image URL.|-||
 |└─thumbnail|string|        Thumbnail image URL.|-||
 |└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
 |└─features|array|         List of notable product features.|-|""","""|
 |└─specifications|array|   Technical specification key-value pairs.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
@@ -8372,6 +8379,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -8419,7 +8427,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### removeVariantGroup
@@ -8465,6 +8473,9 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 |└─image|string|            Primary product image URL.|-||
 |└─thumbnail|string|        Thumbnail image URL.|-||
 |└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
 |└─features|array|         List of notable product features.|-|""","""|
 |└─specifications|array|   Technical specification key-value pairs.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
@@ -8484,6 +8495,7 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -8531,7 +8543,7 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### addSku
@@ -8597,6 +8609,9 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─image|string|            Primary product image URL.|-||
 |└─thumbnail|string|        Thumbnail image URL.|-||
 |└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
 |└─features|array|         List of notable product features.|-|""","""|
 |└─specifications|array|   Technical specification key-value pairs.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
@@ -8616,6 +8631,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -8663,7 +8679,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### updateSku
@@ -8721,6 +8737,9 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─image|string|            Primary product image URL.|-||
 |└─thumbnail|string|        Thumbnail image URL.|-||
 |└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
 |└─features|array|         List of notable product features.|-|""","""|
 |└─specifications|array|   Technical specification key-value pairs.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
@@ -8740,6 +8759,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -8787,7 +8807,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### removeSku
@@ -8834,6 +8854,9 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 |└─image|string|            Primary product image URL.|-||
 |└─thumbnail|string|        Thumbnail image URL.|-||
 |└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
 |└─features|array|         List of notable product features.|-|""","""|
 |└─specifications|array|   Technical specification key-value pairs.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
@@ -8853,6 +8876,7 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -8900,7 +8924,7 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ## Customer Authentication
@@ -8954,8 +8978,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-10 09:10:18"|
-|└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:18"|
+|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:29"|
+|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:29"|
 
 **Response-example:**
 ```json
@@ -8969,8 +8993,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-10 09:10:18",
-    "updatedAt": "2026-04-10 09:10:18"
+    "createdAt": "2026-04-13 18:29:29",
+    "updatedAt": "2026-04-13 18:29:29"
   }
 }
 ```
@@ -9015,8 +9039,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-10 09:10:18"|
-|└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:18"|
+|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:29"|
+|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:29"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -9031,8 +9055,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-10 09:10:18",
-    "updatedAt": "2026-04-10 09:10:18"
+    "createdAt": "2026-04-13 18:29:29",
+    "updatedAt": "2026-04-13 18:29:29"
   },
   "token": "",
   "refreshToken": "",
@@ -9141,19 +9165,19 @@ string
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
 |array|boolean|false|No comments found.|-|true|
-|object|boolean|false|No comments found.|-|true|
 |valueNode|boolean|false|No comments found.|-|true|
 |containerNode|boolean|false|No comments found.|-|true|
 |missingNode|boolean|false|No comments found.|-|true|
+|object|boolean|false|No comments found.|-|true|
 
 **Request-example:**
 ```bash
 curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/webhooks/whatsapp' --data '{
   "array": true,
-  "object": true,
   "valueNode": true,
   "containerNode": true,
-  "missingNode": true
+  "missingNode": true,
+  "object": true
 }'
 ```
 
@@ -9696,8 +9720,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-10 09:10:21"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:21"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactInformation|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
@@ -9780,8 +9804,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-10 09:10:21"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:21"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:37"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─tenant|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tradingName|string|No comments found.|-||
@@ -9836,8 +9860,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-10 09:10:21",
-        "updatedAt": "2026-04-10 09:10:21"
+        "createdAt": "2026-04-13 18:29:37",
+        "updatedAt": "2026-04-13 18:29:37"
       },
       "contactInformation": {
         "firstName": "",
@@ -9935,8 +9959,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
           "phoneNumber": "",
           "address": "",
           "status": "",
-          "createdAt": "2026-04-10 09:10:21",
-          "updatedAt": "2026-04-10 09:10:21"
+          "createdAt": "2026-04-13 18:29:37",
+          "updatedAt": "2026-04-13 18:29:37"
         },
         "createdAt": "yyyy-MM-dd HH:mm:ss"
       }
@@ -11855,7 +11879,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 
 **Content-Type:** multipart/form-data
 
-**Description:** This API uploads a single image.
+**Description:** Uploads a single image to Cloudinary and persists a File record.
+         Returns the file {@code id} which must be used when creating products.
 
 **Request-headers:**
 
@@ -11879,6 +11904,7 @@ curl -X POST -k -H "Content-Type: multipart/form-data" -H "X-MerchantApiKey:pk_t
 | Field | Type | Description | Since | Example |
 |-------|------|-------------|-------|---------|
 |data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
 |└─name|string|No comments found.|-||
 |└─url|string|No comments found.|-||
 |└─type|string|No comments found.|-||
@@ -11889,6 +11915,7 @@ curl -X POST -k -H "Content-Type: multipart/form-data" -H "X-MerchantApiKey:pk_t
 ```json
 {
   "data": {
+    "id": "",
     "name": "",
     "url": "",
     "type": ""
@@ -11906,7 +11933,8 @@ curl -X POST -k -H "Content-Type: multipart/form-data" -H "X-MerchantApiKey:pk_t
 
 **Content-Type:** multipart/form-data
 
-**Description:** This API uploads multiple images.
+**Description:** Uploads multiple images to Cloudinary and persists File records for each.
+         Returns a list of file objects — use each {@code id} when creating products.
 
 **Request-headers:**
 
@@ -11930,6 +11958,7 @@ curl -X POST -k -H "Content-Type: multipart/form-data" -H "X-MerchantApiKey:pk_t
 | Field | Type | Description | Since | Example |
 |-------|------|-------------|-------|---------|
 |data|array|No comments found.|-||
+|└─id|string|No comments found.|-||
 |└─name|string|No comments found.|-||
 |└─url|string|No comments found.|-||
 |└─type|string|No comments found.|-||
@@ -11941,6 +11970,7 @@ curl -X POST -k -H "Content-Type: multipart/form-data" -H "X-MerchantApiKey:pk_t
 {
   "data": [
     {
+      "id": "",
       "name": "",
       "url": "",
       "type": ""
@@ -13222,8 +13252,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
 |└─status|string|No comments found.|-||
 |└─paymentGatewayTransactionId|string|No comments found.|-||
 |└─manualPayment|boolean|No comments found.|-|true|
-|└─createdAt|string|No comments found.|-|"2026-04-10 09:10:18"|
-|└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:18"|
+|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:31"|
+|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:31"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -13243,8 +13273,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
     "status": "",
     "paymentGatewayTransactionId": "",
     "manualPayment": true,
-    "createdAt": "2026-04-10 09:10:18",
-    "updatedAt": "2026-04-10 09:10:18"
+    "createdAt": "2026-04-13 18:29:31",
+    "updatedAt": "2026-04-13 18:29:31"
   },
   "message": "",
   "status": true
@@ -13734,8 +13764,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-10 09:10:18"|
-|└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:18"|
+|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:30"|
+|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:30"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -13750,8 +13780,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-10 09:10:18",
-    "updatedAt": "2026-04-10 09:10:18"
+    "createdAt": "2026-04-13 18:29:30",
+    "updatedAt": "2026-04-13 18:29:30"
   },
   "token": "",
   "refreshToken": "",
@@ -14412,6 +14442,9 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |└─image|string|            Primary product image URL.|-||
 |└─thumbnail|string|        Thumbnail image URL.|-||
 |└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
 |└─features|array|         List of notable product features.|-|""","""|
 |└─specifications|array|   Technical specification key-value pairs.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
@@ -14431,6 +14464,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -14478,7 +14512,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### createProduct
@@ -14557,6 +14591,9 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─image|string|            Primary product image URL.|-||
 |└─thumbnail|string|        Thumbnail image URL.|-||
 |└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
 |└─features|array|         List of notable product features.|-|""","""|
 |└─specifications|array|   Technical specification key-value pairs.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
@@ -14576,6 +14613,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -14623,7 +14661,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### updateProduct
@@ -14710,6 +14748,9 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─image|string|            Primary product image URL.|-||
 |└─thumbnail|string|        Thumbnail image URL.|-||
 |└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
 |└─features|array|         List of notable product features.|-|""","""|
 |└─specifications|array|   Technical specification key-value pairs.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
@@ -14729,6 +14770,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -14776,7 +14818,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### deleteProduct
@@ -14866,6 +14908,9 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/
 |└─image|string|            Primary product image URL.|-||
 |└─thumbnail|string|        Thumbnail image URL.|-||
 |└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
 |└─features|array|         List of notable product features.|-|""","""|
 |└─specifications|array|   Technical specification key-value pairs.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
@@ -14885,6 +14930,7 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -14932,7 +14978,7 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### Unarchive Product (V2)
@@ -14977,6 +15023,9 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/
 |└─image|string|            Primary product image URL.|-||
 |└─thumbnail|string|        Thumbnail image URL.|-||
 |└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
 |└─features|array|         List of notable product features.|-|""","""|
 |└─specifications|array|   Technical specification key-value pairs.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
@@ -14996,6 +15045,7 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -15043,7 +15093,7 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### getSimilarProducts
@@ -15094,6 +15144,9 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |└─image|string|            Primary product image URL.|-||
 |└─thumbnail|string|        Thumbnail image URL.|-||
 |└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
 |└─features|array|         List of notable product features.|-|""","""|
 |└─specifications|array|   Technical specification key-value pairs.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
@@ -15113,6 +15166,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -15160,7 +15214,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":[{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}]}
+{"status":true,"message":"","data":[{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}]}
 ```
 
 ### getTopSelling
@@ -16027,6 +16081,283 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1
 {
   "status": true,
   "message": ""
+}
+```
+
+## Merchant – Tenant App Setting Management
+### List Tenant Settings
+**URL:** https://api.shopsynch.com/v1/tenants/{tenantId}/settings
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Returns all setting overrides for the specified tenant.
+         Optionally filter by category. Does NOT merge global settings —
+         only shows rows that exist for this tenant.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|No comments found.|-||
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|category|enum|false|No comments found.<br/>[Enum: PAYMENT, URL, EMAIL, FEATURE_FLAG, SYSTEM, O_AUTH]|-|PAYMENT|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/tenants/{tenantId}/settings?category=PAYMENT'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─key|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─value|object|No comments found.|-||
+|└─label|string|No comments found.|-||
+|└─description|string|No comments found.|-||
+|└─valueType|enum|No comments found.<br/>[Enum: STRING, NUMBER, BOOLEAN, JSON]|-|STRING|
+|└─category|enum|No comments found.<br/>[Enum: PAYMENT, URL, EMAIL, FEATURE_FLAG, SYSTEM, O_AUTH]|-|PAYMENT|
+|└─public|boolean|No comments found.|-|true|
+|└─editable|boolean|No comments found.|-|true|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "id": "",
+      "key": "",
+      "tenantId": "",
+      "value": {},
+      "label": "",
+      "description": "",
+      "valueType": "STRING",
+      "category": "PAYMENT",
+      "public": true,
+      "editable": true,
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "updatedAt": "yyyy-MM-dd HH:mm:ss"
+    }
+  ]
+}
+```
+
+### Override a Tenant Setting Value
+**URL:** https://api.shopsynch.com/v1/tenants/{tenantId}/settings/{key}/value
+
+**Type:** PATCH
+
+
+**Content-Type:** application/json
+
+**Description:** Creates or updates a tenant-scoped override for an existing global setting.
+         The key must already exist as a global setting; the override inherits the
+         global setting's metadata (label, description, valueType, category).
+         Returns 404 if no global setting with that key exists.
+         Returns 400 if the setting is marked as non-editable.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|No comments found.|-||
+|key|string|true|No comments found.|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|value|object|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/tenants/{tenantId}/settings/{key}/value'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─key|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─value|object|No comments found.|-||
+|└─label|string|No comments found.|-||
+|└─description|string|No comments found.|-||
+|└─valueType|enum|No comments found.<br/>[Enum: STRING, NUMBER, BOOLEAN, JSON]|-|STRING|
+|└─category|enum|No comments found.<br/>[Enum: PAYMENT, URL, EMAIL, FEATURE_FLAG, SYSTEM, O_AUTH]|-|PAYMENT|
+|└─public|boolean|No comments found.|-|true|
+|└─editable|boolean|No comments found.|-|true|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "key": "",
+    "tenantId": "",
+    "value": {},
+    "label": "",
+    "description": "",
+    "valueType": "STRING",
+    "category": "PAYMENT",
+    "public": true,
+    "editable": true,
+    "createdAt": "yyyy-MM-dd HH:mm:ss",
+    "updatedAt": "yyyy-MM-dd HH:mm:ss"
+  }
+}
+```
+
+### Delete a Tenant Setting Override
+**URL:** https://api.shopsynch.com/v1/tenants/{tenantId}/settings/{key}
+
+**Type:** DELETE
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Removes the tenant-specific override, so the global default takes effect again.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|No comments found.|-||
+|key|string|true|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/tenants/{tenantId}/settings/{key}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": ""
+}
+```
+
+### Get Public Settings for a Tenant (no auth required)
+**URL:** https://api.shopsynch.com/v1/tenants/{tenantId}/settings/public
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Returns all settings marked {@code isPublic = true} for the given tenant
+         (tenant overrides merged with global public settings).
+         Safe to call from unauthenticated storefronts.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/tenants/{tenantId}/settings/public'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─key|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─value|object|No comments found.|-||
+|└─label|string|No comments found.|-||
+|└─description|string|No comments found.|-||
+|└─valueType|enum|No comments found.<br/>[Enum: STRING, NUMBER, BOOLEAN, JSON]|-|STRING|
+|└─category|enum|No comments found.<br/>[Enum: PAYMENT, URL, EMAIL, FEATURE_FLAG, SYSTEM, O_AUTH]|-|PAYMENT|
+|└─public|boolean|No comments found.|-|true|
+|└─editable|boolean|No comments found.|-|true|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "id": "",
+      "key": "",
+      "tenantId": "",
+      "value": {},
+      "label": "",
+      "description": "",
+      "valueType": "STRING",
+      "category": "PAYMENT",
+      "public": true,
+      "editable": true,
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "updatedAt": "yyyy-MM-dd HH:mm:ss"
+    }
+  ]
 }
 ```
 
@@ -17866,8 +18197,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-10 09:10:17"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:17"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:28"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:28"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -17930,8 +18261,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-10 09:10:17",
-        "updatedAt": "2026-04-10 09:10:17"
+        "createdAt": "2026-04-13 18:29:28",
+        "updatedAt": "2026-04-13 18:29:28"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -18025,8 +18356,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-10 09:10:17"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-10 09:10:17"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:28"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:28"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -18089,8 +18420,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-10 09:10:17",
-        "updatedAt": "2026-04-10 09:10:17"
+        "createdAt": "2026-04-13 18:29:28",
+        "updatedAt": "2026-04-13 18:29:28"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -20081,6 +20412,284 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -H "x-paystack-signature" -i 'https://api.shopsynch.com/v1/webhooks/paystack'
 ```
 
+
+## Admin – Global App Setting Management
+### List All Global Settings
+**URL:** https://api.shopsynch.com/v1/admin/settings
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Returns every global (platform-wide) setting. Optionally filter by category.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|category|enum|false|No comments found.<br/>[Enum: PAYMENT, URL, EMAIL, FEATURE_FLAG, SYSTEM, O_AUTH]|-|PAYMENT|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/settings?category=PAYMENT'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─key|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─value|object|No comments found.|-||
+|└─label|string|No comments found.|-||
+|└─description|string|No comments found.|-||
+|└─valueType|enum|No comments found.<br/>[Enum: STRING, NUMBER, BOOLEAN, JSON]|-|STRING|
+|└─category|enum|No comments found.<br/>[Enum: PAYMENT, URL, EMAIL, FEATURE_FLAG, SYSTEM, O_AUTH]|-|PAYMENT|
+|└─public|boolean|No comments found.|-|true|
+|└─editable|boolean|No comments found.|-|true|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "id": "",
+      "key": "",
+      "tenantId": "",
+      "value": {},
+      "label": "",
+      "description": "",
+      "valueType": "STRING",
+      "category": "PAYMENT",
+      "public": true,
+      "editable": true,
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "updatedAt": "yyyy-MM-dd HH:mm:ss"
+    }
+  ]
+}
+```
+
+### Create or Fully Upsert a Global Setting
+**URL:** https://api.shopsynch.com/v1/admin/settings
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** Creates a new global setting or fully replaces an existing one
+         (all fields updated). Use PATCH /value for value-only updates.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|key|string|false|No comments found.|-||
+|value|object|false|No comments found.|-||
+|label|string|false|No comments found.|-||
+|description|string|false|No comments found.|-||
+|valueType|enum|false|No comments found.<br/>[Enum: STRING, NUMBER, BOOLEAN, JSON]|-|STRING|
+|category|enum|false|No comments found.<br/>[Enum: PAYMENT, URL, EMAIL, FEATURE_FLAG, SYSTEM, O_AUTH]|-|PAYMENT|
+|public|boolean|false|No comments found.|-|true|
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/settings' --data '{
+  "key": "",
+  "value": {},
+  "label": "",
+  "description": "",
+  "valueType": "STRING",
+  "category": "PAYMENT",
+  "public": true
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─key|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─value|object|No comments found.|-||
+|└─label|string|No comments found.|-||
+|└─description|string|No comments found.|-||
+|└─valueType|enum|No comments found.<br/>[Enum: STRING, NUMBER, BOOLEAN, JSON]|-|STRING|
+|└─category|enum|No comments found.<br/>[Enum: PAYMENT, URL, EMAIL, FEATURE_FLAG, SYSTEM, O_AUTH]|-|PAYMENT|
+|└─public|boolean|No comments found.|-|true|
+|└─editable|boolean|No comments found.|-|true|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "key": "",
+    "tenantId": "",
+    "value": {},
+    "label": "",
+    "description": "",
+    "valueType": "STRING",
+    "category": "PAYMENT",
+    "public": true,
+    "editable": true,
+    "createdAt": "yyyy-MM-dd HH:mm:ss",
+    "updatedAt": "yyyy-MM-dd HH:mm:ss"
+  }
+}
+```
+
+### Update a Global Setting&apos;s Value
+**URL:** https://api.shopsynch.com/v1/admin/settings/{key}/value
+
+**Type:** PATCH
+
+
+**Content-Type:** application/json
+
+**Description:** Updates only the value of an existing global setting.
+         Returns 400 if the setting is marked as non-editable.
+         Returns 404 if the key does not exist.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|key|string|true|No comments found.|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|value|object|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/settings/{key}/value'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─key|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─value|object|No comments found.|-||
+|└─label|string|No comments found.|-||
+|└─description|string|No comments found.|-||
+|└─valueType|enum|No comments found.<br/>[Enum: STRING, NUMBER, BOOLEAN, JSON]|-|STRING|
+|└─category|enum|No comments found.<br/>[Enum: PAYMENT, URL, EMAIL, FEATURE_FLAG, SYSTEM, O_AUTH]|-|PAYMENT|
+|└─public|boolean|No comments found.|-|true|
+|└─editable|boolean|No comments found.|-|true|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "key": "",
+    "tenantId": "",
+    "value": {},
+    "label": "",
+    "description": "",
+    "valueType": "STRING",
+    "category": "PAYMENT",
+    "public": true,
+    "editable": true,
+    "createdAt": "yyyy-MM-dd HH:mm:ss",
+    "updatedAt": "yyyy-MM-dd HH:mm:ss"
+  }
+}
+```
+
+### Delete a Global Setting
+**URL:** https://api.shopsynch.com/v1/admin/settings/{key}
+
+**Type:** DELETE
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Permanently removes the global setting with the given key.
+         This also evicts it from cache. After deletion, callers
+         will fall back to the in-code default value.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|key|string|true|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/settings/{key}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": ""
+}
+```
 
 ## Product Management
 ### Get All Products
