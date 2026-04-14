@@ -1,6 +1,957 @@
 # Shopsynch API
 
 
+## ProductVariationPriceDetailController
+### updateProductVariationPriceDetail
+**URL:** https://api.shopsynch.com/v1/products/variation/priceDetail/{variationPriceDetailId}
+
+**Type:** PATCH
+
+
+**Content-Type:** application/json
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|variationPriceDetailId|string|true|No comments found.|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|productId|string|true|No comments found.|-||
+|variationId|string|true|No comments found.|-||
+|price|number|false|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|newPrice|number|false|No comments found.|-|0|
+|ramSize|string|false|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|Storage|string|false|No comments found.|-||
+|size|string|false|No comments found.|-||
+|sku|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|quantityInStock|int32|false|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/variation/priceDetail/{variationPriceDetailId}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─slug|string|No comments found.|-||
+|└─description|string|No comments found.|-||
+|└─summary|string|No comments found.|-||
+|└─image|string|No comments found.|-||
+|└─thumbnail|string|No comments found.|-||
+|└─images|array|No comments found.|-|""","""|
+|└─price|number|No comments found.|-|0|
+|└─newPrice|number|No comments found.|-|0|
+|└─ramSize|string|No comments found.|-||
+|└─storage|string|No comments found.|-||
+|└─size|string|No comments found.|-||
+|└─quantity|int32|No comments found.|-|0|
+|└─brand|string|No comments found.|-||
+|└─discount|number|No comments found.|-|0|
+|└─category|string|No comments found.|-||
+|└─color|string|No comments found.|-||
+|└─customColor|string|No comments found.|-||
+|└─specifications|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
+|└─variations|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─features|array|No comments found.|-|""","""|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "name": "",
+    "slug": "",
+    "description": "",
+    "summary": "",
+    "image": "",
+    "thumbnail": "",
+    "images": [
+      ""
+    ],
+    "price": 0,
+    "newPrice": 0,
+    "ramSize": "",
+    "storage": "",
+    "size": "",
+    "quantity": 0,
+    "brand": "",
+    "discount": 0,
+    "category": "",
+    "color": "",
+    "customColor": "",
+    "specifications": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "variations": [
+      {
+        "id": "",
+        "attributeName": "",
+        "attributeValue": "",
+        "color": {
+          "id": "",
+          "name": "",
+          "code": ""
+        },
+        "customColor": "",
+        "image": "",
+        "productPriceDetails": [
+          {
+            "id": "",
+            "price": 0,
+            "newPrice": 0,
+            "ramSize": "",
+            "storage": "",
+            "size": "",
+            "sku": "",
+            "quantityInStock": 0,
+            "discount": 0,
+            "variationAttributes": {
+              "mapKey1": "",
+              "mapKey2": ""
+            }
+          }
+        ]
+      }
+    ],
+    "features": [
+      ""
+    ],
+    "createdAt": "yyyy-MM-dd HH:mm:ss"
+  }
+}
+```
+
+### addProductVariationPriceDetail
+**URL:** https://api.shopsynch.com/v1/products/variation/priceDetail
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|productId|string|true|No comments found.|-||
+|variationId|string|true|No comments found.|-||
+|price|number|false|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|newPrice|number|false|No comments found.|-|0|
+|ramSize|string|false|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|Storage|string|false|No comments found.|-||
+|size|string|false|No comments found.|-||
+|sku|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|quantityInStock|int32|false|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/variation/priceDetail' --data '{
+  "productId": "",
+  "variationId": "",
+  "price": 0,
+  "newPrice": 0,
+  "ramSize": "",
+  "Storage": "",
+  "size": "",
+  "sku": "",
+  "quantityInStock": 0,
+  "discount": 0
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─slug|string|No comments found.|-||
+|└─description|string|No comments found.|-||
+|└─summary|string|No comments found.|-||
+|└─image|string|No comments found.|-||
+|└─thumbnail|string|No comments found.|-||
+|└─images|array|No comments found.|-|""","""|
+|└─price|number|No comments found.|-|0|
+|└─newPrice|number|No comments found.|-|0|
+|└─ramSize|string|No comments found.|-||
+|└─storage|string|No comments found.|-||
+|└─size|string|No comments found.|-||
+|└─quantity|int32|No comments found.|-|0|
+|└─brand|string|No comments found.|-||
+|└─discount|number|No comments found.|-|0|
+|└─category|string|No comments found.|-||
+|└─color|string|No comments found.|-||
+|└─customColor|string|No comments found.|-||
+|└─specifications|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
+|└─variations|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─features|array|No comments found.|-|""","""|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "name": "",
+    "slug": "",
+    "description": "",
+    "summary": "",
+    "image": "",
+    "thumbnail": "",
+    "images": [
+      ""
+    ],
+    "price": 0,
+    "newPrice": 0,
+    "ramSize": "",
+    "storage": "",
+    "size": "",
+    "quantity": 0,
+    "brand": "",
+    "discount": 0,
+    "category": "",
+    "color": "",
+    "customColor": "",
+    "specifications": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "variations": [
+      {
+        "id": "",
+        "attributeName": "",
+        "attributeValue": "",
+        "color": {
+          "id": "",
+          "name": "",
+          "code": ""
+        },
+        "customColor": "",
+        "image": "",
+        "productPriceDetails": [
+          {
+            "id": "",
+            "price": 0,
+            "newPrice": 0,
+            "ramSize": "",
+            "storage": "",
+            "size": "",
+            "sku": "",
+            "quantityInStock": 0,
+            "discount": 0,
+            "variationAttributes": {
+              "mapKey1": "",
+              "mapKey2": ""
+            }
+          }
+        ]
+      }
+    ],
+    "features": [
+      ""
+    ],
+    "createdAt": "yyyy-MM-dd HH:mm:ss"
+  }
+}
+```
+
+## Product Template Management — category attribute schemas used by the dashboard and storefront.
+
+&lt;p&gt;Templates tell the merchant dashboard which fields to render when a seller creates a product,
+and tell the customer storefront how to display spec tables, filter panels, and variant selectors.
+
+&lt;p&gt;Two template tiers:
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;System defaults&lt;/strong&gt; ({@code tenantId=null}) — seeded at startup, platform-wide.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Tenant overrides&lt;/strong&gt; — created by a merchant to customise the schema for their store.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Resolution order: tenant override → system default.
+### listTemplates
+**URL:** https://api.shopsynch.com/v2/product-templates
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|categoryId|string|false|No comments found.|-||
+|tenantId|string|false|No comments found.|-||
+|systemOnly|boolean|false|No comments found.|-|false|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/product-templates?categoryId=&tenantId=&systemOnly=false'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─categoryId|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─productTypes|array|No comments found.<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|[SIMPLE]|
+|└─attributeDefinitions|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|No comments found.<br/>[Enum: STRING, NUMBER, BOOLEAN, ENUM, MULTI_ENUM, COLOR]|-|STRING|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─options|array|No comments found.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─unit|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─required|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variantDimension|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─filterable|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayAs|enum|No comments found.<br/>[Enum: TEXT, BADGE, COLOR_SWATCH, SIZE_CHART, SPEC_TABLE_ROW, HIDDEN]|-|TEXT|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─section|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayOrder|int32|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─placeholder|string|No comments found.|-||
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "id": "",
+      "name": "",
+      "categoryId": "",
+      "tenantId": "",
+      "productTypes": [
+        "SIMPLE"
+      ],
+      "attributeDefinitions": [
+        {
+          "key": "",
+          "label": "",
+          "type": "STRING",
+          "options": [
+            ""
+          ],
+          "unit": "",
+          "required": true,
+          "variantDimension": true,
+          "filterable": true,
+          "displayAs": "TEXT",
+          "section": "",
+          "displayOrder": 0,
+          "placeholder": ""
+        }
+      ],
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "updatedAt": "yyyy-MM-dd HH:mm:ss"
+    }
+  ]
+}
+```
+
+### getForCategory
+**URL:** https://api.shopsynch.com/v2/product-templates/by-category/{categoryId}
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|categoryId|string|true|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/product-templates/by-category/{categoryId}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─categoryId|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─productTypes|array|No comments found.<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|[SIMPLE]|
+|└─attributeDefinitions|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|No comments found.<br/>[Enum: STRING, NUMBER, BOOLEAN, ENUM, MULTI_ENUM, COLOR]|-|STRING|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─options|array|No comments found.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─unit|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─required|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variantDimension|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─filterable|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayAs|enum|No comments found.<br/>[Enum: TEXT, BADGE, COLOR_SWATCH, SIZE_CHART, SPEC_TABLE_ROW, HIDDEN]|-|TEXT|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─section|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayOrder|int32|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─placeholder|string|No comments found.|-||
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "name": "",
+    "categoryId": "",
+    "tenantId": "",
+    "productTypes": [
+      "SIMPLE"
+    ],
+    "attributeDefinitions": [
+      {
+        "key": "",
+        "label": "",
+        "type": "STRING",
+        "options": [
+          ""
+        ],
+        "unit": "",
+        "required": true,
+        "variantDimension": true,
+        "filterable": true,
+        "displayAs": "TEXT",
+        "section": "",
+        "displayOrder": 0,
+        "placeholder": ""
+      }
+    ],
+    "createdAt": "yyyy-MM-dd HH:mm:ss",
+    "updatedAt": "yyyy-MM-dd HH:mm:ss"
+  }
+}
+```
+
+### getById
+**URL:** https://api.shopsynch.com/v2/product-templates/{id}
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|id|string|true|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/product-templates/{id}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─categoryId|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─productTypes|array|No comments found.<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|[SIMPLE]|
+|└─attributeDefinitions|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|No comments found.<br/>[Enum: STRING, NUMBER, BOOLEAN, ENUM, MULTI_ENUM, COLOR]|-|STRING|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─options|array|No comments found.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─unit|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─required|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variantDimension|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─filterable|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayAs|enum|No comments found.<br/>[Enum: TEXT, BADGE, COLOR_SWATCH, SIZE_CHART, SPEC_TABLE_ROW, HIDDEN]|-|TEXT|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─section|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayOrder|int32|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─placeholder|string|No comments found.|-||
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "name": "",
+    "categoryId": "",
+    "tenantId": "",
+    "productTypes": [
+      "SIMPLE"
+    ],
+    "attributeDefinitions": [
+      {
+        "key": "",
+        "label": "",
+        "type": "STRING",
+        "options": [
+          ""
+        ],
+        "unit": "",
+        "required": true,
+        "variantDimension": true,
+        "filterable": true,
+        "displayAs": "TEXT",
+        "section": "",
+        "displayOrder": 0,
+        "placeholder": ""
+      }
+    ],
+    "createdAt": "yyyy-MM-dd HH:mm:ss",
+    "updatedAt": "yyyy-MM-dd HH:mm:ss"
+  }
+}
+```
+
+### create
+**URL:** https://api.shopsynch.com/v2/product-templates
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|name|string|true|No comments found.|-||
+|categoryId|string|true|No comments found.|-||
+|tenantId|string|false|Leave null to create a system-default template; supply a tenant ID for a tenant override.|-||
+|productTypes|array|false|Which product types this template applies to.<br/>Leave empty to apply to all product types.<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|[SIMPLE]|
+|attributeDefinitions|array|true|No comments found.|-||
+|└─key|string|false|No comments found.|-||
+|└─label|string|false|No comments found.|-||
+|└─type|enum|false|No comments found.<br/>[Enum: STRING, NUMBER, BOOLEAN, ENUM, MULTI_ENUM, COLOR]|-|STRING|
+|└─options|array|false|No comments found.|-|""","""|
+|└─unit|string|false|No comments found.|-||
+|└─required|boolean|false|No comments found.|-|true|
+|└─variantDimension|boolean|false|No comments found.|-|true|
+|└─filterable|boolean|false|No comments found.|-|true|
+|└─displayAs|enum|false|No comments found.<br/>[Enum: TEXT, BADGE, COLOR_SWATCH, SIZE_CHART, SPEC_TABLE_ROW, HIDDEN]|-|TEXT|
+|└─section|string|false|No comments found.|-||
+|└─displayOrder|int32|false|No comments found.|-|0|
+|└─placeholder|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/product-templates' --data '{
+  "name": "",
+  "categoryId": "",
+  "tenantId": "",
+  "productTypes": [
+    "SIMPLE"
+  ],
+  "attributeDefinitions": [
+    {
+      "key": "",
+      "label": "",
+      "type": "STRING",
+      "options": [
+        ""
+      ],
+      "unit": "",
+      "required": true,
+      "variantDimension": true,
+      "filterable": true,
+      "displayAs": "TEXT",
+      "section": "",
+      "displayOrder": 0,
+      "placeholder": ""
+    }
+  ]
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─categoryId|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─productTypes|array|No comments found.<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|[SIMPLE]|
+|└─attributeDefinitions|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|No comments found.<br/>[Enum: STRING, NUMBER, BOOLEAN, ENUM, MULTI_ENUM, COLOR]|-|STRING|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─options|array|No comments found.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─unit|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─required|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variantDimension|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─filterable|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayAs|enum|No comments found.<br/>[Enum: TEXT, BADGE, COLOR_SWATCH, SIZE_CHART, SPEC_TABLE_ROW, HIDDEN]|-|TEXT|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─section|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayOrder|int32|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─placeholder|string|No comments found.|-||
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "name": "",
+    "categoryId": "",
+    "tenantId": "",
+    "productTypes": [
+      "SIMPLE"
+    ],
+    "attributeDefinitions": [
+      {
+        "key": "",
+        "label": "",
+        "type": "STRING",
+        "options": [
+          ""
+        ],
+        "unit": "",
+        "required": true,
+        "variantDimension": true,
+        "filterable": true,
+        "displayAs": "TEXT",
+        "section": "",
+        "displayOrder": 0,
+        "placeholder": ""
+      }
+    ],
+    "createdAt": "yyyy-MM-dd HH:mm:ss",
+    "updatedAt": "yyyy-MM-dd HH:mm:ss"
+  }
+}
+```
+
+### update
+**URL:** https://api.shopsynch.com/v2/product-templates/{id}
+
+**Type:** PUT
+
+
+**Content-Type:** application/json
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|id|string|true|No comments found.|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|name|string|true|No comments found.|-||
+|categoryId|string|true|No comments found.|-||
+|tenantId|string|false|Leave null to create a system-default template; supply a tenant ID for a tenant override.|-||
+|productTypes|array|false|Which product types this template applies to.<br/>Leave empty to apply to all product types.<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|[SIMPLE]|
+|attributeDefinitions|array|true|No comments found.|-||
+|└─key|string|false|No comments found.|-||
+|└─label|string|false|No comments found.|-||
+|└─type|enum|false|No comments found.<br/>[Enum: STRING, NUMBER, BOOLEAN, ENUM, MULTI_ENUM, COLOR]|-|STRING|
+|└─options|array|false|No comments found.|-|""","""|
+|└─unit|string|false|No comments found.|-||
+|└─required|boolean|false|No comments found.|-|true|
+|└─variantDimension|boolean|false|No comments found.|-|true|
+|└─filterable|boolean|false|No comments found.|-|true|
+|└─displayAs|enum|false|No comments found.<br/>[Enum: TEXT, BADGE, COLOR_SWATCH, SIZE_CHART, SPEC_TABLE_ROW, HIDDEN]|-|TEXT|
+|└─section|string|false|No comments found.|-||
+|└─displayOrder|int32|false|No comments found.|-|0|
+|└─placeholder|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X PUT -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/product-templates/{id}' --data '{
+  "name": "",
+  "categoryId": "",
+  "tenantId": "",
+  "productTypes": [
+    "SIMPLE"
+  ],
+  "attributeDefinitions": [
+    {
+      "key": "",
+      "label": "",
+      "type": "STRING",
+      "options": [
+        ""
+      ],
+      "unit": "",
+      "required": true,
+      "variantDimension": true,
+      "filterable": true,
+      "displayAs": "TEXT",
+      "section": "",
+      "displayOrder": 0,
+      "placeholder": ""
+    }
+  ]
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─categoryId|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─productTypes|array|No comments found.<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|[SIMPLE]|
+|└─attributeDefinitions|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|No comments found.<br/>[Enum: STRING, NUMBER, BOOLEAN, ENUM, MULTI_ENUM, COLOR]|-|STRING|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─options|array|No comments found.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─unit|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─required|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variantDimension|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─filterable|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayAs|enum|No comments found.<br/>[Enum: TEXT, BADGE, COLOR_SWATCH, SIZE_CHART, SPEC_TABLE_ROW, HIDDEN]|-|TEXT|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─section|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayOrder|int32|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─placeholder|string|No comments found.|-||
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "name": "",
+    "categoryId": "",
+    "tenantId": "",
+    "productTypes": [
+      "SIMPLE"
+    ],
+    "attributeDefinitions": [
+      {
+        "key": "",
+        "label": "",
+        "type": "STRING",
+        "options": [
+          ""
+        ],
+        "unit": "",
+        "required": true,
+        "variantDimension": true,
+        "filterable": true,
+        "displayAs": "TEXT",
+        "section": "",
+        "displayOrder": 0,
+        "placeholder": ""
+      }
+    ],
+    "createdAt": "yyyy-MM-dd HH:mm:ss",
+    "updatedAt": "yyyy-MM-dd HH:mm:ss"
+  }
+}
+```
+
+### delete
+**URL:** https://api.shopsynch.com/v2/product-templates/{id}
+
+**Type:** DELETE
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|id|string|true|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/product-templates/{id}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─any object|object|any object.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {}
+}
+```
+
 ## Payment Gateway
 ### Resolve Account Number:
 **URL:** https://api.shopsynch.com/v1/payment-gateway/verify-account-number
@@ -136,8 +1087,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:25"|
-|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:25"|
+|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:00"|
+|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:00"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -165,8 +1116,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-13 18:29:25",
-    "updatedAt": "2026-04-13 18:29:25"
+    "createdAt": "2026-04-14 16:10:00",
+    "updatedAt": "2026-04-14 16:10:00"
   },
   "message": "",
   "status": true
@@ -238,8 +1189,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:25"|
-|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:25"|
+|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:00"|
+|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:00"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -267,8 +1218,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-13 18:29:25",
-    "updatedAt": "2026-04-13 18:29:25"
+    "createdAt": "2026-04-14 16:10:00",
+    "updatedAt": "2026-04-14 16:10:00"
   },
   "message": "",
   "status": true
@@ -322,8 +1273,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:25"|
-|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:25"|
+|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:00"|
+|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:00"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -351,8 +1302,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-13 18:29:25",
-    "updatedAt": "2026-04-13 18:29:25"
+    "createdAt": "2026-04-14 16:10:00",
+    "updatedAt": "2026-04-14 16:10:00"
   },
   "message": "",
   "status": true
@@ -410,8 +1361,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:25"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:25"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:00"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:00"|
 |└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
@@ -442,8 +1393,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
         ],
         "status": "",
         "metadata": {},
-        "createdAt": "2026-04-13 18:29:25",
-        "updatedAt": "2026-04-13 18:29:25"
+        "createdAt": "2026-04-14 16:10:00",
+        "updatedAt": "2026-04-14 16:10:00"
       }
     ],
     "nextCursor": "yyyy-MM-dd HH:mm:ss"
@@ -501,8 +1452,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:25"|
-|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:25"|
+|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:00"|
+|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:00"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -531,8 +1482,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
       ],
       "status": "",
       "metadata": {},
-      "createdAt": "2026-04-13 18:29:25",
-      "updatedAt": "2026-04-13 18:29:25"
+      "createdAt": "2026-04-14 16:10:00",
+      "updatedAt": "2026-04-14 16:10:00"
     }
   ],
   "message": "",
@@ -1696,8 +2647,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:28"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:28"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:01"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:01"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -1760,8 +2711,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-13 18:29:28",
-        "updatedAt": "2026-04-13 18:29:28"
+        "createdAt": "2026-04-14 16:10:01",
+        "updatedAt": "2026-04-14 16:10:01"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -2316,6 +3267,359 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 }
 ```
 
+## Product Variation Management (Authenticated)
+### Update Product Variation
+**URL:** https://api.shopsynch.com/v1/products/variation/{variationId}
+
+**Type:** PATCH
+
+
+**Content-Type:** application/json
+
+**Description:** This API updates the variation of an authenticated merchant's product.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|variationId|string|true|No comments found.|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|color|string|false|No comments found.|-||
+|customColor|string|false|No comments found.|-||
+|image|string|false|No comments found.|-||
+|productId|string|true|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/variation/{variationId}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─slug|string|No comments found.|-||
+|└─description|string|No comments found.|-||
+|└─summary|string|No comments found.|-||
+|└─image|string|No comments found.|-||
+|└─thumbnail|string|No comments found.|-||
+|└─images|array|No comments found.|-|""","""|
+|└─price|number|No comments found.|-|0|
+|└─newPrice|number|No comments found.|-|0|
+|└─ramSize|string|No comments found.|-||
+|└─storage|string|No comments found.|-||
+|└─size|string|No comments found.|-||
+|└─quantity|int32|No comments found.|-|0|
+|└─brand|string|No comments found.|-||
+|└─discount|number|No comments found.|-|0|
+|└─category|string|No comments found.|-||
+|└─color|string|No comments found.|-||
+|└─customColor|string|No comments found.|-||
+|└─specifications|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
+|└─variations|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─features|array|No comments found.|-|""","""|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "name": "",
+    "slug": "",
+    "description": "",
+    "summary": "",
+    "image": "",
+    "thumbnail": "",
+    "images": [
+      ""
+    ],
+    "price": 0,
+    "newPrice": 0,
+    "ramSize": "",
+    "storage": "",
+    "size": "",
+    "quantity": 0,
+    "brand": "",
+    "discount": 0,
+    "category": "",
+    "color": "",
+    "customColor": "",
+    "specifications": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "variations": [
+      {
+        "id": "",
+        "attributeName": "",
+        "attributeValue": "",
+        "color": {
+          "id": "",
+          "name": "",
+          "code": ""
+        },
+        "customColor": "",
+        "image": "",
+        "productPriceDetails": [
+          {
+            "id": "",
+            "price": 0,
+            "newPrice": 0,
+            "ramSize": "",
+            "storage": "",
+            "size": "",
+            "sku": "",
+            "quantityInStock": 0,
+            "discount": 0,
+            "variationAttributes": {
+              "mapKey1": "",
+              "mapKey2": ""
+            }
+          }
+        ]
+      }
+    ],
+    "features": [
+      ""
+    ],
+    "createdAt": "yyyy-MM-dd HH:mm:ss"
+  }
+}
+```
+
+### Add Product Variation
+**URL:** https://api.shopsynch.com/v1/products/variation/add
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** This API adds a variation to an authenticated merchant's product.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|productId|string|true|No comments found.|-||
+|colorId|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=10, message=Please supply a valid color id)]|-||
+|customColor|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=3, message=Length of custom color can not be less 3)]|-||
+|image|string|false|No comments found.|-||
+|priceDetails|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one price detail is required)]|-||
+|└─id|string|false|No comments found.|-||
+|└─price|number|true|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|└─newPrice|number|false|No comments found.|-|0|
+|└─ramSize|string|false|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|└─storage|string|false|No comments found.|-||
+|└─size|string|false|No comments found.|-||
+|└─sku|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|└─quantityInStock|int32|true|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|└─discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|└─variationAttributes|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|false|A map key.|-||
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/variation/add' --data '{
+  "productId": "",
+  "colorId": "",
+  "customColor": "",
+  "image": "",
+  "priceDetails": [
+    {
+      "id": "",
+      "price": 0,
+      "newPrice": 0,
+      "ramSize": "",
+      "storage": "",
+      "size": "",
+      "sku": "",
+      "quantityInStock": 0,
+      "discount": 0,
+      "variationAttributes": {
+        "mapKey1": "",
+        "mapKey2": ""
+      }
+    }
+  ]
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─slug|string|No comments found.|-||
+|└─description|string|No comments found.|-||
+|└─summary|string|No comments found.|-||
+|└─image|string|No comments found.|-||
+|└─thumbnail|string|No comments found.|-||
+|└─images|array|No comments found.|-|""","""|
+|└─price|number|No comments found.|-|0|
+|└─newPrice|number|No comments found.|-|0|
+|└─ramSize|string|No comments found.|-||
+|└─storage|string|No comments found.|-||
+|└─size|string|No comments found.|-||
+|└─quantity|int32|No comments found.|-|0|
+|└─brand|string|No comments found.|-||
+|└─discount|number|No comments found.|-|0|
+|└─category|string|No comments found.|-||
+|└─color|string|No comments found.|-||
+|└─customColor|string|No comments found.|-||
+|└─specifications|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
+|└─variations|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─features|array|No comments found.|-|""","""|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "name": "",
+    "slug": "",
+    "description": "",
+    "summary": "",
+    "image": "",
+    "thumbnail": "",
+    "images": [
+      ""
+    ],
+    "price": 0,
+    "newPrice": 0,
+    "ramSize": "",
+    "storage": "",
+    "size": "",
+    "quantity": 0,
+    "brand": "",
+    "discount": 0,
+    "category": "",
+    "color": "",
+    "customColor": "",
+    "specifications": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "variations": [
+      {
+        "id": "",
+        "attributeName": "",
+        "attributeValue": "",
+        "color": {
+          "id": "",
+          "name": "",
+          "code": ""
+        },
+        "customColor": "",
+        "image": "",
+        "productPriceDetails": [
+          {
+            "id": "",
+            "price": 0,
+            "newPrice": 0,
+            "ramSize": "",
+            "storage": "",
+            "size": "",
+            "sku": "",
+            "quantityInStock": 0,
+            "discount": 0,
+            "variationAttributes": {
+              "mapKey1": "",
+              "mapKey2": ""
+            }
+          }
+        ]
+      }
+    ],
+    "features": [
+      ""
+    ],
+    "createdAt": "yyyy-MM-dd HH:mm:ss"
+  }
+}
+```
+
 ## CategoryController
 ### getAllCategories
 **URL:** https://api.shopsynch.com/v1/categories
@@ -2357,6 +3661,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ca
 |└─id|string|No comments found.|-||
 |└─name|string|No comments found.|-||
 |└─slug|string|No comments found.|-||
+|└─systemCategoryId|string|No comments found.|-||
 
 **Response-example:**
 ```json
@@ -2367,7 +3672,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ca
     {
       "id": "",
       "name": "",
-      "slug": ""
+      "slug": "",
+      "systemCategoryId": ""
     }
   ]
 }
@@ -2872,155 +4178,6 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1
 }
 ```
 
-## ProductStatsController
-### Get Top Selling Products (Public)<br><br>Retrieves a list of the most popular products based on total quantity sold.<br>This endpoint is public-facing and omits sensitive business metrics.
-**URL:** https://api.shopsynch.com/v1/product-stats
-
-**Type:** GET
-
-
-**Content-Type:** application/x-www-form-urlencoded
-
-**Description:** Get Top Selling Products (Public)
-
-Retrieves a list of the most popular products based on total quantity sold.
-This endpoint is public-facing and omits sensitive business metrics.
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Query-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|tenantId|string|false|Optional tenant ID (defaults to current context)|-||
-|startDate|string|false|No comments found.|-||
-|endDate|string|false|No comments found.|-||
-
-**Request-example:**
-```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/product-stats?tenantId=&startDate=&endDate='
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|data|object|No comments found.|-||
-|message|string|No comments found.|-||
-|status|boolean|No comments found.|-|true|
-
-**Response-example:**
-```json
-{
-  "data": {},
-  "message": "",
-  "status": true
-}
-```
-
-### Get Top Selling Products (Public)<br><br>Retrieves a list of the most popular products based on total quantity sold.<br>This endpoint is public-facing and omits sensitive business metrics.
-**URL:** https://api.shopsynch.com/v1/product-stats/top-by-quantity
-
-**Type:** GET
-
-
-**Content-Type:** application/x-www-form-urlencoded
-
-**Description:** Get Top Selling Products (Public)
-
-Retrieves a list of the most popular products based on total quantity sold.
-This endpoint is public-facing and omits sensitive business metrics.
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Query-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|tenantId|string|false|Optional tenant ID (defaults to current context)|-||
-|startDate|string|false|No comments found.|-||
-|endDate|string|false|No comments found.|-||
-|limit|int32|true|Maximum number of products to return (default 10)|-|10|
-
-**Request-example:**
-```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/product-stats/top-by-quantity?tenantId=&startDate=&endDate=&limit=10'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|data|object|No comments found.|-||
-|message|string|No comments found.|-||
-|status|boolean|No comments found.|-|true|
-
-**Response-example:**
-```json
-{
-  "data": {},
-  "message": "",
-  "status": true
-}
-```
-
-### Get Top Selling Products base on revenue<br><br>Retrieves a list of the most popular products based on total revenue.
-**URL:** https://api.shopsynch.com/v1/product-stats/top-by-revenue
-
-**Type:** GET
-
-
-**Content-Type:** application/x-www-form-urlencoded
-
-**Description:** Get Top Selling Products base on revenue
-
-Retrieves a list of the most popular products based on total revenue.
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Query-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|tenantId|string|false|Optional tenant ID (defaults to current context)|-||
-|startDate|string|false|No comments found.|-||
-|endDate|string|false|No comments found.|-||
-|limit|int32|true|Maximum number of products to return (default 10)|-|10|
-
-**Request-example:**
-```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/product-stats/top-by-revenue?tenantId=&startDate=&endDate=&limit=10'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|data|object|No comments found.|-||
-|message|string|No comments found.|-||
-|status|boolean|No comments found.|-|true|
-
-**Response-example:**
-```json
-{
-  "data": {},
-  "message": "",
-  "status": true
-}
-```
-
 ## LocationController
 ### getCountries
 **URL:** https://api.shopsynch.com/v1/locations/countries
@@ -3213,8 +4370,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:35"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:35"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:04"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:04"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -3238,8 +4395,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-13 18:29:35",
-        "updatedAt": "2026-04-13 18:29:35"
+        "createdAt": "2026-04-14 16:10:04",
+        "updatedAt": "2026-04-14 16:10:04"
       },
       "product": {
         "id": "",
@@ -3303,8 +4460,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:36"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:04"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:04"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -3328,8 +4485,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-13 18:29:36",
-        "updatedAt": "2026-04-13 18:29:36"
+        "createdAt": "2026-04-14 16:10:04",
+        "updatedAt": "2026-04-14 16:10:04"
       },
       "product": {
         "id": "",
@@ -3397,8 +4554,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:36"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:36"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:04"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:04"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -3421,8 +4578,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-13 18:29:36",
-      "updatedAt": "2026-04-13 18:29:36"
+      "createdAt": "2026-04-14 16:10:04",
+      "updatedAt": "2026-04-14 16:10:04"
     },
     "product": {
       "id": "",
@@ -3641,6 +4798,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─systemCategoryId|string|No comments found.|-||
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -3654,7 +4812,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "productCategory": {
       "id": "",
       "name": "",
-      "slug": ""
+      "slug": "",
+      "systemCategoryId": ""
     }
   },
   "message": "",
@@ -4102,8 +5261,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:30"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:30"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:02"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:02"|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
 |└─expiresIn|int64|No comments found.|-|0|
@@ -4121,8 +5280,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-13 18:29:30",
-      "updatedAt": "2026-04-13 18:29:30"
+      "createdAt": "2026-04-14 16:10:02",
+      "updatedAt": "2026-04-14 16:10:02"
     },
     "token": "",
     "refreshToken": "",
@@ -4178,8 +5337,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:30"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:30"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:02"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:02"|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
 |└─expiresIn|int64|No comments found.|-|0|
@@ -4197,8 +5356,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-13 18:29:30",
-      "updatedAt": "2026-04-13 18:29:30"
+      "createdAt": "2026-04-14 16:10:02",
+      "updatedAt": "2026-04-14 16:10:02"
     },
     "token": "",
     "refreshToken": "",
@@ -4258,8 +5417,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:38"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:38"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:05"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:05"|
 |└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
@@ -4276,8 +5435,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-13 18:29:38",
-        "updatedAt": "2026-04-13 18:29:38"
+        "createdAt": "2026-04-14 16:10:05",
+        "updatedAt": "2026-04-14 16:10:05"
       }
     ],
     "nextCursor": "yyyy-MM-dd HH:mm:ss"
@@ -4326,8 +5485,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:38"|
-|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:38"|
+|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:05"|
+|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:05"|
 
 **Response-example:**
 ```json
@@ -4341,8 +5500,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-13 18:29:38",
-    "updatedAt": "2026-04-13 18:29:38"
+    "createdAt": "2026-04-14 16:10:05",
+    "updatedAt": "2026-04-14 16:10:05"
   }
 }
 ```
@@ -4389,8 +5548,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:38"|
-|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:38"|
+|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:05"|
+|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:05"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -4404,8 +5563,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-13 18:29:38",
-    "updatedAt": "2026-04-13 18:29:38"
+    "createdAt": "2026-04-14 16:10:05",
+    "updatedAt": "2026-04-14 16:10:05"
   },
   "message": "",
   "status": true
@@ -4451,8 +5610,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:38"|
-|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:38"|
+|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:05"|
+|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:05"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -4466,8 +5625,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-13 18:29:38",
-    "updatedAt": "2026-04-13 18:29:38"
+    "createdAt": "2026-04-14 16:10:05",
+    "updatedAt": "2026-04-14 16:10:05"
   },
   "message": "",
   "status": true
@@ -4513,8 +5672,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:38"|
-|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:38"|
+|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:05"|
+|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:05"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -4528,8 +5687,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-13 18:29:38",
-    "updatedAt": "2026-04-13 18:29:38"
+    "createdAt": "2026-04-14 16:10:05",
+    "updatedAt": "2026-04-14 16:10:05"
   },
   "message": "",
   "status": true
@@ -4587,8 +5746,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:38"|
-|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:38"|
+|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:05"|
+|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:05"|
 
 **Response-example:**
 ```json
@@ -4602,8 +5761,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-13 18:29:38",
-    "updatedAt": "2026-04-13 18:29:38"
+    "createdAt": "2026-04-14 16:10:05",
+    "updatedAt": "2026-04-14 16:10:05"
   }
 }
 ```
@@ -4658,8 +5817,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:38"|
-|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:38"|
+|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:05"|
+|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:05"|
 
 **Response-example:**
 ```json
@@ -4673,8 +5832,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-13 18:29:38",
-    "updatedAt": "2026-04-13 18:29:38"
+    "createdAt": "2026-04-14 16:10:05",
+    "updatedAt": "2026-04-14 16:10:05"
   }
 }
 ```
@@ -8153,780 +9312,6 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/da
 }
 ```
 
-## Manages variant groups and their SKUs for V2 products.
-
-&lt;p&gt;All endpoints are scoped under {@code /v2/products/{productId}/variant-groups}.
-V1 variation endpoints ({@code /v1/products/variation/*}) are NOT affected.
-### addVariantGroup
-**URL:** https://api.shopsynch.com/v2/products/{productId}/variant-groups
-
-**Type:** POST
-
-
-**Content-Type:** application/json
-
-**Description:** 
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Path-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|productId|string|true|No comments found.|-||
-
-**Body-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|attributeName|string|true|The variation dimension name, e.g. {@code "Color"}, {@code "Size"}, {@code "RAM"}.<br/>Must be consistent across all variant groups on the same product.|-||
-|attributeValue|string|true|The concrete value for this group, e.g. {@code "Red"}, {@code "XL"}, {@code "8GB"}.|-||
-|image|string|false|Hero image URL that represents this variant.|-||
-|colorId|string|false|Optional system Color document ID.<br/>When provided, the Color's name, code, and ID are resolved and stored in<br/>{@link ProductVariantGroup#getColorMeta()}.|-||
-|skus|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one SKU is required per variant group)]|-||
-|└─price|number|true|No comments found.<br/>Validation[Min(value=1, message=Price cannot be less than 1)]|-|0|
-|└─discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount cannot be less than 0); Max(value=100, message=Discount cannot be greater than 100)]|-|0|
-|└─quantityInStock|int32|false|Optional for V2 products — stock is managed via the Inventory entity.<br/>Provide this value to seed the initial stock level when creating a product;<br/>it will be written to the Inventory record. Omit to start with zero stock.<br/>Validation[Min(value=0, message=Quantity cannot be negative)]|-|0|
-|└─sku|string|false|Optional merchant-defined SKU code.|-||
-|└─attributes|object|false|Additional dimension attributes for this SKU.<br/>For example, when the parent variant group is Color=Black, the SKU might carry<br/>{@code {"Storage": "256GB", "RAM": "12GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|false|A map key.|-||
-
-**Request-example:**
-```bash
-curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products/{productId}/variant-groups' --data '{
-  "attributeName": "",
-  "attributeValue": "",
-  "image": "",
-  "colorId": "",
-  "skus": [
-    {
-      "price": 0,
-      "discount": 0,
-      "quantityInStock": 0,
-      "sku": "",
-      "attributes": {
-        "mapKey1": "",
-        "mapKey2": ""
-      }
-    }
-  ]
-}'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─id|string|               Unique product identifier.|-||
-|└─name|string|             Product display name.|-||
-|└─slug|string|             URL-friendly identifier.|-||
-|└─description|string|      Full product description.|-||
-|└─summary|string|          Short product summary.|-||
-|└─image|string|            Primary product image URL.|-||
-|└─thumbnail|string|        Thumbnail image URL.|-||
-|└─images|array|           Additional image URLs.|-|""","""|
-|└─imageFileId|string|      File entity ID for the primary image.|-||
-|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
-|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
-|└─features|array|         List of notable product features.|-|""","""|
-|└─specifications|array|   Technical specification key-value pairs.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
-|└─productType|enum|      Product structure type (SIMPLE, VARIABLE, DIGITAL, BUNDLE).<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|SIMPLE|
-|└─price|number|            Root-level base price (SIMPLE / DIGITAL / BUNDLE).|-|0|
-|└─newPrice|number|         Discounted price at root level.|-|0|
-|└─discount|number|         Discount percentage at root level.|-|0|
-|└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
-|└─sku|string|              Root-level merchant SKU code.|-||
-|└─attributes|object|       Generic key-value product attributes.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─brand|string|            Resolved brand name.|-||
-|└─category|string|         Resolved category name.|-||
-|└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─skus|array|          Purchasable units under this group.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|              Internal SKU identifier.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|           Base selling price.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|        Discounted price (computed from price and discount).|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|        Discount percentage applied to price.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
-|└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─ramSize|string|          Deprecated: use {@code attributes.get("RAM")} instead.|-||
-|└─storage|string|          Deprecated: use {@code attributes.get("Storage")} instead.|-||
-|└─size|string|             Deprecated: use {@code attributes.get("Size")} instead.|-||
-|└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
-|└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
-|└─rating|int32|           Aggregated product rating.|-|0|
-|└─archived|boolean|No comments found.|-|true|
-|└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
-
-**Response-example:**
-```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
-```
-
-### updateVariantGroup
-**URL:** https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}
-
-**Type:** PATCH
-
-
-**Content-Type:** application/json
-
-**Description:** 
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Path-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|productId|string|true|No comments found.|-||
-|groupId|string|true|No comments found.|-||
-
-**Body-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|attributeName|string|false|Updated attribute dimension name, e.g. "Color", "Size". Leave null to keep existing.|-||
-|attributeValue|string|false|Updated attribute value, e.g. "Midnight Black". Leave null to keep existing.|-||
-|image|string|false|Updated hero image URL. Leave null to keep existing.|-||
-|colorId|string|false|System Color ID to resolve and persist as {@link ProductVariantGroup#getColorMeta()}.<br/>Leave null to keep existing colour metadata.|-||
-
-**Request-example:**
-```bash
-curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─id|string|               Unique product identifier.|-||
-|└─name|string|             Product display name.|-||
-|└─slug|string|             URL-friendly identifier.|-||
-|└─description|string|      Full product description.|-||
-|└─summary|string|          Short product summary.|-||
-|└─image|string|            Primary product image URL.|-||
-|└─thumbnail|string|        Thumbnail image URL.|-||
-|└─images|array|           Additional image URLs.|-|""","""|
-|└─imageFileId|string|      File entity ID for the primary image.|-||
-|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
-|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
-|└─features|array|         List of notable product features.|-|""","""|
-|└─specifications|array|   Technical specification key-value pairs.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
-|└─productType|enum|      Product structure type (SIMPLE, VARIABLE, DIGITAL, BUNDLE).<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|SIMPLE|
-|└─price|number|            Root-level base price (SIMPLE / DIGITAL / BUNDLE).|-|0|
-|└─newPrice|number|         Discounted price at root level.|-|0|
-|└─discount|number|         Discount percentage at root level.|-|0|
-|└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
-|└─sku|string|              Root-level merchant SKU code.|-||
-|└─attributes|object|       Generic key-value product attributes.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─brand|string|            Resolved brand name.|-||
-|└─category|string|         Resolved category name.|-||
-|└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─skus|array|          Purchasable units under this group.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|              Internal SKU identifier.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|           Base selling price.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|        Discounted price (computed from price and discount).|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|        Discount percentage applied to price.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
-|└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─ramSize|string|          Deprecated: use {@code attributes.get("RAM")} instead.|-||
-|└─storage|string|          Deprecated: use {@code attributes.get("Storage")} instead.|-||
-|└─size|string|             Deprecated: use {@code attributes.get("Size")} instead.|-||
-|└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
-|└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
-|└─rating|int32|           Aggregated product rating.|-|0|
-|└─archived|boolean|No comments found.|-|true|
-|└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
-
-**Response-example:**
-```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
-```
-
-### removeVariantGroup
-**URL:** https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}
-
-**Type:** DELETE
-
-
-**Content-Type:** application/x-www-form-urlencoded
-
-**Description:** 
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Path-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|productId|string|true|No comments found.|-||
-|groupId|string|true|No comments found.|-||
-
-**Request-example:**
-```bash
-curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─id|string|               Unique product identifier.|-||
-|└─name|string|             Product display name.|-||
-|└─slug|string|             URL-friendly identifier.|-||
-|└─description|string|      Full product description.|-||
-|└─summary|string|          Short product summary.|-||
-|└─image|string|            Primary product image URL.|-||
-|└─thumbnail|string|        Thumbnail image URL.|-||
-|└─images|array|           Additional image URLs.|-|""","""|
-|└─imageFileId|string|      File entity ID for the primary image.|-||
-|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
-|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
-|└─features|array|         List of notable product features.|-|""","""|
-|└─specifications|array|   Technical specification key-value pairs.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
-|└─productType|enum|      Product structure type (SIMPLE, VARIABLE, DIGITAL, BUNDLE).<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|SIMPLE|
-|└─price|number|            Root-level base price (SIMPLE / DIGITAL / BUNDLE).|-|0|
-|└─newPrice|number|         Discounted price at root level.|-|0|
-|└─discount|number|         Discount percentage at root level.|-|0|
-|└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
-|└─sku|string|              Root-level merchant SKU code.|-||
-|└─attributes|object|       Generic key-value product attributes.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─brand|string|            Resolved brand name.|-||
-|└─category|string|         Resolved category name.|-||
-|└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─skus|array|          Purchasable units under this group.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|              Internal SKU identifier.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|           Base selling price.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|        Discounted price (computed from price and discount).|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|        Discount percentage applied to price.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
-|└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─ramSize|string|          Deprecated: use {@code attributes.get("RAM")} instead.|-||
-|└─storage|string|          Deprecated: use {@code attributes.get("Storage")} instead.|-||
-|└─size|string|             Deprecated: use {@code attributes.get("Size")} instead.|-||
-|└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
-|└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
-|└─rating|int32|           Aggregated product rating.|-|0|
-|└─archived|boolean|No comments found.|-|true|
-|└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
-
-**Response-example:**
-```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
-```
-
-### addSku
-**URL:** https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}/skus
-
-**Type:** POST
-
-
-**Content-Type:** application/json
-
-**Description:** 
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Path-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|productId|string|true|No comments found.|-||
-|groupId|string|true|No comments found.|-||
-
-**Body-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|price|number|true|No comments found.<br/>Validation[Min(value=1, message=Price cannot be less than 1)]|-|0|
-|discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount cannot be less than 0); Max(value=100, message=Discount cannot be greater than 100)]|-|0|
-|quantityInStock|int32|false|Optional for V2 products — stock is managed via the Inventory entity.<br/>Provide this value to seed the initial stock level when creating a product;<br/>it will be written to the Inventory record. Omit to start with zero stock.<br/>Validation[Min(value=0, message=Quantity cannot be negative)]|-|0|
-|sku|string|false|Optional merchant-defined SKU code.|-||
-|attributes|object|false|Additional dimension attributes for this SKU.<br/>For example, when the parent variant group is Color=Black, the SKU might carry<br/>{@code {"Storage": "256GB", "RAM": "12GB"}}.|-||
-|└─mapKey|string|false|A map key.|-||
-
-**Request-example:**
-```bash
-curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}/skus' --data '{
-  "price": 0,
-  "discount": 0,
-  "quantityInStock": 0,
-  "sku": "",
-  "attributes": {
-    "mapKey1": "",
-    "mapKey2": ""
-  }
-}'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─id|string|               Unique product identifier.|-||
-|└─name|string|             Product display name.|-||
-|└─slug|string|             URL-friendly identifier.|-||
-|└─description|string|      Full product description.|-||
-|└─summary|string|          Short product summary.|-||
-|└─image|string|            Primary product image URL.|-||
-|└─thumbnail|string|        Thumbnail image URL.|-||
-|└─images|array|           Additional image URLs.|-|""","""|
-|└─imageFileId|string|      File entity ID for the primary image.|-||
-|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
-|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
-|└─features|array|         List of notable product features.|-|""","""|
-|└─specifications|array|   Technical specification key-value pairs.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
-|└─productType|enum|      Product structure type (SIMPLE, VARIABLE, DIGITAL, BUNDLE).<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|SIMPLE|
-|└─price|number|            Root-level base price (SIMPLE / DIGITAL / BUNDLE).|-|0|
-|└─newPrice|number|         Discounted price at root level.|-|0|
-|└─discount|number|         Discount percentage at root level.|-|0|
-|└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
-|└─sku|string|              Root-level merchant SKU code.|-||
-|└─attributes|object|       Generic key-value product attributes.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─brand|string|            Resolved brand name.|-||
-|└─category|string|         Resolved category name.|-||
-|└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─skus|array|          Purchasable units under this group.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|              Internal SKU identifier.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|           Base selling price.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|        Discounted price (computed from price and discount).|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|        Discount percentage applied to price.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
-|└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─ramSize|string|          Deprecated: use {@code attributes.get("RAM")} instead.|-||
-|└─storage|string|          Deprecated: use {@code attributes.get("Storage")} instead.|-||
-|└─size|string|             Deprecated: use {@code attributes.get("Size")} instead.|-||
-|└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
-|└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
-|└─rating|int32|           Aggregated product rating.|-|0|
-|└─archived|boolean|No comments found.|-|true|
-|└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
-
-**Response-example:**
-```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
-```
-
-### updateSku
-**URL:** https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}/skus/{skuId}
-
-**Type:** PATCH
-
-
-**Content-Type:** application/json
-
-**Description:** 
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Path-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|productId|string|true|No comments found.|-||
-|groupId|string|true|No comments found.|-||
-|skuId|string|true|No comments found.|-||
-
-**Body-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|price|number|true|No comments found.<br/>Validation[Min(value=1, message=Price cannot be less than 1)]|-|0|
-|discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount cannot be less than 0); Max(value=100, message=Discount cannot be greater than 100)]|-|0|
-|quantityInStock|int32|false|Optional for V2 products — stock is managed via the Inventory entity.<br/>Provide this value to seed the initial stock level when creating a product;<br/>it will be written to the Inventory record. Omit to start with zero stock.<br/>Validation[Min(value=0, message=Quantity cannot be negative)]|-|0|
-|sku|string|false|Optional merchant-defined SKU code.|-||
-|attributes|object|false|Additional dimension attributes for this SKU.<br/>For example, when the parent variant group is Color=Black, the SKU might carry<br/>{@code {"Storage": "256GB", "RAM": "12GB"}}.|-||
-|└─mapKey|string|false|A map key.|-||
-
-**Request-example:**
-```bash
-curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}/skus/{skuId}'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─id|string|               Unique product identifier.|-||
-|└─name|string|             Product display name.|-||
-|└─slug|string|             URL-friendly identifier.|-||
-|└─description|string|      Full product description.|-||
-|└─summary|string|          Short product summary.|-||
-|└─image|string|            Primary product image URL.|-||
-|└─thumbnail|string|        Thumbnail image URL.|-||
-|└─images|array|           Additional image URLs.|-|""","""|
-|└─imageFileId|string|      File entity ID for the primary image.|-||
-|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
-|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
-|└─features|array|         List of notable product features.|-|""","""|
-|└─specifications|array|   Technical specification key-value pairs.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
-|└─productType|enum|      Product structure type (SIMPLE, VARIABLE, DIGITAL, BUNDLE).<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|SIMPLE|
-|└─price|number|            Root-level base price (SIMPLE / DIGITAL / BUNDLE).|-|0|
-|└─newPrice|number|         Discounted price at root level.|-|0|
-|└─discount|number|         Discount percentage at root level.|-|0|
-|└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
-|└─sku|string|              Root-level merchant SKU code.|-||
-|└─attributes|object|       Generic key-value product attributes.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─brand|string|            Resolved brand name.|-||
-|└─category|string|         Resolved category name.|-||
-|└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─skus|array|          Purchasable units under this group.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|              Internal SKU identifier.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|           Base selling price.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|        Discounted price (computed from price and discount).|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|        Discount percentage applied to price.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
-|└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─ramSize|string|          Deprecated: use {@code attributes.get("RAM")} instead.|-||
-|└─storage|string|          Deprecated: use {@code attributes.get("Storage")} instead.|-||
-|└─size|string|             Deprecated: use {@code attributes.get("Size")} instead.|-||
-|└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
-|└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
-|└─rating|int32|           Aggregated product rating.|-|0|
-|└─archived|boolean|No comments found.|-|true|
-|└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
-
-**Response-example:**
-```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
-```
-
-### removeSku
-**URL:** https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}/skus/{skuId}
-
-**Type:** DELETE
-
-
-**Content-Type:** application/x-www-form-urlencoded
-
-**Description:** 
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Path-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|productId|string|true|No comments found.|-||
-|groupId|string|true|No comments found.|-||
-|skuId|string|true|No comments found.|-||
-
-**Request-example:**
-```bash
-curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}/skus/{skuId}'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─id|string|               Unique product identifier.|-||
-|└─name|string|             Product display name.|-||
-|└─slug|string|             URL-friendly identifier.|-||
-|└─description|string|      Full product description.|-||
-|└─summary|string|          Short product summary.|-||
-|└─image|string|            Primary product image URL.|-||
-|└─thumbnail|string|        Thumbnail image URL.|-||
-|└─images|array|           Additional image URLs.|-|""","""|
-|└─imageFileId|string|      File entity ID for the primary image.|-||
-|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
-|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
-|└─features|array|         List of notable product features.|-|""","""|
-|└─specifications|array|   Technical specification key-value pairs.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
-|└─productType|enum|      Product structure type (SIMPLE, VARIABLE, DIGITAL, BUNDLE).<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|SIMPLE|
-|└─price|number|            Root-level base price (SIMPLE / DIGITAL / BUNDLE).|-|0|
-|└─newPrice|number|         Discounted price at root level.|-|0|
-|└─discount|number|         Discount percentage at root level.|-|0|
-|└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
-|└─sku|string|              Root-level merchant SKU code.|-||
-|└─attributes|object|       Generic key-value product attributes.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─brand|string|            Resolved brand name.|-||
-|└─category|string|         Resolved category name.|-||
-|└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─skus|array|          Purchasable units under this group.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|              Internal SKU identifier.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|           Base selling price.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|        Discounted price (computed from price and discount).|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|        Discount percentage applied to price.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
-|└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─ramSize|string|          Deprecated: use {@code attributes.get("RAM")} instead.|-||
-|└─storage|string|          Deprecated: use {@code attributes.get("Storage")} instead.|-||
-|└─size|string|             Deprecated: use {@code attributes.get("Size")} instead.|-||
-|└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
-|└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
-|└─rating|int32|           Aggregated product rating.|-|0|
-|└─archived|boolean|No comments found.|-|true|
-|└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
-
-**Response-example:**
-```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
-```
-
 ## Customer Authentication
 ### Register Customer.
 **URL:** https://api.shopsynch.com/v1/auth/customer/signup
@@ -8978,8 +9363,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:29"|
-|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:29"|
+|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:02"|
+|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:02"|
 
 **Response-example:**
 ```json
@@ -8993,8 +9378,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-13 18:29:29",
-    "updatedAt": "2026-04-13 18:29:29"
+    "createdAt": "2026-04-14 16:10:02",
+    "updatedAt": "2026-04-14 16:10:02"
   }
 }
 ```
@@ -9039,8 +9424,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:29"|
-|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:29"|
+|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:02"|
+|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:02"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -9055,8 +9440,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-13 18:29:29",
-    "updatedAt": "2026-04-13 18:29:29"
+    "createdAt": "2026-04-14 16:10:02",
+    "updatedAt": "2026-04-14 16:10:02"
   },
   "token": "",
   "refreshToken": "",
@@ -9165,19 +9550,19 @@ string
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
 |array|boolean|false|No comments found.|-|true|
+|object|boolean|false|No comments found.|-|true|
 |valueNode|boolean|false|No comments found.|-|true|
 |containerNode|boolean|false|No comments found.|-|true|
 |missingNode|boolean|false|No comments found.|-|true|
-|object|boolean|false|No comments found.|-|true|
 
 **Request-example:**
 ```bash
 curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/webhooks/whatsapp' --data '{
   "array": true,
+  "object": true,
   "valueNode": true,
   "containerNode": true,
-  "missingNode": true,
-  "object": true
+  "missingNode": true
 }'
 ```
 
@@ -9720,8 +10105,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:37"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:04"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:04"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactInformation|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
@@ -9804,8 +10189,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:37"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:37"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:04"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:04"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─tenant|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tradingName|string|No comments found.|-||
@@ -9860,8 +10245,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-13 18:29:37",
-        "updatedAt": "2026-04-13 18:29:37"
+        "createdAt": "2026-04-14 16:10:04",
+        "updatedAt": "2026-04-14 16:10:04"
       },
       "contactInformation": {
         "firstName": "",
@@ -9959,8 +10344,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
           "phoneNumber": "",
           "address": "",
           "status": "",
-          "createdAt": "2026-04-13 18:29:37",
-          "updatedAt": "2026-04-13 18:29:37"
+          "createdAt": "2026-04-14 16:10:04",
+          "updatedAt": "2026-04-14 16:10:04"
         },
         "createdAt": "yyyy-MM-dd HH:mm:ss"
       }
@@ -11528,348 +11913,6 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/he
 }
 ```
 
-## ProductVariationPriceDetailController
-### updateProductVariationPriceDetail
-**URL:** https://api.shopsynch.com/v1/products/variation/priceDetail/{variationPriceDetailId}
-
-**Type:** PATCH
-
-
-**Content-Type:** application/json
-
-**Description:** 
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Path-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|variationPriceDetailId|string|true|No comments found.|-||
-
-**Body-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|productId|string|true|No comments found.|-||
-|variationId|string|true|No comments found.|-||
-|price|number|false|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|newPrice|number|false|No comments found.|-|0|
-|ramSize|string|false|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|Storage|string|false|No comments found.|-||
-|size|string|false|No comments found.|-||
-|sku|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|quantityInStock|int32|false|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-
-**Request-example:**
-```bash
-curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/variation/priceDetail/{variationPriceDetailId}'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─id|string|No comments found.|-||
-|└─name|string|No comments found.|-||
-|└─slug|string|No comments found.|-||
-|└─description|string|No comments found.|-||
-|└─summary|string|No comments found.|-||
-|└─image|string|No comments found.|-||
-|└─thumbnail|string|No comments found.|-||
-|└─images|array|No comments found.|-|""","""|
-|└─price|number|No comments found.|-|0|
-|└─newPrice|number|No comments found.|-|0|
-|└─ramSize|string|No comments found.|-||
-|└─storage|string|No comments found.|-||
-|└─size|string|No comments found.|-||
-|└─quantity|int32|No comments found.|-|0|
-|└─brand|string|No comments found.|-||
-|└─discount|number|No comments found.|-|0|
-|└─category|string|No comments found.|-||
-|└─color|string|No comments found.|-||
-|└─customColor|string|No comments found.|-||
-|└─specifications|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
-|└─variations|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─features|array|No comments found.|-|""","""|
-|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": {
-    "id": "",
-    "name": "",
-    "slug": "",
-    "description": "",
-    "summary": "",
-    "image": "",
-    "thumbnail": "",
-    "images": [
-      ""
-    ],
-    "price": 0,
-    "newPrice": 0,
-    "ramSize": "",
-    "storage": "",
-    "size": "",
-    "quantity": 0,
-    "brand": "",
-    "discount": 0,
-    "category": "",
-    "color": "",
-    "customColor": "",
-    "specifications": [
-      {
-        "key": "",
-        "value": ""
-      }
-    ],
-    "variations": [
-      {
-        "id": "",
-        "attributeName": "",
-        "attributeValue": "",
-        "color": {
-          "id": "",
-          "name": "",
-          "code": ""
-        },
-        "customColor": "",
-        "image": "",
-        "productPriceDetails": [
-          {
-            "id": "",
-            "price": 0,
-            "newPrice": 0,
-            "ramSize": "",
-            "storage": "",
-            "size": "",
-            "sku": "",
-            "quantityInStock": 0,
-            "discount": 0,
-            "variationAttributes": {
-              "mapKey1": "",
-              "mapKey2": ""
-            }
-          }
-        ]
-      }
-    ],
-    "features": [
-      ""
-    ],
-    "createdAt": "yyyy-MM-dd HH:mm:ss"
-  }
-}
-```
-
-### addProductVariationPriceDetail
-**URL:** https://api.shopsynch.com/v1/products/variation/priceDetail
-
-**Type:** POST
-
-
-**Content-Type:** application/json
-
-**Description:** 
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Body-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|productId|string|true|No comments found.|-||
-|variationId|string|true|No comments found.|-||
-|price|number|false|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|newPrice|number|false|No comments found.|-|0|
-|ramSize|string|false|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|Storage|string|false|No comments found.|-||
-|size|string|false|No comments found.|-||
-|sku|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|quantityInStock|int32|false|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-
-**Request-example:**
-```bash
-curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/variation/priceDetail' --data '{
-  "productId": "",
-  "variationId": "",
-  "price": 0,
-  "newPrice": 0,
-  "ramSize": "",
-  "Storage": "",
-  "size": "",
-  "sku": "",
-  "quantityInStock": 0,
-  "discount": 0
-}'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─id|string|No comments found.|-||
-|└─name|string|No comments found.|-||
-|└─slug|string|No comments found.|-||
-|└─description|string|No comments found.|-||
-|└─summary|string|No comments found.|-||
-|└─image|string|No comments found.|-||
-|└─thumbnail|string|No comments found.|-||
-|└─images|array|No comments found.|-|""","""|
-|└─price|number|No comments found.|-|0|
-|└─newPrice|number|No comments found.|-|0|
-|└─ramSize|string|No comments found.|-||
-|└─storage|string|No comments found.|-||
-|└─size|string|No comments found.|-||
-|└─quantity|int32|No comments found.|-|0|
-|└─brand|string|No comments found.|-||
-|└─discount|number|No comments found.|-|0|
-|└─category|string|No comments found.|-||
-|└─color|string|No comments found.|-||
-|└─customColor|string|No comments found.|-||
-|└─specifications|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
-|└─variations|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─features|array|No comments found.|-|""","""|
-|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": {
-    "id": "",
-    "name": "",
-    "slug": "",
-    "description": "",
-    "summary": "",
-    "image": "",
-    "thumbnail": "",
-    "images": [
-      ""
-    ],
-    "price": 0,
-    "newPrice": 0,
-    "ramSize": "",
-    "storage": "",
-    "size": "",
-    "quantity": 0,
-    "brand": "",
-    "discount": 0,
-    "category": "",
-    "color": "",
-    "customColor": "",
-    "specifications": [
-      {
-        "key": "",
-        "value": ""
-      }
-    ],
-    "variations": [
-      {
-        "id": "",
-        "attributeName": "",
-        "attributeValue": "",
-        "color": {
-          "id": "",
-          "name": "",
-          "code": ""
-        },
-        "customColor": "",
-        "image": "",
-        "productPriceDetails": [
-          {
-            "id": "",
-            "price": 0,
-            "newPrice": 0,
-            "ramSize": "",
-            "storage": "",
-            "size": "",
-            "sku": "",
-            "quantityInStock": 0,
-            "discount": 0,
-            "variationAttributes": {
-              "mapKey1": "",
-              "mapKey2": ""
-            }
-          }
-        ]
-      }
-    ],
-    "features": [
-      ""
-    ],
-    "createdAt": "yyyy-MM-dd HH:mm:ss"
-  }
-}
-```
-
 ## File Management (File Upload)
 ### Upload Single Image.
 **URL:** https://api.shopsynch.com/v1/files/upload/single/image
@@ -12284,6 +12327,155 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1
 {
   "status": true,
   "message": ""
+}
+```
+
+## ProductStatsController
+### Get Top Selling Products (Public)<br><br>Retrieves a list of the most popular products based on total quantity sold.<br>This endpoint is public-facing and omits sensitive business metrics.
+**URL:** https://api.shopsynch.com/v1/product-stats
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Get Top Selling Products (Public)
+
+Retrieves a list of the most popular products based on total quantity sold.
+This endpoint is public-facing and omits sensitive business metrics.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|false|Optional tenant ID (defaults to current context)|-||
+|startDate|string|false|No comments found.|-||
+|endDate|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/product-stats?tenantId=&startDate=&endDate='
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|data|object|No comments found.|-||
+|message|string|No comments found.|-||
+|status|boolean|No comments found.|-|true|
+
+**Response-example:**
+```json
+{
+  "data": {},
+  "message": "",
+  "status": true
+}
+```
+
+### Get Top Selling Products (Public)<br><br>Retrieves a list of the most popular products based on total quantity sold.<br>This endpoint is public-facing and omits sensitive business metrics.
+**URL:** https://api.shopsynch.com/v1/product-stats/top-by-quantity
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Get Top Selling Products (Public)
+
+Retrieves a list of the most popular products based on total quantity sold.
+This endpoint is public-facing and omits sensitive business metrics.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|false|Optional tenant ID (defaults to current context)|-||
+|startDate|string|false|No comments found.|-||
+|endDate|string|false|No comments found.|-||
+|limit|int32|true|Maximum number of products to return (default 10)|-|10|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/product-stats/top-by-quantity?tenantId=&startDate=&endDate=&limit=10'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|data|object|No comments found.|-||
+|message|string|No comments found.|-||
+|status|boolean|No comments found.|-|true|
+
+**Response-example:**
+```json
+{
+  "data": {},
+  "message": "",
+  "status": true
+}
+```
+
+### Get Top Selling Products base on revenue<br><br>Retrieves a list of the most popular products based on total revenue.
+**URL:** https://api.shopsynch.com/v1/product-stats/top-by-revenue
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Get Top Selling Products base on revenue
+
+Retrieves a list of the most popular products based on total revenue.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|false|Optional tenant ID (defaults to current context)|-||
+|startDate|string|false|No comments found.|-||
+|endDate|string|false|No comments found.|-||
+|limit|int32|true|Maximum number of products to return (default 10)|-|10|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/product-stats/top-by-revenue?tenantId=&startDate=&endDate=&limit=10'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|data|object|No comments found.|-||
+|message|string|No comments found.|-||
+|status|boolean|No comments found.|-|true|
+
+**Response-example:**
+```json
+{
+  "data": {},
+  "message": "",
+  "status": true
 }
 ```
 
@@ -13252,8 +13444,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
 |└─status|string|No comments found.|-||
 |└─paymentGatewayTransactionId|string|No comments found.|-||
 |└─manualPayment|boolean|No comments found.|-|true|
-|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:31"|
-|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:31"|
+|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:02"|
+|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:02"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -13273,8 +13465,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
     "status": "",
     "paymentGatewayTransactionId": "",
     "manualPayment": true,
-    "createdAt": "2026-04-13 18:29:31",
-    "updatedAt": "2026-04-13 18:29:31"
+    "createdAt": "2026-04-14 16:10:02",
+    "updatedAt": "2026-04-14 16:10:02"
   },
   "message": "",
   "status": true
@@ -13764,8 +13956,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-13 18:29:30"|
-|└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:30"|
+|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:02"|
+|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:02"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -13780,8 +13972,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-13 18:29:30",
-    "updatedAt": "2026-04-13 18:29:30"
+    "createdAt": "2026-04-14 16:10:02",
+    "updatedAt": "2026-04-14 16:10:02"
   },
   "token": "",
   "refreshToken": "",
@@ -14330,6 +14522,1236 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1
   "status": true,
   "message": "",
   "data": {}
+}
+```
+
+## Manages variant groups and their SKUs for V2 products.
+
+&lt;p&gt;All endpoints are scoped under {@code /v2/products/{productId}/variant-groups}.
+V1 variation endpoints ({@code /v1/products/variation/*}) are NOT affected.
+### addVariantGroup
+**URL:** https://api.shopsynch.com/v2/products/{productId}/variant-groups
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|productId|string|true|No comments found.|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|attributeName|string|true|The variation dimension name, e.g. {@code "Color"}, {@code "Size"}, {@code "RAM"}.<br/>Must be consistent across all variant groups on the same product.|-||
+|attributeValue|string|true|The concrete value for this group, e.g. {@code "Red"}, {@code "XL"}, {@code "8GB"}.|-||
+|image|string|false|Hero image URL that represents this variant.|-||
+|colorId|string|false|Optional system Color document ID.<br/>When provided, the Color's name, code, and ID are resolved and stored in<br/>{@link ProductVariantGroup#getColorMeta()}.|-||
+|skus|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one SKU is required per variant group)]|-||
+|└─price|number|true|No comments found.<br/>Validation[Min(value=1, message=Price cannot be less than 1)]|-|0|
+|└─discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount cannot be less than 0); Max(value=100, message=Discount cannot be greater than 100)]|-|0|
+|└─quantityInStock|int32|false|Optional for V2 products — stock is managed via the Inventory entity.<br/>Provide this value to seed the initial stock level when creating a product;<br/>it will be written to the Inventory record. Omit to start with zero stock.<br/>Validation[Min(value=0, message=Quantity cannot be negative)]|-|0|
+|└─sku|string|false|Optional merchant-defined SKU code.|-||
+|└─attributes|object|false|Additional dimension attributes for this SKU.<br/>For example, when the parent variant group is Color=Black, the SKU might carry<br/>{@code {"Storage": "256GB", "RAM": "12GB"}}.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|false|A map key.|-||
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products/{productId}/variant-groups' --data '{
+  "attributeName": "",
+  "attributeValue": "",
+  "image": "",
+  "colorId": "",
+  "skus": [
+    {
+      "price": 0,
+      "discount": 0,
+      "quantityInStock": 0,
+      "sku": "",
+      "attributes": {
+        "mapKey1": "",
+        "mapKey2": ""
+      }
+    }
+  ]
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|               Unique product identifier.|-||
+|└─name|string|             Product display name.|-||
+|└─slug|string|             URL-friendly identifier.|-||
+|└─description|string|      Full product description.|-||
+|└─summary|string|          Short product summary.|-||
+|└─image|string|            Primary product image URL.|-||
+|└─thumbnail|string|        Thumbnail image URL.|-||
+|└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
+|└─features|array|         List of notable product features.|-|""","""|
+|└─specifications|array|   Technical specification key-value pairs.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
+|└─productType|enum|      Product structure type (SIMPLE, VARIABLE, DIGITAL, BUNDLE).<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|SIMPLE|
+|└─price|number|            Root-level base price (SIMPLE / DIGITAL / BUNDLE).|-|0|
+|└─newPrice|number|         Discounted price at root level.|-|0|
+|└─discount|number|         Discount percentage at root level.|-|0|
+|└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
+|└─sku|string|              Root-level merchant SKU code.|-||
+|└─attributes|object|       Generic key-value product attributes.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─brand|string|            Resolved brand name.|-||
+|└─category|string|         Resolved category name.|-||
+|└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─skus|array|          Purchasable units under this group.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|              Internal SKU identifier.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|           Base selling price.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|        Discounted price (computed from price and discount).|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|        Discount percentage applied to price.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─ramSize|string|          Deprecated: use {@code attributes.get("RAM")} instead.|-||
+|└─storage|string|          Deprecated: use {@code attributes.get("Storage")} instead.|-||
+|└─size|string|             Deprecated: use {@code attributes.get("Size")} instead.|-||
+|└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
+|└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
+|└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
+|└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+```
+
+### updateVariantGroup
+**URL:** https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}
+
+**Type:** PATCH
+
+
+**Content-Type:** application/json
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|productId|string|true|No comments found.|-||
+|groupId|string|true|No comments found.|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|attributeName|string|false|Updated attribute dimension name, e.g. "Color", "Size". Leave null to keep existing.|-||
+|attributeValue|string|false|Updated attribute value, e.g. "Midnight Black". Leave null to keep existing.|-||
+|image|string|false|Updated hero image URL. Leave null to keep existing.|-||
+|colorId|string|false|System Color ID to resolve and persist as {@link ProductVariantGroup#getColorMeta()}.<br/>Leave null to keep existing colour metadata.|-||
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|               Unique product identifier.|-||
+|└─name|string|             Product display name.|-||
+|└─slug|string|             URL-friendly identifier.|-||
+|└─description|string|      Full product description.|-||
+|└─summary|string|          Short product summary.|-||
+|└─image|string|            Primary product image URL.|-||
+|└─thumbnail|string|        Thumbnail image URL.|-||
+|└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
+|└─features|array|         List of notable product features.|-|""","""|
+|└─specifications|array|   Technical specification key-value pairs.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
+|└─productType|enum|      Product structure type (SIMPLE, VARIABLE, DIGITAL, BUNDLE).<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|SIMPLE|
+|└─price|number|            Root-level base price (SIMPLE / DIGITAL / BUNDLE).|-|0|
+|└─newPrice|number|         Discounted price at root level.|-|0|
+|└─discount|number|         Discount percentage at root level.|-|0|
+|└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
+|└─sku|string|              Root-level merchant SKU code.|-||
+|└─attributes|object|       Generic key-value product attributes.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─brand|string|            Resolved brand name.|-||
+|└─category|string|         Resolved category name.|-||
+|└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─skus|array|          Purchasable units under this group.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|              Internal SKU identifier.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|           Base selling price.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|        Discounted price (computed from price and discount).|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|        Discount percentage applied to price.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─ramSize|string|          Deprecated: use {@code attributes.get("RAM")} instead.|-||
+|└─storage|string|          Deprecated: use {@code attributes.get("Storage")} instead.|-||
+|└─size|string|             Deprecated: use {@code attributes.get("Size")} instead.|-||
+|└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
+|└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
+|└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
+|└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+```
+
+### removeVariantGroup
+**URL:** https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}
+
+**Type:** DELETE
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|productId|string|true|No comments found.|-||
+|groupId|string|true|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|               Unique product identifier.|-||
+|└─name|string|             Product display name.|-||
+|└─slug|string|             URL-friendly identifier.|-||
+|└─description|string|      Full product description.|-||
+|└─summary|string|          Short product summary.|-||
+|└─image|string|            Primary product image URL.|-||
+|└─thumbnail|string|        Thumbnail image URL.|-||
+|└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
+|└─features|array|         List of notable product features.|-|""","""|
+|└─specifications|array|   Technical specification key-value pairs.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
+|└─productType|enum|      Product structure type (SIMPLE, VARIABLE, DIGITAL, BUNDLE).<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|SIMPLE|
+|└─price|number|            Root-level base price (SIMPLE / DIGITAL / BUNDLE).|-|0|
+|└─newPrice|number|         Discounted price at root level.|-|0|
+|└─discount|number|         Discount percentage at root level.|-|0|
+|└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
+|└─sku|string|              Root-level merchant SKU code.|-||
+|└─attributes|object|       Generic key-value product attributes.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─brand|string|            Resolved brand name.|-||
+|└─category|string|         Resolved category name.|-||
+|└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─skus|array|          Purchasable units under this group.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|              Internal SKU identifier.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|           Base selling price.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|        Discounted price (computed from price and discount).|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|        Discount percentage applied to price.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─ramSize|string|          Deprecated: use {@code attributes.get("RAM")} instead.|-||
+|└─storage|string|          Deprecated: use {@code attributes.get("Storage")} instead.|-||
+|└─size|string|             Deprecated: use {@code attributes.get("Size")} instead.|-||
+|└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
+|└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
+|└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
+|└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+```
+
+### addSku
+**URL:** https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}/skus
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|productId|string|true|No comments found.|-||
+|groupId|string|true|No comments found.|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|price|number|true|No comments found.<br/>Validation[Min(value=1, message=Price cannot be less than 1)]|-|0|
+|discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount cannot be less than 0); Max(value=100, message=Discount cannot be greater than 100)]|-|0|
+|quantityInStock|int32|false|Optional for V2 products — stock is managed via the Inventory entity.<br/>Provide this value to seed the initial stock level when creating a product;<br/>it will be written to the Inventory record. Omit to start with zero stock.<br/>Validation[Min(value=0, message=Quantity cannot be negative)]|-|0|
+|sku|string|false|Optional merchant-defined SKU code.|-||
+|attributes|object|false|Additional dimension attributes for this SKU.<br/>For example, when the parent variant group is Color=Black, the SKU might carry<br/>{@code {"Storage": "256GB", "RAM": "12GB"}}.|-||
+|└─mapKey|string|false|A map key.|-||
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}/skus' --data '{
+  "price": 0,
+  "discount": 0,
+  "quantityInStock": 0,
+  "sku": "",
+  "attributes": {
+    "mapKey1": "",
+    "mapKey2": ""
+  }
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|               Unique product identifier.|-||
+|└─name|string|             Product display name.|-||
+|└─slug|string|             URL-friendly identifier.|-||
+|└─description|string|      Full product description.|-||
+|└─summary|string|          Short product summary.|-||
+|└─image|string|            Primary product image URL.|-||
+|└─thumbnail|string|        Thumbnail image URL.|-||
+|└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
+|└─features|array|         List of notable product features.|-|""","""|
+|└─specifications|array|   Technical specification key-value pairs.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
+|└─productType|enum|      Product structure type (SIMPLE, VARIABLE, DIGITAL, BUNDLE).<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|SIMPLE|
+|└─price|number|            Root-level base price (SIMPLE / DIGITAL / BUNDLE).|-|0|
+|└─newPrice|number|         Discounted price at root level.|-|0|
+|└─discount|number|         Discount percentage at root level.|-|0|
+|└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
+|└─sku|string|              Root-level merchant SKU code.|-||
+|└─attributes|object|       Generic key-value product attributes.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─brand|string|            Resolved brand name.|-||
+|└─category|string|         Resolved category name.|-||
+|└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─skus|array|          Purchasable units under this group.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|              Internal SKU identifier.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|           Base selling price.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|        Discounted price (computed from price and discount).|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|        Discount percentage applied to price.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─ramSize|string|          Deprecated: use {@code attributes.get("RAM")} instead.|-||
+|└─storage|string|          Deprecated: use {@code attributes.get("Storage")} instead.|-||
+|└─size|string|             Deprecated: use {@code attributes.get("Size")} instead.|-||
+|└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
+|└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
+|└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
+|└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+```
+
+### updateSku
+**URL:** https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}/skus/{skuId}
+
+**Type:** PATCH
+
+
+**Content-Type:** application/json
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|productId|string|true|No comments found.|-||
+|groupId|string|true|No comments found.|-||
+|skuId|string|true|No comments found.|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|price|number|true|No comments found.<br/>Validation[Min(value=1, message=Price cannot be less than 1)]|-|0|
+|discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount cannot be less than 0); Max(value=100, message=Discount cannot be greater than 100)]|-|0|
+|quantityInStock|int32|false|Optional for V2 products — stock is managed via the Inventory entity.<br/>Provide this value to seed the initial stock level when creating a product;<br/>it will be written to the Inventory record. Omit to start with zero stock.<br/>Validation[Min(value=0, message=Quantity cannot be negative)]|-|0|
+|sku|string|false|Optional merchant-defined SKU code.|-||
+|attributes|object|false|Additional dimension attributes for this SKU.<br/>For example, when the parent variant group is Color=Black, the SKU might carry<br/>{@code {"Storage": "256GB", "RAM": "12GB"}}.|-||
+|└─mapKey|string|false|A map key.|-||
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}/skus/{skuId}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|               Unique product identifier.|-||
+|└─name|string|             Product display name.|-||
+|└─slug|string|             URL-friendly identifier.|-||
+|└─description|string|      Full product description.|-||
+|└─summary|string|          Short product summary.|-||
+|└─image|string|            Primary product image URL.|-||
+|└─thumbnail|string|        Thumbnail image URL.|-||
+|└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
+|└─features|array|         List of notable product features.|-|""","""|
+|└─specifications|array|   Technical specification key-value pairs.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
+|└─productType|enum|      Product structure type (SIMPLE, VARIABLE, DIGITAL, BUNDLE).<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|SIMPLE|
+|└─price|number|            Root-level base price (SIMPLE / DIGITAL / BUNDLE).|-|0|
+|└─newPrice|number|         Discounted price at root level.|-|0|
+|└─discount|number|         Discount percentage at root level.|-|0|
+|└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
+|└─sku|string|              Root-level merchant SKU code.|-||
+|└─attributes|object|       Generic key-value product attributes.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─brand|string|            Resolved brand name.|-||
+|└─category|string|         Resolved category name.|-||
+|└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─skus|array|          Purchasable units under this group.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|              Internal SKU identifier.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|           Base selling price.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|        Discounted price (computed from price and discount).|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|        Discount percentage applied to price.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─ramSize|string|          Deprecated: use {@code attributes.get("RAM")} instead.|-||
+|└─storage|string|          Deprecated: use {@code attributes.get("Storage")} instead.|-||
+|└─size|string|             Deprecated: use {@code attributes.get("Size")} instead.|-||
+|└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
+|└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
+|└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
+|└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+```
+
+### removeSku
+**URL:** https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}/skus/{skuId}
+
+**Type:** DELETE
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|productId|string|true|No comments found.|-||
+|groupId|string|true|No comments found.|-||
+|skuId|string|true|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products/{productId}/variant-groups/{groupId}/skus/{skuId}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|               Unique product identifier.|-||
+|└─name|string|             Product display name.|-||
+|└─slug|string|             URL-friendly identifier.|-||
+|└─description|string|      Full product description.|-||
+|└─summary|string|          Short product summary.|-||
+|└─image|string|            Primary product image URL.|-||
+|└─thumbnail|string|        Thumbnail image URL.|-||
+|└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
+|└─features|array|         List of notable product features.|-|""","""|
+|└─specifications|array|   Technical specification key-value pairs.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
+|└─productType|enum|      Product structure type (SIMPLE, VARIABLE, DIGITAL, BUNDLE).<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|SIMPLE|
+|└─price|number|            Root-level base price (SIMPLE / DIGITAL / BUNDLE).|-|0|
+|└─newPrice|number|         Discounted price at root level.|-|0|
+|└─discount|number|         Discount percentage at root level.|-|0|
+|└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
+|└─sku|string|              Root-level merchant SKU code.|-||
+|└─attributes|object|       Generic key-value product attributes.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─brand|string|            Resolved brand name.|-||
+|└─category|string|         Resolved category name.|-||
+|└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─skus|array|          Purchasable units under this group.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|              Internal SKU identifier.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|           Base selling price.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|        Discounted price (computed from price and discount).|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|        Discount percentage applied to price.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─ramSize|string|          Deprecated: use {@code attributes.get("RAM")} instead.|-||
+|└─storage|string|          Deprecated: use {@code attributes.get("Storage")} instead.|-||
+|└─size|string|             Deprecated: use {@code attributes.get("Size")} instead.|-||
+|└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
+|└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
+|└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
+|└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+```
+
+## Delivery Zone Management
+### Create Delivery Zone.
+**URL:** https://api.shopsynch.com/v1/delivery-zones
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** This API creates a new delivery zone.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|name|string|true|No comments found.|-||
+|estimatedDeliveryTime|string|false|No comments found.|-||
+|fee|double|true|No comments found.<br/>Validation[Min(value=0, message=Delivery fee cannot be negative)]|-|0.0|
+|stateAreas|array|true|No comments found.|-||
+|└─state|string|true|No comments found.|-||
+|└─areas|array|true|No comments found.|-|""","""|
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/delivery-zones' --data '{
+  "name": "",
+  "estimatedDeliveryTime": "",
+  "fee": 0.0,
+  "stateAreas": [
+    {
+      "state": "",
+      "areas": [
+        ""
+      ]
+    }
+  ]
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─fee|double|No comments found.|-|0.0|
+|└─estimatedDeliveryTime|string|No comments found.|-||
+|└─stateAreas|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─state|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─areas|array|No comments found.|-|""","""|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "name": "",
+    "fee": 0.0,
+    "estimatedDeliveryTime": "",
+    "stateAreas": [
+      {
+        "state": "",
+        "areas": [
+          ""
+        ]
+      }
+    ]
+  }
+}
+```
+
+### Get All Delivery Zones.
+**URL:** https://api.shopsynch.com/v1/delivery-zones
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** This API returns all delivery zones.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/delivery-zones'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─fee|double|No comments found.|-|0.0|
+|└─estimatedDeliveryTime|string|No comments found.|-||
+|└─stateAreas|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─state|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─areas|array|No comments found.|-|""","""|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "id": "",
+      "name": "",
+      "fee": 0.0,
+      "estimatedDeliveryTime": "",
+      "stateAreas": [
+        {
+          "state": "",
+          "areas": [
+            ""
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+### Update Delivery Zone.
+**URL:** https://api.shopsynch.com/v1/delivery-zones/{id}
+
+**Type:** PUT
+
+
+**Content-Type:** application/json
+
+**Description:** This API updates an existing delivery zone.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|id|string|true|No comments found.|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|name|string|true|No comments found.|-||
+|estimatedDeliveryTime|string|false|No comments found.|-||
+|fee|double|true|No comments found.<br/>Validation[Min(value=0, message=Delivery fee cannot be negative)]|-|0.0|
+|stateAreas|array|true|No comments found.|-||
+|└─state|string|true|No comments found.|-||
+|└─areas|array|true|No comments found.|-|""","""|
+
+**Request-example:**
+```bash
+curl -X PUT -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/delivery-zones/{id}' --data '{
+  "name": "",
+  "estimatedDeliveryTime": "",
+  "fee": 0.0,
+  "stateAreas": [
+    {
+      "state": "",
+      "areas": [
+        ""
+      ]
+    }
+  ]
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─fee|double|No comments found.|-|0.0|
+|└─estimatedDeliveryTime|string|No comments found.|-||
+|└─stateAreas|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─state|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─areas|array|No comments found.|-|""","""|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "name": "",
+    "fee": 0.0,
+    "estimatedDeliveryTime": "",
+    "stateAreas": [
+      {
+        "state": "",
+        "areas": [
+          ""
+        ]
+      }
+    ]
+  }
+}
+```
+
+### Delete Delivery Zone.
+**URL:** https://api.shopsynch.com/v1/delivery-zones/{id}
+
+**Type:** DELETE
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** This API deletes an existing delivery zone.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|id|string|true|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/delivery-zones/{id}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": ""
+}
+```
+
+## Merchant Management
+### Get Merchant Profile.
+**URL:** https://api.shopsynch.com/v1/merchants/profile
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** This API returns the merchant profile.
+
+
+**Request-example:**
+```bash
+curl -X GET -k -i 'https://api.shopsynch.com/v1/merchants/profile'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─email|string|No comments found.|-||
+|└─fullName|string|No comments found.|-||
+|└─phoneNumber|string|No comments found.|-||
+|└─address|string|No comments found.|-||
+|└─role|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|└─merchantId|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─lastActiveTenantId|string|No comments found.|-||
+|└─currentMode|string|No comments found.|-||
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "email": "",
+    "fullName": "",
+    "phoneNumber": "",
+    "address": "",
+    "role": {
+      "name": "",
+      "slug": ""
+    },
+    "merchantId": "",
+    "tenantId": "",
+    "lastActiveTenantId": "",
+    "currentMode": "",
+    "createdAt": "yyyy-MM-dd HH:mm:ss"
+  }
+}
+```
+
+### Get Merchant Business Profile.
+**URL:** https://api.shopsynch.com/v1/merchants/profile/business
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** This API returns the merchant business profile.
+
+
+**Request-example:**
+```bash
+curl -X GET -k -i 'https://api.shopsynch.com/v1/merchants/profile/business'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {}
+}
+```
+
+## RoleController
+### findAll
+**URL:** https://api.shopsynch.com/v1/roles
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/roles'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─id|string|No comments found.|-||
+|└─name|string|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|└─description|string|No comments found.|-||
+|└─status|boolean|No comments found.|-|true|
+|└─slug|string|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|└─permissions|array|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|NEW: Longer description for UI tooltips.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|└─type|enum|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|└─tenantId|string|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|└─permissionIds|array|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|└─merchantAssignable|boolean|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "updatedAt": "yyyy-MM-dd HH:mm:ss",
+      "id": "",
+      "name": "",
+      "description": "",
+      "status": true,
+      "slug": "",
+      "permissions": [
+        {
+          "createdAt": "yyyy-MM-dd HH:mm:ss",
+          "updatedAt": "yyyy-MM-dd HH:mm:ss",
+          "id": "",
+          "name": "",
+          "displayName": "",
+          "category": "",
+          "description": "",
+          "status": true,
+          "merchantVisible": true,
+          "slug": ""
+        }
+      ],
+      "type": "SYSTEM",
+      "tenantId": "",
+      "permissionIds": [
+        ""
+      ],
+      "merchantAssignable": true
+    }
+  ]
 }
 ```
 
@@ -15271,462 +16693,6 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 }
 ```
 
-## Delivery Zone Management
-### Create Delivery Zone.
-**URL:** https://api.shopsynch.com/v1/delivery-zones
-
-**Type:** POST
-
-
-**Content-Type:** application/json
-
-**Description:** This API creates a new delivery zone.
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Body-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|name|string|true|No comments found.|-||
-|estimatedDeliveryTime|string|false|No comments found.|-||
-|fee|double|true|No comments found.<br/>Validation[Min(value=0, message=Delivery fee cannot be negative)]|-|0.0|
-|stateAreas|array|true|No comments found.|-||
-|└─state|string|true|No comments found.|-||
-|└─areas|array|true|No comments found.|-|""","""|
-
-**Request-example:**
-```bash
-curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/delivery-zones' --data '{
-  "name": "",
-  "estimatedDeliveryTime": "",
-  "fee": 0.0,
-  "stateAreas": [
-    {
-      "state": "",
-      "areas": [
-        ""
-      ]
-    }
-  ]
-}'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─id|string|No comments found.|-||
-|└─name|string|No comments found.|-||
-|└─fee|double|No comments found.|-|0.0|
-|└─estimatedDeliveryTime|string|No comments found.|-||
-|└─stateAreas|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─state|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─areas|array|No comments found.|-|""","""|
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": {
-    "id": "",
-    "name": "",
-    "fee": 0.0,
-    "estimatedDeliveryTime": "",
-    "stateAreas": [
-      {
-        "state": "",
-        "areas": [
-          ""
-        ]
-      }
-    ]
-  }
-}
-```
-
-### Get All Delivery Zones.
-**URL:** https://api.shopsynch.com/v1/delivery-zones
-
-**Type:** GET
-
-
-**Content-Type:** application/x-www-form-urlencoded
-
-**Description:** This API returns all delivery zones.
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Request-example:**
-```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/delivery-zones'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|array|No comments found.|-||
-|└─id|string|No comments found.|-||
-|└─name|string|No comments found.|-||
-|└─fee|double|No comments found.|-|0.0|
-|└─estimatedDeliveryTime|string|No comments found.|-||
-|└─stateAreas|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─state|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─areas|array|No comments found.|-|""","""|
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": [
-    {
-      "id": "",
-      "name": "",
-      "fee": 0.0,
-      "estimatedDeliveryTime": "",
-      "stateAreas": [
-        {
-          "state": "",
-          "areas": [
-            ""
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-
-### Update Delivery Zone.
-**URL:** https://api.shopsynch.com/v1/delivery-zones/{id}
-
-**Type:** PUT
-
-
-**Content-Type:** application/json
-
-**Description:** This API updates an existing delivery zone.
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Path-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|id|string|true|No comments found.|-||
-
-**Body-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|name|string|true|No comments found.|-||
-|estimatedDeliveryTime|string|false|No comments found.|-||
-|fee|double|true|No comments found.<br/>Validation[Min(value=0, message=Delivery fee cannot be negative)]|-|0.0|
-|stateAreas|array|true|No comments found.|-||
-|└─state|string|true|No comments found.|-||
-|└─areas|array|true|No comments found.|-|""","""|
-
-**Request-example:**
-```bash
-curl -X PUT -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/delivery-zones/{id}' --data '{
-  "name": "",
-  "estimatedDeliveryTime": "",
-  "fee": 0.0,
-  "stateAreas": [
-    {
-      "state": "",
-      "areas": [
-        ""
-      ]
-    }
-  ]
-}'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─id|string|No comments found.|-||
-|└─name|string|No comments found.|-||
-|└─fee|double|No comments found.|-|0.0|
-|└─estimatedDeliveryTime|string|No comments found.|-||
-|└─stateAreas|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─state|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─areas|array|No comments found.|-|""","""|
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": {
-    "id": "",
-    "name": "",
-    "fee": 0.0,
-    "estimatedDeliveryTime": "",
-    "stateAreas": [
-      {
-        "state": "",
-        "areas": [
-          ""
-        ]
-      }
-    ]
-  }
-}
-```
-
-### Delete Delivery Zone.
-**URL:** https://api.shopsynch.com/v1/delivery-zones/{id}
-
-**Type:** DELETE
-
-
-**Content-Type:** application/x-www-form-urlencoded
-
-**Description:** This API deletes an existing delivery zone.
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Path-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|id|string|true|No comments found.|-||
-
-**Request-example:**
-```bash
-curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/delivery-zones/{id}'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": ""
-}
-```
-
-## Merchant Management
-### Get Merchant Profile.
-**URL:** https://api.shopsynch.com/v1/merchants/profile
-
-**Type:** GET
-
-
-**Content-Type:** application/x-www-form-urlencoded
-
-**Description:** This API returns the merchant profile.
-
-
-**Request-example:**
-```bash
-curl -X GET -k -i 'https://api.shopsynch.com/v1/merchants/profile'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─id|string|No comments found.|-||
-|└─email|string|No comments found.|-||
-|└─fullName|string|No comments found.|-||
-|└─phoneNumber|string|No comments found.|-||
-|└─address|string|No comments found.|-||
-|└─role|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
-|└─merchantId|string|No comments found.|-||
-|└─tenantId|string|No comments found.|-||
-|└─lastActiveTenantId|string|No comments found.|-||
-|└─currentMode|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": {
-    "id": "",
-    "email": "",
-    "fullName": "",
-    "phoneNumber": "",
-    "address": "",
-    "role": {
-      "name": "",
-      "slug": ""
-    },
-    "merchantId": "",
-    "tenantId": "",
-    "lastActiveTenantId": "",
-    "currentMode": "",
-    "createdAt": "yyyy-MM-dd HH:mm:ss"
-  }
-}
-```
-
-### Get Merchant Business Profile.
-**URL:** https://api.shopsynch.com/v1/merchants/profile/business
-
-**Type:** GET
-
-
-**Content-Type:** application/x-www-form-urlencoded
-
-**Description:** This API returns the merchant business profile.
-
-
-**Request-example:**
-```bash
-curl -X GET -k -i 'https://api.shopsynch.com/v1/merchants/profile/business'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": {}
-}
-```
-
-## RoleController
-### findAll
-**URL:** https://api.shopsynch.com/v1/roles
-
-**Type:** GET
-
-
-**Content-Type:** application/x-www-form-urlencoded
-
-**Description:** 
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Request-example:**
-```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/roles'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|array|No comments found.|-||
-|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|└─id|string|No comments found.|-||
-|└─name|string|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
-|└─description|string|No comments found.|-||
-|└─status|boolean|No comments found.|-|true|
-|└─slug|string|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
-|└─permissions|array|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|NEW: Longer description for UI tooltips.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
-|└─type|enum|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
-|└─tenantId|string|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
-|└─permissionIds|array|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
-|└─merchantAssignable|boolean|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": [
-    {
-      "createdAt": "yyyy-MM-dd HH:mm:ss",
-      "updatedAt": "yyyy-MM-dd HH:mm:ss",
-      "id": "",
-      "name": "",
-      "description": "",
-      "status": true,
-      "slug": "",
-      "permissions": [
-        {
-          "createdAt": "yyyy-MM-dd HH:mm:ss",
-          "updatedAt": "yyyy-MM-dd HH:mm:ss",
-          "id": "",
-          "name": "",
-          "displayName": "",
-          "category": "",
-          "description": "",
-          "status": true,
-          "merchantVisible": true,
-          "slug": ""
-        }
-      ],
-      "type": "SYSTEM",
-      "tenantId": "",
-      "permissionIds": [
-        ""
-      ],
-      "merchantAssignable": true
-    }
-  ]
-}
-```
-
 ## Merchant-accessible APIs for roles and permissions within a specific store.
 
 These endpoints are tenant-scoped: the caller must be the store owner or
@@ -16407,6 +17373,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/va
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─systemCategoryId|string|No comments found.|-||
 
 **Response-example:**
 ```json
@@ -16425,7 +17392,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/va
         "productCategory": {
           "id": "",
           "name": "",
-          "slug": ""
+          "slug": "",
+          "systemCategoryId": ""
         }
       }
     }
@@ -17063,6 +18031,883 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/api/v
 **Response-example:**
 ```json
 string
+```
+
+## Product Management
+### Get All Products
+**URL:** https://api.shopsynch.com/v1/products
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Retrieves a paginated list of products with optional filtering and sorting. Supports filtering by search term,
+category, brand, color, price range, stock status, and customer rating. Results are returned in pages for efficient
+data loading and display.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|page|int32|true|Zero-based page number for pagination. Default is 0 (first page). Must be >= 0.|-|0|
+|limit|int32|true|Maximum number of products per page. Default is 100, adjustable for performance.|-|100|
+|sortFieldParam|string|true|Field to sort by (CREATED_AT, NAME, PRICE, RATING, etc.). Default is CREATED_AT.|-|CREATED_AT|
+|sortDirectionParam|string|true|Sort direction: "ASC" for ascending or "DESC" for descending. Default is DESC.|-|DESC|
+|search|string|false|No comments found.|-||
+|category|string|false|No comments found.|-||
+|brand|string|false|No comments found.|-||
+|color|string|false|No comments found.|-||
+|minPrice|double|false|No comments found.|-|0.0|
+|maxPrice|double|false|No comments found.|-|0.0|
+|availability|boolean|false|No comments found.|-|true|
+|status|string|false|No comments found.|-||
+|minRating|double|false|No comments found.|-|0.0|
+|archived|boolean|false|No comments found.|-|true|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products?page=0&limit=100&sortFieldParam=CREATED_AT&sortDirectionParam=DESC&search=&category=&brand=&color=&minPrice=0.0&maxPrice=0.0&availability=true&status=&minRating=0.0&archived=true'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "mapKey": {
+      "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
+    }
+  }
+}
+```
+
+### Create Product
+**URL:** https://api.shopsynch.com/v1/products
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** Creates a new product in the merchant's store (tenant). Validates product details including brand, color,
+and category associations. Specifications are validated against tenant-specific configuration. Product is
+immediately published upon creation unless status is set to INACTIVE.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|id|string|false|No comments found.|-||
+|name|string|true|No comments found.<br/>Validation[Length(max=2147483647, min=1)]|-||
+|slug|string|false|No comments found.|-||
+|description|string|true|No comments found.<br/>Validation[Length(max=1000, min=5, message=Description must be between 5-1000 characters)]|-||
+|summary|string|false|No comments found.<br/>Validation[Length(max=500, min=5, message=Summary must be between 5-500 characters)]|-||
+|image|string|true|No comments found.|-||
+|thumbnail|string|true|No comments found.|-||
+|imageList|array|false|No comments found.|-|""","""|
+|features|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one feature is required, it can not be empty)]|-|""","""|
+|price|number|true|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|ramSize|string|false|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|storage|string|false|No comments found.|-||
+|size|string|false|No comments found.|-||
+|sku|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|quantityInStock|int32|true|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|brandId|string|false|No comments found.|-||
+|discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|categoryId|string|true|No comments found.|-||
+|tenantId|string|false|No comments found.|-||
+|colorId|string|false|No comments found.<br/>Validation[Size(max=2147483647, min=10)]|-||
+|customColor|string|false|No comments found.<br/>Validation[Size(max=50, min=3)]|-||
+|specifications|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one specification is required)]|-||
+|└─key|string|true|No comments found.|-||
+|└─value|string|true|No comments found.|-||
+|variations|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one variation is required)]|-||
+|└─color|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=3, message=color must have at least 3 character)]|-||
+|└─image|string|false|No comments found.|-||
+|└─priceDetails|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one price detail is required to create a variation)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|true|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|false|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|false|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|true|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|false|A map key.|-||
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products' --data '{
+  "id": "",
+  "name": "",
+  "slug": "",
+  "description": "",
+  "summary": "",
+  "image": "",
+  "thumbnail": "",
+  "imageList": [
+    ""
+  ],
+  "features": [
+    ""
+  ],
+  "price": 0,
+  "ramSize": "",
+  "storage": "",
+  "size": "",
+  "sku": "",
+  "quantityInStock": 0,
+  "brandId": "",
+  "discount": 0,
+  "categoryId": "",
+  "tenantId": "",
+  "colorId": "",
+  "customColor": "",
+  "specifications": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "variations": [
+    {
+      "color": "",
+      "image": "",
+      "priceDetails": [
+        {
+          "id": "",
+          "price": 0,
+          "newPrice": 0,
+          "ramSize": "",
+          "storage": "",
+          "size": "",
+          "sku": "",
+          "quantityInStock": 0,
+          "discount": 0,
+          "variationAttributes": {
+            "mapKey1": "",
+            "mapKey2": ""
+          }
+        }
+      ]
+    }
+  ]
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─any object|object|any object.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {}
+}
+```
+
+### Update Product
+**URL:** https://api.shopsynch.com/v1/products/{productId}
+
+**Type:** PATCH
+
+
+**Content-Type:** application/json
+
+**Description:** Updates an existing product's details. Allows modification of product information including name, description,
+pricing, status, and specifications. Only merchant who owns the product can update it.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|productId|string|true|Unique identifier of the product to update. Must belong to authenticated merchant's tenant.|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|name|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=1, message=Product name must have at least 1 character)]|-||
+|slug|string|false|No comments found.|-||
+|description|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=50, message=Description must be at least 50 characters long)]|-||
+|summary|string|false|No comments found.<br/>Validation[Length(max=255, min=10, message=Summary must be at least 10 characters long)]|-||
+|image|string|false|No comments found.|-||
+|thumbnail|string|false|No comments found.|-||
+|imageList|array|false|No comments found.|-|""","""|
+|features|array|false|No comments found.|-|""","""|
+|price|number|false|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|ramSize|string|false|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB', 'MB', 'KB', or 'TB' (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|storage|string|false|No comments found.|-||
+|size|string|false|No comments found.|-||
+|sku|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=2, message=SKU must have at least 2 characters)]|-||
+|quantityInStock|int32|false|No comments found.<br/>Validation[Min(value=0, message=Quantity in stock cannot be less than 0)]|-|0|
+|brandId|string|false|No comments found.|-||
+|discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount cannot be less than 0); Max(value=100, message=Discount cannot be greater than 100)]|-|0|
+|categoryId|string|false|No comments found.|-||
+|colorId|string|false|No comments found.|-||
+|customColor|string|false|No comments found.|-||
+|specifications|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one specification is required)]|-||
+|└─key|string|true|No comments found.|-||
+|└─value|string|true|No comments found.|-||
+|variations|array|false|No comments found.|-||
+|└─color|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=3, message=color must have at least 3 character)]|-||
+|└─image|string|false|No comments found.|-||
+|└─priceDetails|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one price detail is required to create a variation)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|true|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|false|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|false|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|true|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|false|A map key.|-||
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/{productId}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─slug|string|No comments found.|-||
+|└─description|string|No comments found.|-||
+|└─summary|string|No comments found.|-||
+|└─image|string|No comments found.|-||
+|└─thumbnail|string|No comments found.|-||
+|└─images|array|No comments found.|-|""","""|
+|└─price|number|No comments found.|-|0|
+|└─newPrice|number|No comments found.|-|0|
+|└─ramSize|string|No comments found.|-||
+|└─storage|string|No comments found.|-||
+|└─size|string|No comments found.|-||
+|└─quantity|int32|No comments found.|-|0|
+|└─brand|string|No comments found.|-||
+|└─discount|number|No comments found.|-|0|
+|└─category|string|No comments found.|-||
+|└─color|string|No comments found.|-||
+|└─customColor|string|No comments found.|-||
+|└─specifications|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
+|└─variations|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─features|array|No comments found.|-|""","""|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "name": "",
+    "slug": "",
+    "description": "",
+    "summary": "",
+    "image": "",
+    "thumbnail": "",
+    "images": [
+      ""
+    ],
+    "price": 0,
+    "newPrice": 0,
+    "ramSize": "",
+    "storage": "",
+    "size": "",
+    "quantity": 0,
+    "brand": "",
+    "discount": 0,
+    "category": "",
+    "color": "",
+    "customColor": "",
+    "specifications": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "variations": [
+      {
+        "id": "",
+        "attributeName": "",
+        "attributeValue": "",
+        "color": {
+          "id": "",
+          "name": "",
+          "code": ""
+        },
+        "customColor": "",
+        "image": "",
+        "productPriceDetails": [
+          {
+            "id": "",
+            "price": 0,
+            "newPrice": 0,
+            "ramSize": "",
+            "storage": "",
+            "size": "",
+            "sku": "",
+            "quantityInStock": 0,
+            "discount": 0,
+            "variationAttributes": {
+              "mapKey1": "",
+              "mapKey2": ""
+            }
+          }
+        ]
+      }
+    ],
+    "features": [
+      ""
+    ],
+    "createdAt": "yyyy-MM-dd HH:mm:ss"
+  }
+}
+```
+
+### Get Product Details
+**URL:** https://api.shopsynch.com/v1/products/{productId}
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Retrieves complete details of a single product including all attributes, specifications, pricing,
+availability, and related information.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|productId|string|true|Unique identifier of the product. Must belong to current tenant context.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/{productId}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─slug|string|No comments found.|-||
+|└─description|string|No comments found.|-||
+|└─summary|string|No comments found.|-||
+|└─image|string|No comments found.|-||
+|└─thumbnail|string|No comments found.|-||
+|└─images|array|No comments found.|-|""","""|
+|└─price|number|No comments found.|-|0|
+|└─newPrice|number|No comments found.|-|0|
+|└─ramSize|string|No comments found.|-||
+|└─storage|string|No comments found.|-||
+|└─size|string|No comments found.|-||
+|└─quantity|int32|No comments found.|-|0|
+|└─brand|string|No comments found.|-||
+|└─discount|number|No comments found.|-|0|
+|└─category|string|No comments found.|-||
+|└─color|string|No comments found.|-||
+|└─customColor|string|No comments found.|-||
+|└─specifications|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
+|└─variations|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─features|array|No comments found.|-|""","""|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "name": "",
+    "slug": "",
+    "description": "",
+    "summary": "",
+    "image": "",
+    "thumbnail": "",
+    "images": [
+      ""
+    ],
+    "price": 0,
+    "newPrice": 0,
+    "ramSize": "",
+    "storage": "",
+    "size": "",
+    "quantity": 0,
+    "brand": "",
+    "discount": 0,
+    "category": "",
+    "color": "",
+    "customColor": "",
+    "specifications": [
+      {
+        "key": "",
+        "value": ""
+      }
+    ],
+    "variations": [
+      {
+        "id": "",
+        "attributeName": "",
+        "attributeValue": "",
+        "color": {
+          "id": "",
+          "name": "",
+          "code": ""
+        },
+        "customColor": "",
+        "image": "",
+        "productPriceDetails": [
+          {
+            "id": "",
+            "price": 0,
+            "newPrice": 0,
+            "ramSize": "",
+            "storage": "",
+            "size": "",
+            "sku": "",
+            "quantityInStock": 0,
+            "discount": 0,
+            "variationAttributes": {
+              "mapKey1": "",
+              "mapKey2": ""
+            }
+          }
+        ]
+      }
+    ],
+    "features": [
+      ""
+    ],
+    "createdAt": "yyyy-MM-dd HH:mm:ss"
+  }
+}
+```
+
+### Get Similar Products
+**URL:** https://api.shopsynch.com/v1/products/similar/by/category/{productId}
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Retrieves a list of products similar to a specified product, typically from the same category or with
+related attributes. Useful for "You might also like" or "Related products" sections in product detail pages.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|productId|string|true|Unique identifier of the reference product. Must belong to current tenant.|-||
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|limit|int32|true|Maximum number of similar products to return. Default is 4, adjustable based on UI requirements.|-|4|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/similar/by/category/{productId}?limit=4'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─slug|string|No comments found.|-||
+|└─description|string|No comments found.|-||
+|└─summary|string|No comments found.|-||
+|└─image|string|No comments found.|-||
+|└─thumbnail|string|No comments found.|-||
+|└─images|array|No comments found.|-|""","""|
+|└─price|number|No comments found.|-|0|
+|└─newPrice|number|No comments found.|-|0|
+|└─ramSize|string|No comments found.|-||
+|└─storage|string|No comments found.|-||
+|└─size|string|No comments found.|-||
+|└─quantity|int32|No comments found.|-|0|
+|└─brand|string|No comments found.|-||
+|└─discount|number|No comments found.|-|0|
+|└─category|string|No comments found.|-||
+|└─color|string|No comments found.|-||
+|└─customColor|string|No comments found.|-||
+|└─specifications|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
+|└─variations|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─features|array|No comments found.|-|""","""|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "id": "",
+      "name": "",
+      "slug": "",
+      "description": "",
+      "summary": "",
+      "image": "",
+      "thumbnail": "",
+      "images": [
+        ""
+      ],
+      "price": 0,
+      "newPrice": 0,
+      "ramSize": "",
+      "storage": "",
+      "size": "",
+      "quantity": 0,
+      "brand": "",
+      "discount": 0,
+      "category": "",
+      "color": "",
+      "customColor": "",
+      "specifications": [
+        {
+          "key": "",
+          "value": ""
+        }
+      ],
+      "variations": [
+        {
+          "id": "",
+          "attributeName": "",
+          "attributeValue": "",
+          "color": {
+            "id": "",
+            "name": "",
+            "code": ""
+          },
+          "customColor": "",
+          "image": "",
+          "productPriceDetails": [
+            {
+              "id": "",
+              "price": 0,
+              "newPrice": 0,
+              "ramSize": "",
+              "storage": "",
+              "size": "",
+              "sku": "",
+              "quantityInStock": 0,
+              "discount": 0,
+              "variationAttributes": {
+                "mapKey1": "",
+                "mapKey2": ""
+              }
+            }
+          ]
+        }
+      ],
+      "features": [
+        ""
+      ],
+      "createdAt": "yyyy-MM-dd HH:mm:ss"
+    }
+  ]
+}
+```
+
+### Delete Product
+**URL:** https://api.shopsynch.com/v1/products/{productId}
+
+**Type:** DELETE
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Permanently deletes a product from the merchant's store. Product details are removed from system but
+historical order records remain intact for audit purposes.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|productId|string|true|Unique identifier of the product to delete. Must belong to authenticated merchant's tenant.|-||
+
+**Request-example:**
+```bash
+curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/{productId}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─any object|object|any object.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {}
+}
+```
+
+### Get Product Rating<br><br>Retrieves the average customer rating for a product calculated from all customer reviews.<br>Rating provides social proof and helps customers make purchase decisions.
+**URL:** https://api.shopsynch.com/v1/products/{productId}/rating
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** This endpoint:
+         - Public endpoint (no authentication required)
+         - Computes average rating from all published customer reviews
+         - Rating range is typically 1.0 to 5.0 stars
+         - Returns 0.0 if product has no reviews yet
+         - Used in product listings and detail pages to display customer sentiment
+         - Computation is cached or aggregated query for performance
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|productId|string|true|Unique identifier of the product. Must belong to current tenant.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/{productId}/rating'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "mapKey": {
+      "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
+    }
+  }
+}
+```
+
+### Get Top Selling Products (Public)<br><br>Retrieves a list of the most popular products based on total quantity sold.<br>This endpoint is public-facing and omits sensitive business metrics.
+**URL:** https://api.shopsynch.com/v1/products/top-selling
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Get Top Selling Products (Public)
+
+Retrieves a list of the most popular products based on total quantity sold.
+This endpoint is public-facing and omits sensitive business metrics.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|startDate|string|false|No comments found.|-||
+|endDate|string|false|No comments found.|-||
+|limit|int32|true|Maximum number of products to return (default 10)|-|10|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/top-selling?startDate=&endDate=&limit=10'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "mapKey": {
+        "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
+      }
+    }
+  ]
+}
 ```
 
 ## InventoryController
@@ -18197,8 +20042,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:28"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:28"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:01"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:01"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -18261,8 +20106,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-13 18:29:28",
-        "updatedAt": "2026-04-13 18:29:28"
+        "createdAt": "2026-04-14 16:10:01",
+        "updatedAt": "2026-04-14 16:10:01"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -18356,8 +20201,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-13 18:29:28"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-13 18:29:28"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:01"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:01"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -18420,8 +20265,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-13 18:29:28",
-        "updatedAt": "2026-04-13 18:29:28"
+        "createdAt": "2026-04-14 16:10:01",
+        "updatedAt": "2026-04-14 16:10:01"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -18799,359 +20644,6 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 }
 ```
 
-## Product Variation Management (Authenticated)
-### Update Product Variation
-**URL:** https://api.shopsynch.com/v1/products/variation/{variationId}
-
-**Type:** PATCH
-
-
-**Content-Type:** application/json
-
-**Description:** This API updates the variation of an authenticated merchant's product.
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Path-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|variationId|string|true|No comments found.|-||
-
-**Body-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|color|string|false|No comments found.|-||
-|customColor|string|false|No comments found.|-||
-|image|string|false|No comments found.|-||
-|productId|string|true|No comments found.|-||
-
-**Request-example:**
-```bash
-curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/variation/{variationId}'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─id|string|No comments found.|-||
-|└─name|string|No comments found.|-||
-|└─slug|string|No comments found.|-||
-|└─description|string|No comments found.|-||
-|└─summary|string|No comments found.|-||
-|└─image|string|No comments found.|-||
-|└─thumbnail|string|No comments found.|-||
-|└─images|array|No comments found.|-|""","""|
-|└─price|number|No comments found.|-|0|
-|└─newPrice|number|No comments found.|-|0|
-|└─ramSize|string|No comments found.|-||
-|└─storage|string|No comments found.|-||
-|└─size|string|No comments found.|-||
-|└─quantity|int32|No comments found.|-|0|
-|└─brand|string|No comments found.|-||
-|└─discount|number|No comments found.|-|0|
-|└─category|string|No comments found.|-||
-|└─color|string|No comments found.|-||
-|└─customColor|string|No comments found.|-||
-|└─specifications|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
-|└─variations|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─features|array|No comments found.|-|""","""|
-|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": {
-    "id": "",
-    "name": "",
-    "slug": "",
-    "description": "",
-    "summary": "",
-    "image": "",
-    "thumbnail": "",
-    "images": [
-      ""
-    ],
-    "price": 0,
-    "newPrice": 0,
-    "ramSize": "",
-    "storage": "",
-    "size": "",
-    "quantity": 0,
-    "brand": "",
-    "discount": 0,
-    "category": "",
-    "color": "",
-    "customColor": "",
-    "specifications": [
-      {
-        "key": "",
-        "value": ""
-      }
-    ],
-    "variations": [
-      {
-        "id": "",
-        "attributeName": "",
-        "attributeValue": "",
-        "color": {
-          "id": "",
-          "name": "",
-          "code": ""
-        },
-        "customColor": "",
-        "image": "",
-        "productPriceDetails": [
-          {
-            "id": "",
-            "price": 0,
-            "newPrice": 0,
-            "ramSize": "",
-            "storage": "",
-            "size": "",
-            "sku": "",
-            "quantityInStock": 0,
-            "discount": 0,
-            "variationAttributes": {
-              "mapKey1": "",
-              "mapKey2": ""
-            }
-          }
-        ]
-      }
-    ],
-    "features": [
-      ""
-    ],
-    "createdAt": "yyyy-MM-dd HH:mm:ss"
-  }
-}
-```
-
-### Add Product Variation
-**URL:** https://api.shopsynch.com/v1/products/variation/add
-
-**Type:** POST
-
-
-**Content-Type:** application/json
-
-**Description:** This API adds a variation to an authenticated merchant's product.
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Body-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|productId|string|true|No comments found.|-||
-|colorId|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=10, message=Please supply a valid color id)]|-||
-|customColor|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=3, message=Length of custom color can not be less 3)]|-||
-|image|string|false|No comments found.|-||
-|priceDetails|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one price detail is required)]|-||
-|└─id|string|false|No comments found.|-||
-|└─price|number|true|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|└─newPrice|number|false|No comments found.|-|0|
-|└─ramSize|string|false|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|└─storage|string|false|No comments found.|-||
-|└─size|string|false|No comments found.|-||
-|└─sku|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|└─quantityInStock|int32|true|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|└─discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-|└─variationAttributes|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|false|A map key.|-||
-
-**Request-example:**
-```bash
-curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/variation/add' --data '{
-  "productId": "",
-  "colorId": "",
-  "customColor": "",
-  "image": "",
-  "priceDetails": [
-    {
-      "id": "",
-      "price": 0,
-      "newPrice": 0,
-      "ramSize": "",
-      "storage": "",
-      "size": "",
-      "sku": "",
-      "quantityInStock": 0,
-      "discount": 0,
-      "variationAttributes": {
-        "mapKey1": "",
-        "mapKey2": ""
-      }
-    }
-  ]
-}'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─id|string|No comments found.|-||
-|└─name|string|No comments found.|-||
-|└─slug|string|No comments found.|-||
-|└─description|string|No comments found.|-||
-|└─summary|string|No comments found.|-||
-|└─image|string|No comments found.|-||
-|└─thumbnail|string|No comments found.|-||
-|└─images|array|No comments found.|-|""","""|
-|└─price|number|No comments found.|-|0|
-|└─newPrice|number|No comments found.|-|0|
-|└─ramSize|string|No comments found.|-||
-|└─storage|string|No comments found.|-||
-|└─size|string|No comments found.|-||
-|└─quantity|int32|No comments found.|-|0|
-|└─brand|string|No comments found.|-||
-|└─discount|number|No comments found.|-|0|
-|└─category|string|No comments found.|-||
-|└─color|string|No comments found.|-||
-|└─customColor|string|No comments found.|-||
-|└─specifications|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
-|└─variations|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─features|array|No comments found.|-|""","""|
-|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": {
-    "id": "",
-    "name": "",
-    "slug": "",
-    "description": "",
-    "summary": "",
-    "image": "",
-    "thumbnail": "",
-    "images": [
-      ""
-    ],
-    "price": 0,
-    "newPrice": 0,
-    "ramSize": "",
-    "storage": "",
-    "size": "",
-    "quantity": 0,
-    "brand": "",
-    "discount": 0,
-    "category": "",
-    "color": "",
-    "customColor": "",
-    "specifications": [
-      {
-        "key": "",
-        "value": ""
-      }
-    ],
-    "variations": [
-      {
-        "id": "",
-        "attributeName": "",
-        "attributeValue": "",
-        "color": {
-          "id": "",
-          "name": "",
-          "code": ""
-        },
-        "customColor": "",
-        "image": "",
-        "productPriceDetails": [
-          {
-            "id": "",
-            "price": 0,
-            "newPrice": 0,
-            "ramSize": "",
-            "storage": "",
-            "size": "",
-            "sku": "",
-            "quantityInStock": 0,
-            "discount": 0,
-            "variationAttributes": {
-              "mapKey1": "",
-              "mapKey2": ""
-            }
-          }
-        ]
-      }
-    ],
-    "features": [
-      ""
-    ],
-    "createdAt": "yyyy-MM-dd HH:mm:ss"
-  }
-}
-```
-
 ## BankController
 ### getBanks
 **URL:** https://api.shopsynch.com/v1/banks
@@ -19491,6 +20983,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/te
 |└─id|string|No comments found.|-||
 |└─name|string|No comments found.|-||
 |└─slug|string|No comments found.|-||
+|└─systemCategoryId|string|No comments found.|-||
 
 **Response-example:**
 ```json
@@ -19501,7 +20994,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/te
     {
       "id": "",
       "name": "",
-      "slug": ""
+      "slug": "",
+      "systemCategoryId": ""
     }
   ]
 }
@@ -19550,6 +21044,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─id|string|No comments found.|-||
 |└─name|string|No comments found.|-||
 |└─slug|string|No comments found.|-||
+|└─systemCategoryId|string|No comments found.|-||
 
 **Response-example:**
 ```json
@@ -19559,7 +21054,71 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
   "data": {
     "id": "",
     "name": "",
-    "slug": ""
+    "slug": "",
+    "systemCategoryId": ""
+  }
+}
+```
+
+### Update Tenant Category name.<br>Only custom categories (no systemCategoryId) can be renamed.<br>System-backed categories return 400 if a rename is attempted.
+**URL:** https://api.shopsynch.com/v1/tenant-categories/{categoryId}
+
+**Type:** PUT
+
+
+**Content-Type:** application/json
+
+**Description:** Update Tenant Category name.
+Only custom categories (no systemCategoryId) can be renamed.
+System-backed categories return 400 if a rename is attempted.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|categoryId|string|true|No comments found.|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|name|string|true|No comments found.<br/>Validation[Size(max=50, min=1, message=Name cannot be less than 1 character or exceed 50 characters)]|-||
+
+**Request-example:**
+```bash
+curl -X PUT -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/tenant-categories/{categoryId}' --data '{
+  "name": ""
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─slug|string|No comments found.|-||
+|└─systemCategoryId|string|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "name": "",
+    "slug": "",
+    "systemCategoryId": ""
   }
 }
 ```
@@ -20688,883 +22247,6 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1
 {
   "status": true,
   "message": ""
-}
-```
-
-## Product Management
-### Get All Products
-**URL:** https://api.shopsynch.com/v1/products
-
-**Type:** GET
-
-
-**Content-Type:** application/x-www-form-urlencoded
-
-**Description:** Retrieves a paginated list of products with optional filtering and sorting. Supports filtering by search term,
-category, brand, color, price range, stock status, and customer rating. Results are returned in pages for efficient
-data loading and display.
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Query-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|page|int32|true|Zero-based page number for pagination. Default is 0 (first page). Must be >= 0.|-|0|
-|limit|int32|true|Maximum number of products per page. Default is 100, adjustable for performance.|-|100|
-|sortFieldParam|string|true|Field to sort by (CREATED_AT, NAME, PRICE, RATING, etc.). Default is CREATED_AT.|-|CREATED_AT|
-|sortDirectionParam|string|true|Sort direction: "ASC" for ascending or "DESC" for descending. Default is DESC.|-|DESC|
-|search|string|false|No comments found.|-||
-|category|string|false|No comments found.|-||
-|brand|string|false|No comments found.|-||
-|color|string|false|No comments found.|-||
-|minPrice|double|false|No comments found.|-|0.0|
-|maxPrice|double|false|No comments found.|-|0.0|
-|availability|boolean|false|No comments found.|-|true|
-|status|string|false|No comments found.|-||
-|minRating|double|false|No comments found.|-|0.0|
-|archived|boolean|false|No comments found.|-|true|
-
-**Request-example:**
-```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products?page=0&limit=100&sortFieldParam=CREATED_AT&sortDirectionParam=DESC&search=&category=&brand=&color=&minPrice=0.0&maxPrice=0.0&availability=true&status=&minRating=0.0&archived=true'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─mapKey|object|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": {
-    "mapKey": {
-      "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
-    }
-  }
-}
-```
-
-### Create Product
-**URL:** https://api.shopsynch.com/v1/products
-
-**Type:** POST
-
-
-**Content-Type:** application/json
-
-**Description:** Creates a new product in the merchant's store (tenant). Validates product details including brand, color,
-and category associations. Specifications are validated against tenant-specific configuration. Product is
-immediately published upon creation unless status is set to INACTIVE.
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Body-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|id|string|false|No comments found.|-||
-|name|string|true|No comments found.<br/>Validation[Length(max=2147483647, min=1)]|-||
-|slug|string|false|No comments found.|-||
-|description|string|true|No comments found.<br/>Validation[Length(max=1000, min=5, message=Description must be between 5-1000 characters)]|-||
-|summary|string|false|No comments found.<br/>Validation[Length(max=500, min=5, message=Summary must be between 5-500 characters)]|-||
-|image|string|true|No comments found.|-||
-|thumbnail|string|true|No comments found.|-||
-|imageList|array|false|No comments found.|-|""","""|
-|features|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one feature is required, it can not be empty)]|-|""","""|
-|price|number|true|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|ramSize|string|false|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|storage|string|false|No comments found.|-||
-|size|string|false|No comments found.|-||
-|sku|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|quantityInStock|int32|true|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|brandId|string|false|No comments found.|-||
-|discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-|categoryId|string|true|No comments found.|-||
-|tenantId|string|false|No comments found.|-||
-|colorId|string|false|No comments found.<br/>Validation[Size(max=2147483647, min=10)]|-||
-|customColor|string|false|No comments found.<br/>Validation[Size(max=50, min=3)]|-||
-|specifications|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one specification is required)]|-||
-|└─key|string|true|No comments found.|-||
-|└─value|string|true|No comments found.|-||
-|variations|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one variation is required)]|-||
-|└─color|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=3, message=color must have at least 3 character)]|-||
-|└─image|string|false|No comments found.|-||
-|└─priceDetails|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one price detail is required to create a variation)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|true|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|false|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|false|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|true|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|false|A map key.|-||
-
-**Request-example:**
-```bash
-curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products' --data '{
-  "id": "",
-  "name": "",
-  "slug": "",
-  "description": "",
-  "summary": "",
-  "image": "",
-  "thumbnail": "",
-  "imageList": [
-    ""
-  ],
-  "features": [
-    ""
-  ],
-  "price": 0,
-  "ramSize": "",
-  "storage": "",
-  "size": "",
-  "sku": "",
-  "quantityInStock": 0,
-  "brandId": "",
-  "discount": 0,
-  "categoryId": "",
-  "tenantId": "",
-  "colorId": "",
-  "customColor": "",
-  "specifications": [
-    {
-      "key": "",
-      "value": ""
-    }
-  ],
-  "variations": [
-    {
-      "color": "",
-      "image": "",
-      "priceDetails": [
-        {
-          "id": "",
-          "price": 0,
-          "newPrice": 0,
-          "ramSize": "",
-          "storage": "",
-          "size": "",
-          "sku": "",
-          "quantityInStock": 0,
-          "discount": 0,
-          "variationAttributes": {
-            "mapKey1": "",
-            "mapKey2": ""
-          }
-        }
-      ]
-    }
-  ]
-}'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─any object|object|any object.|-||
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": {}
-}
-```
-
-### Update Product
-**URL:** https://api.shopsynch.com/v1/products/{productId}
-
-**Type:** PATCH
-
-
-**Content-Type:** application/json
-
-**Description:** Updates an existing product's details. Allows modification of product information including name, description,
-pricing, status, and specifications. Only merchant who owns the product can update it.
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Path-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|productId|string|true|Unique identifier of the product to update. Must belong to authenticated merchant's tenant.|-||
-
-**Body-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|name|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=1, message=Product name must have at least 1 character)]|-||
-|slug|string|false|No comments found.|-||
-|description|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=50, message=Description must be at least 50 characters long)]|-||
-|summary|string|false|No comments found.<br/>Validation[Length(max=255, min=10, message=Summary must be at least 10 characters long)]|-||
-|image|string|false|No comments found.|-||
-|thumbnail|string|false|No comments found.|-||
-|imageList|array|false|No comments found.|-|""","""|
-|features|array|false|No comments found.|-|""","""|
-|price|number|false|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|ramSize|string|false|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB', 'MB', 'KB', or 'TB' (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|storage|string|false|No comments found.|-||
-|size|string|false|No comments found.|-||
-|sku|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=2, message=SKU must have at least 2 characters)]|-||
-|quantityInStock|int32|false|No comments found.<br/>Validation[Min(value=0, message=Quantity in stock cannot be less than 0)]|-|0|
-|brandId|string|false|No comments found.|-||
-|discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount cannot be less than 0); Max(value=100, message=Discount cannot be greater than 100)]|-|0|
-|categoryId|string|false|No comments found.|-||
-|colorId|string|false|No comments found.|-||
-|customColor|string|false|No comments found.|-||
-|specifications|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one specification is required)]|-||
-|└─key|string|true|No comments found.|-||
-|└─value|string|true|No comments found.|-||
-|variations|array|false|No comments found.|-||
-|└─color|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=3, message=color must have at least 3 character)]|-||
-|└─image|string|false|No comments found.|-||
-|└─priceDetails|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one price detail is required to create a variation)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|true|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|false|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|false|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|true|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|false|A map key.|-||
-
-**Request-example:**
-```bash
-curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/{productId}'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─id|string|No comments found.|-||
-|└─name|string|No comments found.|-||
-|└─slug|string|No comments found.|-||
-|└─description|string|No comments found.|-||
-|└─summary|string|No comments found.|-||
-|└─image|string|No comments found.|-||
-|└─thumbnail|string|No comments found.|-||
-|└─images|array|No comments found.|-|""","""|
-|└─price|number|No comments found.|-|0|
-|└─newPrice|number|No comments found.|-|0|
-|└─ramSize|string|No comments found.|-||
-|└─storage|string|No comments found.|-||
-|└─size|string|No comments found.|-||
-|└─quantity|int32|No comments found.|-|0|
-|└─brand|string|No comments found.|-||
-|└─discount|number|No comments found.|-|0|
-|└─category|string|No comments found.|-||
-|└─color|string|No comments found.|-||
-|└─customColor|string|No comments found.|-||
-|└─specifications|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
-|└─variations|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─features|array|No comments found.|-|""","""|
-|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": {
-    "id": "",
-    "name": "",
-    "slug": "",
-    "description": "",
-    "summary": "",
-    "image": "",
-    "thumbnail": "",
-    "images": [
-      ""
-    ],
-    "price": 0,
-    "newPrice": 0,
-    "ramSize": "",
-    "storage": "",
-    "size": "",
-    "quantity": 0,
-    "brand": "",
-    "discount": 0,
-    "category": "",
-    "color": "",
-    "customColor": "",
-    "specifications": [
-      {
-        "key": "",
-        "value": ""
-      }
-    ],
-    "variations": [
-      {
-        "id": "",
-        "attributeName": "",
-        "attributeValue": "",
-        "color": {
-          "id": "",
-          "name": "",
-          "code": ""
-        },
-        "customColor": "",
-        "image": "",
-        "productPriceDetails": [
-          {
-            "id": "",
-            "price": 0,
-            "newPrice": 0,
-            "ramSize": "",
-            "storage": "",
-            "size": "",
-            "sku": "",
-            "quantityInStock": 0,
-            "discount": 0,
-            "variationAttributes": {
-              "mapKey1": "",
-              "mapKey2": ""
-            }
-          }
-        ]
-      }
-    ],
-    "features": [
-      ""
-    ],
-    "createdAt": "yyyy-MM-dd HH:mm:ss"
-  }
-}
-```
-
-### Get Product Details
-**URL:** https://api.shopsynch.com/v1/products/{productId}
-
-**Type:** GET
-
-
-**Content-Type:** application/x-www-form-urlencoded
-
-**Description:** Retrieves complete details of a single product including all attributes, specifications, pricing,
-availability, and related information.
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Path-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|productId|string|true|Unique identifier of the product. Must belong to current tenant context.|-||
-
-**Request-example:**
-```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/{productId}'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─id|string|No comments found.|-||
-|└─name|string|No comments found.|-||
-|└─slug|string|No comments found.|-||
-|└─description|string|No comments found.|-||
-|└─summary|string|No comments found.|-||
-|└─image|string|No comments found.|-||
-|└─thumbnail|string|No comments found.|-||
-|└─images|array|No comments found.|-|""","""|
-|└─price|number|No comments found.|-|0|
-|└─newPrice|number|No comments found.|-|0|
-|└─ramSize|string|No comments found.|-||
-|└─storage|string|No comments found.|-||
-|└─size|string|No comments found.|-||
-|└─quantity|int32|No comments found.|-|0|
-|└─brand|string|No comments found.|-||
-|└─discount|number|No comments found.|-|0|
-|└─category|string|No comments found.|-||
-|└─color|string|No comments found.|-||
-|└─customColor|string|No comments found.|-||
-|└─specifications|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
-|└─variations|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─features|array|No comments found.|-|""","""|
-|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": {
-    "id": "",
-    "name": "",
-    "slug": "",
-    "description": "",
-    "summary": "",
-    "image": "",
-    "thumbnail": "",
-    "images": [
-      ""
-    ],
-    "price": 0,
-    "newPrice": 0,
-    "ramSize": "",
-    "storage": "",
-    "size": "",
-    "quantity": 0,
-    "brand": "",
-    "discount": 0,
-    "category": "",
-    "color": "",
-    "customColor": "",
-    "specifications": [
-      {
-        "key": "",
-        "value": ""
-      }
-    ],
-    "variations": [
-      {
-        "id": "",
-        "attributeName": "",
-        "attributeValue": "",
-        "color": {
-          "id": "",
-          "name": "",
-          "code": ""
-        },
-        "customColor": "",
-        "image": "",
-        "productPriceDetails": [
-          {
-            "id": "",
-            "price": 0,
-            "newPrice": 0,
-            "ramSize": "",
-            "storage": "",
-            "size": "",
-            "sku": "",
-            "quantityInStock": 0,
-            "discount": 0,
-            "variationAttributes": {
-              "mapKey1": "",
-              "mapKey2": ""
-            }
-          }
-        ]
-      }
-    ],
-    "features": [
-      ""
-    ],
-    "createdAt": "yyyy-MM-dd HH:mm:ss"
-  }
-}
-```
-
-### Get Similar Products
-**URL:** https://api.shopsynch.com/v1/products/similar/by/category/{productId}
-
-**Type:** GET
-
-
-**Content-Type:** application/x-www-form-urlencoded
-
-**Description:** Retrieves a list of products similar to a specified product, typically from the same category or with
-related attributes. Useful for "You might also like" or "Related products" sections in product detail pages.
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Path-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|productId|string|true|Unique identifier of the reference product. Must belong to current tenant.|-||
-
-**Query-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|limit|int32|true|Maximum number of similar products to return. Default is 4, adjustable based on UI requirements.|-|4|
-
-**Request-example:**
-```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/similar/by/category/{productId}?limit=4'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|array|No comments found.|-||
-|└─id|string|No comments found.|-||
-|└─name|string|No comments found.|-||
-|└─slug|string|No comments found.|-||
-|└─description|string|No comments found.|-||
-|└─summary|string|No comments found.|-||
-|└─image|string|No comments found.|-||
-|└─thumbnail|string|No comments found.|-||
-|└─images|array|No comments found.|-|""","""|
-|└─price|number|No comments found.|-|0|
-|└─newPrice|number|No comments found.|-|0|
-|└─ramSize|string|No comments found.|-||
-|└─storage|string|No comments found.|-||
-|└─size|string|No comments found.|-||
-|└─quantity|int32|No comments found.|-|0|
-|└─brand|string|No comments found.|-||
-|└─discount|number|No comments found.|-|0|
-|└─category|string|No comments found.|-||
-|└─color|string|No comments found.|-||
-|└─customColor|string|No comments found.|-||
-|└─specifications|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
-|└─variations|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
-|└─features|array|No comments found.|-|""","""|
-|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": [
-    {
-      "id": "",
-      "name": "",
-      "slug": "",
-      "description": "",
-      "summary": "",
-      "image": "",
-      "thumbnail": "",
-      "images": [
-        ""
-      ],
-      "price": 0,
-      "newPrice": 0,
-      "ramSize": "",
-      "storage": "",
-      "size": "",
-      "quantity": 0,
-      "brand": "",
-      "discount": 0,
-      "category": "",
-      "color": "",
-      "customColor": "",
-      "specifications": [
-        {
-          "key": "",
-          "value": ""
-        }
-      ],
-      "variations": [
-        {
-          "id": "",
-          "attributeName": "",
-          "attributeValue": "",
-          "color": {
-            "id": "",
-            "name": "",
-            "code": ""
-          },
-          "customColor": "",
-          "image": "",
-          "productPriceDetails": [
-            {
-              "id": "",
-              "price": 0,
-              "newPrice": 0,
-              "ramSize": "",
-              "storage": "",
-              "size": "",
-              "sku": "",
-              "quantityInStock": 0,
-              "discount": 0,
-              "variationAttributes": {
-                "mapKey1": "",
-                "mapKey2": ""
-              }
-            }
-          ]
-        }
-      ],
-      "features": [
-        ""
-      ],
-      "createdAt": "yyyy-MM-dd HH:mm:ss"
-    }
-  ]
-}
-```
-
-### Delete Product
-**URL:** https://api.shopsynch.com/v1/products/{productId}
-
-**Type:** DELETE
-
-
-**Content-Type:** application/x-www-form-urlencoded
-
-**Description:** Permanently deletes a product from the merchant's store. Product details are removed from system but
-historical order records remain intact for audit purposes.
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Path-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|productId|string|true|Unique identifier of the product to delete. Must belong to authenticated merchant's tenant.|-||
-
-**Request-example:**
-```bash
-curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/{productId}'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─any object|object|any object.|-||
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": {}
-}
-```
-
-### Get Product Rating<br><br>Retrieves the average customer rating for a product calculated from all customer reviews.<br>Rating provides social proof and helps customers make purchase decisions.
-**URL:** https://api.shopsynch.com/v1/products/{productId}/rating
-
-**Type:** GET
-
-
-**Content-Type:** application/x-www-form-urlencoded
-
-**Description:** This endpoint:
-         - Public endpoint (no authentication required)
-         - Computes average rating from all published customer reviews
-         - Rating range is typically 1.0 to 5.0 stars
-         - Returns 0.0 if product has no reviews yet
-         - Used in product listings and detail pages to display customer sentiment
-         - Computation is cached or aggregated query for performance
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Path-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|productId|string|true|Unique identifier of the product. Must belong to current tenant.|-||
-
-**Request-example:**
-```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/{productId}/rating'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-|└─mapKey|object|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": {
-    "mapKey": {
-      "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
-    }
-  }
-}
-```
-
-### Get Top Selling Products (Public)<br><br>Retrieves a list of the most popular products based on total quantity sold.<br>This endpoint is public-facing and omits sensitive business metrics.
-**URL:** https://api.shopsynch.com/v1/products/top-selling
-
-**Type:** GET
-
-
-**Content-Type:** application/x-www-form-urlencoded
-
-**Description:** Get Top Selling Products (Public)
-
-Retrieves a list of the most popular products based on total quantity sold.
-This endpoint is public-facing and omits sensitive business metrics.
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Query-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|startDate|string|false|No comments found.|-||
-|endDate|string|false|No comments found.|-||
-|limit|int32|true|Maximum number of products to return (default 10)|-|10|
-
-**Request-example:**
-```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/top-selling?startDate=&endDate=&limit=10'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|array|No comments found.|-||
-|└─mapKey|object|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": [
-    {
-      "mapKey": {
-        "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
-      }
-    }
-  ]
 }
 ```
 
