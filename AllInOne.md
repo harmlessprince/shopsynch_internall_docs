@@ -343,18 +343,20 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 }
 ```
 
-## Product Template Management — category attribute schemas used by the dashboard and storefront.
+## Product Template Management
 
+category attribute schemas used by the dashboard and storefront.
 &lt;p&gt;Templates tell the merchant dashboard which fields to render when a seller creates a product,
 and tell the customer storefront how to display spec tables, filter panels, and variant selectors.
+&lt;/p&gt;
 
 &lt;p&gt;Two template tiers:
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;System defaults&lt;/strong&gt; ({@code tenantId=null}) — seeded at startup, platform-wide.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Tenant overrides&lt;/strong&gt; — created by a merchant to customise the schema for their store.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;Resolution order: tenant override → system default.
+&lt;/p&gt;
+&lt;p&gt;Resolution order: tenant override → system default.&lt;/p&gt;
 ### listTemplates
 **URL:** https://api.shopsynch.com/v2/product-templates
 
@@ -1087,8 +1089,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:00"|
-|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:00"|
+|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:03"|
+|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:03"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -1116,8 +1118,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-14 16:10:00",
-    "updatedAt": "2026-04-14 16:10:00"
+    "createdAt": "2026-04-17 22:51:03",
+    "updatedAt": "2026-04-17 22:51:03"
   },
   "message": "",
   "status": true
@@ -1189,8 +1191,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:00"|
-|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:00"|
+|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:04"|
+|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:04"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -1218,8 +1220,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-14 16:10:00",
-    "updatedAt": "2026-04-14 16:10:00"
+    "createdAt": "2026-04-17 22:51:04",
+    "updatedAt": "2026-04-17 22:51:04"
   },
   "message": "",
   "status": true
@@ -1273,8 +1275,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:00"|
-|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:00"|
+|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:04"|
+|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:04"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -1302,8 +1304,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-14 16:10:00",
-    "updatedAt": "2026-04-14 16:10:00"
+    "createdAt": "2026-04-17 22:51:04",
+    "updatedAt": "2026-04-17 22:51:04"
   },
   "message": "",
   "status": true
@@ -1361,8 +1363,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:00"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:00"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:04"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:04"|
 |└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
@@ -1393,8 +1395,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
         ],
         "status": "",
         "metadata": {},
-        "createdAt": "2026-04-14 16:10:00",
-        "updatedAt": "2026-04-14 16:10:00"
+        "createdAt": "2026-04-17 22:51:04",
+        "updatedAt": "2026-04-17 22:51:04"
       }
     ],
     "nextCursor": "yyyy-MM-dd HH:mm:ss"
@@ -1452,8 +1454,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:00"|
-|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:00"|
+|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:04"|
+|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:04"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -1482,8 +1484,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
       ],
       "status": "",
       "metadata": {},
-      "createdAt": "2026-04-14 16:10:00",
-      "updatedAt": "2026-04-14 16:10:00"
+      "createdAt": "2026-04-17 22:51:04",
+      "updatedAt": "2026-04-17 22:51:04"
     }
   ],
   "message": "",
@@ -2647,8 +2649,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:01"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:01"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:06"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:06"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -2711,8 +2713,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-14 16:10:01",
-        "updatedAt": "2026-04-14 16:10:01"
+        "createdAt": "2026-04-17 22:51:06",
+        "updatedAt": "2026-04-17 22:51:06"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -4370,8 +4372,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:04"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:04"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:09"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:09"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -4395,8 +4397,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-14 16:10:04",
-        "updatedAt": "2026-04-14 16:10:04"
+        "createdAt": "2026-04-17 22:51:09",
+        "updatedAt": "2026-04-17 22:51:09"
       },
       "product": {
         "id": "",
@@ -4460,8 +4462,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:04"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:04"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:09"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:09"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -4485,8 +4487,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-14 16:10:04",
-        "updatedAt": "2026-04-14 16:10:04"
+        "createdAt": "2026-04-17 22:51:09",
+        "updatedAt": "2026-04-17 22:51:09"
       },
       "product": {
         "id": "",
@@ -4554,8 +4556,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:04"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:04"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:09"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:09"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -4578,8 +4580,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-14 16:10:04",
-      "updatedAt": "2026-04-14 16:10:04"
+      "createdAt": "2026-04-17 22:51:09",
+      "updatedAt": "2026-04-17 22:51:09"
     },
     "product": {
       "id": "",
@@ -4862,7 +4864,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/da
 |data|array|No comments found.|-||
 |└─id|string|No comments found.|-||
 |└─tenantId|string|No comments found.|-||
-|└─domain|enum|No comments found.<br/>[Enum: ORDERS, REVENUE, PRODUCTS, CUSTOMERS]|-|ORDERS|
+|└─domain|enum|No comments found.<br/>[Enum: ORDERS, REVENUE, PRODUCTS, CUSTOMERS, INVENTORY]|-|ORDERS|
 |└─snapshotType|enum|No comments found.<br/>[Enum: DAILY, WEEKLY, MONTHLY, YEARLY, CUSTOM]|-|DAILY|
 |└─periodStart|string|No comments found.|-|yyyy-MM-dd|
 |└─periodEnd|string|No comments found.|-|yyyy-MM-dd|
@@ -5261,8 +5263,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:02"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:02"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:07"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:07"|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
 |└─expiresIn|int64|No comments found.|-|0|
@@ -5280,8 +5282,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-14 16:10:02",
-      "updatedAt": "2026-04-14 16:10:02"
+      "createdAt": "2026-04-17 22:51:07",
+      "updatedAt": "2026-04-17 22:51:07"
     },
     "token": "",
     "refreshToken": "",
@@ -5337,8 +5339,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:02"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:02"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:07"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:07"|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
 |└─expiresIn|int64|No comments found.|-|0|
@@ -5356,8 +5358,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-14 16:10:02",
-      "updatedAt": "2026-04-14 16:10:02"
+      "createdAt": "2026-04-17 22:51:07",
+      "updatedAt": "2026-04-17 22:51:07"
     },
     "token": "",
     "refreshToken": "",
@@ -5417,8 +5419,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:05"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:05"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:11"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:11"|
 |└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
@@ -5435,8 +5437,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-14 16:10:05",
-        "updatedAt": "2026-04-14 16:10:05"
+        "createdAt": "2026-04-17 22:51:11",
+        "updatedAt": "2026-04-17 22:51:11"
       }
     ],
     "nextCursor": "yyyy-MM-dd HH:mm:ss"
@@ -5485,8 +5487,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:05"|
-|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:05"|
+|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:11"|
+|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:11"|
 
 **Response-example:**
 ```json
@@ -5500,8 +5502,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-14 16:10:05",
-    "updatedAt": "2026-04-14 16:10:05"
+    "createdAt": "2026-04-17 22:51:11",
+    "updatedAt": "2026-04-17 22:51:11"
   }
 }
 ```
@@ -5548,8 +5550,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:05"|
-|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:05"|
+|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:11"|
+|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:11"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -5563,8 +5565,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-14 16:10:05",
-    "updatedAt": "2026-04-14 16:10:05"
+    "createdAt": "2026-04-17 22:51:11",
+    "updatedAt": "2026-04-17 22:51:11"
   },
   "message": "",
   "status": true
@@ -5610,8 +5612,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:05"|
-|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:05"|
+|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:11"|
+|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:11"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -5625,8 +5627,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-14 16:10:05",
-    "updatedAt": "2026-04-14 16:10:05"
+    "createdAt": "2026-04-17 22:51:11",
+    "updatedAt": "2026-04-17 22:51:11"
   },
   "message": "",
   "status": true
@@ -5672,8 +5674,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:05"|
-|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:05"|
+|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:11"|
+|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:11"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -5687,8 +5689,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-14 16:10:05",
-    "updatedAt": "2026-04-14 16:10:05"
+    "createdAt": "2026-04-17 22:51:11",
+    "updatedAt": "2026-04-17 22:51:11"
   },
   "message": "",
   "status": true
@@ -5746,8 +5748,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:05"|
-|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:05"|
+|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:11"|
+|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:11"|
 
 **Response-example:**
 ```json
@@ -5761,8 +5763,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-14 16:10:05",
-    "updatedAt": "2026-04-14 16:10:05"
+    "createdAt": "2026-04-17 22:51:11",
+    "updatedAt": "2026-04-17 22:51:11"
   }
 }
 ```
@@ -5817,8 +5819,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:05"|
-|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:05"|
+|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:11"|
+|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:11"|
 
 **Response-example:**
 ```json
@@ -5832,9 +5834,99 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-14 16:10:05",
-    "updatedAt": "2026-04-14 16:10:05"
+    "createdAt": "2026-04-17 22:51:11",
+    "updatedAt": "2026-04-17 22:51:11"
   }
+}
+```
+
+### Get Order-Based Customers
+**URL:** https://api.shopsynch.com/v1/customers/order-based
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Retrieves a paginated list of customers derived from the orders collection, covering both registered
+customers (orders where customerId is set) and guest/anonymous customers (orders with contactInformation
+but no registered account). Each record includes order statistics visible at a glance: total orders,
+delivered orders, pending orders, total amount spent, first and last order dates.
+
+<p>Results are cached per tenant and filter combination for 15 minutes and are invalidated
+automatically when orders are mutated for the tenant.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|cursor|string|false|            Optional cursor token (ISO-8601 lastOrderDate) from the previous response.<br/>                          If not provided, starts from the most recent records.|-||
+|limit|int32|true|             Maximum number of records per page. Capped at 20. Default is 10.|-|10|
+|sortFieldParam|string|true|    Field to sort by. Allowed: LAST_ORDER_DATE, FIRST_ORDER_DATE,<br/>                          TOTAL_ORDERS, NAME, EMAIL. Default: LAST_ORDER_DATE.|-|LAST_ORDER_DATE|
+|sortDirectionParam|string|true|Sort direction: ASC or DESC. Default: DESC.|-|DESC|
+|email|string|false|No comments found.|-||
+|name|string|false|No comments found.|-||
+|phoneNumber|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/customers/order-based?cursor=&limit=10&sortFieldParam=LAST_ORDER_DATE&sortDirectionParam=DESC&email=&name=&phoneNumber='
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|data|object|No comments found.|-||
+|└─data|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customerId|string|Non-null for registered customers; null for guests.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─registered|boolean|True if this customer has a registered account in the store.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─deliveredOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pendingOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalSpent|number|Sum of totalPrice for orders where paymentStatus = SUCCESS.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastOrderDate|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstOrderDate|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|message|string|No comments found.|-||
+|status|boolean|No comments found.|-|true|
+
+**Response-example:**
+```json
+{
+  "data": {
+    "data": [
+      {
+        "email": "",
+        "firstName": "",
+        "lastName": "",
+        "phoneNumber": "",
+        "address": "",
+        "customerId": "",
+        "registered": true,
+        "totalOrders": 0,
+        "deliveredOrders": 0,
+        "pendingOrders": 0,
+        "totalSpent": 0,
+        "lastOrderDate": "yyyy-MM-dd HH:mm:ss",
+        "firstOrderDate": "yyyy-MM-dd HH:mm:ss"
+      }
+    ],
+    "nextCursor": "yyyy-MM-dd HH:mm:ss"
+  },
+  "message": "",
+  "status": true
 }
 ```
 
@@ -8955,10 +9047,11 @@ Retrieves the high-level order statistics and breakdowns.
 |tenantId|string|false|The unique identifier of the tenant (merchant) to filter by. Defaults to empty (uses authenticated context).|-||
 |startDate|string|false|The start date for filtering statistics (ISO format). Defaults to empty (no start boundary).|-||
 |endDate|string|false|The end date for filtering statistics (ISO format). Defaults to empty (no end boundary).|-||
+|dateField|string|false|MongoDB date field to use for range filtering (e.g. {@code created_at}, {@code completed_at},<br/>                 {@code fulfillment_date}). Defaults to {@code created_at}.|-||
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/orders?tenantId=&startDate=&endDate='
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/orders?tenantId=&startDate=&endDate=&dateField='
 ```
 **Response-fields:**
 
@@ -8967,8 +9060,33 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/da
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
-|└─mapKey|object|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─summary|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cancelledOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─completedOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pendingOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─processingOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─shippedOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─inTransitOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─issuesOrders|int64|Count of orders with an issue, e.g., missing shipping address or failed payment|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─unpaidOrders|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pendingWaybills|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─averageOrderValue|number|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─byFulfillmentStatus|array|Breakdown of orders categorized by fulfillment state|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─topShippingMethods|array|Most popular shipping methods within the timeframe|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─unpaidOrders|int64|No comments found.|-|0|
+|└─issuesOrders|int64|No comments found.|-|0|
+|└─pendingWaybills|int64|No comments found.|-|0|
+|└─byFulfillmentStatus|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─topShippingMethods|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 
 **Response-example:**
 ```json
@@ -8976,9 +9094,42 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/da
   "status": true,
   "message": "",
   "data": {
-    "mapKey": {
-      "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
-    }
+    "summary": {
+      "totalOrders": 0,
+      "cancelledOrders": 0,
+      "completedOrders": 0,
+      "pendingOrders": 0,
+      "processingOrders": 0,
+      "shippedOrders": 0,
+      "inTransitOrders": 0,
+      "issuesOrders": 0,
+      "unpaidOrders": 0,
+      "pendingWaybills": 0,
+      "averageOrderValue": 0,
+      "byFulfillmentStatus": [
+        {
+          "mapKey": {}
+        }
+      ],
+      "topShippingMethods": [
+        {
+          "mapKey": {}
+        }
+      ]
+    },
+    "unpaidOrders": 0,
+    "issuesOrders": 0,
+    "pendingWaybills": 0,
+    "byFulfillmentStatus": [
+      {
+        "mapKey": {}
+      }
+    ],
+    "topShippingMethods": [
+      {
+        "mapKey": {}
+      }
+    ]
   }
 }
 ```
@@ -9009,10 +9160,11 @@ Retrieves the daily chart data for order volumes.
 |tenantId|string|false|The unique identifier of the tenant (merchant) to filter by. Defaults to empty (uses authenticated context).|-||
 |startDate|string|false|The start date for filtering statistics (ISO format). Defaults to empty (no start boundary).|-||
 |endDate|string|false|The end date for filtering statistics (ISO format). Defaults to empty (no end boundary).|-||
+|dateField|string|false|MongoDB date field to use for range filtering. Defaults to {@code created_at}.|-||
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/orders/chart?tenantId=&startDate=&endDate='
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/orders/chart?tenantId=&startDate=&endDate=&dateField='
 ```
 **Response-fields:**
 
@@ -9020,22 +9172,23 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/da
 |-------|------|-------------|-------|---------|
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
-|data|array|No comments found.|-||
-|└─mapKey|object|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|data|object|No comments found.|-||
+|└─chartData|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 
 **Response-example:**
 ```json
 {
   "status": true,
   "message": "",
-  "data": [
-    {
-      "mapKey": {
-        "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
+  "data": {
+    "chartData": [
+      {
+        "mapKey": {}
       }
-    }
-  ]
+    ]
+  }
 }
 ```
 
@@ -9065,10 +9218,11 @@ Retrieves revenue statistics including totals, averages, and payment method brea
 |tenantId|string|false|The unique identifier of the tenant (merchant) to filter by. Defaults to empty (uses authenticated context).|-||
 |startDate|string|false|The start date for filtering statistics (ISO format). Defaults to empty (no start boundary).|-||
 |endDate|string|false|The end date for filtering statistics (ISO format). Defaults to empty (no end boundary).|-||
+|dateField|string|false|MongoDB date field to use for range filtering. Defaults to {@code created_at}.|-||
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/revenue?tenantId=&startDate=&endDate='
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/revenue?tenantId=&startDate=&endDate=&dateField='
 ```
 **Response-fields:**
 
@@ -9077,20 +9231,20 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/da
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
-|└─mapKey|object|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─overview|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─grossRevenue|number|Total revenue before any deductions (Discounts/Refunds)|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─netRevenue|number|Final revenue after all deductions have been subtracted|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─refundsTotal|number|Total amount refunded to customers in this period|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalDiscounts|number|Total monetary value of coupons and discounts applied|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─revenueByPaymentMethod|object|Breakdown of revenue (Net) partitioned by the payment channel used (e.g., "manual_transfer", "card")|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|number|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currency|string|ISO currency code, e.g., "NGN"|-||
+|└─byPaymentMethod|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|number|A map key.|-||
 
 **Response-example:**
 ```json
-{
-  "status": true,
-  "message": "",
-  "data": {
-    "mapKey": {
-      "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
-    }
-  }
-}
+{"status":true,"message":"","data":{"overview":{"grossRevenue":0,"netRevenue":0,"refundsTotal":0,"totalDiscounts":0,"revenueByPaymentMethod":{"mapKey1":0,"mapKey2":0}"currency":""},"byPaymentMethod":{"mapKey1":0,"mapKey2":0}}}
 ```
 
 ### Get Revenue Chart<br><br>Retrieves the daily chart data for revenue.
@@ -9119,10 +9273,11 @@ Retrieves the daily chart data for revenue.
 |tenantId|string|false|The unique identifier of the tenant (merchant) to filter by. Defaults to empty (uses authenticated context).|-||
 |startDate|string|false|The start date for filtering statistics (ISO format). Defaults to empty (no start boundary).|-||
 |endDate|string|false|The end date for filtering statistics (ISO format). Defaults to empty (no end boundary).|-||
+|dateField|string|false|MongoDB date field to use for range filtering. Defaults to {@code created_at}.|-||
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/revenue/chart?tenantId=&startDate=&endDate='
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/revenue/chart?tenantId=&startDate=&endDate=&dateField='
 ```
 **Response-fields:**
 
@@ -9130,22 +9285,23 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/da
 |-------|------|-------------|-------|---------|
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
-|data|array|No comments found.|-||
-|└─mapKey|object|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|data|object|No comments found.|-||
+|└─chartData|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 
 **Response-example:**
 ```json
 {
   "status": true,
   "message": "",
-  "data": [
-    {
-      "mapKey": {
-        "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
+  "data": {
+    "chartData": [
+      {
+        "mapKey": {}
       }
-    }
-  ]
+    ]
+  }
 }
 ```
 
@@ -9175,10 +9331,11 @@ Retrieves customer statistics including top spenders and location breakdown.
 |tenantId|string|false|The unique identifier of the tenant (merchant) to filter by. Defaults to empty (uses authenticated context).|-||
 |startDate|string|false|The start date for filtering statistics (ISO format). Defaults to empty (no start boundary).|-||
 |endDate|string|false|The end date for filtering statistics (ISO format). Defaults to empty (no end boundary).|-||
+|dateField|string|false|MongoDB date field to use for range filtering. Defaults to {@code created_at}.|-||
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/customers?tenantId=&startDate=&endDate='
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/customers?tenantId=&startDate=&endDate=&dateField='
 ```
 **Response-fields:**
 
@@ -9187,20 +9344,21 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/da
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
-|└─mapKey|object|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─newCustomers|int64|No comments found.|-|0|
+|└─totalCustomers|int64|No comments found.|-|0|
+|└─returningCustomers|int64|No comments found.|-|0|
+|└─topCities|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|int64|A map key.|-||
+|└─topStates|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|int64|A map key.|-||
+|└─topCustomers|array|Top identified customers by total spend. Each entry has customerId, name, and value.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customerId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|number|No comments found.|-|0|
 
 **Response-example:**
 ```json
-{
-  "status": true,
-  "message": "",
-  "data": {
-    "mapKey": {
-      "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
-    }
-  }
-}
+{"status":true,"message":"","data":{"newCustomers":0,"totalCustomers":0,"returningCustomers":0,"topCities":{"mapKey1":0,"mapKey2":0}"topStates":{"mapKey1":0,"mapKey2":0}"topCustomers":[{"customerId":"","name":"","value":0}]}}
 ```
 
 ### Get Product Insights<br><br>Retrieves product insights including overall catalog numbers and top selling items.
@@ -9229,10 +9387,12 @@ Retrieves product insights including overall catalog numbers and top selling ite
 |tenantId|string|false|The unique identifier of the tenant (merchant) to filter by. Defaults to empty (uses authenticated context).|-||
 |startDate|string|false|The start date for filtering statistics (ISO format). Defaults to empty (no start boundary).|-||
 |endDate|string|false|The end date for filtering statistics (ISO format). Defaults to empty (no end boundary).|-||
+|dateField|string|false|MongoDB date field to use for range filtering of top-selling products. Defaults to {@code created_at}.|-||
+|newProductThreshold|string|false|How recent a product must be to be counted as "new". Supports {@code Nd} (days),<br/>                           {@code Nw} (weeks), {@code Nh} (hours) — e.g. {@code 7d}, {@code 2w}, {@code 48h}.<br/>                           Defaults to {@code 30d}.|-||
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/products?tenantId=&startDate=&endDate='
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/products?tenantId=&startDate=&endDate=&dateField=&newProductThreshold='
 ```
 **Response-fields:**
 
@@ -9241,8 +9401,24 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/da
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
-|└─mapKey|object|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─stats|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalProducts|int64|Total unique products registered in the system|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newProductsCreated|int64|Count of products created within the filter period|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalInStockProducts|int64|Count of products currently having a stock level > 0|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalOutOfStockProducts|int64|Count of products currently out of stock|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalProductsValue|number|Estimated cumulative monetary value of all stock items in inventory|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lowStockProducts|int64|Count of products with at least one inventory record at or below its reorder level|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─topSellingProducts|array|Enriched list of top-performing products|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalQuantitySold|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pct|double|Percentage of the top seller's quantity, e.g. top=100%, second=82%.|-|0.0|
+|└─totalValue|number|No comments found.|-|0|
+|└─topSelling|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalQuantitySold|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pct|double|Percentage of the top seller's quantity, e.g. top=100%, second=82%.|-|0.0|
 
 **Response-example:**
 ```json
@@ -9250,9 +9426,121 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/da
   "status": true,
   "message": "",
   "data": {
-    "mapKey": {
-      "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
-    }
+    "stats": {
+      "totalProducts": 0,
+      "newProductsCreated": 0,
+      "totalInStockProducts": 0,
+      "totalOutOfStockProducts": 0,
+      "totalProductsValue": 0,
+      "lowStockProducts": 0,
+      "topSellingProducts": [
+        {
+          "productId": "",
+          "name": "",
+          "totalQuantitySold": 0,
+          "pct": 0.0
+        }
+      ]
+    },
+    "totalValue": 0,
+    "topSelling": [
+      {
+        "productId": "",
+        "name": "",
+        "totalQuantitySold": 0,
+        "pct": 0.0
+      }
+    ]
+  }
+}
+```
+
+### Get Inventory Insights<br><br>Retrieves inventory health metrics: total stock quantities, low-stock and out-of-stock<br>counts, total inventory value, and a per-warehouse breakdown.
+**URL:** https://api.shopsynch.com/v1/dashboard/inventory
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Get Inventory Insights
+
+Retrieves inventory health metrics: total stock quantities, low-stock and out-of-stock
+counts, total inventory value, and a per-warehouse breakdown.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|false| The tenant to filter by. Defaults to empty (uses authenticated context).|-||
+|startDate|string|false|Optional start date (ISO format).|-||
+|endDate|string|false|  Optional end date (ISO format).|-||
+|dateField|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/inventory?tenantId=&startDate=&endDate=&dateField='
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─summary|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalInventoryRecords|int64|Total inventory records (one per product+sku+warehouse combination)|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalOnHandQty|int64|Sum of {@code onHandQty} across all records|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalAvailableQty|int64|Sum of {@code availableQty} (onHand - reserved) across all records|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalReservedQty|int64|Sum of {@code reservedQty} across all records|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lowStockItems|int64|Count of records where {@code onHandQty <= reorderLevel} and {@code reorderLevel > 0}|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─outOfStockItems|int64|Count of records where {@code availableQty == 0}|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalInventoryValue|number|Sum of {@code onHandQty * product.price} across all records|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─byWarehouse|array|Per-warehouse breakdown: [{warehouse, totalOnHand, totalAvailable}]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─stockTurnoverRatio|double|Stock Turnover Ratio = units sold in period / current on-hand qty|-|0.0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─outOfStockRate|double|Out-of-stock percentage = outOfStockItems / totalInventoryRecords * 100|-|0.0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalUnitsSold|int64|Total units sold in the filter period (used to derive stockTurnoverRatio)|-|0|
+|└─byWarehouse|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "summary": {
+      "totalInventoryRecords": 0,
+      "totalOnHandQty": 0,
+      "totalAvailableQty": 0,
+      "totalReservedQty": 0,
+      "lowStockItems": 0,
+      "outOfStockItems": 0,
+      "totalInventoryValue": 0,
+      "byWarehouse": [
+        {
+          "mapKey": {}
+        }
+      ],
+      "stockTurnoverRatio": 0.0,
+      "outOfStockRate": 0.0,
+      "totalUnitsSold": 0
+    },
+    "byWarehouse": [
+      {
+        "mapKey": {}
+      }
+    ]
   }
 }
 ```
@@ -9293,9 +9581,511 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/da
 |-------|------|-------------|-------|---------|
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─chartData|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "chartData": [
+      {
+        "mapKey": {}
+      }
+    ]
+  }
+}
+```
+
+### Get Dashboard Overview Summary
+**URL:** https://api.shopsynch.com/v1/dashboard/overview/summary
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Returns the four KPI cards at the top of the dashboard overview screen:
+total orders, pending deliveries, total product value, and shipped orders.
+Tenant is resolved from the authenticated session — no tenantId parameter accepted.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|startDate|string|false|Optional start date for the filter window (ISO format).|-||
+|endDate|string|false|  Optional end date for the filter window (ISO format).|-||
+|dateField|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/overview/summary?startDate=&endDate=&dateField='
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─totalOrders|int64|Total number of orders placed within the filter window.|-|0|
+|└─pendingDeliveries|int64|Orders currently in-flight (PROCESSING + IN_TRANSIT + SHIPPED).<br/>These are orders that have not yet been delivered or cancelled.|-|0|
+|└─totalProductValue|number|Cumulative on-hand inventory value: sum(onHandQty × product.price) across all warehouses.|-|0|
+|└─shippedOrders|int64|Orders that have been marked as SHIPPED within the filter window.|-|0|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "totalOrders": 0,
+    "pendingDeliveries": 0,
+    "totalProductValue": 0,
+    "shippedOrders": 0
+  }
+}
+```
+
+### Get Overview Sales Chart
+**URL:** https://api.shopsynch.com/v1/dashboard/overview/sales-chart
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Returns the monthly sales analysis chart (order volume + revenue per month)
+displayed on the dashboard overview screen.
+Tenant is resolved from the authenticated session — no tenantId parameter accepted.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|year|int32|false|The calendar year to chart. Defaults to the current year.|-|0|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/overview/sales-chart?year=0'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─chartData|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "chartData": [
+      {
+        "mapKey": {}
+      }
+    ]
+  }
+}
+```
+
+### Get Low-Stock Products Panel
+**URL:** https://api.shopsynch.com/v1/dashboard/overview/low-stock
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Returns up to 10 inventory records whose on-hand quantity is at or below
+the configured reorder level, sorted by most critical first.
+Intended as the contextual insight panel on the dashboard overview screen.
+Tenant is resolved from the authenticated session — no tenantId parameter accepted.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/overview/low-stock'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─totalLowStockCount|int64|Total number of inventory records currently at or below reorder level.|-|0|
+|└─items|array|Top items sorted by most critical (lowest on-hand qty first), limited to 10.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─skuId|string|Null for SIMPLE products; set for V2 VARIABLE SKU records.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─warehouseName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─onHandQty|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─reorderLevel|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─maxStock|int64|Max stock capacity configured on the Inventory record. Null if not set.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productImage|string|Primary product image URL. Null if product has no image.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─severity|string|"critical" if onHandQty == 0, "warning" if onHandQty <= reorderLevel|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pct|double|Stock fill percentage: onHandQty / maxStock × 100. 0 if maxStock is unset.|-|0.0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalQuantitySold|int64|Units sold for this product in the query period. 0 when period is unknown.|-|0|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "totalLowStockCount": 0,
+    "items": [
+      {
+        "productId": "",
+        "productName": "",
+        "skuId": "",
+        "warehouseName": "",
+        "onHandQty": 0,
+        "reorderLevel": 0,
+        "maxStock": 0,
+        "productImage": "",
+        "severity": "",
+        "pct": 0.0,
+        "totalQuantitySold": 0
+      }
+    ]
+  }
+}
+```
+
+### Get Inventory Performance Panel
+**URL:** https://api.shopsynch.com/v1/dashboard/inventory/performance
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Returns KPI cards (Stock Turnover Ratio, Out-of-Stock Rate, Total Inventory Value)
+with period-over-period trend strings, the top 10 low-stock items enriched with product
+image and severity, and the top 5 sellers + 5 slowest movers for the requested window.
+Tenant is resolved from the authenticated session — no tenantId parameter accepted.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|startDate|string|false|Optional start date for the filter window (ISO format). Defaults to 30 days ago.|-||
+|endDate|string|false|  Optional end date for the filter window (ISO format). Defaults to now.|-||
+|dateField|string|false|MongoDB date field for order_lines date filtering. Defaults to {@code created_at}.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/inventory/performance?startDate=&endDate=&dateField='
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─stockTurnoverRatio|double|Stock Turnover Ratio = units sold / average on-hand qty for the period.|-|0.0|
+|└─stockTurnoverTrend|string|Percentage change vs previous equivalent period, e.g. "+12.0%" or "-3.5%".|-||
+|└─outOfStockRate|double|Out-of-stock rate = outOfStockItems / totalInventoryRecords * 100.|-|0.0|
+|└─outOfStockTrend|string|Percentage-point change vs previous equivalent period.|-||
+|└─totalInventoryValue|number|Sum of (onHandQty × product.price) across all inventory records.|-|0|
+|└─inventoryValueTrend|string|Percentage change vs previous equivalent period.|-||
+|└─lowStockCriticalCount|int64|Number of inventory records currently at or below their reorder level.|-|0|
+|└─lowStockItems|array|Top low-stock items sorted by most critical first (up to 10).|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─skuId|string|Null for SIMPLE products; set for V2 VARIABLE SKU records.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─warehouseName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─onHandQty|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─reorderLevel|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─maxStock|int64|Max stock capacity configured on the Inventory record. Null if not set.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productImage|string|Primary product image URL. Null if product has no image.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─severity|string|"critical" if onHandQty == 0, "warning" if onHandQty <= reorderLevel|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pct|double|Stock fill percentage: onHandQty / maxStock × 100. 0 if maxStock is unset.|-|0.0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalQuantitySold|int64|Units sold for this product in the query period. 0 when period is unknown.|-|0|
+|└─topSellers|array|Top-selling products by units sold in the period (up to 5).|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalQuantitySold|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pct|double|Percentage of the top seller's quantity, e.g. top=100%, second=82%.|-|0.0|
+|└─slowMovers|array|Slowest-moving products by units sold in the period (up to 5).|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalQuantitySold|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pct|double|Percentage relative to the top seller's quantity, showing how slow this item is.|-|0.0|
+|└─periodLabel|string|Human-readable period label, e.g. "Oct 01 — Oct 31, 2023".|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "stockTurnoverRatio": 0.0,
+    "stockTurnoverTrend": "",
+    "outOfStockRate": 0.0,
+    "outOfStockTrend": "",
+    "totalInventoryValue": 0,
+    "inventoryValueTrend": "",
+    "lowStockCriticalCount": 0,
+    "lowStockItems": [
+      {
+        "productId": "",
+        "productName": "",
+        "skuId": "",
+        "warehouseName": "",
+        "onHandQty": 0,
+        "reorderLevel": 0,
+        "maxStock": 0,
+        "productImage": "",
+        "severity": "",
+        "pct": 0.0,
+        "totalQuantitySold": 0
+      }
+    ],
+    "topSellers": [
+      {
+        "productId": "",
+        "name": "",
+        "totalQuantitySold": 0,
+        "pct": 0.0
+      }
+    ],
+    "slowMovers": [
+      {
+        "productId": "",
+        "name": "",
+        "totalQuantitySold": 0,
+        "pct": 0.0
+      }
+    ],
+    "periodLabel": ""
+  }
+}
+```
+
+### Get Abandoned Carts Panel
+**URL:** https://api.shopsynch.com/v1/dashboard/overview/abandoned-carts
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Returns the count and a sample of recently abandoned cart sessions within
+the requested date window. Intended as the secondary insight panel on the dashboard
+overview screen.
+Tenant is resolved from the authenticated session — no tenantId parameter accepted.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|startDate|string|false|Optional start date for the filter window (ISO format).|-||
+|endDate|string|false|  Optional end date for the filter window (ISO format).|-||
+|dateField|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/overview/abandoned-carts?startDate=&endDate=&dateField='
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─totalAbandonedCarts|int64|Total number of abandoned cart sessions within the filter window.|-|0|
+|└─recentAbandoned|array|Up to 10 most-recent abandoned sessions, newest first.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cartBasketId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customerId|string|Set for authenticated customers; null for guest sessions.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactEmail|string|Contact email captured for anonymous/guest sessions.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactPhone|string|Contact phone captured for anonymous/guest sessions.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─abandonedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "totalAbandonedCarts": 0,
+    "recentAbandoned": [
+      {
+        "cartBasketId": "",
+        "customerId": "",
+        "contactEmail": "",
+        "contactPhone": "",
+        "abandonedAt": "yyyy-MM-dd HH:mm:ss"
+      }
+    ]
+  }
+}
+```
+
+### Get Payment Metrics
+**URL:** https://api.shopsynch.com/v1/dashboard/payments
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Returns aggregated payment stats: total payments, total revenue,
+average order value, breakdown by payment status, and breakdown by gateway.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|false| The unique identifier of the tenant (merchant) to filter by. Defaults to empty (uses authenticated context).|-||
+|startDate|string|false|Optional start date for the filter window (ISO format).|-||
+|endDate|string|false|  Optional end date for the filter window (ISO format).|-||
+|dateField|string|false|MongoDB date field to use for range filtering. Defaults to {@code created_at}.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/payments?tenantId=&startDate=&endDate=&dateField='
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─totalPayments|int64|No comments found.|-|0|
+|└─totalRevenue|number|No comments found.|-|0|
+|└─averageOrderValue|number|No comments found.|-|0|
+|└─byStatus|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─count|int64|No comments found.|-|0|
+|└─byGateway|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─count|int64|No comments found.|-|0|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "totalPayments": 0,
+    "totalRevenue": 0,
+    "averageOrderValue": 0,
+    "byStatus": [
+      {
+        "status": "",
+        "count": 0
+      }
+    ],
+    "byGateway": [
+      {
+        "status": "",
+        "count": 0
+      }
+    ]
+  }
+}
+```
+
+### Get Payment Status Chart
+**URL:** https://api.shopsynch.com/v1/dashboard/payments/chart
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Returns a time-series of payment amounts grouped by time period for a given status.
+Supported chart types: {@code monthly} (all 12 months), {@code yearly} (filter year range),
+{@code weekly} (last 30 weeks from endDate).
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|false| The unique identifier of the tenant (merchant) to filter by. Defaults to empty (uses authenticated context).|-||
+|startDate|string|false|Optional start date for the filter window (ISO format).|-||
+|endDate|string|false|  Optional end date for the filter window (ISO format).|-||
+|dateField|string|false|MongoDB date field to use for range filtering. Defaults to {@code created_at}.|-||
+|chartType|string|true|Grouping granularity: {@code monthly}, {@code yearly}, or {@code weekly}.|-|monthly|
+|status|string|true|   Payment status to filter by (e.g. {@code SUCCESS}, {@code FAILED}).|-|SUCCESS|
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/dashboard/payments/chart?tenantId=&startDate=&endDate=&dateField=&chartType=monthly&status=SUCCESS'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
 |data|array|No comments found.|-||
-|└─mapKey|object|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─totalAmount|number|No comments found.|-|0|
+|└─label|string|No comments found.|-||
 
 **Response-example:**
 ```json
@@ -9304,9 +10094,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/da
   "message": "",
   "data": [
     {
-      "mapKey": {
-        "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
-      }
+      "totalAmount": 0,
+      "label": ""
     }
   ]
 }
@@ -9363,8 +10152,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:02"|
-|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:02"|
+|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:06"|
+|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:06"|
 
 **Response-example:**
 ```json
@@ -9378,8 +10167,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-14 16:10:02",
-    "updatedAt": "2026-04-14 16:10:02"
+    "createdAt": "2026-04-17 22:51:06",
+    "updatedAt": "2026-04-17 22:51:06"
   }
 }
 ```
@@ -9424,8 +10213,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:02"|
-|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:02"|
+|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:06"|
+|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:06"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -9440,8 +10229,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-14 16:10:02",
-    "updatedAt": "2026-04-14 16:10:02"
+    "createdAt": "2026-04-17 22:51:06",
+    "updatedAt": "2026-04-17 22:51:06"
   },
   "token": "",
   "refreshToken": "",
@@ -9550,19 +10339,19 @@ string
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
 |array|boolean|false|No comments found.|-|true|
-|object|boolean|false|No comments found.|-|true|
-|valueNode|boolean|false|No comments found.|-|true|
-|containerNode|boolean|false|No comments found.|-|true|
 |missingNode|boolean|false|No comments found.|-|true|
+|containerNode|boolean|false|No comments found.|-|true|
+|valueNode|boolean|false|No comments found.|-|true|
+|object|boolean|false|No comments found.|-|true|
 
 **Request-example:**
 ```bash
 curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/webhooks/whatsapp' --data '{
   "array": true,
-  "object": true,
-  "valueNode": true,
+  "missingNode": true,
   "containerNode": true,
-  "missingNode": true
+  "valueNode": true,
+  "object": true
 }'
 ```
 
@@ -10105,8 +10894,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:04"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:04"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:10"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:10"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactInformation|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
@@ -10189,8 +10978,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:04"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:04"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:10"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:10"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─tenant|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tradingName|string|No comments found.|-||
@@ -10245,8 +11034,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-14 16:10:04",
-        "updatedAt": "2026-04-14 16:10:04"
+        "createdAt": "2026-04-17 22:51:10",
+        "updatedAt": "2026-04-17 22:51:10"
       },
       "contactInformation": {
         "firstName": "",
@@ -10344,8 +11133,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
           "phoneNumber": "",
           "address": "",
           "status": "",
-          "createdAt": "2026-04-14 16:10:04",
-          "updatedAt": "2026-04-14 16:10:04"
+          "createdAt": "2026-04-17 22:51:10",
+          "updatedAt": "2026-04-17 22:51:10"
         },
         "createdAt": "yyyy-MM-dd HH:mm:ss"
       }
@@ -13444,8 +14233,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
 |└─status|string|No comments found.|-||
 |└─paymentGatewayTransactionId|string|No comments found.|-||
 |└─manualPayment|boolean|No comments found.|-|true|
-|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:02"|
-|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:02"|
+|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:07"|
+|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:07"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -13465,8 +14254,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
     "status": "",
     "paymentGatewayTransactionId": "",
     "manualPayment": true,
-    "createdAt": "2026-04-14 16:10:02",
-    "updatedAt": "2026-04-14 16:10:02"
+    "createdAt": "2026-04-17 22:51:07",
+    "updatedAt": "2026-04-17 22:51:07"
   },
   "message": "",
   "status": true
@@ -13956,8 +14745,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-14 16:10:02"|
-|└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:02"|
+|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:07"|
+|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:07"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
@@ -13972,8 +14761,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-14 16:10:02",
-    "updatedAt": "2026-04-14 16:10:02"
+    "createdAt": "2026-04-17 22:51:07",
+    "updatedAt": "2026-04-17 22:51:07"
   },
   "token": "",
   "refreshToken": "",
@@ -14566,7 +15355,8 @@ V1 variation endpoints ({@code /v1/products/variation/*}) are NOT affected.
 |└─quantityInStock|int32|false|Optional for V2 products — stock is managed via the Inventory entity.<br/>Provide this value to seed the initial stock level when creating a product;<br/>it will be written to the Inventory record. Omit to start with zero stock.<br/>Validation[Min(value=0, message=Quantity cannot be negative)]|-|0|
 |└─sku|string|false|Optional merchant-defined SKU code.|-||
 |└─attributes|object|false|Additional dimension attributes for this SKU.<br/>For example, when the parent variant group is Color=Black, the SKU might carry<br/>{@code {"Storage": "256GB", "RAM": "12GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|false|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|false|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|false|any object.|-||
 
 **Request-example:**
 ```bash
@@ -14582,8 +15372,9 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
       "quantityInStock": 0,
       "sku": "",
       "attributes": {
-        "mapKey1": "",
-        "mapKey2": ""
+        "mapKey": {
+          "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
+        }
       }
     }
   ]
@@ -14618,7 +15409,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
 |└─sku|string|              Root-level merchant SKU code.|-||
 |└─attributes|object|       Generic key-value product attributes.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
@@ -14639,7 +15431,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
@@ -14674,7 +15467,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### updateVariantGroup
@@ -14743,7 +15536,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
 |└─sku|string|              Root-level merchant SKU code.|-||
 |└─attributes|object|       Generic key-value product attributes.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
@@ -14764,7 +15558,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
@@ -14799,7 +15594,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### removeVariantGroup
@@ -14859,7 +15654,8 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 |└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
 |└─sku|string|              Root-level merchant SKU code.|-||
 |└─attributes|object|       Generic key-value product attributes.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
@@ -14880,7 +15676,8 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
@@ -14915,7 +15712,7 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### addSku
@@ -14951,7 +15748,8 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 |quantityInStock|int32|false|Optional for V2 products — stock is managed via the Inventory entity.<br/>Provide this value to seed the initial stock level when creating a product;<br/>it will be written to the Inventory record. Omit to start with zero stock.<br/>Validation[Min(value=0, message=Quantity cannot be negative)]|-|0|
 |sku|string|false|Optional merchant-defined SKU code.|-||
 |attributes|object|false|Additional dimension attributes for this SKU.<br/>For example, when the parent variant group is Color=Black, the SKU might carry<br/>{@code {"Storage": "256GB", "RAM": "12GB"}}.|-||
-|└─mapKey|string|false|A map key.|-||
+|└─mapKey|object|false|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|false|any object.|-||
 
 **Request-example:**
 ```bash
@@ -14961,8 +15759,9 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
   "quantityInStock": 0,
   "sku": "",
   "attributes": {
-    "mapKey1": "",
-    "mapKey2": ""
+    "mapKey": {
+      "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
+    }
   }
 }'
 ```
@@ -14995,7 +15794,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
 |└─sku|string|              Root-level merchant SKU code.|-||
 |└─attributes|object|       Generic key-value product attributes.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
@@ -15016,7 +15816,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
@@ -15051,7 +15852,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### updateSku
@@ -15088,7 +15889,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |quantityInStock|int32|false|Optional for V2 products — stock is managed via the Inventory entity.<br/>Provide this value to seed the initial stock level when creating a product;<br/>it will be written to the Inventory record. Omit to start with zero stock.<br/>Validation[Min(value=0, message=Quantity cannot be negative)]|-|0|
 |sku|string|false|Optional merchant-defined SKU code.|-||
 |attributes|object|false|Additional dimension attributes for this SKU.<br/>For example, when the parent variant group is Color=Black, the SKU might carry<br/>{@code {"Storage": "256GB", "RAM": "12GB"}}.|-||
-|└─mapKey|string|false|A map key.|-||
+|└─mapKey|object|false|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|false|any object.|-||
 
 **Request-example:**
 ```bash
@@ -15123,7 +15925,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
 |└─sku|string|              Root-level merchant SKU code.|-||
 |└─attributes|object|       Generic key-value product attributes.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
@@ -15144,7 +15947,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
@@ -15179,7 +15983,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### removeSku
@@ -15240,7 +16044,8 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 |└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
 |└─sku|string|              Root-level merchant SKU code.|-||
 |└─attributes|object|       Generic key-value product attributes.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
@@ -15261,7 +16066,8 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
@@ -15296,7 +16102,7 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ## Delivery Zone Management
@@ -15878,7 +16684,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
 |└─sku|string|              Root-level merchant SKU code.|-||
 |└─attributes|object|       Generic key-value product attributes.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
@@ -15899,7 +16706,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
@@ -15934,7 +16742,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### createProduct
@@ -15975,7 +16783,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |quantityInStock|int32|false|Required for SIMPLE products. Optional for DIGITAL (no physical stock).<br/>Not used by VARIABLE products (stock tracked per SKU).<br/>Validation[Min(value=0, message=Quantity cannot be negative)]|-|0|
 |sku|string|false|Merchant's internal stock-keeping unit identifier (root level, SIMPLE only).<br/>Validation[Length(max=2147483647, min=2)]|-||
 |attributes|object|false|Generic product-level attributes, e.g. {@code {"Color": "Red", "Material": "Cotton"}}.<br/>For SIMPLE products these describe the single purchasable option.<br/>For VARIABLE products, attributes belong inside each {@link VariantGroupRequest}.|-||
-|└─mapKey|string|false|A map key.|-||
+|└─mapKey|object|false|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|false|any object.|-||
 |variantGroups|array|false|Required when {@link #productType} is {@link ProductType#VARIABLE}.<br/>Each entry groups one or more SKUs under a shared attribute value.|-||
 |└─attributeName|string|true|The variation dimension name, e.g. {@code "Color"}, {@code "Size"}, {@code "RAM"}.<br/>Must be consistent across all variant groups on the same product.|-||
 |└─attributeValue|string|true|The concrete value for this group, e.g. {@code "Red"}, {@code "XL"}, {@code "8GB"}.|-||
@@ -15987,7 +16796,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|false|Optional for V2 products — stock is managed via the Inventory entity.<br/>Provide this value to seed the initial stock level when creating a product;<br/>it will be written to the Inventory record. Omit to start with zero stock.<br/>Validation[Min(value=0, message=Quantity cannot be negative)]|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|false|Optional merchant-defined SKU code.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|false|Additional dimension attributes for this SKU.<br/>For example, when the parent variant group is Color=Black, the SKU might carry<br/>{@code {"Storage": "256GB", "RAM": "12GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|false|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|false|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|false|any object.|-||
 |bundledProductIds|array|false|Required when {@link #productType} is {@link ProductType#BUNDLE}.<br/>Lists the IDs of products that make up this bundle.<br/>Validation[Size(max=2147483647, min=2, message=    A bundle must contain at least 2 products)]|-|""","""|
 |categoryId|string|true|No comments found.|-||
 |brandId|string|false|No comments found.|-||
@@ -15996,7 +16806,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 
 **Request-example:**
 ```bash
-curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products' --data '{"name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","imageList":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"variantGroups":[{"attributeName":"","attributeValue":"","image":"","colorId":"","skus":[{"price":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"categoryId":"","brandId":"","tenantId":"","isArchived":true}'
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products' --data '{"name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","imageList":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"variantGroups":[{"attributeName":"","attributeValue":"","image":"","colorId":"","skus":[{"price":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"categoryId":"","brandId":"","tenantId":"","isArchived":true}'
 ```
 **Response-fields:**
 
@@ -16027,7 +16837,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
 |└─sku|string|              Root-level merchant SKU code.|-||
 |└─attributes|object|       Generic key-value product attributes.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
@@ -16048,7 +16859,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
@@ -16083,7 +16895,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### updateProduct
@@ -16184,7 +16996,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
 |└─sku|string|              Root-level merchant SKU code.|-||
 |└─attributes|object|       Generic key-value product attributes.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
@@ -16205,7 +17018,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
@@ -16240,7 +17054,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### deleteProduct
@@ -16344,7 +17158,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/
 |└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
 |└─sku|string|              Root-level merchant SKU code.|-||
 |└─attributes|object|       Generic key-value product attributes.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
@@ -16365,7 +17180,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
@@ -16400,7 +17216,7 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### Unarchive Product (V2)
@@ -16459,7 +17275,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/
 |└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
 |└─sku|string|              Root-level merchant SKU code.|-||
 |└─attributes|object|       Generic key-value product attributes.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
@@ -16480,7 +17297,8 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
@@ -16515,7 +17333,7 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
 ```
 
 ### getSimilarProducts
@@ -16580,7 +17398,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
 |└─sku|string|              Root-level merchant SKU code.|-||
 |└─attributes|object|       Generic key-value product attributes.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
@@ -16601,7 +17420,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
@@ -16636,7 +17456,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":[{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey1":"","mapKey2":""}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}]}
+{"status":true,"message":"","data":[{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}]}
 ```
 
 ### getTopSelling
@@ -18910,8 +19730,11 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 }
 ```
 
-## InventoryController
-### list
+## Inventory Management
+Manage stock levels across warehouses, track inventory movements, and view
+low-stock items.
+All operations are tenant-scoped and require merchant access.
+### Get All Inventory Records
 **URL:** https://api.shopsynch.com/v1/inventory
 
 **Type:** GET
@@ -18919,7 +19742,10 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** 
+**Description:** Retrieves a paginated list of inventory records for the
+         authenticated tenant.
+         Results are ordered by creation date descending and include full
+         pagination metadata.
 
 **Request-headers:**
 
@@ -18932,8 +19758,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
-|page|int32|true|No comments found.|-|0|
-|limit|int32|true|No comments found.|-|50|
+|page|int32|true| Zero-based page number. Default is 0 (first page).|-|0|
+|limit|int32|true|Maximum number of records per page. Default is 50.|-|50|
 
 **Request-example:**
 ```bash
@@ -18946,23 +19772,40 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/in
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
-|└─mapKey|object|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─items|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─skuId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─warehouseId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─warehouseName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─location|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─onHandQty|int32|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─reservedQty|int32|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─availableQty|int32|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─reorderLevel|int32|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─reorderQty|int32|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variantAttributes|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastStockAdjusted|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastAdjustedBy|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─product|object|Basic product info joined at query time. Null when product data is unavailable.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─basePrice|number|No comments found.|-|0|
+|└─total|int64|No comments found.|-|0|
+|└─totalPages|int32|No comments found.|-|0|
+|└─currentPage|int32|No comments found.|-|0|
 
 **Response-example:**
 ```json
-{
-  "status": true,
-  "message": "",
-  "data": {
-    "mapKey": {
-      "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
-    }
-  }
-}
+{"status":true,"message":"","data":{"items":[{"id":"","productId":"","skuId":"","tenantId":"","warehouseId":"","warehouseName":"","location":"","onHandQty":0,"reservedQty":0,"availableQty":0,"reorderLevel":0,"reorderQty":0,"variantAttributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"lastStockAdjusted":"yyyy-MM-dd HH:mm:ss","lastAdjustedBy":"","createdAt":"yyyy-MM-dd HH:mm:ss","updatedAt":"yyyy-MM-dd HH:mm:ss","product":{"id":"","name":"","basePrice":0}}],"total":0,"totalPages":0,"currentPage":0}}
 ```
 
-### byProduct
+### Get Inventory by Product
 **URL:** https://api.shopsynch.com/v1/inventory/product/{productId}
 
 **Type:** GET
@@ -18970,7 +19813,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/in
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** 
+**Description:** Get stock for a product across all warehouses.
 
 **Request-headers:**
 
@@ -19009,18 +19852,23 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/in
 |└─reorderLevel|int32|No comments found.|-|0|
 |└─reorderQty|int32|No comments found.|-|0|
 |└─variantAttributes|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─lastStockAdjusted|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─lastAdjustedBy|string|No comments found.|-||
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─product|object|Basic product info joined at query time. Null when product data is unavailable.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─basePrice|number|No comments found.|-|0|
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":[{"id":"","productId":"","skuId":"","tenantId":"","warehouseId":"","warehouseName":"","location":"","onHandQty":0,"reservedQty":0,"availableQty":0,"reorderLevel":0,"reorderQty":0,"variantAttributes":{"mapKey1":"","mapKey2":""}"lastStockAdjusted":"yyyy-MM-dd HH:mm:ss","lastAdjustedBy":"","createdAt":"yyyy-MM-dd HH:mm:ss","updatedAt":"yyyy-MM-dd HH:mm:ss"}]}
+{"status":true,"message":"","data":[{"id":"","productId":"","skuId":"","tenantId":"","warehouseId":"","warehouseName":"","location":"","onHandQty":0,"reservedQty":0,"availableQty":0,"reorderLevel":0,"reorderQty":0,"variantAttributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"lastStockAdjusted":"yyyy-MM-dd HH:mm:ss","lastAdjustedBy":"","createdAt":"yyyy-MM-dd HH:mm:ss","updatedAt":"yyyy-MM-dd HH:mm:ss","product":{"id":"","name":"","basePrice":0}}]}
 ```
 
-### bySku
+### Get Stock by SKU
 **URL:** https://api.shopsynch.com/v1/inventory/product/{productId}/sku/{skuId}
 
 **Type:** GET
@@ -19028,7 +19876,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/in
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** 
+**Description:** Get stock for a specific SKU across all warehouses
 
 **Request-headers:**
 
@@ -19068,18 +19916,23 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/in
 |└─reorderLevel|int32|No comments found.|-|0|
 |└─reorderQty|int32|No comments found.|-|0|
 |└─variantAttributes|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─lastStockAdjusted|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─lastAdjustedBy|string|No comments found.|-||
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─product|object|Basic product info joined at query time. Null when product data is unavailable.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─basePrice|number|No comments found.|-|0|
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":[{"id":"","productId":"","skuId":"","tenantId":"","warehouseId":"","warehouseName":"","location":"","onHandQty":0,"reservedQty":0,"availableQty":0,"reorderLevel":0,"reorderQty":0,"variantAttributes":{"mapKey1":"","mapKey2":""}"lastStockAdjusted":"yyyy-MM-dd HH:mm:ss","lastAdjustedBy":"","createdAt":"yyyy-MM-dd HH:mm:ss","updatedAt":"yyyy-MM-dd HH:mm:ss"}]}
+{"status":true,"message":"","data":[{"id":"","productId":"","skuId":"","tenantId":"","warehouseId":"","warehouseName":"","location":"","onHandQty":0,"reservedQty":0,"availableQty":0,"reorderLevel":0,"reorderQty":0,"variantAttributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"lastStockAdjusted":"yyyy-MM-dd HH:mm:ss","lastAdjustedBy":"","createdAt":"yyyy-MM-dd HH:mm:ss","updatedAt":"yyyy-MM-dd HH:mm:ss","product":{"id":"","name":"","basePrice":0}}]}
 ```
 
-### lowStock
+### List Low-Stock Items
 **URL:** https://api.shopsynch.com/v1/inventory/low-stock
 
 **Type:** GET
@@ -19087,7 +19940,10 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/in
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** 
+**Description:** List items at or below their reorder level, indicating they need
+         restocking.
+         This helps merchants proactively manage inventory and avoid
+         stockouts.
 
 **Request-headers:**
 
@@ -19120,18 +19976,23 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/in
 |└─reorderLevel|int32|No comments found.|-|0|
 |└─reorderQty|int32|No comments found.|-|0|
 |└─variantAttributes|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─lastStockAdjusted|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─lastAdjustedBy|string|No comments found.|-||
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─product|object|Basic product info joined at query time. Null when product data is unavailable.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─basePrice|number|No comments found.|-|0|
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":[{"id":"","productId":"","skuId":"","tenantId":"","warehouseId":"","warehouseName":"","location":"","onHandQty":0,"reservedQty":0,"availableQty":0,"reorderLevel":0,"reorderQty":0,"variantAttributes":{"mapKey1":"","mapKey2":""}"lastStockAdjusted":"yyyy-MM-dd HH:mm:ss","lastAdjustedBy":"","createdAt":"yyyy-MM-dd HH:mm:ss","updatedAt":"yyyy-MM-dd HH:mm:ss"}]}
+{"status":true,"message":"","data":[{"id":"","productId":"","skuId":"","tenantId":"","warehouseId":"","warehouseName":"","location":"","onHandQty":0,"reservedQty":0,"availableQty":0,"reorderLevel":0,"reorderQty":0,"variantAttributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"lastStockAdjusted":"yyyy-MM-dd HH:mm:ss","lastAdjustedBy":"","createdAt":"yyyy-MM-dd HH:mm:ss","updatedAt":"yyyy-MM-dd HH:mm:ss","product":{"id":"","name":"","basePrice":0}}]}
 ```
 
-### logs
+### Get Inventory Logs
 **URL:** https://api.shopsynch.com/v1/inventory/logs
 
 **Type:** GET
@@ -19139,7 +20000,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/in
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** 
+**Description:** List inventory audit logs for the tenant.
+         This helps merchants track changes and maintain accountability.
 
 **Request-headers:**
 
@@ -19166,8 +20028,22 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/in
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
-|└─mapKey|object|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─items|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─inventoryId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─logDate|string|No comments found.|-|yyyy-MM-dd|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─qtyChange|int32|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─action|enum|No comments found.<br/>[Enum: RECEIVED, SOLD, ADJUSTED, RESERVED, RELEASED, DAMAGED, RETURNED, TRANSFERRED_IN, TRANSFERRED_OUT]|-|RECEIVED|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─reference|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─adjustedBy|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notes|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─timestamp|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─total|int64|No comments found.|-|0|
+|└─totalPages|int32|No comments found.|-|0|
+|└─currentPage|int32|No comments found.|-|0|
 
 **Response-example:**
 ```json
@@ -19175,14 +20051,30 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/in
   "status": true,
   "message": "",
   "data": {
-    "mapKey": {
-      "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
-    }
+    "items": [
+      {
+        "id": "",
+        "inventoryId": "",
+        "productId": "",
+        "tenantId": "",
+        "logDate": "yyyy-MM-dd",
+        "qtyChange": 0,
+        "action": "RECEIVED",
+        "reference": "",
+        "adjustedBy": "",
+        "notes": "",
+        "timestamp": "yyyy-MM-dd HH:mm:ss",
+        "createdAt": "yyyy-MM-dd HH:mm:ss"
+      }
+    ],
+    "total": 0,
+    "totalPages": 0,
+    "currentPage": 0
   }
 }
 ```
 
-### create
+### Create Inventory Record
 **URL:** https://api.shopsynch.com/v1/inventory
 
 **Type:** POST
@@ -19190,7 +20082,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/in
 
 **Content-Type:** application/json
 
-**Description:** 
+**Description:** Create a new inventory record manually.
+         This helps merchants add new products to their inventory.
 
 **Request-headers:**
 
@@ -19211,7 +20104,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/in
 |reorderLevel|int32|false|No comments found.<br/>Validation[Min(value=0, message=Reorder level cannot be negative)]|-|0|
 |reorderQty|int32|false|No comments found.<br/>Validation[Min(value=0, message=Reorder quantity cannot be negative)]|-|0|
 |variantAttributes|object|false|Variant attributes mirroring the ProductSku, e.g. {"Color": "Red"}.|-||
-|└─mapKey|string|false|A map key.|-||
+|└─mapKey|object|false|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|false|any object.|-||
 
 **Request-example:**
 ```bash
@@ -19224,8 +20118,9 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
   "reorderLevel": 0,
   "reorderQty": 0,
   "variantAttributes": {
-    "mapKey1": "",
-    "mapKey2": ""
+    "mapKey": {
+      "warning": "Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."
+    }
   }
 }'
 ```
@@ -19249,18 +20144,23 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─reorderLevel|int32|No comments found.|-|0|
 |└─reorderQty|int32|No comments found.|-|0|
 |└─variantAttributes|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─lastStockAdjusted|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─lastAdjustedBy|string|No comments found.|-||
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─product|object|Basic product info joined at query time. Null when product data is unavailable.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─basePrice|number|No comments found.|-|0|
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","productId":"","skuId":"","tenantId":"","warehouseId":"","warehouseName":"","location":"","onHandQty":0,"reservedQty":0,"availableQty":0,"reorderLevel":0,"reorderQty":0,"variantAttributes":{"mapKey1":"","mapKey2":""}"lastStockAdjusted":"yyyy-MM-dd HH:mm:ss","lastAdjustedBy":"","createdAt":"yyyy-MM-dd HH:mm:ss","updatedAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","productId":"","skuId":"","tenantId":"","warehouseId":"","warehouseName":"","location":"","onHandQty":0,"reservedQty":0,"availableQty":0,"reorderLevel":0,"reorderQty":0,"variantAttributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"lastStockAdjusted":"yyyy-MM-dd HH:mm:ss","lastAdjustedBy":"","createdAt":"yyyy-MM-dd HH:mm:ss","updatedAt":"yyyy-MM-dd HH:mm:ss","product":{"id":"","name":"","basePrice":0}}}
 ```
 
-### adjust
+### Adjust Stock Quantity
 **URL:** https://api.shopsynch.com/v1/inventory/{id}/adjust
 
 **Type:** PATCH
@@ -19268,7 +20168,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 
 **Content-Type:** application/json
 
-**Description:** 
+**Description:** Adjust the stock quantity for an existing inventory item.
+         This helps merchants manage their inventory levels dynamically.
 
 **Request-headers:**
 
@@ -19314,7 +20215,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 }
 ```
 
-### reserve
+### Reserve Stock for Order
 **URL:** https://api.shopsynch.com/v1/inventory/{id}/reserve
 
 **Type:** PATCH
@@ -19322,7 +20223,9 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 
 **Content-Type:** application/json
 
-**Description:** 
+**Description:** Reserve stock for a new order.
+         This helps merchants ensure they have enough inventory to fulfill
+         orders.
 
 **Request-headers:**
 
@@ -19368,7 +20271,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 }
 ```
 
-### release
+### Release Stock Reservation
 **URL:** https://api.shopsynch.com/v1/inventory/{id}/release
 
 **Type:** PATCH
@@ -19376,7 +20279,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 
 **Content-Type:** application/json
 
-**Description:** 
+**Description:** Release a previously reserved stock.
+         This helps merchants free up inventory for other uses.
 
 **Request-headers:**
 
@@ -20042,8 +20946,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:01"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:01"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:06"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:06"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -20106,8 +21010,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-14 16:10:01",
-        "updatedAt": "2026-04-14 16:10:01"
+        "createdAt": "2026-04-17 22:51:05",
+        "updatedAt": "2026-04-17 22:51:05"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -20201,8 +21105,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-14 16:10:01"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-14 16:10:01"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:06"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:06"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -20265,8 +21169,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-14 16:10:01",
-        "updatedAt": "2026-04-14 16:10:01"
+        "createdAt": "2026-04-17 22:51:06",
+        "updatedAt": "2026-04-17 22:51:06"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -21241,7 +22145,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/lo
 }
 ```
 
-## Public REST Controller for processing Natural Language Query (NLQ) requests.
+## Natural Language
+
 Allows merchants to query dashboard stats using plain English phrases.
 
 Flow:
@@ -21285,7 +22190,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |interpretedAs|string|No comments found.|-||
 |from|string|No comments found.|-|yyyy-MM-dd|
 |to|string|No comments found.|-|yyyy-MM-dd|
-|domains|array|No comments found.<br/>[Enum: ORDERS, REVENUE, PRODUCTS, CUSTOMERS]|-|[ORDERS]|
+|domains|array|No comments found.<br/>[Enum: ORDERS, REVENUE, PRODUCTS, CUSTOMERS, INVENTORY]|-|[ORDERS]|
 |data|object|No comments found.|-||
 |└─orderMetrics|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalOrders|int64|No comments found.|-|0|
@@ -21319,19 +22224,38 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalInStockProducts|int64|Count of products currently having a stock level > 0|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalOutOfStockProducts|int64|Count of products currently out of stock|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalProductsValue|number|Estimated cumulative monetary value of all stock items in inventory|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lowStockProducts|int64|Count of products with at least one inventory record at or below its reorder level|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─topSellingProducts|array|Enriched list of top-performing products|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productId|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalQuantitySold|int64|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pct|double|Percentage of the top seller's quantity, e.g. top=100%, second=82%.|-|0.0|
 |└─customerMetrics|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newCustomers|int64|Number of customers who made their first purchase in this period|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─returningCustomers|int64|Number of unique customers with more than one order in their history|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalCustomers|int64|No comments found.|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─topCitiesForOrders|object|Geographic breakdown of order volume by city|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|int64|A map key.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─topStatesForOrders|object|Geographic breakdown of order volume by state/province|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|int64|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─topCustomersBySpend|object|Identification of top-tier customers based on their historical monetary contribution (Total Spend)|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|number|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─topCustomersBySpend|array|Top identified customers ranked by total spend. Only includes orders with a non-null customerId.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customerId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|number|No comments found.|-|0|
+|└─inventoryMetrics|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalInventoryRecords|int64|Total inventory records (one per product+sku+warehouse combination)|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalOnHandQty|int64|Sum of {@code onHandQty} across all records|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalAvailableQty|int64|Sum of {@code availableQty} (onHand - reserved) across all records|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalReservedQty|int64|Sum of {@code reservedQty} across all records|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lowStockItems|int64|Count of records where {@code onHandQty <= reorderLevel} and {@code reorderLevel > 0}|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─outOfStockItems|int64|Count of records where {@code availableQty == 0}|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalInventoryValue|number|Sum of {@code onHandQty * product.price} across all records|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─byWarehouse|array|Per-warehouse breakdown: [{warehouse, totalOnHand, totalAvailable}]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─stockTurnoverRatio|double|Stock Turnover Ratio = units sold in period / current on-hand qty|-|0.0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─outOfStockRate|double|Out-of-stock percentage = outOfStockItems / totalInventoryRecords * 100|-|0.0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalUnitsSold|int64|Total units sold in the filter period (used to derive stockTurnoverRatio)|-|0|
 |└─status|string|No comments found.|-||
 |summary|string|No comments found.|-||
 |providerUsed|string|No comments found.|-||
@@ -21340,7 +22264,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 
 **Response-example:**
 ```json
-{"interpretedAs":"","from":"yyyy-MM-dd","to":"yyyy-MM-dd","domains":[ORDERS],"data":{"orderMetrics":{"totalOrders":0,"cancelledOrders":0,"completedOrders":0,"pendingOrders":0,"processingOrders":0,"shippedOrders":0,"inTransitOrders":0,"issuesOrders":0,"unpaidOrders":0,"pendingWaybills":0,"averageOrderValue":0,"byFulfillmentStatus":[{"mapKey":{}}],"topShippingMethods":[{"mapKey":{}}]},"revenueMetrics":{"grossRevenue":0,"netRevenue":0,"refundsTotal":0,"totalDiscounts":0,"revenueByPaymentMethod":{"mapKey1":0,"mapKey2":0}"currency":""},"productMetrics":{"totalProducts":0,"newProductsCreated":0,"totalInStockProducts":0,"totalOutOfStockProducts":0,"totalProductsValue":0,"topSellingProducts":[{"productId":"","name":"","totalQuantitySold":0}]},"customerMetrics":{"newCustomers":0,"returningCustomers":0,"topCitiesForOrders":{"mapKey1":0,"mapKey2":0}"topStatesForOrders":{"mapKey1":0,"mapKey2":0}"topCustomersBySpend":{"mapKey1":0,"mapKey2":0}},"status":""},"summary":"","providerUsed":"","clarificationNeeded":true,"message":""}
+{"interpretedAs":"","from":"yyyy-MM-dd","to":"yyyy-MM-dd","domains":[ORDERS],"data":{"orderMetrics":{"totalOrders":0,"cancelledOrders":0,"completedOrders":0,"pendingOrders":0,"processingOrders":0,"shippedOrders":0,"inTransitOrders":0,"issuesOrders":0,"unpaidOrders":0,"pendingWaybills":0,"averageOrderValue":0,"byFulfillmentStatus":[{"mapKey":{}}],"topShippingMethods":[{"mapKey":{}}]},"revenueMetrics":{"grossRevenue":0,"netRevenue":0,"refundsTotal":0,"totalDiscounts":0,"revenueByPaymentMethod":{"mapKey1":0,"mapKey2":0}"currency":""},"productMetrics":{"totalProducts":0,"newProductsCreated":0,"totalInStockProducts":0,"totalOutOfStockProducts":0,"totalProductsValue":0,"lowStockProducts":0,"topSellingProducts":[{"productId":"","name":"","totalQuantitySold":0,"pct":0.0}]},"customerMetrics":{"newCustomers":0,"returningCustomers":0,"totalCustomers":0,"topCitiesForOrders":{"mapKey1":0,"mapKey2":0}"topStatesForOrders":{"mapKey1":0,"mapKey2":0}"topCustomersBySpend":[{"customerId":"","name":"","value":0}]},"inventoryMetrics":{"totalInventoryRecords":0,"totalOnHandQty":0,"totalAvailableQty":0,"totalReservedQty":0,"lowStockItems":0,"outOfStockItems":0,"totalInventoryValue":0,"byWarehouse":[{"mapKey":{}}],"stockTurnoverRatio":0.0,"outOfStockRate":0.0,"totalUnitsSold":0},"status":""},"summary":"","providerUsed":"","clarificationNeeded":true,"message":""}
 ```
 
 ## App Token Management
