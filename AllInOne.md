@@ -344,20 +344,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 ```
 
 ## Product Template Management
-
-category attribute schemas used by the dashboard and storefront.
-&lt;p&gt;Templates tell the merchant dashboard which fields to render when a seller creates a product,
-and tell the customer storefront how to display spec tables, filter panels, and variant selectors.
-&lt;/p&gt;
-
-&lt;p&gt;Two template tiers:
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;System defaults&lt;/strong&gt; ({@code tenantId=null}) — seeded at startup, platform-wide.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Tenant overrides&lt;/strong&gt; — created by a merchant to customise the schema for their store.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;
-&lt;p&gt;Resolution order: tenant override → system default.&lt;/p&gt;
-### listTemplates
+### List product templates
 **URL:** https://api.shopsynch.com/v2/product-templates
 
 **Type:** GET
@@ -365,7 +352,7 @@ and tell the customer storefront how to display spec tables, filter panels, and 
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** 
+**Description:** Returns all templates. Filter by categoryId to get the schema for a specific category.  Omit tenantId to get system defaults only.
 
 **Request-headers:**
 
@@ -453,7 +440,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 }
 ```
 
-### getForCategory
+### Get effective template for a category
 **URL:** https://api.shopsynch.com/v2/product-templates/by-category/{categoryId}
 
 **Type:** GET
@@ -461,7 +448,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** 
+**Description:** Returns the tenant-specific override if it exists, otherwise the system default.  
+Returns 404 if no template is configured for this category.
 
 **Request-headers:**
 
@@ -545,7 +533,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 }
 ```
 
-### getById
+### Get product template by ID
 **URL:** https://api.shopsynch.com/v2/product-templates/{id}
 
 **Type:** GET
@@ -553,7 +541,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** 
+**Description:** Returns the template if it exists, otherwise throws a 404 error.
 
 **Request-headers:**
 
@@ -637,7 +625,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 }
 ```
 
-### create
+### Create a product template
 **URL:** https://api.shopsynch.com/v2/product-templates
 
 **Type:** POST
@@ -645,7 +633,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 
 **Content-Type:** application/json
 
-**Description:** 
+**Description:** Creates a tenant override when tenantId is supplied, or a system default when omitted.
 
 **Request-headers:**
 
@@ -770,7 +758,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 }
 ```
 
-### update
+### Update a product template
 **URL:** https://api.shopsynch.com/v2/product-templates/{id}
 
 **Type:** PUT
@@ -778,7 +766,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 
 **Content-Type:** application/json
 
-**Description:** 
+**Description:** Updates the template with the given ID.  Throws a 404 error if the template does not exist.
 
 **Request-headers:**
 
@@ -909,7 +897,7 @@ curl -X PUT -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test"
 }
 ```
 
-### delete
+### Delete a product template
 **URL:** https://api.shopsynch.com/v2/product-templates/{id}
 
 **Type:** DELETE
@@ -917,7 +905,7 @@ curl -X PUT -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test"
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** 
+**Description:** Deletes the template with the given ID.  Throws a 404 error
 
 **Request-headers:**
 
@@ -1089,8 +1077,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:03"|
-|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:03"|
+|└─createdAt|string|No comments found.|-|"2026-04-23 10:03:18"|
+|└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:18"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -1118,8 +1106,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-17 22:51:03",
-    "updatedAt": "2026-04-17 22:51:03"
+    "createdAt": "2026-04-23 10:03:18",
+    "updatedAt": "2026-04-23 10:03:18"
   },
   "message": "",
   "status": true
@@ -1191,8 +1179,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:04"|
-|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:04"|
+|└─createdAt|string|No comments found.|-|"2026-04-23 10:03:18"|
+|└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:18"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -1220,8 +1208,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-17 22:51:04",
-    "updatedAt": "2026-04-17 22:51:04"
+    "createdAt": "2026-04-23 10:03:18",
+    "updatedAt": "2026-04-23 10:03:18"
   },
   "message": "",
   "status": true
@@ -1275,8 +1263,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:04"|
-|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:04"|
+|└─createdAt|string|No comments found.|-|"2026-04-23 10:03:18"|
+|└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:18"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -1304,8 +1292,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
     ],
     "status": "",
     "metadata": {},
-    "createdAt": "2026-04-17 22:51:04",
-    "updatedAt": "2026-04-17 22:51:04"
+    "createdAt": "2026-04-23 10:03:18",
+    "updatedAt": "2026-04-23 10:03:18"
   },
   "message": "",
   "status": true
@@ -1363,8 +1351,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:04"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:04"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-23 10:03:18"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:18"|
 |└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
@@ -1395,8 +1383,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
         ],
         "status": "",
         "metadata": {},
-        "createdAt": "2026-04-17 22:51:04",
-        "updatedAt": "2026-04-17 22:51:04"
+        "createdAt": "2026-04-23 10:03:18",
+        "updatedAt": "2026-04-23 10:03:18"
       }
     ],
     "nextCursor": "yyyy-MM-dd HH:mm:ss"
@@ -1454,8 +1442,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─metadata|object|No comments found.|-||
 |└─status|string|No comments found.|-||
 |└─metadata|object|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:04"|
-|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:04"|
+|└─createdAt|string|No comments found.|-|"2026-04-23 10:03:18"|
+|└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:18"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -1484,8 +1472,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
       ],
       "status": "",
       "metadata": {},
-      "createdAt": "2026-04-17 22:51:04",
-      "updatedAt": "2026-04-17 22:51:04"
+      "createdAt": "2026-04-23 10:03:18",
+      "updatedAt": "2026-04-23 10:03:18"
     }
   ],
   "message": "",
@@ -1584,7 +1572,7 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1
 ```
 
 ## Customer Order Management
-### Fetch Customer Orders.<br>This API retrieves a list of orders for the authenticated customer.<br>The response includes orders in PUBLISHED status.
+### Fetch Customer Orders.
 **URL:** https://api.shopsynch.com/v1/customer-orders
 
 **Type:** GET
@@ -1592,8 +1580,7 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Fetch Customer Orders.
-This API retrieves a list of orders for the authenticated customer.
+**Description:** This API retrieves a list of orders for the authenticated customer.
 The response includes orders in PUBLISHED status.
 
 **Request-headers:**
@@ -1622,432 +1609,10 @@ The response includes orders in PUBLISHED status.
 |customerId|string|false|Filter by customer ID|-||
 |productId|string|false|Filter by product ID (orders that contain a specific product)|-||
 |authCustomer|string|false|Authenticated customer ID (internal use)|-||
-|createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|accountNonExpired|boolean|false|No comments found.|-|true|
-|accountNonLocked|boolean|false|No comments found.|-|true|
-|credentialsNonExpired|boolean|false|No comments found.|-|true|
-|id|string|false|No comments found.|-||
-|tenantId|string|false|No comments found.|-||
-|fullName|string|false|No comments found.|-||
-|firstName|string|false|No comments found.|-||
-|lastName|string|false|No comments found.|-||
-|phoneNumber|string|false|No comments found.|-||
-|email|string|false|No comments found.|-||
-|emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|googleAccount|boolean|false|No comments found.|-|true|
-|googleId|string|false|No comments found.|-||
-|password|string|false|No comments found.|-||
-|status|string|false|No comments found.|-||
-|notificationsEnabled|boolean|false|No comments found.|-|true|
-|address|string|false|No comments found.|-||
-|version|int32|false|No comments found.|-|0|
-|addresses|array|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|└─id|string|false|No comments found.|-||
-|└─fullAddress|string|false|No comments found.|-||
-|└─street|string|false|No comments found.|-||
-|└─streetNumber|string|false|No comments found.|-||
-|└─postalCode|string|false|No comments found.|-||
-|└─city|string|false|No comments found.|-||
-|└─customerId|string|false|No comments found.|-||
-|└─isDefault|boolean|false|No comments found.|-|true|
-|└─state|string|false|No comments found.|-||
-|└─localGovernment|string|false|No comments found.|-||
-|└─country|string|false|No comments found.|-||
-|tenant|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|└─id|string|false|No comments found.|-||
-|└─businessTradingName|string|false|e.g. Business name|-||
-|└─name|string|false|No comments found.|-||
-|└─logo|string|false|No comments found.|-||
-|└─businessType|string|false|e.g. "LLC", "Sole Proprietor"|-||
-|└─businessRegistrationNumber|string|false|Government-issued business ID|-||
-|└─businessCountry|string|false|Country of business incorporation|-||
-|└─businessState|string|false|Country of business incorporation|-||
-|└─businessCity|string|false|Business city|-||
-|└─businessStorefrontUrl|string|false|No comments found.|-||
-|└─businessAddress|string|false|Business register address|-||
-|└─businessDescription|string|false|No comments found.|-||
-|└─industry|string|false|Business Industry<br/>e.g. fashion, electronics|-||
-|└─businessTaxIdNumber|string|false|Optional - Business Tax ID|-||
-|└─businessExpectedMonthlyIncome|string|false|Optional – for profiling|-||
-|└─staffSize|string|false|No comments found.|-||
-|└─businessPrimaryPhoneNumber|string|false|Optional – for contacting business|-||
-|└─businessSecondaryPhoneNumber|string|false|Optional – for contacting business|-||
-|└─businessSupportEmailAddress|string|false|for contacting business and sending notifications|-||
-|└─businessGeneralEmailAddress|string|false|for contacting business and sending notifications|-||
-|└─kybCompleted|boolean|false|Know Your Business passed|-|true|
-|└─profileDetailFilled|boolean|false|Know Your Business passed|-|true|
-|└─contactDetailFilled|boolean|false|Know Your Business passed|-|true|
-|└─cacDocumentUrl|string|false|Document URL for Registered business (CAC Certificate or Status Report)|-||
-|└─kycCompleted|boolean|false|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
-|└─documentsVerified|boolean|false|merchant_compliance_status<br/>All docs approved|-|true|
-|└─termsAccepted|boolean|false|merchant_compliance_status<br/>Bank payout setup done|-|true|
-|└─movedToLiveModeAt|string|false|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
-|└─complianceNotes|array|false|merchant_compliance_status<br/>Admin/internal notes|-|""","""|
-|└─liveModeReady|boolean|false|merchant_compliance_status<br/>true if all verification is complete|-|true|
-|└─pendingApproval|boolean|false|Flag indicating that the merchant's application is pending admin review.|-|true|
-|└─complianceReviewStatus|enum|false|Current state of the merchant's compliance submission in the admin review workflow.<br/>Defaults to NOT_SUBMITTED until the merchant explicitly submits.<br/>[Enum: NOT_SUBMITTED, AWAITING_APPROVAL, UNDER_REVIEW, APPROVED, REJECTED, SUSPENDED]|-|NOT_SUBMITTED|
-|└─complianceRejectionCode|string|false|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
-|└─complianceRejectionMessage|string|false|Human-readable rejection message shown to the merchant.|-||
-|└─complianceNextSteps|string|false|Actionable next steps shown to the merchant after a rejection.|-||
-|└─complianceReviewedBy|string|false|ID of the admin who last reviewed this tenant's compliance.|-||
-|└─complianceReviewedAt|string|false|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
-|└─complianceOverrideEnabled|boolean|false|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
-|└─complianceOverrideReason|string|false|Reason the override was granted (admin-facing).|-||
-|└─complianceOverrideGrantedBy|string|false|ID of the admin who granted the override.|-||
-|└─complianceOverrideGrantedAt|string|false|Timestamp when the override was granted.|-|yyyy-MM-dd HH:mm:ss|
-|└─complianceOverrideExpiresAt|string|false|When the override expires. Null means indefinite.<br/>The live-mode gate must check this against the current time.|-|yyyy-MM-dd HH:mm:ss|
-|└─currency|string|false|Default currency|-||
-|└─timezone|string|false|Default timezone|-||
-|└─language|string|false|Preferred Language|-||
-|└─code|string|false|No comments found.|-||
-|└─currentMode|string|false|No comments found.|-||
-|└─liveKey|string|false|No comments found.|-||
-|└─testKey|string|false|No comments found.|-||
-|└─liveWhitelistedDomains|array|false|No comments found.|-|""","""|
-|└─testWhitelistedDomains|array|false|No comments found.|-|""","""|
-|└─slug|string|false|No comments found.|-||
-|└─primaryColor|string|false|No comments found.|-||
-|└─accentColor|string|false|No comments found.|-||
-|└─fontFamily|string|false|No comments found.|-||
-|└─heroHeadline|string|false|No comments found.|-||
-|└─heroCtaText|string|false|No comments found.|-||
-|└─heroBackgroundImage|string|false|No comments found.|-||
-|└─instagramUrl|string|false|No comments found.|-||
-|└─facebookUrl|string|false|No comments found.|-||
-|└─twitterUrl|string|false|No comments found.|-||
-|└─youtubeUrl|string|false|No comments found.|-||
-|└─linkedinUrl|string|false|No comments found.|-||
-|└─tiktokUrl|string|false|No comments found.|-||
-|└─status|boolean|false|No comments found.|-|true|
-|└─inventoryTrackingEnabled|boolean|false|When true, stock queries for V1 products read from the Inventory entity instead of<br/>{@code Product.quantityInStock}. Enabled via the admin enable-inventory-tracking endpoint.<br/>V2 products always use the Inventory entity regardless of this flag.|-|true|
-|└─googleOauthRedirectUrl|string|false|No comments found.|-||
-|└─googleOauthErrorUrl|string|false|No comments found.|-||
-|└─createdBy|string|false|No comments found.|-||
-|└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─password|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─dateOfBirth|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─nationality|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idType|string|false|e.g. "National ID", "Passport"|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idNumber|string|false|ID number|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idDocumentUrl|string|false|e.g. "National ID", "Passport"|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileUrl|string|false|File storage URL|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─proofOfAddress|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─completedProfileAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|false|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|false|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|NEW: Longer description for UI tooltips.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|false|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|false|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|false|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|false|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─logo|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessType|string|false|e.g. "LLC", "Sole Proprietor"|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessRegistrationNumber|string|false|Government-issued business ID|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessCountry|string|false|Country of business incorporation|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessState|string|false|Country of business incorporation|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessCity|string|false|Business city|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessStorefrontUrl|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessAddress|string|false|Business register address|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessDescription|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─industry|string|false|Business Industry<br/>e.g. fashion, electronics|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTaxIdNumber|string|false|Optional - Business Tax ID|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessExpectedMonthlyIncome|string|false|Optional – for profiling|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─staffSize|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessPrimaryPhoneNumber|string|false|Optional – for contacting business|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSecondaryPhoneNumber|string|false|Optional – for contacting business|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|false|for contacting business and sending notifications|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|false|for contacting business and sending notifications|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|false|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|false|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|false|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|false|Document URL for Registered business (CAC Certificate or Status Report)|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|false|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|false|merchant_compliance_status<br/>All docs approved|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|false|merchant_compliance_status<br/>Bank payout setup done|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|false|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNotes|array|false|merchant_compliance_status<br/>Admin/internal notes|-|""","""|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveModeReady|boolean|false|merchant_compliance_status<br/>true if all verification is complete|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pendingApproval|boolean|false|Flag indicating that the merchant's application is pending admin review.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewStatus|enum|false|Current state of the merchant's compliance submission in the admin review workflow.<br/>Defaults to NOT_SUBMITTED until the merchant explicitly submits.<br/>[Enum: NOT_SUBMITTED, AWAITING_APPROVAL, UNDER_REVIEW, APPROVED, REJECTED, SUSPENDED]|-|NOT_SUBMITTED|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|false|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|false|Human-readable rejection message shown to the merchant.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|false|Actionable next steps shown to the merchant after a rejection.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|false|ID of the admin who last reviewed this tenant's compliance.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|false|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|false|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideReason|string|false|Reason the override was granted (admin-facing).|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideGrantedBy|string|false|ID of the admin who granted the override.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideGrantedAt|string|false|Timestamp when the override was granted.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideExpiresAt|string|false|When the override expires. Null means indefinite.<br/>The live-mode gate must check this against the current time.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currency|string|false|Default currency|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─timezone|string|false|Default timezone|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─language|string|false|Preferred Language|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currentMode|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveKey|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─testKey|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveWhitelistedDomains|array|false|No comments found.|-|""","""|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─testWhitelistedDomains|array|false|No comments found.|-|""","""|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryColor|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─accentColor|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fontFamily|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroHeadline|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroCtaText|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroBackgroundImage|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─instagramUrl|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─facebookUrl|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twitterUrl|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─youtubeUrl|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─linkedinUrl|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tiktokUrl|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─inventoryTrackingEnabled|boolean|false|When true, stock queries for V1 products read from the Inventory entity instead of<br/>{@code Product.quantityInStock}. Enabled via the admin enable-inventory-tracking endpoint.<br/>V2 products always use the Inventory entity regardless of this flag.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthRedirectUrl|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthErrorUrl|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─password|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─dateOfBirth|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─nationality|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idType|string|false|e.g. "National ID", "Passport"|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idNumber|string|false|ID number|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idDocumentUrl|string|false|e.g. "National ID", "Passport"|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileUrl|string|false|File storage URL|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─proofOfAddress|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─completedProfileAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|false|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|false|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|NEW: Longer description for UI tooltips.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|false|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|false|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|false|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|false|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─logo|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessType|string|false|e.g. "LLC", "Sole Proprietor"|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessRegistrationNumber|string|false|Government-issued business ID|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessCountry|string|false|Country of business incorporation|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessState|string|false|Country of business incorporation|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessCity|string|false|Business city|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessStorefrontUrl|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessAddress|string|false|Business register address|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessDescription|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─industry|string|false|Business Industry<br/>e.g. fashion, electronics|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTaxIdNumber|string|false|Optional - Business Tax ID|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessExpectedMonthlyIncome|string|false|Optional – for profiling|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─staffSize|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessPrimaryPhoneNumber|string|false|Optional – for contacting business|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSecondaryPhoneNumber|string|false|Optional – for contacting business|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|false|for contacting business and sending notifications|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|false|for contacting business and sending notifications|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|false|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|false|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|false|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|false|Document URL for Registered business (CAC Certificate or Status Report)|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|false|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|false|merchant_compliance_status<br/>All docs approved|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|false|merchant_compliance_status<br/>Bank payout setup done|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|false|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNotes|array|false|merchant_compliance_status<br/>Admin/internal notes|-|""","""|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveModeReady|boolean|false|merchant_compliance_status<br/>true if all verification is complete|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pendingApproval|boolean|false|Flag indicating that the merchant's application is pending admin review.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewStatus|enum|false|Current state of the merchant's compliance submission in the admin review workflow.<br/>Defaults to NOT_SUBMITTED until the merchant explicitly submits.<br/>[Enum: NOT_SUBMITTED, AWAITING_APPROVAL, UNDER_REVIEW, APPROVED, REJECTED, SUSPENDED]|-|NOT_SUBMITTED|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|false|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|false|Human-readable rejection message shown to the merchant.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|false|Actionable next steps shown to the merchant after a rejection.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|false|ID of the admin who last reviewed this tenant's compliance.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|false|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|false|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideReason|string|false|Reason the override was granted (admin-facing).|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideGrantedBy|string|false|ID of the admin who granted the override.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideGrantedAt|string|false|Timestamp when the override was granted.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideExpiresAt|string|false|When the override expires. Null means indefinite.<br/>The live-mode gate must check this against the current time.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currency|string|false|Default currency|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─timezone|string|false|Default timezone|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─language|string|false|Preferred Language|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currentMode|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveKey|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─testKey|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveWhitelistedDomains|array|false|No comments found.|-|""","""|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─testWhitelistedDomains|array|false|No comments found.|-|""","""|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryColor|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─accentColor|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fontFamily|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroHeadline|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroCtaText|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroBackgroundImage|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─instagramUrl|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─facebookUrl|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twitterUrl|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─youtubeUrl|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─linkedinUrl|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tiktokUrl|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─inventoryTrackingEnabled|boolean|false|When true, stock queries for V1 products read from the Inventory entity instead of<br/>{@code Product.quantityInStock}. Enabled via the admin enable-inventory-tracking endpoint.<br/>V2 products always use the Inventory entity regardless of this flag.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthRedirectUrl|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthErrorUrl|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─password|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─dateOfBirth|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─nationality|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idType|string|false|e.g. "National ID", "Passport"|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idNumber|string|false|ID number|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idDocumentUrl|string|false|e.g. "National ID", "Passport"|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileUrl|string|false|File storage URL|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─proofOfAddress|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|false|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─completedProfileAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|false|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|false|NEW: The store ID the user was last active in — used to resume context on login.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|false|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|false|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|false|NEW: The store ID the user was last active in — used to resume context on login.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|false|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|false|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|false|NEW: The store ID the user was last active in — used to resume context on login.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|false|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|false|No comments found.|-||
-|└─userId|string|false|No comments found.|-||
-|roleResource|object|false|No comments found.|-||
-|└─name|string|false|No comments found.|-||
-|└─slug|string|false|No comments found.|-||
-|role|object|false|No comments found.|-||
-|└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|└─id|string|false|No comments found.|-||
-|└─name|string|false|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
-|└─description|string|false|No comments found.|-||
-|└─status|boolean|false|No comments found.|-|true|
-|└─slug|string|false|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
-|└─permissions|array|false|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|false|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|false|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|NEW: Longer description for UI tooltips.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|false|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
-|└─type|enum|false|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
-|└─tenantId|string|false|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
-|└─permissionIds|array|false|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
-|└─merchantAssignable|boolean|false|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/customer-orders?page=0&limit=100&sortField=CREATED_AT&sortDir=DESC&orderNumber=&search=&status=true&paymentStatus=&dateFrom=&dateTo=&minAmount=0.0&maxAmount=0.0&customerId=&productId=&authCustomer=&createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&googleId=&password=&notificationsEnabled=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&name=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&cacDocumentUrl=&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&pendingApproval=true&complianceReviewStatus=NOT_SUBMITTED&complianceRejectionCode=&complianceRejectionMessage=&complianceNextSteps=&complianceReviewedBy=&complianceReviewedAt=yyyy-MM-dd HH:mm:ss&complianceOverrideEnabled=true&complianceOverrideReason=&complianceOverrideGrantedBy=&complianceOverrideGrantedAt=yyyy-MM-dd HH:mm:ss&complianceOverrideExpiresAt=yyyy-MM-dd HH:mm:ss&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&slug=&primaryColor=&accentColor=&fontFamily=&heroHeadline=&heroCtaText=&heroBackgroundImage=&instagramUrl=&facebookUrl=&twitterUrl=&youtubeUrl=&linkedinUrl=&tiktokUrl=&inventoryTrackingEnabled=true&googleOauthRedirectUrl=&googleOauthErrorUrl=&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&proofOfAddress=&completedProfileAt=yyyy-MM-dd HH:mm:ss&description=&displayName=&category=&merchantVisible=true&type=SYSTEM&permissionIds=""","""&merchantAssignable=true&roleId=&roleName=&tenantIds=""","""&lastActiveTenantId=&twoFactorEnabled=true&userId='
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/customer-orders?page=0&limit=100&sortField=CREATED_AT&sortDir=DESC&orderNumber=&search=&status=&paymentStatus=&dateFrom=&dateTo=&minAmount=0.0&maxAmount=0.0&customerId=&productId=&authCustomer='
 ```
 **Response-fields:**
 
@@ -2072,7 +1637,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 }
 ```
 
-### Fetch Customer Orders.<br>This API retrieves a list of orders for a specific customer.
+### Fetch Customer Orders.
 **URL:** https://api.shopsynch.com/v1/customer-orders/{customerId}
 
 **Type:** GET
@@ -2080,8 +1645,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Fetch Customer Orders.
-This API retrieves a list of orders for a specific customer.
+**Description:** This API retrieves a list of orders for a specific customer.
 
 **Request-headers:**
 
@@ -2188,6 +1752,7 @@ This API retrieves a list of items in a specific order.
 |lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |googleAccount|boolean|false|No comments found.|-|true|
 |googleId|string|false|No comments found.|-||
+|anonymous|boolean|false|No comments found.|-|true|
 |password|string|false|No comments found.|-||
 |status|string|false|No comments found.|-||
 |notificationsEnabled|boolean|false|No comments found.|-|true|
@@ -2231,10 +1796,11 @@ This API retrieves a list of items in a specific order.
 |└─businessSupportEmailAddress|string|false|for contacting business and sending notifications|-||
 |└─businessGeneralEmailAddress|string|false|for contacting business and sending notifications|-||
 |└─kybCompleted|boolean|false|Know Your Business passed|-|true|
-|└─profileDetailFilled|boolean|false|Know Your Business passed|-|true|
+|└─kybDetailFilled|boolean|false|Know Your Business passed|-|true|
 |└─contactDetailFilled|boolean|false|Know Your Business passed|-|true|
 |└─cacDocumentUrl|string|false|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |└─kycCompleted|boolean|false|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|└─kycDetailFilled|boolean|false|No comments found.|-|true|
 |└─documentsVerified|boolean|false|merchant_compliance_status<br/>All docs approved|-|true|
 |└─termsAccepted|boolean|false|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |└─movedToLiveModeAt|string|false|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -2245,6 +1811,10 @@ This API retrieves a list of items in a specific order.
 |└─complianceRejectionCode|string|false|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |└─complianceRejectionMessage|string|false|Human-readable rejection message shown to the merchant.|-||
 |└─complianceNextSteps|string|false|Actionable next steps shown to the merchant after a rejection.|-||
+|└─complianceFieldErrors|array|false|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|false|No comments found.|-||
 |└─complianceReviewedBy|string|false|ID of the admin who last reviewed this tenant's compliance.|-||
 |└─complianceReviewedAt|string|false|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |└─complianceOverrideEnabled|boolean|false|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -2351,10 +1921,11 @@ This API retrieves a list of items in a specific order.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|false|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|false|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|false|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|false|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|false|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|false|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|false|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|false|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|false|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|false|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|false|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -2365,6 +1936,10 @@ This API retrieves a list of items in a specific order.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|false|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|false|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|false|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|false|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|false|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|false|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|false|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -2471,10 +2046,11 @@ This API retrieves a list of items in a specific order.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|false|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|false|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|false|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|false|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|false|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|false|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|false|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|false|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|false|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|false|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|false|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -2485,6 +2061,10 @@ This API retrieves a list of items in a specific order.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|false|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|false|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|false|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|false|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|false|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|false|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|false|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -2543,9 +2123,96 @@ This API retrieves a list of items in a specific order.
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|false|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|false|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|false|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─logo|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessType|string|false|e.g. "LLC", "Sole Proprietor"|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessRegistrationNumber|string|false|Government-issued business ID|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessCountry|string|false|Country of business incorporation|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessState|string|false|Country of business incorporation|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessCity|string|false|Business city|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessStorefrontUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessAddress|string|false|Business register address|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessDescription|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─industry|string|false|Business Industry<br/>e.g. fashion, electronics|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTaxIdNumber|string|false|Optional - Business Tax ID|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessExpectedMonthlyIncome|string|false|Optional – for profiling|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─staffSize|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessPrimaryPhoneNumber|string|false|Optional – for contacting business|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSecondaryPhoneNumber|string|false|Optional – for contacting business|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|false|for contacting business and sending notifications|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|false|for contacting business and sending notifications|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|false|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|false|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|false|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|false|Document URL for Registered business (CAC Certificate or Status Report)|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|false|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|false|merchant_compliance_status<br/>All docs approved|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|false|merchant_compliance_status<br/>Bank payout setup done|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|false|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNotes|array|false|merchant_compliance_status<br/>Admin/internal notes|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveModeReady|boolean|false|merchant_compliance_status<br/>true if all verification is complete|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pendingApproval|boolean|false|Flag indicating that the merchant's application is pending admin review.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewStatus|enum|false|Current state of the merchant's compliance submission in the admin review workflow.<br/>Defaults to NOT_SUBMITTED until the merchant explicitly submits.<br/>[Enum: NOT_SUBMITTED, AWAITING_APPROVAL, UNDER_REVIEW, APPROVED, REJECTED, SUSPENDED]|-|NOT_SUBMITTED|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|false|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|false|Human-readable rejection message shown to the merchant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|false|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|false|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|false|ID of the admin who last reviewed this tenant's compliance.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|false|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|false|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideReason|string|false|Reason the override was granted (admin-facing).|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideGrantedBy|string|false|ID of the admin who granted the override.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideGrantedAt|string|false|Timestamp when the override was granted.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideExpiresAt|string|false|When the override expires. Null means indefinite.<br/>The live-mode gate must check this against the current time.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currency|string|false|Default currency|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─timezone|string|false|Default timezone|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─language|string|false|Preferred Language|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currentMode|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveKey|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─testKey|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveWhitelistedDomains|array|false|No comments found.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─testWhitelistedDomains|array|false|No comments found.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryColor|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─accentColor|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fontFamily|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroHeadline|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroCtaText|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroBackgroundImage|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─instagramUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─facebookUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twitterUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─youtubeUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─linkedinUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tiktokUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─inventoryTrackingEnabled|boolean|false|When true, stock queries for V1 products read from the Inventory entity instead of<br/>{@code Product.quantityInStock}. Enabled via the admin enable-inventory-tracking endpoint.<br/>V2 products always use the Inventory entity regardless of this flag.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthRedirectUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthErrorUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|false|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|false|NEW: The store ID the user was last active in — used to resume context on login.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|false|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
@@ -2596,7 +2263,7 @@ This API retrieves a list of items in a specific order.
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/customer-orders/{orderId}/items?createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&googleId=&password=&status=true&notificationsEnabled=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&name=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&cacDocumentUrl=&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&pendingApproval=true&complianceReviewStatus=NOT_SUBMITTED&complianceRejectionCode=&complianceRejectionMessage=&complianceNextSteps=&complianceReviewedBy=&complianceReviewedAt=yyyy-MM-dd HH:mm:ss&complianceOverrideEnabled=true&complianceOverrideReason=&complianceOverrideGrantedBy=&complianceOverrideGrantedAt=yyyy-MM-dd HH:mm:ss&complianceOverrideExpiresAt=yyyy-MM-dd HH:mm:ss&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&slug=&primaryColor=&accentColor=&fontFamily=&heroHeadline=&heroCtaText=&heroBackgroundImage=&instagramUrl=&facebookUrl=&twitterUrl=&youtubeUrl=&linkedinUrl=&tiktokUrl=&inventoryTrackingEnabled=true&googleOauthRedirectUrl=&googleOauthErrorUrl=&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&proofOfAddress=&completedProfileAt=yyyy-MM-dd HH:mm:ss&description=&displayName=&category=&merchantVisible=true&type=SYSTEM&permissionIds=""","""&merchantAssignable=true&roleId=&roleName=&tenantIds=""","""&lastActiveTenantId=&twoFactorEnabled=true&userId='
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/customer-orders/{orderId}/items?createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&googleId=&anonymous=true&password=&status=true&notificationsEnabled=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&name=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&kybDetailFilled=true&contactDetailFilled=true&cacDocumentUrl=&kycCompleted=true&kycDetailFilled=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&pendingApproval=true&complianceReviewStatus=NOT_SUBMITTED&complianceRejectionCode=&complianceRejectionMessage=&complianceNextSteps=&field=&label=&note=&complianceReviewedBy=&complianceReviewedAt=yyyy-MM-dd HH:mm:ss&complianceOverrideEnabled=true&complianceOverrideReason=&complianceOverrideGrantedBy=&complianceOverrideGrantedAt=yyyy-MM-dd HH:mm:ss&complianceOverrideExpiresAt=yyyy-MM-dd HH:mm:ss&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&slug=&primaryColor=&accentColor=&fontFamily=&heroHeadline=&heroCtaText=&heroBackgroundImage=&instagramUrl=&facebookUrl=&twitterUrl=&youtubeUrl=&linkedinUrl=&tiktokUrl=&inventoryTrackingEnabled=true&googleOauthRedirectUrl=&googleOauthErrorUrl=&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&proofOfAddress=&completedProfileAt=yyyy-MM-dd HH:mm:ss&description=&displayName=&category=&merchantVisible=true&type=SYSTEM&permissionIds=""","""&merchantAssignable=true&roleId=&roleName=&userId=&tenantIds=""","""&lastActiveTenantId=&twoFactorEnabled=true'
 ```
 **Response-fields:**
 
@@ -2646,11 +2313,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:06"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:06"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-23 10:03:20"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:20"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -2710,11 +2379,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
         "id": "",
         "email": "",
         "fullName": "",
+        "firstName": "",
+        "lastName": "",
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-17 22:51:06",
-        "updatedAt": "2026-04-17 22:51:06"
+        "createdAt": "2026-04-23 10:03:20",
+        "updatedAt": "2026-04-23 10:03:20"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -4369,11 +4040,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:09"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:09"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-23 10:03:26"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:26"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -4394,11 +4067,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
         "id": "",
         "email": "",
         "fullName": "",
+        "firstName": "",
+        "lastName": "",
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-17 22:51:09",
-        "updatedAt": "2026-04-17 22:51:09"
+        "createdAt": "2026-04-23 10:03:26",
+        "updatedAt": "2026-04-23 10:03:26"
       },
       "product": {
         "id": "",
@@ -4459,11 +4134,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:09"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:09"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-23 10:03:26"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:26"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -4484,11 +4161,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/re
         "id": "",
         "email": "",
         "fullName": "",
+        "firstName": "",
+        "lastName": "",
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-17 22:51:09",
-        "updatedAt": "2026-04-17 22:51:09"
+        "createdAt": "2026-04-23 10:03:26",
+        "updatedAt": "2026-04-23 10:03:26"
       },
       "product": {
         "id": "",
@@ -4553,11 +4232,13 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:09"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:09"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-23 10:03:26"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:26"|
 |└─product|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
@@ -4577,11 +4258,13 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
       "id": "",
       "email": "",
       "fullName": "",
+      "firstName": "",
+      "lastName": "",
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-17 22:51:09",
-      "updatedAt": "2026-04-17 22:51:09"
+      "createdAt": "2026-04-23 10:03:26",
+      "updatedAt": "2026-04-23 10:03:26"
     },
     "product": {
       "id": "",
@@ -4926,6 +4609,47 @@ curl -X POST -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/d
 }
 ```
 
+## AnalyticsController
+### ingest
+**URL:** https://api.shopsynch.com/v1/analytics/events
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** 
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+|X-Merchant-Slug|string|false|No comments found.|-||
+|X-Session-Id|string|false|No comments found.|-||
+|Authorization|string|false|No comments found.|-||
+
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|events|array|false|No comments found.|-||
+|└─eventName|string|false|No comments found.|-||
+|└─properties|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|false|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|false|any object.|-||
+|└─timestamp|string|false|No comments found.|-||
+|└─pageUrl|string|false|No comments found.|-||
+|└─userAgent|string|false|No comments found.|-||
+|└─source|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -H "X-Merchant-Slug" -H "X-Session-Id" -H "Authorization" -i 'https://api.shopsynch.com/v1/analytics/events' --data '{"events":[{"eventName":"","properties":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"timestamp":"","pageUrl":"","userAgent":"","source":""}]}'
+```
+
+
 ## Password-less Authentication.
 ### Initiate Password-less Authentication.
 **URL:** https://api.shopsynch.com/v1/auth/passwordless/initiate
@@ -5260,14 +4984,17 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:07"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:07"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-23 10:03:21"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:21"|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
 |└─expiresIn|int64|No comments found.|-|0|
+|└─refreshTokenExpiresIn|int64|No comments found.|-|0|
 
 **Response-example:**
 ```json
@@ -5279,15 +5006,18 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
       "id": "",
       "email": "",
       "fullName": "",
+      "firstName": "",
+      "lastName": "",
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-17 22:51:07",
-      "updatedAt": "2026-04-17 22:51:07"
+      "createdAt": "2026-04-23 10:03:21",
+      "updatedAt": "2026-04-23 10:03:21"
     },
     "token": "",
     "refreshToken": "",
-    "expiresIn": 0
+    "expiresIn": 0,
+    "refreshTokenExpiresIn": 0
   }
 }
 ```
@@ -5336,14 +5066,17 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:07"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:07"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-23 10:03:22"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:22"|
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
 |└─expiresIn|int64|No comments found.|-|0|
+|└─refreshTokenExpiresIn|int64|No comments found.|-|0|
 
 **Response-example:**
 ```json
@@ -5355,15 +5088,18 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-Session-Id" -i 'https:
       "id": "",
       "email": "",
       "fullName": "",
+      "firstName": "",
+      "lastName": "",
       "phoneNumber": "",
       "address": "",
       "status": "",
-      "createdAt": "2026-04-17 22:51:07",
-      "updatedAt": "2026-04-17 22:51:07"
+      "createdAt": "2026-04-23 10:03:21",
+      "updatedAt": "2026-04-23 10:03:21"
     },
     "token": "",
     "refreshToken": "",
-    "expiresIn": 0
+    "expiresIn": 0,
+    "refreshTokenExpiresIn": 0
   }
 }
 ```
@@ -5416,11 +5152,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:11"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:11"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-23 10:03:28"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:28"|
 |└─nextCursor|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
@@ -5434,11 +5172,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
         "id": "",
         "email": "",
         "fullName": "",
+        "firstName": "",
+        "lastName": "",
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-17 22:51:11",
-        "updatedAt": "2026-04-17 22:51:11"
+        "createdAt": "2026-04-23 10:03:28",
+        "updatedAt": "2026-04-23 10:03:28"
       }
     ],
     "nextCursor": "yyyy-MM-dd HH:mm:ss"
@@ -5484,11 +5224,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |└─id|string|No comments found.|-||
 |└─email|string|No comments found.|-||
 |└─fullName|string|No comments found.|-||
+|└─firstName|string|No comments found.|-||
+|└─lastName|string|No comments found.|-||
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:11"|
-|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:11"|
+|└─createdAt|string|No comments found.|-|"2026-04-23 10:03:28"|
+|└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:28"|
 
 **Response-example:**
 ```json
@@ -5499,11 +5241,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
     "id": "",
     "email": "",
     "fullName": "",
+    "firstName": "",
+    "lastName": "",
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-17 22:51:11",
-    "updatedAt": "2026-04-17 22:51:11"
+    "createdAt": "2026-04-23 10:03:28",
+    "updatedAt": "2026-04-23 10:03:28"
   }
 }
 ```
@@ -5547,11 +5291,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
 |└─id|string|No comments found.|-||
 |└─email|string|No comments found.|-||
 |└─fullName|string|No comments found.|-||
+|└─firstName|string|No comments found.|-||
+|└─lastName|string|No comments found.|-||
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:11"|
-|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:11"|
+|└─createdAt|string|No comments found.|-|"2026-04-23 10:03:28"|
+|└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:28"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -5562,11 +5308,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/cu
     "id": "",
     "email": "",
     "fullName": "",
+    "firstName": "",
+    "lastName": "",
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-17 22:51:11",
-    "updatedAt": "2026-04-17 22:51:11"
+    "createdAt": "2026-04-23 10:03:28",
+    "updatedAt": "2026-04-23 10:03:28"
   },
   "message": "",
   "status": true
@@ -5609,11 +5357,13 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |└─id|string|No comments found.|-||
 |└─email|string|No comments found.|-||
 |└─fullName|string|No comments found.|-||
+|└─firstName|string|No comments found.|-||
+|└─lastName|string|No comments found.|-||
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:11"|
-|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:11"|
+|└─createdAt|string|No comments found.|-|"2026-04-23 10:03:28"|
+|└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:28"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -5624,11 +5374,13 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
     "id": "",
     "email": "",
     "fullName": "",
+    "firstName": "",
+    "lastName": "",
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-17 22:51:11",
-    "updatedAt": "2026-04-17 22:51:11"
+    "createdAt": "2026-04-23 10:03:28",
+    "updatedAt": "2026-04-23 10:03:28"
   },
   "message": "",
   "status": true
@@ -5671,11 +5423,13 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |└─id|string|No comments found.|-||
 |└─email|string|No comments found.|-||
 |└─fullName|string|No comments found.|-||
+|└─firstName|string|No comments found.|-||
+|└─lastName|string|No comments found.|-||
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:11"|
-|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:11"|
+|└─createdAt|string|No comments found.|-|"2026-04-23 10:03:28"|
+|└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:28"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -5686,11 +5440,13 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
     "id": "",
     "email": "",
     "fullName": "",
+    "firstName": "",
+    "lastName": "",
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-17 22:51:11",
-    "updatedAt": "2026-04-17 22:51:11"
+    "createdAt": "2026-04-23 10:03:28",
+    "updatedAt": "2026-04-23 10:03:28"
   },
   "message": "",
   "status": true
@@ -5745,11 +5501,13 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─id|string|No comments found.|-||
 |└─email|string|No comments found.|-||
 |└─fullName|string|No comments found.|-||
+|└─firstName|string|No comments found.|-||
+|└─lastName|string|No comments found.|-||
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:11"|
-|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:11"|
+|└─createdAt|string|No comments found.|-|"2026-04-23 10:03:28"|
+|└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:28"|
 
 **Response-example:**
 ```json
@@ -5760,11 +5518,13 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "id": "",
     "email": "",
     "fullName": "",
+    "firstName": "",
+    "lastName": "",
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-17 22:51:11",
-    "updatedAt": "2026-04-17 22:51:11"
+    "createdAt": "2026-04-23 10:03:28",
+    "updatedAt": "2026-04-23 10:03:28"
   }
 }
 ```
@@ -5792,6 +5552,8 @@ contact information, preferences, and other account settings.
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
 |fullName|string|true|No comments found.<br/>Validation[Length(max=2147483647, min=2, message=full name can not be less than 2 characters)]|-||
+|firstName|string|true|No comments found.<br/>Validation[Length(max=2147483647, min=2, message=first name can not be less than 2 characters)]|-||
+|lastName|string|true|No comments found.<br/>Validation[Length(max=2147483647, min=2, message=last name can not be less than 2 characters)]|-||
 |phoneNumber|string|true|No comments found.<br/>Validation[Pattern(regexp=^\+?[1-9]\d{9,14}$, message=Phone number must include country code (e.g. 2348012345678))]|-||
 |address|string|true|No comments found.<br/>Validation[Length(max=2147483647, min=5, message=address can not be less than 5 characters)]|-||
 |idNumber|string|false|No comments found.|-||
@@ -5816,11 +5578,13 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─id|string|No comments found.|-||
 |└─email|string|No comments found.|-||
 |└─fullName|string|No comments found.|-||
+|└─firstName|string|No comments found.|-||
+|└─lastName|string|No comments found.|-||
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:11"|
-|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:11"|
+|└─createdAt|string|No comments found.|-|"2026-04-23 10:03:28"|
+|└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:28"|
 
 **Response-example:**
 ```json
@@ -5831,11 +5595,13 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     "id": "",
     "email": "",
     "fullName": "",
+    "firstName": "",
+    "lastName": "",
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-17 22:51:11",
-    "updatedAt": "2026-04-17 22:51:11"
+    "createdAt": "2026-04-23 10:03:28",
+    "updatedAt": "2026-04-23 10:03:28"
   }
 }
 ```
@@ -5848,10 +5614,13 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Retrieves a paginated list of customers derived from the orders collection, covering both registered
-customers (orders where customerId is set) and guest/anonymous customers (orders with contactInformation
-but no registered account). Each record includes order statistics visible at a glance: total orders,
-delivered orders, pending orders, total amount spent, first and last order dates.
+**Description:** Retrieves a paginated list of customers by joining the customers collection with their orders.
+Customer profile (name, email, phone) comes from the customers collection. Order statistics
+(totalOrders, deliveredOrders, pendingOrders, totalSpent, lastOrderDate, firstOrderDate) are
+aggregated from the orders collection.
+
+<p>When {@code orderDateFrom} or {@code orderDateTo} is provided, orders outside that range are
+excluded <em>before</em> stats are computed — so all counts and totals reflect the filtered window.
 
 <p>Results are cached per tenant and filter combination for 15 minutes and are invalidated
 automatically when orders are mutated for the tenant.
@@ -5867,17 +5636,19 @@ automatically when orders are mutated for the tenant.
 
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
-|cursor|string|false|            Optional cursor token (ISO-8601 lastOrderDate) from the previous response.<br/>                          If not provided, starts from the most recent records.|-||
+|cursor|string|false|            Optional cursor token (ISO-8601) from the previous response.<br/>                          Anchored on created_at when sorting by CREATED_AT; on lastOrderDate or<br/>                          firstOrderDate for those sorts; falls back to created_at for all others.<br/>                          If not provided, starts from the beginning of the result set.|-||
 |limit|int32|true|             Maximum number of records per page. Capped at 20. Default is 10.|-|10|
-|sortFieldParam|string|true|    Field to sort by. Allowed: LAST_ORDER_DATE, FIRST_ORDER_DATE,<br/>                          TOTAL_ORDERS, NAME, EMAIL. Default: LAST_ORDER_DATE.|-|LAST_ORDER_DATE|
+|sortFieldParam|string|true|    Field to sort by. Allowed: CREATED_AT, LAST_ORDER_DATE, FIRST_ORDER_DATE,<br/>                          TOTAL_ORDERS, NAME, EMAIL. Default: CREATED_AT.|-|CREATED_AT|
 |sortDirectionParam|string|true|Sort direction: ASC or DESC. Default: DESC.|-|DESC|
 |email|string|false|No comments found.|-||
 |name|string|false|No comments found.|-||
 |phoneNumber|string|false|No comments found.|-||
+|orderDateFrom|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|orderDateTo|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Request-example:**
 ```bash
-curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/customers/order-based?cursor=&limit=10&sortFieldParam=LAST_ORDER_DATE&sortDirectionParam=DESC&email=&name=&phoneNumber='
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/customers/order-based?cursor=&limit=10&sortFieldParam=CREATED_AT&sortDirectionParam=DESC&email=&name=&phoneNumber=&orderDateFrom=yyyy-MM-dd HH:mm:ss&orderDateTo=yyyy-MM-dd HH:mm:ss'
 ```
 **Response-fields:**
 
@@ -6009,10 +5780,11 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -6023,6 +5795,10 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -6129,10 +5905,11 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -6143,6 +5920,10 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -6209,6 +5990,16 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|NEW: Longer description for UI tooltips.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
@@ -6239,10 +6030,11 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -6253,6 +6045,10 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -6288,6 +6084,38 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthErrorUrl|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─password|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─dateOfBirth|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─nationality|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idType|string|e.g. "National ID", "Passport"|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idNumber|string|ID number|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idDocumentUrl|string|e.g. "National ID", "Passport"|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileUrl|string|File storage URL|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─proofOfAddress|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─completedProfileAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
@@ -6348,10 +6176,11 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
       "businessSupportEmailAddress": "",
       "businessGeneralEmailAddress": "",
       "kybCompleted": true,
-      "profileDetailFilled": true,
+      "kybDetailFilled": true,
       "contactDetailFilled": true,
       "cacDocumentUrl": "",
       "kycCompleted": true,
+      "kycDetailFilled": true,
       "documentsVerified": true,
       "termsAccepted": true,
       "movedToLiveModeAt": "yyyy-MM-dd HH:mm:ss",
@@ -6364,6 +6193,13 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
       "complianceRejectionCode": "",
       "complianceRejectionMessage": "",
       "complianceNextSteps": "",
+      "complianceFieldErrors": [
+        {
+          "field": "",
+          "label": "",
+          "note": ""
+        }
+      ],
       "complianceReviewedBy": "",
       "complianceReviewedAt": "yyyy-MM-dd HH:mm:ss",
       "complianceOverrideEnabled": true,
@@ -6480,10 +6316,11 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
           "businessSupportEmailAddress": "",
           "businessGeneralEmailAddress": "",
           "kybCompleted": true,
-          "profileDetailFilled": true,
+          "kybDetailFilled": true,
           "contactDetailFilled": true,
           "cacDocumentUrl": "",
           "kycCompleted": true,
+          "kycDetailFilled": true,
           "documentsVerified": true,
           "termsAccepted": true,
           "movedToLiveModeAt": "yyyy-MM-dd HH:mm:ss",
@@ -6496,6 +6333,13 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
           "complianceRejectionCode": "",
           "complianceRejectionMessage": "",
           "complianceNextSteps": "",
+          "complianceFieldErrors": [
+            {
+              "field": "",
+              "label": "",
+              "note": ""
+            }
+          ],
           "complianceReviewedBy": "",
           "complianceReviewedAt": "yyyy-MM-dd HH:mm:ss",
           "complianceOverrideEnabled": true,
@@ -6567,7 +6411,16 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
               "slug": "",
               "permissions": [
                 {
-                  "$ref": "..."
+                  "createdAt": "yyyy-MM-dd HH:mm:ss",
+                  "updatedAt": "yyyy-MM-dd HH:mm:ss",
+                  "id": "",
+                  "name": "",
+                  "displayName": "",
+                  "category": "",
+                  "description": "",
+                  "status": true,
+                  "merchantVisible": true,
+                  "slug": ""
                 }
               ],
               "type": "SYSTEM",
@@ -6603,10 +6456,11 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
               "businessSupportEmailAddress": "",
               "businessGeneralEmailAddress": "",
               "kybCompleted": true,
-              "profileDetailFilled": true,
+              "kybDetailFilled": true,
               "contactDetailFilled": true,
               "cacDocumentUrl": "",
               "kycCompleted": true,
+              "kycDetailFilled": true,
               "documentsVerified": true,
               "termsAccepted": true,
               "movedToLiveModeAt": "yyyy-MM-dd HH:mm:ss",
@@ -6619,6 +6473,13 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
               "complianceRejectionCode": "",
               "complianceRejectionMessage": "",
               "complianceNextSteps": "",
+              "complianceFieldErrors": [
+                {
+                  "field": "",
+                  "label": "",
+                  "note": ""
+                }
+              ],
               "complianceReviewedBy": "",
               "complianceReviewedAt": "yyyy-MM-dd HH:mm:ss",
               "complianceOverrideEnabled": true,
@@ -6658,7 +6519,44 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
               "googleOauthErrorUrl": "",
               "createdBy": "",
               "user": {
-                "$ref": "..."
+                "createdAt": "yyyy-MM-dd HH:mm:ss",
+                "updatedAt": "yyyy-MM-dd HH:mm:ss",
+                "id": "",
+                "email": "",
+                "tenantId": "",
+                "password": "",
+                "fullName": "",
+                "dateOfBirth": "",
+                "phoneNumber": "",
+                "nationality": "",
+                "idType": "",
+                "idNumber": "",
+                "idDocumentUrl": "",
+                "profileUrl": "",
+                "status": "",
+                "address": "",
+                "proofOfAddress": "",
+                "version": 0,
+                "completedProfileAt": "yyyy-MM-dd HH:mm:ss",
+                "emailVerifiedAt": "yyyy-MM-dd HH:mm:ss",
+                "phoneVerifiedAt": "yyyy-MM-dd HH:mm:ss",
+                "lastLoggedInAt": "yyyy-MM-dd HH:mm:ss",
+                "role": {
+                  "$ref": "..."
+                },
+                "roleId": "",
+                "roleName": "",
+                "tenant": {
+                  "$ref": "..."
+                },
+                "tenantIds": [
+                  ""
+                ],
+                "lastActiveTenantId": "",
+                "twoFactorEnabled": true,
+                "notificationsEnabled": true,
+                "googleAccount": true,
+                "googleId": ""
               },
               "userId": ""
             },
@@ -6754,10 +6652,11 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -6768,6 +6667,10 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -6874,10 +6777,11 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -6888,6 +6792,10 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -6954,6 +6862,16 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|NEW: Longer description for UI tooltips.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
@@ -6984,10 +6902,11 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -6998,6 +6917,10 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -7033,6 +6956,38 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthErrorUrl|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─password|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─dateOfBirth|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─nationality|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idType|string|e.g. "National ID", "Passport"|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idNumber|string|ID number|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idDocumentUrl|string|e.g. "National ID", "Passport"|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileUrl|string|File storage URL|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─proofOfAddress|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─completedProfileAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
@@ -7094,10 +7049,11 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
         "businessSupportEmailAddress": "",
         "businessGeneralEmailAddress": "",
         "kybCompleted": true,
-        "profileDetailFilled": true,
+        "kybDetailFilled": true,
         "contactDetailFilled": true,
         "cacDocumentUrl": "",
         "kycCompleted": true,
+        "kycDetailFilled": true,
         "documentsVerified": true,
         "termsAccepted": true,
         "movedToLiveModeAt": "yyyy-MM-dd HH:mm:ss",
@@ -7110,6 +7066,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
         "complianceRejectionCode": "",
         "complianceRejectionMessage": "",
         "complianceNextSteps": "",
+        "complianceFieldErrors": [
+          {
+            "field": "",
+            "label": "",
+            "note": ""
+          }
+        ],
         "complianceReviewedBy": "",
         "complianceReviewedAt": "yyyy-MM-dd HH:mm:ss",
         "complianceOverrideEnabled": true,
@@ -7226,10 +7189,11 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
             "businessSupportEmailAddress": "",
             "businessGeneralEmailAddress": "",
             "kybCompleted": true,
-            "profileDetailFilled": true,
+            "kybDetailFilled": true,
             "contactDetailFilled": true,
             "cacDocumentUrl": "",
             "kycCompleted": true,
+            "kycDetailFilled": true,
             "documentsVerified": true,
             "termsAccepted": true,
             "movedToLiveModeAt": "yyyy-MM-dd HH:mm:ss",
@@ -7242,6 +7206,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
             "complianceRejectionCode": "",
             "complianceRejectionMessage": "",
             "complianceNextSteps": "",
+            "complianceFieldErrors": [
+              {
+                "field": "",
+                "label": "",
+                "note": ""
+              }
+            ],
             "complianceReviewedBy": "",
             "complianceReviewedAt": "yyyy-MM-dd HH:mm:ss",
             "complianceOverrideEnabled": true,
@@ -7349,10 +7320,11 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
                 "businessSupportEmailAddress": "",
                 "businessGeneralEmailAddress": "",
                 "kybCompleted": true,
-                "profileDetailFilled": true,
+                "kybDetailFilled": true,
                 "contactDetailFilled": true,
                 "cacDocumentUrl": "",
                 "kycCompleted": true,
+                "kycDetailFilled": true,
                 "documentsVerified": true,
                 "termsAccepted": true,
                 "movedToLiveModeAt": "yyyy-MM-dd HH:mm:ss",
@@ -7365,6 +7337,11 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/me
                 "complianceRejectionCode": "",
                 "complianceRejectionMessage": "",
                 "complianceNextSteps": "",
+                "complianceFieldErrors": [
+                  {
+                    "$ref": "..."
+                  }
+                ],
                 "complianceReviewedBy": "",
                 "complianceReviewedAt": "yyyy-MM-dd HH:mm:ss",
                 "complianceOverrideEnabled": true,
@@ -7507,10 +7484,11 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -7521,6 +7499,10 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -7627,10 +7609,11 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -7641,6 +7624,10 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -7707,6 +7694,16 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|NEW: Longer description for UI tooltips.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
@@ -7737,10 +7734,11 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -7751,6 +7749,10 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -7786,6 +7788,38 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthErrorUrl|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─password|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─dateOfBirth|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─nationality|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idType|string|e.g. "National ID", "Passport"|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idNumber|string|ID number|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idDocumentUrl|string|e.g. "National ID", "Passport"|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileUrl|string|File storage URL|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─proofOfAddress|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─completedProfileAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
@@ -7846,10 +7880,11 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
       "businessSupportEmailAddress": "",
       "businessGeneralEmailAddress": "",
       "kybCompleted": true,
-      "profileDetailFilled": true,
+      "kybDetailFilled": true,
       "contactDetailFilled": true,
       "cacDocumentUrl": "",
       "kycCompleted": true,
+      "kycDetailFilled": true,
       "documentsVerified": true,
       "termsAccepted": true,
       "movedToLiveModeAt": "yyyy-MM-dd HH:mm:ss",
@@ -7862,6 +7897,13 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
       "complianceRejectionCode": "",
       "complianceRejectionMessage": "",
       "complianceNextSteps": "",
+      "complianceFieldErrors": [
+        {
+          "field": "",
+          "label": "",
+          "note": ""
+        }
+      ],
       "complianceReviewedBy": "",
       "complianceReviewedAt": "yyyy-MM-dd HH:mm:ss",
       "complianceOverrideEnabled": true,
@@ -7978,10 +8020,11 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
           "businessSupportEmailAddress": "",
           "businessGeneralEmailAddress": "",
           "kybCompleted": true,
-          "profileDetailFilled": true,
+          "kybDetailFilled": true,
           "contactDetailFilled": true,
           "cacDocumentUrl": "",
           "kycCompleted": true,
+          "kycDetailFilled": true,
           "documentsVerified": true,
           "termsAccepted": true,
           "movedToLiveModeAt": "yyyy-MM-dd HH:mm:ss",
@@ -7994,6 +8037,13 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
           "complianceRejectionCode": "",
           "complianceRejectionMessage": "",
           "complianceNextSteps": "",
+          "complianceFieldErrors": [
+            {
+              "field": "",
+              "label": "",
+              "note": ""
+            }
+          ],
           "complianceReviewedBy": "",
           "complianceReviewedAt": "yyyy-MM-dd HH:mm:ss",
           "complianceOverrideEnabled": true,
@@ -8065,7 +8115,16 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
               "slug": "",
               "permissions": [
                 {
-                  "$ref": "..."
+                  "createdAt": "yyyy-MM-dd HH:mm:ss",
+                  "updatedAt": "yyyy-MM-dd HH:mm:ss",
+                  "id": "",
+                  "name": "",
+                  "displayName": "",
+                  "category": "",
+                  "description": "",
+                  "status": true,
+                  "merchantVisible": true,
+                  "slug": ""
                 }
               ],
               "type": "SYSTEM",
@@ -8101,10 +8160,11 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
               "businessSupportEmailAddress": "",
               "businessGeneralEmailAddress": "",
               "kybCompleted": true,
-              "profileDetailFilled": true,
+              "kybDetailFilled": true,
               "contactDetailFilled": true,
               "cacDocumentUrl": "",
               "kycCompleted": true,
+              "kycDetailFilled": true,
               "documentsVerified": true,
               "termsAccepted": true,
               "movedToLiveModeAt": "yyyy-MM-dd HH:mm:ss",
@@ -8117,6 +8177,13 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
               "complianceRejectionCode": "",
               "complianceRejectionMessage": "",
               "complianceNextSteps": "",
+              "complianceFieldErrors": [
+                {
+                  "field": "",
+                  "label": "",
+                  "note": ""
+                }
+              ],
               "complianceReviewedBy": "",
               "complianceReviewedAt": "yyyy-MM-dd HH:mm:ss",
               "complianceOverrideEnabled": true,
@@ -8156,7 +8223,44 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
               "googleOauthErrorUrl": "",
               "createdBy": "",
               "user": {
-                "$ref": "..."
+                "createdAt": "yyyy-MM-dd HH:mm:ss",
+                "updatedAt": "yyyy-MM-dd HH:mm:ss",
+                "id": "",
+                "email": "",
+                "tenantId": "",
+                "password": "",
+                "fullName": "",
+                "dateOfBirth": "",
+                "phoneNumber": "",
+                "nationality": "",
+                "idType": "",
+                "idNumber": "",
+                "idDocumentUrl": "",
+                "profileUrl": "",
+                "status": "",
+                "address": "",
+                "proofOfAddress": "",
+                "version": 0,
+                "completedProfileAt": "yyyy-MM-dd HH:mm:ss",
+                "emailVerifiedAt": "yyyy-MM-dd HH:mm:ss",
+                "phoneVerifiedAt": "yyyy-MM-dd HH:mm:ss",
+                "lastLoggedInAt": "yyyy-MM-dd HH:mm:ss",
+                "role": {
+                  "$ref": "..."
+                },
+                "roleId": "",
+                "roleName": "",
+                "tenant": {
+                  "$ref": "..."
+                },
+                "tenantIds": [
+                  ""
+                ],
+                "lastActiveTenantId": "",
+                "twoFactorEnabled": true,
+                "notificationsEnabled": true,
+                "googleAccount": true,
+                "googleId": ""
               },
               "userId": ""
             },
@@ -8258,10 +8362,11 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -8272,6 +8377,10 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -8378,10 +8487,11 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -8392,6 +8502,10 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -8458,6 +8572,16 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|NEW: Longer description for UI tooltips.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
@@ -8488,10 +8612,11 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -8502,6 +8627,10 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -8537,6 +8666,38 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthErrorUrl|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─password|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─dateOfBirth|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─nationality|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idType|string|e.g. "National ID", "Passport"|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idNumber|string|ID number|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idDocumentUrl|string|e.g. "National ID", "Passport"|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileUrl|string|File storage URL|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─proofOfAddress|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─completedProfileAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
@@ -8597,10 +8758,11 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
       "businessSupportEmailAddress": "",
       "businessGeneralEmailAddress": "",
       "kybCompleted": true,
-      "profileDetailFilled": true,
+      "kybDetailFilled": true,
       "contactDetailFilled": true,
       "cacDocumentUrl": "",
       "kycCompleted": true,
+      "kycDetailFilled": true,
       "documentsVerified": true,
       "termsAccepted": true,
       "movedToLiveModeAt": "yyyy-MM-dd HH:mm:ss",
@@ -8613,6 +8775,13 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
       "complianceRejectionCode": "",
       "complianceRejectionMessage": "",
       "complianceNextSteps": "",
+      "complianceFieldErrors": [
+        {
+          "field": "",
+          "label": "",
+          "note": ""
+        }
+      ],
       "complianceReviewedBy": "",
       "complianceReviewedAt": "yyyy-MM-dd HH:mm:ss",
       "complianceOverrideEnabled": true,
@@ -8729,10 +8898,11 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
           "businessSupportEmailAddress": "",
           "businessGeneralEmailAddress": "",
           "kybCompleted": true,
-          "profileDetailFilled": true,
+          "kybDetailFilled": true,
           "contactDetailFilled": true,
           "cacDocumentUrl": "",
           "kycCompleted": true,
+          "kycDetailFilled": true,
           "documentsVerified": true,
           "termsAccepted": true,
           "movedToLiveModeAt": "yyyy-MM-dd HH:mm:ss",
@@ -8745,6 +8915,13 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
           "complianceRejectionCode": "",
           "complianceRejectionMessage": "",
           "complianceNextSteps": "",
+          "complianceFieldErrors": [
+            {
+              "field": "",
+              "label": "",
+              "note": ""
+            }
+          ],
           "complianceReviewedBy": "",
           "complianceReviewedAt": "yyyy-MM-dd HH:mm:ss",
           "complianceOverrideEnabled": true,
@@ -8816,7 +8993,16 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
               "slug": "",
               "permissions": [
                 {
-                  "$ref": "..."
+                  "createdAt": "yyyy-MM-dd HH:mm:ss",
+                  "updatedAt": "yyyy-MM-dd HH:mm:ss",
+                  "id": "",
+                  "name": "",
+                  "displayName": "",
+                  "category": "",
+                  "description": "",
+                  "status": true,
+                  "merchantVisible": true,
+                  "slug": ""
                 }
               ],
               "type": "SYSTEM",
@@ -8852,10 +9038,11 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
               "businessSupportEmailAddress": "",
               "businessGeneralEmailAddress": "",
               "kybCompleted": true,
-              "profileDetailFilled": true,
+              "kybDetailFilled": true,
               "contactDetailFilled": true,
               "cacDocumentUrl": "",
               "kycCompleted": true,
+              "kycDetailFilled": true,
               "documentsVerified": true,
               "termsAccepted": true,
               "movedToLiveModeAt": "yyyy-MM-dd HH:mm:ss",
@@ -8868,6 +9055,13 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
               "complianceRejectionCode": "",
               "complianceRejectionMessage": "",
               "complianceNextSteps": "",
+              "complianceFieldErrors": [
+                {
+                  "field": "",
+                  "label": "",
+                  "note": ""
+                }
+              ],
               "complianceReviewedBy": "",
               "complianceReviewedAt": "yyyy-MM-dd HH:mm:ss",
               "complianceOverrideEnabled": true,
@@ -8907,7 +9101,44 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
               "googleOauthErrorUrl": "",
               "createdBy": "",
               "user": {
-                "$ref": "..."
+                "createdAt": "yyyy-MM-dd HH:mm:ss",
+                "updatedAt": "yyyy-MM-dd HH:mm:ss",
+                "id": "",
+                "email": "",
+                "tenantId": "",
+                "password": "",
+                "fullName": "",
+                "dateOfBirth": "",
+                "phoneNumber": "",
+                "nationality": "",
+                "idType": "",
+                "idNumber": "",
+                "idDocumentUrl": "",
+                "profileUrl": "",
+                "status": "",
+                "address": "",
+                "proofOfAddress": "",
+                "version": 0,
+                "completedProfileAt": "yyyy-MM-dd HH:mm:ss",
+                "emailVerifiedAt": "yyyy-MM-dd HH:mm:ss",
+                "phoneVerifiedAt": "yyyy-MM-dd HH:mm:ss",
+                "lastLoggedInAt": "yyyy-MM-dd HH:mm:ss",
+                "role": {
+                  "$ref": "..."
+                },
+                "roleId": "",
+                "roleName": "",
+                "tenant": {
+                  "$ref": "..."
+                },
+                "tenantIds": [
+                  ""
+                ],
+                "lastActiveTenantId": "",
+                "twoFactorEnabled": true,
+                "notificationsEnabled": true,
+                "googleAccount": true,
+                "googleId": ""
               },
               "userId": ""
             },
@@ -8946,7 +9177,7 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 
 **Content-Type:** application/json
 
-**Description:** Verify Merchant Email
+**Description:** This API verifies a merchant's email address using a token sent to their email. It validates the token, marks the email as verified,
 
 
 **Body-parameters:**
@@ -8988,7 +9219,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 **Content-Type:** application/json
 
-**Description:** Initiate Merchant Email Verification
+**Description:** This API initiates the email verification process for a merchant by generating a verification token and sending it to the provided email address.
 
 
 **Body-parameters:**
@@ -10149,11 +10380,13 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─id|string|No comments found.|-||
 |└─email|string|No comments found.|-||
 |└─fullName|string|No comments found.|-||
+|└─firstName|string|No comments found.|-||
+|└─lastName|string|No comments found.|-||
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:06"|
-|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:06"|
+|└─createdAt|string|No comments found.|-|"2026-04-23 10:03:21"|
+|└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:21"|
 
 **Response-example:**
 ```json
@@ -10164,16 +10397,18 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "id": "",
     "email": "",
     "fullName": "",
+    "firstName": "",
+    "lastName": "",
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-17 22:51:06",
-    "updatedAt": "2026-04-17 22:51:06"
+    "createdAt": "2026-04-23 10:03:21",
+    "updatedAt": "2026-04-23 10:03:21"
   }
 }
 ```
 
-### refreshToken
+### Login Customer
 **URL:** https://api.shopsynch.com/v1/auth/customer/refresh-token
 
 **Type:** POST
@@ -10181,7 +10416,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 
 **Content-Type:** application/json
 
-**Description:** 
+**Description:** This API authenticates a customer using email and password credentials. Upon successful authentication, generates a JWT token
+for API access and returns the customer's profile information. Also publishes a customer login event for tracking and analytics.
 
 **Request-headers:**
 
@@ -10210,14 +10446,17 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─id|string|No comments found.|-||
 |└─email|string|No comments found.|-||
 |└─fullName|string|No comments found.|-||
+|└─firstName|string|No comments found.|-||
+|└─lastName|string|No comments found.|-||
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:06"|
-|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:06"|
+|└─createdAt|string|No comments found.|-|"2026-04-23 10:03:21"|
+|└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:21"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
+|refreshTokenExpiresIn|int64|No comments found.|-|0|
 
 **Response-example:**
 ```json
@@ -10226,15 +10465,18 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "id": "",
     "email": "",
     "fullName": "",
+    "firstName": "",
+    "lastName": "",
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-17 22:51:06",
-    "updatedAt": "2026-04-17 22:51:06"
+    "createdAt": "2026-04-23 10:03:21",
+    "updatedAt": "2026-04-23 10:03:21"
   },
   "token": "",
   "refreshToken": "",
-  "expiresIn": 0
+  "expiresIn": 0,
+  "refreshTokenExpiresIn": 0
 }
 ```
 
@@ -10339,19 +10581,19 @@ string
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
 |array|boolean|false|No comments found.|-|true|
-|missingNode|boolean|false|No comments found.|-|true|
-|containerNode|boolean|false|No comments found.|-|true|
-|valueNode|boolean|false|No comments found.|-|true|
 |object|boolean|false|No comments found.|-|true|
+|valueNode|boolean|false|No comments found.|-|true|
+|containerNode|boolean|false|No comments found.|-|true|
+|missingNode|boolean|false|No comments found.|-|true|
 
 **Request-example:**
 ```bash
 curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/webhooks/whatsapp' --data '{
   "array": true,
-  "missingNode": true,
-  "containerNode": true,
+  "object": true,
   "valueNode": true,
-  "object": true
+  "containerNode": true,
+  "missingNode": true
 }'
 ```
 
@@ -10714,7 +10956,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 
 ## Internal admin endpoints for inventory management.
 These endpoints are not exposed to merchant users.
-### Enables inventory tracking for a V1 tenant.<br><br>Creates a default warehouse if none exists, then backfills one<br>{@link Inventory} record for every existing product/SKU using their current<br>{@code quantityInStock} values. Idempotent — safe to call multiple times.
+### Enables inventory tracking for a V1 tenant.
 **URL:** https://api.shopsynch.com/admin/inventory/tenants/{tenantId}/enable
 
 **Type:** POST
@@ -10723,10 +10965,6 @@ These endpoints are not exposed to merchant users.
 **Content-Type:** application/x-www-form-urlencoded
 
 **Description:** Enables inventory tracking for a V1 tenant.
-
-<p>Creates a default warehouse if none exists, then backfills one
-{@link Inventory} record for every existing product/SKU using their current
-{@code quantityInStock} values. Idempotent — safe to call multiple times.
 
 **Request-headers:**
 
@@ -10891,11 +11129,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:10"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:10"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-23 10:03:27"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:27"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactInformation|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
@@ -10975,11 +11215,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:10"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:10"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-23 10:03:27"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:27"|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |└─tenant|object|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tradingName|string|No comments found.|-||
@@ -11031,11 +11273,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
         "id": "",
         "email": "",
         "fullName": "",
+        "firstName": "",
+        "lastName": "",
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-17 22:51:10",
-        "updatedAt": "2026-04-17 22:51:10"
+        "createdAt": "2026-04-23 10:03:27",
+        "updatedAt": "2026-04-23 10:03:27"
       },
       "contactInformation": {
         "firstName": "",
@@ -11130,11 +11374,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ch
           "id": "",
           "email": "",
           "fullName": "",
+          "firstName": "",
+          "lastName": "",
           "phoneNumber": "",
           "address": "",
           "status": "",
-          "createdAt": "2026-04-17 22:51:10",
-          "updatedAt": "2026-04-17 22:51:10"
+          "createdAt": "2026-04-23 10:03:27",
+          "updatedAt": "2026-04-23 10:03:27"
         },
         "createdAt": "yyyy-MM-dd HH:mm:ss"
       }
@@ -11700,10 +11946,11 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─businessSupportEmailAddress|string|for contacting business and sending notifications|-||
 |└─businessGeneralEmailAddress|string|for contacting business and sending notifications|-||
 |└─kybCompleted|boolean|Know Your Business passed|-|true|
-|└─profileDetailFilled|boolean|Know Your Business passed|-|true|
+|└─kybDetailFilled|boolean|Know Your Business passed|-|true|
 |└─contactDetailFilled|boolean|Know Your Business passed|-|true|
 |└─cacDocumentUrl|string|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |└─kycCompleted|boolean|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|└─kycDetailFilled|boolean|No comments found.|-|true|
 |└─documentsVerified|boolean|merchant_compliance_status<br/>All docs approved|-|true|
 |└─termsAccepted|boolean|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |└─movedToLiveModeAt|string|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -11714,6 +11961,10 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─complianceRejectionCode|string|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |└─complianceRejectionMessage|string|Human-readable rejection message shown to the merchant.|-||
 |└─complianceNextSteps|string|Actionable next steps shown to the merchant after a rejection.|-||
+|└─complianceFieldErrors|array|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|No comments found.|-||
 |└─complianceReviewedBy|string|ID of the admin who last reviewed this tenant's compliance.|-||
 |└─complianceReviewedAt|string|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |└─complianceOverrideEnabled|boolean|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -11820,10 +12071,11 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -11834,6 +12086,10 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -11900,6 +12156,16 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|Machine-readable permission name following the can_{action}_{resource} convention.<br/>e.g., "can_read_order", "can_invite_team_member".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─displayName|string|NEW: Human-readable label for UI display (e.g., "View Orders").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─category|string|NEW: Grouping category for UI display (e.g., "Orders", "Team Management").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|NEW: Longer description for UI tooltips.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantVisible|boolean|When false, this permission is hidden from the merchant's custom role builder.<br/>Used for internal/admin-only permissions that store owners must never see or assign.<br/>Defaults to true — all permissions are visible unless explicitly hidden.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
@@ -11930,10 +12196,11 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -11944,6 +12211,10 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -11979,6 +12250,38 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthErrorUrl|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─password|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─dateOfBirth|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─nationality|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idType|string|e.g. "National ID", "Passport"|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idNumber|string|ID number|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idDocumentUrl|string|e.g. "National ID", "Passport"|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileUrl|string|File storage URL|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─proofOfAddress|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─version|int32|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─completedProfileAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleAccount|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleId|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|NEW: The store ID the user was last active in — used to resume context on login.|-||
@@ -12024,10 +12327,11 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     "businessSupportEmailAddress": "",
     "businessGeneralEmailAddress": "",
     "kybCompleted": true,
-    "profileDetailFilled": true,
+    "kybDetailFilled": true,
     "contactDetailFilled": true,
     "cacDocumentUrl": "",
     "kycCompleted": true,
+    "kycDetailFilled": true,
     "documentsVerified": true,
     "termsAccepted": true,
     "movedToLiveModeAt": "yyyy-MM-dd HH:mm:ss",
@@ -12040,6 +12344,13 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
     "complianceRejectionCode": "",
     "complianceRejectionMessage": "",
     "complianceNextSteps": "",
+    "complianceFieldErrors": [
+      {
+        "field": "",
+        "label": "",
+        "note": ""
+      }
+    ],
     "complianceReviewedBy": "",
     "complianceReviewedAt": "yyyy-MM-dd HH:mm:ss",
     "complianceOverrideEnabled": true,
@@ -12156,10 +12467,11 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
         "businessSupportEmailAddress": "",
         "businessGeneralEmailAddress": "",
         "kybCompleted": true,
-        "profileDetailFilled": true,
+        "kybDetailFilled": true,
         "contactDetailFilled": true,
         "cacDocumentUrl": "",
         "kycCompleted": true,
+        "kycDetailFilled": true,
         "documentsVerified": true,
         "termsAccepted": true,
         "movedToLiveModeAt": "yyyy-MM-dd HH:mm:ss",
@@ -12172,6 +12484,13 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
         "complianceRejectionCode": "",
         "complianceRejectionMessage": "",
         "complianceNextSteps": "",
+        "complianceFieldErrors": [
+          {
+            "field": "",
+            "label": "",
+            "note": ""
+          }
+        ],
         "complianceReviewedBy": "",
         "complianceReviewedAt": "yyyy-MM-dd HH:mm:ss",
         "complianceOverrideEnabled": true,
@@ -12243,7 +12562,16 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
             "slug": "",
             "permissions": [
               {
-                "$ref": "..."
+                "createdAt": "yyyy-MM-dd HH:mm:ss",
+                "updatedAt": "yyyy-MM-dd HH:mm:ss",
+                "id": "",
+                "name": "",
+                "displayName": "",
+                "category": "",
+                "description": "",
+                "status": true,
+                "merchantVisible": true,
+                "slug": ""
               }
             ],
             "type": "SYSTEM",
@@ -12279,10 +12607,11 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
             "businessSupportEmailAddress": "",
             "businessGeneralEmailAddress": "",
             "kybCompleted": true,
-            "profileDetailFilled": true,
+            "kybDetailFilled": true,
             "contactDetailFilled": true,
             "cacDocumentUrl": "",
             "kycCompleted": true,
+            "kycDetailFilled": true,
             "documentsVerified": true,
             "termsAccepted": true,
             "movedToLiveModeAt": "yyyy-MM-dd HH:mm:ss",
@@ -12295,6 +12624,13 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
             "complianceRejectionCode": "",
             "complianceRejectionMessage": "",
             "complianceNextSteps": "",
+            "complianceFieldErrors": [
+              {
+                "field": "",
+                "label": "",
+                "note": ""
+              }
+            ],
             "complianceReviewedBy": "",
             "complianceReviewedAt": "yyyy-MM-dd HH:mm:ss",
             "complianceOverrideEnabled": true,
@@ -12334,7 +12670,44 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
             "googleOauthErrorUrl": "",
             "createdBy": "",
             "user": {
-              "$ref": "..."
+              "createdAt": "yyyy-MM-dd HH:mm:ss",
+              "updatedAt": "yyyy-MM-dd HH:mm:ss",
+              "id": "",
+              "email": "",
+              "tenantId": "",
+              "password": "",
+              "fullName": "",
+              "dateOfBirth": "",
+              "phoneNumber": "",
+              "nationality": "",
+              "idType": "",
+              "idNumber": "",
+              "idDocumentUrl": "",
+              "profileUrl": "",
+              "status": "",
+              "address": "",
+              "proofOfAddress": "",
+              "version": 0,
+              "completedProfileAt": "yyyy-MM-dd HH:mm:ss",
+              "emailVerifiedAt": "yyyy-MM-dd HH:mm:ss",
+              "phoneVerifiedAt": "yyyy-MM-dd HH:mm:ss",
+              "lastLoggedInAt": "yyyy-MM-dd HH:mm:ss",
+              "role": {
+                "$ref": "..."
+              },
+              "roleId": "",
+              "roleName": "",
+              "tenant": {
+                "$ref": "..."
+              },
+              "tenantIds": [
+                ""
+              ],
+              "lastActiveTenantId": "",
+              "twoFactorEnabled": true,
+              "notificationsEnabled": true,
+              "googleAccount": true,
+              "googleId": ""
             },
             "userId": ""
           },
@@ -12363,7 +12736,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 }
 ```
 
-## SpecificationController
+## Specification Management
 ### getSpecifications
 **URL:** https://api.shopsynch.com/v1/specifications
 
@@ -12410,6 +12783,218 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/sp
   ],
   "message": "",
   "status": true
+}
+```
+
+## Compliance RejectionTemplate Controller
+### Create Compliance Rejection Template
+**URL:** https://api.shopsynch.com/v1/admin/compliance/rejection-templates
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** Admins can create predefined templates for common compliance rejection reasons. These
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|code|string|false|No comments found.|-||
+|label|string|false|No comments found.|-||
+|message|string|false|No comments found.|-||
+|nextSteps|string|false|No comments found.|-||
+|emailSubject|string|false|No comments found.|-||
+|emailBody|string|false|No comments found.|-||
+|category|enum|false|No comments found.<br/>[Enum: COMPLIANCE, ONBOARDING, MARKETING]|-|COMPLIANCE|
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/compliance/rejection-templates' --data '{
+  "code": "",
+  "label": "",
+  "message": "",
+  "nextSteps": "",
+  "emailSubject": "",
+  "emailBody": "",
+  "category": "COMPLIANCE"
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─id|string|No comments found.|-||
+|└─code|string|No comments found.|-||
+|└─label|string|No comments found.|-||
+|└─category|enum|No comments found.<br/>[Enum: COMPLIANCE, ONBOARDING, MARKETING]|-|COMPLIANCE|
+|└─message|string|No comments found.|-||
+|└─nextSteps|string|No comments found.|-||
+|└─emailSubject|string|No comments found.|-||
+|└─emailBody|string|No comments found.|-||
+|└─active|boolean|No comments found.|-|true|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "createdAt": "yyyy-MM-dd HH:mm:ss",
+    "updatedAt": "yyyy-MM-dd HH:mm:ss",
+    "id": "",
+    "code": "",
+    "label": "",
+    "category": "COMPLIANCE",
+    "message": "",
+    "nextSteps": "",
+    "emailSubject": "",
+    "emailBody": "",
+    "active": true
+  }
+}
+```
+
+### Get Active Compliance Rejection Templates
+**URL:** https://api.shopsynch.com/v1/admin/compliance/rejection-templates
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Retrieve all active compliance rejection templates
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/compliance/rejection-templates'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─id|string|No comments found.|-||
+|└─code|string|No comments found.|-||
+|└─label|string|No comments found.|-||
+|└─category|enum|No comments found.<br/>[Enum: COMPLIANCE, ONBOARDING, MARKETING]|-|COMPLIANCE|
+|└─message|string|No comments found.|-||
+|└─nextSteps|string|No comments found.|-||
+|└─emailSubject|string|No comments found.|-||
+|└─emailBody|string|No comments found.|-||
+|└─active|boolean|No comments found.|-|true|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "updatedAt": "yyyy-MM-dd HH:mm:ss",
+      "id": "",
+      "code": "",
+      "label": "",
+      "category": "COMPLIANCE",
+      "message": "",
+      "nextSteps": "",
+      "emailSubject": "",
+      "emailBody": "",
+      "active": true
+    }
+  ]
+}
+```
+
+### Get Compliance Rejection Template by Code
+**URL:** https://api.shopsynch.com/v1/admin/compliance/rejection-templates/{code}
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Retrieve a specific compliance rejection template by its code
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|code|string|true|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/compliance/rejection-templates/{code}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─id|string|No comments found.|-||
+|└─code|string|No comments found.|-||
+|└─label|string|No comments found.|-||
+|└─category|enum|No comments found.<br/>[Enum: COMPLIANCE, ONBOARDING, MARKETING]|-|COMPLIANCE|
+|└─message|string|No comments found.|-||
+|└─nextSteps|string|No comments found.|-||
+|└─emailSubject|string|No comments found.|-||
+|└─emailBody|string|No comments found.|-||
+|└─active|boolean|No comments found.|-|true|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "createdAt": "yyyy-MM-dd HH:mm:ss",
+    "updatedAt": "yyyy-MM-dd HH:mm:ss",
+    "id": "",
+    "code": "",
+    "label": "",
+    "category": "COMPLIANCE",
+    "message": "",
+    "nextSteps": "",
+    "emailSubject": "",
+    "emailBody": "",
+    "active": true
+  }
 }
 ```
 
@@ -12961,7 +13546,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/no
 |data|object|No comments found.|-||
 |└─notifications|array|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|string|No comments found.<br/>[Enum: ABANDONED_CART_MERCHANT-("ABANDONED_CART_MERCHANT","Abandoned cart notification for merchant"),ORDER_CONFIRMATION-("ORDER_CONFIRMATION","Order confirmation notification for customer"),LOW_STOCK_ALERT-("LOW_STOCK_ALERT","Low stock alert notification for merchant"),NEW_ORDER-("NEW_ORDER","New order notification for merchant"),NEW_REVIEW-("NEW_REVIEW","New review notification for merchant"),ORDER_STATUS_PENDING-("ORDER_STATUS_PENDING","Order status pending notification for customer"),ORDER_STATUS_PROCESSING-("ORDER_STATUS_PROCESSING","Order status processing notification for customer"),ORDER_STATUS_SHIPPED-("ORDER_STATUS_SHIPPED","Order status shipped notification for customer"),ORDER_STATUS_DELIVERED-("ORDER_STATUS_DELIVERED","Order status delivered notification for customer"),ORDER_STATUS_CANCELLED-("ORDER_STATUS_CANCELLED","Order status cancelled notification for customer"),ORDER_STATUS_IN_TRANSIT-("ORDER_STATUS_IN_TRANSIT","Order status in transit notification for customer"),ORDER_STATUS_FAILED-("ORDER_STATUS_FAILED","Order status failed notification for customer"),ORDER_STATUS_ABANDONED-("ORDER_STATUS_ABANDONED","Order status abandoned notification for customer"),PAYMENT_ABANDONED_MERCHANT-("PAYMENT_ABANDONED_MERCHANT","Payment abandoned notification for merchant"),PAYMENT_CONFIRMED-("PAYMENT_CONFIRMED","Payment confirmed notification for customer"),SNAPSHOT_FAILED-("SNAPSHOT_FAILED","Snapshot failed notification for merchant"),SNAPSHOT_READY-("SNAPSHOT_READY","Snapshot ready notification for merchant"),WELCOME-("WELCOME","Welcome notification for customer"),TEAM_INVITATION-("TEAM_INVITATION","Invitation to join a store as a team member"),TEAM_MEMBER_JOINED-("TEAM_MEMBER_JOINED","Welcome notification when a user joins a store"),TEAM_MEMBER_REMOVED-("TEAM_MEMBER_REMOVED","Notification when a user is removed from a store")]|-|abandoned_cart_merchant|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|string|No comments found.<br/>[Enum: ABANDONED_CART_MERCHANT-("ABANDONED_CART_MERCHANT","Abandoned cart notification for merchant"),ORDER_CONFIRMATION-("ORDER_CONFIRMATION","Order confirmation notification for customer"),LOW_STOCK_ALERT-("LOW_STOCK_ALERT","Low stock alert notification for merchant"),NEW_ORDER-("NEW_ORDER","New order notification for merchant"),NEW_REVIEW-("NEW_REVIEW","New review notification for merchant"),ORDER_STATUS_PENDING-("ORDER_STATUS_PENDING","Order status pending notification for customer"),ORDER_STATUS_PROCESSING-("ORDER_STATUS_PROCESSING","Order status processing notification for customer"),ORDER_STATUS_SHIPPED-("ORDER_STATUS_SHIPPED","Order status shipped notification for customer"),ORDER_STATUS_DELIVERED-("ORDER_STATUS_DELIVERED","Order status delivered notification for customer"),ORDER_STATUS_CANCELLED-("ORDER_STATUS_CANCELLED","Order status cancelled notification for customer"),ORDER_STATUS_IN_TRANSIT-("ORDER_STATUS_IN_TRANSIT","Order status in transit notification for customer"),ORDER_STATUS_FAILED-("ORDER_STATUS_FAILED","Order status failed notification for customer"),ORDER_STATUS_ABANDONED-("ORDER_STATUS_ABANDONED","Order status abandoned notification for customer"),PAYMENT_ABANDONED_MERCHANT-("PAYMENT_ABANDONED_MERCHANT","Payment abandoned notification for merchant"),PAYMENT_CONFIRMED-("PAYMENT_CONFIRMED","Payment confirmed notification for customer"),SNAPSHOT_FAILED-("SNAPSHOT_FAILED","Snapshot failed notification for merchant"),SNAPSHOT_READY-("SNAPSHOT_READY","Snapshot ready notification for merchant"),COMPLIANCE_STATUS_UPDATED-("COMPLIANCE_STATUS_UPDATED","Compliance status update notification for merchant"),WELCOME-("WELCOME","Welcome notification for customer"),TEAM_INVITATION-("TEAM_INVITATION","Invitation to join a store as a team member"),TEAM_MEMBER_JOINED-("TEAM_MEMBER_JOINED","Welcome notification when a user joins a store"),TEAM_MEMBER_REMOVED-("TEAM_MEMBER_REMOVED","Notification when a user is removed from a store")]|-|abandoned_cart_merchant|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notifiableType|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notifiableId|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
@@ -13020,7 +13605,7 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
 |└─id|string|No comments found.|-||
-|└─type|string|No comments found.<br/>[Enum: ABANDONED_CART_MERCHANT-("ABANDONED_CART_MERCHANT","Abandoned cart notification for merchant"),ORDER_CONFIRMATION-("ORDER_CONFIRMATION","Order confirmation notification for customer"),LOW_STOCK_ALERT-("LOW_STOCK_ALERT","Low stock alert notification for merchant"),NEW_ORDER-("NEW_ORDER","New order notification for merchant"),NEW_REVIEW-("NEW_REVIEW","New review notification for merchant"),ORDER_STATUS_PENDING-("ORDER_STATUS_PENDING","Order status pending notification for customer"),ORDER_STATUS_PROCESSING-("ORDER_STATUS_PROCESSING","Order status processing notification for customer"),ORDER_STATUS_SHIPPED-("ORDER_STATUS_SHIPPED","Order status shipped notification for customer"),ORDER_STATUS_DELIVERED-("ORDER_STATUS_DELIVERED","Order status delivered notification for customer"),ORDER_STATUS_CANCELLED-("ORDER_STATUS_CANCELLED","Order status cancelled notification for customer"),ORDER_STATUS_IN_TRANSIT-("ORDER_STATUS_IN_TRANSIT","Order status in transit notification for customer"),ORDER_STATUS_FAILED-("ORDER_STATUS_FAILED","Order status failed notification for customer"),ORDER_STATUS_ABANDONED-("ORDER_STATUS_ABANDONED","Order status abandoned notification for customer"),PAYMENT_ABANDONED_MERCHANT-("PAYMENT_ABANDONED_MERCHANT","Payment abandoned notification for merchant"),PAYMENT_CONFIRMED-("PAYMENT_CONFIRMED","Payment confirmed notification for customer"),SNAPSHOT_FAILED-("SNAPSHOT_FAILED","Snapshot failed notification for merchant"),SNAPSHOT_READY-("SNAPSHOT_READY","Snapshot ready notification for merchant"),WELCOME-("WELCOME","Welcome notification for customer"),TEAM_INVITATION-("TEAM_INVITATION","Invitation to join a store as a team member"),TEAM_MEMBER_JOINED-("TEAM_MEMBER_JOINED","Welcome notification when a user joins a store"),TEAM_MEMBER_REMOVED-("TEAM_MEMBER_REMOVED","Notification when a user is removed from a store")]|-|abandoned_cart_merchant|
+|└─type|string|No comments found.<br/>[Enum: ABANDONED_CART_MERCHANT-("ABANDONED_CART_MERCHANT","Abandoned cart notification for merchant"),ORDER_CONFIRMATION-("ORDER_CONFIRMATION","Order confirmation notification for customer"),LOW_STOCK_ALERT-("LOW_STOCK_ALERT","Low stock alert notification for merchant"),NEW_ORDER-("NEW_ORDER","New order notification for merchant"),NEW_REVIEW-("NEW_REVIEW","New review notification for merchant"),ORDER_STATUS_PENDING-("ORDER_STATUS_PENDING","Order status pending notification for customer"),ORDER_STATUS_PROCESSING-("ORDER_STATUS_PROCESSING","Order status processing notification for customer"),ORDER_STATUS_SHIPPED-("ORDER_STATUS_SHIPPED","Order status shipped notification for customer"),ORDER_STATUS_DELIVERED-("ORDER_STATUS_DELIVERED","Order status delivered notification for customer"),ORDER_STATUS_CANCELLED-("ORDER_STATUS_CANCELLED","Order status cancelled notification for customer"),ORDER_STATUS_IN_TRANSIT-("ORDER_STATUS_IN_TRANSIT","Order status in transit notification for customer"),ORDER_STATUS_FAILED-("ORDER_STATUS_FAILED","Order status failed notification for customer"),ORDER_STATUS_ABANDONED-("ORDER_STATUS_ABANDONED","Order status abandoned notification for customer"),PAYMENT_ABANDONED_MERCHANT-("PAYMENT_ABANDONED_MERCHANT","Payment abandoned notification for merchant"),PAYMENT_CONFIRMED-("PAYMENT_CONFIRMED","Payment confirmed notification for customer"),SNAPSHOT_FAILED-("SNAPSHOT_FAILED","Snapshot failed notification for merchant"),SNAPSHOT_READY-("SNAPSHOT_READY","Snapshot ready notification for merchant"),COMPLIANCE_STATUS_UPDATED-("COMPLIANCE_STATUS_UPDATED","Compliance status update notification for merchant"),WELCOME-("WELCOME","Welcome notification for customer"),TEAM_INVITATION-("TEAM_INVITATION","Invitation to join a store as a team member"),TEAM_MEMBER_JOINED-("TEAM_MEMBER_JOINED","Welcome notification when a user joins a store"),TEAM_MEMBER_REMOVED-("TEAM_MEMBER_REMOVED","Notification when a user is removed from a store")]|-|abandoned_cart_merchant|
 |└─notifiableType|string|No comments found.|-||
 |└─notifiableId|string|No comments found.|-||
 |└─tenantId|string|No comments found.|-||
@@ -13307,6 +13892,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |googleAccount|boolean|false|No comments found.|-|true|
 |googleId|string|false|No comments found.|-||
+|anonymous|boolean|false|No comments found.|-|true|
 |password|string|false|No comments found.|-||
 |status|string|false|No comments found.|-||
 |notificationsEnabled|boolean|false|No comments found.|-|true|
@@ -13350,10 +13936,11 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |└─businessSupportEmailAddress|string|false|for contacting business and sending notifications|-||
 |└─businessGeneralEmailAddress|string|false|for contacting business and sending notifications|-||
 |└─kybCompleted|boolean|false|Know Your Business passed|-|true|
-|└─profileDetailFilled|boolean|false|Know Your Business passed|-|true|
+|└─kybDetailFilled|boolean|false|Know Your Business passed|-|true|
 |└─contactDetailFilled|boolean|false|Know Your Business passed|-|true|
 |└─cacDocumentUrl|string|false|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |└─kycCompleted|boolean|false|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|└─kycDetailFilled|boolean|false|No comments found.|-|true|
 |└─documentsVerified|boolean|false|merchant_compliance_status<br/>All docs approved|-|true|
 |└─termsAccepted|boolean|false|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |└─movedToLiveModeAt|string|false|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -13364,6 +13951,10 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |└─complianceRejectionCode|string|false|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |└─complianceRejectionMessage|string|false|Human-readable rejection message shown to the merchant.|-||
 |└─complianceNextSteps|string|false|Actionable next steps shown to the merchant after a rejection.|-||
+|└─complianceFieldErrors|array|false|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|false|No comments found.|-||
 |└─complianceReviewedBy|string|false|ID of the admin who last reviewed this tenant's compliance.|-||
 |└─complianceReviewedAt|string|false|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |└─complianceOverrideEnabled|boolean|false|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -13470,10 +14061,11 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|false|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|false|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|false|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|false|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|false|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|false|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|false|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|false|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|false|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|false|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|false|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -13484,6 +14076,10 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|false|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|false|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|false|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|false|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|false|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|false|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|false|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -13590,10 +14186,11 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|false|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|false|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|false|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|false|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|false|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|false|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|false|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|false|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|false|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|false|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|false|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -13604,6 +14201,10 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|false|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|false|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|false|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|false|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|false|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|false|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|false|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -13662,9 +14263,96 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|false|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|false|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|false|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─logo|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessType|string|false|e.g. "LLC", "Sole Proprietor"|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessRegistrationNumber|string|false|Government-issued business ID|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessCountry|string|false|Country of business incorporation|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessState|string|false|Country of business incorporation|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessCity|string|false|Business city|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessStorefrontUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessAddress|string|false|Business register address|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessDescription|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─industry|string|false|Business Industry<br/>e.g. fashion, electronics|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTaxIdNumber|string|false|Optional - Business Tax ID|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessExpectedMonthlyIncome|string|false|Optional – for profiling|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─staffSize|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessPrimaryPhoneNumber|string|false|Optional – for contacting business|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSecondaryPhoneNumber|string|false|Optional – for contacting business|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|false|for contacting business and sending notifications|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|false|for contacting business and sending notifications|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|false|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|false|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|false|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|false|Document URL for Registered business (CAC Certificate or Status Report)|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|false|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|false|merchant_compliance_status<br/>All docs approved|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|false|merchant_compliance_status<br/>Bank payout setup done|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|false|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNotes|array|false|merchant_compliance_status<br/>Admin/internal notes|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveModeReady|boolean|false|merchant_compliance_status<br/>true if all verification is complete|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pendingApproval|boolean|false|Flag indicating that the merchant's application is pending admin review.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewStatus|enum|false|Current state of the merchant's compliance submission in the admin review workflow.<br/>Defaults to NOT_SUBMITTED until the merchant explicitly submits.<br/>[Enum: NOT_SUBMITTED, AWAITING_APPROVAL, UNDER_REVIEW, APPROVED, REJECTED, SUSPENDED]|-|NOT_SUBMITTED|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|false|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|false|Human-readable rejection message shown to the merchant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|false|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|false|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|false|ID of the admin who last reviewed this tenant's compliance.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|false|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|false|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideReason|string|false|Reason the override was granted (admin-facing).|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideGrantedBy|string|false|ID of the admin who granted the override.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideGrantedAt|string|false|Timestamp when the override was granted.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideExpiresAt|string|false|When the override expires. Null means indefinite.<br/>The live-mode gate must check this against the current time.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currency|string|false|Default currency|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─timezone|string|false|Default timezone|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─language|string|false|Preferred Language|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currentMode|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveKey|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─testKey|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveWhitelistedDomains|array|false|No comments found.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─testWhitelistedDomains|array|false|No comments found.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryColor|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─accentColor|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fontFamily|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroHeadline|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroCtaText|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroBackgroundImage|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─instagramUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─facebookUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twitterUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─youtubeUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─linkedinUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tiktokUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─inventoryTrackingEnabled|boolean|false|When true, stock queries for V1 products read from the Inventory entity instead of<br/>{@code Product.quantityInStock}. Enabled via the admin enable-inventory-tracking endpoint.<br/>V2 products always use the Inventory entity regardless of this flag.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthRedirectUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthErrorUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|false|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|false|NEW: The store ID the user was last active in — used to resume context on login.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|false|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
@@ -13723,7 +14411,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pr
 
 **Request-example:**
 ```bash
-curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/change/password/customer?createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&googleId=&password=&status=true&notificationsEnabled=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&name=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&cacDocumentUrl=&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&pendingApproval=true&complianceReviewStatus=NOT_SUBMITTED&complianceRejectionCode=&complianceRejectionMessage=&complianceNextSteps=&complianceReviewedBy=&complianceReviewedAt=yyyy-MM-dd HH:mm:ss&complianceOverrideEnabled=true&complianceOverrideReason=&complianceOverrideGrantedBy=&complianceOverrideGrantedAt=yyyy-MM-dd HH:mm:ss&complianceOverrideExpiresAt=yyyy-MM-dd HH:mm:ss&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&slug=&primaryColor=&accentColor=&fontFamily=&heroHeadline=&heroCtaText=&heroBackgroundImage=&instagramUrl=&facebookUrl=&twitterUrl=&youtubeUrl=&linkedinUrl=&tiktokUrl=&inventoryTrackingEnabled=true&googleOauthRedirectUrl=&googleOauthErrorUrl=&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&proofOfAddress=&completedProfileAt=yyyy-MM-dd HH:mm:ss&description=&displayName=&category=&merchantVisible=true&type=SYSTEM&permissionIds=""","""&merchantAssignable=true&roleId=&roleName=&tenantIds=""","""&lastActiveTenantId=&twoFactorEnabled=true&userId='
+curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/change/password/customer?createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&accountNonExpired=true&accountNonLocked=true&credentialsNonExpired=true&id=&tenantId=&fullName=&firstName=&lastName=&phoneNumber=&email=&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&googleAccount=true&googleId=&anonymous=true&password=&status=true&notificationsEnabled=true&address=&version=0&fullAddress=&street=&streetNumber=&postalCode=&city=&customerId=&isDefault=true&state=&localGovernment=&country=&businessTradingName=&name=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&kybDetailFilled=true&contactDetailFilled=true&cacDocumentUrl=&kycCompleted=true&kycDetailFilled=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&pendingApproval=true&complianceReviewStatus=NOT_SUBMITTED&complianceRejectionCode=&complianceRejectionMessage=&complianceNextSteps=&field=&label=&note=&complianceReviewedBy=&complianceReviewedAt=yyyy-MM-dd HH:mm:ss&complianceOverrideEnabled=true&complianceOverrideReason=&complianceOverrideGrantedBy=&complianceOverrideGrantedAt=yyyy-MM-dd HH:mm:ss&complianceOverrideExpiresAt=yyyy-MM-dd HH:mm:ss&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&slug=&primaryColor=&accentColor=&fontFamily=&heroHeadline=&heroCtaText=&heroBackgroundImage=&instagramUrl=&facebookUrl=&twitterUrl=&youtubeUrl=&linkedinUrl=&tiktokUrl=&inventoryTrackingEnabled=true&googleOauthRedirectUrl=&googleOauthErrorUrl=&createdBy=&dateOfBirth=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&proofOfAddress=&completedProfileAt=yyyy-MM-dd HH:mm:ss&description=&displayName=&category=&merchantVisible=true&type=SYSTEM&permissionIds=""","""&merchantAssignable=true&roleId=&roleName=&userId=&tenantIds=""","""&lastActiveTenantId=&twoFactorEnabled=true'
 ```
 **Response-fields:**
 
@@ -13835,10 +14523,11 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─businessSupportEmailAddress|string|false|for contacting business and sending notifications|-||
 |└─businessGeneralEmailAddress|string|false|for contacting business and sending notifications|-||
 |└─kybCompleted|boolean|false|Know Your Business passed|-|true|
-|└─profileDetailFilled|boolean|false|Know Your Business passed|-|true|
+|└─kybDetailFilled|boolean|false|Know Your Business passed|-|true|
 |└─contactDetailFilled|boolean|false|Know Your Business passed|-|true|
 |└─cacDocumentUrl|string|false|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |└─kycCompleted|boolean|false|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|└─kycDetailFilled|boolean|false|No comments found.|-|true|
 |└─documentsVerified|boolean|false|merchant_compliance_status<br/>All docs approved|-|true|
 |└─termsAccepted|boolean|false|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |└─movedToLiveModeAt|string|false|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -13849,6 +14538,10 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─complianceRejectionCode|string|false|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |└─complianceRejectionMessage|string|false|Human-readable rejection message shown to the merchant.|-||
 |└─complianceNextSteps|string|false|Actionable next steps shown to the merchant after a rejection.|-||
+|└─complianceFieldErrors|array|false|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|false|No comments found.|-||
 |└─complianceReviewedBy|string|false|ID of the admin who last reviewed this tenant's compliance.|-||
 |└─complianceReviewedAt|string|false|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |└─complianceOverrideEnabled|boolean|false|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -13955,10 +14648,11 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|false|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|false|for contacting business and sending notifications|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|false|Know Your Business passed|-|true|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─profileDetailFilled|boolean|false|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|false|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|false|Know Your Business passed|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|false|Document URL for Registered business (CAC Certificate or Status Report)|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|false|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|false|No comments found.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|false|merchant_compliance_status<br/>All docs approved|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|false|merchant_compliance_status<br/>Bank payout setup done|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|false|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
@@ -13969,6 +14663,10 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|false|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|false|Human-readable rejection message shown to the merchant.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|false|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|false|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|false|ID of the admin who last reviewed this tenant's compliance.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|false|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|false|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
@@ -14027,9 +14725,96 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneVerifiedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastLoggedInAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─role|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|Display name of the role (e.g., "Store Manager").<br/>For SYSTEM roles this is globally unique; CUSTOM role uniqueness is enforced per tenant at service level.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|Machine-readable unique identifier.<br/>SYSTEM roles: e.g., "store_manager".<br/>CUSTOM roles: e.g., "{tenantId}_sales_manager" to guarantee global uniqueness.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissions|array|false|Legacy DBRef-based permissions kept for backward compatibility.<br/>New code should use permissionIds instead.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─type|enum|false|NEW: Whether this is a platform-wide SYSTEM role or a tenant-scoped CUSTOM role.<br/>[Enum: SYSTEM, CUSTOM]|-|SYSTEM|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|false|NEW: Null for SYSTEM roles; set to the owning tenant's ID for CUSTOM roles.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─permissionIds|array|false|NEW: Permission IDs (references Permission.id) for fine-grained access control.<br/>Preferred over the legacy DBRef permissions set.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─merchantAssignable|boolean|false|When false, this role cannot be assigned to invited team members.<br/>Applies to roles like business_owner that are awarded automatically (not assignable via invitation)<br/>and to any internal/admin roles that merchants should never be able to assign.<br/>Defaults to true.|-|true|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleId|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleName|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenant|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|false|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|false|e.g. Business name|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─logo|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessType|string|false|e.g. "LLC", "Sole Proprietor"|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessRegistrationNumber|string|false|Government-issued business ID|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessCountry|string|false|Country of business incorporation|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessState|string|false|Country of business incorporation|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessCity|string|false|Business city|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessStorefrontUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessAddress|string|false|Business register address|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessDescription|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─industry|string|false|Business Industry<br/>e.g. fashion, electronics|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTaxIdNumber|string|false|Optional - Business Tax ID|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessExpectedMonthlyIncome|string|false|Optional – for profiling|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─staffSize|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessPrimaryPhoneNumber|string|false|Optional – for contacting business|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSecondaryPhoneNumber|string|false|Optional – for contacting business|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|false|for contacting business and sending notifications|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessGeneralEmailAddress|string|false|for contacting business and sending notifications|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybCompleted|boolean|false|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kybDetailFilled|boolean|false|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─contactDetailFilled|boolean|false|Know Your Business passed|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|false|Document URL for Registered business (CAC Certificate or Status Report)|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycCompleted|boolean|false|merchant_compliance_status<br/>Owner verification done via the User entity|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─kycDetailFilled|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─documentsVerified|boolean|false|merchant_compliance_status<br/>All docs approved|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─termsAccepted|boolean|false|merchant_compliance_status<br/>Bank payout setup done|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─movedToLiveModeAt|string|false|merchant_compliance_status<br/>time of switch|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNotes|array|false|merchant_compliance_status<br/>Admin/internal notes|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveModeReady|boolean|false|merchant_compliance_status<br/>true if all verification is complete|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pendingApproval|boolean|false|Flag indicating that the merchant's application is pending admin review.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewStatus|enum|false|Current state of the merchant's compliance submission in the admin review workflow.<br/>Defaults to NOT_SUBMITTED until the merchant explicitly submits.<br/>[Enum: NOT_SUBMITTED, AWAITING_APPROVAL, UNDER_REVIEW, APPROVED, REJECTED, SUSPENDED]|-|NOT_SUBMITTED|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionCode|string|false|Short machine-readable rejection code, e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceRejectionMessage|string|false|Human-readable rejection message shown to the merchant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceNextSteps|string|false|Actionable next steps shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceFieldErrors|array|false|Field-level corrections shown to the merchant after a rejection.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedBy|string|false|ID of the admin who last reviewed this tenant's compliance.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewedAt|string|false|Timestamp of the last admin review action.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|false|When true, the merchant can operate in live mode regardless of complianceReviewStatus.<br/>Used for special cases (e.g. migrated merchants, partnerships).|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideReason|string|false|Reason the override was granted (admin-facing).|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideGrantedBy|string|false|ID of the admin who granted the override.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideGrantedAt|string|false|Timestamp when the override was granted.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideExpiresAt|string|false|When the override expires. Null means indefinite.<br/>The live-mode gate must check this against the current time.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currency|string|false|Default currency|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─timezone|string|false|Default timezone|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─language|string|false|Preferred Language|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currentMode|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveKey|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─testKey|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─liveWhitelistedDomains|array|false|No comments found.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─testWhitelistedDomains|array|false|No comments found.|-|""","""|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryColor|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─accentColor|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fontFamily|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroHeadline|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroCtaText|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─heroBackgroundImage|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─instagramUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─facebookUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twitterUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─youtubeUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─linkedinUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tiktokUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|false|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─inventoryTrackingEnabled|boolean|false|When true, stock queries for V1 products read from the Inventory entity instead of<br/>{@code Product.quantityInStock}. Enabled via the admin enable-inventory-tracking endpoint.<br/>V2 products always use the Inventory entity regardless of this flag.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthRedirectUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─googleOauthErrorUrl|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdBy|string|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─user|object|false|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─userId|string|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantIds|array|false|NEW: All store IDs this user belongs to (owned + joined via invitation).<br/>Existing single-store owners have their tenantId included here automatically.|-|""","""|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastActiveTenantId|string|false|NEW: The store ID the user was last active in — used to resume context on login.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|false|NEW: Whether TOTP-based two-factor authentication is enabled for this user.|-|true|
@@ -14061,7 +14846,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 
 **Request-example:**
 ```bash
-curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/change/password/merchant?createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&id=&email=&tenantId=&password=&fullName=&dateOfBirth=&phoneNumber=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&status=&address=&proofOfAddress=&version=0&completedProfileAt=yyyy-MM-dd HH:mm:ss&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&name=&description=&slug=&displayName=&category=&merchantVisible=true&type=SYSTEM&permissionIds=""","""&merchantAssignable=true&roleId=&roleName=&businessTradingName=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&profileDetailFilled=true&contactDetailFilled=true&cacDocumentUrl=&kycCompleted=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&pendingApproval=true&complianceReviewStatus=NOT_SUBMITTED&complianceRejectionCode=&complianceRejectionMessage=&complianceNextSteps=&complianceReviewedBy=&complianceReviewedAt=yyyy-MM-dd HH:mm:ss&complianceOverrideEnabled=true&complianceOverrideReason=&complianceOverrideGrantedBy=&complianceOverrideGrantedAt=yyyy-MM-dd HH:mm:ss&complianceOverrideExpiresAt=yyyy-MM-dd HH:mm:ss&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&primaryColor=&accentColor=&fontFamily=&heroHeadline=&heroCtaText=&heroBackgroundImage=&instagramUrl=&facebookUrl=&twitterUrl=&youtubeUrl=&linkedinUrl=&tiktokUrl=&inventoryTrackingEnabled=true&googleOauthRedirectUrl=&googleOauthErrorUrl=&createdBy=&tenantIds=""","""&lastActiveTenantId=&twoFactorEnabled=true&notificationsEnabled=true&googleAccount=true&googleId=&userId='
+curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/change/password/merchant?createdAt=yyyy-MM-dd HH:mm:ss&updatedAt=yyyy-MM-dd HH:mm:ss&id=&email=&tenantId=&password=&fullName=&dateOfBirth=&phoneNumber=&nationality=&idType=&idNumber=&idDocumentUrl=&profileUrl=&status=true&address=&proofOfAddress=&version=0&completedProfileAt=yyyy-MM-dd HH:mm:ss&emailVerifiedAt=yyyy-MM-dd HH:mm:ss&phoneVerifiedAt=yyyy-MM-dd HH:mm:ss&lastLoggedInAt=yyyy-MM-dd HH:mm:ss&name=&description=&slug=&displayName=&category=&merchantVisible=true&type=SYSTEM&permissionIds=""","""&merchantAssignable=true&roleId=&roleName=&businessTradingName=&logo=&businessType=&businessRegistrationNumber=&businessCountry=&businessState=&businessCity=&businessStorefrontUrl=&businessAddress=&businessDescription=&industry=&businessTaxIdNumber=&businessExpectedMonthlyIncome=&staffSize=&businessPrimaryPhoneNumber=&businessSecondaryPhoneNumber=&businessSupportEmailAddress=&businessGeneralEmailAddress=&kybCompleted=true&kybDetailFilled=true&contactDetailFilled=true&cacDocumentUrl=&kycCompleted=true&kycDetailFilled=true&documentsVerified=true&termsAccepted=true&movedToLiveModeAt=yyyy-MM-dd HH:mm:ss&complianceNotes=""","""&liveModeReady=true&pendingApproval=true&complianceReviewStatus=NOT_SUBMITTED&complianceRejectionCode=&complianceRejectionMessage=&complianceNextSteps=&field=&label=&note=&complianceReviewedBy=&complianceReviewedAt=yyyy-MM-dd HH:mm:ss&complianceOverrideEnabled=true&complianceOverrideReason=&complianceOverrideGrantedBy=&complianceOverrideGrantedAt=yyyy-MM-dd HH:mm:ss&complianceOverrideExpiresAt=yyyy-MM-dd HH:mm:ss&currency=&timezone=&language=&code=&currentMode=&liveKey=&testKey=&liveWhitelistedDomains=""","""&testWhitelistedDomains=""","""&primaryColor=&accentColor=&fontFamily=&heroHeadline=&heroCtaText=&heroBackgroundImage=&instagramUrl=&facebookUrl=&twitterUrl=&youtubeUrl=&linkedinUrl=&tiktokUrl=&inventoryTrackingEnabled=true&googleOauthRedirectUrl=&googleOauthErrorUrl=&createdBy=&userId=&tenantIds=""","""&lastActiveTenantId=&twoFactorEnabled=true&notificationsEnabled=true&googleAccount=true&googleId='
 ```
 **Response-fields:**
 
@@ -14128,6 +14913,151 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/br
       "slug": ""
     }
   ]
+}
+```
+
+## Admin Authentication.
+### Login Admin User
+**URL:** https://api.shopsynch.com/v1/admin/auth/login
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** Authenticate an admin user with email and password. Returns JWT token and user details on successful authentication.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|email|string|false|No comments found.|-||
+|password|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/auth/login' --data '{
+  "email": "",
+  "password": ""
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|user|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─email|string|No comments found.|-||
+|└─fullName|string|No comments found.|-||
+|└─phoneNumber|string|No comments found.|-||
+|└─address|string|No comments found.|-||
+|└─role|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|└─merchantId|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─lastActiveTenantId|string|No comments found.|-||
+|└─currentMode|string|No comments found.|-||
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|token|string|No comments found.|-||
+|refreshToken|string|No comments found.|-||
+|expiresIn|int64|No comments found.|-|0|
+
+**Response-example:**
+```json
+{
+  "user": {
+    "id": "",
+    "email": "",
+    "fullName": "",
+    "phoneNumber": "",
+    "address": "",
+    "role": {
+      "name": "",
+      "slug": ""
+    },
+    "merchantId": "",
+    "tenantId": "",
+    "lastActiveTenantId": "",
+    "currentMode": "",
+    "createdAt": "yyyy-MM-dd HH:mm:ss"
+  },
+  "token": "",
+  "refreshToken": "",
+  "expiresIn": 0
+}
+```
+
+### Get Admin User Profile
+**URL:** https://api.shopsynch.com/v1/admin/auth/profile
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Retrieves the authenticated user's profile information.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/auth/profile'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─email|string|No comments found.|-||
+|└─fullName|string|No comments found.|-||
+|└─phoneNumber|string|No comments found.|-||
+|└─address|string|No comments found.|-||
+|└─role|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|└─merchantId|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─lastActiveTenantId|string|No comments found.|-||
+|└─currentMode|string|No comments found.|-||
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "email": "",
+    "fullName": "",
+    "phoneNumber": "",
+    "address": "",
+    "role": {
+      "name": "",
+      "slug": ""
+    },
+    "merchantId": "",
+    "tenantId": "",
+    "lastActiveTenantId": "",
+    "currentMode": "",
+    "createdAt": "yyyy-MM-dd HH:mm:ss"
+  }
 }
 ```
 
@@ -14233,8 +15163,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
 |└─status|string|No comments found.|-||
 |└─paymentGatewayTransactionId|string|No comments found.|-||
 |└─manualPayment|boolean|No comments found.|-|true|
-|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:07"|
-|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:07"|
+|└─createdAt|string|No comments found.|-|"2026-04-23 10:03:22"|
+|└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:22"|
 |message|string|No comments found.|-||
 |status|boolean|No comments found.|-|true|
 
@@ -14254,8 +15184,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
     "status": "",
     "paymentGatewayTransactionId": "",
     "manualPayment": true,
-    "createdAt": "2026-04-17 22:51:07",
-    "updatedAt": "2026-04-17 22:51:07"
+    "createdAt": "2026-04-23 10:03:22",
+    "updatedAt": "2026-04-23 10:03:22"
   },
   "message": "",
   "status": true
@@ -14528,7 +15458,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
 ```
 
 ## Authentication.
-### Register Shop Owner<br><br>Registers a new shop owner (merchant) account with store details. This endpoint handles the complete<br>merchant registration workflow including email verification token generation and merchant creation event publishing.
+### Register Shop Owner
 **URL:** https://api.shopsynch.com/v1/auth/signup/merchant
 
 **Type:** POST
@@ -14537,15 +15467,15 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/pa
 **Content-Type:** application/json
 
 **Description:** This endpoint:
-         - Validates email uniqueness before registration
-         - Automatically assigns the STORE_OWNER role
-         - Creates a new tenant (store) associated with the user
-         - Generates an email verification token (random digit format)
-         - Constructs a verification URL with token and email
-         - Sends a welcome email with verification details
-         - Publishes a MerchantCreatedEvent for event-driven processing
-         - Skips tenant context validation as registration is tenant-independent
-         - Email verification is mandatory before full account activation
+- Validates email uniqueness before registration
+- Automatically assigns the STORE_OWNER role
+- Creates a new tenant (store) associated with the user
+- Generates an email verification token (random digit format)
+- Constructs a verification URL with token and email
+- Sends a welcome email with verification details
+- Publishes a MerchantCreatedEvent for event-driven processing
+- Skips tenant context validation as registration is tenant-independent
+- Email verification is mandatory before full account activation
 
 **Request-headers:**
 
@@ -14608,7 +15538,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 }
 ```
 
-### Login User (Shop Owner/Merchant)<br><br>Authenticates a shop owner or merchant user using email and password credentials. Upon successful authentication,<br>generates a JWT token for subsequent API calls and returns the authenticated user&apos;s details.
+### Login User (Shop Owner/Merchant)
 **URL:** https://api.shopsynch.com/v1/auth/login
 
 **Type:** POST
@@ -14617,20 +15547,20 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 **Content-Type:** application/json
 
 **Description:** This endpoint:
-         - Uses email and password for credential validation
-         - Generates a JWT token with user identity and roles embedded
-         - Token is valid for the configured expiration duration (typically 24 hours or per configuration)
-         - X-Session-Id header is optional and used for tracking login events
-         - Skips tenant context validation as login is tenant-independent
-         - Returned token must be included in Authorization header for subsequent API calls
-         - Password hashing verification is performed server-side for security
+- Uses email and password for credential validation
+- Generates a JWT token with user identity and roles embedded
+- Token is valid for the configured expiration duration (typically 24 hours or per configuration)
+- X-Session-Id header is optional and used for tracking login events
+- Skips tenant context validation as login is tenant-independent
+- Returned token must be included in Authorization header for subsequent API calls
+- Password hashing verification is performed server-side for security
 
 **Request-headers:**
 
 | Header | Type | Required | Description | Since | Example |
 |--------|------|----------|-------------|-------|---------|
 |X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-|X-Session-Id|string|false|Optional session identifier header (X-Session-Id) for tracking login events and session management.<br/>                 If not provided, login proceeds without explicit session tracking.|-||
+|X-Session-Id|string|false|   Optional session identifier header (X-Session-Id) for tracking login events and session management.<br/>                    If not provided, login proceeds without explicit session tracking.|-||
 
 
 **Body-parameters:**
@@ -14694,7 +15624,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 }
 ```
 
-### Login Customer<br><br>Authenticates a customer user using email and password credentials. Upon successful authentication, generates a JWT token<br>for API access and returns the customer&apos;s profile information. Also publishes a customer login event for tracking and analytics.
+### Login Customer
 **URL:** https://api.shopsynch.com/v1/auth/login/customer
 
 **Type:** POST
@@ -14702,22 +15632,15 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 
 **Content-Type:** application/json
 
-**Description:** This endpoint:
-         - Authenticates customer in the context of current tenant/store
-         - Generates JWT token specific to customer identity and permissions
-         - Returns complete customer profile including preferences, account type, and status
-         - X-Session-Id header enables customer login event publishing for tracking and audit logs
-         - Token expiration is returned in milliseconds for client-side token refresh logic
-         - Publishes CustomerLoginEvent only if sessionId is provided and tenant is valid
-         - Customer must belong to the current tenant context for successful authentication
-         - Requires active tenant context (unlike shop owner login which skips tenant check)
+**Description:** Authenticates a customer user using email and password credentials. Upon successful authentication, generates a JWT token
+for API access and returns the customer's profile information. Also publishes a customer login event for tracking and analytics.
 
 **Request-headers:**
 
 | Header | Type | Required | Description | Since | Example |
 |--------|------|----------|-------------|-------|---------|
 |X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-|X-Session-Id|string|false|Optional session identifier header (X-Session-Id) for tracking customer login events and session correlation.<br/>                 If provided along with valid tenant, publishes CustomerLoginEvent for event-driven processing.|-||
+|X-Session-Id|string|false|   Optional session identifier header (X-Session-Id) for tracking customer login events and session correlation.<br/>                    If provided along with valid tenant, publishes CustomerLoginEvent for event-driven processing.|-||
 
 
 **Body-parameters:**
@@ -14742,14 +15665,17 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─id|string|No comments found.|-||
 |└─email|string|No comments found.|-||
 |└─fullName|string|No comments found.|-||
+|└─firstName|string|No comments found.|-||
+|└─lastName|string|No comments found.|-||
 |└─phoneNumber|string|No comments found.|-||
 |└─address|string|No comments found.|-||
 |└─status|string|No comments found.|-||
-|└─createdAt|string|No comments found.|-|"2026-04-17 22:51:07"|
-|└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:07"|
+|└─createdAt|string|No comments found.|-|"2026-04-23 10:03:22"|
+|└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:22"|
 |token|string|No comments found.|-||
 |refreshToken|string|No comments found.|-||
 |expiresIn|int64|No comments found.|-|0|
+|refreshTokenExpiresIn|int64|No comments found.|-|0|
 
 **Response-example:**
 ```json
@@ -14758,19 +15684,22 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "id": "",
     "email": "",
     "fullName": "",
+    "firstName": "",
+    "lastName": "",
     "phoneNumber": "",
     "address": "",
     "status": "",
-    "createdAt": "2026-04-17 22:51:07",
-    "updatedAt": "2026-04-17 22:51:07"
+    "createdAt": "2026-04-23 10:03:22",
+    "updatedAt": "2026-04-23 10:03:22"
   },
   "token": "",
   "refreshToken": "",
-  "expiresIn": 0
+  "expiresIn": 0,
+  "refreshTokenExpiresIn": 0
 }
 ```
 
-### refreshToken
+### Refresh Token
 **URL:** https://api.shopsynch.com/v1/auth/refresh-token
 
 **Type:** POST
@@ -14778,7 +15707,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 
 **Content-Type:** application/json
 
-**Description:** 
+**Description:** Generates a new access token using a refresh token. Validates the provided refresh token, checks its expiration, and if valid,
 
 **Request-headers:**
 
@@ -15042,7 +15971,7 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 
 **Content-Type:** application/json
 
-**Description:** Verify OTP
+**Description:** The OTP sent to the user's WhatsApp number is validated. If valid, the user is authenticated and a JWT token is generated for API access. If the phone number is new, it will be marked as verified. The response includes the authentication token and user details upon successful verification, or an error message if verification fails.
 
 
 **Body-parameters:**
@@ -15116,6 +16045,64 @@ curl -X POST -k -H "Content-Type: application/json" -i 'https://api.shopsynch.co
 ```
 
 ## Admin Compliance Management
+### Review Compliance Submission
+**URL:** https://api.shopsynch.com/v1/admin/compliance/tenants/{tenantId}/review
+
+**Type:** PATCH
+
+
+**Content-Type:** application/json
+
+**Description:** Admin approves, rejects, marks under-review, or suspends a tenant's compliance.
+         When rejecting, rejectionMessage is required.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|No comments found.|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|action|enum|true|Review action to perform. Allowed values: UNDER_REVIEW, APPROVE, REJECT, SUSPEND.<br/>[Enum: SUBMIT, UNDER_REVIEW, APPROVE, REJECT, SUSPEND, OVERRIDE_ENABLED, OVERRIDE_DISABLED]|-|SUBMIT|
+|rejectionCode|string|false|Optional template code from the compliance message bank.|-||
+|globalNote|string|false|Human-readable note explaining the decision. Shown to merchants for rejections.|-||
+|fieldErrors|array|false|Specific fields the merchant must correct.<br/>Validation[Size(max=50, min=0, message=fieldErrors cannot contain more than 50 items)]|-||
+|└─field|string|true|No comments found.|-||
+|└─label|string|true|No comments found.|-||
+|└─note|string|true|No comments found.|-||
+|reviewNote|string|false|Internal note added to the tenant's compliance notes log.|-||
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/compliance/tenants/{tenantId}/review'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {}
+}
+```
+
 ### Get Tenant Compliance Details
 **URL:** https://api.shopsynch.com/v1/admin/compliance/tenants/{tenantId}
 
@@ -15150,68 +16137,151 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ad
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─businessName|string|No comments found.|-||
+|└─settlement|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─bankName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─accountName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─accountNumber|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─bankCode|string|No comments found.|-||
+|└─businessProfile|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tradingName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessType|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─registrationNumber|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storefrontUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─description|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─industry|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─taxIdNumber|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─expectedIncome|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─staffSize|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cacDocumentUrl|string|No comments found.|-||
+|└─contact|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─country|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─state|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─city|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryPhone|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─secondaryPhone|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─supportEmail|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─generalEmail|string|No comments found.|-||
+|└─currentStatus|enum|No comments found.<br/>[Enum: NOT_SUBMITTED, AWAITING_APPROVAL, UNDER_REVIEW, APPROVED, REJECTED, SUSPENDED]|-|NOT_SUBMITTED|
+|└─rejectionMessage|string|No comments found.|-||
+|└─nextSteps|string|No comments found.|-||
+|└─fieldErrors|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|No comments found.|-||
+|└─owner|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─dob|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─nationality|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idType|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idNumber|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─idDocumentUrl|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─proofOfAddressUrl|string|No comments found.|-||
+|└─history|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─adminId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fromStatus|enum|No comments found.<br/>[Enum: NOT_SUBMITTED, AWAITING_APPROVAL, UNDER_REVIEW, APPROVED, REJECTED, SUSPENDED]|-|NOT_SUBMITTED|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─toStatus|enum|No comments found.<br/>[Enum: NOT_SUBMITTED, AWAITING_APPROVAL, UNDER_REVIEW, APPROVED, REJECTED, SUSPENDED]|-|NOT_SUBMITTED|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─event|enum|No comments found.<br/>[Enum: SUBMIT, UNDER_REVIEW, APPROVE, REJECT, SUSPEND, OVERRIDE_ENABLED, OVERRIDE_DISABLED]|-|SUBMIT|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─reason|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fieldErrors|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─timestamp|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─isOverrideActive|boolean|No comments found.|-|true|
+|└─overrideReason|string|No comments found.|-||
 
 **Response-example:**
 ```json
 {
   "status": true,
   "message": "",
-  "data": {}
-}
-```
-
-### Review Compliance Submission
-**URL:** https://api.shopsynch.com/v1/admin/compliance/tenants/{tenantId}/review
-
-**Type:** PATCH
-
-
-**Content-Type:** application/json
-
-**Description:** Admin approves, rejects, marks under-review, or suspends a tenant's compliance.
-         When rejecting, rejectionMessage is required.
-
-**Request-headers:**
-
-| Header | Type | Required | Description | Since | Example |
-|--------|------|----------|-------------|-------|---------|
-|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
-
-
-**Path-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|tenantId|string|true|No comments found.|-||
-
-**Body-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|status|enum|true|The new status to set. Allowed values: UNDER_REVIEW, APPROVED, REJECTED, SUSPENDED.<br/>NOT_SUBMITTED and AWAITING_APPROVAL cannot be set by an admin via this endpoint.<br/>[Enum: NOT_SUBMITTED, AWAITING_APPROVAL, UNDER_REVIEW, APPROVED, REJECTED, SUSPENDED]|-|NOT_SUBMITTED|
-|rejectionCode|string|false|Short machine-readable code explaining the rejection.<br/>e.g. "INCOMPLETE_DOCUMENTS", "INVALID_CAC", "SUSPICIOUS_ACTIVITY".<br/>Required when status is REJECTED.|-||
-|rejectionMessage|string|false|Human-readable message shown to the merchant explaining why they were rejected.<br/>Required when status is REJECTED.|-||
-|nextSteps|string|false|Actionable steps the merchant must take to resolve the rejection and resubmit.<br/>Required when status is REJECTED.|-||
-|reviewNote|string|false|Internal note added to the tenant's complianceNotes log (not shown to merchant).|-||
-
-**Request-example:**
-```bash
-curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/compliance/tenants/{tenantId}/review'
-```
-**Response-fields:**
-
-| Field | Type | Description | Since | Example |
-|-------|------|-------------|-------|---------|
-|status|boolean|No comments found.|-|true|
-|message|string|No comments found.|-||
-|data|object|No comments found.|-||
-
-**Response-example:**
-```json
-{
-  "status": true,
-  "message": "",
-  "data": {}
+  "data": {
+    "tenantId": "",
+    "businessName": "",
+    "settlement": {
+      "bankName": "",
+      "accountName": "",
+      "accountNumber": "",
+      "bankCode": ""
+    },
+    "businessProfile": {
+      "tradingName": "",
+      "businessType": "",
+      "registrationNumber": "",
+      "storefrontUrl": "",
+      "description": "",
+      "industry": "",
+      "taxIdNumber": "",
+      "expectedIncome": "",
+      "staffSize": "",
+      "cacDocumentUrl": ""
+    },
+    "contact": {
+      "country": "",
+      "state": "",
+      "city": "",
+      "address": "",
+      "primaryPhone": "",
+      "secondaryPhone": "",
+      "supportEmail": "",
+      "generalEmail": ""
+    },
+    "currentStatus": "NOT_SUBMITTED",
+    "rejectionMessage": "",
+    "nextSteps": "",
+    "fieldErrors": [
+      {
+        "field": "",
+        "label": "",
+        "note": ""
+      }
+    ],
+    "owner": {
+      "fullName": "",
+      "email": "",
+      "phoneNumber": "",
+      "dob": "",
+      "nationality": "",
+      "address": "",
+      "idType": "",
+      "idNumber": "",
+      "idDocumentUrl": "",
+      "proofOfAddressUrl": ""
+    },
+    "history": [
+      {
+        "createdAt": "yyyy-MM-dd HH:mm:ss",
+        "updatedAt": "yyyy-MM-dd HH:mm:ss",
+        "id": "",
+        "tenantId": "",
+        "adminId": "",
+        "fromStatus": "NOT_SUBMITTED",
+        "toStatus": "NOT_SUBMITTED",
+        "event": "SUBMIT",
+        "reason": "",
+        "fieldErrors": [
+          {
+            "field": "",
+            "label": "",
+            "note": ""
+          }
+        ],
+        "timestamp": "yyyy-MM-dd HH:mm:ss"
+      }
+    ],
+    "isOverrideActive": true,
+    "overrideReason": ""
+  }
 }
 ```
 
@@ -15413,6 +16483,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
+|└─categoryId|string|No comments found.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
@@ -15434,6 +16505,9 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variantSchema|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryDimension|string|The attribute name shared by all variant groups (e.g. "Color", "Size").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─secondaryDimensions|array|Keys present in every SKU's {@code attributes} map (e.g. ["Size", "Storage"]).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
@@ -15464,10 +16538,11 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─rating|int32|           Aggregated product rating.|-|0|
 |└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+|└─responseVersion|string|No comments found.|-||
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","categoryId":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variantSchema":{"primaryDimension":"","secondaryDimensions":[""]},"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss","responseVersion":""}}
 ```
 
 ### updateVariantGroup
@@ -15540,6 +16615,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
+|└─categoryId|string|No comments found.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
@@ -15561,6 +16637,9 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variantSchema|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryDimension|string|The attribute name shared by all variant groups (e.g. "Color", "Size").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─secondaryDimensions|array|Keys present in every SKU's {@code attributes} map (e.g. ["Size", "Storage"]).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
@@ -15591,10 +16670,11 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─rating|int32|           Aggregated product rating.|-|0|
 |└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+|└─responseVersion|string|No comments found.|-||
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","categoryId":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variantSchema":{"primaryDimension":"","secondaryDimensions":[""]},"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss","responseVersion":""}}
 ```
 
 ### removeVariantGroup
@@ -15658,6 +16738,7 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
+|└─categoryId|string|No comments found.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
@@ -15679,6 +16760,9 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variantSchema|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryDimension|string|The attribute name shared by all variant groups (e.g. "Color", "Size").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─secondaryDimensions|array|Keys present in every SKU's {@code attributes} map (e.g. ["Size", "Storage"]).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
@@ -15709,10 +16793,11 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 |└─rating|int32|           Aggregated product rating.|-|0|
 |└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+|└─responseVersion|string|No comments found.|-||
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","categoryId":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variantSchema":{"primaryDimension":"","secondaryDimensions":[""]},"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss","responseVersion":""}}
 ```
 
 ### addSku
@@ -15798,6 +16883,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
+|└─categoryId|string|No comments found.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
@@ -15819,6 +16905,9 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variantSchema|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryDimension|string|The attribute name shared by all variant groups (e.g. "Color", "Size").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─secondaryDimensions|array|Keys present in every SKU's {@code attributes} map (e.g. ["Size", "Storage"]).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
@@ -15849,10 +16938,11 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─rating|int32|           Aggregated product rating.|-|0|
 |└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+|└─responseVersion|string|No comments found.|-||
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","categoryId":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variantSchema":{"primaryDimension":"","secondaryDimensions":[""]},"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss","responseVersion":""}}
 ```
 
 ### updateSku
@@ -15929,6 +17019,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
+|└─categoryId|string|No comments found.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
@@ -15950,6 +17041,9 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variantSchema|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryDimension|string|The attribute name shared by all variant groups (e.g. "Color", "Size").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─secondaryDimensions|array|Keys present in every SKU's {@code attributes} map (e.g. ["Size", "Storage"]).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
@@ -15980,10 +17074,11 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─rating|int32|           Aggregated product rating.|-|0|
 |└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+|└─responseVersion|string|No comments found.|-||
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","categoryId":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variantSchema":{"primaryDimension":"","secondaryDimensions":[""]},"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss","responseVersion":""}}
 ```
 
 ### removeSku
@@ -16048,6 +17143,7 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
+|└─categoryId|string|No comments found.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
@@ -16069,6 +17165,9 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variantSchema|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryDimension|string|The attribute name shared by all variant groups (e.g. "Color", "Size").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─secondaryDimensions|array|Keys present in every SKU's {@code attributes} map (e.g. ["Size", "Storage"]).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
@@ -16099,10 +17198,11 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2
 |└─rating|int32|           Aggregated product rating.|-|0|
 |└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+|└─responseVersion|string|No comments found.|-||
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","categoryId":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variantSchema":{"primaryDimension":"","secondaryDimensions":[""]},"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss","responseVersion":""}}
 ```
 
 ## Delivery Zone Management
@@ -16562,9 +17662,6 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ro
 ```
 
 ## V2 Product Management — supports all product types (SIMPLE, VARIABLE, DIGITAL, BUNDLE).
-
-&lt;p&gt;V1 endpoints remain fully operational at {@code /v1/products}.
-All new product creation should be done via this controller.
 ### allProducts
 **URL:** https://api.shopsynch.com/v2/products
 
@@ -16628,6 +17725,129 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 }
 ```
 
+### Get Product Details by slug
+**URL:** https://api.shopsynch.com/v2/products/slug/{slug}
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Retrieves complete details of a single product including all attributes, specifications, pricing,
+availability, and related information.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|slug|string|true|Unique identifier of the product. Must belong to current tenant context.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/products/slug/{slug}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|               Unique product identifier.|-||
+|└─name|string|             Product display name.|-||
+|└─slug|string|             URL-friendly identifier.|-||
+|└─description|string|      Full product description.|-||
+|└─summary|string|          Short product summary.|-||
+|└─image|string|            Primary product image URL.|-||
+|└─thumbnail|string|        Thumbnail image URL.|-||
+|└─images|array|           Additional image URLs.|-|""","""|
+|└─imageFileId|string|      File entity ID for the primary image.|-||
+|└─thumbnailFileId|string|  File entity ID for the thumbnail.|-||
+|└─imageFileIds|array|     File entity IDs corresponding to each entry in {@code images}.|-|""","""|
+|└─features|array|         List of notable product features.|-|""","""|
+|└─specifications|array|   Technical specification key-value pairs.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─key|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|string|No comments found.|-||
+|└─productType|enum|      Product structure type (SIMPLE, VARIABLE, DIGITAL, BUNDLE).<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|SIMPLE|
+|└─price|number|            Root-level base price (SIMPLE / DIGITAL / BUNDLE).|-|0|
+|└─newPrice|number|         Discounted price at root level.|-|0|
+|└─discount|number|         Discount percentage at root level.|-|0|
+|└─quantityInStock|int32|  Root-level stock (SIMPLE only).|-|0|
+|└─sku|string|              Root-level merchant SKU code.|-||
+|└─attributes|object|       Generic key-value product attributes.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─brand|string|            Resolved brand name.|-||
+|└─category|string|         Resolved category name.|-||
+|└─categoryId|string|No comments found.|-||
+|└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|Concrete value, e.g. "Red", "XL", "8GB".|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|         Hero image URL for this variant.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─imageFileId|string|   File entity ID for the hero image; null for groups created before file tracking.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─colorMeta|object|     Resolved system-colour metadata; {@code null} when not a colour attribute.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─skus|array|          Purchasable units under this group.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|              Internal SKU identifier.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|           Base selling price.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|        Discounted price (computed from price and discount).|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|        Discount percentage applied to price.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32| Units available for purchase.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|             Merchant's internal SKU code.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|      Generic dimension attributes, e.g. {@code {"Storage": "256GB"}}.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variantSchema|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryDimension|string|The attribute name shared by all variant groups (e.g. "Color", "Size").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─secondaryDimensions|array|Keys present in every SKU's {@code attributes} map (e.g. ["Size", "Storage"]).|-|""","""|
+|└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeValue|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─color|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customColor|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─image|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productPriceDetails|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|No comments found.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|A map key.|-||
+|└─ramSize|string|          Deprecated: use {@code attributes.get("RAM")} instead.|-||
+|└─storage|string|          Deprecated: use {@code attributes.get("Storage")} instead.|-||
+|└─size|string|             Deprecated: use {@code attributes.get("Size")} instead.|-||
+|└─color|string|            Deprecated: use {@code attributes.get("Color")} instead.|-||
+|└─customColor|string|      Deprecated: use {@code attributes.get("Color")} instead.|-||
+|└─rating|int32|           Aggregated product rating.|-|0|
+|└─archived|boolean|No comments found.|-|true|
+|└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+|└─responseVersion|string|No comments found.|-||
+
+**Response-example:**
+```json
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","categoryId":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variantSchema":{"primaryDimension":"","secondaryDimensions":[""]},"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss","responseVersion":""}}
+```
+
 ### showProduct
 **URL:** https://api.shopsynch.com/v2/products/{productId}
 
@@ -16688,6 +17908,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
+|└─categoryId|string|No comments found.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
@@ -16709,6 +17930,9 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variantSchema|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryDimension|string|The attribute name shared by all variant groups (e.g. "Color", "Size").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─secondaryDimensions|array|Keys present in every SKU's {@code attributes} map (e.g. ["Size", "Storage"]).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
@@ -16739,10 +17963,11 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |└─rating|int32|           Aggregated product rating.|-|0|
 |└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+|└─responseVersion|string|No comments found.|-||
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","categoryId":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variantSchema":{"primaryDimension":"","secondaryDimensions":[""]},"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss","responseVersion":""}}
 ```
 
 ### createProduct
@@ -16841,6 +18066,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
+|└─categoryId|string|No comments found.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
@@ -16862,6 +18088,9 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variantSchema|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryDimension|string|The attribute name shared by all variant groups (e.g. "Color", "Size").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─secondaryDimensions|array|Keys present in every SKU's {@code attributes} map (e.g. ["Size", "Storage"]).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
@@ -16892,10 +18121,11 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─rating|int32|           Aggregated product rating.|-|0|
 |└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+|└─responseVersion|string|No comments found.|-||
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","categoryId":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variantSchema":{"primaryDimension":"","secondaryDimensions":[""]},"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss","responseVersion":""}}
 ```
 
 ### updateProduct
@@ -16962,6 +18192,25 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|false|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|false|A map key.|-||
+|attributes|object|false|No comments found.|-||
+|└─mapKey|object|false|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|false|any object.|-||
+|productType|enum|false|No comments found.<br/>[Enum: SIMPLE, VARIABLE, DIGITAL, BUNDLE]|-|SIMPLE|
+|isArchived|boolean|false|No comments found.|-|true|
+|variantGroups|array|false|No comments found.|-||
+|└─attributeName|string|true|The variation dimension name, e.g. {@code "Color"}, {@code "Size"}, {@code "RAM"}.<br/>Must be consistent across all variant groups on the same product.|-||
+|└─attributeValue|string|true|The concrete value for this group, e.g. {@code "Red"}, {@code "XL"}, {@code "8GB"}.|-||
+|└─image|string|false|Hero image URL that represents this variant.|-||
+|└─colorId|string|false|Optional system Color document ID.<br/>When provided, the Color's name, code, and ID are resolved and stored in<br/>{@link ProductVariantGroup#getColorMeta()}.|-||
+|└─skus|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one SKU is required per variant group)]|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|true|No comments found.<br/>Validation[Min(value=1, message=Price cannot be less than 1)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount cannot be less than 0); Max(value=100, message=Discount cannot be greater than 100)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|false|Optional for V2 products — stock is managed via the Inventory entity.<br/>Provide this value to seed the initial stock level when creating a product;<br/>it will be written to the Inventory record. Omit to start with zero stock.<br/>Validation[Min(value=0, message=Quantity cannot be negative)]|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|false|Optional merchant-defined SKU code.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributes|object|false|Additional dimension attributes for this SKU.<br/>For example, when the parent variant group is Color=Black, the SKU might carry<br/>{@code {"Storage": "256GB", "RAM": "12GB"}}.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|false|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|false|any object.|-||
+|bundledProductIds|array|false|No comments found.|-|""","""|
 
 **Request-example:**
 ```bash
@@ -17000,6 +18249,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
+|└─categoryId|string|No comments found.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
@@ -17021,6 +18271,9 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variantSchema|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryDimension|string|The attribute name shared by all variant groups (e.g. "Color", "Size").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─secondaryDimensions|array|Keys present in every SKU's {@code attributes} map (e.g. ["Size", "Storage"]).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
@@ -17051,10 +18304,11 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |└─rating|int32|           Aggregated product rating.|-|0|
 |└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+|└─responseVersion|string|No comments found.|-||
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","categoryId":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variantSchema":{"primaryDimension":"","secondaryDimensions":[""]},"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss","responseVersion":""}}
 ```
 
 ### deleteProduct
@@ -17162,6 +18416,7 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
+|└─categoryId|string|No comments found.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
@@ -17183,6 +18438,9 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variantSchema|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryDimension|string|The attribute name shared by all variant groups (e.g. "Color", "Size").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─secondaryDimensions|array|Keys present in every SKU's {@code attributes} map (e.g. ["Size", "Storage"]).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
@@ -17213,10 +18471,11 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/
 |└─rating|int32|           Aggregated product rating.|-|0|
 |└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+|└─responseVersion|string|No comments found.|-||
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","categoryId":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variantSchema":{"primaryDimension":"","secondaryDimensions":[""]},"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss","responseVersion":""}}
 ```
 
 ### Unarchive Product (V2)
@@ -17279,6 +18538,7 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
+|└─categoryId|string|No comments found.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
@@ -17300,6 +18560,9 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variantSchema|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryDimension|string|The attribute name shared by all variant groups (e.g. "Color", "Size").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─secondaryDimensions|array|Keys present in every SKU's {@code attributes} map (e.g. ["Size", "Storage"]).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
@@ -17330,10 +18593,11 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/
 |└─rating|int32|           Aggregated product rating.|-|0|
 |└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+|└─responseVersion|string|No comments found.|-||
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}}
+{"status":true,"message":"","data":{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","categoryId":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variantSchema":{"primaryDimension":"","secondaryDimensions":[""]},"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss","responseVersion":""}}
 ```
 
 ### getSimilarProducts
@@ -17402,6 +18666,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─brand|string|            Resolved brand name.|-||
 |└─category|string|         Resolved category name.|-||
+|└─categoryId|string|No comments found.|-||
 |└─variantGroups|array|    V2 variant groups with SKUs (VARIABLE products).|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|            Internal group identifier.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string| Variation dimension, e.g. "Color", "Size", "RAM".|-||
@@ -17423,6 +18688,9 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
 |└─bundledProductIds|array|Product IDs that make up this bundle (BUNDLE products).|-|""","""|
+|└─variantSchema|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─primaryDimension|string|The attribute name shared by all variant groups (e.g. "Color", "Size").|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─secondaryDimensions|array|Keys present in every SKU's {@code attributes} map (e.g. ["Size", "Storage"]).|-|""","""|
 |└─variations|array|       Legacy V1 colour variations — kept for backward compatibility.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─attributeName|string|No comments found.|-||
@@ -17453,10 +18721,11 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v2/pr
 |└─rating|int32|           Aggregated product rating.|-|0|
 |└─archived|boolean|No comments found.|-|true|
 |└─createdAt|string|        Creation timestamp.|-|yyyy-MM-dd HH:mm:ss|
+|└─responseVersion|string|No comments found.|-||
 
 **Response-example:**
 ```json
-{"status":true,"message":"","data":[{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss"}]}
+{"status":true,"message":"","data":[{"id":"","name":"","slug":"","description":"","summary":"","image":"","thumbnail":"","images":[""],"imageFileId":"","thumbnailFileId":"","imageFileIds":[""],"features":[""],"specifications":[{"key":"","value":""}],"productType":SIMPLE,"price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"brand":"","category":"","categoryId":"","variantGroups":[{"id":"","attributeName":"","attributeValue":"","image":"","imageFileId":"","colorMeta":{"id":"","name":"","code":""},"skus":[{"id":"","price":0,"newPrice":0,"discount":0,"quantityInStock":0,"sku":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}}]}],"bundledProductIds":[""],"variantSchema":{"primaryDimension":"","secondaryDimensions":[""]},"variations":[{"id":"","attributeName":"","attributeValue":"","color":{"id":"","name":"","code":""},"customColor":"","image":"","productPriceDetails":[{"id":"","price":0,"newPrice":0,"ramSize":"","storage":"","size":"","sku":"","quantityInStock":0,"discount":0,"variationAttributes":{"mapKey1":"","mapKey2":""}}]}],"ramSize":"","storage":"","size":"","color":"","customColor":"","rating":0,"archived":true,"createdAt":"yyyy-MM-dd HH:mm:ss","responseVersion":""}]}
 ```
 
 ### getTopSelling
@@ -19059,16 +20328,16 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 }
 ```
 
-### Update Product
-**URL:** https://api.shopsynch.com/v1/products/{productId}
+### Get Product Details by slug
+**URL:** https://api.shopsynch.com/v1/products/slug/{slug}
 
-**Type:** PATCH
+**Type:** GET
 
 
-**Content-Type:** application/json
+**Content-Type:** application/x-www-form-urlencoded
 
-**Description:** Updates an existing product's details. Allows modification of product information including name, description,
-pricing, status, and specifications. Only merchant who owns the product can update it.
+**Description:** Retrieves complete details of a single product including all attributes, specifications, pricing,
+availability, and related information.
 
 **Request-headers:**
 
@@ -19081,53 +20350,11 @@ pricing, status, and specifications. Only merchant who owns the product can upda
 
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
-|productId|string|true|Unique identifier of the product to update. Must belong to authenticated merchant's tenant.|-||
-
-**Body-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|name|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=1, message=Product name must have at least 1 character)]|-||
-|slug|string|false|No comments found.|-||
-|description|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=50, message=Description must be at least 50 characters long)]|-||
-|summary|string|false|No comments found.<br/>Validation[Length(max=255, min=10, message=Summary must be at least 10 characters long)]|-||
-|image|string|false|No comments found.|-||
-|thumbnail|string|false|No comments found.|-||
-|imageList|array|false|No comments found.|-|""","""|
-|features|array|false|No comments found.|-|""","""|
-|price|number|false|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|ramSize|string|false|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB', 'MB', 'KB', or 'TB' (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|storage|string|false|No comments found.|-||
-|size|string|false|No comments found.|-||
-|sku|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=2, message=SKU must have at least 2 characters)]|-||
-|quantityInStock|int32|false|No comments found.<br/>Validation[Min(value=0, message=Quantity in stock cannot be less than 0)]|-|0|
-|brandId|string|false|No comments found.|-||
-|discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount cannot be less than 0); Max(value=100, message=Discount cannot be greater than 100)]|-|0|
-|categoryId|string|false|No comments found.|-||
-|colorId|string|false|No comments found.|-||
-|customColor|string|false|No comments found.|-||
-|specifications|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one specification is required)]|-||
-|└─key|string|true|No comments found.|-||
-|└─value|string|true|No comments found.|-||
-|variations|array|false|No comments found.|-||
-|└─color|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=3, message=color must have at least 3 character)]|-||
-|└─image|string|false|No comments found.|-||
-|└─priceDetails|array|false|No comments found.<br/>Validation[Size(max=2147483647, min=1, message=At least one price detail is required to create a variation)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─price|number|true|No comments found.<br/>Validation[Min(value=1, message=Price can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newPrice|number|false|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ramSize|string|false|No comments found.<br/>Validation[Pattern(regexp=^\d+(GB|MB|KB|TB)$, message=RAM size must be a number followed by 'GB' or 'MB' or 'KB' or TB (e.g., 4GB, 512MB, 12KB, 1TB))]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─storage|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─size|string|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sku|string|false|No comments found.<br/>Validation[Length(max=2147483647, min=2)]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─quantityInStock|int32|true|No comments found.<br/>Validation[Min(value=1, message=Quantity can not be less than 1)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─discount|number|false|No comments found.<br/>Validation[Min(value=0, message=Discount can not be less than 0); Max(value=100, message=Discount can not be greater than 100)]|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─variationAttributes|object|false|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|string|false|A map key.|-||
+|slug|string|true|Unique identifier of the product. Must belong to current tenant context.|-||
 
 **Request-example:**
 ```bash
-curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/{productId}'
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/products/slug/{slug}'
 ```
 **Response-fields:**
 
@@ -20279,8 +21506,8 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 
 **Content-Type:** application/json
 
-**Description:** Release a previously reserved stock.
-         This helps merchants free up inventory for other uses.
+**Description:** Release a previously reserved stock. This helps merchants free up
+         inventory for other uses.
 
 **Request-headers:**
 
@@ -20519,6 +21746,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/us
 | Parameter | Type | Required | Description | Since | Example |
 |-----------|------|----------|-------------|-------|---------|
 |fullName|string|true|No comments found.<br/>Validation[Length(max=2147483647, min=2, message=full name can not be less than 2 characters)]|-||
+|firstName|string|true|No comments found.<br/>Validation[Length(max=2147483647, min=2, message=first name can not be less than 2 characters)]|-||
+|lastName|string|true|No comments found.<br/>Validation[Length(max=2147483647, min=2, message=last name can not be less than 2 characters)]|-||
 |phoneNumber|string|true|No comments found.<br/>Validation[Pattern(regexp=^\+?[1-9]\d{9,14}$, message=Phone number must include country code (e.g. 2348012345678))]|-||
 |address|string|true|No comments found.<br/>Validation[Length(max=2147483647, min=5, message=address can not be less than 5 characters)]|-||
 |idNumber|string|false|No comments found.|-||
@@ -20685,7 +21914,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 ```
 
 ## Order Management
-### Get All Orders<br><br>Retrieves a paginated and filtered list of orders for an authenticated shop owner. Supports sorting by various<br>fields, pagination, and multiple filtering criteria including search terms, order status, payment status, amount ranges,<br>and date ranges.
+### Get All Orders
 **URL:** https://api.shopsynch.com/v1/orders
 
 **Type:** GET
@@ -20693,15 +21922,9 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** This endpoint:
-         - Restricted to shop owner access only (@ShopOwnerAccess)
-         - Retrieves orders for current authenticated tenant/merchant
-         - Converts strongly-typed OrderQueryRequest to Map for service layer compatibility
-         - Supports dynamic filtering: search (order number, customer), status, paymentStatus, amount range, date range
-         - Default sorting by ORDER_DATE in descending order (newest first)
-         - Response includes pagination metadata for client-side navigation
-         - OrderMapper converts entity objects to DTOs with necessary fields only
-         - Useful for order management dashboards and reporting
+**Description:** Retrieves a paginated and filtered list of orders for an authenticated shop owner. Supports sorting by various
+fields, pagination, and multiple filtering criteria including search terms, order status, payment status, amount ranges,
+and date ranges.
 
 **Request-headers:**
 
@@ -20753,7 +21976,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
 }
 ```
 
-### Get Order by Order Number<br><br>Retrieves a single order by its order number. Order number is visible to both customers and merchants,<br>providing a human-readable alternative to internal order IDs.
+### Get Order by Order Number
 **URL:** https://api.shopsynch.com/v1/orders/{orderNumber}/show
 
 **Type:** GET
@@ -20808,7 +22031,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
 }
 ```
 
-### Get Order Detail for Merchant<br><br>Retrieves complete order details including all associated order line items for a shop owner. Provides<br>comprehensive view necessary for order fulfillment, including item quantities, prices, and variants.
+### Get Order Detail for Merchant
 **URL:** https://api.shopsynch.com/v1/orders/{orderId}/detail
 
 **Type:** GET
@@ -20863,7 +22086,7 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
 }
 ```
 
-### Get Order Line Items<br><br>Retrieves all line items (products) associated with a specific order. Each line item includes<br>product details, variant information, quantity ordered, and pricing.
+### Get Order Line Items
 **URL:** https://api.shopsynch.com/v1/orders/{orderId}/items
 
 **Type:** GET
@@ -20871,12 +22094,8 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
 
 **Content-Type:** application/x-www-form-urlencoded
 
-**Description:** This endpoint:
-         - Restricted to shop owner access only (@ShopOwnerAccess)
-         - Returns only items/line items, not order summary
-         - OrderLineMapper includes detailed product information and variant selections
-         - Useful for constructing packing slips or generating invoices
-         - Separating items retrieval allows efficient data loading patterns
+**Description:** Retrieves all line items (products) associated with a specific order. Each line item includes
+product details, variant information, quantity ordered, and pricing.
 
 **Request-headers:**
 
@@ -20943,11 +22162,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:06"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:06"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-23 10:03:20"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:20"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -21007,11 +22228,13 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
         "id": "",
         "email": "",
         "fullName": "",
+        "firstName": "",
+        "lastName": "",
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-17 22:51:05",
-        "updatedAt": "2026-04-17 22:51:05"
+        "createdAt": "2026-04-23 10:03:20",
+        "updatedAt": "2026-04-23 10:03:20"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -21102,11 +22325,13 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─firstName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lastName|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─address|string|No comments found.|-||
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-17 22:51:06"|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-17 22:51:06"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|"2026-04-23 10:03:20"|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|"2026-04-23 10:03:20"|
 |└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
 
 **Response-example:**
@@ -21166,11 +22391,13 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
         "id": "",
         "email": "",
         "fullName": "",
+        "firstName": "",
+        "lastName": "",
         "phoneNumber": "",
         "address": "",
         "status": "",
-        "createdAt": "2026-04-17 22:51:06",
-        "updatedAt": "2026-04-17 22:51:06"
+        "createdAt": "2026-04-23 10:03:20",
+        "updatedAt": "2026-04-23 10:03:20"
       },
       "createdAt": "yyyy-MM-dd HH:mm:ss"
     }
@@ -21178,7 +22405,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 }
 ```
 
-### Force Update Order Status (Admin Override)<br><br>Bypasses all standard transition rules and forcibly sets the order to the given status.<br>Use with caution — this is intended for administrative corrections only (e.g., stuck orders,<br>data recovery, third-party sync discrepancies).
+### Force Update Order Status (Admin Override)
 **URL:** https://api.shopsynch.com/v1/orders/{orderId}/force-status
 
 **Type:** PATCH
@@ -21186,9 +22413,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 
 **Content-Type:** application/json
 
-**Description:** Force Update Order Status (Admin Override)
-
-Bypasses all standard transition rules and forcibly sets the order to the given status.
+**Description:** Bypasses all standard transition rules and forcibly sets the order to the given status.
 Use with caution — this is intended for administrative corrections only (e.g., stuck orders,
 data recovery, third-party sync discrepancies).
 
@@ -21310,6 +22535,332 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/or
   "data": [
     "PENDING"
   ]
+}
+```
+
+## Admin User Management
+### List All Users
+**URL:** https://api.shopsynch.com/v1/admin/users
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Paginated list of all platform users, not scoped to any tenant.
+         Supports optional filters: search (email/name/phone), status, role (slug).
+         Use Spring Pageable query params: page, size, sort.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|search|string|false|Optional search term matched against email, name, or phone.|-||
+|status|string|false|Optional status filter: active, inactive, suspended.|-||
+|role|string|false|  Optional role slug filter (e.g. store_owner, super_admin).|-||
+|page|int32|false|No comments found.|-|0|
+|size|int32|false|No comments found.|-|0|
+|sort|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/users?search=&status=&role=&page=0&size=0&sort='
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─totalPages|int32|Returns the number of total pages.|-|0|
+|└─totalElements|int64|Returns the total amount of elements.|-|0|
+|└─number|int32|Returns the number of the current {@link Slice}. Is always non-negative.|-|0|
+|└─size|int32|Returns the size of the {@link Slice}.|-|0|
+|└─numberOfElements|int32|Returns the number of elements currently on this {@link Slice}.|-|0|
+|└─content|array|Returns the page content as {@link List}.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerified|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantMemberships|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─owner|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleIds|array|No comments found.|-|""","""|
+|└─sort|object|Returns the sorting parameters for the {@link Slice}.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─empty|boolean|Returns whether the current {@link Streamable} is empty.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─orders|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─direction|enum|No comments found.<br/>[Enum: ASC, DESC]|-|ASC|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─property|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ignoreCase|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─nullHandling|enum|No comments found.<br/>[Enum: NATIVE, NULLS_FIRST, NULLS_LAST]|-|NATIVE|
+|└─first|boolean|Returns whether the current {@link Slice} is the first one.|-|true|
+|└─last|boolean|Returns whether the current {@link Slice} is the last one.|-|true|
+|└─pageable|object|Returns the {@link Pageable} that's been used to request the current {@link Slice}.|2.0||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─paged|boolean|Returns whether the current {@link Pageable} contains pagination information.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─unpaged|boolean|Returns whether the current {@link Pageable} does not contain pagination information.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pageNumber|int32|Returns the page to be returned.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pageSize|int32|Returns the number of items to be returned.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─offset|int64|Returns the offset to be taken according to the underlying page and page size.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sort|object|Returns the sorting parameters.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─empty|boolean|Returns whether the current {@link Streamable} is empty.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─orders|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─direction|enum|No comments found.<br/>[Enum: ASC, DESC]|-|ASC|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─property|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ignoreCase|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─nullHandling|enum|No comments found.<br/>[Enum: NATIVE, NULLS_FIRST, NULLS_LAST]|-|NATIVE|
+|└─empty|boolean|Returns whether the current {@link Streamable} is empty.|-|true|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "totalPages": 0,
+    "totalElements": 0,
+    "number": 0,
+    "size": 0,
+    "numberOfElements": 0,
+    "content": [
+      {
+        "id": "",
+        "email": "",
+        "fullName": "",
+        "phoneNumber": "",
+        "status": "",
+        "tenantId": "",
+        "emailVerified": true,
+        "twoFactorEnabled": true,
+        "notificationsEnabled": true,
+        "createdAt": "yyyy-MM-dd HH:mm:ss",
+        "tenantMemberships": [
+          {
+            "tenantId": "",
+            "tenantName": "",
+            "owner": true,
+            "roleIds": [
+              ""
+            ]
+          }
+        ]
+      }
+    ],
+    "sort": {
+      "empty": true,
+      "orders": [
+        {
+          "direction": "ASC",
+          "property": "",
+          "ignoreCase": true,
+          "nullHandling": "NATIVE"
+        }
+      ]
+    },
+    "first": true,
+    "last": true,
+    "pageable": {
+      "paged": true,
+      "unpaged": true,
+      "pageNumber": 0,
+      "pageSize": 0,
+      "offset": 0,
+      "sort": {
+        "empty": true,
+        "orders": [
+          {
+            "direction": "ASC",
+            "property": "",
+            "ignoreCase": true,
+            "nullHandling": "NATIVE"
+          }
+        ]
+      }
+    },
+    "empty": true
+  }
+}
+```
+
+### Get User Detail
+**URL:** https://api.shopsynch.com/v1/admin/users/{userId}
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Full user profile including all tenant memberships (owned stores and joined stores).
+         Tenant names are resolved and embedded in the response.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|userId|string|true|The unique identifier of the user.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/users/{userId}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─email|string|No comments found.|-||
+|└─fullName|string|No comments found.|-||
+|└─phoneNumber|string|No comments found.|-||
+|└─status|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─emailVerified|boolean|No comments found.|-|true|
+|└─twoFactorEnabled|boolean|No comments found.|-|true|
+|└─notificationsEnabled|boolean|No comments found.|-|true|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─tenantMemberships|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─owner|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleIds|array|No comments found.|-|""","""|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "email": "",
+    "fullName": "",
+    "phoneNumber": "",
+    "status": "",
+    "tenantId": "",
+    "emailVerified": true,
+    "twoFactorEnabled": true,
+    "notificationsEnabled": true,
+    "createdAt": "yyyy-MM-dd HH:mm:ss",
+    "tenantMemberships": [
+      {
+        "tenantId": "",
+        "tenantName": "",
+        "owner": true,
+        "roleIds": [
+          ""
+        ]
+      }
+    ]
+  }
+}
+```
+
+### Update User Status
+**URL:** https://api.shopsynch.com/v1/admin/users/{userId}/status
+
+**Type:** PATCH
+
+
+**Content-Type:** application/json
+
+**Description:** Changes a user's account status. Supported values: active, inactive, suspended.
+         A suspended or inactive user cannot authenticate (isEnabled returns false for any non-"active" value).
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|userId|string|true| The unique identifier of the user.|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|status|string|true|No comments found.<br/>Validation[Pattern(regexp=active|inactive|suspended, message=status must be one of: active, inactive, suspended)]|-||
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/users/{userId}/status'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─email|string|No comments found.|-||
+|└─fullName|string|No comments found.|-||
+|└─phoneNumber|string|No comments found.|-||
+|└─status|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─emailVerified|boolean|No comments found.|-|true|
+|└─twoFactorEnabled|boolean|No comments found.|-|true|
+|└─notificationsEnabled|boolean|No comments found.|-|true|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─tenantMemberships|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─owner|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleIds|array|No comments found.|-|""","""|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "email": "",
+    "fullName": "",
+    "phoneNumber": "",
+    "status": "",
+    "tenantId": "",
+    "emailVerified": true,
+    "twoFactorEnabled": true,
+    "notificationsEnabled": true,
+    "createdAt": "yyyy-MM-dd HH:mm:ss",
+    "tenantMemberships": [
+      {
+        "tenantId": "",
+        "tenantName": "",
+        "owner": true,
+        "roleIds": [
+          ""
+        ]
+      }
+    ]
+  }
 }
 ```
 
@@ -21473,6 +23024,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
 |└─expiresIn|int64|No comments found.|-|0|
+|└─refreshTokenExpiresIn|int64|No comments found.|-|0|
 
 **Response-example:**
 ```json
@@ -21483,7 +23035,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "user": {},
     "token": "",
     "refreshToken": "",
-    "expiresIn": 0
+    "expiresIn": 0,
+    "refreshTokenExpiresIn": 0
   }
 }
 ```
@@ -21533,6 +23086,7 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |└─token|string|No comments found.|-||
 |└─refreshToken|string|No comments found.|-||
 |└─expiresIn|int64|No comments found.|-|0|
+|└─refreshTokenExpiresIn|int64|No comments found.|-|0|
 
 **Response-example:**
 ```json
@@ -21543,7 +23097,8 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
     "user": {},
     "token": "",
     "refreshToken": "",
-    "expiresIn": 0
+    "expiresIn": 0,
+    "refreshTokenExpiresIn": 0
   }
 }
 ```
@@ -21619,6 +23174,196 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ba
       "type": ""
     }
   ]
+}
+```
+
+## Admin Cache Management
+### List All Named Caches
+**URL:** https://api.shopsynch.com/v1/admin/cache
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Returns all Spring-managed cache names and their configured TTLs.
+         Does not include manual Redis keys (tenant_*, MERCHANT:*).
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/cache'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─ttlDescription|string|No comments found.|-||
+|└─ttlSeconds|int64|No comments found.|-|0|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "name": "",
+      "ttlDescription": "",
+      "ttlSeconds": 0
+    }
+  ]
+}
+```
+
+### Clear All Named Caches
+**URL:** https://api.shopsynch.com/v1/admin/cache
+
+**Type:** DELETE
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Evicts all entries from every registered Spring cache. Use with caution —
+         there will be an immediate performance impact as caches repopulate from MongoDB.
+         Does NOT clear manual tenant Redis keys.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Request-example:**
+```bash
+curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/cache'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─mapKey|int32|A map key.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "mapKey1": 0,
+    "mapKey2": 0
+  }
+}
+```
+
+### Clear a Specific Named Cache
+**URL:** https://api.shopsynch.com/v1/admin/cache/{cacheName}
+
+**Type:** DELETE
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Evicts all entries from the named Spring cache.
+         Returns 404 if the cache name is not registered.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|cacheName|string|true|The name of the cache to clear (e.g. "stats:orders", "tenants").|-||
+
+**Request-example:**
+```bash
+curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/cache/{cacheName}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {}
+}
+```
+
+### Clear Tenant-Specific Redis Keys
+**URL:** https://api.shopsynch.com/v1/admin/cache/tenant/{tenantId}
+
+**Type:** DELETE
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Removes all manual Redis keys for a merchant:
+         tenant_timezone_{id}, tenant_mode_{id}, MERCHANT:{code},
+         MERCHANT_ID:{code}, MERCHANT_SLUG:{slug}.
+         Also evicts the 'tenants' Spring cache entry for this tenant.
+         The next request for this tenant will re-populate all keys from MongoDB.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|The ID of the tenant whose cache entries should be cleared.|-||
+
+**Request-example:**
+```bash
+curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/cache/tenant/{tenantId}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─mapKey|int64|A map key.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "mapKey1": 0,
+    "mapKey2": 0
+  }
 }
 ```
 
@@ -22072,6 +23817,569 @@ curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1
 }
 ```
 
+## Cart Management V2
+### List Items In Cart
+**URL:** https://api.shopsynch.com/v2/carts/items
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Retrieves all items in the cart for the authenticated customer or session.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+|X-Session-Id|string|false|        Optional session ID for guest carts (X-Session-Id header).|-||
+
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -H "X-Session-Id" -i 'https://api.shopsynch.com/v2/carts/items'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|data|array|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─productId|string|No comments found.|-||
+|└─variantGroupId|string|No comments found.|-||
+|└─skuId|string|No comments found.|-||
+|└─customerId|string|No comments found.|-||
+|└─sessionId|string|No comments found.|-||
+|└─cartBasketId|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─image|string|No comments found.|-||
+|└─price|number|No comments found.|-|0|
+|└─newPrice|number|No comments found.|-|0|
+|└─discount|number|No comments found.|-|0|
+|└─productType|string|No comments found.|-||
+|└─attributes|object|Generic attribute bag snapshotted from the ProductSku at add-to-cart time.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─sku|string|No comments found.|-||
+|└─quantityInStock|int32|No comments found.|-|0|
+|└─quantity|int32|No comments found.|-|0|
+|└─tenantId|string|No comments found.|-||
+|message|string|No comments found.|-||
+|status|boolean|No comments found.|-|true|
+
+**Response-example:**
+```json
+{"data":[{"id":"","productId":"","variantGroupId":"","skuId":"","customerId":"","sessionId":"","cartBasketId":"","name":"","image":"","price":0,"newPrice":0,"discount":0,"productType":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"sku":"","quantityInStock":0,"quantity":0,"tenantId":""}],"message":"","status":true}
+```
+
+### Add Item To Cart
+**URL:** https://api.shopsynch.com/v2/carts/add
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** Adds a V2 product to the cart. For VARIABLE products, both skuId and
+         variantGroupId must be provided. For SIMPLE, DIGITAL, and BUNDLE products,
+         neither is needed.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+|X-Session-Id|string|false|        Optional session ID for guest carts (X-Session-Id header).|-||
+
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|productId|string|true|No comments found.|-||
+|variantGroupId|string|false|Required for VARIABLE products. Must be provided together with skuId.<br/>Identifies the ProductVariantGroup (e.g. the "Color=Red" group).|-||
+|skuId|string|false|Required for VARIABLE products. Must be provided together with variantGroupId.<br/>Identifies the ProductSku within the variant group.|-||
+|quantity|int32|true|No comments found.<br/>Validation[Min(value=1)]|-|0|
+|tenantId|string|false|No comments found.|-||
+|sessionId|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -H "X-Session-Id" -i 'https://api.shopsynch.com/v2/carts/add' --data '{
+  "productId": "",
+  "variantGroupId": "",
+  "skuId": "",
+  "quantity": 0,
+  "tenantId": "",
+  "sessionId": ""
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─productId|string|No comments found.|-||
+|└─variantGroupId|string|No comments found.|-||
+|└─skuId|string|No comments found.|-||
+|└─customerId|string|No comments found.|-||
+|└─sessionId|string|No comments found.|-||
+|└─cartBasketId|string|No comments found.|-||
+|└─name|string|No comments found.|-||
+|└─image|string|No comments found.|-||
+|└─price|number|No comments found.|-|0|
+|└─newPrice|number|No comments found.|-|0|
+|└─discount|number|No comments found.|-|0|
+|└─productType|string|No comments found.|-||
+|└─attributes|object|Generic attribute bag snapshotted from the ProductSku at add-to-cart time.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
+|└─sku|string|No comments found.|-||
+|└─quantityInStock|int32|No comments found.|-|0|
+|└─quantity|int32|No comments found.|-|0|
+|└─tenantId|string|No comments found.|-||
+|message|string|No comments found.|-||
+|status|boolean|No comments found.|-|true|
+
+**Response-example:**
+```json
+{"data":{"id":"","productId":"","variantGroupId":"","skuId":"","customerId":"","sessionId":"","cartBasketId":"","name":"","image":"","price":0,"newPrice":0,"discount":0,"productType":"","attributes":{"mapKey":{"warning":"Using java.util.Object as a Map value is not recommended. Smart-doc cannot process it properly. Please use a specific type for better documentation generation."}}"sku":"","quantityInStock":0,"quantity":0,"tenantId":""},"message":"","status":true}
+```
+
+### Remove Item From Cart
+**URL:** https://api.shopsynch.com/v2/carts/remove/{cartItemId}
+
+**Type:** PATCH
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Removes an item from the cart by its ID.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+|X-Session-Id|string|false|        Optional session ID for guest carts (X-Session-Id header).|-||
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|cartItemId|string|true|       The ID of the cart item to remove.|-||
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -H "X-Session-Id" -i 'https://api.shopsynch.com/v2/carts/remove/{cartItemId}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|data|object|No comments found.|-||
+|└─any object|object|any object.|-||
+|message|string|No comments found.|-||
+|status|boolean|No comments found.|-|true|
+
+**Response-example:**
+```json
+{
+  "data": {},
+  "message": "",
+  "status": true
+}
+```
+
+### Increment Item Quantity
+**URL:** https://api.shopsynch.com/v2/carts/item/increment/quantity/{cartId}
+
+**Type:** PATCH
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Increases the quantity of a cart item by 1.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+|X-Session-Id|string|false|        Optional session ID for guest carts (X-Session-Id header).|-||
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|cartId|string|true|           The ID of the cart item.|-||
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -H "X-Session-Id" -i 'https://api.shopsynch.com/v2/carts/item/increment/quantity/{cartId}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|data|object|No comments found.|-||
+|└─any object|object|any object.|-||
+|message|string|No comments found.|-||
+|status|boolean|No comments found.|-|true|
+
+**Response-example:**
+```json
+{
+  "data": {},
+  "message": "",
+  "status": true
+}
+```
+
+### Decrement Item Quantity
+**URL:** https://api.shopsynch.com/v2/carts/item/decrement/quantity/{cartId}
+
+**Type:** PATCH
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Decreases the quantity of a cart item by 1. Removes the item if quantity reaches 0.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+|X-Session-Id|string|false|        Optional session ID for guest carts (X-Session-Id header).|-||
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|cartId|string|true|           The ID of the cart item.|-||
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -H "X-Session-Id" -i 'https://api.shopsynch.com/v2/carts/item/decrement/quantity/{cartId}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|data|object|No comments found.|-||
+|└─any object|object|any object.|-||
+|message|string|No comments found.|-||
+|status|boolean|No comments found.|-|true|
+
+**Response-example:**
+```json
+{
+  "data": {},
+  "message": "",
+  "status": true
+}
+```
+
+### Clear Cart
+**URL:** https://api.shopsynch.com/v2/carts/clear
+
+**Type:** DELETE
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Removes all items from the cart.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+|X-Session-Id|string|false|        Optional session ID for guest carts (X-Session-Id header).|-||
+
+
+**Request-example:**
+```bash
+curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -H "X-Session-Id" -i 'https://api.shopsynch.com/v2/carts/clear'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|data|object|No comments found.|-||
+|└─any object|object|any object.|-||
+|message|string|No comments found.|-||
+|status|boolean|No comments found.|-|true|
+
+**Response-example:**
+```json
+{
+  "data": {},
+  "message": "",
+  "status": true
+}
+```
+
+### Checkout Cart
+**URL:** https://api.shopsynch.com/v2/carts/checkout
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** Converts the authenticated customer's cart into an order.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+|X-Session-Id|string|false|        Optional session ID (X-Session-Id header) for merging guest items.|-||
+
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|firstName|string|true|No comments found.<br/>Validation[Length(max=100, min=2, message=first name is must be a minimum of 2 and maximum of 100 characters)]|-||
+|lastName|string|true|No comments found.<br/>Validation[Length(max=100, min=2, message=first name is must be a minimum of 2 and maximum of 100 characters)]|-||
+|email|string|true|No comments found.|-||
+|phoneNumber|string|true|No comments found.|-||
+|country|string|false|No comments found.|-||
+|currency|string|false|No comments found.|-||
+|state|string|true|No comments found.|-||
+|city|string|true|No comments found.|-||
+|area|string|false|No comments found.<br/>Validation[Length(max=100, min=2, message=area is must be a minimum of 2 and maximum of 100 characters)]|-||
+|landmark|string|false|No comments found.<br/>Validation[Length(max=100, min=2, message=landmark is must be a minimum of 2 and maximum of 100 characters)]|-||
+|meta|object|false|No comments found.|-||
+|shippingAddress|string|true|No comments found.|-||
+|billingAddress|string|false|No comments found.|-||
+|totalAmount|number|false|No comments found.|-|0|
+|subtotal|number|false|No comments found.|-|0|
+|discountAmount|number|false|No comments found.|-|0|
+|shippingFee|number|false|No comments found.|-|0|
+|taxAmount|number|false|No comments found.|-|0|
+|shippingMethod|string|true|No comments found.|-||
+|paymentMethod|string|true|No comments found.|-||
+|promoCode|string|false|No comments found.|-||
+|tenantId|string|false|No comments found.|-||
+|sessionId|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -H "X-Session-Id" -i 'https://api.shopsynch.com/v2/carts/checkout' --data '{
+  "firstName": "",
+  "lastName": "",
+  "email": "",
+  "phoneNumber": "",
+  "country": "",
+  "currency": "",
+  "state": "",
+  "city": "",
+  "area": "",
+  "landmark": "",
+  "meta": {},
+  "shippingAddress": "",
+  "billingAddress": "",
+  "totalAmount": 0,
+  "subtotal": 0,
+  "discountAmount": 0,
+  "shippingFee": 0,
+  "taxAmount": 0,
+  "shippingMethod": "",
+  "paymentMethod": "",
+  "promoCode": "",
+  "tenantId": "",
+  "sessionId": ""
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|data|object|No comments found.|-||
+|└─any object|object|any object.|-||
+|message|string|No comments found.|-||
+|status|boolean|No comments found.|-|true|
+
+**Response-example:**
+```json
+{
+  "data": {},
+  "message": "",
+  "status": true
+}
+```
+
+### Guest Checkout Cart
+**URL:** https://api.shopsynch.com/v2/carts/guest/checkout
+
+**Type:** POST
+
+
+**Content-Type:** application/json
+
+**Description:** Converts a guest session's cart into an order. Requires the X-Session-Id header.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+|X-Session-Id|string|true|The guest session ID (X-Session-Id header, required).|-||
+
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|firstName|string|true|No comments found.<br/>Validation[Length(max=100, min=2, message=first name is must be a minimum of 2 and maximum of 100 characters)]|-||
+|lastName|string|true|No comments found.<br/>Validation[Length(max=100, min=2, message=first name is must be a minimum of 2 and maximum of 100 characters)]|-||
+|email|string|true|No comments found.|-||
+|phoneNumber|string|true|No comments found.|-||
+|country|string|false|No comments found.|-||
+|currency|string|false|No comments found.|-||
+|state|string|true|No comments found.|-||
+|city|string|true|No comments found.|-||
+|area|string|false|No comments found.<br/>Validation[Length(max=100, min=2, message=area is must be a minimum of 2 and maximum of 100 characters)]|-||
+|landmark|string|false|No comments found.<br/>Validation[Length(max=100, min=2, message=landmark is must be a minimum of 2 and maximum of 100 characters)]|-||
+|meta|object|false|No comments found.|-||
+|shippingAddress|string|true|No comments found.|-||
+|billingAddress|string|false|No comments found.|-||
+|totalAmount|number|false|No comments found.|-|0|
+|subtotal|number|false|No comments found.|-|0|
+|discountAmount|number|false|No comments found.|-|0|
+|shippingFee|number|false|No comments found.|-|0|
+|taxAmount|number|false|No comments found.|-|0|
+|shippingMethod|string|true|No comments found.|-||
+|paymentMethod|string|true|No comments found.|-||
+|promoCode|string|false|No comments found.|-||
+|tenantId|string|false|No comments found.|-||
+|sessionId|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -H "X-Session-Id" -i 'https://api.shopsynch.com/v2/carts/guest/checkout' --data '{
+  "firstName": "",
+  "lastName": "",
+  "email": "",
+  "phoneNumber": "",
+  "country": "",
+  "currency": "",
+  "state": "",
+  "city": "",
+  "area": "",
+  "landmark": "",
+  "meta": {},
+  "shippingAddress": "",
+  "billingAddress": "",
+  "totalAmount": 0,
+  "subtotal": 0,
+  "discountAmount": 0,
+  "shippingFee": 0,
+  "taxAmount": 0,
+  "shippingMethod": "",
+  "paymentMethod": "",
+  "promoCode": "",
+  "tenantId": "",
+  "sessionId": ""
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|data|object|No comments found.|-||
+|└─any object|object|any object.|-||
+|message|string|No comments found.|-||
+|status|boolean|No comments found.|-|true|
+
+**Response-example:**
+```json
+{
+  "data": {},
+  "message": "",
+  "status": true
+}
+```
+
+## Order Status History Management
+### Get Order History/Tracking
+**URL:** https://api.shopsynch.com/v1/order-status-history/{orderNumber}
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Retrieves the complete status history for an order by order number. This endpoint is publicly accessible and displays the order tracking timeline showing all status transitions from placement to delivery. Results are cached for performance; cache is invalidated on any status update.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|orderNumber|string|true|The order number (e.g., ORD-20260308-001) to track|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/order-status-history/{orderNumber}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─orderId|string|No comments found.|-||
+|└─previousStatus|string|No comments found.|-||
+|└─newStatus|string|No comments found.|-||
+|└─actorId|string|No comments found.|-||
+|└─actorType|enum|No comments found.<br/>[Enum: CUSTOMER, ADMIN, SYSTEM, API, MERCHANT]|-|CUSTOMER|
+|└─reason|string|No comments found.|-||
+|└─ipAddress|string|No comments found.|-||
+|└─userAgent|string|No comments found.|-||
+|└─metadata|object|No comments found.|-||
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "id": "",
+      "orderId": "",
+      "previousStatus": "",
+      "newStatus": "",
+      "actorId": "",
+      "actorType": "CUSTOMER",
+      "reason": "",
+      "ipAddress": "",
+      "userAgent": "",
+      "metadata": {},
+      "createdAt": "yyyy-MM-dd HH:mm:ss"
+    }
+  ]
+}
+```
+
 ## LocalGovernmentController
 ### index
 **URL:** https://api.shopsynch.com/v1/local-governments/{stateId}
@@ -22145,24 +24453,17 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/lo
 }
 ```
 
-## Natural Language
+## Admin Platform Dashboard
+### Platform KPI Overview
+**URL:** https://api.shopsynch.com/v1/admin/dashboard/overview
 
-Allows merchants to query dashboard stats using plain English phrases.
-
-Flow:
-1. Receives natural language &quot;query&quot; (e.g. &quot;how are my sales today?&quot;).
-2. Delegates to {@link NaturalLanguageStatParser} to translate the text into structured dates.
-3. Uses {@link StatsQueryService} to fetch actual business metrics for those dates.
-4. Returns both the interpreted range and the resulting statistics data.
-### query
-**URL:** https://api.shopsynch.com/v1/stats/natural-query
-
-**Type:** POST
+**Type:** GET
 
 
-**Content-Type:** application/json
+**Content-Type:** application/x-www-form-urlencoded
 
-**Description:** 
+**Description:** Returns total merchants, user count, compliance status breakdown,
+         and this-month signup count. Platform-wide, not tenant-scoped.
 
 **Request-headers:**
 
@@ -22171,100 +24472,145 @@ Flow:
 |X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
 
 
-**Body-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|query|string|false|No comments found.|-||
-
 **Request-example:**
 ```bash
-curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/stats/natural-query' --data '{
-  "query": ""
-}'
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/dashboard/overview'
 ```
 **Response-fields:**
 
 | Field | Type | Description | Since | Example |
 |-------|------|-------------|-------|---------|
-|interpretedAs|string|No comments found.|-||
-|from|string|No comments found.|-|yyyy-MM-dd|
-|to|string|No comments found.|-|yyyy-MM-dd|
-|domains|array|No comments found.<br/>[Enum: ORDERS, REVENUE, PRODUCTS, CUSTOMERS, INVENTORY]|-|[ORDERS]|
-|data|object|No comments found.|-||
-|└─orderMetrics|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalOrders|int64|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─cancelledOrders|int64|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─completedOrders|int64|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pendingOrders|int64|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─processingOrders|int64|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─shippedOrders|int64|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─inTransitOrders|int64|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─issuesOrders|int64|Count of orders with an issue, e.g., missing shipping address or failed payment|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─unpaidOrders|int64|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pendingWaybills|int64|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─averageOrderValue|number|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─byFulfillmentStatus|array|Breakdown of orders categorized by fulfillment state|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─topShippingMethods|array|Most popular shipping methods within the timeframe|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
-|└─revenueMetrics|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─grossRevenue|number|Total revenue before any deductions (Discounts/Refunds)|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─netRevenue|number|Final revenue after all deductions have been subtracted|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─refundsTotal|number|Total amount refunded to customers in this period|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalDiscounts|number|Total monetary value of coupons and discounts applied|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─revenueByPaymentMethod|object|Breakdown of revenue (Net) partitioned by the payment channel used (e.g., "manual_transfer", "card")|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|number|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currency|string|ISO currency code, e.g., "NGN"|-||
-|└─productMetrics|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalProducts|int64|Total unique products registered in the system|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newProductsCreated|int64|Count of products created within the filter period|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalInStockProducts|int64|Count of products currently having a stock level > 0|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalOutOfStockProducts|int64|Count of products currently out of stock|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalProductsValue|number|Estimated cumulative monetary value of all stock items in inventory|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lowStockProducts|int64|Count of products with at least one inventory record at or below its reorder level|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─topSellingProducts|array|Enriched list of top-performing products|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─productId|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalQuantitySold|int64|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pct|double|Percentage of the top seller's quantity, e.g. top=100%, second=82%.|-|0.0|
-|└─customerMetrics|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─newCustomers|int64|Number of customers who made their first purchase in this period|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─returningCustomers|int64|Number of unique customers with more than one order in their history|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalCustomers|int64|No comments found.|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─topCitiesForOrders|object|Geographic breakdown of order volume by city|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|int64|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─topStatesForOrders|object|Geographic breakdown of order volume by state/province|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|int64|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─topCustomersBySpend|array|Top identified customers ranked by total spend. Only includes orders with a non-null customerId.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─customerId|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─name|string|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─value|number|No comments found.|-|0|
-|└─inventoryMetrics|object|No comments found.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalInventoryRecords|int64|Total inventory records (one per product+sku+warehouse combination)|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalOnHandQty|int64|Sum of {@code onHandQty} across all records|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalAvailableQty|int64|Sum of {@code availableQty} (onHand - reserved) across all records|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalReservedQty|int64|Sum of {@code reservedQty} across all records|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─lowStockItems|int64|Count of records where {@code onHandQty <= reorderLevel} and {@code reorderLevel > 0}|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─outOfStockItems|int64|Count of records where {@code availableQty == 0}|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalInventoryValue|number|Sum of {@code onHandQty * product.price} across all records|-|0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─byWarehouse|array|Per-warehouse breakdown: [{warehouse, totalOnHand, totalAvailable}]|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|object|A map key.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─any object|object|any object.|-||
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─stockTurnoverRatio|double|Stock Turnover Ratio = units sold in period / current on-hand qty|-|0.0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─outOfStockRate|double|Out-of-stock percentage = outOfStockItems / totalInventoryRecords * 100|-|0.0|
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─totalUnitsSold|int64|Total units sold in the filter period (used to derive stockTurnoverRatio)|-|0|
-|└─status|string|No comments found.|-||
-|summary|string|No comments found.|-||
-|providerUsed|string|No comments found.|-||
-|clarificationNeeded|boolean|No comments found.|-|true|
+|status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─totalMerchants|int64|No comments found.|-|0|
+|└─activeMerchants|int64|No comments found.|-|0|
+|└─inactiveMerchants|int64|No comments found.|-|0|
+|└─totalUsers|int64|No comments found.|-|0|
+|└─merchantsSignedUpThisMonth|int64|No comments found.|-|0|
+|└─merchantsByComplianceStatus|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─mapKey|int64|A map key.|-||
 
 **Response-example:**
 ```json
-{"interpretedAs":"","from":"yyyy-MM-dd","to":"yyyy-MM-dd","domains":[ORDERS],"data":{"orderMetrics":{"totalOrders":0,"cancelledOrders":0,"completedOrders":0,"pendingOrders":0,"processingOrders":0,"shippedOrders":0,"inTransitOrders":0,"issuesOrders":0,"unpaidOrders":0,"pendingWaybills":0,"averageOrderValue":0,"byFulfillmentStatus":[{"mapKey":{}}],"topShippingMethods":[{"mapKey":{}}]},"revenueMetrics":{"grossRevenue":0,"netRevenue":0,"refundsTotal":0,"totalDiscounts":0,"revenueByPaymentMethod":{"mapKey1":0,"mapKey2":0}"currency":""},"productMetrics":{"totalProducts":0,"newProductsCreated":0,"totalInStockProducts":0,"totalOutOfStockProducts":0,"totalProductsValue":0,"lowStockProducts":0,"topSellingProducts":[{"productId":"","name":"","totalQuantitySold":0,"pct":0.0}]},"customerMetrics":{"newCustomers":0,"returningCustomers":0,"totalCustomers":0,"topCitiesForOrders":{"mapKey1":0,"mapKey2":0}"topStatesForOrders":{"mapKey1":0,"mapKey2":0}"topCustomersBySpend":[{"customerId":"","name":"","value":0}]},"inventoryMetrics":{"totalInventoryRecords":0,"totalOnHandQty":0,"totalAvailableQty":0,"totalReservedQty":0,"lowStockItems":0,"outOfStockItems":0,"totalInventoryValue":0,"byWarehouse":[{"mapKey":{}}],"stockTurnoverRatio":0.0,"outOfStockRate":0.0,"totalUnitsSold":0},"status":""},"summary":"","providerUsed":"","clarificationNeeded":true,"message":""}
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "totalMerchants": 0,
+    "activeMerchants": 0,
+    "inactiveMerchants": 0,
+    "totalUsers": 0,
+    "merchantsSignedUpThisMonth": 0,
+    "merchantsByComplianceStatus": {
+      "mapKey1": 0,
+      "mapKey2": 0
+    }
+  }
+}
+```
+
+### Merchant Registration Trend
+**URL:** https://api.shopsynch.com/v1/admin/dashboard/merchants/trend
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Monthly merchant signup count for the last 12 calendar months.
+         Returns exactly 12 entries — months with no signups are zero-filled.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/dashboard/merchants/trend'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─monthlySignups|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─yearMonth|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─count|int64|No comments found.|-|0|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "monthlySignups": [
+      {
+        "yearMonth": "",
+        "count": 0
+      }
+    ]
+  }
+}
+```
+
+### Compliance Status Summary
+**URL:** https://api.shopsynch.com/v1/admin/dashboard/compliance/summary
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Count of merchants in each ComplianceReviewStatus state.
+         Intended for the compliance pipeline view in the admin dashboard.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/dashboard/compliance/summary'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─notSubmitted|int64|No comments found.|-|0|
+|└─awaitingApproval|int64|No comments found.|-|0|
+|└─underReview|int64|No comments found.|-|0|
+|└─approved|int64|No comments found.|-|0|
+|└─rejected|int64|No comments found.|-|0|
+|└─suspended|int64|No comments found.|-|0|
+|└─total|int64|No comments found.|-|0|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "notSubmitted": 0,
+    "awaitingApproval": 0,
+    "underReview": 0,
+    "approved": 0,
+    "rejected": 0,
+    "suspended": 0,
+    "total": 0
+  }
+}
 ```
 
 ## App Token Management
@@ -23213,6 +25559,722 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ge
 }
 ```
 
+## Admin Merchant Management
+### List All Merchants
+**URL:** https://api.shopsynch.com/v1/admin/merchants
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Paginated list of all tenants with optional filters.
+         Supports: complianceReviewStatus, currentMode, status (true/false), search (name/code/email).
+         Use Spring Pageable query params: page, size, sort.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|search|string|false|              Optional search term matched against name, code, or support email.|-||
+|complianceReviewStatus|string|false|Optional filter by compliance status (e.g. APPROVED, AWAITING_APPROVAL).|-||
+|currentMode|string|false|         Optional filter by mode (TEST_MODE or LIVE_MODE).|-||
+|status|string|false|              Optional filter by active status (true or false).|-||
+|page|int32|false|No comments found.|-|0|
+|size|int32|false|No comments found.|-|0|
+|sort|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/merchants?search=&complianceReviewStatus=&currentMode=&status=&page=0&size=0&sort='
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─totalPages|int32|Returns the number of total pages.|-|0|
+|└─totalElements|int64|Returns the total amount of elements.|-|0|
+|└─number|int32|Returns the number of the current {@link Slice}. Is always non-negative.|-|0|
+|└─size|int32|Returns the size of the {@link Slice}.|-|0|
+|└─numberOfElements|int32|Returns the number of elements currently on this {@link Slice}.|-|0|
+|└─content|array|Returns the page content as {@link List}.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─logo|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currentMode|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewStatus|enum|No comments found.<br/>[Enum: NOT_SUBMITTED, AWAITING_APPROVAL, UNDER_REVIEW, APPROVED, REJECTED, SUSPENDED]|-|NOT_SUBMITTED|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─industry|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessType|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ownerUserId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ownerEmail|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ownerFullName|string|No comments found.|-||
+|└─sort|object|Returns the sorting parameters for the {@link Slice}.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─empty|boolean|Returns whether the current {@link Streamable} is empty.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─orders|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─direction|enum|No comments found.<br/>[Enum: ASC, DESC]|-|ASC|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─property|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ignoreCase|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─nullHandling|enum|No comments found.<br/>[Enum: NATIVE, NULLS_FIRST, NULLS_LAST]|-|NATIVE|
+|└─first|boolean|Returns whether the current {@link Slice} is the first one.|-|true|
+|└─last|boolean|Returns whether the current {@link Slice} is the last one.|-|true|
+|└─pageable|object|Returns the {@link Pageable} that's been used to request the current {@link Slice}.|2.0||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─paged|boolean|Returns whether the current {@link Pageable} contains pagination information.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─unpaged|boolean|Returns whether the current {@link Pageable} does not contain pagination information.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pageNumber|int32|Returns the page to be returned.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pageSize|int32|Returns the number of items to be returned.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─offset|int64|Returns the offset to be taken according to the underlying page and page size.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sort|object|Returns the sorting parameters.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─empty|boolean|Returns whether the current {@link Streamable} is empty.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─orders|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─direction|enum|No comments found.<br/>[Enum: ASC, DESC]|-|ASC|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─property|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ignoreCase|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─nullHandling|enum|No comments found.<br/>[Enum: NATIVE, NULLS_FIRST, NULLS_LAST]|-|NATIVE|
+|└─empty|boolean|Returns whether the current {@link Streamable} is empty.|-|true|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "totalPages": 0,
+    "totalElements": 0,
+    "number": 0,
+    "size": 0,
+    "numberOfElements": 0,
+    "content": [
+      {
+        "id": "",
+        "businessTradingName": "",
+        "code": "",
+        "slug": "",
+        "logo": "",
+        "currentMode": "",
+        "status": true,
+        "complianceReviewStatus": "NOT_SUBMITTED",
+        "complianceOverrideEnabled": true,
+        "businessSupportEmailAddress": "",
+        "industry": "",
+        "businessType": "",
+        "createdAt": "yyyy-MM-dd HH:mm:ss",
+        "updatedAt": "yyyy-MM-dd HH:mm:ss",
+        "ownerUserId": "",
+        "ownerEmail": "",
+        "ownerFullName": ""
+      }
+    ],
+    "sort": {
+      "empty": true,
+      "orders": [
+        {
+          "direction": "ASC",
+          "property": "",
+          "ignoreCase": true,
+          "nullHandling": "NATIVE"
+        }
+      ]
+    },
+    "first": true,
+    "last": true,
+    "pageable": {
+      "paged": true,
+      "unpaged": true,
+      "pageNumber": 0,
+      "pageSize": 0,
+      "offset": 0,
+      "sort": {
+        "empty": true,
+        "orders": [
+          {
+            "direction": "ASC",
+            "property": "",
+            "ignoreCase": true,
+            "nullHandling": "NATIVE"
+          }
+        ]
+      }
+    },
+    "empty": true
+  }
+}
+```
+
+### Compliance Queue
+**URL:** https://api.shopsynch.com/v1/admin/merchants/compliance-queue
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Returns merchants with AWAITING_APPROVAL or UNDER_REVIEW compliance status.
+         These are merchants who have submitted their details and are waiting to go live.
+         Use Spring Pageable query params: page, size, sort.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Query-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|page|int32|false|No comments found.|-|0|
+|size|int32|false|No comments found.|-|0|
+|sort|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/merchants/compliance-queue?page=0&size=0&sort='
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─totalPages|int32|Returns the number of total pages.|-|0|
+|└─totalElements|int64|Returns the total amount of elements.|-|0|
+|└─number|int32|Returns the number of the current {@link Slice}. Is always non-negative.|-|0|
+|└─size|int32|Returns the size of the {@link Slice}.|-|0|
+|└─numberOfElements|int32|Returns the number of elements currently on this {@link Slice}.|-|0|
+|└─content|array|Returns the page content as {@link List}.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessTradingName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─code|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─slug|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─logo|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─currentMode|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceReviewStatus|enum|No comments found.<br/>[Enum: NOT_SUBMITTED, AWAITING_APPROVAL, UNDER_REVIEW, APPROVED, REJECTED, SUSPENDED]|-|NOT_SUBMITTED|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─complianceOverrideEnabled|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessSupportEmailAddress|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─industry|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─businessType|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ownerUserId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ownerEmail|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ownerFullName|string|No comments found.|-||
+|└─sort|object|Returns the sorting parameters for the {@link Slice}.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─empty|boolean|Returns whether the current {@link Streamable} is empty.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─orders|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─direction|enum|No comments found.<br/>[Enum: ASC, DESC]|-|ASC|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─property|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ignoreCase|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─nullHandling|enum|No comments found.<br/>[Enum: NATIVE, NULLS_FIRST, NULLS_LAST]|-|NATIVE|
+|└─first|boolean|Returns whether the current {@link Slice} is the first one.|-|true|
+|└─last|boolean|Returns whether the current {@link Slice} is the last one.|-|true|
+|└─pageable|object|Returns the {@link Pageable} that's been used to request the current {@link Slice}.|2.0||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─paged|boolean|Returns whether the current {@link Pageable} contains pagination information.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─unpaged|boolean|Returns whether the current {@link Pageable} does not contain pagination information.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pageNumber|int32|Returns the page to be returned.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─pageSize|int32|Returns the number of items to be returned.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─offset|int64|Returns the offset to be taken according to the underlying page and page size.|-|0|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─sort|object|Returns the sorting parameters.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─empty|boolean|Returns whether the current {@link Streamable} is empty.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─orders|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─direction|enum|No comments found.<br/>[Enum: ASC, DESC]|-|ASC|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─property|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ignoreCase|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─nullHandling|enum|No comments found.<br/>[Enum: NATIVE, NULLS_FIRST, NULLS_LAST]|-|NATIVE|
+|└─empty|boolean|Returns whether the current {@link Streamable} is empty.|-|true|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "totalPages": 0,
+    "totalElements": 0,
+    "number": 0,
+    "size": 0,
+    "numberOfElements": 0,
+    "content": [
+      {
+        "id": "",
+        "businessTradingName": "",
+        "code": "",
+        "slug": "",
+        "logo": "",
+        "currentMode": "",
+        "status": true,
+        "complianceReviewStatus": "NOT_SUBMITTED",
+        "complianceOverrideEnabled": true,
+        "businessSupportEmailAddress": "",
+        "industry": "",
+        "businessType": "",
+        "createdAt": "yyyy-MM-dd HH:mm:ss",
+        "updatedAt": "yyyy-MM-dd HH:mm:ss",
+        "ownerUserId": "",
+        "ownerEmail": "",
+        "ownerFullName": ""
+      }
+    ],
+    "sort": {
+      "empty": true,
+      "orders": [
+        {
+          "direction": "ASC",
+          "property": "",
+          "ignoreCase": true,
+          "nullHandling": "NATIVE"
+        }
+      ]
+    },
+    "first": true,
+    "last": true,
+    "pageable": {
+      "paged": true,
+      "unpaged": true,
+      "pageNumber": 0,
+      "pageSize": 0,
+      "offset": 0,
+      "sort": {
+        "empty": true,
+        "orders": [
+          {
+            "direction": "ASC",
+            "property": "",
+            "ignoreCase": true,
+            "nullHandling": "NATIVE"
+          }
+        ]
+      }
+    },
+    "empty": true
+  }
+}
+```
+
+### Get Merchant Detail
+**URL:** https://api.shopsynch.com/v1/admin/merchants/{tenantId}
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Full merchant profile including all compliance fields, override state, and owner user info.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|The unique identifier of the tenant.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/merchants/{tenantId}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─businessTradingName|string|No comments found.|-||
+|└─code|string|No comments found.|-||
+|└─slug|string|No comments found.|-||
+|└─logo|string|No comments found.|-||
+|└─currentMode|string|No comments found.|-||
+|└─status|boolean|No comments found.|-|true|
+|└─businessType|string|No comments found.|-||
+|└─businessRegistrationNumber|string|No comments found.|-||
+|└─businessAddress|string|No comments found.|-||
+|└─businessState|string|No comments found.|-||
+|└─businessCity|string|No comments found.|-||
+|└─businessCountry|string|No comments found.|-||
+|└─businessStorefrontUrl|string|No comments found.|-||
+|└─businessDescription|string|No comments found.|-||
+|└─industry|string|No comments found.|-||
+|└─businessTaxIdNumber|string|No comments found.|-||
+|└─businessExpectedMonthlyIncome|string|No comments found.|-||
+|└─staffSize|string|No comments found.|-||
+|└─businessPrimaryPhoneNumber|string|No comments found.|-||
+|└─businessSecondaryPhoneNumber|string|No comments found.|-||
+|└─businessSupportEmailAddress|string|No comments found.|-||
+|└─businessGeneralEmailAddress|string|No comments found.|-||
+|└─cacDocumentUrl|string|No comments found.|-||
+|└─kybCompleted|boolean|No comments found.|-|true|
+|└─kycCompleted|boolean|No comments found.|-|true|
+|└─documentsVerified|boolean|No comments found.|-|true|
+|└─termsAccepted|boolean|No comments found.|-|true|
+|└─liveModeReady|boolean|No comments found.|-|true|
+|└─inventoryTrackingEnabled|boolean|No comments found.|-|true|
+|└─complianceReviewStatus|enum|No comments found.<br/>[Enum: NOT_SUBMITTED, AWAITING_APPROVAL, UNDER_REVIEW, APPROVED, REJECTED, SUSPENDED]|-|NOT_SUBMITTED|
+|└─complianceRejectionCode|string|No comments found.|-||
+|└─complianceRejectionMessage|string|No comments found.|-||
+|└─complianceNextSteps|string|No comments found.|-||
+|└─complianceFieldErrors|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─field|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─label|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─note|string|No comments found.|-||
+|└─complianceReviewedBy|string|No comments found.|-||
+|└─complianceReviewedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─complianceNotes|array|No comments found.|-|""","""|
+|└─complianceOverrideEnabled|boolean|No comments found.|-|true|
+|└─complianceOverrideReason|string|No comments found.|-||
+|└─complianceOverrideGrantedBy|string|No comments found.|-||
+|└─complianceOverrideGrantedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─complianceOverrideExpiresAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─canOperateInLiveMode|boolean|No comments found.|-|true|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─owner|object|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─id|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─email|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─fullName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─phoneNumber|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─status|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─emailVerified|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─twoFactorEnabled|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─notificationsEnabled|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantMemberships|array|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantId|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─tenantName|string|No comments found.|-||
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─owner|boolean|No comments found.|-|true|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─roleIds|array|No comments found.|-|""","""|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "businessTradingName": "",
+    "code": "",
+    "slug": "",
+    "logo": "",
+    "currentMode": "",
+    "status": true,
+    "businessType": "",
+    "businessRegistrationNumber": "",
+    "businessAddress": "",
+    "businessState": "",
+    "businessCity": "",
+    "businessCountry": "",
+    "businessStorefrontUrl": "",
+    "businessDescription": "",
+    "industry": "",
+    "businessTaxIdNumber": "",
+    "businessExpectedMonthlyIncome": "",
+    "staffSize": "",
+    "businessPrimaryPhoneNumber": "",
+    "businessSecondaryPhoneNumber": "",
+    "businessSupportEmailAddress": "",
+    "businessGeneralEmailAddress": "",
+    "cacDocumentUrl": "",
+    "kybCompleted": true,
+    "kycCompleted": true,
+    "documentsVerified": true,
+    "termsAccepted": true,
+    "liveModeReady": true,
+    "inventoryTrackingEnabled": true,
+    "complianceReviewStatus": "NOT_SUBMITTED",
+    "complianceRejectionCode": "",
+    "complianceRejectionMessage": "",
+    "complianceNextSteps": "",
+    "complianceFieldErrors": [
+      {
+        "field": "",
+        "label": "",
+        "note": ""
+      }
+    ],
+    "complianceReviewedBy": "",
+    "complianceReviewedAt": "yyyy-MM-dd HH:mm:ss",
+    "complianceNotes": [
+      ""
+    ],
+    "complianceOverrideEnabled": true,
+    "complianceOverrideReason": "",
+    "complianceOverrideGrantedBy": "",
+    "complianceOverrideGrantedAt": "yyyy-MM-dd HH:mm:ss",
+    "complianceOverrideExpiresAt": "yyyy-MM-dd HH:mm:ss",
+    "canOperateInLiveMode": true,
+    "createdAt": "yyyy-MM-dd HH:mm:ss",
+    "updatedAt": "yyyy-MM-dd HH:mm:ss",
+    "owner": {
+      "id": "",
+      "email": "",
+      "fullName": "",
+      "phoneNumber": "",
+      "status": "",
+      "tenantId": "",
+      "emailVerified": true,
+      "twoFactorEnabled": true,
+      "notificationsEnabled": true,
+      "createdAt": "yyyy-MM-dd HH:mm:ss",
+      "tenantMemberships": [
+        {
+          "tenantId": "",
+          "tenantName": "",
+          "owner": true,
+          "roleIds": [
+            ""
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### Update Merchant Status
+**URL:** https://api.shopsynch.com/v1/admin/merchants/{tenantId}/status
+
+**Type:** PATCH
+
+
+**Content-Type:** application/json
+
+**Description:** Activates or deactivates a tenant account (Tenant.status toggle).
+         Evicts all cached entries for this tenant so state is immediately consistent.
+         Does NOT affect compliance review status.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|The unique identifier of the tenant.|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|active|boolean|true|No comments found.|-|true|
+
+**Request-example:**
+```bash
+curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/merchants/{tenantId}/status'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─businessTradingName|string|No comments found.|-||
+|└─code|string|No comments found.|-||
+|└─slug|string|No comments found.|-||
+|└─logo|string|No comments found.|-||
+|└─currentMode|string|No comments found.|-||
+|└─status|boolean|No comments found.|-|true|
+|└─complianceReviewStatus|enum|No comments found.<br/>[Enum: NOT_SUBMITTED, AWAITING_APPROVAL, UNDER_REVIEW, APPROVED, REJECTED, SUSPENDED]|-|NOT_SUBMITTED|
+|└─complianceOverrideEnabled|boolean|No comments found.|-|true|
+|└─businessSupportEmailAddress|string|No comments found.|-||
+|└─industry|string|No comments found.|-||
+|└─businessType|string|No comments found.|-||
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─updatedAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+|└─ownerUserId|string|No comments found.|-||
+|└─ownerEmail|string|No comments found.|-||
+|└─ownerFullName|string|No comments found.|-||
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "businessTradingName": "",
+    "code": "",
+    "slug": "",
+    "logo": "",
+    "currentMode": "",
+    "status": true,
+    "complianceReviewStatus": "NOT_SUBMITTED",
+    "complianceOverrideEnabled": true,
+    "businessSupportEmailAddress": "",
+    "industry": "",
+    "businessType": "",
+    "createdAt": "yyyy-MM-dd HH:mm:ss",
+    "updatedAt": "yyyy-MM-dd HH:mm:ss",
+    "ownerUserId": "",
+    "ownerEmail": "",
+    "ownerFullName": ""
+  }
+}
+```
+
+### Get Payment Gateway Secrets (Metadata Only)
+**URL:** https://api.shopsynch.com/v1/admin/merchants/{tenantId}/payment-secrets
+
+**Type:** GET
+
+
+**Content-Type:** application/x-www-form-urlencoded
+
+**Description:** Returns metadata about payment gateway configurations for a merchant.
+         Secret values are NOT decrypted or returned — only presence indicators
+         (hasLiveSecret, hasTestSecret) are included to protect merchant credentials.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|The unique identifier of the tenant.|-||
+
+**Request-example:**
+```bash
+curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/merchants/{tenantId}/payment-secrets'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|array|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─gateway|string|No comments found.|-||
+|└─hasLiveSecret|boolean|No comments found.|-|true|
+|└─hasTestSecret|boolean|No comments found.|-|true|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": [
+    {
+      "id": "",
+      "tenantId": "",
+      "gateway": "",
+      "hasLiveSecret": true,
+      "hasTestSecret": true,
+      "createdAt": "yyyy-MM-dd HH:mm:ss"
+    }
+  ]
+}
+```
+
+### Set / Update Payment Gateway Secret
+**URL:** https://api.shopsynch.com/v1/admin/merchants/{tenantId}/payment-secrets
+
+**Type:** PUT
+
+
+**Content-Type:** application/json
+
+**Description:** Creates or replaces the payment gateway secret for a merchant (upsert semantics).
+         If a record exists for the given gateway, it is updated; otherwise a new record is created.
+         Provide liveSecret and/or testSecret — null values preserve the existing encrypted value.
+
+**Request-headers:**
+
+| Header | Type | Required | Description | Since | Example |
+|--------|------|----------|-------------|-------|---------|
+|X-MerchantApiKey|string|true|For every request the X-MerchantApiKey header is mandatory. You will get an error if the X-MerchantApiKey is not supplied when it is required|-|pk_test|
+
+
+**Path-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|tenantId|string|true|The unique identifier of the tenant.|-||
+
+**Body-parameters:**
+
+| Parameter | Type | Required | Description | Since | Example |
+|-----------|------|----------|-------------|-------|---------|
+|gateway|string|true|No comments found.|-||
+|liveSecret|string|false|No comments found.|-||
+|testSecret|string|false|No comments found.|-||
+
+**Request-example:**
+```bash
+curl -X PUT -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/admin/merchants/{tenantId}/payment-secrets' --data '{
+  "gateway": "",
+  "liveSecret": "",
+  "testSecret": ""
+}'
+```
+**Response-fields:**
+
+| Field | Type | Description | Since | Example |
+|-------|------|-------------|-------|---------|
+|status|boolean|No comments found.|-|true|
+|message|string|No comments found.|-||
+|data|object|No comments found.|-||
+|└─id|string|No comments found.|-||
+|└─tenantId|string|No comments found.|-||
+|└─gateway|string|No comments found.|-||
+|└─hasLiveSecret|boolean|No comments found.|-|true|
+|└─hasTestSecret|boolean|No comments found.|-|true|
+|└─createdAt|string|No comments found.|-|yyyy-MM-dd HH:mm:ss|
+
+**Response-example:**
+```json
+{
+  "status": true,
+  "message": "",
+  "data": {
+    "id": "",
+    "tenantId": "",
+    "gateway": "",
+    "hasLiveSecret": true,
+    "hasTestSecret": true,
+    "createdAt": "yyyy-MM-dd HH:mm:ss"
+  }
+}
+```
+
 ## AddressController
 ### getUserAddresses
 **URL:** https://api.shopsynch.com/v1/addresses
@@ -23299,8 +26361,9 @@ curl -X GET -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/ad
 |streetNumber|string|false|No comments found.|-||
 |postalCode|string|false|No comments found.|-||
 |city|string|false|No comments found.|-||
-|stateId|string|false|No comments found.|-||
-|localGovernmentId|string|false|No comments found.|-||
+|state|string|false|No comments found.|-||
+|country|string|false|No comments found.|-||
+|localGovernment|string|false|No comments found.|-||
 |isDefault|boolean|false|No comments found.|-|true|
 
 **Request-example:**
@@ -23311,8 +26374,9 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
   "streetNumber": "",
   "postalCode": "",
   "city": "",
-  "stateId": "",
-  "localGovernmentId": "",
+  "state": "",
+  "country": "",
+  "localGovernment": "",
   "isDefault": true
 }'
 ```
@@ -23384,8 +26448,9 @@ curl -X POST -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test
 |streetNumber|string|false|No comments found.|-||
 |postalCode|string|false|No comments found.|-||
 |city|string|false|No comments found.|-||
-|stateId|string|false|No comments found.|-||
-|localGovernmentId|string|false|No comments found.|-||
+|state|string|false|No comments found.|-||
+|country|string|false|No comments found.|-||
+|localGovernment|string|false|No comments found.|-||
 |isDefault|boolean|false|No comments found.|-|true|
 
 **Request-example:**
@@ -23434,7 +26499,7 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 **Type:** DELETE
 
 
-**Content-Type:** application/json
+**Content-Type:** application/x-www-form-urlencoded
 
 **Description:** 
 
@@ -23451,22 +26516,9 @@ curl -X PATCH -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_tes
 |-----------|------|----------|-------------|-------|---------|
 |addressId|string|true|No comments found.|-||
 
-**Query-parameters:**
-
-| Parameter | Type | Required | Description | Since | Example |
-|-----------|------|----------|-------------|-------|---------|
-|id|string|false|No comments found.|-||
-|street|string|false|No comments found.|-||
-|streetNumber|string|false|No comments found.|-||
-|postalCode|string|false|No comments found.|-||
-|city|string|false|No comments found.|-||
-|stateId|string|false|No comments found.|-||
-|localGovernmentId|string|false|No comments found.|-||
-|isDefault|boolean|false|No comments found.|-|true|
-
 **Request-example:**
 ```bash
-curl -X DELETE -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/addresses/{addressId}?id=&street=&streetNumber=&postalCode=&city=&stateId=&localGovernmentId=&isDefault=true'
+curl -X DELETE -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/addresses/{addressId}'
 ```
 **Response-fields:**
 
@@ -23475,32 +26527,13 @@ curl -X DELETE -k -H "Content-Type: application/json" -H "X-MerchantApiKey:pk_te
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
-|└─id|string|No comments found.|-||
-|└─street|string|No comments found.|-||
-|└─streetNumber|string|No comments found.|-||
-|└─postalCode|string|No comments found.|-||
-|└─city|string|No comments found.|-||
-|└─state|string|No comments found.|-||
-|└─country|string|No comments found.|-||
-|└─localGovernmentName|string|No comments found.|-||
-|└─isDefault|boolean|No comments found.|-|true|
 
 **Response-example:**
 ```json
 {
   "status": true,
   "message": "",
-  "data": {
-    "id": "",
-    "street": "",
-    "streetNumber": "",
-    "postalCode": "",
-    "city": "",
-    "state": "",
-    "country": "",
-    "localGovernmentName": "",
-    "isDefault": true
-  }
+  "data": {}
 }
 ```
 
@@ -23538,14 +26571,32 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |status|boolean|No comments found.|-|true|
 |message|string|No comments found.|-||
 |data|object|No comments found.|-||
-|└─any object|object|any object.|-||
+|└─id|string|No comments found.|-||
+|└─street|string|No comments found.|-||
+|└─streetNumber|string|No comments found.|-||
+|└─postalCode|string|No comments found.|-||
+|└─city|string|No comments found.|-||
+|└─state|string|No comments found.|-||
+|└─country|string|No comments found.|-||
+|└─localGovernmentName|string|No comments found.|-||
+|└─isDefault|boolean|No comments found.|-|true|
 
 **Response-example:**
 ```json
 {
   "status": true,
   "message": "",
-  "data": {}
+  "data": {
+    "id": "",
+    "street": "",
+    "streetNumber": "",
+    "postalCode": "",
+    "city": "",
+    "state": "",
+    "country": "",
+    "localGovernmentName": "",
+    "isDefault": true
+  }
 }
 ```
 
@@ -23617,6 +26668,7 @@ curl -X PATCH -k -H "X-MerchantApiKey:pk_test" -i 'https://api.shopsynch.com/v1/
 |PAYMENT_CONFIRMED|PAYMENT_CONFIRMED|string|Payment confirmed notification for customer|
 |SNAPSHOT_FAILED|SNAPSHOT_FAILED|string|Snapshot failed notification for merchant|
 |SNAPSHOT_READY|SNAPSHOT_READY|string|Snapshot ready notification for merchant|
+|COMPLIANCE_STATUS_UPDATED|COMPLIANCE_STATUS_UPDATED|string|Compliance status update notification for merchant|
 |WELCOME|WELCOME|string|Welcome notification for customer|
 |TEAM_INVITATION|TEAM_INVITATION|string|Invitation to join a store as a team member|
 |TEAM_MEMBER_JOINED|TEAM_MEMBER_JOINED|string|Welcome notification when a user joins a store|
